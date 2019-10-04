@@ -5,9 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Character001
   m_Shader: {fileID: 4800000, guid: ec3c686f972ccf5459c2b55555e6635f, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

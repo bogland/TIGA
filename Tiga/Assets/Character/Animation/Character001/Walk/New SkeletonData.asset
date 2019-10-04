@@ -4,8 +4,7 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -13,7 +12,7 @@ MonoBehaviour:
   m_Name: New SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 249f268cb8399024aaf2d1f8ede439ae, type: 2}
+  - {fileID: 0}
   scale: 0.01
   skeletonJSON: {fileID: 4900000, guid: a75f03edff71aa341ae0360d3b071b6d, type: 3}
   fromAnimation: []
