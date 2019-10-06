@@ -61,10 +61,15 @@ public class CSVManager : MonoBehaviour
         return dialogueList;
     }
     
+    /// <summary>
+    /// 캐릭터 이름을 입력시 지정 경로상에서 캐릭터 이미지를 불러옴
+    /// </summary>
+    /// <param name="characterName"></param>
+    /// <returns></returns>
     private Sprite LoadCharacterImage(string characterName)
     {
         Texture2D texture = new Texture2D(0, 0);
-        byte[] byteTexture = System.IO.File.ReadAllBytes(Application.dataPath + "/ForImplementation/Character/Resources/ThumbNail" + "/" + characterName + ".jpg");
+        byte[] byteTexture = System.IO.File.ReadAllBytes(Application.dataPath + "/GameResources/Image/Character/" + characterName + ".jpg");
         if (byteTexture.Length > 0)
         {
             texture.LoadImage(byteTexture);

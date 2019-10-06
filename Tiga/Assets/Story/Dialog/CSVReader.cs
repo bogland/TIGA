@@ -18,7 +18,7 @@ public class CSVReader
         //TextAsset data = Resources.Load (file) as TextAsset;
 
         string source;
-        StreamReader sr = new StreamReader(Application.dataPath + "/ForImplementation/Story/Resources" + "/" + file);
+        StreamReader sr = new StreamReader(Application.dataPath + "/GameResources/Dialogue/" + file);
         source = sr.ReadToEnd();
         sr.Close();
 
