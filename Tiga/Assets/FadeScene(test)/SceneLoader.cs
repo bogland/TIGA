@@ -27,7 +27,7 @@ public class SceneLoader : MonoBehaviour {
         InitSceneInfo();
 
         //처음 알파값을 설정(불투명)
-        fadeCg.alpha = 1.0f;
+        fadeCg.alpha = 0.0f;
 
         //여러개의 씬을 코루틴으로 호출
         foreach(var _loadScene in loadScenes)
@@ -35,9 +35,15 @@ public class SceneLoader : MonoBehaviour {
             yield return StartCoroutine(LoadScene(_loadScene.Key, _loadScene.Value));
         }
 
+        //Fade out 함수 호출
+
+
         //Fade In 함수 호출
-        StartCoroutine(Fade(0.0f));
-	}
+        StartCoroutine(Fadeout(1.0f));
+        
+
+        
+    }
 
     IEnumerator LoadScene(string sceneName, LoadSceneMode mode)
     {
@@ -49,8 +55,33 @@ public class SceneLoader : MonoBehaviour {
         SceneManager.SetActiveScene(loadedScene);
     }
 
-    //Fade in/out 시키는 함수
-    IEnumerator Fade(float finalAlpha)
+    //Fade out 시키는 함수
+    IEnumerator Fadeout(float finalAlpha)
+    {
+        //라이트맵이 깨지는 것을 방지하기 위해 스테이지 씬을 활성화
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName("Play"));
+        fadeCg.blocksRaycasts = true;
+
+        //절대값 함수로 백분율을 계산
+        float fadeSpeed = Mathf.Abs(fadeCg.alpha - finalAlpha) / fadeDuration;
+
+        //알파값을 조정
+        while (!Mathf.Approximately(fadeCg.alpha, finalAlpha))
+        {
+            fadeCg.alpha = Mathf.MoveTowards(fadeCg.alpha, finalAlpha, fadeSpeed * Time.deltaTime);
+            yield return null;
+        }
+
+        fadeCg.blocksRaycasts = false;
+
+        //배경구경
+        yield return new WaitForSeconds(1.0f);
+        //Fade out 된 후 Fade in
+        StartCoroutine(Fadein(0.0f));
+    }
+
+    //Fade in 시키는 함수
+    IEnumerator Fadein(float finalAlpha)
     {
         //라이트맵이 깨지는 것을 방지하기 위해 스테이지 씬을 활성화
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("Play"));
