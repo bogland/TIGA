@@ -44,6 +44,6 @@ public class JsonManager : MonoBehaviour
 
         //Debug.Log("Scene Load : " + SceneLoad.ToString());
 
-        File.WriteAllText(Application.dataPath + "/ForImplementation/Data/Resources/SceneData.json", SceneLoad.ToString());
+        File.WriteAllText(Application.dataPath + "/GameResources/UserData/SceneData.json", SceneLoad.ToString());
     }
 }

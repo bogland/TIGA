@@ -23,7 +23,7 @@ public class LobbyManagerObj : MonoBehaviour
     {
         Debug.Log("저장된 씬부터 시작됩니다.");
 
-        string JsonString = File.ReadAllText(Application.dataPath + "/ForImplementation/Data/Resources/SceneData.json");
+        string JsonString = File.ReadAllText(Application.dataPath + "/GameResources/UserData/SceneData.json");
         JsonData name = JsonMapper.ToObject(JsonString);
         string TmpName = name[0]["_sceneName"].ToString();
 

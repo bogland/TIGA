@@ -50,14 +50,14 @@ public class PlayerController : MonoBehaviour
     public void SavePlayerDataToJson()
     {
         string jsonData = JsonUtility.ToJson(playerData, true);
-        string path = Path.Combine(Application.dataPath + "/ForImplementation/Data/Resources/playerData.json");
+        string path = Path.Combine(Application.dataPath + "/GameResources/UserData/playerData.json");
         File.WriteAllText(path, jsonData);
     }
      
     [ContextMenu("From Json Data")]
     public void LoadPlayerDataFromJson()
     {
-        string path = Path.Combine(Application.dataPath + "/ForImplementation/Data/Resources/playerData.json");
+        string path = Path.Combine(Application.dataPath + "/GameResources/UserData/playerData.json");
         string jsonData = File.ReadAllText(path);
 
         Debug.Log("인벤토리 : " + jsonData);
