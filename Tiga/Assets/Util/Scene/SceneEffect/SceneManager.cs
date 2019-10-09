@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SceneTest
+namespace Tiga.Util.Scene.SceneEffect
 {
     public class SceneManager : MonoBehaviour
     {

@@ -125,9 +125,9 @@ public class BaseSceneManager : MonoBehaviour
             unloadStage[1] = "Stage" + (int)_curState;
             loadStage[0] = "LobbyScene";
 
-            //Debug.Log(_curState.ToString());
-            //Debug.Log(unloadStage[0].ToString());
-            //Debug.Log(loadStage[0].ToString());
+            Debug.Log(_curState.ToString());
+            Debug.Log(unloadStage[0].ToString());
+            Debug.Log(loadStage[0].ToString());
         }
         else
         {
@@ -136,9 +136,9 @@ public class BaseSceneManager : MonoBehaviour
             unloadStage[0] = "Stage" + (int)stage;
             loadStage[0] = "Stage" + (int)_curState;
 
-            //Debug.Log(_curState.ToString());
-            //Debug.Log(unloadStage[0].ToString());
-            //Debug.Log(loadStage[0].ToString());
+            Debug.Log(_curState.ToString());
+            Debug.Log(unloadStage[0].ToString());
+            Debug.Log(loadStage[0].ToString());
         }
 
         StartCoroutine(LoadingScene(loadStage, unloadStage));

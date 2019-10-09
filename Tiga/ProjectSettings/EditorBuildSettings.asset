@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Data/01Scenes/Stage3.unity
     guid: 88b31010cf658164ab97050b947543f4
+  - enabled: 1
+    path: Assets/Util/Scene/LoadScene/MainMenu.unity
+    guid: 62e5dd71749a9a249b51442f1d20d5cf
+  - enabled: 1
+    path: Assets/Util/Scene/LoadScene/Stage001_TestScene.unity
+    guid: acb7c93982a2bd046bfc85f1ce351188
   m_configObjects: {}
