@@ -1,0 +1,111 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example}\index{Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}}
+
+
+Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_1_1_serialized_entry}{Serialized\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_aa248ac7b2a6bb9f86a1022e070a80dba}{Get\+Transition}} (\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} from, \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} to)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ac5a2f3d9645b7546de6d186b5255eb12}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_1_1_serialized_entry}{Serialized\+Entry}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_af7b98a0a149b4fb243a9bb4560305cdc}{transitions}} = new List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_1_1_serialized_entry}{Serialized\+Entry}}$>$()
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+State\+Data.\+Animation\+Pair}}, \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}{dictionary}} = new Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+State\+Data.\+Animation\+Pair}}, \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Transition\+Dictionary\+Example.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_aa248ac7b2a6bb9f86a1022e070a80dba}\label{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_aa248ac7b2a6bb9f86a1022e070a80dba}} 
+\index{Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}!GetTransition@{GetTransition}}
+\index{GetTransition@{GetTransition}!Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}}
+\doxysubsubsection{\texorpdfstring{GetTransition()}{GetTransition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example.\+Get\+Transition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}}]{from,  }\item[{\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}}]{to }\end{DoxyParamCaption})}
+
+
+
+Transition\+Dictionary\+Example.\+cs 파일의 29 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29                                                                       \{}
+\DoxyCodeLine{30             \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} result;}
+\DoxyCodeLine{31             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}{dictionary}}.TryGetValue(\textcolor{keyword}{new} AnimationStateData.AnimationPair(from, to), out result);}
+\DoxyCodeLine{32             \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{33         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ac5a2f3d9645b7546de6d186b5255eb12}\label{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ac5a2f3d9645b7546de6d186b5255eb12}} 
+\index{Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transition\+Dictionary\+Example.\+cs 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                       \{}
+\DoxyCodeLine{23             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}{dictionary}}.Clear();}
+\DoxyCodeLine{24             \textcolor{keywordflow}{foreach} (var e \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_af7b98a0a149b4fb243a9bb4560305cdc}{transitions}}) \{}
+\DoxyCodeLine{25                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}{dictionary}}.Add(\textcolor{keyword}{new} AnimationStateData.AnimationPair(e.from.Animation, e.to.Animation), e.transition.Animation);}
+\DoxyCodeLine{26             \}}
+\DoxyCodeLine{27         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}\label{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_ab65da564debb4d4f068c62b6bbd01493}} 
+\index{Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}!dictionary@{dictionary}}
+\index{dictionary@{dictionary}!Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}}
+\doxysubsubsection{\texorpdfstring{dictionary}{dictionary}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+State\+Data.\+Animation\+Pair}}, \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$ Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example.\+dictionary = new Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+State\+Data.\+Animation\+Pair}}, \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transition\+Dictionary\+Example.\+cs 파일의 20 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_af7b98a0a149b4fb243a9bb4560305cdc}\label{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_af7b98a0a149b4fb243a9bb4560305cdc}} 
+\index{Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}!transitions@{transitions}}
+\index{transitions@{transitions}!Spine.Unity.Examples.TransitionDictionaryExample@{Spine.Unity.Examples.TransitionDictionaryExample}}
+\doxysubsubsection{\texorpdfstring{transitions}{transitions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_1_1_serialized_entry}{Serialized\+Entry}}$>$ Spine.\+Unity.\+Examples.\+Transition\+Dictionary\+Example.\+transitions = new List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_1_1_serialized_entry}{Serialized\+Entry}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transition\+Dictionary\+Example.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Getting Started Scripts/\mbox{\hyperlink{_transition_dictionary_example_8cs}{Transition\+Dictionary\+Example.\+cs}}\end{DoxyCompactItemize}

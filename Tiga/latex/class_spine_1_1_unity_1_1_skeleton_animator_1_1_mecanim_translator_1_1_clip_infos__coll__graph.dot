@@ -1,0 +1,7 @@
+digraph "Spine.Unity.SkeletonAnimator.MecanimTranslator.ClipInfos"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.SkeletonAnimator.\lMecanimTranslator.ClipInfos\n|+ isInterruptionActive\l+ isLastFrameOfInterruption\l+ clipInfoCount\l+ nextClipInfoCount\l+ interruptingClipInfoCount\l+ clipInfos\l+ nextClipInfos\l+ interruptingClipInfos\l+ stateInfo\l+ nextStateInfo\l+ interruptingStateInfo\l+ interruptingClipTimeAddition\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

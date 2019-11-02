@@ -1,0 +1,123 @@
+\hypertarget{class_spine_1_1_event_queue}{}\doxysection{Spine.\+Event\+Queue 클래스 참조}
+\label{class_spine_1_1_event_queue}\index{Spine.EventQueue@{Spine.EventQueue}}
+
+
+Spine.\+Event\+Queue에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_event_queue_1_1_event_queue_entry}{Event\+Queue\+Entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979c}{Event\+Type}} \{ \newline
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa6122a65eaa676f700ae68d393054a37}{Event\+Type.\+Start}}, 
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca1ce92afa20b1c7f6a4e5d0dc73e5c92a}{Event\+Type.\+Interrupt}}, 
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca87557f11575c0ad78e4e28abedc13b6e}{Event\+Type.\+End}}, 
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca4d236dc6ed028e6270a1463ceb68a612}{Event\+Type.\+Dispose}}, 
+\newline
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caae94f80b3ce82062a5dd7815daa04f9d}{Event\+Type.\+Complete}}, 
+\mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa4ecfc70574394990cf17bd83df499f7}{Event\+Type.\+Event}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{struct_spine_1_1_event_queue_1_1_event_queue_entry}{Event\+Queue\+Entry}} $>$ \mbox{\hyperlink{class_spine_1_1_event_queue_a27eb878c258571f97f44cd5b2cbbe78a}{event\+Queue\+Entries}} = new List$<$\mbox{\hyperlink{struct_spine_1_1_event_queue_1_1_event_queue_entry}{Event\+Queue\+Entry}}$>$()
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_animation_state}{Animation\+State}} \mbox{\hyperlink{class_spine_1_1_event_queue_a261b83c9e658646d552b1f2ebc4b3ac8}{state}}
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_pool}{Pool}}$<$ \mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} $>$ \mbox{\hyperlink{class_spine_1_1_event_queue_a49a2610c23b374e4a7d289772388dccc}{track\+Entry\+Pool}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation\+State.\+cs 파일의 906 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979c}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979c}} 
+\index{Spine.EventQueue@{Spine.EventQueue}!EventType@{EventType}}
+\index{EventType@{EventType}!Spine.EventQueue@{Spine.EventQueue}}
+\doxysubsubsection{\texorpdfstring{EventType}{EventType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979c}{Spine.\+Event\+Queue.\+Event\+Type}}\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!Start@{Start}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa6122a65eaa676f700ae68d393054a37}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa6122a65eaa676f700ae68d393054a37}} 
+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Interrupt@{Interrupt}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!Interrupt@{Interrupt}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca1ce92afa20b1c7f6a4e5d0dc73e5c92a}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca1ce92afa20b1c7f6a4e5d0dc73e5c92a}} 
+Interrupt&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{End@{End}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!End@{End}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca87557f11575c0ad78e4e28abedc13b6e}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca87557f11575c0ad78e4e28abedc13b6e}} 
+End&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dispose@{Dispose}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!Dispose@{Dispose}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca4d236dc6ed028e6270a1463ceb68a612}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979ca4d236dc6ed028e6270a1463ceb68a612}} 
+Dispose&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Complete@{Complete}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!Complete@{Complete}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caae94f80b3ce82062a5dd7815daa04f9d}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caae94f80b3ce82062a5dd7815daa04f9d}} 
+Complete&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Event@{Event}!Spine.EventQueue@{Spine.EventQueue}}\index{Spine.EventQueue@{Spine.EventQueue}!Event@{Event}}}\mbox{\Hypertarget{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa4ecfc70574394990cf17bd83df499f7}\label{class_spine_1_1_event_queue_a17b9ce85abd6d0751e8e62976b4f979caa4ecfc70574394990cf17bd83df499f7}} 
+Event&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Animation\+State.\+cs 파일의 932 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{933                        \{}
+\DoxyCodeLine{934             Start, Interrupt, End, Dispose, Complete, Event}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_event_queue_a27eb878c258571f97f44cd5b2cbbe78a}\label{class_spine_1_1_event_queue_a27eb878c258571f97f44cd5b2cbbe78a}} 
+\index{Spine.EventQueue@{Spine.EventQueue}!eventQueueEntries@{eventQueueEntries}}
+\index{eventQueueEntries@{eventQueueEntries}!Spine.EventQueue@{Spine.EventQueue}}
+\doxysubsubsection{\texorpdfstring{eventQueueEntries}{eventQueueEntries}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{struct_spine_1_1_event_queue_1_1_event_queue_entry}{Event\+Queue\+Entry}}$>$ Spine.\+Event\+Queue.\+event\+Queue\+Entries = new List$<$\mbox{\hyperlink{struct_spine_1_1_event_queue_1_1_event_queue_entry}{Event\+Queue\+Entry}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 907 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_event_queue_a261b83c9e658646d552b1f2ebc4b3ac8}\label{class_spine_1_1_event_queue_a261b83c9e658646d552b1f2ebc4b3ac8}} 
+\index{Spine.EventQueue@{Spine.EventQueue}!state@{state}}
+\index{state@{state}!Spine.EventQueue@{Spine.EventQueue}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_animation_state}{Animation\+State}} Spine.\+Event\+Queue.\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 910 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_event_queue_a49a2610c23b374e4a7d289772388dccc}\label{class_spine_1_1_event_queue_a49a2610c23b374e4a7d289772388dccc}} 
+\index{Spine.EventQueue@{Spine.EventQueue}!trackEntryPool@{trackEntryPool}}
+\index{trackEntryPool@{trackEntryPool}!Spine.EventQueue@{Spine.EventQueue}}
+\doxysubsubsection{\texorpdfstring{trackEntryPool}{trackEntryPool}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_pool}{Pool}}$<$\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}}$>$ Spine.\+Event\+Queue.\+track\+Entry\+Pool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 911 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_state_8cs}{Animation\+State.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+digraph "Spine.Unity.Modules.AttachmentTools.AtlasUtilities.ToAtlasRegion"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Modules.Attachment\lTools.AtlasUtilities.ToAtlasRegion",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Modules.Attachment\lTools.AtlasUtilities.InverseLerp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities.html#a88035dd9603935d5e5335073a99284ce",tooltip=" "];
+}

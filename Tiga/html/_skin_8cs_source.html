@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/Skin.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_skin_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Skin.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_skin_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>Skin {</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">   40</a></span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">string</span> name;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">private</span> Dictionary&lt;AttachmentKeyTuple, Attachment&gt; <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a> =</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keyword">new</span> Dictionary&lt;AttachmentKeyTuple, Attachment&gt;(<a class="code" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">AttachmentKeyTupleComparer</a>.Instance);</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin.html#a474d9cd42c610b1f227283022f8ad756">   43</a></span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin.html#a3dd9c1779f9ebabd27c71953cb5235fa">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_skin.html#a474d9cd42c610b1f227283022f8ad756">Name</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> name; } }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span> Dictionary&lt;AttachmentKeyTuple, Attachment&gt; <a class="code" href="class_spine_1_1_skin.html#a3dd9c1779f9ebabd27c71953cb5235fa">Attachments</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>; } }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin.html#ab47f6bace21eabe3c1ca6ddb19169ae8">   46</a></span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_skin.html#ab47f6bace21eabe3c1ca6ddb19169ae8">Skin</a> (<span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (name == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;name cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            this.name = name;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676">AddAttachment</a> (<span class="keywordtype">int</span> slotIndex, <span class="keywordtype">string</span> name, <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> attachment) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (attachment == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;attachment&quot;</span>, <span class="stringliteral">&quot;attachment cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>[<span class="keyword">new</span> AttachmentKeyTuple(slotIndex, name)] = attachment;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">public</span> Attachment <a class="code" href="class_spine_1_1_skin.html#a8e1b079b629865148f809487fbda7938">GetAttachment</a> (<span class="keywordtype">int</span> slotIndex, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            Attachment attachment;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>.TryGetValue(<span class="keyword">new</span> AttachmentKeyTuple(slotIndex, name), out attachment);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> attachment;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_skin.html#a1734011a3ee22491721f29bdd9c4a478">FindNamesForSlot</a> (<span class="keywordtype">int</span> slotIndex, List&lt;string&gt; names) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">if</span> (names == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;names&quot;</span>, <span class="stringliteral">&quot;names cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">foreach</span> (AttachmentKeyTuple key <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>.Keys)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">if</span> (key.slotIndex == slotIndex) names.Add(key.name);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_skin.html#ab15208068c802378d1949941c4f944e5">FindAttachmentsForSlot</a> (<span class="keywordtype">int</span> slotIndex, List&lt;Attachment&gt; <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a> == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;attachments&quot;</span>, <span class="stringliteral">&quot;attachments cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">foreach</span> (KeyValuePair&lt;AttachmentKeyTuple, Attachment&gt; entry <span class="keywordflow">in</span> this.attachments)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <span class="keywordflow">if</span> (entry.Key.slotIndex == slotIndex) <a class="code" href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">attachments</a>.Add(entry.Value);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin.html#af959c5c040f9b54cece05756ea19228b">   83</a></span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">override</span> <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_skin.html#af959c5c040f9b54cece05756ea19228b">ToString</a> () {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">return</span> name;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">void</span> AttachAll (<a class="code" href="class_spine_1_1_skeleton.html">Skeleton</a> skeleton, <a class="code" href="class_spine_1_1_skin.html">Skin</a> oldSkin) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">foreach</span> (KeyValuePair&lt;AttachmentKeyTuple, Attachment&gt; entry <span class="keywordflow">in</span> oldSkin.attachments) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordtype">int</span> slotIndex = entry.Key.slotIndex;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="class_spine_1_1_slot.html">Slot</a> slot = skeleton.slots.Items[slotIndex];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">if</span> (slot.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> == entry.Value) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                    <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> attachment = <a class="code" href="class_spine_1_1_skin.html#a8e1b079b629865148f809487fbda7938">GetAttachment</a>(slotIndex, entry.Key.name);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordflow">if</span> (attachment != <span class="keyword">null</span>) slot.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> = attachment;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">   99</a></span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">  100</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">AttachmentKeyTuple</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">  101</a></span>&#160;            <span class="keyword">public</span> readonly <span class="keywordtype">int</span> <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">public</span> readonly <span class="keywordtype">string</span> <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">name</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">internal</span> readonly <span class="keywordtype">int</span> nameHashCode;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a4a7326396f190d946399515f73017d37">  104</a></span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">public</span> <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a4a7326396f190d946399515f73017d37">AttachmentKeyTuple</a> (<span class="keywordtype">int</span> <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a>, <span class="keywordtype">string</span> <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">name</a>) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                this.slotIndex = <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                this.name = <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">name</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                nameHashCode = this.name.GetHashCode();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">  112</a></span>&#160;        <span class="comment">// Avoids boxing in the dictionary.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">class </span><a class="code" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">AttachmentKeyTupleComparer</a> : IEqualityComparer&lt;AttachmentKeyTuple&gt; {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">internal</span> <span class="keyword">static</span> readonly <a class="code" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">AttachmentKeyTupleComparer</a> Instance = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">AttachmentKeyTupleComparer</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html#af76f1e558a80b437e535fb87870730e2">  115</a></span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordtype">bool</span> IEqualityComparer&lt;AttachmentKeyTuple&gt;.Equals (<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">AttachmentKeyTuple</a> o1, <a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">AttachmentKeyTuple</a> o2) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                <span class="keywordflow">return</span> o1.<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a> == o2.<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a> &amp;&amp; o1.nameHashCode == o2.nameHashCode &amp;&amp; <span class="keywordtype">string</span>.Equals(o1.<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">name</a>, o2.<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">name</a>, StringComparison.Ordinal);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            }</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html#add6c7c8d910eae26ddacd3ba2737ff36">  119</a></span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="keywordtype">int</span> IEqualityComparer&lt;AttachmentKeyTuple&gt;.GetHashCode (<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">AttachmentKeyTuple</a> o) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                <span class="keywordflow">return</span> o.<a class="code" href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">slotIndex</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_skin_html_a7cab0504bc488828e55b909a6d3eed79"><div class="ttname"><a href="class_spine_1_1_skin.html#a7cab0504bc488828e55b909a6d3eed79">Spine.Skin.attachments</a></div><div class="ttdeci">Dictionary&lt; AttachmentKeyTuple, Attachment &gt; attachments</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00040">Skin.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html"><div class="ttname"><a href="class_spine_1_1_skeleton.html">Spine.Skeleton</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00034">Skeleton.cs:34</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_skin_1_1_attachment_key_tuple_html"><div class="ttname"><a href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html">Spine.Skin.AttachmentKeyTuple</a></div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00099">Skin.cs:99</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_ab15208068c802378d1949941c4f944e5"><div class="ttname"><a href="class_spine_1_1_skin.html#ab15208068c802378d1949941c4f944e5">Spine.Skin.FindAttachmentsForSlot</a></div><div class="ttdeci">void FindAttachmentsForSlot(int slotIndex, List&lt; Attachment &gt; attachments)</div><div class="ttdoc">Finds the attachments for a given slot. The results are added to the passed List(Attachment).</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00077">Skin.cs:77</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_af959c5c040f9b54cece05756ea19228b"><div class="ttname"><a href="class_spine_1_1_skin.html#af959c5c040f9b54cece05756ea19228b">Spine.Skin.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00083">Skin.cs:83</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_ab47f6bace21eabe3c1ca6ddb19169ae8"><div class="ttname"><a href="class_spine_1_1_skin.html#ab47f6bace21eabe3c1ca6ddb19169ae8">Spine.Skin.Skin</a></div><div class="ttdeci">Skin(string name)</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00046">Skin.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a8e1b079b629865148f809487fbda7938"><div class="ttname"><a href="class_spine_1_1_skin.html#a8e1b079b629865148f809487fbda7938">Spine.Skin.GetAttachment</a></div><div class="ttdeci">Attachment GetAttachment(int slotIndex, string name)</div><div class="ttdoc">Returns the attachment for the specified slot index and name, or null.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00059">Skin.cs:59</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_1_1_attachment_key_tuple_comparer_html"><div class="ttname"><a href="class_spine_1_1_skin_1_1_attachment_key_tuple_comparer.html">Spine.Skin.AttachmentKeyTupleComparer</a></div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00112">Skin.cs:112</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a2e3bd07a4034cef3a3b438f217f2f435"><div class="ttname"><a href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Spine.Slot.Attachment</a></div><div class="ttdeci">Attachment Attachment</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00057">Slot.cs:57</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_skin_1_1_attachment_key_tuple_html_a4a7326396f190d946399515f73017d37"><div class="ttname"><a href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a4a7326396f190d946399515f73017d37">Spine.Skin.AttachmentKeyTuple.AttachmentKeyTuple</a></div><div class="ttdeci">AttachmentKeyTuple(int slotIndex, string name)</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00104">Skin.cs:104</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_skin_1_1_attachment_key_tuple_html_a9f4e430d87b89e75f5e22f01ff2beeaa"><div class="ttname"><a href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a9f4e430d87b89e75f5e22f01ff2beeaa">Spine.Skin.AttachmentKeyTuple.name</a></div><div class="ttdeci">readonly string name</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00101">Skin.cs:101</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a474d9cd42c610b1f227283022f8ad756"><div class="ttname"><a href="class_spine_1_1_skin.html#a474d9cd42c610b1f227283022f8ad756">Spine.Skin.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00043">Skin.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a2261ca4391e956e48a6cb45eff6d5676"><div class="ttname"><a href="class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676">Spine.Skin.AddAttachment</a></div><div class="ttdeci">void AddAttachment(int slotIndex, string name, Attachment attachment)</div><div class="ttdoc">Adds an attachment to the skin for the specified slot index and name. If the name already exists for ...</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00052">Skin.cs:52</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_skin_1_1_attachment_key_tuple_html_a94fd61a4fdc3cd82e29444f855147f9e"><div class="ttname"><a href="struct_spine_1_1_skin_1_1_attachment_key_tuple.html#a94fd61a4fdc3cd82e29444f855147f9e">Spine.Skin.AttachmentKeyTuple.slotIndex</a></div><div class="ttdeci">readonly int slotIndex</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00100">Skin.cs:100</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a1734011a3ee22491721f29bdd9c4a478"><div class="ttname"><a href="class_spine_1_1_skin.html#a1734011a3ee22491721f29bdd9c4a478">Spine.Skin.FindNamesForSlot</a></div><div class="ttdeci">void FindNamesForSlot(int slotIndex, List&lt; string &gt; names)</div><div class="ttdoc">Finds the skin keys for a given slot. The results are added to the passed List(names).</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00068">Skin.cs:68</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a3dd9c1779f9ebabd27c71953cb5235fa"><div class="ttname"><a href="class_spine_1_1_skin.html#a3dd9c1779f9ebabd27c71953cb5235fa">Spine.Skin.Attachments</a></div><div class="ttdeci">Dictionary&lt; AttachmentKeyTuple, Attachment &gt; Attachments</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00044">Skin.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="_skin_8cs.html">Skin.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+digraph "Spine.Unity.Editor.SkeletonDataAssetInspector.OnDomainUnload"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector.OnDomainUnload",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector.OnDestroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_data_asset_inspector.html#ad5ea18f59eef7a2a1064e1f8c1b767b7",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector.HandleOnDestroy\lPreview",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_data_asset_inspector.html#ad769f113482dba0413ea74de7b8ee285",tooltip=" "];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+}

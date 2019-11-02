@@ -1,0 +1,593 @@
+\hypertarget{class_spine_1_1_transform_constraint}{}\doxysection{Spine.\+Transform\+Constraint 클래스 참조}
+\label{class_spine_1_1_transform_constraint}\index{Spine.TransformConstraint@{Spine.TransformConstraint}}
+
+
+Spine.\+Transform\+Constraint에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Transform\+Constraint에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_transform_constraint_a210a64bb97727cdee2803eac47847e48}{Transform\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_data}{Transform\+Constraint\+Data}} data, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_a87fe519e24de8ddb8169c15d621121e2}{Apply}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_aae86c5f4517de6fe45671f7edb8864dc}{Update}} ()
+\item 
+override string \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad3a64f495ff18afce48a6f502f830618}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_transform_constraint_data}{Transform\+Constraint\+Data}} \mbox{\hyperlink{class_spine_1_1_transform_constraint_a924ea1b33938d4e9bcc438d699b6c96a}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_transform_constraint_a0532233c310cf4c722a2ec0d11cb5abd}{Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$ \mbox{\hyperlink{class_spine_1_1_transform_constraint_ae0040d8bfcf8238a75c576546daa9c17}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_transform_constraint_a8ea9f23c1cafb4aeee2842a176615375}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_acc3c9c6d95778c4a4a7f95e7b326c866}{Rotate\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_a47b1db766e466ab23414e7a8501dfff1}{Translate\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_a4437d61c47231457cb0b200e9179496b}{Scale\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_a9d4b19c77d9302846f64b947ec68c22b}{Shear\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_abf5166c6e4980f9dd325b58490cae98f}{Apply\+Absolute\+World}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_a7f3667042018db294f8053cbb24a94d8}{Apply\+Relative\+World}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_a1b7a1fbc22ddc91b961b8d188ac3f9e3}{Apply\+Absolute\+Local}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_transform_constraint_a454117a6966c2668bcc06e571195b4f3}{Apply\+Relative\+Local}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translate\+Mix}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scale\+Mix}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shear\+Mix}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Transform\+Constraint.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a210a64bb97727cdee2803eac47847e48}\label{class_spine_1_1_transform_constraint_a210a64bb97727cdee2803eac47847e48}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!TransformConstraint@{TransformConstraint}}
+\index{TransformConstraint@{TransformConstraint}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{TransformConstraint()}{TransformConstraint()}}
+{\footnotesize\ttfamily Spine.\+Transform\+Constraint.\+Transform\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_transform_constraint_data}{Transform\+Constraint\+Data}}}]{data,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})}
+
+
+
+Transform\+Constraint.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                                                                      \{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"data"}, \textcolor{stringliteral}{"data cannot be null."});}
+\DoxyCodeLine{51             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{52             this.data = data;}
+\DoxyCodeLine{53             rotateMix = data.rotateMix;}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a31d2d62714fead0d74e2c4f2a7e27028}{translateMix}};}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a853f69a3c348e2954cc50d4fe508e6b2}{scaleMix}};}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} = data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a40b9052e3fe454946875995f4e8dabdb}{shearMix}};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58             bones = \textcolor{keyword}{new} ExposedList<Bone>();}
+\DoxyCodeLine{59             \textcolor{keywordflow}{foreach} (BoneData boneData \textcolor{keywordflow}{in} data.bones)}
+\DoxyCodeLine{60                 bones.Add (skeleton.FindBone (boneData.name));}
+\DoxyCodeLine{61             }
+\DoxyCodeLine{62             target = skeleton.FindBone(data.target.name);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a87fe519e24de8ddb8169c15d621121e2}\label{class_spine_1_1_transform_constraint_a87fe519e24de8ddb8169c15d621121e2}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transform\+Constraint.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                              \{}
+\DoxyCodeLine{66             \mbox{\hyperlink{class_spine_1_1_transform_constraint_aae86c5f4517de6fe45671f7edb8864dc}{Update}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a1b7a1fbc22ddc91b961b8d188ac3f9e3}\label{class_spine_1_1_transform_constraint_a1b7a1fbc22ddc91b961b8d188ac3f9e3}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ApplyAbsoluteLocal@{ApplyAbsoluteLocal}}
+\index{ApplyAbsoluteLocal@{ApplyAbsoluteLocal}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ApplyAbsoluteLocal()}{ApplyAbsoluteLocal()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Apply\+Absolute\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 209 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                                    \{}
+\DoxyCodeLine{211             \textcolor{keywordtype}{float} rotateMix = this.rotateMix, \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{212             Bone target = this.target;}
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (!target.appliedValid) target.UpdateAppliedTransform();}
+\DoxyCodeLine{214             var bonesItems = this.bones.Items;}
+\DoxyCodeLine{215             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = this.bones.Count; i < n; i++) \{}
+\DoxyCodeLine{216                 Bone bone = bonesItems[i];}
+\DoxyCodeLine{217                 \textcolor{keywordflow}{if} (!bone.appliedValid) bone.UpdateAppliedTransform();}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219                 \textcolor{keywordtype}{float} rotation = bone.arotation;}
+\DoxyCodeLine{220                 \textcolor{keywordflow}{if} (rotateMix != 0) \{}
+\DoxyCodeLine{221                     \textcolor{keywordtype}{float} r = target.arotation -\/ rotation + data.offsetRotation;}
+\DoxyCodeLine{222                     r -\/= (16384 -\/ (int)(16384.499999999996 -\/ r / 360)) * 360;}
+\DoxyCodeLine{223                     rotation += r * rotateMix;}
+\DoxyCodeLine{224                 \}}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226                 \textcolor{keywordtype}{float} x = bone.ax, y = bone.ay;}
+\DoxyCodeLine{227                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} != 0) \{}
+\DoxyCodeLine{228                     x += (target.ax -\/ x + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a1c24fe0a13a76741dd304aa9f6d2d9c0}{offsetX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{229                     y += (target.ay -\/ y + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a7e65faa6f30c0eb39134e147ec382a01}{offsetY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{230                 \}}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232                 \textcolor{keywordtype}{float} scaleX = bone.ascaleX, scaleY = bone.ascaleY;}
+\DoxyCodeLine{233                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} > 0) \{}
+\DoxyCodeLine{234                     \textcolor{keywordflow}{if} (scaleX > 0.00001f) scaleX = (scaleX + (target.ascaleX -\/ scaleX + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6ea9066bd6a70d89e037c8989fe5a843}{offsetScaleX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) / scaleX;}
+\DoxyCodeLine{235                     \textcolor{keywordflow}{if} (scaleY > 0.00001f) scaleY = (scaleY + (target.ascaleY -\/ scaleY + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6b42c5f5f7821b702bd07e58ca4afacb}{offsetScaleY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) / scaleY;}
+\DoxyCodeLine{236                 \}}
+\DoxyCodeLine{237 }
+\DoxyCodeLine{238                 \textcolor{keywordtype}{float} shearY = bone.ashearY;}
+\DoxyCodeLine{239                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} > 0) \{}
+\DoxyCodeLine{240                     \textcolor{keywordtype}{float} r = target.ashearY -\/ shearY + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a922b954fe5c2bc7a58149dfb77fa6c5a}{offsetShearY}};}
+\DoxyCodeLine{241                     r -\/= (16384 -\/ (int)(16384.499999999996 -\/ r / 360)) * 360;}
+\DoxyCodeLine{242                     bone.shearY += r * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{243                 \}}
+\DoxyCodeLine{244 }
+\DoxyCodeLine{245                 bone.UpdateWorldTransform(x, y, rotation, scaleX, scaleY, bone.ashearX, shearY);}
+\DoxyCodeLine{246             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_abf5166c6e4980f9dd325b58490cae98f}\label{class_spine_1_1_transform_constraint_abf5166c6e4980f9dd325b58490cae98f}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ApplyAbsoluteWorld@{ApplyAbsoluteWorld}}
+\index{ApplyAbsoluteWorld@{ApplyAbsoluteWorld}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ApplyAbsoluteWorld()}{ApplyAbsoluteWorld()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Apply\+Absolute\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                                    \{}
+\DoxyCodeLine{84             \textcolor{keywordtype}{float} rotateMix = this.rotateMix, \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{85             Bone target = this.target;}
+\DoxyCodeLine{86             \textcolor{keywordtype}{float} ta = target.a, tb = target.b, tc = target.c, td = target.d;}
+\DoxyCodeLine{87             \textcolor{keywordtype}{float} degRadReflect = ta * td -\/ tb * tc > 0 ? MathUtils.DegRad : -\/MathUtils.DegRad;}
+\DoxyCodeLine{88             \textcolor{keywordtype}{float} offsetRotation = data.offsetRotation * degRadReflect, offsetShearY = data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a922b954fe5c2bc7a58149dfb77fa6c5a}{offsetShearY}} * degRadReflect;}
+\DoxyCodeLine{89             var bones = this.bones;}
+\DoxyCodeLine{90             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++) \{}
+\DoxyCodeLine{91                 Bone bone = bones.Items[i];}
+\DoxyCodeLine{92                 \textcolor{keywordtype}{bool} modified = \textcolor{keyword}{false};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94                 \textcolor{keywordflow}{if} (rotateMix != 0) \{}
+\DoxyCodeLine{95                     \textcolor{keywordtype}{float} a = bone.a, b = bone.b, c = bone.c, d = bone.d;}
+\DoxyCodeLine{96                     \textcolor{keywordtype}{float} r = MathUtils.Atan2(tc, ta) -\/ MathUtils.Atan2(c, a) + offsetRotation;}
+\DoxyCodeLine{97                     \textcolor{keywordflow}{if} (r > MathUtils.PI)}
+\DoxyCodeLine{98                         r -\/= MathUtils.PI2;}
+\DoxyCodeLine{99                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (r < -\/MathUtils.PI) r += MathUtils.PI2;}
+\DoxyCodeLine{100                     r *= rotateMix;}
+\DoxyCodeLine{101                     \textcolor{keywordtype}{float} cos = MathUtils.Cos(r), sin = MathUtils.Sin(r);}
+\DoxyCodeLine{102                     bone.a = cos * a -\/ sin * c;}
+\DoxyCodeLine{103                     bone.b = cos * b -\/ sin * d;}
+\DoxyCodeLine{104                     bone.c = sin * a + cos * c;}
+\DoxyCodeLine{105                     bone.d = sin * b + cos * d;}
+\DoxyCodeLine{106                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{107                 \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} != 0) \{}
+\DoxyCodeLine{110                     \textcolor{keywordtype}{float} tx, ty; \textcolor{comment}{//Vector2 temp = this.temp;}}
+\DoxyCodeLine{111                     target.LocalToWorld(data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a1c24fe0a13a76741dd304aa9f6d2d9c0}{offsetX}}, data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a7e65faa6f30c0eb39134e147ec382a01}{offsetY}}, out tx, out ty); \textcolor{comment}{//target.localToWorld(temp.set(data.offsetX, data.offsetY));}}
+\DoxyCodeLine{112                     bone.worldX += (tx -\/ bone.worldX) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{113                     bone.worldY += (ty -\/ bone.worldY) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{114                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{115                 \}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} > 0) \{}
+\DoxyCodeLine{118                     \textcolor{keywordtype}{float} s = (float)Math.Sqrt(bone.a * bone.a + bone.c * bone.c);}
+\DoxyCodeLine{119                     \textcolor{comment}{//float ts = (float)Math.sqrt(ta * ta + tc * tc);}}
+\DoxyCodeLine{120                     \textcolor{keywordflow}{if} (s > 0.00001f) s = (s + ((float)Math.Sqrt(ta * ta + tc * tc) -\/ s + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6ea9066bd6a70d89e037c8989fe5a843}{offsetScaleX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) / s;}
+\DoxyCodeLine{121                     bone.a *= s;}
+\DoxyCodeLine{122                     bone.c *= s;}
+\DoxyCodeLine{123                     s = (float)Math.Sqrt(bone.b * bone.b + bone.d * bone.d);}
+\DoxyCodeLine{124                     \textcolor{comment}{//ts = (float)Math.Sqrt(tb * tb + td * td);}}
+\DoxyCodeLine{125                     \textcolor{keywordflow}{if} (s > 0.00001f) s = (s + ((float)Math.Sqrt(tb * tb + td * td) -\/ s + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6b42c5f5f7821b702bd07e58ca4afacb}{offsetScaleY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) / s;}
+\DoxyCodeLine{126                     bone.b *= s;}
+\DoxyCodeLine{127                     bone.d *= s;}
+\DoxyCodeLine{128                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{129                 \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} > 0) \{}
+\DoxyCodeLine{132                     \textcolor{keywordtype}{float} b = bone.b, d = bone.d;}
+\DoxyCodeLine{133                     \textcolor{keywordtype}{float} by = MathUtils.Atan2(d, b);}
+\DoxyCodeLine{134                     \textcolor{keywordtype}{float} r = MathUtils.Atan2(td, tb) -\/ MathUtils.Atan2(tc, ta) -\/ (by -\/ MathUtils.Atan2(bone.c, bone.a));}
+\DoxyCodeLine{135                     \textcolor{keywordflow}{if} (r > MathUtils.PI)}
+\DoxyCodeLine{136                         r -\/= MathUtils.PI2;}
+\DoxyCodeLine{137                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (r < -\/MathUtils.PI) r += MathUtils.PI2;}
+\DoxyCodeLine{138                     r = by + (r + offsetShearY) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{139                     \textcolor{keywordtype}{float} s = (float)Math.Sqrt(b * b + d * d);}
+\DoxyCodeLine{140                     bone.b = MathUtils.Cos(r) * s;}
+\DoxyCodeLine{141                     bone.d = MathUtils.Sin(r) * s;}
+\DoxyCodeLine{142                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{143                 \}}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145                 \textcolor{keywordflow}{if} (modified) bone.appliedValid = \textcolor{keyword}{false};}
+\DoxyCodeLine{146             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a454117a6966c2668bcc06e571195b4f3}\label{class_spine_1_1_transform_constraint_a454117a6966c2668bcc06e571195b4f3}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ApplyRelativeLocal@{ApplyRelativeLocal}}
+\index{ApplyRelativeLocal@{ApplyRelativeLocal}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ApplyRelativeLocal()}{ApplyRelativeLocal()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Apply\+Relative\+Local (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 248 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{249                                    \{}
+\DoxyCodeLine{250             \textcolor{keywordtype}{float} rotateMix = this.rotateMix, \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{251             Bone target = this.target;}
+\DoxyCodeLine{252             \textcolor{keywordflow}{if} (!target.appliedValid) target.UpdateAppliedTransform();}
+\DoxyCodeLine{253             var bonesItems = this.bones.Items;}
+\DoxyCodeLine{254             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = this.bones.Count; i < n; i++) \{}
+\DoxyCodeLine{255                 Bone bone = bonesItems[i];}
+\DoxyCodeLine{256                 \textcolor{keywordflow}{if} (!bone.appliedValid) bone.UpdateAppliedTransform();}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258                 \textcolor{keywordtype}{float} rotation = bone.arotation;}
+\DoxyCodeLine{259                 \textcolor{keywordflow}{if} (rotateMix != 0) rotation += (target.arotation + data.offsetRotation) * rotateMix;}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261                 \textcolor{keywordtype}{float} x = bone.ax, y = bone.ay;}
+\DoxyCodeLine{262                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} != 0) \{}
+\DoxyCodeLine{263                     x += (target.ax + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a1c24fe0a13a76741dd304aa9f6d2d9c0}{offsetX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{264                     y += (target.ay + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a7e65faa6f30c0eb39134e147ec382a01}{offsetY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{265                 \}}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267                 \textcolor{keywordtype}{float} scaleX = bone.ascaleX, scaleY = bone.ascaleY;}
+\DoxyCodeLine{268                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} > 0) \{}
+\DoxyCodeLine{269                     \textcolor{keywordflow}{if} (scaleX > 0.00001f) scaleX *= ((target.ascaleX -\/ 1 + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6ea9066bd6a70d89e037c8989fe5a843}{offsetScaleX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) + 1;}
+\DoxyCodeLine{270                     \textcolor{keywordflow}{if} (scaleY > 0.00001f) scaleY *= ((target.ascaleY -\/ 1 + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6b42c5f5f7821b702bd07e58ca4afacb}{offsetScaleY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}) + 1;}
+\DoxyCodeLine{271                 \}}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273                 \textcolor{keywordtype}{float} shearY = bone.ashearY;}
+\DoxyCodeLine{274                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} > 0) shearY += (target.ashearY + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a922b954fe5c2bc7a58149dfb77fa6c5a}{offsetShearY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276                 bone.UpdateWorldTransform(x, y, rotation, scaleX, scaleY, bone.ashearX, shearY);}
+\DoxyCodeLine{277             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a7f3667042018db294f8053cbb24a94d8}\label{class_spine_1_1_transform_constraint_a7f3667042018db294f8053cbb24a94d8}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ApplyRelativeWorld@{ApplyRelativeWorld}}
+\index{ApplyRelativeWorld@{ApplyRelativeWorld}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ApplyRelativeWorld()}{ApplyRelativeWorld()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Apply\+Relative\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 148 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149                                    \{}
+\DoxyCodeLine{150             \textcolor{keywordtype}{float} rotateMix = this.rotateMix, \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}, \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} = this.\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{151             Bone target = this.target;}
+\DoxyCodeLine{152             \textcolor{keywordtype}{float} ta = target.a, tb = target.b, tc = target.c, td = target.d;}
+\DoxyCodeLine{153             \textcolor{keywordtype}{float} degRadReflect = ta * td -\/ tb * tc > 0 ? MathUtils.DegRad : -\/MathUtils.DegRad;}
+\DoxyCodeLine{154             \textcolor{keywordtype}{float} offsetRotation = data.offsetRotation * degRadReflect, offsetShearY = data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a922b954fe5c2bc7a58149dfb77fa6c5a}{offsetShearY}} * degRadReflect;}
+\DoxyCodeLine{155             var bones = this.bones;}
+\DoxyCodeLine{156             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++) \{}
+\DoxyCodeLine{157                 Bone bone = bones.Items[i];}
+\DoxyCodeLine{158                 \textcolor{keywordtype}{bool} modified = \textcolor{keyword}{false};}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160                 \textcolor{keywordflow}{if} (rotateMix != 0) \{}
+\DoxyCodeLine{161                     \textcolor{keywordtype}{float} a = bone.a, b = bone.b, c = bone.c, d = bone.d;}
+\DoxyCodeLine{162                     \textcolor{keywordtype}{float} r = MathUtils.Atan2(tc, ta) + offsetRotation;}
+\DoxyCodeLine{163                     \textcolor{keywordflow}{if} (r > MathUtils.PI)}
+\DoxyCodeLine{164                         r -\/= MathUtils.PI2;}
+\DoxyCodeLine{165                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (r < -\/MathUtils.PI) r += MathUtils.PI2;}
+\DoxyCodeLine{166                     r *= rotateMix;}
+\DoxyCodeLine{167                     \textcolor{keywordtype}{float} cos = MathUtils.Cos(r), sin = MathUtils.Sin(r);}
+\DoxyCodeLine{168                     bone.a = cos * a -\/ sin * c;}
+\DoxyCodeLine{169                     bone.b = cos * b -\/ sin * d;}
+\DoxyCodeLine{170                     bone.c = sin * a + cos * c;}
+\DoxyCodeLine{171                     bone.d = sin * b + cos * d;}
+\DoxyCodeLine{172                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{173                 \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} != 0) \{}
+\DoxyCodeLine{176                     \textcolor{keywordtype}{float} tx, ty; \textcolor{comment}{//Vector2 temp = this.temp;}}
+\DoxyCodeLine{177                     target.LocalToWorld(data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a1c24fe0a13a76741dd304aa9f6d2d9c0}{offsetX}}, data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a7e65faa6f30c0eb39134e147ec382a01}{offsetY}}, out tx, out ty); \textcolor{comment}{//target.localToWorld(temp.set(data.offsetX, data.offsetY));}}
+\DoxyCodeLine{178                     bone.worldX += tx * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{179                     bone.worldY += ty * \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}};}
+\DoxyCodeLine{180                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{181                 \}}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} > 0) \{}
+\DoxyCodeLine{184                     \textcolor{keywordtype}{float} s = ((float)Math.Sqrt(ta * ta + tc * tc) -\/ 1 + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6ea9066bd6a70d89e037c8989fe5a843}{offsetScaleX}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} + 1;}
+\DoxyCodeLine{185                     bone.a *= s;}
+\DoxyCodeLine{186                     bone.c *= s;}
+\DoxyCodeLine{187                     s = ((float)Math.Sqrt(tb * tb + td * td) -\/ 1 + data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a6b42c5f5f7821b702bd07e58ca4afacb}{offsetScaleY}}) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} + 1;}
+\DoxyCodeLine{188                     bone.b *= s;}
+\DoxyCodeLine{189                     bone.d *= s;}
+\DoxyCodeLine{190                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{191                 \}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}} > 0) \{}
+\DoxyCodeLine{194                     \textcolor{keywordtype}{float} r = MathUtils.Atan2(td, tb) -\/ MathUtils.Atan2(tc, ta);}
+\DoxyCodeLine{195                     \textcolor{keywordflow}{if} (r > MathUtils.PI)}
+\DoxyCodeLine{196                         r -\/= MathUtils.PI2;}
+\DoxyCodeLine{197                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (r < -\/MathUtils.PI) r += MathUtils.PI2;}
+\DoxyCodeLine{198                     \textcolor{keywordtype}{float} b = bone.b, d = bone.d;}
+\DoxyCodeLine{199                     r = MathUtils.Atan2(d, b) + (r -\/ MathUtils.PI / 2 + offsetShearY) * \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}{shearMix}};}
+\DoxyCodeLine{200                     \textcolor{keywordtype}{float} s = (float)Math.Sqrt(b * b + d * d);}
+\DoxyCodeLine{201                     bone.b = MathUtils.Cos(r) * s;}
+\DoxyCodeLine{202                     bone.d = MathUtils.Sin(r) * s;}
+\DoxyCodeLine{203                     modified = \textcolor{keyword}{true};}
+\DoxyCodeLine{204                 \}}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206                 \textcolor{keywordflow}{if} (modified) bone.appliedValid = \textcolor{keyword}{false};}
+\DoxyCodeLine{207             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_ad3a64f495ff18afce48a6f502f830618}\label{class_spine_1_1_transform_constraint_ad3a64f495ff18afce48a6f502f830618}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Transform\+Constraint.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Transform\+Constraint.\+cs 파일의 279 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{280                                            \{}
+\DoxyCodeLine{281             \textcolor{keywordflow}{return} data.name;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_aae86c5f4517de6fe45671f7edb8864dc}\label{class_spine_1_1_transform_constraint_aae86c5f4517de6fe45671f7edb8864dc}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Update@{Update}}
+\index{Update@{Update}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Transform\+Constraint.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_i_updatable_af75ae5ed7483a4734dc1ee40b825ab77}{Spine.\+I\+Updatable}}를 구현.
+
+
+
+Transform\+Constraint.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                               \{}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{class_spine_1_1_transform_constraint_data_a51dba56a458c6a5ae9b0109ae39f7e98}{local}}) \{}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{if} (data.relative)}
+\DoxyCodeLine{72                     \mbox{\hyperlink{class_spine_1_1_transform_constraint_a454117a6966c2668bcc06e571195b4f3}{ApplyRelativeLocal}}();}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{74                     \mbox{\hyperlink{class_spine_1_1_transform_constraint_a1b7a1fbc22ddc91b961b8d188ac3f9e3}{ApplyAbsoluteLocal}}();}
+\DoxyCodeLine{75             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{if} (data.relative)}
+\DoxyCodeLine{77                     \mbox{\hyperlink{class_spine_1_1_transform_constraint_a7f3667042018db294f8053cbb24a94d8}{ApplyRelativeWorld}}();}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{79                     \mbox{\hyperlink{class_spine_1_1_transform_constraint_abf5166c6e4980f9dd325b58490cae98f}{ApplyAbsoluteWorld}}();}
+\DoxyCodeLine{80             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}\label{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!scaleMix@{scaleMix}}
+\index{scaleMix@{scaleMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{scaleMix}{scaleMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+scale\+Mix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}\label{class_spine_1_1_transform_constraint_ad67252f83868a0ee83890067fabf500e}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!shearMix@{shearMix}}
+\index{shearMix@{shearMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{shearMix}{shearMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+shear\+Mix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}\label{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!translateMix@{translateMix}}
+\index{translateMix@{translateMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{translateMix}{translateMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+translate\+Mix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_ae0040d8bfcf8238a75c576546daa9c17}\label{class_spine_1_1_transform_constraint_ae0040d8bfcf8238a75c576546daa9c17}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}$>$ Spine.\+Transform\+Constraint.\+Bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data.order; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a924ea1b33938d4e9bcc438d699b6c96a}\label{class_spine_1_1_transform_constraint_a924ea1b33938d4e9bcc438d699b6c96a}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Data@{Data}}
+\index{Data@{Data}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_transform_constraint_data}{Transform\+Constraint\+Data}} Spine.\+Transform\+Constraint.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a0532233c310cf4c722a2ec0d11cb5abd}\label{class_spine_1_1_transform_constraint_a0532233c310cf4c722a2ec0d11cb5abd}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Order@{Order}}
+\index{Order@{Order}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily int Spine.\+Transform\+Constraint.\+Order\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_acc3c9c6d95778c4a4a7f95e7b326c866}\label{class_spine_1_1_transform_constraint_acc3c9c6d95778c4a4a7f95e7b326c866}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!RotateMix@{RotateMix}}
+\index{RotateMix@{RotateMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{RotateMix}{RotateMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+Rotate\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target; \} \textcolor{keyword}{set} \{ target = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a4437d61c47231457cb0b200e9179496b}\label{class_spine_1_1_transform_constraint_a4437d61c47231457cb0b200e9179496b}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ScaleMix@{ScaleMix}}
+\index{ScaleMix@{ScaleMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ScaleMix}{ScaleMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+Scale\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_transform_constraint_a29385dbfe3f5a7a9b8b2fb1e959c5a7c}{translateMix}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a9d4b19c77d9302846f64b947ec68c22b}\label{class_spine_1_1_transform_constraint_a9d4b19c77d9302846f64b947ec68c22b}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!ShearMix@{ShearMix}}
+\index{ShearMix@{ShearMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{ShearMix}{ShearMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+Shear\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_transform_constraint_ad226324c733cdf5067ed0ed11d07a1f5}{scaleMix}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a8ea9f23c1cafb4aeee2842a176615375}\label{class_spine_1_1_transform_constraint_a8ea9f23c1cafb4aeee2842a176615375}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!Target@{Target}}
+\index{Target@{Target}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Transform\+Constraint.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_transform_constraint_a47b1db766e466ab23414e7a8501dfff1}\label{class_spine_1_1_transform_constraint_a47b1db766e466ab23414e7a8501dfff1}} 
+\index{Spine.TransformConstraint@{Spine.TransformConstraint}!TranslateMix@{TranslateMix}}
+\index{TranslateMix@{TranslateMix}!Spine.TransformConstraint@{Spine.TransformConstraint}}
+\doxysubsubsection{\texorpdfstring{TranslateMix}{TranslateMix}}
+{\footnotesize\ttfamily float Spine.\+Transform\+Constraint.\+Translate\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Transform\+Constraint.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} rotateMix; \} \textcolor{keyword}{set} \{ rotateMix = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_transform_constraint_8cs}{Transform\+Constraint.\+cs}}\end{DoxyCompactItemize}

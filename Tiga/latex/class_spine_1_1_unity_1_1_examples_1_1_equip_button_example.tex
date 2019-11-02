@@ -1,0 +1,139 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Equip\+Button\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example}\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+
+
+Spine.\+Unity.\+Examples.\+Equip\+Button\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Equip\+Button\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example}{Equip\+Asset\+Example}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a76c94744c018b7919bea7c2e3b322286}{asset}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_system_example}{Equip\+System\+Example}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a0587702d090574f8513023d166c7404a}{equip\+System}}
+\item 
+Image \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a490c7fdccdd2132dd003cc65f60dc477}{inventory\+Image}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a51f24d32451b92c13fa4f1e5d72e0083}{On\+Validate}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a741e429c41e8aa6f4f02a39c89946aaf}{Match\+Image}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a1f732916a8097f5d92785d24c237735f}{Start}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Equip\+Button\+Example.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a741e429c41e8aa6f4f02a39c89946aaf}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a741e429c41e8aa6f4f02a39c89946aaf}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!MatchImage@{MatchImage}}
+\index{MatchImage@{MatchImage}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{MatchImage()}{MatchImage()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+Match\+Image (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17                            \{}
+\DoxyCodeLine{18             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a490c7fdccdd2132dd003cc65f60dc477}{inventoryImage}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{19                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a490c7fdccdd2132dd003cc65f60dc477}{inventoryImage}}.sprite = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a76c94744c018b7919bea7c2e3b322286}{asset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example_a50ce49ff29bfa5dabf01d23250b176f9}{sprite}};}
+\DoxyCodeLine{20         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a51f24d32451b92c13fa4f1e5d72e0083}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a51f24d32451b92c13fa4f1e5d72e0083}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!OnValidate@{OnValidate}}
+\index{OnValidate@{OnValidate}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{OnValidate()}{OnValidate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+On\+Validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                            \{}
+\DoxyCodeLine{14             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a741e429c41e8aa6f4f02a39c89946aaf}{MatchImage}}();}
+\DoxyCodeLine{15         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a1f732916a8097f5d92785d24c237735f}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a1f732916a8097f5d92785d24c237735f}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                       \{}
+\DoxyCodeLine{23             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a741e429c41e8aa6f4f02a39c89946aaf}{MatchImage}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25             var button = GetComponent<Button>();}
+\DoxyCodeLine{26             button.onClick.AddListener(}
+\DoxyCodeLine{27                 delegate \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a0587702d090574f8513023d166c7404a}{equipSystem}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_system_example_a080aa2407b434f94d29f346ef72b8fdd}{Equip}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a76c94744c018b7919bea7c2e3b322286}{asset}}); \}}
+\DoxyCodeLine{28             );  }
+\DoxyCodeLine{29         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a76c94744c018b7919bea7c2e3b322286}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a76c94744c018b7919bea7c2e3b322286}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!asset@{asset}}
+\index{asset@{asset}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{asset}{asset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example}{Equip\+Asset\+Example}} Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+asset}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a0587702d090574f8513023d166c7404a}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a0587702d090574f8513023d166c7404a}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!equipSystem@{equipSystem}}
+\index{equipSystem@{equipSystem}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{equipSystem}{equipSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equip_system_example}{Equip\+System\+Example}} Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+equip\+System}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a490c7fdccdd2132dd003cc65f60dc477}\label{class_spine_1_1_unity_1_1_examples_1_1_equip_button_example_a490c7fdccdd2132dd003cc65f60dc477}} 
+\index{Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}!inventoryImage@{inventoryImage}}
+\index{inventoryImage@{inventoryImage}!Spine.Unity.Examples.EquipButtonExample@{Spine.Unity.Examples.EquipButtonExample}}
+\doxysubsubsection{\texorpdfstring{inventoryImage}{inventoryImage}}
+{\footnotesize\ttfamily Image Spine.\+Unity.\+Examples.\+Equip\+Button\+Example.\+inventory\+Image}
+
+
+
+Equip\+Button\+Example.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Mix and Match Character Customize/\mbox{\hyperlink{_equip_button_example_8cs}{Equip\+Button\+Example.\+cs}}\end{DoxyCompactItemize}

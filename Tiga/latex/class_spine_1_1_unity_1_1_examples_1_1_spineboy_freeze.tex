@@ -1,0 +1,222 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze}{}\doxysection{Spine.\+Unity.\+Examples.\+Spineboy\+Freeze 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze}\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Freeze에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Freeze에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_af581aab5cb04657b9fb2876b6cd99fcf}{skeleton\+Animation}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a320715a061c203a58dda3e9e47af5824}{freeze}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a4e6d61aea97b9e443d4d47cefe3038ce}{idle}}
+\item 
+Color \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a88b6648b673b3f3f8e2026420d0c1dc6}{freeze\+Color}}
+\item 
+Color \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aae45a4ab69c60763b5d2fd47b01388f6}{freeze\+Black\+Color}}
+\item 
+Particle\+System \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}{particles}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_acb5f0094b0c32c99b8f48850809da816}{freeze\+Point}} = 0.\+5f
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6459d9ca580875485dcb67eb34e82a3d}{color\+Property}} = \char`\"{}\+\_\+\+Color\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a923afce25766cbee372235eaca7938e6}{black\+Tint\+Property}} = \char`\"{}\+\_\+\+Black\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aec00bb6a78114cd5bbdc1877b90108d7}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Material\+Property\+Block \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}{mesh\+Renderer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spineboy\+Freeze.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aec00bb6a78114cd5bbdc1877b90108d7}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aec00bb6a78114cd5bbdc1877b90108d7}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                              \{}
+\DoxyCodeLine{24             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}} = \textcolor{keyword}{new} MaterialPropertyBlock();}
+\DoxyCodeLine{25             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}{meshRenderer}} = GetComponent<MeshRenderer>();}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}{particles}}.Stop();}
+\DoxyCodeLine{28             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}{particles}}.Clear();}
+\DoxyCodeLine{29             var main = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}{particles}}.main;}
+\DoxyCodeLine{30             main.loop = \textcolor{keyword}{false};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32             var state = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_af581aab5cb04657b9fb2876b6cd99fcf}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}};}
+\DoxyCodeLine{33             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1f);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37                 \textcolor{comment}{// Play freeze animation}}
+\DoxyCodeLine{38                 state.SetAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a320715a061c203a58dda3e9e47af5824}{freeze}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{39                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_acb5f0094b0c32c99b8f48850809da816}{freezePoint}});}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41                 \textcolor{comment}{// Freeze effects}}
+\DoxyCodeLine{42                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}{particles}}.Play();}
+\DoxyCodeLine{43                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6459d9ca580875485dcb67eb34e82a3d}{colorProperty}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a88b6648b673b3f3f8e2026420d0c1dc6}{freezeColor}});}
+\DoxyCodeLine{44                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a923afce25766cbee372235eaca7938e6}{blackTintProperty}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aae45a4ab69c60763b5d2fd47b01388f6}{freezeBlackColor}});}
+\DoxyCodeLine{45                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}{meshRenderer}}.SetPropertyBlock(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(2f);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50                 \textcolor{comment}{// Return to Idle}}
+\DoxyCodeLine{51                 state.SetAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a4e6d61aea97b9e443d4d47cefe3038ce}{idle}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{52                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6459d9ca580875485dcb67eb34e82a3d}{colorProperty}}, Color.white);}
+\DoxyCodeLine{53                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a923afce25766cbee372235eaca7938e6}{blackTintProperty}}, Color.black);}
+\DoxyCodeLine{54                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}{meshRenderer}}.SetPropertyBlock(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}{block}});}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{58             \}}
+\DoxyCodeLine{59         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a923afce25766cbee372235eaca7938e6}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a923afce25766cbee372235eaca7938e6}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!blackTintProperty@{blackTintProperty}}
+\index{blackTintProperty@{blackTintProperty}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{blackTintProperty}{blackTintProperty}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+black\+Tint\+Property = \char`\"{}\+\_\+\+Black\char`\"{}}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6886ff09c51d1fe0be689245df32e747}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!block@{block}}
+\index{block@{block}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily Material\+Property\+Block Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+block\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 20 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6459d9ca580875485dcb67eb34e82a3d}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a6459d9ca580875485dcb67eb34e82a3d}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!colorProperty@{colorProperty}}
+\index{colorProperty@{colorProperty}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{colorProperty}{colorProperty}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+color\+Property = \char`\"{}\+\_\+\+Color\char`\"{}}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a320715a061c203a58dda3e9e47af5824}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a320715a061c203a58dda3e9e47af5824}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!freeze@{freeze}}
+\index{freeze@{freeze}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{freeze}{freeze}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+freeze}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aae45a4ab69c60763b5d2fd47b01388f6}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_aae45a4ab69c60763b5d2fd47b01388f6}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!freezeBlackColor@{freezeBlackColor}}
+\index{freezeBlackColor@{freezeBlackColor}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{freezeBlackColor}{freezeBlackColor}}
+{\footnotesize\ttfamily Color Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+freeze\+Black\+Color}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a88b6648b673b3f3f8e2026420d0c1dc6}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a88b6648b673b3f3f8e2026420d0c1dc6}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!freezeColor@{freezeColor}}
+\index{freezeColor@{freezeColor}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{freezeColor}{freezeColor}}
+{\footnotesize\ttfamily Color Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+freeze\+Color}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_acb5f0094b0c32c99b8f48850809da816}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_acb5f0094b0c32c99b8f48850809da816}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!freezePoint@{freezePoint}}
+\index{freezePoint@{freezePoint}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{freezePoint}{freezePoint}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+freeze\+Point = 0.\+5f}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a4e6d61aea97b9e443d4d47cefe3038ce}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a4e6d61aea97b9e443d4d47cefe3038ce}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!idle@{idle}}
+\index{idle@{idle}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{idle}{idle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+idle}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_ad7dd008f50bcbda9629baf9570da2237}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!meshRenderer@{meshRenderer}}
+\index{meshRenderer@{meshRenderer}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{meshRenderer}{meshRenderer}}
+{\footnotesize\ttfamily Mesh\+Renderer Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+mesh\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_a77445278fbc2a22bf5aad41af3a9662a}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!particles@{particles}}
+\index{particles@{particles}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{particles}{particles}}
+{\footnotesize\ttfamily Particle\+System Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+particles}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 14 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_af581aab5cb04657b9fb2876b6cd99fcf}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_af581aab5cb04657b9fb2876b6cd99fcf}} 
+\index{Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.SpineboyFreeze@{Spine.Unity.Examples.SpineboyFreeze}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Spineboy\+Freeze.\+skeleton\+Animation}
+
+
+
+Spineboy\+Freeze.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spineboy_freeze_8cs}{Spineboy\+Freeze.\+cs}}\end{DoxyCompactItemize}

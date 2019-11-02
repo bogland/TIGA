@@ -1,0 +1,14 @@
+digraph "Spine.Unity.Editor.SkeletonBaker.ParseAttachmentTimeline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lBaker.ParseAttachmentTimeline",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Editor.Skeleton\lBaker.ExtractAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#aa02465ccf8934b9b6c1a9a5c887e2853",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Editor.Skeleton\lBaker.BakeToPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#a5854a66f32f7c58d0d35abe10e570cbb",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.Editor.Skeleton\lBakingWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window.html#a7e83d787166c9dc42cc9e9ced4f74ae3",tooltip=" "];
+}

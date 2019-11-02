@@ -1,0 +1,279 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example}\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+
+
+Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_af54add3e73df730f5ba9292f0c180afd}{idle\+Animation}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2247cd648512564c1886e981a96da01e}{attack\+Animation}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_adc6ec08754cf47c459d9cb1d3877f4da}{move\+Animation}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5d4ace240f9202eb352a37e623184d6d}{eyes\+Slot}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ade247fe60e561b1479991cc5d6f563d5}{eyes\+Open\+Attachment}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6fd0732611ec925bc74fd0a6cc244399}{blink\+Attachment}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a194f8b0e13d22cbba8fb14db5b0791e4}{blink\+Duration}} = 0.\+05f
+\item 
+Key\+Code \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ab794ae2a62acba1d7f970efb8de48ca6}{attack\+Key}} = Key\+Code.\+Mouse0
+\item 
+Key\+Code \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a7401431fb0a4a020ca7a7612993557ab}{right\+Key}} = Key\+Code.\+D
+\item 
+Key\+Code \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0d9f705c0b431e89af6d05f3d96dd2b5}{left\+Key}} = Key\+Code.\+A
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a954826357554a2c15b26f4143117c9b6}{move\+Speed}} = 3
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6bce142a18c316405691e15a29e86587}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ac3b80e21831ca683f04c034380dcc3fa}{Apply}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} skeleton\+Renderer)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5555289600cd347fd6ac4778f137ff67}{Update}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0ed2713f9ffd75fbb3656da357bfeb99}{Blink}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeleton\+Animation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Foot\+Soldier\+Example.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ac3b80e21831ca683f04c034380dcc3fa}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ac3b80e21831ca683f04c034380dcc3fa}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{skeleton\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                        \{}
+\DoxyCodeLine{74             StartCoroutine(\textcolor{stringliteral}{"Blink"});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6bce142a18c316405691e15a29e86587}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6bce142a18c316405691e15a29e86587}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                       \{}
+\DoxyCodeLine{69             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}} = GetComponent<SkeletonAnimation>();}
+\DoxyCodeLine{70             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ac3b80e21831ca683f04c034380dcc3fa}{Apply}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0ed2713f9ffd75fbb3656da357bfeb99}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0ed2713f9ffd75fbb3656da357bfeb99}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!Blink@{Blink}}
+\index{Blink@{Blink}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{Blink()}{Blink()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+Blink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 94 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                             \{}
+\DoxyCodeLine{96             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{97                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(Random.Range(0.25f, 3f));}
+\DoxyCodeLine{98                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a37c49ddd794a12ea5cda13ef8dc5ff46}{SetAttachment}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5d4ace240f9202eb352a37e623184d6d}{eyesSlot}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6fd0732611ec925bc74fd0a6cc244399}{blinkAttachment}});}
+\DoxyCodeLine{99                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a194f8b0e13d22cbba8fb14db5b0791e4}{blinkDuration}});}
+\DoxyCodeLine{100                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a37c49ddd794a12ea5cda13ef8dc5ff46}{SetAttachment}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5d4ace240f9202eb352a37e623184d6d}{eyesSlot}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ade247fe60e561b1479991cc5d6f563d5}{eyesOpenAttachment}});}
+\DoxyCodeLine{101             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5555289600cd347fd6ac4778f137ff67}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5555289600cd347fd6ac4778f137ff67}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                        \{}
+\DoxyCodeLine{78             \textcolor{keywordflow}{if} (Input.GetKey(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ab794ae2a62acba1d7f970efb8de48ca6}{attackKey}})) \{}
+\DoxyCodeLine{79                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a6b33c77f977b151431f5678bbbbcd664}{AnimationName}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2247cd648512564c1886e981a96da01e}{attackAnimation}};}
+\DoxyCodeLine{80             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (Input.GetKey(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a7401431fb0a4a020ca7a7612993557ab}{rightKey}})) \{}
+\DoxyCodeLine{82                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a6b33c77f977b151431f5678bbbbcd664}{AnimationName}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_adc6ec08754cf47c459d9cb1d3877f4da}{moveAnimation}};}
+\DoxyCodeLine{83                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}{FlipX}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{84                     transform.Translate(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a954826357554a2c15b26f4143117c9b6}{moveSpeed}} * Time.deltaTime, 0, 0);}
+\DoxyCodeLine{85                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(Input.GetKey(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0d9f705c0b431e89af6d05f3d96dd2b5}{leftKey}})) \{}
+\DoxyCodeLine{86                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a6b33c77f977b151431f5678bbbbcd664}{AnimationName}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_adc6ec08754cf47c459d9cb1d3877f4da}{moveAnimation}};}
+\DoxyCodeLine{87                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}{FlipX}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{88                     transform.Translate(-\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a954826357554a2c15b26f4143117c9b6}{moveSpeed}} * Time.deltaTime, 0, 0);}
+\DoxyCodeLine{89                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{90                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a6b33c77f977b151431f5678bbbbcd664}{AnimationName}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_af54add3e73df730f5ba9292f0c180afd}{idleAnimation}};}
+\DoxyCodeLine{91                 \}}
+\DoxyCodeLine{92             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2247cd648512564c1886e981a96da01e}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2247cd648512564c1886e981a96da01e}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!attackAnimation@{attackAnimation}}
+\index{attackAnimation@{attackAnimation}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{attackAnimation}{attackAnimation}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+attack\+Animation}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ab794ae2a62acba1d7f970efb8de48ca6}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ab794ae2a62acba1d7f970efb8de48ca6}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!attackKey@{attackKey}}
+\index{attackKey@{attackKey}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{attackKey}{attackKey}}
+{\footnotesize\ttfamily Key\+Code Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+attack\+Key = Key\+Code.\+Mouse0}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6fd0732611ec925bc74fd0a6cc244399}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a6fd0732611ec925bc74fd0a6cc244399}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!blinkAttachment@{blinkAttachment}}
+\index{blinkAttachment@{blinkAttachment}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{blinkAttachment}{blinkAttachment}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+blink\+Attachment}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a194f8b0e13d22cbba8fb14db5b0791e4}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a194f8b0e13d22cbba8fb14db5b0791e4}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!blinkDuration@{blinkDuration}}
+\index{blinkDuration@{blinkDuration}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{blinkDuration}{blinkDuration}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+blink\+Duration = 0.\+05f}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ade247fe60e561b1479991cc5d6f563d5}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_ade247fe60e561b1479991cc5d6f563d5}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!eyesOpenAttachment@{eyesOpenAttachment}}
+\index{eyesOpenAttachment@{eyesOpenAttachment}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{eyesOpenAttachment}{eyesOpenAttachment}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+eyes\+Open\+Attachment}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5d4ace240f9202eb352a37e623184d6d}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a5d4ace240f9202eb352a37e623184d6d}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!eyesSlot@{eyesSlot}}
+\index{eyesSlot@{eyesSlot}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{eyesSlot}{eyesSlot}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+eyes\+Slot}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_af54add3e73df730f5ba9292f0c180afd}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_af54add3e73df730f5ba9292f0c180afd}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!idleAnimation@{idleAnimation}}
+\index{idleAnimation@{idleAnimation}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{idleAnimation}{idleAnimation}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+idle\+Animation}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0d9f705c0b431e89af6d05f3d96dd2b5}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a0d9f705c0b431e89af6d05f3d96dd2b5}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!leftKey@{leftKey}}
+\index{leftKey@{leftKey}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{leftKey}{leftKey}}
+{\footnotesize\ttfamily Key\+Code Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+left\+Key = Key\+Code.\+A}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_adc6ec08754cf47c459d9cb1d3877f4da}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_adc6ec08754cf47c459d9cb1d3877f4da}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!moveAnimation@{moveAnimation}}
+\index{moveAnimation@{moveAnimation}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{moveAnimation}{moveAnimation}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+move\+Animation}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a954826357554a2c15b26f4143117c9b6}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a954826357554a2c15b26f4143117c9b6}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!moveSpeed@{moveSpeed}}
+\index{moveSpeed@{moveSpeed}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{moveSpeed}{moveSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+move\+Speed = 3}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a7401431fb0a4a020ca7a7612993557ab}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a7401431fb0a4a020ca7a7612993557ab}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!rightKey@{rightKey}}
+\index{rightKey@{rightKey}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{rightKey}{rightKey}}
+{\footnotesize\ttfamily Key\+Code Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+right\+Key = Key\+Code.\+D}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}\label{class_spine_1_1_unity_1_1_examples_1_1_foot_soldier_example_a2d24308b3b0c12275d4c2eabb58dd894}} 
+\index{Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.FootSoldierExample@{Spine.Unity.Examples.FootSoldierExample}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Foot\+Soldier\+Example.\+skeleton\+Animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Foot\+Soldier\+Example.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_foot_soldier_example_8cs}{Foot\+Soldier\+Example.\+cs}}\end{DoxyCompactItemize}

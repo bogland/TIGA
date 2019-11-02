@@ -1,0 +1,12 @@
+digraph "Spine.Unity.Examples.BoneLocalOverride.Awake"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Bone\lLocalOverride.Awake",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Examples.Bone\lLocalOverride.OverrideLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_bone_local_override.html#a0f0f9fdfddb98a5f9ef49cf895a46349",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Skeleton.FindBone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666",tooltip="May be null."];
+}

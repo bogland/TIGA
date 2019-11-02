@@ -1,0 +1,413 @@
+\hypertarget{class_spine_1_1_bone_data}{}\doxysection{Spine.\+Bone\+Data 클래스 참조}
+\label{class_spine_1_1_bone_data}\index{Spine.BoneData@{Spine.BoneData}}
+
+
+Spine.\+Bone\+Data에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone_data_ad30e2c651b096fea44f7006b28bc5c83}{Bone\+Data}} (int index, string name, \mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} parent)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyParams}{매개변수}
+{\em parent} & May be null.\\
+\hline
+\end{DoxyParams}
+\end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_spine_1_1_bone_data_a8a7d0515ee37a60cf362ae6865260228}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_bone_data_a7379db786b19dbeabaadf3c3f373d0e1}{Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The index of the bone in \mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Skeleton.\+Bones}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of the bone, which is unique within the skeleton. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} \mbox{\hyperlink{class_spine_1_1_bone_data_ade206a49ecef2aa7f724867c1d918b45}{Parent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em May be null. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a70e065fd258060e337536d086bd44e19}{Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a904249dbb0be11f3e8b0156a7f504566}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local X translation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a40568774979340d29d188f0fb7e6d039}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local Y translation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_afc399c01b18612e4741b645a328c4727}{Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local rotation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_af9256615d23b57edde7bb435e1b75fd9}{ScaleX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local scaleX. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a7b76bed0929216bae2f83f33181de9b5}{ScaleY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local scaleY. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_aa3df5d6bdbb847133ea930eb1e7117c9}{ShearX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local shearX. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a93cd9a5aace82e0f986da69e5a081825}{ShearY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Local shearY. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}} \mbox{\hyperlink{class_spine_1_1_bone_data_a619e058d986b406082cdf54095f98c0c}{Transform\+Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The transform mode for how parent world transforms affect this bone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a388233f50f0f3748b7fd3884221ee2c4}{y}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_aaa2add3a2fbb46bdceec741a31d98f12}{rotation}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a64c34b8d2e3d015bff97136643adcbfc}{scaleX}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a5d17031b4a23f1faa5adb689618560b8}{scaleY}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a204bf4ff0cddf699a215fa517f7c9a45}{shearX}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_bone_data_a9e1e7304e1352c3a45b81efbe34b26e9}{shearY}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Bone\+Data.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_ad30e2c651b096fea44f7006b28bc5c83}\label{class_spine_1_1_bone_data_ad30e2c651b096fea44f7006b28bc5c83}} 
+\index{Spine.BoneData@{Spine.BoneData}!BoneData@{BoneData}}
+\index{BoneData@{BoneData}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{BoneData()}{BoneData()}}
+{\footnotesize\ttfamily Spine.\+Bone\+Data.\+Bone\+Data (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}}}]{parent }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyParams}{매개변수}
+{\em parent} & May be null.\\
+\hline
+\end{DoxyParams}
+
+
+
+
+Bone\+Data.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                                                   \{}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (index < 0) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"index must be >= 0"}, \textcolor{stringliteral}{"index"});}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (name == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"name"}, \textcolor{stringliteral}{"name cannot be null."});}
+\DoxyCodeLine{81             this.index = index;}
+\DoxyCodeLine{82             this.name = name;}
+\DoxyCodeLine{83             this.parent = parent;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a8a7d0515ee37a60cf362ae6865260228}\label{class_spine_1_1_bone_data_a8a7d0515ee37a60cf362ae6865260228}} 
+\index{Spine.BoneData@{Spine.BoneData}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Bone\+Data.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bone\+Data.\+cs 파일의 85 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{86                                            \{}
+\DoxyCodeLine{87             \textcolor{keywordflow}{return} name;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_aaa2add3a2fbb46bdceec741a31d98f12}\label{class_spine_1_1_bone_data_aaa2add3a2fbb46bdceec741a31d98f12}} 
+\index{Spine.BoneData@{Spine.BoneData}!rotation@{rotation}}
+\index{rotation@{rotation}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a64c34b8d2e3d015bff97136643adcbfc}\label{class_spine_1_1_bone_data_a64c34b8d2e3d015bff97136643adcbfc}} 
+\index{Spine.BoneData@{Spine.BoneData}!scaleX@{scaleX}}
+\index{scaleX@{scaleX}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{scaleX}{scaleX}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+scaleX = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a5d17031b4a23f1faa5adb689618560b8}\label{class_spine_1_1_bone_data_a5d17031b4a23f1faa5adb689618560b8}} 
+\index{Spine.BoneData@{Spine.BoneData}!scaleY@{scaleY}}
+\index{scaleY@{scaleY}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{scaleY}{scaleY}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+scaleY = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a204bf4ff0cddf699a215fa517f7c9a45}\label{class_spine_1_1_bone_data_a204bf4ff0cddf699a215fa517f7c9a45}} 
+\index{Spine.BoneData@{Spine.BoneData}!shearX@{shearX}}
+\index{shearX@{shearX}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{shearX}{shearX}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+shearX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a9e1e7304e1352c3a45b81efbe34b26e9}\label{class_spine_1_1_bone_data_a9e1e7304e1352c3a45b81efbe34b26e9}} 
+\index{Spine.BoneData@{Spine.BoneData}!shearY@{shearY}}
+\index{shearY@{shearY}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{shearY}{shearY}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+shearY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a388233f50f0f3748b7fd3884221ee2c4}\label{class_spine_1_1_bone_data_a388233f50f0f3748b7fd3884221ee2c4}} 
+\index{Spine.BoneData@{Spine.BoneData}!y@{y}}
+\index{y@{y}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a7379db786b19dbeabaadf3c3f373d0e1}\label{class_spine_1_1_bone_data_a7379db786b19dbeabaadf3c3f373d0e1}} 
+\index{Spine.BoneData@{Spine.BoneData}!Index@{Index}}
+\index{Index@{Index}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Index}{Index}}
+{\footnotesize\ttfamily int Spine.\+Bone\+Data.\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The index of the bone in \mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Skeleton.\+Bones}} 
+
+
+
+Bone\+Data.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} index; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a70e065fd258060e337536d086bd44e19}\label{class_spine_1_1_bone_data_a70e065fd258060e337536d086bd44e19}} 
+\index{Spine.BoneData@{Spine.BoneData}!Length@{Length}}
+\index{Length@{Length}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Length}{Length}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Bone\+Data.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} length; \} \textcolor{keyword}{set} \{ length = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}\label{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}} 
+\index{Spine.BoneData@{Spine.BoneData}!Name@{Name}}
+\index{Name@{Name}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Spine.\+Bone\+Data.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The name of the bone, which is unique within the skeleton. 
+
+
+
+Bone\+Data.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} name; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_ade206a49ecef2aa7f724867c1d918b45}\label{class_spine_1_1_bone_data_ade206a49ecef2aa7f724867c1d918b45}} 
+\index{Spine.BoneData@{Spine.BoneData}!Parent@{Parent}}
+\index{Parent@{Parent}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Parent}{Parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} Spine.\+Bone\+Data.\+Parent\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+May be null. 
+
+
+
+Bone\+Data.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} parent; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_afc399c01b18612e4741b645a328c4727}\label{class_spine_1_1_bone_data_afc399c01b18612e4741b645a328c4727}} 
+\index{Spine.BoneData@{Spine.BoneData}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local rotation. 
+
+
+
+Bone\+Data.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_aaa2add3a2fbb46bdceec741a31d98f12}{rotation}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_aaa2add3a2fbb46bdceec741a31d98f12}{rotation}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_af9256615d23b57edde7bb435e1b75fd9}\label{class_spine_1_1_bone_data_af9256615d23b57edde7bb435e1b75fd9}} 
+\index{Spine.BoneData@{Spine.BoneData}!ScaleX@{ScaleX}}
+\index{ScaleX@{ScaleX}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{ScaleX}{ScaleX}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+ScaleX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local scaleX. 
+
+
+
+Bone\+Data.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_a64c34b8d2e3d015bff97136643adcbfc}{scaleX}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_a64c34b8d2e3d015bff97136643adcbfc}{scaleX}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a7b76bed0929216bae2f83f33181de9b5}\label{class_spine_1_1_bone_data_a7b76bed0929216bae2f83f33181de9b5}} 
+\index{Spine.BoneData@{Spine.BoneData}!ScaleY@{ScaleY}}
+\index{ScaleY@{ScaleY}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{ScaleY}{ScaleY}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+ScaleY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local scaleY. 
+
+
+
+Bone\+Data.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_a5d17031b4a23f1faa5adb689618560b8}{scaleY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_a5d17031b4a23f1faa5adb689618560b8}{scaleY}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_aa3df5d6bdbb847133ea930eb1e7117c9}\label{class_spine_1_1_bone_data_aa3df5d6bdbb847133ea930eb1e7117c9}} 
+\index{Spine.BoneData@{Spine.BoneData}!ShearX@{ShearX}}
+\index{ShearX@{ShearX}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{ShearX}{ShearX}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+ShearX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local shearX. 
+
+
+
+Bone\+Data.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_a204bf4ff0cddf699a215fa517f7c9a45}{shearX}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_a204bf4ff0cddf699a215fa517f7c9a45}{shearX}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a93cd9a5aace82e0f986da69e5a081825}\label{class_spine_1_1_bone_data_a93cd9a5aace82e0f986da69e5a081825}} 
+\index{Spine.BoneData@{Spine.BoneData}!ShearY@{ShearY}}
+\index{ShearY@{ShearY}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{ShearY}{ShearY}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+ShearY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local shearY. 
+
+
+
+Bone\+Data.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_a9e1e7304e1352c3a45b81efbe34b26e9}{shearY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_a9e1e7304e1352c3a45b81efbe34b26e9}{shearY}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a619e058d986b406082cdf54095f98c0c}\label{class_spine_1_1_bone_data_a619e058d986b406082cdf54095f98c0c}} 
+\index{Spine.BoneData@{Spine.BoneData}!TransformMode@{TransformMode}}
+\index{TransformMode@{TransformMode}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{TransformMode}{TransformMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}} Spine.\+Bone\+Data.\+Transform\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The transform mode for how parent world transforms affect this bone. 
+
+
+
+Bone\+Data.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} transformMode; \} \textcolor{keyword}{set} \{ transformMode = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a904249dbb0be11f3e8b0156a7f504566}\label{class_spine_1_1_bone_data_a904249dbb0be11f3e8b0156a7f504566}} 
+\index{Spine.BoneData@{Spine.BoneData}!X@{X}}
+\index{X@{X}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local X translation. 
+
+
+
+Bone\+Data.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} x; \} \textcolor{keyword}{set} \{ x = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_bone_data_a40568774979340d29d188f0fb7e6d039}\label{class_spine_1_1_bone_data_a40568774979340d29d188f0fb7e6d039}} 
+\index{Spine.BoneData@{Spine.BoneData}!Y@{Y}}
+\index{Y@{Y}!Spine.BoneData@{Spine.BoneData}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Spine.\+Bone\+Data.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Local Y translation. 
+
+
+
+Bone\+Data.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_bone_data_a388233f50f0f3748b7fd3884221ee2c4}{y}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_bone_data_a388233f50f0f3748b7fd3884221ee2c4}{y}} = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_bone_data_8cs}{Bone\+Data.\+cs}}\end{DoxyCompactItemize}

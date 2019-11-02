@@ -1,0 +1,9 @@
+digraph "Spine.SkeletonBinary"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.SkeletonBinary\n|+ BONE_ROTATE\l+ BONE_TRANSLATE\l+ BONE_SCALE\l+ BONE_SHEAR\l+ SLOT_ATTACHMENT\l+ SLOT_COLOR\l+ SLOT_TWO_COLOR\l+ PATH_POSITION\l+ PATH_SPACING\l+ PATH_MIX\l+ CURVE_LINEAR\l+ CURVE_STEPPED\l+ CURVE_BEZIER\l+ TransformModeValues\l+ Scale\l- buffer\l- linkedMeshes\l|+ SkeletonBinary()\l+ SkeletonBinary()\l+ ReadSkeletonData()\l+ ReadSkeletonData()\l+ GetVersionString()\l- ReadSkin()\l- ReadAttachment()\l- ReadVertices()\l- ReadFloatArray()\l- ReadShortArray()\l- ReadAnimation()\l- ReadCurve()\l- ReadFloat()\l- ReadString()\l- ReadSByte()\l- ReadBoolean()\l- ReadInt()\l- ReadVarint()\l- ReadFully()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -attachmentLoader" ,arrowhead="odiamond"];
+  Node2 [label="{Spine.AttachmentLoader\n||+ NewRegionAttachment()\l+ NewMeshAttachment()\l+ NewBoundingBoxAttachment()\l+ NewPathAttachment()\l+ NewPointAttachment()\l+ NewClippingAttachment()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html",tooltip=" "];
+}

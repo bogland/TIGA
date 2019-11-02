@@ -1,0 +1,51 @@
+digraph "Spine.VertexAttachment.ComputeWorldVertices"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.VertexAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.SkeletonClipping.Clip\lStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#ae62e72353332993c8e3c7bc437edfd67",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.MeshGenerator.\lAddSubmesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#aa952a9e80b0019d3bbeb457175e00e7a",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.MeshGenerator.\lBuildMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#afde88fe03d1b02324d25a61887315f1e",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Modules.Skeleton\lPartsRenderer.RenderParts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_parts_renderer.html#a43a8dd16f1f503a5b350223f35d20544",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.SkeletonGraphic.\lUpdateMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_graphic.html#a1811fb0d59465b27a278b3aaf8058c36",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.Modules.Skeleton\lGraphicMirror.LateUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror.html#a4001ca65fa40eb1b20cc4bf5387a3e8c",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.SkeletonGraphic.\lLateUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_graphic.html#ab8b35c979b6e1055211a977cb2d536f7",tooltip=" "];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.SkeletonGraphic.\lRebuild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_graphic.html#a7fde4a7dd80d3ffb39777dc62d15cbda",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Unity.SkeletonGraphic.\lAwake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_graphic.html#a64245d774427a891bdabe21bcdf6dead",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.PathConstraint.Compute\lWorldPositions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a0a486ebfb77dc0339a9cd45bd12ad9d2",tooltip=" "];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.PathConstraint.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a1b84dbe4fd8e07faa1e9f1e4f61948f7",tooltip=" "];
+  Node1 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.Unity.Editor.Spine\lHandles.DrawBoundingBox",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#a716188942162e5b2e2111c0e7f1b83ca",tooltip=" "];
+  Node13 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.Unity.Editor.Spine\lHandles.DrawBoundingBoxes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#abc17427b5780ea5a9c84c6291696ea0b",tooltip=" "];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnSceneGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#aefbfe1e3342f532c8d8503fcb1e8a0b3",tooltip=" "];
+  Node15 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#a9572f18fb8a9d686bdf6764a54dc35c4",tooltip=" "];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnDestroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#aa02886ef672143168b07b12fa434f228",tooltip=" "];
+  Node16 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#a08a29a81c42d9af499d83e27132a247a",tooltip=" "];
+  Node16 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnSelectionChange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#abf8628628ade435fe1b76c9d3b4fcf83",tooltip=" "];
+  Node19 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="Spine.Unity.Editor.Spine\lHandles.DrawPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#ab854c39873b6f0e99a6bac01751471df",tooltip=" "];
+  Node20 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="Spine.Unity.Editor.Spine\lHandles.DrawPaths",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#a49ac661a58606884154374fa90b3253a",tooltip=" "];
+  Node21 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

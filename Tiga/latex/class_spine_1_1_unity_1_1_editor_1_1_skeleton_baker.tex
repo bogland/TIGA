@@ -1,0 +1,1416 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker}{}\doxysection{Spine.\+Unity.\+Editor.\+Skeleton\+Baker 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker}\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+
+
+\mbox{[}S\+U\+P\+P\+O\+R\+TS\mbox{]} Linear, Constant, and Bezier Curves$\ast$ Inverse Kinematics$\ast$ Inherit Rotation Translate \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} Rotate \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} Scale Timeline$\ast$$\ast$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} Timeline$\ast$$\ast$$\ast$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}}  
+
+
+
+
+Spine.\+Unity.\+Editor.\+Skeleton\+Baker에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_1_1_bone_weight_container}{Bone\+Weight\+Container}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a755e77fbe33b1de5885eeae6c9289136}{Generate\+Mecanim\+Animation\+Clips}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5854a66f32f7c58d0d35abe10e570cbb}{Bake\+To\+Prefab}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} $>$ skins, string output\+Path=\char`\"{}\char`\"{}, bool bake\+Animations=true, bool bake\+IK=true, Send\+Message\+Options event\+Options=Send\+Message\+Options.\+Dont\+Require\+Receiver)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a38a7a6bff0e6185327703375c8999f92}{Has\+Flag}} (this Unity\+Engine.\+Object o, Hide\+Flags flag\+To\+Check)
+\item 
+static Animation\+Clip \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aa02465ccf8934b9b6c1a9a5c887e2853}{Extract\+Animation}} (string name, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data, Dictionary$<$ int, List$<$ string $>$$>$ slot\+Lookup, bool bake\+IK, Send\+Message\+Options event\+Options, Animation\+Clip clip=null)
+\item 
+static int \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a46c8e3f2938f219dee5ca46bfc5f87e6}{Binary\+Search}} (float\mbox{[}$\,$\mbox{]} values, float target)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aac96a7d27160d7d2e706d614f4ade7d2}{Bake\+Bone\+Constraints}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}} animation, Animation\+Clip clip)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab0ec452bbe81c401a9317ee74f7d7c38}{Parse\+Translate\+Timeline}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, \mbox{\hyperlink{class_spine_1_1_translate_timeline}{Translate\+Timeline}} timeline, Animation\+Clip clip)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a62f853b247f14401671c80a31176d83c}{Parse\+Scale\+Timeline}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, \mbox{\hyperlink{class_spine_1_1_scale_timeline}{Scale\+Timeline}} timeline, Animation\+Clip clip)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae89dccf2c6c58d3e8195f926eab51ff1}{Parse\+Rotate\+Timeline}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, \mbox{\hyperlink{class_spine_1_1_rotate_timeline}{Rotate\+Timeline}} timeline, Animation\+Clip clip)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5ccf2cae9fcfd91b034b98cc51fc6a66}{Parse\+Event\+Timeline}} (\mbox{\hyperlink{class_spine_1_1_event_timeline}{Event\+Timeline}} timeline, Animation\+Clip clip, Send\+Message\+Options event\+Options)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a83ec8cfe5d65d4fe02f9247036fdc661}{Parse\+Attachment\+Timeline}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, \mbox{\hyperlink{class_spine_1_1_attachment_timeline}{Attachment\+Timeline}} timeline, Dictionary$<$ int, List$<$ string $>$$>$ slot\+Lookup, Animation\+Clip clip)
+\item 
+static Animation\+Curve \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{Ensure\+Curve\+Key\+Count}} (Animation\+Curve curve)
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_af7ac0003360b9519cbf08330235f3d1f}{Get\+Uninherited\+Applied\+Rotation}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b)
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{Get\+Path}} (\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} b)
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae66478beef6e0ec59ef575ff139ea9d7}{Get\+Path\+Recurse}} (\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} b)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a02fef2c3ef82fb57bd38b38e48bf1ad2}{Set\+Animation\+Settings}} (Animation\+Clip clip, Animation\+Clip\+Settings settings)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{Bake\+Increment}} = 1 / 60f
+\begin{DoxyCompactList}\small\item\em Interval between key sampling for Bezier curves, IK controlled bones, and Inherit Rotation effected bones. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a110d484be688cf89c34bec42e5ec6266}{Dummy\+Bone}}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab849aa0f65c1d834a1479c34a6e14c90}{Dummy\+Slot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{[}S\+U\+P\+P\+O\+R\+TS\mbox{]} Linear, Constant, and Bezier Curves$\ast$ Inverse Kinematics$\ast$ Inherit Rotation Translate \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} Rotate \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} Scale Timeline$\ast$$\ast$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} Timeline$\ast$$\ast$$\ast$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} 
+
+\mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} (optionally Skinned)
+
+\mbox{[}L\+I\+M\+I\+T\+A\+T\+I\+O\+NS\mbox{]} $\ast$\+Bezier Curves are baked into the animation at 60fps and are not realtime. Use bake\+Increment constant to adjust key density if desired. $\ast$\+Inverse Kinematics is baked into the animation at 60fps and are not realtime. Use bake\+Increment constant to adjust key density if desired. $\ast$$\ast$$\ast$\+Events may only fire 1 type of data per event in \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} safely so priority to String data if present in \mbox{\hyperlink{namespace_spine}{Spine}} key, otherwise a Float is sent whether the \mbox{\hyperlink{namespace_spine}{Spine}} key was Int or Float with priority given to Int.
+
+\mbox{[}D\+O\+ES N\+OT S\+U\+P\+P\+O\+RT\mbox{]} F\+FD (\mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} does not provide access to Blend\+Shapes with code) Color Keys (Maybe one day when \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} supports full F\+BX standard and provides access with code) Draw Order Keyframes
+
+Skeleton\+Baker.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aac96a7d27160d7d2e706d614f4ade7d2}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aac96a7d27160d7d2e706d614f4ade7d2}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!BakeBoneConstraints@{BakeBoneConstraints}}
+\index{BakeBoneConstraints@{BakeBoneConstraints}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{BakeBoneConstraints()}{BakeBoneConstraints()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Bake\+Bone\+Constraints (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}}]{animation,  }\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 816 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{817                                                                                                    \{}
+\DoxyCodeLine{818             \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton = bone.\mbox{\hyperlink{class_spine_1_1_bone_abc9d3a82cd486753bd30f02e1f537bcc}{Skeleton}};}
+\DoxyCodeLine{819             \textcolor{keywordtype}{bool} inheritRotation = bone.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a619e058d986b406082cdf54095f98c0c}{TransformMode}}.InheritsRotation();}
+\DoxyCodeLine{820 }
+\DoxyCodeLine{821             animation.PoseSkeleton(skeleton, 0);}
+\DoxyCodeLine{822             skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+\DoxyCodeLine{823             \textcolor{keywordtype}{float} duration = animation.Duration;}
+\DoxyCodeLine{824 }
+\DoxyCodeLine{825             AnimationCurve curve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{826 }
+\DoxyCodeLine{827             List<Keyframe> keys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{828 }
+\DoxyCodeLine{829             \textcolor{keywordtype}{float} rotation = bone.\mbox{\hyperlink{class_spine_1_1_bone_a6a3cc7c4448f3859b6bfc6f0157c3a6f}{AppliedRotation}};}
+\DoxyCodeLine{830             \textcolor{keywordflow}{if} (!inheritRotation)}
+\DoxyCodeLine{831                 rotation = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_af7ac0003360b9519cbf08330235f3d1f}{GetUninheritedAppliedRotation}}(bone);}
+\DoxyCodeLine{832 }
+\DoxyCodeLine{833             keys.Add(\textcolor{keyword}{new} Keyframe(0, rotation, 0, 0));}
+\DoxyCodeLine{834 }
+\DoxyCodeLine{835             \textcolor{keywordtype}{int} listIndex = 1;}
+\DoxyCodeLine{836 }
+\DoxyCodeLine{837             \textcolor{keywordtype}{float} r = rotation;}
+\DoxyCodeLine{838 }
+\DoxyCodeLine{839             \textcolor{keywordtype}{int} steps = Mathf.CeilToInt(duration / \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}});}
+\DoxyCodeLine{840 }
+\DoxyCodeLine{841             \textcolor{keywordtype}{float} currentTime = 0;}
+\DoxyCodeLine{842             \textcolor{keywordtype}{float} angle = rotation;}
+\DoxyCodeLine{843 }
+\DoxyCodeLine{844             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= steps; i++) \{}
+\DoxyCodeLine{845                 currentTime += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}};}
+\DoxyCodeLine{846                 \textcolor{keywordflow}{if} (i == steps)}
+\DoxyCodeLine{847                     currentTime = duration;}
+\DoxyCodeLine{848 }
+\DoxyCodeLine{849                 animation.PoseSkeleton(skeleton, currentTime, \textcolor{keyword}{true});}
+\DoxyCodeLine{850                 skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+\DoxyCodeLine{851 }
+\DoxyCodeLine{852                 \textcolor{keywordtype}{int} pIndex = listIndex -\/ 1;}
+\DoxyCodeLine{853 }
+\DoxyCodeLine{854                 Keyframe pk = keys[pIndex];}
+\DoxyCodeLine{855 }
+\DoxyCodeLine{856                 pk = keys[pIndex];}
+\DoxyCodeLine{857 }
+\DoxyCodeLine{858                 rotation = inheritRotation ? bone.\mbox{\hyperlink{class_spine_1_1_bone_a6a3cc7c4448f3859b6bfc6f0157c3a6f}{AppliedRotation}} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_af7ac0003360b9519cbf08330235f3d1f}{GetUninheritedAppliedRotation}}(bone);}
+\DoxyCodeLine{859 }
+\DoxyCodeLine{860                 angle += Mathf.DeltaAngle(angle, rotation);}
+\DoxyCodeLine{861 }
+\DoxyCodeLine{862                 r = angle;}
+\DoxyCodeLine{863 }
+\DoxyCodeLine{864                 \textcolor{keywordtype}{float} rOut = (r -\/ pk.value) / (currentTime -\/ pk.time);}
+\DoxyCodeLine{865 }
+\DoxyCodeLine{866                 pk.outTangent = rOut;}
+\DoxyCodeLine{867 }
+\DoxyCodeLine{868                 keys.Add(\textcolor{keyword}{new} Keyframe(currentTime, r, rOut, 0));}
+\DoxyCodeLine{869 }
+\DoxyCodeLine{870                 keys[pIndex] = pk;}
+\DoxyCodeLine{871 }
+\DoxyCodeLine{872                 listIndex++;}
+\DoxyCodeLine{873             \}}
+\DoxyCodeLine{874 }
+\DoxyCodeLine{875             curve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(keys.ToArray()));}
+\DoxyCodeLine{876 }
+\DoxyCodeLine{877             \textcolor{keywordtype}{string} path = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{GetPath}}(bone.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}});}
+\DoxyCodeLine{878             \textcolor{keywordtype}{string} propertyName = \textcolor{stringliteral}{"localEulerAnglesBaked"};}
+\DoxyCodeLine{879 }
+\DoxyCodeLine{880             EditorCurveBinding xBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".x"});}
+\DoxyCodeLine{881             AnimationUtility.SetEditorCurve(clip, xBind, \textcolor{keyword}{new} AnimationCurve());}
+\DoxyCodeLine{882             EditorCurveBinding yBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".y"});}
+\DoxyCodeLine{883             AnimationUtility.SetEditorCurve(clip, yBind, \textcolor{keyword}{new} AnimationCurve());}
+\DoxyCodeLine{884             EditorCurveBinding zBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".z"});}
+\DoxyCodeLine{885             AnimationUtility.SetEditorCurve(clip, zBind, curve);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5854a66f32f7c58d0d35abe10e570cbb}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5854a66f32f7c58d0d35abe10e570cbb}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!BakeToPrefab@{BakeToPrefab}}
+\index{BakeToPrefab@{BakeToPrefab}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{BakeToPrefab()}{BakeToPrefab()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Bake\+To\+Prefab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} $>$}]{skins,  }\item[{string}]{output\+Path = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{bake\+Animations = {\ttfamily true},  }\item[{bool}]{bake\+IK = {\ttfamily true},  }\item[{Send\+Message\+Options}]{event\+Options = {\ttfamily SendMessageOptions.DontRequireReceiver} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 173 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{174                                                                                                                                                                                                                                                          \{}
+\DoxyCodeLine{175             \textcolor{keywordflow}{if} (skeletonDataAsset == \textcolor{keyword}{null} || skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true}) == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{176                 Debug.LogError(\textcolor{stringliteral}{"Could not export Spine Skeleton because SkeletonDataAsset is null or invalid!"});}
+\DoxyCodeLine{177                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{178             \}}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180             \textcolor{keywordflow}{if} (outputPath == \textcolor{stringliteral}{""}) \{}
+\DoxyCodeLine{181                 outputPath = System.IO.Path.GetDirectoryName(AssetDatabase.GetAssetPath(skeletonDataAsset)) + \textcolor{stringliteral}{"/Baked"};}
+\DoxyCodeLine{182                 System.IO.Directory.CreateDirectory(outputPath);}
+\DoxyCodeLine{183             \}}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185             var skeletonData = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{186             \textcolor{keywordtype}{bool} hasAnimations = bakeAnimations \&\& skeletonData.Animations.Count > 0;}
+\DoxyCodeLine{187             UnityEditor.Animations.AnimatorController controller = \textcolor{keyword}{null};}
+\DoxyCodeLine{188             \textcolor{keywordflow}{if} (hasAnimations) \{}
+\DoxyCodeLine{189                 \textcolor{keywordtype}{string} controllerPath = outputPath + \textcolor{stringliteral}{"/"} + skeletonDataAsset.skeletonJSON.name + \textcolor{stringliteral}{" Controller.controller"};}
+\DoxyCodeLine{190                 \textcolor{keywordtype}{bool} newAnimContainer = \textcolor{keyword}{false};}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192                 var runtimeController = AssetDatabase.LoadAssetAtPath(controllerPath, typeof(RuntimeAnimatorController));}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194                 \textcolor{keywordflow}{if} (runtimeController != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{195                     controller = (UnityEditor.Animations.AnimatorController)runtimeController;}
+\DoxyCodeLine{196                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{197                     controller = UnityEditor.Animations.AnimatorController.CreateAnimatorControllerAtPath(controllerPath);}
+\DoxyCodeLine{198                     newAnimContainer = \textcolor{keyword}{true};}
+\DoxyCodeLine{199                 \}}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201                 var existingClipTable = \textcolor{keyword}{new} Dictionary<string, AnimationClip>();}
+\DoxyCodeLine{202                 var unusedClipNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{203                 Object[] animObjs = AssetDatabase.LoadAllAssetsAtPath(controllerPath);}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205                 \textcolor{keywordflow}{foreach} (Object o \textcolor{keywordflow}{in} animObjs) \{}
+\DoxyCodeLine{206                     \textcolor{keywordflow}{if} (o is AnimationClip) \{}
+\DoxyCodeLine{207                         var clip = (AnimationClip)o;}
+\DoxyCodeLine{208                         existingClipTable.Add(clip.name, clip);}
+\DoxyCodeLine{209                         unusedClipNames.Add(clip.name);}
+\DoxyCodeLine{210                     \}}
+\DoxyCodeLine{211                 \}}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213                 Dictionary<int, List<string>> slotLookup = \textcolor{keyword}{new} Dictionary<int, List<string>>();}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215                 \textcolor{keywordtype}{int} skinCount = skins.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} s = 0; s < skeletonData.Slots.Count; s++) \{}
+\DoxyCodeLine{218                     List<string> attachmentNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{219                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skinCount; i++) \{}
+\DoxyCodeLine{220                         var skin = skins.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i];}
+\DoxyCodeLine{221                         List<string> temp = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{222                         skin.FindNamesForSlot(s, temp);}
+\DoxyCodeLine{223                         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} temp) \{}
+\DoxyCodeLine{224                             \textcolor{keywordflow}{if} (!attachmentNames.Contains(str))}
+\DoxyCodeLine{225                                 attachmentNames.Add(str);}
+\DoxyCodeLine{226                         \}}
+\DoxyCodeLine{227                     \}}
+\DoxyCodeLine{228                     slotLookup.Add(s, attachmentNames);}
+\DoxyCodeLine{229                 \}}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231                 \textcolor{keywordflow}{foreach} (var anim \textcolor{keywordflow}{in} skeletonData.Animations) \{}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233                     AnimationClip clip = \textcolor{keyword}{null};}
+\DoxyCodeLine{234                     \textcolor{keywordflow}{if} (existingClipTable.ContainsKey(anim.Name)) \{}
+\DoxyCodeLine{235                         clip = existingClipTable[anim.Name];}
+\DoxyCodeLine{236                     \}}
+\DoxyCodeLine{237 }
+\DoxyCodeLine{238                     clip = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aa02465ccf8934b9b6c1a9a5c887e2853}{ExtractAnimation}}(anim.Name, skeletonData, slotLookup, bakeIK, eventOptions, clip);}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240                     \textcolor{keywordflow}{if} (unusedClipNames.Contains(clip.name)) \{}
+\DoxyCodeLine{241                         unusedClipNames.Remove(clip.name);}
+\DoxyCodeLine{242                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{243                         AssetDatabase.AddObjectToAsset(clip, controller);}
+\DoxyCodeLine{244                         controller.AddMotion(clip);}
+\DoxyCodeLine{245                     \}}
+\DoxyCodeLine{246                 \}}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248                 \textcolor{keywordflow}{if} (newAnimContainer) \{}
+\DoxyCodeLine{249                     EditorUtility.SetDirty(controller);}
+\DoxyCodeLine{250                     AssetDatabase.SaveAssets();}
+\DoxyCodeLine{251                     AssetDatabase.ImportAsset(controllerPath, ImportAssetOptions.ForceUpdate);}
+\DoxyCodeLine{252                     AssetDatabase.Refresh();}
+\DoxyCodeLine{253                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255                     \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} unusedClipNames) \{}
+\DoxyCodeLine{256                         AnimationClip.DestroyImmediate(existingClipTable[str], \textcolor{keyword}{true});}
+\DoxyCodeLine{257                     \}}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259                     EditorUtility.SetDirty(controller);}
+\DoxyCodeLine{260                     AssetDatabase.SaveAssets();}
+\DoxyCodeLine{261                     AssetDatabase.ImportAsset(controllerPath, ImportAssetOptions.ForceUpdate);}
+\DoxyCodeLine{262                     AssetDatabase.Refresh();}
+\DoxyCodeLine{263                 \}}
+\DoxyCodeLine{264             \}}
+\DoxyCodeLine{265 }
+\DoxyCodeLine{266             \textcolor{keywordflow}{foreach} (var skin \textcolor{keywordflow}{in} skins) \{}
+\DoxyCodeLine{267                 \textcolor{keywordtype}{bool} newPrefab = \textcolor{keyword}{false};}
+\DoxyCodeLine{268 }
+\DoxyCodeLine{269                 \textcolor{keywordtype}{string} prefabPath = outputPath + \textcolor{stringliteral}{"/"} + skeletonDataAsset.skeletonJSON.name + \textcolor{stringliteral}{" ("} + skin.Name + \textcolor{stringliteral}{").prefab"};}
+\DoxyCodeLine{270 }
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272                 Object prefab = AssetDatabase.LoadAssetAtPath(prefabPath, typeof(GameObject));}
+\DoxyCodeLine{273                 \textcolor{keywordflow}{if} (prefab == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{274                     prefab = PrefabUtility.CreateEmptyPrefab(prefabPath);}
+\DoxyCodeLine{275                     newPrefab = \textcolor{keyword}{true};}
+\DoxyCodeLine{276                 \}}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{278                 Dictionary<string, Mesh> meshTable = \textcolor{keyword}{new} Dictionary<string, Mesh>();}
+\DoxyCodeLine{279                 List<string> unusedMeshNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{280                 Object[] assets = AssetDatabase.LoadAllAssetsAtPath(prefabPath);}
+\DoxyCodeLine{281                 \textcolor{keywordflow}{foreach} (var obj \textcolor{keywordflow}{in} assets) \{}
+\DoxyCodeLine{282                     \textcolor{keywordflow}{if} (obj is Mesh) \{}
+\DoxyCodeLine{283                         meshTable.Add(obj.name, (Mesh)obj);}
+\DoxyCodeLine{284                         unusedMeshNames.Add(obj.name);}
+\DoxyCodeLine{285                     \}}
+\DoxyCodeLine{286                 \}}
+\DoxyCodeLine{287 }
+\DoxyCodeLine{288                 GameObject prefabRoot = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"root"});}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290                 Dictionary<string, Transform> slotTable = \textcolor{keyword}{new} Dictionary<string, Transform>();}
+\DoxyCodeLine{291                 Dictionary<string, Transform> boneTable = \textcolor{keyword}{new} Dictionary<string, Transform>();}
+\DoxyCodeLine{292                 List<Transform> boneList = \textcolor{keyword}{new} List<Transform>();}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294                 \textcolor{comment}{//create bones}}
+\DoxyCodeLine{295                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonData.Bones.Count; i++) \{}
+\DoxyCodeLine{296                     var boneData = skeletonData.Bones.Items[i];}
+\DoxyCodeLine{297                     Transform boneTransform = \textcolor{keyword}{new} GameObject(boneData.Name).transform;}
+\DoxyCodeLine{298                     boneTransform.parent = prefabRoot.transform;}
+\DoxyCodeLine{299                     boneTable.Add(boneTransform.name, boneTransform);}
+\DoxyCodeLine{300                     boneList.Add(boneTransform);}
+\DoxyCodeLine{301                 \}}
+\DoxyCodeLine{302 }
+\DoxyCodeLine{303                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonData.Bones.Count; i++) \{}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305                     var boneData = skeletonData.Bones.Items[i];}
+\DoxyCodeLine{306                     Transform boneTransform = boneTable[boneData.Name];}
+\DoxyCodeLine{307                     Transform parentTransform = \textcolor{keyword}{null};}
+\DoxyCodeLine{308                     \textcolor{keywordflow}{if} (i > 0)}
+\DoxyCodeLine{309                         parentTransform = boneTable[boneData.Parent.Name];}
+\DoxyCodeLine{310                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{311                         parentTransform = boneTransform.parent;}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{313                     boneTransform.parent = parentTransform;}
+\DoxyCodeLine{314                     boneTransform.localPosition = \textcolor{keyword}{new} Vector3(boneData.X, boneData.Y, 0);}
+\DoxyCodeLine{315                     var tm = boneData.TransformMode;}
+\DoxyCodeLine{316                     \textcolor{keywordflow}{if} (tm.InheritsRotation())}
+\DoxyCodeLine{317                         boneTransform.localRotation = Quaternion.Euler(0, 0, boneData.Rotation);}
+\DoxyCodeLine{318                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{319                         boneTransform.rotation = Quaternion.Euler(0, 0, boneData.Rotation);}
+\DoxyCodeLine{320 }
+\DoxyCodeLine{321                     \textcolor{keywordflow}{if} (tm.InheritsScale())}
+\DoxyCodeLine{322                         boneTransform.localScale = \textcolor{keyword}{new} Vector3(boneData.ScaleX, boneData.ScaleY, 1);}
+\DoxyCodeLine{323                 \}}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325                 \textcolor{comment}{//create slots and attachments}}
+\DoxyCodeLine{326                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonData.Slots.Count; i++) \{}
+\DoxyCodeLine{327                     var slotData = skeletonData.Slots.Items[i];}
+\DoxyCodeLine{328                     Transform slotTransform = \textcolor{keyword}{new} GameObject(slotData.Name).transform;}
+\DoxyCodeLine{329                     slotTransform.parent = prefabRoot.transform;}
+\DoxyCodeLine{330                     slotTable.Add(slotData.Name, slotTransform);}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332                     List<Attachment> attachments = \textcolor{keyword}{new} List<Attachment>();}
+\DoxyCodeLine{333                     List<string> attachmentNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{334 }
+\DoxyCodeLine{335                     skin.FindAttachmentsForSlot(i, attachments);}
+\DoxyCodeLine{336                     skin.FindNamesForSlot(i, attachmentNames);}
+\DoxyCodeLine{337 }
+\DoxyCodeLine{338                     \textcolor{keywordflow}{if} (skin != skeletonData.DefaultSkin) \{}
+\DoxyCodeLine{339                         skeletonData.DefaultSkin.FindAttachmentsForSlot(i, attachments);}
+\DoxyCodeLine{340                         skeletonData.DefaultSkin.FindNamesForSlot(i, attachmentNames);}
+\DoxyCodeLine{341                     \}}
+\DoxyCodeLine{342 }
+\DoxyCodeLine{343                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} a = 0; a < attachments.Count; a++) \{}
+\DoxyCodeLine{344                         var attachment = attachments[a];}
+\DoxyCodeLine{345                         \textcolor{keywordtype}{string} attachmentName = attachmentNames[a];}
+\DoxyCodeLine{346                         \textcolor{keywordtype}{string} attachmentMeshName = \textcolor{stringliteral}{"["} + slotData.Name + \textcolor{stringliteral}{"] "} + attachmentName;}
+\DoxyCodeLine{347                         Vector3 offset = Vector3.zero;}
+\DoxyCodeLine{348                         \textcolor{keywordtype}{float} rotation = 0;}
+\DoxyCodeLine{349                         \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}} mesh = \textcolor{keyword}{null};}
+\DoxyCodeLine{350                         Material material = \textcolor{keyword}{null};}
+\DoxyCodeLine{351                         \textcolor{keywordtype}{bool} isWeightedMesh = \textcolor{keyword}{false};}
+\DoxyCodeLine{352 }
+\DoxyCodeLine{353                         \textcolor{keywordflow}{if} (meshTable.ContainsKey(attachmentMeshName))}
+\DoxyCodeLine{354                             mesh = meshTable[attachmentMeshName];}
+\DoxyCodeLine{355                         \textcolor{keywordflow}{if} (attachment is \mbox{\hyperlink{class_spine_1_1_region_attachment}{RegionAttachment}}) \{}
+\DoxyCodeLine{356                             var regionAttachment = (\mbox{\hyperlink{class_spine_1_1_region_attachment}{RegionAttachment}})attachment;}
+\DoxyCodeLine{357                             offset.x = regionAttachment.X;}
+\DoxyCodeLine{358                             offset.y = regionAttachment.Y;}
+\DoxyCodeLine{359                             rotation = regionAttachment.Rotation;}
+\DoxyCodeLine{360                             mesh = ExtractRegionAttachment(attachmentMeshName, regionAttachment, mesh);}
+\DoxyCodeLine{361                             material = attachment.GetMaterial();}
+\DoxyCodeLine{362                             unusedMeshNames.Remove(attachmentMeshName);}
+\DoxyCodeLine{363                             \textcolor{keywordflow}{if} (newPrefab || meshTable.ContainsKey(attachmentMeshName) == \textcolor{keyword}{false})}
+\DoxyCodeLine{364                                 AssetDatabase.AddObjectToAsset(mesh, prefab);}
+\DoxyCodeLine{365                         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (attachment is \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{MeshAttachment}}) \{}
+\DoxyCodeLine{366                             var meshAttachment = (\mbox{\hyperlink{class_spine_1_1_mesh_attachment}{MeshAttachment}})attachment;}
+\DoxyCodeLine{367                             isWeightedMesh = (meshAttachment.Bones != \textcolor{keyword}{null});}
+\DoxyCodeLine{368                             offset.x = 0;}
+\DoxyCodeLine{369                             offset.y = 0;}
+\DoxyCodeLine{370                             rotation = 0;}
+\DoxyCodeLine{371 }
+\DoxyCodeLine{372                             \textcolor{keywordflow}{if} (isWeightedMesh)}
+\DoxyCodeLine{373                                 mesh = ExtractWeightedMeshAttachment(attachmentMeshName, meshAttachment, i, skeletonData, boneList, mesh);}
+\DoxyCodeLine{374                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{375                                 mesh = ExtractMeshAttachment(attachmentMeshName, meshAttachment, mesh);}
+\DoxyCodeLine{376                             }
+\DoxyCodeLine{377                             material = attachment.GetMaterial();}
+\DoxyCodeLine{378                             unusedMeshNames.Remove(attachmentMeshName);}
+\DoxyCodeLine{379                             \textcolor{keywordflow}{if} (newPrefab || meshTable.ContainsKey(attachmentMeshName) == \textcolor{keyword}{false})}
+\DoxyCodeLine{380                                 AssetDatabase.AddObjectToAsset(mesh, prefab);}
+\DoxyCodeLine{381                         \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{382                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{383 }
+\DoxyCodeLine{384                         Transform attachmentTransform = \textcolor{keyword}{new} GameObject(attachmentName).transform;}
+\DoxyCodeLine{385 }
+\DoxyCodeLine{386                         attachmentTransform.parent = slotTransform;}
+\DoxyCodeLine{387                         attachmentTransform.localPosition = offset;}
+\DoxyCodeLine{388                         attachmentTransform.localRotation = Quaternion.Euler(0, 0, rotation);}
+\DoxyCodeLine{389 }
+\DoxyCodeLine{390                         \textcolor{keywordflow}{if} (isWeightedMesh) \{}
+\DoxyCodeLine{391                             attachmentTransform.position = Vector3.zero;}
+\DoxyCodeLine{392                             attachmentTransform.rotation = Quaternion.identity;}
+\DoxyCodeLine{393                             var skinnedMeshRenderer = attachmentTransform.gameObject.AddComponent<SkinnedMeshRenderer>();}
+\DoxyCodeLine{394                             skinnedMeshRenderer.rootBone = boneList[0];}
+\DoxyCodeLine{395                             skinnedMeshRenderer.bones = boneList.ToArray();}
+\DoxyCodeLine{396                             skinnedMeshRenderer.sharedMesh = mesh;}
+\DoxyCodeLine{397                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{398                             attachmentTransform.gameObject.AddComponent<MeshFilter>().sharedMesh = mesh;}
+\DoxyCodeLine{399                             attachmentTransform.gameObject.AddComponent<MeshRenderer>();}
+\DoxyCodeLine{400                         \}}
+\DoxyCodeLine{401 }
+\DoxyCodeLine{402                         attachmentTransform.GetComponent<Renderer>().sharedMaterial = material;}
+\DoxyCodeLine{403                         attachmentTransform.GetComponent<Renderer>().sortingOrder = i;}
+\DoxyCodeLine{404 }
+\DoxyCodeLine{405                         \textcolor{keywordflow}{if} (attachmentName != slotData.AttachmentName)}
+\DoxyCodeLine{406                             attachmentTransform.gameObject.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{407                     \}}
+\DoxyCodeLine{408 }
+\DoxyCodeLine{409                 \}}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411                 \textcolor{keywordflow}{foreach} (var slotData \textcolor{keywordflow}{in} skeletonData.Slots) \{}
+\DoxyCodeLine{412                     Transform slotTransform = slotTable[slotData.Name];}
+\DoxyCodeLine{413                     slotTransform.parent = boneTable[slotData.BoneData.Name];}
+\DoxyCodeLine{414                     slotTransform.localPosition = Vector3.zero;}
+\DoxyCodeLine{415                     slotTransform.localRotation = Quaternion.identity;}
+\DoxyCodeLine{416                     slotTransform.localScale = Vector3.one;}
+\DoxyCodeLine{417                 \}}
+\DoxyCodeLine{418 }
+\DoxyCodeLine{419                 \textcolor{keywordflow}{if} (hasAnimations) \{}
+\DoxyCodeLine{420                     var animator = prefabRoot.AddComponent<Animator>();}
+\DoxyCodeLine{421                     animator.applyRootMotion = \textcolor{keyword}{false};}
+\DoxyCodeLine{422                     animator.runtimeAnimatorController = (RuntimeAnimatorController)controller;}
+\DoxyCodeLine{423                     EditorGUIUtility.PingObject(controller);}
+\DoxyCodeLine{424                 \}}
+\DoxyCodeLine{425 }
+\DoxyCodeLine{426 }
+\DoxyCodeLine{427                 \textcolor{keywordflow}{if} (newPrefab) \{}
+\DoxyCodeLine{428                     PrefabUtility.ReplacePrefab(prefabRoot, prefab, ReplacePrefabOptions.ConnectToPrefab);}
+\DoxyCodeLine{429                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431                     \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} unusedMeshNames) \{}
+\DoxyCodeLine{432                         \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}}.DestroyImmediate(meshTable[str], \textcolor{keyword}{true});}
+\DoxyCodeLine{433                     \}}
+\DoxyCodeLine{434 }
+\DoxyCodeLine{435                     PrefabUtility.ReplacePrefab(prefabRoot, prefab, ReplacePrefabOptions.ReplaceNameBased);}
+\DoxyCodeLine{436                 \}}
+\DoxyCodeLine{437 }
+\DoxyCodeLine{438                 EditorGUIUtility.PingObject(prefab);}
+\DoxyCodeLine{439 }
+\DoxyCodeLine{440                 AssetDatabase.Refresh();}
+\DoxyCodeLine{441                 AssetDatabase.SaveAssets();}
+\DoxyCodeLine{442 }
+\DoxyCodeLine{443                 GameObject.DestroyImmediate(prefabRoot);}
+\DoxyCodeLine{444             \}}
+\DoxyCodeLine{445 }
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a46c8e3f2938f219dee5ca46bfc5f87e6}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a46c8e3f2938f219dee5ca46bfc5f87e6}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}}
+{\footnotesize\ttfamily static int Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Binary\+Search (\begin{DoxyParamCaption}\item[{float\mbox{[}$\,$\mbox{]}}]{values,  }\item[{float}]{target }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 800 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{801                                                                \{}
+\DoxyCodeLine{802             \textcolor{keywordtype}{int} low = 0;}
+\DoxyCodeLine{803             \textcolor{keywordtype}{int} high = values.Length -\/ 2;}
+\DoxyCodeLine{804             \textcolor{keywordflow}{if} (high == 0) \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{805             \textcolor{keywordtype}{int} current = (int)((uint)high >> 1);}
+\DoxyCodeLine{806             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{807                 \textcolor{keywordflow}{if} (values[(current + 1)] <= target)}
+\DoxyCodeLine{808                     low = current + 1;}
+\DoxyCodeLine{809                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{810                     high = current;}
+\DoxyCodeLine{811 }
+\DoxyCodeLine{812                 \textcolor{keywordflow}{if} (low == high) \textcolor{keywordflow}{return} (low + 1);}
+\DoxyCodeLine{813                 current = (int)((uint)(low + high) >> 1);}
+\DoxyCodeLine{814             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!EnsureCurveKeyCount@{EnsureCurveKeyCount}}
+\index{EnsureCurveKeyCount@{EnsureCurveKeyCount}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{EnsureCurveKeyCount()}{EnsureCurveKeyCount()}}
+{\footnotesize\ttfamily static Animation\+Curve Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Ensure\+Curve\+Key\+Count (\begin{DoxyParamCaption}\item[{Animation\+Curve}]{curve }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1387 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1388                                                                          \{}
+\DoxyCodeLine{1389             \textcolor{keywordflow}{if} (curve.length == 1)}
+\DoxyCodeLine{1390                 curve.AddKey(curve.keys[0].time + 0.25f, curve.keys[0].value);}
+\DoxyCodeLine{1391 }
+\DoxyCodeLine{1392             \textcolor{keywordflow}{return} curve;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aa02465ccf8934b9b6c1a9a5c887e2853}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aa02465ccf8934b9b6c1a9a5c887e2853}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ExtractAnimation@{ExtractAnimation}}
+\index{ExtractAnimation@{ExtractAnimation}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ExtractAnimation()}{ExtractAnimation()}}
+{\footnotesize\ttfamily static Animation\+Clip Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Extract\+Animation (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data,  }\item[{Dictionary$<$ int, List$<$ string $>$$>$}]{slot\+Lookup,  }\item[{bool}]{bake\+IK,  }\item[{Send\+Message\+Options}]{event\+Options,  }\item[{Animation\+Clip}]{clip = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 729 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{730                                                                                                                                                                                                           \{}
+\DoxyCodeLine{731             var animation = skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(name);}
+\DoxyCodeLine{732 }
+\DoxyCodeLine{733             var timelines = animation.\mbox{\hyperlink{class_spine_1_1_animation_a53ddd8fba50e31311bc983100b76027f}{Timelines}};}
+\DoxyCodeLine{734 }
+\DoxyCodeLine{735             \textcolor{keywordflow}{if} (clip == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{736                 clip = \textcolor{keyword}{new} AnimationClip();}
+\DoxyCodeLine{737             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{738                 clip.ClearCurves();}
+\DoxyCodeLine{739                 AnimationUtility.SetAnimationEvents(clip, \textcolor{keyword}{new} AnimationEvent[0]);}
+\DoxyCodeLine{740             \}}
+\DoxyCodeLine{741 }
+\DoxyCodeLine{742             clip.name = name;}
+\DoxyCodeLine{743 }
+\DoxyCodeLine{744             \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton = \textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}(skeletonData);}
+\DoxyCodeLine{745 }
+\DoxyCodeLine{746             List<int> ignoreRotateTimelineIndexes = \textcolor{keyword}{new} List<int>();}
+\DoxyCodeLine{747 }
+\DoxyCodeLine{748             \textcolor{keywordflow}{if} (bakeIK) \{}
+\DoxyCodeLine{749                 \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_spine_1_1_ik_constraint}{IkConstraint}} i \textcolor{keywordflow}{in} skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}{IkConstraints}}) \{}
+\DoxyCodeLine{750                     \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b \textcolor{keywordflow}{in} i.\mbox{\hyperlink{class_spine_1_1_ik_constraint_a5e2ac0834351698df61b21155f51c949}{Bones}}) \{}
+\DoxyCodeLine{751                         \textcolor{keywordtype}{int} index = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a7f1110895f44d43df5a9ba65e46f5a0f}{FindBoneIndex}}(b.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}});}
+\DoxyCodeLine{752                         ignoreRotateTimelineIndexes.Add(index);}
+\DoxyCodeLine{753                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aac96a7d27160d7d2e706d614f4ade7d2}{BakeBoneConstraints}}(b, animation, clip);}
+\DoxyCodeLine{754                     \}}
+\DoxyCodeLine{755                 \}}
+\DoxyCodeLine{756             \}}
+\DoxyCodeLine{757 }
+\DoxyCodeLine{758             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b \textcolor{keywordflow}{in} skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Bones}}) \{}
+\DoxyCodeLine{759                 \textcolor{keywordflow}{if} (!b.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a619e058d986b406082cdf54095f98c0c}{TransformMode}}.InheritsRotation()) \{}
+\DoxyCodeLine{760                     \textcolor{keywordtype}{int} index = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a7f1110895f44d43df5a9ba65e46f5a0f}{FindBoneIndex}}(b.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}});}
+\DoxyCodeLine{761 }
+\DoxyCodeLine{762                     \textcolor{keywordflow}{if} (ignoreRotateTimelineIndexes.Contains(index) == \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{763                         ignoreRotateTimelineIndexes.Add(index);}
+\DoxyCodeLine{764                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_aac96a7d27160d7d2e706d614f4ade7d2}{BakeBoneConstraints}}(b, animation, clip);}
+\DoxyCodeLine{765                     \}}
+\DoxyCodeLine{766                 \}}
+\DoxyCodeLine{767             \}}
+\DoxyCodeLine{768 }
+\DoxyCodeLine{769             \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} t \textcolor{keywordflow}{in} timelines) \{}
+\DoxyCodeLine{770                 skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}{SetToSetupPose}}();}
+\DoxyCodeLine{771 }
+\DoxyCodeLine{772                 \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_scale_timeline}{ScaleTimeline}}) \{}
+\DoxyCodeLine{773                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a62f853b247f14401671c80a31176d83c}{ParseScaleTimeline}}(skeleton, (\mbox{\hyperlink{class_spine_1_1_scale_timeline}{ScaleTimeline}})t, clip);}
+\DoxyCodeLine{774                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_translate_timeline}{TranslateTimeline}}) \{}
+\DoxyCodeLine{775                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab0ec452bbe81c401a9317ee74f7d7c38}{ParseTranslateTimeline}}(skeleton, (\mbox{\hyperlink{class_spine_1_1_translate_timeline}{TranslateTimeline}})t, clip);}
+\DoxyCodeLine{776                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_rotate_timeline}{RotateTimeline}}) \{}
+\DoxyCodeLine{777                     \textcolor{comment}{//bypass any rotation keys if they're going to get baked anyway to prevent localEulerAngles vs Baked collision}}
+\DoxyCodeLine{778                     \textcolor{keywordflow}{if} (ignoreRotateTimelineIndexes.Contains(((\mbox{\hyperlink{class_spine_1_1_rotate_timeline}{RotateTimeline}})t).BoneIndex) == \textcolor{keyword}{false})}
+\DoxyCodeLine{779                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae89dccf2c6c58d3e8195f926eab51ff1}{ParseRotateTimeline}}(skeleton, (\mbox{\hyperlink{class_spine_1_1_rotate_timeline}{RotateTimeline}})t, clip);}
+\DoxyCodeLine{780                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_attachment_timeline}{AttachmentTimeline}}) \{}
+\DoxyCodeLine{781                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a83ec8cfe5d65d4fe02f9247036fdc661}{ParseAttachmentTimeline}}(skeleton, (\mbox{\hyperlink{class_spine_1_1_attachment_timeline}{AttachmentTimeline}})t, slotLookup, clip);}
+\DoxyCodeLine{782                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_event_timeline}{EventTimeline}}) \{}
+\DoxyCodeLine{783                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5ccf2cae9fcfd91b034b98cc51fc6a66}{ParseEventTimeline}}((\mbox{\hyperlink{class_spine_1_1_event_timeline}{EventTimeline}})t, clip, eventOptions);}
+\DoxyCodeLine{784                 \}}
+\DoxyCodeLine{785 }
+\DoxyCodeLine{786             \}}
+\DoxyCodeLine{787 }
+\DoxyCodeLine{788             var settings = AnimationUtility.GetAnimationClipSettings(clip);}
+\DoxyCodeLine{789             settings.loopTime = \textcolor{keyword}{true};}
+\DoxyCodeLine{790             settings.stopTime = Mathf.Max(clip.length, 0.001f);}
+\DoxyCodeLine{791 }
+\DoxyCodeLine{792             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a02fef2c3ef82fb57bd38b38e48bf1ad2}{SetAnimationSettings}}(clip, settings);}
+\DoxyCodeLine{793 }
+\DoxyCodeLine{794             clip.EnsureQuaternionContinuity();}
+\DoxyCodeLine{795 }
+\DoxyCodeLine{796             EditorUtility.SetDirty(clip);}
+\DoxyCodeLine{797 }
+\DoxyCodeLine{798             \textcolor{keywordflow}{return} clip;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a755e77fbe33b1de5885eeae6c9289136}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a755e77fbe33b1de5885eeae6c9289136}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!GenerateMecanimAnimationClips@{GenerateMecanimAnimationClips}}
+\index{GenerateMecanimAnimationClips@{GenerateMecanimAnimationClips}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{GenerateMecanimAnimationClips()}{GenerateMecanimAnimationClips()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Generate\+Mecanim\+Animation\+Clips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                                                                                \{}
+\DoxyCodeLine{76             var data = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{78                 Debug.LogError(\textcolor{stringliteral}{"SkeletonData loading failed!"}, skeletonDataAsset);}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{80             \}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82             \textcolor{keywordtype}{string} dataPath = AssetDatabase.GetAssetPath(skeletonDataAsset);}
+\DoxyCodeLine{83             \textcolor{keywordtype}{string} controllerPath = dataPath.Replace(SpineEditorUtilities.SkeletonDataSuffix, \textcolor{stringliteral}{"\_Controller"}).Replace(\textcolor{stringliteral}{".asset"}, \textcolor{stringliteral}{".controller"});}
+\DoxyCodeLine{84             UnityEditor.Animations.AnimatorController controller;}
+\DoxyCodeLine{85             \textcolor{keywordflow}{if} (skeletonDataAsset.controller != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{86                 controller = (UnityEditor.Animations.AnimatorController)skeletonDataAsset.controller;}
+\DoxyCodeLine{87                 controllerPath = AssetDatabase.GetAssetPath(controller);}
+\DoxyCodeLine{88             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{if} (File.Exists(controllerPath)) \{}
+\DoxyCodeLine{90                     \textcolor{keywordflow}{if} (EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Controller Overwrite Warning"}, \textcolor{stringliteral}{"Unknown Controller already exists at: "} + controllerPath, \textcolor{stringliteral}{"Update"}, \textcolor{stringliteral}{"Overwrite"})) \{}
+\DoxyCodeLine{91                         controller = (UnityEditor.Animations.AnimatorController)AssetDatabase.LoadAssetAtPath(controllerPath, typeof(RuntimeAnimatorController));}
+\DoxyCodeLine{92                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{93                         controller = (UnityEditor.Animations.AnimatorController)UnityEditor.Animations.AnimatorController.CreateAnimatorControllerAtPath(controllerPath);}
+\DoxyCodeLine{94                     \}}
+\DoxyCodeLine{95                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{96                     controller = (UnityEditor.Animations.AnimatorController)UnityEditor.Animations.AnimatorController.CreateAnimatorControllerAtPath(controllerPath);}
+\DoxyCodeLine{97                 \}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99             \}}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101             skeletonDataAsset.controller = controller;}
+\DoxyCodeLine{102             EditorUtility.SetDirty(skeletonDataAsset);}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             UnityEngine.Object[] objs = AssetDatabase.LoadAllAssetsAtPath(controllerPath);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106             var unityAnimationClipTable = \textcolor{keyword}{new} Dictionary<string, AnimationClip>();}
+\DoxyCodeLine{107             var spineAnimationTable = \textcolor{keyword}{new} Dictionary<string, \mbox{\hyperlink{namespace_spine}{Spine}}.\mbox{\hyperlink{class_spine_1_1_animation}{Animation}}>();}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109             \textcolor{keywordflow}{foreach} (var o \textcolor{keywordflow}{in} objs) \{}
+\DoxyCodeLine{110                 \textcolor{comment}{//Debug.LogFormat("(\{0\})\{1\} : \{3\} + \{2\} + \{4\}", o.GetType(), o.name, o.hideFlags, o.GetInstanceID(), o.GetHashCode());}}
+\DoxyCodeLine{111                 \textcolor{comment}{// There is a bug in Unity 5.3.3 (and likely before) that creates}}
+\DoxyCodeLine{112                 \textcolor{comment}{// a duplicate AnimationClip when you duplicate a Mecanim Animator State.}}
+\DoxyCodeLine{113                 \textcolor{comment}{// These duplicates seem to be identifiable by their HideFlags, so we'll exclude them.}}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{if} (o is AnimationClip) \{}
+\DoxyCodeLine{115                     var clip = o as AnimationClip;}
+\DoxyCodeLine{116                     \textcolor{keywordflow}{if} (!clip.HasFlag(HideFlags.HideInHierarchy)) \{}
+\DoxyCodeLine{117                         \textcolor{keywordflow}{if} (unityAnimationClipTable.ContainsKey(clip.name)) \{}
+\DoxyCodeLine{118                             Debug.LogWarningFormat(\textcolor{stringliteral}{"Duplicate AnimationClips were found named \{0\}"}, clip.name);}
+\DoxyCodeLine{119                         \}}
+\DoxyCodeLine{120                         unityAnimationClipTable.Add(clip.name, clip);}
+\DoxyCodeLine{121                     \}               }
+\DoxyCodeLine{122                 \}}
+\DoxyCodeLine{123             \}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125             \textcolor{keywordflow}{foreach} (var animations \textcolor{keywordflow}{in} data.Animations) \{}
+\DoxyCodeLine{126                 \textcolor{keywordtype}{string} animationName = animations.\mbox{\hyperlink{class_spine_1_1_animation_a51bf7cf1ccd2e3ae1fa03f62336b85a7}{Name}}; \textcolor{comment}{// Review for unsafe names. Requires runtime implementation too.}}
+\DoxyCodeLine{127                 spineAnimationTable.Add(animationName, animations);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129                 \textcolor{keywordflow}{if} (unityAnimationClipTable.ContainsKey(animationName) == \textcolor{keyword}{false}) \{}
+\DoxyCodeLine{130                     AnimationClip newClip = \textcolor{keyword}{new} AnimationClip \{}
+\DoxyCodeLine{131                         name = animationName}
+\DoxyCodeLine{132                     \};}
+\DoxyCodeLine{133                     \textcolor{comment}{//AssetDatabase.CreateAsset(newClip, Path.GetDirectoryName(dataPath) + "/" + animationName + ".asset");}}
+\DoxyCodeLine{134                     AssetDatabase.AddObjectToAsset(newClip, controller);}
+\DoxyCodeLine{135                     unityAnimationClipTable.Add(animationName, newClip);}
+\DoxyCodeLine{136                 \}}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138                 AnimationClip clip = unityAnimationClipTable[animationName];}
+\DoxyCodeLine{139                 clip.SetCurve(\textcolor{stringliteral}{""}, typeof(GameObject), \textcolor{stringliteral}{"dummy"}, AnimationCurve.Linear(0, 0, animations.Duration, 0));}
+\DoxyCodeLine{140                 var settings = AnimationUtility.GetAnimationClipSettings(clip);}
+\DoxyCodeLine{141                 settings.stopTime = animations.Duration;}
+\DoxyCodeLine{142                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a02fef2c3ef82fb57bd38b38e48bf1ad2}{SetAnimationSettings}}(clip, settings);}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144                 AnimationUtility.SetAnimationEvents(clip, \textcolor{keyword}{new} AnimationEvent[0]);}
+\DoxyCodeLine{145                 \textcolor{keywordflow}{foreach} (\mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}} t \textcolor{keywordflow}{in} animations.Timelines) \{}
+\DoxyCodeLine{146                     \textcolor{keywordflow}{if} (t is \mbox{\hyperlink{class_spine_1_1_event_timeline}{EventTimeline}})}
+\DoxyCodeLine{147                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5ccf2cae9fcfd91b034b98cc51fc6a66}{ParseEventTimeline}}((\mbox{\hyperlink{class_spine_1_1_event_timeline}{EventTimeline}})t, clip, SendMessageOptions.DontRequireReceiver);}
+\DoxyCodeLine{148                 \}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                 EditorUtility.SetDirty(clip);}
+\DoxyCodeLine{151                 unityAnimationClipTable.Remove(animationName);}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             \textcolor{keywordflow}{foreach} (var clip \textcolor{keywordflow}{in} unityAnimationClipTable.Values) \{}
+\DoxyCodeLine{155                 AnimationClip.DestroyImmediate(clip, \textcolor{keyword}{true});}
+\DoxyCodeLine{156             \}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158             AssetDatabase.Refresh();}
+\DoxyCodeLine{159             AssetDatabase.SaveAssets();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!GetPath@{GetPath}}
+\index{GetPath@{GetPath}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{GetPath()}{GetPath()}}
+{\footnotesize\ttfamily static string Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Get\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1408 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1409                                            \{}
+\DoxyCodeLine{1410             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae66478beef6e0ec59ef575ff139ea9d7}{GetPathRecurse}}(b).Substring(1);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae66478beef6e0ec59ef575ff139ea9d7}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae66478beef6e0ec59ef575ff139ea9d7}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!GetPathRecurse@{GetPathRecurse}}
+\index{GetPathRecurse@{GetPathRecurse}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{GetPathRecurse()}{GetPathRecurse()}}
+{\footnotesize\ttfamily static string Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Get\+Path\+Recurse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1412 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1413                                                   \{}
+\DoxyCodeLine{1414             \textcolor{keywordflow}{if} (b == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{stringliteral}{""};}
+\DoxyCodeLine{1415             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae66478beef6e0ec59ef575ff139ea9d7}{GetPathRecurse}}(b.\mbox{\hyperlink{class_spine_1_1_bone_data_ade206a49ecef2aa7f724867c1d918b45}{Parent}}) + \textcolor{stringliteral}{"/"} + b.\mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_af7ac0003360b9519cbf08330235f3d1f}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_af7ac0003360b9519cbf08330235f3d1f}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!GetUninheritedAppliedRotation@{GetUninheritedAppliedRotation}}
+\index{GetUninheritedAppliedRotation@{GetUninheritedAppliedRotation}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{GetUninheritedAppliedRotation()}{GetUninheritedAppliedRotation()}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Get\+Uninherited\+Applied\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1394 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1395                                                             \{}
+\DoxyCodeLine{1396             \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} parent = b.\mbox{\hyperlink{class_spine_1_1_bone_aabeafbc6e34199fa8660adef6461c7c0}{Parent}};}
+\DoxyCodeLine{1397             \textcolor{keywordtype}{float} angle = b.\mbox{\hyperlink{class_spine_1_1_bone_a6a3cc7c4448f3859b6bfc6f0157c3a6f}{AppliedRotation}};}
+\DoxyCodeLine{1398 }
+\DoxyCodeLine{1399             \textcolor{keywordflow}{while} (parent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1400                 angle -\/= parent.\mbox{\hyperlink{class_spine_1_1_bone_a6a3cc7c4448f3859b6bfc6f0157c3a6f}{AppliedRotation}};}
+\DoxyCodeLine{1401                 parent = parent.\mbox{\hyperlink{class_spine_1_1_bone_aabeafbc6e34199fa8660adef6461c7c0}{Parent}};}
+\DoxyCodeLine{1402             \}}
+\DoxyCodeLine{1403 }
+\DoxyCodeLine{1404             \textcolor{keywordflow}{return} angle;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a38a7a6bff0e6185327703375c8999f92}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a38a7a6bff0e6185327703375c8999f92}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!HasFlag@{HasFlag}}
+\index{HasFlag@{HasFlag}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{HasFlag()}{HasFlag()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Has\+Flag (\begin{DoxyParamCaption}\item[{this Unity\+Engine.\+Object}]{o,  }\item[{Hide\+Flags}]{flag\+To\+Check }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 161 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                                                                \{}
+\DoxyCodeLine{163             \textcolor{keywordflow}{return} (o.hideFlags \& flagToCheck) == flagToCheck;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a83ec8cfe5d65d4fe02f9247036fdc661}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a83ec8cfe5d65d4fe02f9247036fdc661}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ParseAttachmentTimeline@{ParseAttachmentTimeline}}
+\index{ParseAttachmentTimeline@{ParseAttachmentTimeline}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ParseAttachmentTimeline()}{ParseAttachmentTimeline()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Parse\+Attachment\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{\mbox{\hyperlink{class_spine_1_1_attachment_timeline}{Attachment\+Timeline}}}]{timeline,  }\item[{Dictionary$<$ int, List$<$ string $>$$>$}]{slot\+Lookup,  }\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1325 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1326                                                                                                                                                            \{}
+\DoxyCodeLine{1327             var attachmentNames = slotLookup[timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}{SlotIndex}}];}
+\DoxyCodeLine{1328 }
+\DoxyCodeLine{1329             \textcolor{keywordtype}{string} bonePath = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{GetPath}}(skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}{SlotIndex}}].Bone.Data);}
+\DoxyCodeLine{1330             \textcolor{keywordtype}{string} slotPath = bonePath + \textcolor{stringliteral}{"/"} + skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}{SlotIndex}}].Data.Name;}
+\DoxyCodeLine{1331 }
+\DoxyCodeLine{1332             Dictionary<string, AnimationCurve> curveTable = \textcolor{keyword}{new} Dictionary<string, AnimationCurve>();}
+\DoxyCodeLine{1333 }
+\DoxyCodeLine{1334             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} attachmentNames) \{}
+\DoxyCodeLine{1335                 curveTable.Add(str, \textcolor{keyword}{new} AnimationCurve());}
+\DoxyCodeLine{1336             \}}
+\DoxyCodeLine{1337 }
+\DoxyCodeLine{1338             \textcolor{keywordtype}{float}[] frames = timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_aa27dd8e4f7583055b3c034d1ae2067ee}{Frames}};}
+\DoxyCodeLine{1339 }
+\DoxyCodeLine{1340             \textcolor{keywordflow}{if} (frames[0] != 0) \{}
+\DoxyCodeLine{1341                 \textcolor{keywordtype}{string} startingName = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}{SlotIndex}}].Data.AttachmentName;}
+\DoxyCodeLine{1342                 \textcolor{keywordflow}{foreach} (var pair \textcolor{keywordflow}{in} curveTable) \{}
+\DoxyCodeLine{1343                     \textcolor{keywordflow}{if} (startingName == \textcolor{stringliteral}{""} || startingName == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1344                         pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(0, 0, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1345                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1346                         \textcolor{keywordflow}{if} (pair.Key == startingName) \{}
+\DoxyCodeLine{1347                             pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(0, 1, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1348                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1349                             pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(0, 0, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1350                         \}}
+\DoxyCodeLine{1351                     \}}
+\DoxyCodeLine{1352                 \}}
+\DoxyCodeLine{1353             \}}
+\DoxyCodeLine{1354 }
+\DoxyCodeLine{1355             \textcolor{keywordtype}{float} currentTime = timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_aa27dd8e4f7583055b3c034d1ae2067ee}{Frames}}[0];}
+\DoxyCodeLine{1356             \textcolor{keywordtype}{float} endTime = frames[frames.Length -\/ 1];}
+\DoxyCodeLine{1357             \textcolor{keywordtype}{int} f = 0;}
+\DoxyCodeLine{1358             \textcolor{keywordflow}{while} (currentTime < endTime) \{}
+\DoxyCodeLine{1359                 \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1360 }
+\DoxyCodeLine{1361                 \textcolor{keywordtype}{int} frameIndex = (time >= frames[frames.Length -\/ 1] ? frames.Length : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a46c8e3f2938f219dee5ca46bfc5f87e6}{BinarySearch}}(frames, time)) -\/ 1;}
+\DoxyCodeLine{1362 }
+\DoxyCodeLine{1363                 \textcolor{keywordtype}{string} name = timeline.\mbox{\hyperlink{class_spine_1_1_attachment_timeline_ae4ad501415152c13b70dc20742cfed67}{AttachmentNames}}[frameIndex];}
+\DoxyCodeLine{1364                 \textcolor{keywordflow}{foreach} (var pair \textcolor{keywordflow}{in} curveTable) \{}
+\DoxyCodeLine{1365                     \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{""}) \{}
+\DoxyCodeLine{1366                         pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(time, 0, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1367                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1368                         \textcolor{keywordflow}{if} (pair.Key == name) \{}
+\DoxyCodeLine{1369                             pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(time, 1, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1370                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1371                             pair.Value.AddKey(\textcolor{keyword}{new} Keyframe(time, 0, \textcolor{keywordtype}{float}.PositiveInfinity, \textcolor{keywordtype}{float}.PositiveInfinity));}
+\DoxyCodeLine{1372                         \}}
+\DoxyCodeLine{1373                     \}}
+\DoxyCodeLine{1374                 \}}
+\DoxyCodeLine{1375 }
+\DoxyCodeLine{1376                 currentTime = time;}
+\DoxyCodeLine{1377                 f += 1;}
+\DoxyCodeLine{1378             \}}
+\DoxyCodeLine{1379 }
+\DoxyCodeLine{1380             \textcolor{keywordflow}{foreach} (var pair \textcolor{keywordflow}{in} curveTable) \{}
+\DoxyCodeLine{1381                 \textcolor{keywordtype}{string} path = slotPath + \textcolor{stringliteral}{"/"} + pair.Key;}
+\DoxyCodeLine{1382                 \textcolor{keywordtype}{string} prop = \textcolor{stringliteral}{"m\_IsActive"};}
+\DoxyCodeLine{1383 }
+\DoxyCodeLine{1384                 clip.SetCurve(path, typeof(GameObject), prop, pair.Value);}
+\DoxyCodeLine{1385             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5ccf2cae9fcfd91b034b98cc51fc6a66}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a5ccf2cae9fcfd91b034b98cc51fc6a66}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ParseEventTimeline@{ParseEventTimeline}}
+\index{ParseEventTimeline@{ParseEventTimeline}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ParseEventTimeline()}{ParseEventTimeline()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Parse\+Event\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_event_timeline}{Event\+Timeline}}}]{timeline,  }\item[{Animation\+Clip}]{clip,  }\item[{Send\+Message\+Options}]{event\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1290 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1291                                                                                                                      \{}
+\DoxyCodeLine{1292 }
+\DoxyCodeLine{1293             \textcolor{keywordtype}{float}[] frames = timeline.\mbox{\hyperlink{class_spine_1_1_event_timeline_ac648183e9bb5df5d8761bdc7a7f5c6f3}{Frames}};}
+\DoxyCodeLine{1294             var events = timeline.\mbox{\hyperlink{class_spine_1_1_event_timeline_af95836fc4b285c2edfd8355d742f640e}{Events}};}
+\DoxyCodeLine{1295 }
+\DoxyCodeLine{1296             List<AnimationEvent> animEvents = \textcolor{keyword}{new} List<AnimationEvent>();}
+\DoxyCodeLine{1297             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < frames.Length; i++) \{}
+\DoxyCodeLine{1298                 var ev = events[i];}
+\DoxyCodeLine{1299 }
+\DoxyCodeLine{1300                 AnimationEvent ae = \textcolor{keyword}{new} AnimationEvent();}
+\DoxyCodeLine{1301                 \textcolor{comment}{//MITCH: left todo:  Deal with Mecanim's zero-\/time missed event}}
+\DoxyCodeLine{1302                 ae.time = frames[i];}
+\DoxyCodeLine{1303                 ae.functionName = ev.Data.Name;}
+\DoxyCodeLine{1304                 ae.messageOptions = eventOptions;}
+\DoxyCodeLine{1305 }
+\DoxyCodeLine{1306                 \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(ev.String)) \{}
+\DoxyCodeLine{1307                     ae.stringParameter = ev.String;}
+\DoxyCodeLine{1308                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1309                     \textcolor{keywordflow}{if} (ev.Int == 0 \&\& ev.Float == 0) \{}
+\DoxyCodeLine{1310                         \textcolor{comment}{//do nothing, raw function}}
+\DoxyCodeLine{1311                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1312                         \textcolor{keywordflow}{if} (ev.Int != 0)}
+\DoxyCodeLine{1313                             ae.floatParameter = (float)ev.Int;}
+\DoxyCodeLine{1314                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1315                             ae.floatParameter = ev.Float;}
+\DoxyCodeLine{1316                     \}}
+\DoxyCodeLine{1317 }
+\DoxyCodeLine{1318                 \}}
+\DoxyCodeLine{1319 }
+\DoxyCodeLine{1320                 animEvents.Add(ae);}
+\DoxyCodeLine{1321             \}}
+\DoxyCodeLine{1322 }
+\DoxyCodeLine{1323             AnimationUtility.SetAnimationEvents(clip, animEvents.ToArray());}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae89dccf2c6c58d3e8195f926eab51ff1}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ae89dccf2c6c58d3e8195f926eab51ff1}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ParseRotateTimeline@{ParseRotateTimeline}}
+\index{ParseRotateTimeline@{ParseRotateTimeline}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ParseRotateTimeline()}{ParseRotateTimeline()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Parse\+Rotate\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{\mbox{\hyperlink{class_spine_1_1_rotate_timeline}{Rotate\+Timeline}}}]{timeline,  }\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1156 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1157                                                                                                          \{}
+\DoxyCodeLine{1158             var boneData = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a3961c1971a02c08f1a82d2eb8bfe5938}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a142613b001e125f67deeff298e87d2fc}{BoneIndex}}];}
+\DoxyCodeLine{1159             var bone = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a142613b001e125f67deeff298e87d2fc}{BoneIndex}}];}
+\DoxyCodeLine{1160 }
+\DoxyCodeLine{1161             AnimationCurve curve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{1162 }
+\DoxyCodeLine{1163             \textcolor{keywordtype}{float} endTime = timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a388f038b6cc2b35cd73d025437d09110}{Frames}}[(timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}{FrameCount}} * 2) -\/ 2];}
+\DoxyCodeLine{1164 }
+\DoxyCodeLine{1165             \textcolor{keywordtype}{float} currentTime = timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a388f038b6cc2b35cd73d025437d09110}{Frames}}[0];}
+\DoxyCodeLine{1166 }
+\DoxyCodeLine{1167             List<Keyframe> keys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{1168 }
+\DoxyCodeLine{1169             \textcolor{keywordtype}{float} rotation = timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a388f038b6cc2b35cd73d025437d09110}{Frames}}[1] + boneData.Rotation;}
+\DoxyCodeLine{1170 }
+\DoxyCodeLine{1171             keys.Add(\textcolor{keyword}{new} Keyframe(timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a388f038b6cc2b35cd73d025437d09110}{Frames}}[0], rotation, 0, 0));}
+\DoxyCodeLine{1172 }
+\DoxyCodeLine{1173             \textcolor{keywordtype}{int} listIndex = 1;}
+\DoxyCodeLine{1174             \textcolor{keywordtype}{int} frameIndex = 1;}
+\DoxyCodeLine{1175             \textcolor{keywordtype}{int} f = 2;}
+\DoxyCodeLine{1176             \textcolor{keywordtype}{float}[] frames = timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a388f038b6cc2b35cd73d025437d09110}{Frames}};}
+\DoxyCodeLine{1177             skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}{SetToSetupPose}}();}
+\DoxyCodeLine{1178             \textcolor{keywordtype}{float} lastTime = 0;}
+\DoxyCodeLine{1179             \textcolor{keywordtype}{float} angle = rotation;}
+\DoxyCodeLine{1180             \textcolor{keywordflow}{while} (currentTime < endTime) \{}
+\DoxyCodeLine{1181                 \textcolor{keywordtype}{int} pIndex = listIndex -\/ 1;}
+\DoxyCodeLine{1182                 \textcolor{keywordtype}{float} curveType = timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}{GetCurveType}}(frameIndex -\/ 1);}
+\DoxyCodeLine{1183 }
+\DoxyCodeLine{1184                 \textcolor{keywordflow}{if} (curveType == 0) \{}
+\DoxyCodeLine{1185                     \textcolor{comment}{//linear}}
+\DoxyCodeLine{1186                     Keyframe pk = keys[pIndex];}
+\DoxyCodeLine{1187 }
+\DoxyCodeLine{1188                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1189 }
+\DoxyCodeLine{1190                     rotation = frames[f + 1] + boneData.Rotation;}
+\DoxyCodeLine{1191                     angle += Mathf.DeltaAngle(angle, rotation);}
+\DoxyCodeLine{1192                     \textcolor{keywordtype}{float} r = angle;}
+\DoxyCodeLine{1193 }
+\DoxyCodeLine{1194                     \textcolor{keywordtype}{float} rOut = (r -\/ pk.value) / (time -\/ pk.time);}
+\DoxyCodeLine{1195 }
+\DoxyCodeLine{1196                     pk.outTangent = rOut;}
+\DoxyCodeLine{1197 }
+\DoxyCodeLine{1198                     keys.Add(\textcolor{keyword}{new} Keyframe(time, r, rOut, 0));}
+\DoxyCodeLine{1199 }
+\DoxyCodeLine{1200                     keys[pIndex] = pk;}
+\DoxyCodeLine{1201 }
+\DoxyCodeLine{1202                     currentTime = time;}
+\DoxyCodeLine{1203 }
+\DoxyCodeLine{1204                     timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a3b3e4cf2156400da2452f7d1c5ab3bdd}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1205 }
+\DoxyCodeLine{1206                     lastTime = time;}
+\DoxyCodeLine{1207                     listIndex++;}
+\DoxyCodeLine{1208                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 1) \{}
+\DoxyCodeLine{1209                     \textcolor{comment}{//stepped}}
+\DoxyCodeLine{1210 }
+\DoxyCodeLine{1211                     Keyframe pk = keys[pIndex];}
+\DoxyCodeLine{1212 }
+\DoxyCodeLine{1213                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1214 }
+\DoxyCodeLine{1215                     rotation = frames[f + 1] + boneData.Rotation;}
+\DoxyCodeLine{1216                     angle += Mathf.DeltaAngle(angle, rotation);}
+\DoxyCodeLine{1217                     \textcolor{keywordtype}{float} r = angle;}
+\DoxyCodeLine{1218 }
+\DoxyCodeLine{1219                     \textcolor{keywordtype}{float} rOut = \textcolor{keywordtype}{float}.PositiveInfinity;}
+\DoxyCodeLine{1220 }
+\DoxyCodeLine{1221                     pk.outTangent = rOut;}
+\DoxyCodeLine{1222 }
+\DoxyCodeLine{1223                     keys.Add(\textcolor{keyword}{new} Keyframe(time, r, rOut, 0));}
+\DoxyCodeLine{1224 }
+\DoxyCodeLine{1225                     keys[pIndex] = pk;}
+\DoxyCodeLine{1226 }
+\DoxyCodeLine{1227                     currentTime = time;}
+\DoxyCodeLine{1228 }
+\DoxyCodeLine{1229                     timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a3b3e4cf2156400da2452f7d1c5ab3bdd}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1230 }
+\DoxyCodeLine{1231                     lastTime = time;}
+\DoxyCodeLine{1232                     listIndex++;}
+\DoxyCodeLine{1233                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 2) \{}
+\DoxyCodeLine{1234                     \textcolor{comment}{//bezier}}
+\DoxyCodeLine{1235                     Keyframe pk = keys[pIndex];}
+\DoxyCodeLine{1236 }
+\DoxyCodeLine{1237                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1238 }
+\DoxyCodeLine{1239                     timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a3b3e4cf2156400da2452f7d1c5ab3bdd}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1240                     skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+\DoxyCodeLine{1241 }
+\DoxyCodeLine{1242                     rotation = frames[f + 1] + boneData.Rotation;}
+\DoxyCodeLine{1243                     angle += Mathf.DeltaAngle(angle, rotation);}
+\DoxyCodeLine{1244                     \textcolor{keywordtype}{float} r = angle;}
+\DoxyCodeLine{1245 }
+\DoxyCodeLine{1246                     \textcolor{keywordtype}{int} steps = Mathf.FloorToInt((time -\/ pk.time) / \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}});}
+\DoxyCodeLine{1247 }
+\DoxyCodeLine{1248                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= steps; i++) \{}
+\DoxyCodeLine{1249                         currentTime += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}};}
+\DoxyCodeLine{1250                         \textcolor{keywordflow}{if} (i == steps)}
+\DoxyCodeLine{1251                             currentTime = time;}
+\DoxyCodeLine{1252 }
+\DoxyCodeLine{1253                         timeline.\mbox{\hyperlink{class_spine_1_1_rotate_timeline_a3b3e4cf2156400da2452f7d1c5ab3bdd}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1254                         skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+\DoxyCodeLine{1255                         pk = keys[listIndex -\/ 1];}
+\DoxyCodeLine{1256 }
+\DoxyCodeLine{1257                         rotation = bone.Rotation;}
+\DoxyCodeLine{1258                         angle += Mathf.DeltaAngle(angle, rotation);}
+\DoxyCodeLine{1259                         r = angle;}
+\DoxyCodeLine{1260 }
+\DoxyCodeLine{1261                         \textcolor{keywordtype}{float} rOut = (r -\/ pk.value) / (currentTime -\/ pk.time);}
+\DoxyCodeLine{1262 }
+\DoxyCodeLine{1263                         pk.outTangent = rOut;}
+\DoxyCodeLine{1264 }
+\DoxyCodeLine{1265                         keys.Add(\textcolor{keyword}{new} Keyframe(currentTime, r, rOut, 0));}
+\DoxyCodeLine{1266 }
+\DoxyCodeLine{1267                         keys[listIndex -\/ 1] = pk;}
+\DoxyCodeLine{1268 }
+\DoxyCodeLine{1269                         listIndex++;}
+\DoxyCodeLine{1270                         lastTime = currentTime;}
+\DoxyCodeLine{1271                     \}}
+\DoxyCodeLine{1272                 \}}
+\DoxyCodeLine{1273 }
+\DoxyCodeLine{1274                 frameIndex++;}
+\DoxyCodeLine{1275                 f += 2;}
+\DoxyCodeLine{1276             \}}
+\DoxyCodeLine{1277 }
+\DoxyCodeLine{1278             curve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(keys.ToArray()));}
+\DoxyCodeLine{1279 }
+\DoxyCodeLine{1280             \textcolor{keywordtype}{string} path = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{GetPath}}(boneData);}
+\DoxyCodeLine{1281             \textcolor{keyword}{const} \textcolor{keywordtype}{string} propertyName = \textcolor{stringliteral}{"localEulerAnglesBaked"};}
+\DoxyCodeLine{1282 }
+\DoxyCodeLine{1283             EditorCurveBinding xBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".x"});}
+\DoxyCodeLine{1284             AnimationUtility.SetEditorCurve(clip, xBind, \textcolor{keyword}{new} AnimationCurve());}
+\DoxyCodeLine{1285             EditorCurveBinding yBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".y"});}
+\DoxyCodeLine{1286             AnimationUtility.SetEditorCurve(clip, yBind, \textcolor{keyword}{new} AnimationCurve());}
+\DoxyCodeLine{1287             EditorCurveBinding zBind = EditorCurveBinding.FloatCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".z"});}
+\DoxyCodeLine{1288             AnimationUtility.SetEditorCurve(clip, zBind, curve);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a62f853b247f14401671c80a31176d83c}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a62f853b247f14401671c80a31176d83c}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ParseScaleTimeline@{ParseScaleTimeline}}
+\index{ParseScaleTimeline@{ParseScaleTimeline}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ParseScaleTimeline()}{ParseScaleTimeline()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Parse\+Scale\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{\mbox{\hyperlink{class_spine_1_1_scale_timeline}{Scale\+Timeline}}}]{timeline,  }\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1023 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1024                                                                                                        \{}
+\DoxyCodeLine{1025             var boneData = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a3961c1971a02c08f1a82d2eb8bfe5938}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_adff1668cd9c33cd4b6230ac88bda4d57}{BoneIndex}}];}
+\DoxyCodeLine{1026             var bone = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_adff1668cd9c33cd4b6230ac88bda4d57}{BoneIndex}}];}
+\DoxyCodeLine{1027 }
+\DoxyCodeLine{1028             AnimationCurve xCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{1029             AnimationCurve yCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{1030             AnimationCurve zCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{1031 }
+\DoxyCodeLine{1032             \textcolor{keywordtype}{float} endTime = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[(timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}{FrameCount}} * 3) -\/ 3];}
+\DoxyCodeLine{1033 }
+\DoxyCodeLine{1034             \textcolor{keywordtype}{float} currentTime = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0];}
+\DoxyCodeLine{1035 }
+\DoxyCodeLine{1036             List<Keyframe> xKeys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{1037             List<Keyframe> yKeys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{1038 }
+\DoxyCodeLine{1039             xKeys.Add(\textcolor{keyword}{new} Keyframe(timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0], timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[1] * boneData.ScaleX, 0, 0));}
+\DoxyCodeLine{1040             yKeys.Add(\textcolor{keyword}{new} Keyframe(timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0], timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[2] * boneData.ScaleY, 0, 0));}
+\DoxyCodeLine{1041 }
+\DoxyCodeLine{1042             \textcolor{keywordtype}{int} listIndex = 1;}
+\DoxyCodeLine{1043             \textcolor{keywordtype}{int} frameIndex = 1;}
+\DoxyCodeLine{1044             \textcolor{keywordtype}{int} f = 3;}
+\DoxyCodeLine{1045             \textcolor{keywordtype}{float}[] frames = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}};}
+\DoxyCodeLine{1046             skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}{SetToSetupPose}}();}
+\DoxyCodeLine{1047             \textcolor{keywordtype}{float} lastTime = 0;}
+\DoxyCodeLine{1048             \textcolor{keywordflow}{while} (currentTime < endTime) \{}
+\DoxyCodeLine{1049                 \textcolor{keywordtype}{int} pIndex = listIndex -\/ 1;}
+\DoxyCodeLine{1050                 \textcolor{keywordtype}{float} curveType = timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}{GetCurveType}}(frameIndex -\/ 1);}
+\DoxyCodeLine{1051 }
+\DoxyCodeLine{1052                 \textcolor{keywordflow}{if} (curveType == 0) \{}
+\DoxyCodeLine{1053                     \textcolor{comment}{//linear}}
+\DoxyCodeLine{1054                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{1055                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{1056 }
+\DoxyCodeLine{1057                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1058                     \textcolor{keywordtype}{float} x = frames[f + 1] * boneData.ScaleX;}
+\DoxyCodeLine{1059                     \textcolor{keywordtype}{float} y = frames[f + 2] * boneData.ScaleY;}
+\DoxyCodeLine{1060 }
+\DoxyCodeLine{1061                     \textcolor{keywordtype}{float} xOut = (x -\/ px.value) / (time -\/ px.time);}
+\DoxyCodeLine{1062                     \textcolor{keywordtype}{float} yOut = (y -\/ py.value) / (time -\/ py.time);}
+\DoxyCodeLine{1063 }
+\DoxyCodeLine{1064                     px.outTangent = xOut;}
+\DoxyCodeLine{1065                     py.outTangent = yOut;}
+\DoxyCodeLine{1066 }
+\DoxyCodeLine{1067                     xKeys.Add(\textcolor{keyword}{new} Keyframe(time, x, xOut, 0));}
+\DoxyCodeLine{1068                     yKeys.Add(\textcolor{keyword}{new} Keyframe(time, y, yOut, 0));}
+\DoxyCodeLine{1069 }
+\DoxyCodeLine{1070                     xKeys[pIndex] = px;}
+\DoxyCodeLine{1071                     yKeys[pIndex] = py;}
+\DoxyCodeLine{1072 }
+\DoxyCodeLine{1073                     currentTime = time;}
+\DoxyCodeLine{1074 }
+\DoxyCodeLine{1075                     timeline.\mbox{\hyperlink{class_spine_1_1_scale_timeline_a78e166dde2c0f8013d2c512d417f66a3}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1076 }
+\DoxyCodeLine{1077                     lastTime = time;}
+\DoxyCodeLine{1078                     listIndex++;}
+\DoxyCodeLine{1079                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 1) \{}
+\DoxyCodeLine{1080                     \textcolor{comment}{//stepped}}
+\DoxyCodeLine{1081                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{1082                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{1083 }
+\DoxyCodeLine{1084                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1085                     \textcolor{keywordtype}{float} x = frames[f + 1] * boneData.ScaleX;}
+\DoxyCodeLine{1086                     \textcolor{keywordtype}{float} y = frames[f + 2] * boneData.ScaleY;}
+\DoxyCodeLine{1087 }
+\DoxyCodeLine{1088                     \textcolor{keywordtype}{float} xOut = \textcolor{keywordtype}{float}.PositiveInfinity;}
+\DoxyCodeLine{1089                     \textcolor{keywordtype}{float} yOut = \textcolor{keywordtype}{float}.PositiveInfinity;}
+\DoxyCodeLine{1090 }
+\DoxyCodeLine{1091                     px.outTangent = xOut;}
+\DoxyCodeLine{1092                     py.outTangent = yOut;}
+\DoxyCodeLine{1093 }
+\DoxyCodeLine{1094                     xKeys.Add(\textcolor{keyword}{new} Keyframe(time, x, xOut, 0));}
+\DoxyCodeLine{1095                     yKeys.Add(\textcolor{keyword}{new} Keyframe(time, y, yOut, 0));}
+\DoxyCodeLine{1096 }
+\DoxyCodeLine{1097                     xKeys[pIndex] = px;}
+\DoxyCodeLine{1098                     yKeys[pIndex] = py;}
+\DoxyCodeLine{1099 }
+\DoxyCodeLine{1100                     currentTime = time;}
+\DoxyCodeLine{1101 }
+\DoxyCodeLine{1102                     timeline.\mbox{\hyperlink{class_spine_1_1_scale_timeline_a78e166dde2c0f8013d2c512d417f66a3}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1103 }
+\DoxyCodeLine{1104                     lastTime = time;}
+\DoxyCodeLine{1105                     listIndex++;}
+\DoxyCodeLine{1106                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 2) \{}
+\DoxyCodeLine{1107                     \textcolor{comment}{//bezier}}
+\DoxyCodeLine{1108                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{1109                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{1110 }
+\DoxyCodeLine{1111                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{1112 }
+\DoxyCodeLine{1113                     \textcolor{keywordtype}{int} steps = Mathf.FloorToInt((time -\/ px.time) / \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}});}
+\DoxyCodeLine{1114 }
+\DoxyCodeLine{1115                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= steps; i++) \{}
+\DoxyCodeLine{1116                         currentTime += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}};}
+\DoxyCodeLine{1117                         \textcolor{keywordflow}{if} (i == steps)}
+\DoxyCodeLine{1118                             currentTime = time;}
+\DoxyCodeLine{1119 }
+\DoxyCodeLine{1120                         timeline.\mbox{\hyperlink{class_spine_1_1_scale_timeline_a78e166dde2c0f8013d2c512d417f66a3}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{1121 }
+\DoxyCodeLine{1122                         px = xKeys[listIndex -\/ 1];}
+\DoxyCodeLine{1123                         py = yKeys[listIndex -\/ 1];}
+\DoxyCodeLine{1124 }
+\DoxyCodeLine{1125                         \textcolor{keywordtype}{float} xOut = (bone.ScaleX -\/ px.value) / (currentTime -\/ px.time);}
+\DoxyCodeLine{1126                         \textcolor{keywordtype}{float} yOut = (bone.ScaleY -\/ py.value) / (currentTime -\/ py.time);}
+\DoxyCodeLine{1127 }
+\DoxyCodeLine{1128                         px.outTangent = xOut;}
+\DoxyCodeLine{1129                         py.outTangent = yOut;}
+\DoxyCodeLine{1130 }
+\DoxyCodeLine{1131                         xKeys.Add(\textcolor{keyword}{new} Keyframe(currentTime, bone.ScaleX, xOut, 0));}
+\DoxyCodeLine{1132                         yKeys.Add(\textcolor{keyword}{new} Keyframe(currentTime, bone.ScaleY, yOut, 0));}
+\DoxyCodeLine{1133 }
+\DoxyCodeLine{1134                         xKeys[listIndex -\/ 1] = px;}
+\DoxyCodeLine{1135                         yKeys[listIndex -\/ 1] = py;}
+\DoxyCodeLine{1136 }
+\DoxyCodeLine{1137                         listIndex++;}
+\DoxyCodeLine{1138                         lastTime = currentTime;}
+\DoxyCodeLine{1139                     \}}
+\DoxyCodeLine{1140                 \}}
+\DoxyCodeLine{1141 }
+\DoxyCodeLine{1142                 frameIndex++;}
+\DoxyCodeLine{1143                 f += 3;}
+\DoxyCodeLine{1144             \}}
+\DoxyCodeLine{1145 }
+\DoxyCodeLine{1146             xCurve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(xKeys.ToArray()));}
+\DoxyCodeLine{1147             yCurve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(yKeys.ToArray()));}
+\DoxyCodeLine{1148 }
+\DoxyCodeLine{1149             \textcolor{keywordtype}{string} path = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{GetPath}}(boneData);}
+\DoxyCodeLine{1150             \textcolor{keywordtype}{string} propertyName = \textcolor{stringliteral}{"localScale"};}
+\DoxyCodeLine{1151 }
+\DoxyCodeLine{1152             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".x"}, xCurve);}
+\DoxyCodeLine{1153             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".y"}, yCurve);}
+\DoxyCodeLine{1154             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".z"}, zCurve);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 21
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab0ec452bbe81c401a9317ee74f7d7c38}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab0ec452bbe81c401a9317ee74f7d7c38}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!ParseTranslateTimeline@{ParseTranslateTimeline}}
+\index{ParseTranslateTimeline@{ParseTranslateTimeline}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{ParseTranslateTimeline()}{ParseTranslateTimeline()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Parse\+Translate\+Timeline (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{\mbox{\hyperlink{class_spine_1_1_translate_timeline}{Translate\+Timeline}}}]{timeline,  }\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 887 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{888                                                                                                                \{}
+\DoxyCodeLine{889             var boneData = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a3961c1971a02c08f1a82d2eb8bfe5938}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_adff1668cd9c33cd4b6230ac88bda4d57}{BoneIndex}}];}
+\DoxyCodeLine{890             var bone = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Bones}}.Items[timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_adff1668cd9c33cd4b6230ac88bda4d57}{BoneIndex}}];}
+\DoxyCodeLine{891 }
+\DoxyCodeLine{892             AnimationCurve xCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{893             AnimationCurve yCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{894             AnimationCurve zCurve = \textcolor{keyword}{new} AnimationCurve();}
+\DoxyCodeLine{895 }
+\DoxyCodeLine{896             \textcolor{keywordtype}{float} endTime = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[(timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}{FrameCount}} * 3) -\/ 3];}
+\DoxyCodeLine{897 }
+\DoxyCodeLine{898             \textcolor{keywordtype}{float} currentTime = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0];}
+\DoxyCodeLine{899 }
+\DoxyCodeLine{900             List<Keyframe> xKeys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{901             List<Keyframe> yKeys = \textcolor{keyword}{new} List<Keyframe>();}
+\DoxyCodeLine{902 }
+\DoxyCodeLine{903             xKeys.Add(\textcolor{keyword}{new} Keyframe(timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0], timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[1] + boneData.X, 0, 0));}
+\DoxyCodeLine{904             yKeys.Add(\textcolor{keyword}{new} Keyframe(timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[0], timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}}[2] + boneData.Y, 0, 0));}
+\DoxyCodeLine{905 }
+\DoxyCodeLine{906             \textcolor{keywordtype}{int} listIndex = 1;}
+\DoxyCodeLine{907             \textcolor{keywordtype}{int} frameIndex = 1;}
+\DoxyCodeLine{908             \textcolor{keywordtype}{int} f = 3;}
+\DoxyCodeLine{909             \textcolor{keywordtype}{float}[] frames = timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_a98cdd3fcb218f07cb577d679ade02595}{Frames}};}
+\DoxyCodeLine{910             skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}{SetToSetupPose}}();}
+\DoxyCodeLine{911             \textcolor{keywordtype}{float} lastTime = 0;}
+\DoxyCodeLine{912             \textcolor{keywordflow}{while} (currentTime < endTime) \{}
+\DoxyCodeLine{913                 \textcolor{keywordtype}{int} pIndex = listIndex -\/ 1;}
+\DoxyCodeLine{914 }
+\DoxyCodeLine{915                 \textcolor{keywordtype}{float} curveType = timeline.\mbox{\hyperlink{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}{GetCurveType}}(frameIndex -\/ 1);}
+\DoxyCodeLine{916                 \textcolor{keywordflow}{if} (curveType == 0) \{}
+\DoxyCodeLine{917                     \textcolor{comment}{//linear}}
+\DoxyCodeLine{918                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{919                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{920 }
+\DoxyCodeLine{921                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{922                     \textcolor{keywordtype}{float} x = frames[f + 1] + boneData.X;}
+\DoxyCodeLine{923                     \textcolor{keywordtype}{float} y = frames[f + 2] + boneData.Y;}
+\DoxyCodeLine{924 }
+\DoxyCodeLine{925                     \textcolor{keywordtype}{float} xOut = (x -\/ px.value) / (time -\/ px.time);}
+\DoxyCodeLine{926                     \textcolor{keywordtype}{float} yOut = (y -\/ py.value) / (time -\/ py.time);}
+\DoxyCodeLine{927 }
+\DoxyCodeLine{928                     px.outTangent = xOut;}
+\DoxyCodeLine{929                     py.outTangent = yOut;}
+\DoxyCodeLine{930 }
+\DoxyCodeLine{931                     xKeys.Add(\textcolor{keyword}{new} Keyframe(time, x, xOut, 0));}
+\DoxyCodeLine{932                     yKeys.Add(\textcolor{keyword}{new} Keyframe(time, y, yOut, 0));}
+\DoxyCodeLine{933 }
+\DoxyCodeLine{934                     xKeys[pIndex] = px;}
+\DoxyCodeLine{935                     yKeys[pIndex] = py;}
+\DoxyCodeLine{936 }
+\DoxyCodeLine{937                     currentTime = time;}
+\DoxyCodeLine{938 }
+\DoxyCodeLine{939                     timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_ada403df06beb4eb65b6729d6f7a8d04e}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{940 }
+\DoxyCodeLine{941                     lastTime = time;}
+\DoxyCodeLine{942                     listIndex++;}
+\DoxyCodeLine{943                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 1) \{}
+\DoxyCodeLine{944                     \textcolor{comment}{//stepped}}
+\DoxyCodeLine{945                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{946                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{947 }
+\DoxyCodeLine{948                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{949                     \textcolor{keywordtype}{float} x = frames[f + 1] + boneData.X;}
+\DoxyCodeLine{950                     \textcolor{keywordtype}{float} y = frames[f + 2] + boneData.Y;}
+\DoxyCodeLine{951 }
+\DoxyCodeLine{952                     \textcolor{keywordtype}{float} xOut = \textcolor{keywordtype}{float}.PositiveInfinity;}
+\DoxyCodeLine{953                     \textcolor{keywordtype}{float} yOut = \textcolor{keywordtype}{float}.PositiveInfinity;}
+\DoxyCodeLine{954 }
+\DoxyCodeLine{955                     px.outTangent = xOut;}
+\DoxyCodeLine{956                     py.outTangent = yOut;}
+\DoxyCodeLine{957 }
+\DoxyCodeLine{958                     xKeys.Add(\textcolor{keyword}{new} Keyframe(time, x, xOut, 0));}
+\DoxyCodeLine{959                     yKeys.Add(\textcolor{keyword}{new} Keyframe(time, y, yOut, 0));}
+\DoxyCodeLine{960 }
+\DoxyCodeLine{961                     xKeys[pIndex] = px;}
+\DoxyCodeLine{962                     yKeys[pIndex] = py;}
+\DoxyCodeLine{963 }
+\DoxyCodeLine{964                     currentTime = time;}
+\DoxyCodeLine{965 }
+\DoxyCodeLine{966                     timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_ada403df06beb4eb65b6729d6f7a8d04e}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{967 }
+\DoxyCodeLine{968                     lastTime = time;}
+\DoxyCodeLine{969                     listIndex++;}
+\DoxyCodeLine{970                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (curveType == 2) \{}
+\DoxyCodeLine{971 }
+\DoxyCodeLine{972                     \textcolor{comment}{//bezier}}
+\DoxyCodeLine{973                     Keyframe px = xKeys[pIndex];}
+\DoxyCodeLine{974                     Keyframe py = yKeys[pIndex];}
+\DoxyCodeLine{975 }
+\DoxyCodeLine{976                     \textcolor{keywordtype}{float} time = frames[f];}
+\DoxyCodeLine{977 }
+\DoxyCodeLine{978                     \textcolor{keywordtype}{int} steps = Mathf.FloorToInt((time -\/ px.time) / \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}});}
+\DoxyCodeLine{979 }
+\DoxyCodeLine{980                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i <= steps; i++) \{}
+\DoxyCodeLine{981                         currentTime += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}{BakeIncrement}};}
+\DoxyCodeLine{982                         \textcolor{keywordflow}{if} (i == steps)}
+\DoxyCodeLine{983                             currentTime = time;}
+\DoxyCodeLine{984 }
+\DoxyCodeLine{985                         timeline.\mbox{\hyperlink{class_spine_1_1_translate_timeline_ada403df06beb4eb65b6729d6f7a8d04e}{Apply}}(skeleton, lastTime, currentTime, \textcolor{keyword}{null}, 1, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{986 }
+\DoxyCodeLine{987                         px = xKeys[listIndex -\/ 1];}
+\DoxyCodeLine{988                         py = yKeys[listIndex -\/ 1];}
+\DoxyCodeLine{989 }
+\DoxyCodeLine{990                         \textcolor{keywordtype}{float} xOut = (bone.X -\/ px.value) / (currentTime -\/ px.time);}
+\DoxyCodeLine{991                         \textcolor{keywordtype}{float} yOut = (bone.Y -\/ py.value) / (currentTime -\/ py.time);}
+\DoxyCodeLine{992 }
+\DoxyCodeLine{993                         px.outTangent = xOut;}
+\DoxyCodeLine{994                         py.outTangent = yOut;}
+\DoxyCodeLine{995 }
+\DoxyCodeLine{996                         xKeys.Add(\textcolor{keyword}{new} Keyframe(currentTime, bone.X, xOut, 0));}
+\DoxyCodeLine{997                         yKeys.Add(\textcolor{keyword}{new} Keyframe(currentTime, bone.Y, yOut, 0));}
+\DoxyCodeLine{998 }
+\DoxyCodeLine{999                         xKeys[listIndex -\/ 1] = px;}
+\DoxyCodeLine{1000                         yKeys[listIndex -\/ 1] = py;}
+\DoxyCodeLine{1001 }
+\DoxyCodeLine{1002                         listIndex++;}
+\DoxyCodeLine{1003                         lastTime = currentTime;}
+\DoxyCodeLine{1004                     \}}
+\DoxyCodeLine{1005                 \}}
+\DoxyCodeLine{1006 }
+\DoxyCodeLine{1007                 frameIndex++;}
+\DoxyCodeLine{1008                 f += 3;}
+\DoxyCodeLine{1009             \}}
+\DoxyCodeLine{1010 }
+\DoxyCodeLine{1011             xCurve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(xKeys.ToArray()));}
+\DoxyCodeLine{1012             yCurve = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a0f2b660fea828303e957f78e81cbcab2}{EnsureCurveKeyCount}}(\textcolor{keyword}{new} AnimationCurve(yKeys.ToArray()));}
+\DoxyCodeLine{1013 }
+\DoxyCodeLine{1014 }
+\DoxyCodeLine{1015 }
+\DoxyCodeLine{1016             \textcolor{keywordtype}{string} path = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a4f676fb3b06c045a21886ce579e2610f}{GetPath}}(boneData);}
+\DoxyCodeLine{1017             \textcolor{keyword}{const} \textcolor{keywordtype}{string} propertyName = \textcolor{stringliteral}{"localPosition"};}
+\DoxyCodeLine{1018 }
+\DoxyCodeLine{1019             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".x"}, xCurve);}
+\DoxyCodeLine{1020             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".y"}, yCurve);}
+\DoxyCodeLine{1021             clip.SetCurve(path, typeof(Transform), propertyName + \textcolor{stringliteral}{".z"}, zCurve);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 22
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 23
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a02fef2c3ef82fb57bd38b38e48bf1ad2}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a02fef2c3ef82fb57bd38b38e48bf1ad2}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!SetAnimationSettings@{SetAnimationSettings}}
+\index{SetAnimationSettings@{SetAnimationSettings}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{SetAnimationSettings()}{SetAnimationSettings()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Set\+Animation\+Settings (\begin{DoxyParamCaption}\item[{Animation\+Clip}]{clip,  }\item[{Animation\+Clip\+Settings}]{settings }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 1417 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1418                                                                                               \{}
+\DoxyCodeLine{1419             AnimationUtility.SetAnimationClipSettings(clip, settings);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 24
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a51d4e3819061a2a324615ee8e168eb31}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!BakeIncrement@{BakeIncrement}}
+\index{BakeIncrement@{BakeIncrement}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{BakeIncrement}{BakeIncrement}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Bake\+Increment = 1 / 60f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Interval between key sampling for Bezier curves, IK controlled bones, and Inherit Rotation effected bones. 
+
+
+
+Skeleton\+Baker.\+cs 파일의 171 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a110d484be688cf89c34bec42e5ec6266}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_a110d484be688cf89c34bec42e5ec6266}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!DummyBone@{DummyBone}}
+\index{DummyBone@{DummyBone}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{DummyBone}{DummyBone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Dummy\+Bone\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 448 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab849aa0f65c1d834a1479c34a6e14c90}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker_ab849aa0f65c1d834a1479c34a6e14c90}} 
+\index{Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}!DummySlot@{DummySlot}}
+\index{DummySlot@{DummySlot}!Spine.Unity.Editor.SkeletonBaker@{Spine.Unity.Editor.SkeletonBaker}}
+\doxysubsubsection{\texorpdfstring{DummySlot}{DummySlot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Unity.\+Editor.\+Skeleton\+Baker.\+Dummy\+Slot\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baker.\+cs 파일의 449 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_skeleton_baker_8cs}{Skeleton\+Baker.\+cs}}\end{DoxyCompactItemize}

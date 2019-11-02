@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-unity/Modules/BoundingBoxFollower/BoundingBoxFollower.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_bounding_box_follower_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BoundingBoxFollower.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bounding_box_follower_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity.html">Spine.Unity</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">   36</a></span>&#160;    [ExecuteInEditMode]</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">BoundingBoxFollower</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> DebugMessages = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">   40</a></span>&#160;<span class="preprocessor">        #region Inspector</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html">SkeletonRenderer</a> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">   42</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_slot.html">SpineSlot</a>(dataField: <span class="stringliteral">&quot;skeletonRenderer&quot;</span>, containsBoundingBoxes: <span class="keyword">true</span>)]</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0c9319e9070729af8c048f7b646c09a">   43</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae056aa05c958b0b83e18c630081bc91f">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0c9319e9070729af8c048f7b646c09a">isTrigger</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae056aa05c958b0b83e18c630081bc91f">clearStateOnDisable</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">   47</a></span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">   48</a></span>&#160;        <a class="code" href="class_spine_1_1_slot.html">Slot</a> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">   49</a></span>&#160;        <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">   50</a></span>&#160;        <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        PolygonCollider2D <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">   52</a></span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">   53</a></span>&#160;        <span class="keyword">public</span> readonly Dictionary&lt;BoundingBoxAttachment, PolygonCollider2D&gt; <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a> = <span class="keyword">new</span> Dictionary&lt;BoundingBoxAttachment, PolygonCollider2D&gt;();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">public</span> readonly Dictionary&lt;BoundingBoxAttachment, string&gt; <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">nameTable</a> = <span class="keyword">new</span> Dictionary&lt;BoundingBoxAttachment, string&gt;();</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#acdb4b2f8503979506efb3bb83401f803">   55</a></span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae2b6ad2b1238e4150aa5bc2f80fcb573">   56</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_slot.html">Slot</a> <a class="code" href="class_spine_1_1_slot.html">Slot</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>; } }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0f416722ba149fdcf8961fa09e0edbe">   57</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae2b6ad2b1238e4150aa5bc2f80fcb573">CurrentAttachment</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a>; } }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00d55a2c5126479a513f97368121c102">   58</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0f416722ba149fdcf8961fa09e0edbe">CurrentAttachmentName</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a>; } }</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a01898a037bbea62115fb91a06eb758d9">   59</a></span>&#160;        <span class="keyword">public</span> PolygonCollider2D <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00d55a2c5126479a513f97368121c102">CurrentCollider</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a>; } }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a01898a037bbea62115fb91a06eb758d9">IsTrigger</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0c9319e9070729af8c048f7b646c09a">isTrigger</a>; } }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a27854cba22d41abdcdfeaad0fd856906">   61</a></span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a27854cba22d41abdcdfeaad0fd856906">Start</a> () {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Initialize</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a05037132962c61237135b8e3a0f795ec">   65</a></span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a05037132962c61237135b8e3a0f795ec">OnEnable</a> () {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a> != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a64e49404fce3bd1275ade97cf0337065">OnRebuild</a> -= <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae307eacbad44cee26ff0f55f0e83082e">HandleRebuild</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a64e49404fce3bd1275ade97cf0337065">OnRebuild</a> += <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae307eacbad44cee26ff0f55f0e83082e">HandleRebuild</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Initialize</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae307eacbad44cee26ff0f55f0e83082e">   74</a></span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae307eacbad44cee26ff0f55f0e83082e">HandleRebuild</a> (<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html">SkeletonRenderer</a> sr) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">//if (BoundingBoxFollower.DebugMessages) Debug.Log(&quot;Skeleton was rebuilt. Repopulating BoundingBoxFollower.&quot;);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Initialize</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Initialize</a> (<span class="keywordtype">bool</span> overwrite = <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a> == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a51f0f25d67884c18239202881a188797">Initialize</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">if</span> (<span class="keywordtype">string</span>.IsNullOrEmpty(<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>))</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">// Don&#39;t reinitialize if the setup did not change.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span> (!overwrite</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                &amp;&amp;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.Count &gt; 0 &amp;&amp; <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a> != <span class="keyword">null</span>         <span class="comment">// Slot is set and colliders already populated.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                &amp;&amp;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a8183a6e1f44096398fef80ed4af35e34">skeleton</a> == <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>.<a class="code" href="class_spine_1_1_slot.html#a60be6be5435fd073a1a31d90e9948231">Skeleton</a>      <span class="comment">// Skeleton object did not change.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                &amp;&amp;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a> == <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>.data.name                      <span class="comment">// Slot object did not change.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            ) </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a1daba850f551c15132e9263e2070d36f">DisposeColliders</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            var skeleton = <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a8183a6e1f44096398fef80ed4af35e34">skeleton</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a> = skeleton.FindSlot(<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordtype">int</span> slotIndex = skeleton.FindSlotIndex(<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">BoundingBoxFollower</a>.DebugMessages)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    Debug.LogWarning(<span class="keywordtype">string</span>.<a class="code" href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Format</a>(<span class="stringliteral">&quot;Slot &#39;{0}&#39; not found for BoundingBoxFollower on &#39;{1}&#39;. (Previous colliders were disposed.)&quot;</span>, <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>, this.gameObject.name));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (this.gameObject.activeInHierarchy) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keywordflow">foreach</span> (var skin <span class="keywordflow">in</span> skeleton.Data.Skins)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283">AddSkin</a>(skin, slotIndex);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">if</span> (skeleton.skin != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283">AddSkin</a>(skeleton.skin, slotIndex);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span> (BoundingBoxFollower.DebugMessages) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                <span class="keywordtype">bool</span> valid = <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.Count != 0;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">if</span> (!valid) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                    <span class="keywordflow">if</span> (this.gameObject.activeInHierarchy)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                        Debug.LogWarning(<span class="stringliteral">&quot;Bounding Box Follower not valid! Slot [&quot;</span> + <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a> + <span class="stringliteral">&quot;] does not contain any Bounding Box Attachments!&quot;</span>);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                    <span class="keywordflow">else</span> </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                        Debug.LogWarning(<span class="stringliteral">&quot;Bounding Box Follower tried to rebuild as a prefab.&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283">  132</a></span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283">AddSkin</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">int</span> slotIndex) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">if</span> (skin == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            var attachmentNames = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            skin.<a class="code" href="class_spine_1_1_skin.html#a1734011a3ee22491721f29bdd9c4a478">FindNamesForSlot</a>(slotIndex, attachmentNames);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keywordflow">foreach</span> (var skinKey <span class="keywordflow">in</span> attachmentNames) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                var attachment = skin.GetAttachment(slotIndex, skinKey);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                var boundingBoxAttachment = attachment as <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">BoundingBoxFollower</a>.DebugMessages &amp;&amp; attachment != <span class="keyword">null</span> &amp;&amp; boundingBoxAttachment == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                    Debug.Log(<span class="stringliteral">&quot;BoundingBoxFollower tried to follow a slot that contains non-boundingbox attachments: &quot;</span> + <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">slotName</a>);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                <span class="keywordflow">if</span> (boundingBoxAttachment != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <span class="keywordflow">if</span> (!<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.ContainsKey(boundingBoxAttachment)) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        var bbCollider = <a class="code" href="class_spine_1_1_unity_1_1_skeleton_utility.html">SkeletonUtility</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_utility.html#a2fc833730b8296436bf5db3cdcbcf7dd">AddBoundingBoxAsComponent</a>(boundingBoxAttachment, <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>, gameObject, <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0c9319e9070729af8c048f7b646c09a">isTrigger</a>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                        bbCollider.enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                        bbCollider.hideFlags = HideFlags.NotEditable;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        bbCollider.isTrigger = <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a01898a037bbea62115fb91a06eb758d9">IsTrigger</a>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.Add(boundingBoxAttachment, bbCollider);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">nameTable</a>.Add(boundingBoxAttachment, skinKey);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a093858f530eea9fd70c061f1e5315454">  157</a></span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a093858f530eea9fd70c061f1e5315454">OnDisable</a> () {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae056aa05c958b0b83e18c630081bc91f">clearStateOnDisable</a>)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#acebcbf9547a396cb352fbb817ce877b9">ClearState</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#acebcbf9547a396cb352fbb817ce877b9">  162</a></span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#acebcbf9547a396cb352fbb817ce877b9">ClearState</a> () {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">foreach</span> (var col <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.Values)</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    col.enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        }</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a1daba850f551c15132e9263e2070d36f">  172</a></span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a1daba850f551c15132e9263e2070d36f">DisposeColliders</a> () {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            var colliders = GetComponents&lt;PolygonCollider2D&gt;();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> (colliders.Length == 0) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">if</span> (Application.isEditor) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">if</span> (Application.isPlaying) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    <span class="keywordflow">foreach</span> (var c <span class="keywordflow">in</span> colliders) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        <span class="keywordflow">if</span> (c != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                            Destroy(c);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    <span class="keywordflow">foreach</span> (var c <span class="keywordflow">in</span> colliders)</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                        <span class="keywordflow">if</span> (c != <span class="keyword">null</span>) </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                            DestroyImmediate(c);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                <span class="keywordflow">foreach</span> (PolygonCollider2D c <span class="keywordflow">in</span> colliders)</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                    <span class="keywordflow">if</span> (c != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                        Destroy(c);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.Clear();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">nameTable</a>.Clear();</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        }</div>
+<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00ccc1449d5afd0dd4c77c69332a584e">  201</a></span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00ccc1449d5afd0dd4c77c69332a584e">LateUpdate</a> () {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a> != <span class="keyword">null</span> &amp;&amp; <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> != <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a>)</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a3be7e071eea072b1b1fee0a5478fb380">MatchAttachment</a>(<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">slot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a3be7e071eea072b1b1fee0a5478fb380">MatchAttachment</a> (<a class="code" href="class_spine_1_1_attachment.html">Attachment</a> attachment) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            var bbAttachment = attachment as <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">BoundingBoxFollower</a>.DebugMessages &amp;&amp; attachment != <span class="keyword">null</span> &amp;&amp; bbAttachment == <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;BoundingBoxFollower tried to match a non-boundingbox attachment. It will treat it as null.&quot;</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a>.enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">if</span> (bbAttachment == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                PolygonCollider2D foundCollider;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">colliderTable</a>.TryGetValue(bbAttachment, out foundCollider);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="keywordflow">if</span> (foundCollider != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> = foundCollider;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a>.enabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a> = bbAttachment;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a> = <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">nameTable</a>[bbAttachment];</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">currentCollider</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">currentAttachment</a> = bbAttachment;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">currentAttachmentName</a> = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                    <span class="keywordflow">if</span> (BoundingBoxFollower.DebugMessages) Debug.LogFormat(<span class="stringliteral">&quot;Collider for BoundingBoxAttachment named &#39;{0}&#39; was not initialized. It is possibly from a new skin. currentAttachmentName will be null. You may need to call BoundingBoxFollower.Initialize(overwrite: true);&quot;</span>, bbAttachment.Name);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ae2b6ad2b1238e4150aa5bc2f80fcb573"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae2b6ad2b1238e4150aa5bc2f80fcb573">Spine.Unity.BoundingBoxFollower.CurrentAttachment</a></div><div class="ttdeci">BoundingBoxAttachment CurrentAttachment</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00056">BoundingBoxFollower.cs:56</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_accd0c907e05c9dc30dc83e34f4de3283"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283">Spine.Unity.BoundingBoxFollower.AddSkin</a></div><div class="ttdeci">void AddSkin(Skin skin, int slotIndex)</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00132">BoundingBoxFollower.cs:132</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a937f06cd0ccee7a48bd3924241a35139"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a937f06cd0ccee7a48bd3924241a35139">Spine.Unity.BoundingBoxFollower.currentAttachmentName</a></div><div class="ttdeci">string currentAttachmentName</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00049">BoundingBoxFollower.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_a8183a6e1f44096398fef80ed4af35e34"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a8183a6e1f44096398fef80ed4af35e34">Spine.Unity.SkeletonRenderer.skeleton</a></div><div class="ttdeci">Skeleton skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00110">SkeletonRenderer.cs:110</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ae307eacbad44cee26ff0f55f0e83082e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae307eacbad44cee26ff0f55f0e83082e">Spine.Unity.BoundingBoxFollower.HandleRebuild</a></div><div class="ttdeci">void HandleRebuild(SkeletonRenderer sr)</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00074">BoundingBoxFollower.cs:74</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a95f9ded4cd4fab9a0b2a2c7423ea330a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a95f9ded4cd4fab9a0b2a2c7423ea330a">Spine.Unity.BoundingBoxFollower.slotName</a></div><div class="ttdeci">string slotName</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00042">BoundingBoxFollower.cs:42</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_acebcbf9547a396cb352fbb817ce877b9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#acebcbf9547a396cb352fbb817ce877b9">Spine.Unity.BoundingBoxFollower.ClearState</a></div><div class="ttdeci">void ClearState()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00162">BoundingBoxFollower.cs:162</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a3be7e071eea072b1b1fee0a5478fb380"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a3be7e071eea072b1b1fee0a5478fb380">Spine.Unity.BoundingBoxFollower.MatchAttachment</a></div><div class="ttdeci">void MatchAttachment(Attachment attachment)</div><div class="ttdoc">Sets the current collider to match attachment.</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00208">BoundingBoxFollower.cs:208</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_a51f0f25d67884c18239202881a188797"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a51f0f25d67884c18239202881a188797">Spine.Unity.SkeletonRenderer.Initialize</a></div><div class="ttdeci">virtual void Initialize(bool overwrite)</div><div class="ttdoc">Initialize this component. Attempts to load the SkeletonData and creates the internal Skeleton object...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00180">SkeletonRenderer.cs:180</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html">Spine.Unity.SkeletonRenderer</a></div><div class="ttdoc">Renders a skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00040">SkeletonRenderer.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_utility_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_utility.html">Spine.Unity.SkeletonUtility</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_utility_8cs_source.html#l00039">SkeletonUtility.cs:39</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_utility_html_a2fc833730b8296436bf5db3cdcbcf7dd"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_utility.html#a2fc833730b8296436bf5db3cdcbcf7dd">Spine.Unity.SkeletonUtility.AddBoundingBoxAsComponent</a></div><div class="ttdeci">static PolygonCollider2D AddBoundingBoxAsComponent(BoundingBoxAttachment box, Slot slot, GameObject gameObject, bool isTrigger=true, bool isKinematic=true, float gravityScale=0f)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_utility_8cs_source.html#l00075">SkeletonUtility.cs:75</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a60be6be5435fd073a1a31d90e9948231"><div class="ttname"><a href="class_spine_1_1_slot.html#a60be6be5435fd073a1a31d90e9948231">Spine.Slot.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00045">Slot.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a2e3bd07a4034cef3a3b438f217f2f435"><div class="ttname"><a href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Spine.Slot.Attachment</a></div><div class="ttdeci">Attachment Attachment</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00057">Slot.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_slot_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_slot.html">Spine.Unity.SpineSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00046">SpineAttributes.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a129ef487b1564aa4043a011109809785"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a129ef487b1564aa4043a011109809785">Spine.Unity.BoundingBoxFollower.slot</a></div><div class="ttdeci">Slot slot</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00047">BoundingBoxFollower.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a00d55a2c5126479a513f97368121c102"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00d55a2c5126479a513f97368121c102">Spine.Unity.BoundingBoxFollower.CurrentCollider</a></div><div class="ttdeci">PolygonCollider2D CurrentCollider</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00058">BoundingBoxFollower.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ae056aa05c958b0b83e18c630081bc91f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae056aa05c958b0b83e18c630081bc91f">Spine.Unity.BoundingBoxFollower.clearStateOnDisable</a></div><div class="ttdeci">bool clearStateOnDisable</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00044">BoundingBoxFollower.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_aecc3d92f5c5c3e20f73bbef229434080"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aecc3d92f5c5c3e20f73bbef229434080">Spine.Unity.BoundingBoxFollower.currentAttachment</a></div><div class="ttdeci">BoundingBoxAttachment currentAttachment</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00048">BoundingBoxFollower.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a1daba850f551c15132e9263e2070d36f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a1daba850f551c15132e9263e2070d36f">Spine.Unity.BoundingBoxFollower.DisposeColliders</a></div><div class="ttdeci">void DisposeColliders()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00172">BoundingBoxFollower.cs:172</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ae73e0c036c630039b6762bd1421023ce"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae73e0c036c630039b6762bd1421023ce">Spine.Unity.BoundingBoxFollower.colliderTable</a></div><div class="ttdeci">readonly Dictionary&lt; BoundingBoxAttachment, PolygonCollider2D &gt; colliderTable</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00052">BoundingBoxFollower.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a093858f530eea9fd70c061f1e5315454"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a093858f530eea9fd70c061f1e5315454">Spine.Unity.BoundingBoxFollower.OnDisable</a></div><div class="ttdeci">void OnDisable()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00157">BoundingBoxFollower.cs:157</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ae0711c0b2b0c5149525ca25eb5a25078"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ae0711c0b2b0c5149525ca25eb5a25078">Spine.Unity.BoundingBoxFollower.currentCollider</a></div><div class="ttdeci">PolygonCollider2D currentCollider</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00050">BoundingBoxFollower.cs:50</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a27854cba22d41abdcdfeaad0fd856906"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a27854cba22d41abdcdfeaad0fd856906">Spine.Unity.BoundingBoxFollower.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00061">BoundingBoxFollower.cs:61</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ad0f416722ba149fdcf8961fa09e0edbe"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0f416722ba149fdcf8961fa09e0edbe">Spine.Unity.BoundingBoxFollower.CurrentAttachmentName</a></div><div class="ttdeci">string CurrentAttachmentName</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00057">BoundingBoxFollower.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_ad0c9319e9070729af8c048f7b646c09a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0c9319e9070729af8c048f7b646c09a">Spine.Unity.BoundingBoxFollower.isTrigger</a></div><div class="ttdeci">bool isTrigger</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00043">BoundingBoxFollower.cs:43</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a66fcb0ab63b2b301097360f7cb4f1cd3"><div class="ttname"><a href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Spine.Format</a></div><div class="ttdeci">Format</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00256">Atlas.cs:256</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_a64e49404fce3bd1275ade97cf0337065"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a64e49404fce3bd1275ade97cf0337065">Spine.Unity.SkeletonRenderer.OnRebuild</a></div><div class="ttdeci">SkeletonRendererDelegate OnRebuild</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00043">SkeletonRenderer.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a01898a037bbea62115fb91a06eb758d9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a01898a037bbea62115fb91a06eb758d9">Spine.Unity.BoundingBoxFollower.IsTrigger</a></div><div class="ttdeci">bool IsTrigger</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00059">BoundingBoxFollower.cs:59</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a1734011a3ee22491721f29bdd9c4a478"><div class="ttname"><a href="class_spine_1_1_skin.html#a1734011a3ee22491721f29bdd9c4a478">Spine.Skin.FindNamesForSlot</a></div><div class="ttdeci">void FindNamesForSlot(int slotIndex, List&lt; string &gt; names)</div><div class="ttdoc">Finds the skin keys for a given slot. The results are added to the passed List(names).</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00068">Skin.cs:68</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a6ba3bb70a58ca9977e1d0dfb512286fb"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Spine.Unity.BoundingBoxFollower.Initialize</a></div><div class="ttdeci">void Initialize(bool overwrite=false)</div><div class="ttdoc">Initialize and instantiate the BoundingBoxFollower colliders. This is method checks if the BoundingBo...</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00081">BoundingBoxFollower.cs:81</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a05037132962c61237135b8e3a0f795ec"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a05037132962c61237135b8e3a0f795ec">Spine.Unity.BoundingBoxFollower.OnEnable</a></div><div class="ttdeci">void OnEnable()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00065">BoundingBoxFollower.cs:65</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a77ea3def0d625b16ba8e41f087059660"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a77ea3def0d625b16ba8e41f087059660">Spine.Unity.BoundingBoxFollower.nameTable</a></div><div class="ttdeci">readonly Dictionary&lt; BoundingBoxAttachment, string &gt; nameTable</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00053">BoundingBoxFollower.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_aa6e8d3792432bf4b667535bf87ad9040"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#aa6e8d3792432bf4b667535bf87ad9040">Spine.Unity.BoundingBoxFollower.skeletonRenderer</a></div><div class="ttdeci">SkeletonRenderer skeletonRenderer</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00040">BoundingBoxFollower.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a00ccc1449d5afd0dd4c77c69332a584e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a00ccc1449d5afd0dd4c77c69332a584e">Spine.Unity.BoundingBoxFollower.LateUpdate</a></div><div class="ttdeci">void LateUpdate()</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00201">BoundingBoxFollower.cs:201</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bounding_box_attachment_html"><div class="ttname"><a href="class_spine_1_1_bounding_box_attachment.html">Spine.BoundingBoxAttachment</a></div><div class="ttdoc">Attachment that has a polygon for bounds checking.</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_attachment_8cs_source.html#l00034">BoundingBoxAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html">Spine.Unity.BoundingBoxFollower</a></div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00036">BoundingBoxFollower.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_951c4f09499d9c65937740bb62fad379.html">spine-unity</a></li><li class="navelem"><a class="el" href="dir_5f09bf8e311d6e562830c0fafc451e5f.html">Modules</a></li><li class="navelem"><a class="el" href="dir_8c5152aecb53688d9114f19c5e063e1a.html">BoundingBoxFollower</a></li><li class="navelem"><a class="el" href="_bounding_box_follower_8cs.html">BoundingBoxFollower.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

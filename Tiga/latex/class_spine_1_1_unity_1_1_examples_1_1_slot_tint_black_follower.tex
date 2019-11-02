@@ -1,0 +1,242 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower}{}\doxysection{Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower}\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+
+
+Add this component to a \mbox{\hyperlink{namespace_spine}{Spine}} Game\+Object to apply a specific slot\textquotesingle{}s Colors as Material\+Properties. This allows you to apply the two color tint to the whole skeleton and not require the overhead of an extra vertex stream on the mesh.  
+
+
+
+
+Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac0cdba46deb80449ed227e44e47a2905}{Initialize}} (bool overwrite)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aab99de7dbc6906f2035e68e6bdde3dee}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a7ea7bcbda12fdfeb001f0f599ace3800}{slot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac36764c41deda9135042ddc083d53e49}{slot\+Name}}
+\begin{DoxyCompactList}\small\item\em Serialized name of the slot loaded at runtime. Change the slot field instead of this if you want to change the followed slot at runtime. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a0ce9586e97a432027a7a96ca479f2ed5}{color\+Property\+Name}} = \char`\"{}\+\_\+\+Color\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a3fe954696ec0e66ba4eb672b41960eb8}{black\+Property\+Name}} = \char`\"{}\+\_\+\+Black\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aa255d19266b82e83ed89e7ad84fffdd0}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a38211a507f574bf254be7d0de099dc88}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}{mr}}
+\item 
+Material\+Property\+Block \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a4d438c04313a33592cb6c82d23bc9c8c}{color\+Property\+Id}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a632c22d54ecaae231e288d88763d73df}{black\+Property\+Id}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Add this component to a \mbox{\hyperlink{namespace_spine}{Spine}} Game\+Object to apply a specific slot\textquotesingle{}s Colors as Material\+Properties. This allows you to apply the two color tint to the whole skeleton and not require the overhead of an extra vertex stream on the mesh. 
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac0cdba46deb80449ed227e44e47a2905}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac0cdba46deb80449ed227e44e47a2905}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+Initialize (\begin{DoxyParamCaption}\item[{bool}]{overwrite }\end{DoxyParamCaption})}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                                 \{}
+\DoxyCodeLine{64             \textcolor{keywordflow}{if} (overwrite || \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{65                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}} = \textcolor{keyword}{new} MaterialPropertyBlock();}
+\DoxyCodeLine{66                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}{mr}} = GetComponent<MeshRenderer>();}
+\DoxyCodeLine{67                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a7ea7bcbda12fdfeb001f0f599ace3800}{slot}} = GetComponent<ISkeletonComponent>().\mbox{\hyperlink{class_spine_1_1_slot_a60be6be5435fd073a1a31d90e9948231}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}{FindSlot}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac36764c41deda9135042ddc083d53e49}{slotName}});}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a4d438c04313a33592cb6c82d23bc9c8c}{colorPropertyId}} = Shader.PropertyToID(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a0ce9586e97a432027a7a96ca479f2ed5}{colorPropertyName}});}
+\DoxyCodeLine{70                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a632c22d54ecaae231e288d88763d73df}{blackPropertyId}} = Shader.PropertyToID(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a3fe954696ec0e66ba4eb672b41960eb8}{blackPropertyName}});}
+\DoxyCodeLine{71             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a38211a507f574bf254be7d0de099dc88}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a38211a507f574bf254be7d0de099dc88}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 83 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                           \{}
+\DoxyCodeLine{85             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}}.Clear();}
+\DoxyCodeLine{86             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}{mr}}.SetPropertyBlock(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aa255d19266b82e83ed89e7ad84fffdd0}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aa255d19266b82e83ed89e7ad84fffdd0}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                       \{}
+\DoxyCodeLine{60             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac0cdba46deb80449ed227e44e47a2905}{Initialize}}(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aab99de7dbc6906f2035e68e6bdde3dee}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_aab99de7dbc6906f2035e68e6bdde3dee}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                               \{}
+\DoxyCodeLine{75             Slot s = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a7ea7bcbda12fdfeb001f0f599ace3800}{slot}};}
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (s == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a4d438c04313a33592cb6c82d23bc9c8c}{colorPropertyId}}, s.GetColor());}
+\DoxyCodeLine{79             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a632c22d54ecaae231e288d88763d73df}{blackPropertyId}}, s.GetColorTintBlack());}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}{mr}}.SetPropertyBlock(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}{mb}});}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a632c22d54ecaae231e288d88763d73df}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a632c22d54ecaae231e288d88763d73df}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!blackPropertyId@{blackPropertyId}}
+\index{blackPropertyId@{blackPropertyId}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{blackPropertyId}{blackPropertyId}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+black\+Property\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a3fe954696ec0e66ba4eb672b41960eb8}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a3fe954696ec0e66ba4eb672b41960eb8}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!blackPropertyName@{blackPropertyName}}
+\index{blackPropertyName@{blackPropertyName}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{blackPropertyName}{blackPropertyName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+black\+Property\+Name = \char`\"{}\+\_\+\+Black\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a4d438c04313a33592cb6c82d23bc9c8c}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a4d438c04313a33592cb6c82d23bc9c8c}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!colorPropertyId@{colorPropertyId}}
+\index{colorPropertyId@{colorPropertyId}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{colorPropertyId}{colorPropertyId}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+color\+Property\+Id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a0ce9586e97a432027a7a96ca479f2ed5}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a0ce9586e97a432027a7a96ca479f2ed5}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!colorPropertyName@{colorPropertyName}}
+\index{colorPropertyName@{colorPropertyName}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{colorPropertyName}{colorPropertyName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+color\+Property\+Name = \char`\"{}\+\_\+\+Color\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a464560999c8250e7e9476961e2d32d94}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!mb@{mb}}
+\index{mb@{mb}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{mb}{mb}}
+{\footnotesize\ttfamily Material\+Property\+Block Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+mb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a84d9f7f69ebf003894da69422a46f2e9}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!mr@{mr}}
+\index{mr@{mr}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{mr}{mr}}
+{\footnotesize\ttfamily Mesh\+Renderer Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+mr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a7ea7bcbda12fdfeb001f0f599ace3800}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_a7ea7bcbda12fdfeb001f0f599ace3800}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!slot@{slot}}
+\index{slot@{slot}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+slot}
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac36764c41deda9135042ddc083d53e49}\label{class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_ac36764c41deda9135042ddc083d53e49}} 
+\index{Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}!slotName@{slotName}}
+\index{slotName@{slotName}!Spine.Unity.Examples.SlotTintBlackFollower@{Spine.Unity.Examples.SlotTintBlackFollower}}
+\doxysubsubsection{\texorpdfstring{slotName}{slotName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Slot\+Tint\+Black\+Follower.\+slot\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Serialized name of the slot loaded at runtime. Change the slot field instead of this if you want to change the followed slot at runtime. 
+
+
+
+Slot\+Tint\+Black\+Follower.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\mbox{\hyperlink{_slot_tint_black_follower_8cs}{Slot\+Tint\+Black\+Follower.\+cs}}\end{DoxyCompactItemize}

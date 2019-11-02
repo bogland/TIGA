@@ -1,0 +1,169 @@
+\hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}{}\doxysection{Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager 클래스 참조}
+\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+
+
+Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_af4d6b210528b5368b9fafa47d5328c35}{New\+Stage}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aa31b985e109c566c5a607df8b6f333f3}{first\+Loaded}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}{Game\+Manager}} \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ac57d48ce4fd038fb504cec278d28f4c1}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em 싱글톤 클래스를 생성하기 위해서 public static \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}{Game\+Manager}} Instance \{get; private set;\} 만들고 유니티에선 생성자 대신 private void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ab9f01da45f524b860a3af8144e3943e3}{Awake()}}로 Instance생성, 기존에 있던게 null이면 새로 생성 Dont\+Destroy\+On\+Load를 하면 씬이 바뀌어도 Object가 파괴되지 않음 만약 기존에 Instance가 존재하면 이미 만들어진 것이므로 해당 게임 오브젝트는 파괴한다. 버튼에 싱글톤으로 만든 클래스 메소드를 넣으면 파괴되어 missing뜸, 새로 클래스 만든어서 Wrapping 해야함 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ab9f01da45f524b860a3af8144e3943e3}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aff453ab3ddb35cc9761615f38f5fbd1d}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader}{Scene\+Loader}} \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}{scene\+Loader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Game\+Manager.\+cs 파일의 7 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ab9f01da45f524b860a3af8144e3943e3}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ab9f01da45f524b860a3af8144e3943e3}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!Awake@{Awake}}
+\index{Awake@{Awake}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+Manager.\+cs 파일의 22 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23         \{}
+\DoxyCodeLine{24             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ac57d48ce4fd038fb504cec278d28f4c1}{Instance}}==\textcolor{keyword}{null})}
+\DoxyCodeLine{25             \{}
+\DoxyCodeLine{26                 \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ac57d48ce4fd038fb504cec278d28f4c1}{Instance}} = \textcolor{keyword}{this};}
+\DoxyCodeLine{27                 \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}{sceneLoader}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_scene_loader}{SceneLoader}}();}
+\DoxyCodeLine{28                 DontDestroyOnLoad(gameObject);}
+\DoxyCodeLine{29                 \textcolor{comment}{//Debug.Log("GameManager :: 첫 메모리 로드");}}
+\DoxyCodeLine{30             \}}
+\DoxyCodeLine{31             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{32             \{}
+\DoxyCodeLine{33                 Destroy(gameObject);}
+\DoxyCodeLine{34             \}}
+\DoxyCodeLine{35             }
+\DoxyCodeLine{36         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_af4d6b210528b5368b9fafa47d5328c35}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_af4d6b210528b5368b9fafa47d5328c35}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!NewStage@{NewStage}}
+\index{NewStage@{NewStage}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{NewStage()}{NewStage()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+New\+Stage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Game\+Manager.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47         \{}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}{sceneLoader}}.\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a13aaa96ae81da15381a51e4982491bb4}{LoadScene}}(\textcolor{stringliteral}{"Stage001"});}
+\DoxyCodeLine{49         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aff453ab3ddb35cc9761615f38f5fbd1d}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aff453ab3ddb35cc9761615f38f5fbd1d}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!Start@{Start}}
+\index{Start@{Start}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+Manager.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38         \{}
+\DoxyCodeLine{39                 \textcolor{comment}{//Debug.Log("첫 로드");}}
+\DoxyCodeLine{40                 \textcolor{keywordtype}{string}[] sceneNames = \{ \textcolor{stringliteral}{"MainMenu"}, \textcolor{stringliteral}{"Stage001"} \};}
+\DoxyCodeLine{41                 \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}{sceneLoader}}.\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a01cf68238f119b16a1af28808a2600f6}{RegisterScenes}}(sceneNames);}
+\DoxyCodeLine{42                 \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}{sceneLoader}}.\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a13aaa96ae81da15381a51e4982491bb4}{LoadScene}}(\textcolor{stringliteral}{"MainMenu"});}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aa31b985e109c566c5a607df8b6f333f3}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_aa31b985e109c566c5a607df8b6f333f3}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!firstLoaded@{firstLoaded}}
+\index{firstLoaded@{firstLoaded}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{firstLoaded}{firstLoaded}}
+{\footnotesize\ttfamily bool Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+first\+Loaded}
+
+
+
+Game\+Manager.\+cs 파일의 20 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ad15fc23a84dd5efebaa2c4cf4676dd81}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!sceneLoader@{sceneLoader}}
+\index{sceneLoader@{sceneLoader}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{sceneLoader}{sceneLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader}{Scene\+Loader}} Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+scene\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Game\+Manager.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ac57d48ce4fd038fb504cec278d28f4c1}\label{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ac57d48ce4fd038fb504cec278d28f4c1}} 
+\index{Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}!Instance@{Instance}}
+\index{Instance@{Instance}!Tiga.Util.Scene.LoadScene.GameManager@{Tiga.Util.Scene.LoadScene.GameManager}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}{Game\+Manager}} Tiga.\+Util.\+Scene.\+Load\+Scene.\+Game\+Manager.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+싱글톤 클래스를 생성하기 위해서 public static \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager}{Game\+Manager}} Instance \{get; private set;\} 만들고 유니티에선 생성자 대신 private void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager_ab9f01da45f524b860a3af8144e3943e3}{Awake()}}로 Instance생성, 기존에 있던게 null이면 새로 생성 Dont\+Destroy\+On\+Load를 하면 씬이 바뀌어도 Object가 파괴되지 않음 만약 기존에 Instance가 존재하면 이미 만들어진 것이므로 해당 게임 오브젝트는 파괴한다. 버튼에 싱글톤으로 만든 클래스 메소드를 넣으면 파괴되어 missing뜸, 새로 클래스 만든어서 Wrapping 해야함 
+
+
+
+Game\+Manager.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{17 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Util/\+Scene/\+Load\+Scene/\mbox{\hyperlink{_game_manager_8cs}{Game\+Manager.\+cs}}\end{DoxyCompactItemize}

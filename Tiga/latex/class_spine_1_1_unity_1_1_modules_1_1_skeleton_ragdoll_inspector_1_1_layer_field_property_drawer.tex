@@ -1,0 +1,47 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll\+Inspector.\+Layer\+Field\+Property\+Drawer 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer}\index{Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer@{Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll\+Inspector.\+Layer\+Field\+Property\+Drawer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll\+Inspector.\+Layer\+Field\+Property\+Drawer에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer_a15bd99d06506e092fb4a4ef7a07bd72a}{On\+G\+UI}} (Rect position, Serialized\+Property property, G\+U\+I\+Content label)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Ragdoll\+Inspector.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer_a15bd99d06506e092fb4a4ef7a07bd72a}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer_a15bd99d06506e092fb4a4ef7a07bd72a}} 
+\index{Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer@{Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer@{Spine.Unity.Modules.SkeletonRagdollInspector.LayerFieldPropertyDrawer}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll\+Inspector.\+Layer\+Field\+Property\+Drawer.\+On\+G\+UI (\begin{DoxyParamCaption}\item[{Rect}]{position,  }\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Ragdoll\+Inspector.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40                                               : PropertyDrawer \{}
+\DoxyCodeLine{41             \textcolor{keyword}{public} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer_a15bd99d06506e092fb4a4ef7a07bd72a}{OnGUI}} (Rect position, SerializedProperty property, GUIContent label) \{}
+\DoxyCodeLine{42                 \textcolor{keyword}{property}.intValue = EditorGUI.LayerField(position, label, property.intValue);}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Ragdoll/\+Editor/\mbox{\hyperlink{_skeleton_ragdoll_inspector_8cs}{Skeleton\+Ragdoll\+Inspector.\+cs}}\end{DoxyCompactItemize}

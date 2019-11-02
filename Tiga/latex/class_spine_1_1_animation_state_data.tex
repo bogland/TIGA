@@ -1,0 +1,207 @@
+\hypertarget{class_spine_1_1_animation_state_data}{}\doxysection{Spine.\+Animation\+State\+Data 클래스 참조}
+\label{class_spine_1_1_animation_state_data}\index{Spine.AnimationStateData@{Spine.AnimationStateData}}
+
+
+Stores mix (crossfade) durations to be applied when \mbox{\hyperlink{class_spine_1_1_animation_state}{Animation\+State}} animations are changed.  
+
+
+
+
+Spine.\+Animation\+State\+Data에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{Animation\+Pair\+Comparer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_data_aefb9c7c841c4bb075b38d02087800962}{Animation\+State\+Data}} (\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_animation_state_data_ac73823921fef29d2c9ccd75b6ab5b56f}{Set\+Mix}} (string from\+Name, string to\+Name, float duration)
+\begin{DoxyCompactList}\small\item\em Sets a mix duration by animation names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_animation_state_data_a57023c47c3da88b96c7b26f07fe617b3}{Set\+Mix}} (\mbox{\hyperlink{class_spine_1_1_animation}{Animation}} from, \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} to, float duration)
+\begin{DoxyCompactList}\small\item\em Sets a mix duration when changing from the specified animation to the other. See \mbox{\hyperlink{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}{Track\+Entry.\+Mix\+Duration}}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_animation_state_data_ac96b3c2ad1d813d906f90acfb7d2fdf0}{Get\+Mix}} (\mbox{\hyperlink{class_spine_1_1_animation}{Animation}} from, \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} to)
+\begin{DoxyCompactList}\small\item\em The mix duration to use when changing from the specified animation to the other, or the Default\+Mix if no mix duration has been set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_animation_state_data_afa3272737d30769a573901653734c046}{Skeleton\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} to look up animations when they are specified by name. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_animation_state_data_a6cfdb35a391cc33dcd080ec1374f332e}{Default\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The mix duration to use when no mix duration has been specifically defined between two animations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}, float $>$ \mbox{\hyperlink{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}{animation\+To\+Mix\+Time}} = new Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}, float$>$(\mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a43283b31fabd0cce79da3dab3cc2e671}{Animation\+Pair\+Comparer.\+Instance}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Stores mix (crossfade) durations to be applied when \mbox{\hyperlink{class_spine_1_1_animation_state}{Animation\+State}} animations are changed. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_aefb9c7c841c4bb075b38d02087800962}\label{class_spine_1_1_animation_state_data_aefb9c7c841c4bb075b38d02087800962}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!AnimationStateData@{AnimationStateData}}
+\index{AnimationStateData@{AnimationStateData}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{AnimationStateData()}{AnimationStateData()}}
+{\footnotesize\ttfamily Spine.\+Animation\+State\+Data.\+Animation\+State\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data }\end{DoxyParamCaption})}
+
+
+
+Animation\+State\+Data.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                                               \{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (skeletonData == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"skeletonData cannot be null."}, \textcolor{stringliteral}{"skeletonData"});}
+\DoxyCodeLine{51             this.skeletonData = skeletonData;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_ac96b3c2ad1d813d906f90acfb7d2fdf0}\label{class_spine_1_1_animation_state_data_ac96b3c2ad1d813d906f90acfb7d2fdf0}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!GetMix@{GetMix}}
+\index{GetMix@{GetMix}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{GetMix()}{GetMix()}}
+{\footnotesize\ttfamily float Spine.\+Animation\+State\+Data.\+Get\+Mix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{from,  }\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{to }\end{DoxyParamCaption})}
+
+
+
+The mix duration to use when changing from the specified animation to the other, or the Default\+Mix if no mix duration has been set. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                                            \{}
+\DoxyCodeLine{78             \textcolor{keywordflow}{if} (from == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"from"}, \textcolor{stringliteral}{"from cannot be null."});}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (to == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"to"}, \textcolor{stringliteral}{"to cannot be null."});}
+\DoxyCodeLine{80             AnimationPair key = \textcolor{keyword}{new} AnimationPair(from, to);}
+\DoxyCodeLine{81             \textcolor{keywordtype}{float} duration;}
+\DoxyCodeLine{82             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}{animationToMixTime}}.TryGetValue(key, out duration)) \textcolor{keywordflow}{return} duration;}
+\DoxyCodeLine{83             \textcolor{keywordflow}{return} defaultMix;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_a57023c47c3da88b96c7b26f07fe617b3}\label{class_spine_1_1_animation_state_data_a57023c47c3da88b96c7b26f07fe617b3}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!SetMix@{SetMix}}
+\index{SetMix@{SetMix}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{SetMix()}{SetMix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spine.\+Animation\+State\+Data.\+Set\+Mix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{from,  }\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{to,  }\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Sets a mix duration when changing from the specified animation to the other. See \mbox{\hyperlink{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}{Track\+Entry.\+Mix\+Duration}}. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                                           \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (from == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"from"}, \textcolor{stringliteral}{"from cannot be null."});}
+\DoxyCodeLine{67             \textcolor{keywordflow}{if} (to == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"to"}, \textcolor{stringliteral}{"to cannot be null."});}
+\DoxyCodeLine{68             AnimationPair key = \textcolor{keyword}{new} AnimationPair(from, to);}
+\DoxyCodeLine{69             \mbox{\hyperlink{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}{animationToMixTime}}.Remove(key);}
+\DoxyCodeLine{70             \mbox{\hyperlink{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}{animationToMixTime}}.Add(key, duration);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_ac73823921fef29d2c9ccd75b6ab5b56f}\label{class_spine_1_1_animation_state_data_ac73823921fef29d2c9ccd75b6ab5b56f}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!SetMix@{SetMix}}
+\index{SetMix@{SetMix}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{SetMix()}{SetMix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spine.\+Animation\+State\+Data.\+Set\+Mix (\begin{DoxyParamCaption}\item[{string}]{from\+Name,  }\item[{string}]{to\+Name,  }\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Sets a mix duration by animation names. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                                                             \{}
+\DoxyCodeLine{56             \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}} from = skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(fromName);}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (from == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"Animation not found: "} + fromName, \textcolor{stringliteral}{"fromName"});}
+\DoxyCodeLine{58             \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}} to = skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(toName);}
+\DoxyCodeLine{59             \textcolor{keywordflow}{if} (to == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"Animation not found: "} + toName, \textcolor{stringliteral}{"toName"});}
+\DoxyCodeLine{60             \mbox{\hyperlink{class_spine_1_1_animation_state_data_ac73823921fef29d2c9ccd75b6ab5b56f}{SetMix}}(from, to, duration);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}\label{class_spine_1_1_animation_state_data_a38e4434cc9ea582886ebbece03b79fc6}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!animationToMixTime@{animationToMixTime}}
+\index{animationToMixTime@{animationToMixTime}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{animationToMixTime}{animationToMixTime}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}, float$>$ Spine.\+Animation\+State\+Data.\+animation\+To\+Mix\+Time = new Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}, float$>$(\mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a43283b31fabd0cce79da3dab3cc2e671}{Animation\+Pair\+Comparer.\+Instance}})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State\+Data.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_a6cfdb35a391cc33dcd080ec1374f332e}\label{class_spine_1_1_animation_state_data_a6cfdb35a391cc33dcd080ec1374f332e}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!DefaultMix@{DefaultMix}}
+\index{DefaultMix@{DefaultMix}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{DefaultMix}{DefaultMix}}
+{\footnotesize\ttfamily float Spine.\+Animation\+State\+Data.\+Default\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The mix duration to use when no mix duration has been specifically defined between two animations. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} defaultMix; \} \textcolor{keyword}{set} \{ defaultMix = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_afa3272737d30769a573901653734c046}\label{class_spine_1_1_animation_state_data_afa3272737d30769a573901653734c046}} 
+\index{Spine.AnimationStateData@{Spine.AnimationStateData}!SkeletonData@{SkeletonData}}
+\index{SkeletonData@{SkeletonData}!Spine.AnimationStateData@{Spine.AnimationStateData}}
+\doxysubsubsection{\texorpdfstring{SkeletonData}{SkeletonData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} Spine.\+Animation\+State\+Data.\+Skeleton\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} to look up animations when they are specified by name. 
+
+
+
+Animation\+State\+Data.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} skeletonData; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_state_data_8cs}{Animation\+State\+Data.\+cs}}\end{DoxyCompactItemize}

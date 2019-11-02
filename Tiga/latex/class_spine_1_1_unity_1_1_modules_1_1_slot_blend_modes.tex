@@ -1,0 +1,273 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes}{}\doxysection{Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes}\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+
+
+Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_1_1_material_texture_pair}{Material\+Texture\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_ae75d7ae524dcd99c4e1a82a170b051a1}{Apply}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a219e81b02864f9f91ed17b910f9eb0ae}{Remove}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aefc29d829dd66b4b09878f396c07ab8c}{Get\+Texture}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Material \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}{multiply\+Material\+Source}}
+\item 
+Material \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}{screen\+Material\+Source}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}{Applied}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a515ae1a3628d35bcbd301805d84ce336}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aa31c6f2105f8726798516c25acd04496}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_1_1_material_texture_pair}{Material\+Texture\+Pair}}, Material $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_af79b48b32aee71f0c2bec0d51be280fc}{material\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Slot\+Blend\+Modes.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_ae75d7ae524dcd99c4e1a82a170b051a1}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_ae75d7ae524dcd99c4e1a82a170b051a1}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 86 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                              \{}
+\DoxyCodeLine{88             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aefc29d829dd66b4b09878f396c07ab8c}{GetTexture}}();}
+\DoxyCodeLine{89             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             var skeletonRenderer = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{92             \textcolor{keywordflow}{if} (skeletonRenderer == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             var slotMaterials = skeletonRenderer.CustomSlotMaterials;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{keywordflow}{foreach} (var s \textcolor{keywordflow}{in} skeletonRenderer.Skeleton.Slots) \{}
+\DoxyCodeLine{97                 \textcolor{keywordflow}{switch} (s.data.blendMode) \{}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Multiply:}
+\DoxyCodeLine{99                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}{multiplyMaterialSource}} != \textcolor{keyword}{null}) slotMaterials[s] = GetMaterialFor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}{multiplyMaterialSource}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}});}
+\DoxyCodeLine{100                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{101                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Screen:}
+\DoxyCodeLine{102                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}{screenMaterialSource}} != \textcolor{keyword}{null}) slotMaterials[s] = GetMaterialFor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}{screenMaterialSource}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}});}
+\DoxyCodeLine{103                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{104                 \}}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}{Applied}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{108             skeletonRenderer.LateUpdate();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aefc29d829dd66b4b09878f396c07ab8c}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aefc29d829dd66b4b09878f396c07ab8c}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 138 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139                                   \{}
+\DoxyCodeLine{140             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{141                 var sr = GetComponent<SkeletonRenderer>(); \textcolor{keywordflow}{if} (sr == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{142                 var sda = sr.skeletonDataAsset; \textcolor{keywordflow}{if} (sda == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{143                 var aa = sda.atlasAssets[0]; \textcolor{keywordflow}{if} (aa == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{144                 var am = aa.materials[0]; \textcolor{keywordflow}{if} (am == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{145                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}} = am.mainTexture as Texture2D;}
+\DoxyCodeLine{146             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aa31c6f2105f8726798516c25acd04496}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aa31c6f2105f8726798516c25acd04496}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83                           \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}{Applied}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a219e81b02864f9f91ed17b910f9eb0ae}{Remove}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a219e81b02864f9f91ed17b910f9eb0ae}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a219e81b02864f9f91ed17b910f9eb0ae}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!Remove@{Remove}}
+\index{Remove@{Remove}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+Remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 110 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                               \{}
+\DoxyCodeLine{112             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_aefc29d829dd66b4b09878f396c07ab8c}{GetTexture}}();}
+\DoxyCodeLine{113             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115             var skeletonRenderer = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} (skeletonRenderer == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118             var slotMaterials = skeletonRenderer.CustomSlotMaterials;}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120             \textcolor{keywordflow}{foreach} (var s \textcolor{keywordflow}{in} skeletonRenderer.Skeleton.Slots) \{}
+\DoxyCodeLine{121                 Material m = \textcolor{keyword}{null};}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123                 \textcolor{keywordflow}{switch} (s.data.blendMode) \{}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Multiply:}
+\DoxyCodeLine{125                     \textcolor{keywordflow}{if} (slotMaterials.TryGetValue(s, out m) \&\& Material.ReferenceEquals(m, GetMaterialFor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}{multiplyMaterialSource}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}})))}
+\DoxyCodeLine{126                         slotMaterials.Remove(s);}
+\DoxyCodeLine{127                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{128                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Screen:}
+\DoxyCodeLine{129                     \textcolor{keywordflow}{if} (slotMaterials.TryGetValue(s, out m) \&\& Material.ReferenceEquals(m, GetMaterialFor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}{screenMaterialSource}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}{texture}})))}
+\DoxyCodeLine{130                         slotMaterials.Remove(s);}
+\DoxyCodeLine{131                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{132                 \}}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}{Applied}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{136             \textcolor{keywordflow}{if} (skeletonRenderer.valid) skeletonRenderer.LateUpdate();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a515ae1a3628d35bcbd301805d84ce336}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a515ae1a3628d35bcbd301805d84ce336}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                       \{}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}{Applied}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_ae75d7ae524dcd99c4e1a82a170b051a1}{Apply}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_af79b48b32aee71f0c2bec0d51be280fc}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_af79b48b32aee71f0c2bec0d51be280fc}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!materialTable@{materialTable}}
+\index{materialTable@{materialTable}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{materialTable}{materialTable}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_1_1_material_texture_pair}{Material\+Texture\+Pair}}, Material$>$ Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+material\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a239da434564f2922484f13cf5c0cff5a}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!multiplyMaterialSource@{multiplyMaterialSource}}
+\index{multiplyMaterialSource@{multiplyMaterialSource}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{multiplyMaterialSource}{multiplyMaterialSource}}
+{\footnotesize\ttfamily Material Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+multiply\+Material\+Source}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a96c33fa3b812c93baf452086fc53add2}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!screenMaterialSource@{screenMaterialSource}}
+\index{screenMaterialSource@{screenMaterialSource}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{screenMaterialSource}{screenMaterialSource}}
+{\footnotesize\ttfamily Material Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+screen\+Material\+Source}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a18cf254cb1039d38bc38cb973f300f14}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!texture@{texture}}
+\index{texture@{texture}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily Texture2D Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}\label{class_spine_1_1_unity_1_1_modules_1_1_slot_blend_modes_a0e00757e9b02e42dfbf4a113354a30a7}} 
+\index{Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}!Applied@{Applied}}
+\index{Applied@{Applied}!Spine.Unity.Modules.SlotBlendModes@{Spine.Unity.Modules.SlotBlendModes}}
+\doxysubsubsection{\texorpdfstring{Applied}{Applied}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Slot\+Blend\+Modes.\+Applied\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Slot\+Blend\+Modes.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Slot\+Blend\+Modes/\mbox{\hyperlink{_slot_blend_modes_8cs}{Slot\+Blend\+Modes.\+cs}}\end{DoxyCompactItemize}

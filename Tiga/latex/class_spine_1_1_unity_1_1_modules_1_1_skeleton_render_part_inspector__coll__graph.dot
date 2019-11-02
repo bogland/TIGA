@@ -1,0 +1,11 @@
+digraph "Spine.Unity.Modules.SkeletonRenderPartInspector"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Skeleton\lRenderPartInspector\n||+ OnInspectorGUI()\l- OnEnable()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{UnityEditor::Editor\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -sortingProperties" ,arrowhead="odiamond"];
+  Node3 [label="{Spine.Unity.Editor.Spine\lInspectorUtility\n|+ EmDash\l+ GrayMiniLabel\l+ SpineButtonStyle\l+ SortingLayerFieldMethod\l- tempContent\l- grayMiniLabel\l- CenterButtonMaxWidth\l- CenterButtonHeight\l- spineButtonStyle\l- SortingLayerLabel\l- OrderInLayerLabel\l- m_SortingLayerFieldMethod\l|+ Pluralize()\l+ PluralThenS()\l+ PropertyFieldWideLabel()\l+ PropertyFieldFitLabel()\l+ ToggleLeftLayout()\l+ ToggleLeft()\l+ UndoRedoPerformed()\l+ UnityIcon\< T \>()\l+ UnityIcon()\l+ FindBaseOrSiblingProperty()\l그리고 6개 더...\l~ TempContent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html",tooltip=" "];
+}

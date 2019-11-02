@@ -1,0 +1,10 @@
+digraph "Spine.Unity.SkeletonRendererInstruction.SetWithSubset"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.SkeletonRenderer\lInstruction.SetWithSubset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Modules.Skeleton\lPartsRenderer.RenderParts",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_parts_renderer.html#a43a8dd16f1f503a5b350223f35d20544",tooltip=" "];
+}

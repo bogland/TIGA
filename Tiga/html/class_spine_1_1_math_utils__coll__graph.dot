@@ -1,0 +1,7 @@
+digraph "Spine.MathUtils"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.MathUtils\n|+ PI\l+ PI2\l+ RadDeg\l+ DegRad\l- SIN_BITS\l- SIN_MASK\l- SIN_COUNT\l- RadFull\l- DegFull\l- RadToIndex\l- DegToIndex\l- sin\l|+ Sin()\l+ Cos()\l+ SinDeg()\l+ CosDeg()\l+ Atan2()\l+ Clamp()\l- MathUtils()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,91 @@
+This Documentation is for the \mbox{\hyperlink{namespace_spine}{Spine}} Timeline features. If this documentation contains mistakes or doesn\textquotesingle{}t cover some questions, please feel to comment below, open an issue or post in the official \href{http://esotericsoftware.com/forum/viewforum.php?f=3}{\texttt{ Spine-\/\+Unity forums}}.\hypertarget{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md13}{}\doxysection{Spine-\/\+Unity Timeline Playables}\label{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md13}
+ ~\newline
+\hypertarget{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{Spine Animation Track}\label{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md14}
+Controls the skeleton pose a given \mbox{\hyperlink{namespace_spine}{Spine}} component with animations.
+
+{\bfseries{Status\+:}}
+\begin{DoxyItemize}
+\item Currently only Skeleton\+Animation (via Skeleton\+Animation\+Playable\+Handle)
+\item Mixing has some significant bugs. It should work fine if you don\textquotesingle{}t include mixing, or if all your animations have perfectly matching dopesheet properties.
+\end{DoxyItemize}
+
+{\bfseries{To use\+:}}
+\begin{DoxyEnumerate}
+\item Add {\ttfamily Skeleton\+Animation\+Playable\+Handle} component to your Skeleton\+Animation Game\+Object.
+\item With an existing Unity Playable Direction, and in the Unity Timeline window, right-\/click on an empty space on the left and choose {\bfseries{\mbox{\hyperlink{namespace_spine_1_1_unity_1_1_playables}{Spine.\+Unity.\+Playables}}}} $>$ {\bfseries{\mbox{\hyperlink{namespace_spine}{Spine}} Animation Track}}.
+\item Drag the Skeleton\+Animation Game\+Object onto the empty reference property of the new \mbox{\hyperlink{namespace_spine}{Spine}} Skeleton Flip Track.
+\item Right-\/click on the row in an empty space in the Timeline dopesheet and choose {\bfseries{Add \mbox{\hyperlink{namespace_spine}{Spine}} Animation Clip Clip}}.
+\item Adjust the start and end times of the new clip, name it appropriately at the top of the Inspector.
+\item Click on the clip inspector\textquotesingle{}s Skeleton\+Data\+Asset field and choose your target skeleton\textquotesingle{}s Skeleton\+Data\+Asset. This will enable the animation name dropdown to appear.
+\item Choose the appropriate animation name, loop, and mix settings.
+\item For easier readability, rename your clip to the animation name or something descriptive.
+\end{DoxyEnumerate}
+
+{\bfseries{Track Behavior}}
+\begin{DoxyItemize}
+\item Currently buggy
+\item 
+\end{DoxyItemize}\hypertarget{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md15}{}\doxysubsection{Spine Skeleton Flip Track}\label{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md15}
+ ~\newline
+ Controls skeleton flip a given \mbox{\hyperlink{namespace_spine}{Spine}} component.
+
+{\bfseries{Status\+:}}
+\begin{DoxyItemize}
+\item Currently only Skeleton\+Animation (via Skeleton\+Animation\+Playable\+Handle)
+\end{DoxyItemize}
+
+{\bfseries{To use\+:}}
+\begin{DoxyEnumerate}
+\item Add {\ttfamily Skeleton\+Animation\+Playable\+Handle} component to your Skeleton\+Animation Game\+Object.
+\item With an existing Unity Playable Director, and in the Unity Timeline window, right-\/click on an empty space on the left and choose {\bfseries{\mbox{\hyperlink{namespace_spine_1_1_unity_1_1_playables}{Spine.\+Unity.\+Playables}}}} $>$ {\bfseries{\mbox{\hyperlink{namespace_spine}{Spine}} Skeleton Flip Track}}.
+\item Drag the Skeleton\+Animation Game\+Object onto the empty reference property of the new \mbox{\hyperlink{namespace_spine}{Spine}} Skeleton Flip Track.
+\item Right-\/click on the row in an empty space in the Timeline dopesheet and choose {\bfseries{Add \mbox{\hyperlink{namespace_spine}{Spine}} Skeleton Flip Clip Clip}}.
+\item Adjust the start and end times of the new clip, name it appropriately at the top of the Inspector, and choose the desired FlipX and FlipY values.
+\end{DoxyEnumerate}
+
+{\bfseries{Track Behavior}}
+\begin{DoxyItemize}
+\item The specified skeleton flip values will be applied for every frame within the duration of each track.
+\item At the end of the timeline, the track will revert the skeleton flip to the flip values it captures when it starts playing that timeline.
+\end{DoxyItemize}\hypertarget{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md16}{}\doxysubsection{Spine Animation\+State Track}\label{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md16}
+ ~\newline
+ Sets Animations on the target Skeleton\+Animation\textquotesingle{}s Animation\+State (via Set\+Animation).
+
+{\bfseries{Status\+:}}
+\begin{DoxyItemize}
+\item Currently only Skeleton\+Animation (directly)
+\end{DoxyItemize}
+
+{\bfseries{To use\+:}}
+\begin{DoxyEnumerate}
+\item With an existing Unity Playable Director, and in the Unity Timeline window, right-\/click on an empty space on the left and choose {\bfseries{\mbox{\hyperlink{namespace_spine_1_1_unity_1_1_playables}{Spine.\+Unity.\+Playables}}}} $>$ {\bfseries{\mbox{\hyperlink{namespace_spine}{Spine}} Animation State Track}}.
+\item Drag the Skeleton\+Animation Game\+Object onto the empty reference property of the new \mbox{\hyperlink{namespace_spine}{Spine}} Animation\+State Track.
+\item Right-\/click on the row in an empty space in the Timeline dopesheet and choose {\bfseries{Add \mbox{\hyperlink{namespace_spine}{Spine}} Animation State Clip Clip}}.
+\item Adjust the start and end times of the new clip, name it appropriately at the top of the Inspector.
+\item Click on the clip inspector\textquotesingle{}s Skeleton\+Data\+Asset field and choose your target skeleton\textquotesingle{}s Skeleton\+Data\+Asset. This will enable the animation name dropdown to appear.
+\item Choose the appropriate animation name, loop, and mix settings.
+\end{DoxyEnumerate}
+\begin{DoxyItemize}
+\item For easier readability, rename your clip to the animation name or something descriptive.
+\item To avoid having to do steps 4-\/6 repeatedly, use the Duplicate function ({\ttfamily C\+T\+RL}/{\ttfamily C\+MD} + {\ttfamily D}) ~\newline
+
+\end{DoxyItemize}
+
+{\bfseries{Track Behavior}}
+\begin{DoxyItemize}
+\item {\ttfamily Animation\+State.\+Set\+Animation} will be called at the beginning of every clip based on the animation\+Name.
+\item Clip durations don\textquotesingle{}t matter. Animations won\textquotesingle{}t be cleared where there is no active clip at certain slices of time.
+\item {\bfseries{E\+M\+P\+TY A\+N\+I\+M\+A\+T\+I\+ON}}\+: If a clip has no name specified, it will call Set\+Empty\+Animation instead.
+\item {\bfseries{E\+R\+R\+OR H\+A\+N\+D\+L\+I\+NG}}\+: If the animation with the provided animation\+Name is not found, it will do nothing (the previous animation will continue playing normally).
+\item Animations playing before the timeline starts playing will not be interrupted until the first clip starts playing.
+\item At the end of the last clip and at the end of the timeline, nothing happens. This means the effect of the last clip\textquotesingle{}s Set\+Animation call will persist until you give other commands to that Animation\+State.
+\item If \char`\"{}custom duration\char`\"{} is unchecked, it will do a normal lookup of the Animation\+State data\textquotesingle{}s specified transition-\/pair mix setting, or the default mix.
+\item Edit mode preview mixing may look different from Play Mode mixing. Please check in actual Play Mode to see the real results.
+\end{DoxyItemize}\hypertarget{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md17}{}\doxysubsection{Known Issues}\label{md__assets__plugins__spine_spine-unity__modules__timeline__documentation__r_e_a_d_m_e_autotoc_md17}
+\mbox{\hyperlink{namespace_spine}{Spine}} Timeline support is currently experimental and has some known issues and inconveniences.
+\begin{DoxyItemize}
+\item The Console logs an incorrect/harmless error {\ttfamily Driven\+Property\+Manager has failed to register property \char`\"{}m\+\_\+\+Script\char`\"{} of object \char`\"{}\+Spine Game\+Object (spineboy-\/pro)\char`\"{} with driver \char`\"{}\char`\"{} because the property doesn\textquotesingle{}t exist.}. This is a known issue on Unity\textquotesingle{}s end. See more here\+: \href{https://forum.unity.com/threads/default-playables-text-switcher-track-error.502903/}{\texttt{ https\+://forum.\+unity.\+com/threads/default-\/playables-\/text-\/switcher-\/track-\/error.\+502903/}}
+\item These \mbox{\hyperlink{namespace_spine}{Spine}} Tracks (like other custom Unity Timeline Playable types) do not have labels on them. Unity currently doesn\textquotesingle{}t have A\+PI to specify their labels yet.
+\item Each track clip currently requires you to specify a reference to Skeleton\+Data so its inspector can show you a convenient list of animation names. This is because track clips are agnostic of its track and target component/track binding, and provides no way of automatically finding it while in the editor. The clips will still function correctly without the Skeleton\+Data\+Asset references; you just won\textquotesingle{}t get the dropdown of animation names in the editor.
+\item Each track clip cannot be automatically named based on the chosen animation\+Name. The Timeline object editors currently doesn\textquotesingle{}t provide access to the clip names to do this automatically. 
+\end{DoxyItemize}

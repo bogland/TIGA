@@ -1,0 +1,12 @@
+digraph "Spine.SkeletonBinary.ReadString"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.SkeletonBinary.Read\lString",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.SkeletonBinary.Read\lFully",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a3c31f5d3d2c410d11407e234e370e533",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.SkeletonBinary.Read\lVarint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a416307e9af6f3b22570f7b51e2673271",tooltip=" "];
+}

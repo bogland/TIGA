@@ -1,0 +1,270 @@
+\hypertarget{class_spine_1_1_skin}{}\doxysection{Spine.\+Skin 클래스 참조}
+\label{class_spine_1_1_skin}\index{Spine.Skin@{Spine.Skin}}
+
+
+Stores attachments by slot index and attachment name.  
+
+
+
+
+Spine.\+Skin에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer}{Attachment\+Key\+Tuple\+Comparer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin_ab47f6bace21eabe3c1ca6ddb19169ae8}{Skin}} (string name)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skin_a2261ca4391e956e48a6cb45eff6d5676}{Add\+Attachment}} (int slot\+Index, string name, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment)
+\begin{DoxyCompactList}\small\item\em Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}{Get\+Attachment}} (int slot\+Index, string name)
+\begin{DoxyCompactList}\small\item\em Returns the attachment for the specified slot index and name, or null. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skin_a1734011a3ee22491721f29bdd9c4a478}{Find\+Names\+For\+Slot}} (int slot\+Index, List$<$ string $>$ names)
+\begin{DoxyCompactList}\small\item\em Finds the skin keys for a given slot. The results are added to the passed List(names). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skin_ab15208068c802378d1949941c4f944e5}{Find\+Attachments\+For\+Slot}} (int slot\+Index, List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}})
+\begin{DoxyCompactList}\small\item\em Finds the attachments for a given slot. The results are added to the passed List(\+Attachment). \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_spine_1_1_skin_af959c5c040f9b54cece05756ea19228b}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ \mbox{\hyperlink{class_spine_1_1_skin_a3dd9c1779f9ebabd27c71953cb5235fa}{Attachments}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Stores attachments by slot index and attachment name. 
+
+See \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{Spine.\+Skeleton\+Data.\+Default\+Skin}}, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Spine.\+Skeleton.\+Skin}}, and \href{http://esotericsoftware.com/spine-runtime-skins}{\texttt{ Runtime skins}} in the \mbox{\hyperlink{namespace_spine}{Spine}} Runtimes Guide.
+
+Skin.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skin_ab47f6bace21eabe3c1ca6ddb19169ae8}\label{class_spine_1_1_skin_ab47f6bace21eabe3c1ca6ddb19169ae8}} 
+\index{Spine.Skin@{Spine.Skin}!Skin@{Skin}}
+\index{Skin@{Skin}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{Skin()}{Skin()}}
+{\footnotesize\ttfamily Spine.\+Skin.\+Skin (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Skin.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                   \{}
+\DoxyCodeLine{48             \textcolor{keywordflow}{if} (name == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"name"}, \textcolor{stringliteral}{"name cannot be null."});}
+\DoxyCodeLine{49             this.name = name;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skin_a2261ca4391e956e48a6cb45eff6d5676}\label{class_spine_1_1_skin_a2261ca4391e956e48a6cb45eff6d5676}} 
+\index{Spine.Skin@{Spine.Skin}!AddAttachment@{AddAttachment}}
+\index{AddAttachment@{AddAttachment}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{AddAttachment()}{AddAttachment()}}
+{\footnotesize\ttfamily void Spine.\+Skin.\+Add\+Attachment (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment }\end{DoxyParamCaption})}
+
+
+
+Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. 
+
+
+
+Skin.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                                                       \{}
+\DoxyCodeLine{54             \textcolor{keywordflow}{if} (attachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"attachment"}, \textcolor{stringliteral}{"attachment cannot be null."});}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}}[\textcolor{keyword}{new} AttachmentKeyTuple(slotIndex, name)] = attachment;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_skin_ab15208068c802378d1949941c4f944e5}\label{class_spine_1_1_skin_ab15208068c802378d1949941c4f944e5}} 
+\index{Spine.Skin@{Spine.Skin}!FindAttachmentsForSlot@{FindAttachmentsForSlot}}
+\index{FindAttachmentsForSlot@{FindAttachmentsForSlot}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{FindAttachmentsForSlot()}{FindAttachmentsForSlot()}}
+{\footnotesize\ttfamily void Spine.\+Skin.\+Find\+Attachments\+For\+Slot (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$}]{attachments }\end{DoxyParamCaption})}
+
+
+
+Finds the attachments for a given slot. The results are added to the passed List(\+Attachment). 
+
+
+\begin{DoxyParams}{매개변수}
+{\em slot\+Index} & The target slot\+Index. To find the slot index, use \mbox{\hyperlink{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}{Spine.\+Skeleton.\+Find\+Slot\+Index}} or \mbox{\hyperlink{class_spine_1_1_skeleton_data_ab83e3ab9fbf2c1a3f2d800bffc482985}{Spine.\+Skeleton\+Data.\+Find\+Slot\+Index}} 
+\begin{DoxyParams}{매개변수}
+{\em attachments} & Found Attachments will be added to this list.\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+
+
+Skin.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                                                                          \{}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"attachments"}, \textcolor{stringliteral}{"attachments cannot be null."});}
+\DoxyCodeLine{80             \textcolor{keywordflow}{foreach} (KeyValuePair<AttachmentKeyTuple, Attachment> entry \textcolor{keywordflow}{in} this.\mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}})}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (entry.Key.slotIndex == slotIndex) \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}}.Add(entry.Value);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_skin_a1734011a3ee22491721f29bdd9c4a478}\label{class_spine_1_1_skin_a1734011a3ee22491721f29bdd9c4a478}} 
+\index{Spine.Skin@{Spine.Skin}!FindNamesForSlot@{FindNamesForSlot}}
+\index{FindNamesForSlot@{FindNamesForSlot}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{FindNamesForSlot()}{FindNamesForSlot()}}
+{\footnotesize\ttfamily void Spine.\+Skin.\+Find\+Names\+For\+Slot (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{List$<$ string $>$}]{names }\end{DoxyParamCaption})}
+
+
+
+Finds the skin keys for a given slot. The results are added to the passed List(names). 
+
+
+\begin{DoxyParams}{매개변수}
+{\em slot\+Index} & The target slot\+Index. To find the slot index, use \mbox{\hyperlink{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}{Spine.\+Skeleton.\+Find\+Slot\+Index}} or \mbox{\hyperlink{class_spine_1_1_skeleton_data_ab83e3ab9fbf2c1a3f2d800bffc482985}{Spine.\+Skeleton\+Data.\+Find\+Slot\+Index}} 
+\begin{DoxyParams}{매개변수}
+{\em names} & Found skin key names will be added to this list.\\
+\hline
+\end{DoxyParams}
+\\
+\hline
+\end{DoxyParams}
+
+
+Skin.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                                          \{}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (names == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"names"}, \textcolor{stringliteral}{"names cannot be null."});}
+\DoxyCodeLine{71             \textcolor{keywordflow}{foreach} (AttachmentKeyTuple key \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}}.Keys)}
+\DoxyCodeLine{72                 \textcolor{keywordflow}{if} (key.slotIndex == slotIndex) names.Add(key.name);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}\label{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}} 
+\index{Spine.Skin@{Spine.Skin}!GetAttachment@{GetAttachment}}
+\index{GetAttachment@{GetAttachment}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{GetAttachment()}{GetAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Skin.\+Get\+Attachment (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns the attachment for the specified slot index and name, or null. 
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+Skin.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                                      \{}
+\DoxyCodeLine{61             Attachment attachment;}
+\DoxyCodeLine{62             \mbox{\hyperlink{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}{attachments}}.TryGetValue(\textcolor{keyword}{new} AttachmentKeyTuple(slotIndex, name), out attachment);}
+\DoxyCodeLine{63             \textcolor{keywordflow}{return} attachment;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_skin_af959c5c040f9b54cece05756ea19228b}\label{class_spine_1_1_skin_af959c5c040f9b54cece05756ea19228b}} 
+\index{Spine.Skin@{Spine.Skin}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Skin.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skin.\+cs 파일의 83 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                                            \{}
+\DoxyCodeLine{85             \textcolor{keywordflow}{return} name;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}\label{class_spine_1_1_skin_a7cab0504bc488828e55b909a6d3eed79}} 
+\index{Spine.Skin@{Spine.Skin}!attachments@{attachments}}
+\index{attachments@{attachments}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{attachments}{attachments}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}$>$ Spine.\+Skin.\+attachments\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries 초기값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{keyword}{new} Dictionary<AttachmentKeyTuple, Attachment>(AttachmentKeyTupleComparer.Instance)}
+
+\end{DoxyCode}
+
+
+Skin.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skin_a3dd9c1779f9ebabd27c71953cb5235fa}\label{class_spine_1_1_skin_a3dd9c1779f9ebabd27c71953cb5235fa}} 
+\index{Spine.Skin@{Spine.Skin}!Attachments@{Attachments}}
+\index{Attachments@{Attachments}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{Attachments}{Attachments}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}$>$ Spine.\+Skin.\+Attachments\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skin.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} name; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}\label{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}} 
+\index{Spine.Skin@{Spine.Skin}!Name@{Name}}
+\index{Name@{Name}!Spine.Skin@{Spine.Skin}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Spine.\+Skin.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skin.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} name; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_skin_8cs}{Skin.\+cs}}\end{DoxyCompactItemize}

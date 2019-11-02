@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/HurtFlashEffect.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_hurt_flash_effect_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">HurtFlashEffect.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_hurt_flash_effect_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html">    5</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_hurt_flash_effect.html">HurtFlashEffect</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#aaa86ecd9a8f8afc2945378321c621eda">    7</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_hurt_flash_effect.html#aaa86ecd9a8f8afc2945378321c621eda">DefaultFlashCount</a> = 3;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">    9</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">flashCount</a> = <a class="code" href="class_hurt_flash_effect.html#aaa86ecd9a8f8afc2945378321c621eda">DefaultFlashCount</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#a6ea4edc95cb351ed15db78fb238cff2b">   10</a></span>&#160;    <span class="keyword">public</span> Color <a class="code" href="class_hurt_flash_effect.html#a6ea4edc95cb351ed15db78fb238cff2b">flashColor</a> = Color.white;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    [Range(1f/120f, 1f/15f)]</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#a79ee9aa953a443ae0b834d3f099adf7a">   12</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_hurt_flash_effect.html#a79ee9aa953a443ae0b834d3f099adf7a">interval</a> = 1f/60f;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#ab69522d0aa50736e2cc76d0fa0127d13">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_hurt_flash_effect.html#ab69522d0aa50736e2cc76d0fa0127d13">fillPhaseProperty</a> = <span class="stringliteral">&quot;_FillPhase&quot;</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#a0f300a769e0363909ea6639779611fe2">   14</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_hurt_flash_effect.html#a0f300a769e0363909ea6639779611fe2">fillColorProperty</a> = <span class="stringliteral">&quot;_FillColor&quot;</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">   16</a></span>&#160;    MaterialPropertyBlock <a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">   17</a></span>&#160;    MeshRenderer <a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#aa9012b8f9d452642994fc694e1d5d589">   19</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_hurt_flash_effect.html#aa9012b8f9d452642994fc694e1d5d589">Flash</a> () {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a> == <span class="keyword">null</span>) <a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a> = <span class="keyword">new</span> MaterialPropertyBlock();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a> == <span class="keyword">null</span>) <a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a> = GetComponent&lt;MeshRenderer&gt;();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a>.GetPropertyBlock(<a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        StartCoroutine(<a class="code" href="class_hurt_flash_effect.html#aeebdaf5f6bc71427a863b57246b1e983">FlashRoutine</a>());</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_hurt_flash_effect.html#aeebdaf5f6bc71427a863b57246b1e983">   27</a></span>&#160;    IEnumerator <a class="code" href="class_hurt_flash_effect.html#aeebdaf5f6bc71427a863b57246b1e983">FlashRoutine</a> () {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">flashCount</a> &lt; 0) <a class="code" href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">flashCount</a> = <a class="code" href="class_hurt_flash_effect.html#aaa86ecd9a8f8afc2945378321c621eda">DefaultFlashCount</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">int</span> fillPhase = Shader.PropertyToID(<a class="code" href="class_hurt_flash_effect.html#ab69522d0aa50736e2cc76d0fa0127d13">fillPhaseProperty</a>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> fillColor = Shader.PropertyToID(<a class="code" href="class_hurt_flash_effect.html#a0f300a769e0363909ea6639779611fe2">fillColorProperty</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        var wait = <span class="keyword">new</span> WaitForSeconds(<a class="code" href="class_hurt_flash_effect.html#a79ee9aa953a443ae0b834d3f099adf7a">interval</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">flashCount</a>; i++) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>.SetColor(fillColor, <a class="code" href="class_hurt_flash_effect.html#a6ea4edc95cb351ed15db78fb238cff2b">flashColor</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>.SetFloat(fillPhase, 1f);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a>.SetPropertyBlock(<a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            yield <span class="keywordflow">return</span> wait;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>.SetFloat(fillPhase, 0f);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">meshRenderer</a>.SetPropertyBlock(<a class="code" href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">mpb</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            yield <span class="keywordflow">return</span> wait;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_hurt_flash_effect_html_ab69522d0aa50736e2cc76d0fa0127d13"><div class="ttname"><a href="class_hurt_flash_effect.html#ab69522d0aa50736e2cc76d0fa0127d13">HurtFlashEffect.fillPhaseProperty</a></div><div class="ttdeci">string fillPhaseProperty</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00013">HurtFlashEffect.cs:13</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_a6ea4edc95cb351ed15db78fb238cff2b"><div class="ttname"><a href="class_hurt_flash_effect.html#a6ea4edc95cb351ed15db78fb238cff2b">HurtFlashEffect.flashColor</a></div><div class="ttdeci">Color flashColor</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00010">HurtFlashEffect.cs:10</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_a0f300a769e0363909ea6639779611fe2"><div class="ttname"><a href="class_hurt_flash_effect.html#a0f300a769e0363909ea6639779611fe2">HurtFlashEffect.fillColorProperty</a></div><div class="ttdeci">string fillColorProperty</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00014">HurtFlashEffect.cs:14</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_add95866a522fb863c53763e103e8e745"><div class="ttname"><a href="class_hurt_flash_effect.html#add95866a522fb863c53763e103e8e745">HurtFlashEffect.flashCount</a></div><div class="ttdeci">int flashCount</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00009">HurtFlashEffect.cs:9</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_aa9012b8f9d452642994fc694e1d5d589"><div class="ttname"><a href="class_hurt_flash_effect.html#aa9012b8f9d452642994fc694e1d5d589">HurtFlashEffect.Flash</a></div><div class="ttdeci">void Flash()</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00019">HurtFlashEffect.cs:19</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_ac5b0fef8dc14f14f6009f5653ecaa880"><div class="ttname"><a href="class_hurt_flash_effect.html#ac5b0fef8dc14f14f6009f5653ecaa880">HurtFlashEffect.meshRenderer</a></div><div class="ttdeci">MeshRenderer meshRenderer</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00017">HurtFlashEffect.cs:17</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_aaa86ecd9a8f8afc2945378321c621eda"><div class="ttname"><a href="class_hurt_flash_effect.html#aaa86ecd9a8f8afc2945378321c621eda">HurtFlashEffect.DefaultFlashCount</a></div><div class="ttdeci">const int DefaultFlashCount</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00007">HurtFlashEffect.cs:7</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_a79ee9aa953a443ae0b834d3f099adf7a"><div class="ttname"><a href="class_hurt_flash_effect.html#a79ee9aa953a443ae0b834d3f099adf7a">HurtFlashEffect.interval</a></div><div class="ttdeci">float interval</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00012">HurtFlashEffect.cs:12</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html"><div class="ttname"><a href="class_hurt_flash_effect.html">HurtFlashEffect</a></div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00005">HurtFlashEffect.cs:5</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_a4599f877c7f38f402bd18c2f5989908f"><div class="ttname"><a href="class_hurt_flash_effect.html#a4599f877c7f38f402bd18c2f5989908f">HurtFlashEffect.mpb</a></div><div class="ttdeci">MaterialPropertyBlock mpb</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00016">HurtFlashEffect.cs:16</a></div></div>
+<div class="ttc" id="aclass_hurt_flash_effect_html_aeebdaf5f6bc71427a863b57246b1e983"><div class="ttname"><a href="class_hurt_flash_effect.html#aeebdaf5f6bc71427a863b57246b1e983">HurtFlashEffect.FlashRoutine</a></div><div class="ttdeci">IEnumerator FlashRoutine()</div><div class="ttdef"><b>Definition:</b> <a href="_hurt_flash_effect_8cs_source.html#l00027">HurtFlashEffect.cs:27</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="_hurt_flash_effect_8cs.html">HurtFlashEffect.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

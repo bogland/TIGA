@@ -1,0 +1,654 @@
+\hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator}{}\doxysection{Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator 클래스 참조}
+\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator}\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+
+
+Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_animation_clip_equality_comparer}{Animation\+Clip\+Equality\+Comparer}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos}{Clip\+Infos}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_int_equality_comparer}{Int\+Equality\+Comparer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Mix\+Mode}} \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a4a14fb0bf3539a72715135e835544d52}{Mix\+Mode.\+Always\+Mix}}, 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a67ddf304230f3ab2281ed67bb0818191}{Mix\+Mode.\+Mix\+Next}}, 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a21986bf486e523127c5f2d4082804406}{Mix\+Mode.\+Spine\+Style}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a71d572a33f97212abaec47e9d5d5f4bc}{Initialize}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}{Animator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a27160fb5fa4da50bac400c2bd38621f7}{skeleton\+Data\+Asset}})
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a26feb19764dab68fbbb2e0b4423f0398}{Apply}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c68e1dad4af843285bdc52dfa77ca9a}{auto\+Reset}} = true
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Mix\+Mode}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}{layer\+Mix\+Modes}} = new \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Mix\+Mode}}\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos}{Clip\+Infos}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layer\+Clip\+Infos}} = new \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos}{Clip\+Infos}}\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}{Animator}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a086b6a77ed170e46e239c34eead58dbc}{Init\+Clip\+Infos\+For\+Layers}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_adaaf57e37483571fbb3f231773f4c5f9}{Clear\+Clip\+Infos\+For\+Layers}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa8f2b86caf17b63b50c5cc181cdb2197}{Get\+State\+Updates\+From\+Animator}} (int layer)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_ac2995b939de5740ab76dbf5cc96b8a0d}{Get\+Animator\+Clip\+Infos}} (int layer, out bool is\+Interruption\+Active, out int clip\+Info\+Count, out int next\+Clip\+Info\+Count, out int interrupting\+Clip\+Info\+Count, out I\+List$<$ Animator\+Clip\+Info $>$ clip\+Info, out I\+List$<$ Animator\+Clip\+Info $>$ next\+Clip\+Info, out I\+List$<$ Animator\+Clip\+Info $>$ interrupting\+Clip\+Info, out bool shall\+Interpolate\+Weight\+To1)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0dc9c2e13acd20e6e9bb19e9779cf563}{Get\+Animator\+State\+Infos}} (int layer, out bool is\+Interruption\+Active, out Animator\+State\+Info state\+Info, out Animator\+State\+Info next\+State\+Info, out Animator\+State\+Info interrupting\+State\+Info, out float interrupting\+Clip\+Time\+Addition)
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{Get\+Animation}} (Animation\+Clip clip)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{Animation\+Time}} (float normalized\+Time, float clip\+Length, bool loop, bool reversed)
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af6cc6b114d938f329f6bd96c9c2ce500}{Animation\+Time}} (float normalized\+Time, float clip\+Length, bool reversed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly Dictionary$<$ int, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}{animation\+Table}} = new Dictionary$<$int, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}$>$(Int\+Equality\+Comparer.\+Instance)
+\item 
+readonly Dictionary$<$ Animation\+Clip, int $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}{clip\+Name\+Hash\+Code\+Table}} = new Dictionary$<$Animation\+Clip, int$>$(Animation\+Clip\+Equality\+Comparer.\+Instance)
+\item 
+readonly List$<$ \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previous\+Animations}} = new List$<$\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$()
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}{Animator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Animator.\+cs 파일의 105 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!MixMode@{MixMode}}
+\index{MixMode@{MixMode}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{MixMode}{MixMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Mix\+Mode}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AlwaysMix@{AlwaysMix}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!AlwaysMix@{AlwaysMix}}}\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a4a14fb0bf3539a72715135e835544d52}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a4a14fb0bf3539a72715135e835544d52}} 
+Always\+Mix&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MixNext@{MixNext}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!MixNext@{MixNext}}}\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a67ddf304230f3ab2281ed67bb0818191}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a67ddf304230f3ab2281ed67bb0818191}} 
+Mix\+Next&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpineStyle@{SpineStyle}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!SpineStyle@{SpineStyle}}}\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a21986bf486e523127c5f2d4082804406}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299a21986bf486e523127c5f2d4082804406}} 
+Spine\+Style&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Skeleton\+Animator.\+cs 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112 \{ AlwaysMix, MixNext, SpineStyle \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!AnimationTime@{AnimationTime}}
+\index{AnimationTime@{AnimationTime}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{AnimationTime()}{AnimationTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Animation\+Time (\begin{DoxyParamCaption}\item[{float}]{normalized\+Time,  }\item[{float}]{clip\+Length,  }\item[{bool}]{loop,  }\item[{bool}]{reversed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 306 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{307                                                                                                           \{}
+\DoxyCodeLine{308                 \textcolor{keywordflow}{if} (reversed)}
+\DoxyCodeLine{309                     normalizedTime = (1-\/normalizedTime + (int)normalizedTime) + (int)normalizedTime;}
+\DoxyCodeLine{310                 \textcolor{keywordtype}{float} time = normalizedTime * clipLength;}
+\DoxyCodeLine{311                 \textcolor{keywordflow}{if} (loop) \textcolor{keywordflow}{return} time;}
+\DoxyCodeLine{312                 \textcolor{keyword}{const} \textcolor{keywordtype}{float} EndSnapEpsilon = 1f/30f; \textcolor{comment}{// Workaround for end-\/duration keys not being applied.}}
+\DoxyCodeLine{313                 \textcolor{keywordflow}{return} (clipLength -\/ time < EndSnapEpsilon) ? clipLength : time; \textcolor{comment}{// return a time snapped to clipLength;}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af6cc6b114d938f329f6bd96c9c2ce500}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af6cc6b114d938f329f6bd96c9c2ce500}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!AnimationTime@{AnimationTime}}
+\index{AnimationTime@{AnimationTime}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{AnimationTime()}{AnimationTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Animation\+Time (\begin{DoxyParamCaption}\item[{float}]{normalized\+Time,  }\item[{float}]{clip\+Length,  }\item[{bool}]{reversed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 315 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{316                                                                                                \{}
+\DoxyCodeLine{317                 \textcolor{keywordflow}{if} (reversed)}
+\DoxyCodeLine{318                     normalizedTime = (1-\/normalizedTime + (int)normalizedTime) + (int)normalizedTime;}
+\DoxyCodeLine{319 }
+\DoxyCodeLine{320                 \textcolor{keywordflow}{return} normalizedTime * clipLength;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a26feb19764dab68fbbb2e0b4423f0398}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a26feb19764dab68fbbb2e0b4423f0398}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Animator.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154                                                   \{}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}{layerMixModes}}.Length < \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount)}
+\DoxyCodeLine{156                     System.Array.Resize<\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{MixMode}}>(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}{layerMixModes}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount);}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a086b6a77ed170e46e239c34eead58dbc}{InitClipInfosForLayers}}();}
+\DoxyCodeLine{159                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layer = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount; layer < n; layer++) \{}
+\DoxyCodeLine{160                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa8f2b86caf17b63b50c5cc181cdb2197}{GetStateUpdatesFromAnimator}}(layer);}
+\DoxyCodeLine{161                 \}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163                 \textcolor{comment}{//skeleton.Update(Time.deltaTime); // Doesn't actually do anything, currently. (Spine 3.6).}}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165                 \textcolor{comment}{// Clear Previous}}
+\DoxyCodeLine{166                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c68e1dad4af843285bdc52dfa77ca9a}{autoReset}}) \{}
+\DoxyCodeLine{167                     var \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}};}
+\DoxyCodeLine{168                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Count; i < n; i++)}
+\DoxyCodeLine{169                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}[i].SetKeyedItemsToSetupPose(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}});}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Clear();}
+\DoxyCodeLine{172                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layer = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount; layer < n; layer++) \{}
+\DoxyCodeLine{173                         \textcolor{keywordtype}{float} layerWeight = (layer == 0) ? 1 : \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetLayerWeight(layer); \textcolor{comment}{// Animator.GetLayerWeight always returns 0 on the first layer. Should be interpreted as 1.}}
+\DoxyCodeLine{174                         \textcolor{keywordflow}{if} (layerWeight <= 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176                         AnimatorStateInfo nextStateInfo = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorStateInfo(layer);}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178                         \textcolor{keywordtype}{bool} hasNext = nextStateInfo.fullPathHash != 0;}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180                         \textcolor{keywordtype}{int} clipInfoCount, nextClipInfoCount, interruptingClipInfoCount;}
+\DoxyCodeLine{181                         IList<AnimatorClipInfo> clipInfo, nextClipInfo, interruptingClipInfo;}
+\DoxyCodeLine{182                         \textcolor{keywordtype}{bool} isInterruptionActive, shallInterpolateWeightTo1;}
+\DoxyCodeLine{183                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_ac2995b939de5740ab76dbf5cc96b8a0d}{GetAnimatorClipInfos}}(layer, out isInterruptionActive, out clipInfoCount, out nextClipInfoCount, out interruptingClipInfoCount,}
+\DoxyCodeLine{184                                             out clipInfo, out nextClipInfo, out interruptingClipInfo, out shallInterpolateWeightTo1);}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < clipInfoCount; c++) \{}
+\DoxyCodeLine{187                             var info = clipInfo[c];}
+\DoxyCodeLine{188                             \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{189                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Add(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip));}
+\DoxyCodeLine{190                         \}}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192                         \textcolor{keywordflow}{if} (hasNext) \{}
+\DoxyCodeLine{193                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < nextClipInfoCount; c++) \{}
+\DoxyCodeLine{194                                 var info = nextClipInfo[c];}
+\DoxyCodeLine{195                                 \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{196                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Add(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip));}
+\DoxyCodeLine{197                             \}}
+\DoxyCodeLine{198                         \}}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200                         \textcolor{keywordflow}{if} (isInterruptionActive) \{}
+\DoxyCodeLine{201                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < interruptingClipInfoCount; c++)}
+\DoxyCodeLine{202                             \{}
+\DoxyCodeLine{203                                 var info = interruptingClipInfo[c];}
+\DoxyCodeLine{204                                 \textcolor{keywordtype}{float} clipWeight = shallInterpolateWeightTo1 ? (info.weight + 1.0f) * 0.5f : info.weight;}
+\DoxyCodeLine{205                                 \textcolor{keywordtype}{float} weight = clipWeight * layerWeight; if (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{206                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Add(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip));}
+\DoxyCodeLine{207                             \}}
+\DoxyCodeLine{208                         \}}
+\DoxyCodeLine{209                     \}}
+\DoxyCodeLine{210                 \}}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212                 \textcolor{comment}{// Apply}}
+\DoxyCodeLine{213                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layer = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount; layer < n; layer++) \{}
+\DoxyCodeLine{214                     \textcolor{keywordtype}{float} layerWeight = (layer == 0) ? 1 : \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetLayerWeight(layer); \textcolor{comment}{// Animator.GetLayerWeight always returns 0 on the first layer. Should be interpreted as 1.}}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216                     \textcolor{keywordtype}{bool} isInterruptionActive;}
+\DoxyCodeLine{217                     AnimatorStateInfo stateInfo;}
+\DoxyCodeLine{218                     AnimatorStateInfo nextStateInfo;}
+\DoxyCodeLine{219                     AnimatorStateInfo interruptingStateInfo;}
+\DoxyCodeLine{220                     \textcolor{keywordtype}{float} interruptingClipTimeAddition;}
+\DoxyCodeLine{221                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0dc9c2e13acd20e6e9bb19e9779cf563}{GetAnimatorStateInfos}}(layer, out isInterruptionActive, out stateInfo, out nextStateInfo, out interruptingStateInfo, out interruptingClipTimeAddition);}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223                     \textcolor{keywordtype}{bool} hasNext = nextStateInfo.fullPathHash != 0;}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225                     \textcolor{keywordtype}{int} clipInfoCount, nextClipInfoCount, interruptingClipInfoCount;}
+\DoxyCodeLine{226                     IList<AnimatorClipInfo> clipInfo, nextClipInfo, interruptingClipInfo;}
+\DoxyCodeLine{227                     \textcolor{keywordtype}{bool} shallInterpolateWeightTo1;}
+\DoxyCodeLine{228                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_ac2995b939de5740ab76dbf5cc96b8a0d}{GetAnimatorClipInfos}}(layer, out isInterruptionActive, out clipInfoCount, out nextClipInfoCount, out interruptingClipInfoCount,}
+\DoxyCodeLine{229                                         out clipInfo, out nextClipInfo, out interruptingClipInfo, out shallInterpolateWeightTo1);}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{MixMode}} mode = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}{layerMixModes}}[layer];}
+\DoxyCodeLine{232                     \textcolor{keywordflow}{if} (mode == \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{MixMode}}.AlwaysMix) \{}
+\DoxyCodeLine{233                         \textcolor{comment}{// Always use Mix instead of Applying the first non-\/zero weighted clip.}}
+\DoxyCodeLine{234                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < clipInfoCount; c++) \{}
+\DoxyCodeLine{235                             var info = clipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{236                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(stateInfo.normalizedTime, info.clip.length, stateInfo.loop, stateInfo.speed < 0), stateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{237                         \}}
+\DoxyCodeLine{238                         \textcolor{keywordflow}{if} (hasNext) \{}
+\DoxyCodeLine{239                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < nextClipInfoCount; c++) \{}
+\DoxyCodeLine{240                                 var info = nextClipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{241                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(nextStateInfo.normalizedTime , info.clip.length, nextStateInfo.speed < 0), nextStateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{242                             \}}
+\DoxyCodeLine{243                         \}}
+\DoxyCodeLine{244                         \textcolor{keywordflow}{if} (isInterruptionActive) \{}
+\DoxyCodeLine{245                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} c = 0; c < interruptingClipInfoCount; c++)}
+\DoxyCodeLine{246                             \{}
+\DoxyCodeLine{247                                 var info = interruptingClipInfo[c];}
+\DoxyCodeLine{248                                 \textcolor{keywordtype}{float} clipWeight = shallInterpolateWeightTo1 ? (info.weight + 1.0f) * 0.5f : info.weight;}
+\DoxyCodeLine{249                                 \textcolor{keywordtype}{float} weight = clipWeight * layerWeight; if (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{250                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(interruptingStateInfo.normalizedTime + interruptingClipTimeAddition, info.clip.length, interruptingStateInfo.speed < 0),}
+\DoxyCodeLine{251                                                                 interruptingStateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{252                             \}}
+\DoxyCodeLine{253                         \}}
+\DoxyCodeLine{254                     \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{// case MixNext || SpineStyle}}
+\DoxyCodeLine{255                         \textcolor{comment}{// Apply first non-\/zero weighted clip}}
+\DoxyCodeLine{256                         \textcolor{keywordtype}{int} c = 0;}
+\DoxyCodeLine{257                         \textcolor{keywordflow}{for} (; c < clipInfoCount; c++) \{}
+\DoxyCodeLine{258                             var info = clipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{259                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(stateInfo.normalizedTime, info.clip.length, stateInfo.loop, stateInfo.speed < 0), stateInfo.loop, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{260                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{261                         \}}
+\DoxyCodeLine{262                         \textcolor{comment}{// Mix the rest}}
+\DoxyCodeLine{263                         \textcolor{keywordflow}{for} (; c < clipInfoCount; c++) \{}
+\DoxyCodeLine{264                             var info = clipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{265                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(stateInfo.normalizedTime, info.clip.length, stateInfo.loop, stateInfo.speed < 0), stateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{266                         \}}
+\DoxyCodeLine{267 }
+\DoxyCodeLine{268                         c = 0;}
+\DoxyCodeLine{269                         \textcolor{keywordflow}{if} (hasNext) \{}
+\DoxyCodeLine{270                             \textcolor{comment}{// Apply next clip directly instead of mixing (ie: no crossfade, ignores mecanim transition weights)}}
+\DoxyCodeLine{271                             \textcolor{keywordflow}{if} (mode == \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{MixMode}}.SpineStyle) \{}
+\DoxyCodeLine{272                                 \textcolor{keywordflow}{for} (; c < nextClipInfoCount; c++) \{}
+\DoxyCodeLine{273                                     var info = nextClipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{274                                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(nextStateInfo.normalizedTime , info.clip.length, nextStateInfo.speed < 0), nextStateInfo.loop, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{275                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{276                                 \}}
+\DoxyCodeLine{277                             \}}
+\DoxyCodeLine{278                             \textcolor{comment}{// Mix the rest}}
+\DoxyCodeLine{279                             \textcolor{keywordflow}{for} (; c < nextClipInfoCount; c++) \{}
+\DoxyCodeLine{280                                 var info = nextClipInfo[c]; \textcolor{keywordtype}{float} weight = info.weight * layerWeight; \textcolor{keywordflow}{if} (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{281                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(nextStateInfo.normalizedTime , info.clip.length, nextStateInfo.speed < 0), nextStateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{282                             \}}
+\DoxyCodeLine{283                         \}}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285                         c = 0;}
+\DoxyCodeLine{286                         \textcolor{keywordflow}{if} (isInterruptionActive) \{}
+\DoxyCodeLine{287                             \textcolor{comment}{// Apply next clip directly instead of mixing (ie: no crossfade, ignores mecanim transition weights)}}
+\DoxyCodeLine{288                             \textcolor{keywordflow}{if} (mode == \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{MixMode}}.SpineStyle) \{}
+\DoxyCodeLine{289                                 \textcolor{keywordflow}{for} (; c < interruptingClipInfoCount; c++) \{}
+\DoxyCodeLine{290                                     var info = interruptingClipInfo[c]; \textcolor{keywordtype}{float} clipWeight = shallInterpolateWeightTo1 ? (info.weight + 1.0f) * 0.5f : info.weight;}
+\DoxyCodeLine{291                                     \textcolor{keywordtype}{float} weight = clipWeight * layerWeight; if (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{292                                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(interruptingStateInfo.normalizedTime + interruptingClipTimeAddition, info.clip.length, interruptingStateInfo.speed < 0), interruptingStateInfo.loop, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{293                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{294                                 \}}
+\DoxyCodeLine{295                             \}}
+\DoxyCodeLine{296                             \textcolor{comment}{// Mix the rest}}
+\DoxyCodeLine{297                             \textcolor{keywordflow}{for} (; c < interruptingClipInfoCount; c++) \{}
+\DoxyCodeLine{298                                 var info = interruptingClipInfo[c]; \textcolor{keywordtype}{float} clipWeight = shallInterpolateWeightTo1 ? (info.weight + 1.0f) * 0.5f : info.weight;}
+\DoxyCodeLine{299                                 \textcolor{keywordtype}{float} weight = clipWeight * layerWeight; if (weight == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{300                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}{GetAnimation}}(info.clip).Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c69201f868f4dc591619908b87c09fb}{AnimationTime}}(interruptingStateInfo.normalizedTime + interruptingClipTimeAddition, info.clip.length, interruptingStateInfo.speed < 0), interruptingStateInfo.loop, \textcolor{keyword}{null}, weight, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{301                             \}}
+\DoxyCodeLine{302                         \}}
+\DoxyCodeLine{303                     \}}
+\DoxyCodeLine{304                 \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_adaaf57e37483571fbb3f231773f4c5f9}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_adaaf57e37483571fbb3f231773f4c5f9}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!ClearClipInfosForLayers@{ClearClipInfosForLayers}}
+\index{ClearClipInfosForLayers@{ClearClipInfosForLayers}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{ClearClipInfosForLayers()}{ClearClipInfosForLayers()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Clear\+Clip\+Infos\+For\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 332 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{333                                            \{}
+\DoxyCodeLine{334                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layer = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}.Length; layer < n; ++layer) \{}
+\DoxyCodeLine{335                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer] == \textcolor{keyword}{null})}
+\DoxyCodeLine{336                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer] = \textcolor{keyword}{new} ClipInfos();}
+\DoxyCodeLine{337                     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{338                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer].\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a894155d05d9ca3681803e418cb151bcd}{isInterruptionActive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{339                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer].\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a11d64aa4ed21a12644db252751a0b64d}{isLastFrameOfInterruption}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{340                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer].\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a86137506d0c3bcf871be3451409d4b98}{clipInfos}}.Clear();}
+\DoxyCodeLine{341                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer].\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a3cf2ebb5b3ac1527c7c0e1ed4a792fb0}{nextClipInfos}}.Clear();}
+\DoxyCodeLine{342                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer].\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a9e3de5a6066d5d98ae16bf5a04804adc}{interruptingClipInfos}}.Clear();}
+\DoxyCodeLine{343                     \}}
+\DoxyCodeLine{344                 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a2809b6dd16d822ac3aa7c97d4375174e}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!GetAnimation@{GetAnimation}}
+\index{GetAnimation@{GetAnimation}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{GetAnimation()}{GetAnimation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}} Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Get\+Animation (\begin{DoxyParamCaption}\item[{Animation\+Clip}]{clip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 437 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{438                                                               \{}
+\DoxyCodeLine{439                 \textcolor{keywordtype}{int} clipNameHashCode;}
+\DoxyCodeLine{440                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}{clipNameHashCodeTable}}.TryGetValue(clip, out clipNameHashCode)) \{}
+\DoxyCodeLine{441                     clipNameHashCode = clip.name.GetHashCode();}
+\DoxyCodeLine{442                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}{clipNameHashCodeTable}}.Add(clip, clipNameHashCode);}
+\DoxyCodeLine{443                 \}}
+\DoxyCodeLine{444                 \mbox{\hyperlink{namespace_spine}{Spine}}.\mbox{\hyperlink{class_spine_1_1_animation}{Animation}} animation;}
+\DoxyCodeLine{445                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}{animationTable}}.TryGetValue(clipNameHashCode, out animation);}
+\DoxyCodeLine{446                 \textcolor{keywordflow}{return} animation;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_ac2995b939de5740ab76dbf5cc96b8a0d}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_ac2995b939de5740ab76dbf5cc96b8a0d}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!GetAnimatorClipInfos@{GetAnimatorClipInfos}}
+\index{GetAnimatorClipInfos@{GetAnimatorClipInfos}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{GetAnimatorClipInfos()}{GetAnimatorClipInfos()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Get\+Animator\+Clip\+Infos (\begin{DoxyParamCaption}\item[{int}]{layer,  }\item[{out bool}]{is\+Interruption\+Active,  }\item[{out int}]{clip\+Info\+Count,  }\item[{out int}]{next\+Clip\+Info\+Count,  }\item[{out int}]{interrupting\+Clip\+Info\+Count,  }\item[{out I\+List$<$ Animator\+Clip\+Info $>$}]{clip\+Info,  }\item[{out I\+List$<$ Animator\+Clip\+Info $>$}]{next\+Clip\+Info,  }\item[{out I\+List$<$ Animator\+Clip\+Info $>$}]{interrupting\+Clip\+Info,  }\item[{out bool}]{shall\+Interpolate\+Weight\+To1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 396 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{406                                                     \{}
+\DoxyCodeLine{407 }
+\DoxyCodeLine{408                 var layerInfos = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer];}
+\DoxyCodeLine{409                 isInterruptionActive = layerInfos.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a894155d05d9ca3681803e418cb151bcd}{isInterruptionActive}};}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411                 clipInfoCount = layerInfos.clipInfoCount;}
+\DoxyCodeLine{412                 nextClipInfoCount = layerInfos.nextClipInfoCount;}
+\DoxyCodeLine{413                 interruptingClipInfoCount = layerInfos.interruptingClipInfoCount;}
+\DoxyCodeLine{414 }
+\DoxyCodeLine{415                 clipInfo = layerInfos.clipInfos;}
+\DoxyCodeLine{416                 nextClipInfo = layerInfos.nextClipInfos;}
+\DoxyCodeLine{417                 interruptingClipInfo = isInterruptionActive ? layerInfos.interruptingClipInfos : \textcolor{keyword}{null};}
+\DoxyCodeLine{418                 shallInterpolateWeightTo1 = layerInfos.isLastFrameOfInterruption;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0dc9c2e13acd20e6e9bb19e9779cf563}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0dc9c2e13acd20e6e9bb19e9779cf563}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!GetAnimatorStateInfos@{GetAnimatorStateInfos}}
+\index{GetAnimatorStateInfos@{GetAnimatorStateInfos}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{GetAnimatorStateInfos()}{GetAnimatorStateInfos()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Get\+Animator\+State\+Infos (\begin{DoxyParamCaption}\item[{int}]{layer,  }\item[{out bool}]{is\+Interruption\+Active,  }\item[{out Animator\+State\+Info}]{state\+Info,  }\item[{out Animator\+State\+Info}]{next\+State\+Info,  }\item[{out Animator\+State\+Info}]{interrupting\+State\+Info,  }\item[{out float}]{interrupting\+Clip\+Time\+Addition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 420 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{427                                                         \{}
+\DoxyCodeLine{428 }
+\DoxyCodeLine{429                 var layerInfos = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer];}
+\DoxyCodeLine{430                 isInterruptionActive = layerInfos.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos_a894155d05d9ca3681803e418cb151bcd}{isInterruptionActive}};}
+\DoxyCodeLine{431 }
+\DoxyCodeLine{432                 stateInfo = layerInfos.stateInfo;}
+\DoxyCodeLine{433                 nextStateInfo = layerInfos.nextStateInfo;}
+\DoxyCodeLine{434                 interruptingStateInfo = layerInfos.interruptingStateInfo;}
+\DoxyCodeLine{435                 interruptingClipTimeAddition = layerInfos.isLastFrameOfInterruption ? layerInfos.interruptingClipTimeAddition : 0;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa8f2b86caf17b63b50c5cc181cdb2197}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa8f2b86caf17b63b50c5cc181cdb2197}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!GetStateUpdatesFromAnimator@{GetStateUpdatesFromAnimator}}
+\index{GetStateUpdatesFromAnimator@{GetStateUpdatesFromAnimator}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{GetStateUpdatesFromAnimator()}{GetStateUpdatesFromAnimator()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Get\+State\+Updates\+From\+Animator (\begin{DoxyParamCaption}\item[{int}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 346 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{347                                                         \{}
+\DoxyCodeLine{348                 }
+\DoxyCodeLine{349                 var layerInfos = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer];}
+\DoxyCodeLine{350                 \textcolor{keywordtype}{int} clipInfoCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetCurrentAnimatorClipInfoCount(layer);}
+\DoxyCodeLine{351                 \textcolor{keywordtype}{int} nextClipInfoCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorClipInfoCount(layer);}
+\DoxyCodeLine{352                 }
+\DoxyCodeLine{353                 var clipInfos = layerInfos.clipInfos;}
+\DoxyCodeLine{354                 var nextClipInfos = layerInfos.nextClipInfos;}
+\DoxyCodeLine{355                 var interruptingClipInfos = layerInfos.interruptingClipInfos;}
+\DoxyCodeLine{356 }
+\DoxyCodeLine{357                 layerInfos.isInterruptionActive = (clipInfoCount == 0 \&\& nextClipInfoCount == 0);}
+\DoxyCodeLine{358 }
+\DoxyCodeLine{359                 \textcolor{comment}{// Note: during interruption, GetCurrentAnimatorClipInfoCount and GetNextAnimatorClipInfoCount}}
+\DoxyCodeLine{360                 \textcolor{comment}{// are returning 0 in calls above. Therefore we keep previous clipInfos and nextClipInfos}}
+\DoxyCodeLine{361                 \textcolor{comment}{// until the interruption is over.}}
+\DoxyCodeLine{362                 \textcolor{keywordflow}{if} (layerInfos.isInterruptionActive) \{}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{364                     \textcolor{comment}{// Note: The last frame of a transition interruption}}
+\DoxyCodeLine{365                     \textcolor{comment}{// will have fullPathHash set to 0, therefore we have to use previous}}
+\DoxyCodeLine{366                     \textcolor{comment}{// frame's infos about interruption clips and correct some values}}
+\DoxyCodeLine{367                     \textcolor{comment}{// accordingly (normalizedTime and weight).}}
+\DoxyCodeLine{368                     var interruptingStateInfo = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorStateInfo(layer);}
+\DoxyCodeLine{369                     layerInfos.isLastFrameOfInterruption = interruptingStateInfo.fullPathHash == 0;}
+\DoxyCodeLine{370                     \textcolor{keywordflow}{if} (!layerInfos.isLastFrameOfInterruption) \{}
+\DoxyCodeLine{371                         layerInfos.interruptingClipInfoCount = interruptingClipInfos.Count;}
+\DoxyCodeLine{372 }
+\DoxyCodeLine{373                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorClipInfo(layer, interruptingClipInfos);}
+\DoxyCodeLine{374                         \textcolor{keywordtype}{float} oldTime = layerInfos.interruptingStateInfo.normalizedTime;}
+\DoxyCodeLine{375                         \textcolor{keywordtype}{float} newTime = interruptingStateInfo.normalizedTime;}
+\DoxyCodeLine{376                         layerInfos.interruptingClipTimeAddition = newTime -\/ oldTime;}
+\DoxyCodeLine{377                         layerInfos.interruptingStateInfo = interruptingStateInfo;}
+\DoxyCodeLine{378                     \}}
+\DoxyCodeLine{379                 \}}
+\DoxyCodeLine{380                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{381                     layerInfos.clipInfoCount = clipInfoCount;}
+\DoxyCodeLine{382                     layerInfos.nextClipInfoCount = nextClipInfoCount;}
+\DoxyCodeLine{383                     layerInfos.interruptingClipInfoCount = 0;}
+\DoxyCodeLine{384                     layerInfos.isLastFrameOfInterruption = \textcolor{keyword}{false};}
+\DoxyCodeLine{385 }
+\DoxyCodeLine{386                     \textcolor{keywordflow}{if} (clipInfos.Capacity < clipInfoCount) clipInfos.Capacity = clipInfoCount;}
+\DoxyCodeLine{387                     \textcolor{keywordflow}{if} (nextClipInfos.Capacity < nextClipInfoCount) nextClipInfos.Capacity = nextClipInfoCount;}
+\DoxyCodeLine{388 }
+\DoxyCodeLine{389                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetCurrentAnimatorClipInfo(layer, clipInfos);}
+\DoxyCodeLine{390                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorClipInfo(layer, nextClipInfos);}
+\DoxyCodeLine{391 }
+\DoxyCodeLine{392                     layerInfos.stateInfo = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetCurrentAnimatorStateInfo(layer);}
+\DoxyCodeLine{393                     layerInfos.nextStateInfo = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.GetNextAnimatorStateInfo(layer);}
+\DoxyCodeLine{394                 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a086b6a77ed170e46e239c34eead58dbc}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a086b6a77ed170e46e239c34eead58dbc}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!InitClipInfosForLayers@{InitClipInfosForLayers}}
+\index{InitClipInfosForLayers@{InitClipInfosForLayers}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{InitClipInfosForLayers()}{InitClipInfosForLayers()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Init\+Clip\+Infos\+For\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 322 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{323                                           \{}
+\DoxyCodeLine{324                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}.Length < \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount) \{}
+\DoxyCodeLine{325                     System.Array.Resize<ClipInfos>(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount);}
+\DoxyCodeLine{326                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} layer = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}.layerCount; layer < n; ++layer) \{}
+\DoxyCodeLine{327                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer] == \textcolor{keyword}{null})}
+\DoxyCodeLine{328                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}{layerClipInfos}}[layer] = \textcolor{keyword}{new} ClipInfos();}
+\DoxyCodeLine{329                     \}}
+\DoxyCodeLine{330                 \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a71d572a33f97212abaec47e9d5d5f4bc}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a71d572a33f97212abaec47e9d5d5f4bc}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}{Animator}}}]{animator,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Animator.\+cs 파일의 139 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                                                                             \{}
+\DoxyCodeLine{141                 this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}};}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}{previousAnimations}}.Clear();}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}{animationTable}}.Clear();}
+\DoxyCodeLine{146                 var data = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a27160fb5fa4da50bac400c2bd38621f7}{skeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{147                 \textcolor{keywordflow}{foreach} (var a \textcolor{keywordflow}{in} data.Animations)}
+\DoxyCodeLine{148                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}{animationTable}}.Add(a.Name.GetHashCode(), a);}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}{clipNameHashCodeTable}}.Clear();}
+\DoxyCodeLine{151                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_adaaf57e37483571fbb3f231773f4c5f9}{ClearClipInfosForLayers}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a6c0cd4b4811a905a631bc304bcae1f0d}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!animationTable@{animationTable}}
+\index{animationTable@{animationTable}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{animationTable}{animationTable}}
+{\footnotesize\ttfamily readonly Dictionary$<$int, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}$>$ Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+animation\+Table = new Dictionary$<$int, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}$>$(Int\+Equality\+Comparer.\+Instance)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 113 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!animator@{animator}}
+\index{animator@{animator}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}{Animator}} Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+animator\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 136 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c68e1dad4af843285bdc52dfa77ca9a}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0c68e1dad4af843285bdc52dfa77ca9a}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!autoReset@{autoReset}}
+\index{autoReset@{autoReset}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{autoReset}{autoReset}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+auto\+Reset = true}
+
+
+
+Skeleton\+Animator.\+cs 파일의 107 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa6e777f9108ff2e4265db473fc93f5b9}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!clipNameHashCodeTable@{clipNameHashCodeTable}}
+\index{clipNameHashCodeTable@{clipNameHashCodeTable}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{clipNameHashCodeTable}{clipNameHashCodeTable}}
+{\footnotesize\ttfamily readonly Dictionary$<$Animation\+Clip, int$>$ Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+clip\+Name\+Hash\+Code\+Table = new Dictionary$<$Animation\+Clip, int$>$(Animation\+Clip\+Equality\+Comparer.\+Instance)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 114 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a1151e1e2737bb01e1e91a48d7c67f026}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!layerClipInfos@{layerClipInfos}}
+\index{layerClipInfos@{layerClipInfos}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{layerClipInfos}{layerClipInfos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos}{Clip\+Infos}} \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+layer\+Clip\+Infos = new \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_1_1_clip_infos}{Clip\+Infos}}\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 134 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a69128d093ef6de71001a3a9b10200432}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!layerMixModes@{layerMixModes}}
+\index{layerMixModes@{layerMixModes}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{layerMixModes}{layerMixModes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Mix\+Mode}} \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+layer\+Mix\+Modes = new \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_aa420e56c8d3690ab98b11f7bd3b07299}{Mix\+Mode}}\mbox{[}0\mbox{]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 108 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a297d5835ef4089f2a479200095c12965}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!previousAnimations@{previousAnimations}}
+\index{previousAnimations@{previousAnimations}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{previousAnimations}{previousAnimations}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$ Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+previous\+Animations = new List$<$\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 115 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}\label{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_a0455459c3c8a273e0fc7cc502ee4848c}} 
+\index{Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}!Animator@{Animator}}
+\index{Animator@{Animator}!Spine.Unity.SkeletonAnimator.MecanimTranslator@{Spine.Unity.SkeletonAnimator.MecanimTranslator}}
+\doxysubsubsection{\texorpdfstring{Animator}{Animator}}
+{\footnotesize\ttfamily Animator Spine.\+Unity.\+Skeleton\+Animator.\+Mecanim\+Translator.\+Animator\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Animator.\+cs 파일의 137 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator_1_1_mecanim_translator_af1c307135fdf49d8895b53b4a565bfe7}{animator}}; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Components/\mbox{\hyperlink{_skeleton_animator_8cs}{Skeleton\+Animator.\+cs}}\end{DoxyCompactItemize}

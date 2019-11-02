@@ -1,0 +1,22 @@
+digraph "Spine.Unity.Editor.SpineHandles.DrawBoundingBox"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Editor.Spine\lHandles.DrawBoundingBox",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Editor.Spine\lHandles.DrawBoundingBoxes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#abc17427b5780ea5a9c84c6291696ea0b",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnSceneGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#aefbfe1e3342f532c8d8503fcb1e8a0b3",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#a9572f18fb8a9d686bdf6764a54dc35c4",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnDestroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#aa02886ef672143168b07b12fa434f228",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#a08a29a81c42d9af499d83e27132a247a",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnSelectionChange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#abf8628628ade435fe1b76c9d3b4fcf83",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

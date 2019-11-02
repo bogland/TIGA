@@ -1,0 +1,13 @@
+digraph "Spine.Unity.ISkeletonAnimation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.ISkeletonAnimation\n|+ Skeleton\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A Spine-Unity Component that animates a Skeleton but not necessarily with a Spine...."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{Spine.Unity.SkeletonAnimation\n|+ state\l+ loop\l+ timeScale\l+ AnimationState\l+ UpdateLocal\l+ UpdateWorld\l+ UpdateComplete\l+ AnimationName\l- _animationName\l|+ ClearState()\l+ Initialize()\l+ Update()\l+ AddToGameObject()\l+ NewSkeletonAnimationGame\lObject()\l- TrySetAnimation()\l- Update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node3 [label="{Spine.Unity.SkeletonAnimator\n|+ Translator\l+ UpdateLocal\l+ UpdateWorld\l+ UpdateComplete\l# translator\l|+ Initialize()\l+ Update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animator.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node4 [label="{Spine.Unity.SkeletonGraphic\n|+ skeletonDataAsset\l+ initialSkinName\l+ initialFlipX\l+ startingAnimation\l+ startingLoop\l+ timeScale\l+ freeze\l+ unscaledTime\l+ SkeletonDataAsset\l+ OverrideTexture\l+ mainTexture\l+ Skeleton\l+ SkeletonData\l+ IsValid\l+ AnimationState\l+ MeshGenerator\l# skeleton\l# state\l# meshGenerator\l- initialFlipY\l- overrideTexture\l- meshBuffers\l- currentInstructions\l|+ Rebuild()\l+ Update()\l+ Update()\l+ LateUpdate()\l+ GetLastMesh()\l+ Clear()\l+ Initialize()\l+ UpdateMesh()\l+ NewSkeletonGraphicGameObject()\l+ AddSkeletonGraphicComponent()\l# Awake()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_graphic.html",tooltip=" "];
+}

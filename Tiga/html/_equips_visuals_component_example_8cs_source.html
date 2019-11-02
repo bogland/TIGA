@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Mix and Match Character Customize/EquipsVisualsComponentExample.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_equips_visuals_component_example_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">EquipsVisualsComponentExample.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_equips_visuals_component_example_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules.html">Modules</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">AttachmentTools</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html">EquipsVisualsComponentExample</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">   10</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_skin.html">SpineSkin</a>]</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a293015b67561a57ebbf085bb16694d92">   13</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a293015b67561a57ebbf085bb16694d92">templateSkinName</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">   15</a></span>&#160;        <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="class_spine_1_1_skin.html">Skin</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">   16</a></span>&#160;        <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="class_spine_1_1_skin.html">Skin</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ac376b125f7125dc0646ef5b03887c5c0">   18</a></span>&#160;        <span class="keyword">public</span> Material <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ac376b125f7125dc0646ef5b03887c5c0">runtimeMaterial</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aedad5231dad5c7cb78c00b12427c56f8">   19</a></span>&#160;        <span class="keyword">public</span> Texture2D <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aedad5231dad5c7cb78c00b12427c56f8">runtimeAtlas</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a85d8fceb815d7692e0e2cdb3d4859ee0">   21</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a85d8fceb815d7692e0e2cdb3d4859ee0">Start</a> () {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a> = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin.html">Skin</a>(<span class="stringliteral">&quot;Equips&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="comment">// OPTIONAL: Add all the attachments from the template skin.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            var templateSkin = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#aa7ca532fb2a76b9998bb44b8066e99fc">Data</a>.<a class="code" href="class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369">FindSkin</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a293015b67561a57ebbf085bb16694d92">templateSkinName</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span> (templateSkin != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>.Append(templateSkin);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#a4e21d4e0b6aa6dd23ae81cc6dfabfd8e">Skin</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">RefreshSkeletonAttachments</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a1c3c4caaaf3eae2862aa46f453bfab02">   33</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a1c3c4caaaf3eae2862aa46f453bfab02">Equip</a> (<span class="keywordtype">int</span> slotIndex, <span class="keywordtype">string</span> attachmentName, <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> attachment) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>.<a class="code" href="class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676">AddAttachment</a>(slotIndex, attachmentName, attachment);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8">SetSkin</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">RefreshSkeletonAttachments</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aba3992e78803aa05cff5a96bc0cec14d">   39</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aba3992e78803aa05cff5a96bc0cec14d">OptimizeSkin</a> () {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="comment">// 1. Collect all the attachments of all active skins.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a> ?? <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin.html">Skin</a>(<span class="stringliteral">&quot;Collected skin&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>.Clear();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>.Append(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#aa7ca532fb2a76b9998bb44b8066e99fc">Data</a>.<a class="code" href="class_spine_1_1_skeleton_data.html#a0f9f1afae68d6dd031d776d50b5b4e8f">DefaultSkin</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>.Append(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">equipsSkin</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="comment">// 2. Create a repacked skin.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            var repackedSkin = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>.GetRepackedSkin(<span class="stringliteral">&quot;Repacked skin&quot;</span>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a2e53e761f321a7e2c08ea1bf10d757dc">SkeletonDataAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a72d496567b4ec282c2579ccc8bf76bf1">atlasAssets</a>[0].<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a12cd6c6e8293c9fbe6ec05ab768e4c78">materials</a>[0], out <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ac376b125f7125dc0646ef5b03887c5c0">runtimeMaterial</a>, out <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aedad5231dad5c7cb78c00b12427c56f8">runtimeAtlas</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">collectedSkin</a>.Clear();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// 3. Use the repacked skin.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#a4e21d4e0b6aa6dd23ae81cc6dfabfd8e">Skin</a> = repackedSkin;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">RefreshSkeletonAttachments</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">   55</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">RefreshSkeletonAttachments</a> () {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904">SetSlotsToSetupPose</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">AnimationState</a>.Apply(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>); <span class="comment">//skeletonAnimation.Update(0);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">Spine.Unity.Modules.AttachmentTools</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a8018f6075e7578e9bccf1cd81c92f904"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904">Spine.Skeleton.SetSlotsToSetupPose</a></div><div class="ttdeci">void SetSlotsToSetupPose()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00329">Skeleton.cs:329</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_af3c8171e45332166e5648adb789de717"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#af3c8171e45332166e5648adb789de717">Spine.Unity.Examples.EquipsVisualsComponentExample.collectedSkin</a></div><div class="ttdeci">Spine.Skin collectedSkin</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00016">EquipsVisualsComponentExample.cs:16</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_a38246583ed686e403a6ceade16220b3b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b">Spine.Unity.Examples.EquipsVisualsComponentExample.RefreshSkeletonAttachments</a></div><div class="ttdeci">void RefreshSkeletonAttachments()</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00055">EquipsVisualsComponentExample.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_aca997f96ffb5a89579dc325b790f0fd6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Spine.Unity.SkeletonRenderer.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00111">SkeletonRenderer.cs:111</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_data_html_a0f9f1afae68d6dd031d776d50b5b4e8f"><div class="ttname"><a href="class_spine_1_1_skeleton_data.html#a0f9f1afae68d6dd031d776d50b5b4e8f">Spine.SkeletonData.DefaultSkin</a></div><div class="ttdeci">Skin DefaultSkin</div><div class="ttdoc">The skeleton's default skin. By default this skin contains all attachments that were not in a skin in...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_8cs_source.html#l00068">SkeletonData.cs:68</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_a85d8fceb815d7692e0e2cdb3d4859ee0"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a85d8fceb815d7692e0e2cdb3d4859ee0">Spine.Unity.Examples.EquipsVisualsComponentExample.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00021">EquipsVisualsComponentExample.cs:21</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_data_html_a6f87af52a59ff01da994c5ae68397369"><div class="ttname"><a href="class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369">Spine.SkeletonData.FindSkin</a></div><div class="ttdeci">Skin FindSkin(string skinName)</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_8cs_source.html#l00139">SkeletonData.cs:139</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_ad13ef194d7b5688b7817196932802cf1"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ad13ef194d7b5688b7817196932802cf1">Spine.Unity.Examples.EquipsVisualsComponentExample.equipsSkin</a></div><div class="ttdeci">Spine.Skin equipsSkin</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00015">EquipsVisualsComponentExample.cs:15</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html">Spine.Unity.SkeletonAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00037">SkeletonAnimation.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_a1c3c4caaaf3eae2862aa46f453bfab02"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a1c3c4caaaf3eae2862aa46f453bfab02">Spine.Unity.Examples.EquipsVisualsComponentExample.Equip</a></div><div class="ttdeci">void Equip(int slotIndex, string attachmentName, Attachment attachment)</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00033">EquipsVisualsComponentExample.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_a2e53e761f321a7e2c08ea1bf10d757dc"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a2e53e761f321a7e2c08ea1bf10d757dc">Spine.Unity.SkeletonRenderer.SkeletonDataAsset</a></div><div class="ttdeci">SkeletonDataAsset SkeletonDataAsset</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00049">SkeletonRenderer.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html">Spine.Unity.Examples.EquipsVisualsComponentExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00008">EquipsVisualsComponentExample.cs:8</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a4e21d4e0b6aa6dd23ae81cc6dfabfd8e">Spine.Skeleton.Skin</a></div><div class="ttdeci">Skin Skin</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00058">Skeleton.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_skin_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_skin.html">Spine.Unity.SpineSkin</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00144">SpineAttributes.cs:144</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html_a12cd6c6e8293c9fbe6ec05ab768e4c78"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html#a12cd6c6e8293c9fbe6ec05ab768e4c78">Spine.Unity.AtlasAsset.materials</a></div><div class="ttdeci">Material[] materials</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00040">AtlasAsset.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_af80bbbc3b2b5d588152eba7e83430dc8"><div class="ttname"><a href="class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8">Spine.Skeleton.SetSkin</a></div><div class="ttdeci">void SetSkin(string skinName)</div><div class="ttdoc">Sets a skin by name (see SetSkin).</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00385">Skeleton.cs:385</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_ab1694ead3860e2f34dd892747aef356b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">Spine.Unity.SkeletonAnimation.AnimationState</a></div><div class="ttdeci">Spine.AnimationState AnimationState</div><div class="ttdoc">This is the Spine.AnimationState object of this SkeletonAnimation. You can control animations through...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00047">SkeletonAnimation.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_aedad5231dad5c7cb78c00b12427c56f8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aedad5231dad5c7cb78c00b12427c56f8">Spine.Unity.Examples.EquipsVisualsComponentExample.runtimeAtlas</a></div><div class="ttdeci">Texture2D runtimeAtlas</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00019">EquipsVisualsComponentExample.cs:19</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_ac376b125f7125dc0646ef5b03887c5c0"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ac376b125f7125dc0646ef5b03887c5c0">Spine.Unity.Examples.EquipsVisualsComponentExample.runtimeMaterial</a></div><div class="ttdeci">Material runtimeMaterial</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00018">EquipsVisualsComponentExample.cs:18</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html_a2261ca4391e956e48a6cb45eff6d5676"><div class="ttname"><a href="class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676">Spine.Skin.AddAttachment</a></div><div class="ttdeci">void AddAttachment(int slotIndex, string name, Attachment attachment)</div><div class="ttdoc">Adds an attachment to the skin for the specified slot index and name. If the name already exists for ...</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00052">Skin.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_a293015b67561a57ebbf085bb16694d92"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a293015b67561a57ebbf085bb16694d92">Spine.Unity.Examples.EquipsVisualsComponentExample.templateSkinName</a></div><div class="ttdeci">string templateSkinName</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00013">EquipsVisualsComponentExample.cs:13</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules.html">Spine.Unity.Modules</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_aa7ca532fb2a76b9998bb44b8066e99fc"><div class="ttname"><a href="class_spine_1_1_skeleton.html#aa7ca532fb2a76b9998bb44b8066e99fc">Spine.Skeleton.Data</a></div><div class="ttdeci">SkeletonData Data</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00050">Skeleton.cs:50</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_ae7ac68a5e753b592f71d96f862c1dbef"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#ae7ac68a5e753b592f71d96f862c1dbef">Spine.Unity.Examples.EquipsVisualsComponentExample.skeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation skeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00010">EquipsVisualsComponentExample.cs:10</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_html_aba3992e78803aa05cff5a96bc0cec14d"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aba3992e78803aa05cff5a96bc0cec14d">Spine.Unity.Examples.EquipsVisualsComponentExample.OptimizeSkin</a></div><div class="ttdeci">void OptimizeSkin()</div><div class="ttdef"><b>Definition:</b> <a href="_equips_visuals_component_example_8cs_source.html#l00039">EquipsVisualsComponentExample.cs:39</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_data_asset_html_a72d496567b4ec282c2579ccc8bf76bf1"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a72d496567b4ec282c2579ccc8bf76bf1">Spine.Unity.SkeletonDataAsset.atlasAssets</a></div><div class="ttdeci">AtlasAsset[] atlasAssets</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_asset_8cs_source.html#l00038">SkeletonDataAsset.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_a12b995838825cbac3fe495cb279efa9.html">Mix and Match Character Customize</a></li><li class="navelem"><a class="el" href="_equips_visuals_component_example_8cs.html">EquipsVisualsComponentExample.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

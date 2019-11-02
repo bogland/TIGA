@@ -1,0 +1,211 @@
+\hypertarget{class_spine_1_1_pool}{}\doxysection{Spine.\+Pool$<$ T $>$ 클래스 템플릿 참조}
+\label{class_spine_1_1_pool}\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+
+
+Spine.\+Pool$<$ T $>$에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+interface \mbox{\hyperlink{interface_spine_1_1_pool_1_1_i_poolable}{I\+Poolable}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_pool_aab8573bcc437f1785432989e3f51c7bc}{Pool}} (int initial\+Capacity=16, int \mbox{\hyperlink{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}{max}}=int.\+Max\+Value)
+\item 
+T \mbox{\hyperlink{class_spine_1_1_pool_aa0d18ae51ae4151eac73e373f0dd36c9}{Obtain}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_pool_af41dd86e7d95e70101336f9f197ed68c}{Free}} (T obj)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_pool_a1fa6a6d677deb69efe8fa1759173053f}{Clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly int \mbox{\hyperlink{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}{max}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_pool_abc3f85c9db882da8a022d9a3dd9f1160}{Reset}} (T obj)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_pool_a0a8a3896deb3dc402b5a67f769dc5cac}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_pool_ab919394503c8a98c61534867fa655973}{Peak}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly Stack$<$ T $>$ \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{free\+Objects}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\begin{Desc}
+\item[타입 한정자들]\begin{description}
+\item[{\em T} : {\em class}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+
+
+Animation\+State.\+cs 파일의 1013 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_pool_aab8573bcc437f1785432989e3f51c7bc}\label{class_spine_1_1_pool_aab8573bcc437f1785432989e3f51c7bc}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Pool@{Pool}}
+\index{Pool@{Pool}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pool()}{Pool()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.\mbox{\hyperlink{class_spine_1_1_pool}{Pool}} (\begin{DoxyParamCaption}\item[{int}]{initial\+Capacity = {\ttfamily 16},  }\item[{int}]{max = {\ttfamily int.MaxValue} }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 1020 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1021                                                                        \{}
+\DoxyCodeLine{1022             \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}} = \textcolor{keyword}{new} Stack<T>(initialCapacity);}
+\DoxyCodeLine{1023             this.\mbox{\hyperlink{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}{max}} = \mbox{\hyperlink{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}{max}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_pool_a1fa6a6d677deb69efe8fa1759173053f}\label{class_spine_1_1_pool_a1fa6a6d677deb69efe8fa1759173053f}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 1051 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1052                              \{}
+\DoxyCodeLine{1053             \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Clear();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_pool_af41dd86e7d95e70101336f9f197ed68c}\label{class_spine_1_1_pool_af41dd86e7d95e70101336f9f197ed68c}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Free@{Free}}
+\index{Free@{Free}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Free()}{Free()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Free (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 1029 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1030                                  \{}
+\DoxyCodeLine{1031             \textcolor{keywordflow}{if} (obj == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"obj"}, \textcolor{stringliteral}{"obj cannot be null"});}
+\DoxyCodeLine{1032             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Count < \mbox{\hyperlink{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}{max}}) \{}
+\DoxyCodeLine{1033                 \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Push(obj);}
+\DoxyCodeLine{1034                 \mbox{\hyperlink{class_spine_1_1_pool_ab919394503c8a98c61534867fa655973}{Peak}} = Math.Max(\mbox{\hyperlink{class_spine_1_1_pool_ab919394503c8a98c61534867fa655973}{Peak}}, \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Count);}
+\DoxyCodeLine{1035             \}}
+\DoxyCodeLine{1036             \mbox{\hyperlink{class_spine_1_1_pool_abc3f85c9db882da8a022d9a3dd9f1160}{Reset}}(obj);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_pool_aa0d18ae51ae4151eac73e373f0dd36c9}\label{class_spine_1_1_pool_aa0d18ae51ae4151eac73e373f0dd36c9}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Obtain@{Obtain}}
+\index{Obtain@{Obtain}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Obtain()}{Obtain()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Obtain (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 1025 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1026                            \{}
+\DoxyCodeLine{1027             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Count == 0 ? \textcolor{keyword}{new} T() : \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Pop();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_pool_abc3f85c9db882da8a022d9a3dd9f1160}\label{class_spine_1_1_pool_abc3f85c9db882da8a022d9a3dd9f1160}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Reset@{Reset}}
+\index{Reset@{Reset}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Reset (\begin{DoxyParamCaption}\item[{T}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation\+State.\+cs 파일의 1055 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1056                                      \{}
+\DoxyCodeLine{1057             var poolable = obj as IPoolable;}
+\DoxyCodeLine{1058             \textcolor{keywordflow}{if} (poolable != \textcolor{keyword}{null}) poolable.Reset();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}\label{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!freeObjects@{freeObjects}}
+\index{freeObjects@{freeObjects}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{freeObjects}{freeObjects}}
+{\footnotesize\ttfamily readonly Stack$<$T$>$ \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.free\+Objects\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 1015 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}\label{class_spine_1_1_pool_af33ea41d48fcdea873976f31a3de9a31}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!max@{max}}
+\index{max@{max}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily readonly int \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.max}
+
+
+
+Animation\+State.\+cs 파일의 1014 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_pool_a0a8a3896deb3dc402b5a67f769dc5cac}\label{class_spine_1_1_pool_a0a8a3896deb3dc402b5a67f769dc5cac}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation\+State.\+cs 파일의 1017 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1018 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Count; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_pool_ab919394503c8a98c61534867fa655973}\label{class_spine_1_1_pool_ab919394503c8a98c61534867fa655973}} 
+\index{Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}!Peak@{Peak}}
+\index{Peak@{Peak}!Spine.Pool$<$ T $>$@{Spine.Pool$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Peak}{Peak}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_pool}{Spine.\+Pool}}$<$ T $>$.Peak\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Animation\+State.\+cs 파일의 1018 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1018 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_pool_ad6e6c8641b329599e85718a0fa759400}{freeObjects}}.Count; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_state_8cs}{Animation\+State.\+cs}}\end{DoxyCompactItemize}

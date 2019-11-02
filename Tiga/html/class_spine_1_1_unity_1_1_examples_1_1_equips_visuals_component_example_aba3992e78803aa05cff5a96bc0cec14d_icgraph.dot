@@ -1,0 +1,10 @@
+digraph "Spine.Unity.Examples.EquipsVisualsComponentExample.OptimizeSkin"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.OptimizeSkin",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Examples.Equip\lSystemExample.Done",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a4d5cbb2d2f7425c1aee560c9aa2bde1b",tooltip=" "];
+}

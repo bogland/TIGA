@@ -1,0 +1,385 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor}{}\doxysection{Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor}\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+
+
+Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4b9229dcefb0c178c13d63b2f428f068}{On\+Scene\+G\+UI}} ()
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a25efb18a29130bb8a7e595f6c5a8ae12}{On\+Inspector\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4dd5dda0fc044f38af62c8231b8656d2}{On\+Enable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ae2e1bf6b149dd594107616683f9704ee}{Add\+Bone\+Follower\+Game\+Object}} (Menu\+Command cmd)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_af191e22dd4e31fa80d0012d2bc2dd3e7}{Validate\+Add\+Bone\+Follower\+Game\+Object}} (Menu\+Command cmd)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a9f2d907c34b378315b5516d8b252a8af}{Draw\+Points\+In\+Skin}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, Transform transform)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ac930b3b168137689220fa120d7d61c4d}{Draw\+Point\+Attachment\+With\+Label}} (\mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} point, \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, Transform transform)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4ed4010d322765ef1ec619a01190b19a}{slot\+Name}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}{point\+Attachment\+Name}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeleton\+Renderer}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4d068d9fb6cd781ae3fba007794f9968}{follow\+Z\+Position}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ab9383e7f67b67daa570fc474fb25a3fa}{follow\+Bone\+Rotation}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a8477c6f12133af109392186fbbcb9737}{follow\+Skeleton\+Flip}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower}{Point\+Follower}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{target\+Point\+Follower}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needs\+Reset}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Point\+Follower\+Editor.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ae2e1bf6b149dd594107616683f9704ee}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ae2e1bf6b149dd594107616683f9704ee}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!AddBoneFollowerGameObject@{AddBoneFollowerGameObject}}
+\index{AddBoneFollowerGameObject@{AddBoneFollowerGameObject}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{AddBoneFollowerGameObject()}{AddBoneFollowerGameObject()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+Add\+Bone\+Follower\+Game\+Object (\begin{DoxyParamCaption}\item[{Menu\+Command}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                                                 \{}
+\DoxyCodeLine{48             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}} = cmd.context as SkeletonRenderer;}
+\DoxyCodeLine{49             var go = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"PointFollower"});}
+\DoxyCodeLine{50             var t = go.transform;}
+\DoxyCodeLine{51             t.SetParent(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.transform);}
+\DoxyCodeLine{52             t.localPosition = Vector3.zero;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54             var f = go.AddComponent<PointFollower>();}
+\DoxyCodeLine{55             f.skeletonRenderer = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57             EditorGUIUtility.PingObject(t);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59             Undo.RegisterCreatedObjectUndo(go, \textcolor{stringliteral}{"Add PointFollower"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ac930b3b168137689220fa120d7d61c4d}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ac930b3b168137689220fa120d7d61c4d}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!DrawPointAttachmentWithLabel@{DrawPointAttachmentWithLabel}}
+\index{DrawPointAttachmentWithLabel@{DrawPointAttachmentWithLabel}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{DrawPointAttachmentWithLabel()}{DrawPointAttachmentWithLabel()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+Draw\+Point\+Attachment\+With\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}}}]{point,  }\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 123 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{124                                                                                                          \{}
+\DoxyCodeLine{125             Vector3 labelOffset = \textcolor{keyword}{new} Vector3(0f, -\/0.2f, 0f);}
+\DoxyCodeLine{126             SpineHandles.DrawPointAttachment(bone, point, transform);}
+\DoxyCodeLine{127             Handles.Label(labelOffset + point.GetWorldPosition(bone, transform), point.Name, SpineHandles.PointNameStyle);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a9f2d907c34b378315b5516d8b252a8af}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a9f2d907c34b378315b5516d8b252a8af}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!DrawPointsInSkin@{DrawPointsInSkin}}
+\index{DrawPointsInSkin@{DrawPointsInSkin}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{DrawPointsInSkin()}{DrawPointsInSkin()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+Draw\+Points\+In\+Skin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{Transform}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 112 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113                                                                                          \{}
+\DoxyCodeLine{114             \textcolor{keywordflow}{foreach} (var skinEntry \textcolor{keywordflow}{in} skin.Attachments) \{}
+\DoxyCodeLine{115                 var attachment = skinEntry.Value as PointAttachment;}
+\DoxyCodeLine{116                 \textcolor{keywordflow}{if} (attachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{117                     var skinKey = skinEntry.Key;}
+\DoxyCodeLine{118                     var slot = skeleton.Slots.Items[skinKey.slotIndex];}
+\DoxyCodeLine{119                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ac930b3b168137689220fa120d7d61c4d}{DrawPointAttachmentWithLabel}}(attachment, slot.Bone, transform);}
+\DoxyCodeLine{120                 \}}
+\DoxyCodeLine{121             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4dd5dda0fc044f38af62c8231b8656d2}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4dd5dda0fc044f38af62c8231b8656d2}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                          \{}
+\DoxyCodeLine{71             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}} = serializedObject.FindProperty(\textcolor{stringliteral}{"skeletonRenderer"});}
+\DoxyCodeLine{72             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4ed4010d322765ef1ec619a01190b19a}{slotName}} = serializedObject.FindProperty(\textcolor{stringliteral}{"slotName"});}
+\DoxyCodeLine{73             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}{pointAttachmentName}} = serializedObject.FindProperty(\textcolor{stringliteral}{"pointAttachmentName"});}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}} = (PointFollower)target;}
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a983d7fa05857ab37dcdba780d2f4b746}{skeletonRenderer}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{77                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a983d7fa05857ab37dcdba780d2f4b746}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a51f0f25d67884c18239202881a188797}{Initialize}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a0b124b8b4849bf0e49a4448270cca4b2}{IsValid}} || \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}}) \{}
+\DoxyCodeLine{80                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a69f6add14f83be49f5c5b97c6763fa03}{Initialize}}();}
+\DoxyCodeLine{81                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a2c50158c9153fd1a6894f31876bf07d9}{LateUpdate}}();}
+\DoxyCodeLine{82                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{83                 SceneView.RepaintAll();}
+\DoxyCodeLine{84             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a25efb18a29130bb8a7e595f6c5a8ae12}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a25efb18a29130bb8a7e595f6c5a8ae12}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!OnInspectorGUI@{OnInspectorGUI}}
+\index{OnInspectorGUI@{OnInspectorGUI}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{OnInspectorGUI()}{OnInspectorGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+On\+Inspector\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 129 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{130                                                \{}
+\DoxyCodeLine{131             \textcolor{keywordflow}{if} (serializedObject.isEditingMultipleObjects) \{}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}}) \{}
+\DoxyCodeLine{133                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{134                     \textcolor{keywordflow}{foreach} (var o \textcolor{keywordflow}{in} targets) \{}
+\DoxyCodeLine{135                         var bf = (BoneFollower)o;}
+\DoxyCodeLine{136                         bf.Initialize();}
+\DoxyCodeLine{137                         bf.LateUpdate();}
+\DoxyCodeLine{138                     \}}
+\DoxyCodeLine{139                     SceneView.RepaintAll();}
+\DoxyCodeLine{140                 \}}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142                 EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{143                 DrawDefaultInspector();}
+\DoxyCodeLine{144                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} |= EditorGUI.EndChangeCheck();}
+\DoxyCodeLine{145                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{146             \}}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} \&\& \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a1d77fd0f2c3570d8f4ebdc48b2afacaf}{Event}}.current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.Layout) \{}
+\DoxyCodeLine{149                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a69f6add14f83be49f5c5b97c6763fa03}{Initialize}}();}
+\DoxyCodeLine{150                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a2c50158c9153fd1a6894f31876bf07d9}{LateUpdate}}();}
+\DoxyCodeLine{151                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{152                 SceneView.RepaintAll();}
+\DoxyCodeLine{153             \}}
+\DoxyCodeLine{154             serializedObject.Update();}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156             DrawDefaultInspector();}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158             \textcolor{comment}{// Find Renderer}}
+\DoxyCodeLine{159             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.objectReferenceValue == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{160                 SkeletonRenderer parentRenderer = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.GetComponentInParent<SkeletonRenderer>();}
+\DoxyCodeLine{161                 \textcolor{keywordflow}{if} (parentRenderer != \textcolor{keyword}{null} \&\& parentRenderer.gameObject != \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.gameObject) \{}
+\DoxyCodeLine{162                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.objectReferenceValue = parentRenderer;}
+\DoxyCodeLine{163                     Debug.Log(\textcolor{stringliteral}{"Inspector automatically assigned PointFollower.SkeletonRenderer"});}
+\DoxyCodeLine{164                 \}}
+\DoxyCodeLine{165             \}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167             var skeletonRendererReference = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.objectReferenceValue as SkeletonRenderer;}
+\DoxyCodeLine{168             \textcolor{keywordflow}{if} (skeletonRendererReference != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{if} (skeletonRendererReference.gameObject == \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.gameObject) \{}
+\DoxyCodeLine{170                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.objectReferenceValue = \textcolor{keyword}{null};}
+\DoxyCodeLine{171                     EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Invalid assignment."}, \textcolor{stringliteral}{"PointFollower can only follow a skeleton on a separate GameObject.\(\backslash\)n\(\backslash\)nCreate a new GameObject for your PointFollower, or choose a SkeletonRenderer from a different GameObject."}, \textcolor{stringliteral}{"Ok"});}
+\DoxyCodeLine{172                 \}}
+\DoxyCodeLine{173             \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a0b124b8b4849bf0e49a4448270cca4b2}{IsValid}}) \{}
+\DoxyCodeLine{176                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}{needsReset}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{177             \}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             var current = \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a1d77fd0f2c3570d8f4ebdc48b2afacaf}{Event}}.current;}
+\DoxyCodeLine{180             \textcolor{keywordtype}{bool} wasUndo = (current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.ValidateCommand \&\& current.commandName == \textcolor{stringliteral}{"UndoRedoPerformed"});}
+\DoxyCodeLine{181             \textcolor{keywordflow}{if} (wasUndo)}
+\DoxyCodeLine{182                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}{targetPointFollower}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower_a69f6add14f83be49f5c5b97c6763fa03}{Initialize}}();}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184             serializedObject.ApplyModifiedProperties();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4b9229dcefb0c178c13d63b2f428f068}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4b9229dcefb0c178c13d63b2f428f068}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!OnSceneGUI@{OnSceneGUI}}
+\index{OnSceneGUI@{OnSceneGUI}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{OnSceneGUI()}{OnSceneGUI()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+On\+Scene\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 86 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                                   \{}
+\DoxyCodeLine{88             var tbf = target as PointFollower;}
+\DoxyCodeLine{89             var skeletonRendererComponent = tbf.skeletonRenderer;}
+\DoxyCodeLine{90             \textcolor{keywordflow}{if} (skeletonRendererComponent == \textcolor{keyword}{null})}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             var skeleton = skeletonRendererComponent.skeleton;}
+\DoxyCodeLine{94             var skeletonTransform = skeletonRendererComponent.transform;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}{pointAttachmentName}}.stringValue)) \{}
+\DoxyCodeLine{97                 \textcolor{comment}{// Draw all active PointAttachments in the current skin}}
+\DoxyCodeLine{98                 var currentSkin = skeleton.Skin;}
+\DoxyCodeLine{99                 \textcolor{keywordflow}{if} (currentSkin != skeleton.Data.DefaultSkin) \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a9f2d907c34b378315b5516d8b252a8af}{DrawPointsInSkin}}(skeleton.Data.DefaultSkin, skeleton, skeletonTransform);}
+\DoxyCodeLine{100                 \textcolor{keywordflow}{if} (currentSkin != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a9f2d907c34b378315b5516d8b252a8af}{DrawPointsInSkin}}(currentSkin, skeleton, skeletonTransform);}
+\DoxyCodeLine{101             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{102                 \textcolor{keywordtype}{int} slotIndex = skeleton.FindSlotIndex(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4ed4010d322765ef1ec619a01190b19a}{slotName}}.stringValue);}
+\DoxyCodeLine{103                 \textcolor{keywordflow}{if} (slotIndex >= 0) \{}
+\DoxyCodeLine{104                     var slot = skeleton.Slots.Items[slotIndex];}
+\DoxyCodeLine{105                     var point = skeleton.GetAttachment(slotIndex, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}{pointAttachmentName}}.stringValue) as PointAttachment;}
+\DoxyCodeLine{106                     \textcolor{keywordflow}{if} (point != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{107                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ac930b3b168137689220fa120d7d61c4d}{DrawPointAttachmentWithLabel}}(point, slot.Bone, skeletonTransform);}
+\DoxyCodeLine{108                     \}}
+\DoxyCodeLine{109                 \}}
+\DoxyCodeLine{110             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_af191e22dd4e31fa80d0012d2bc2dd3e7}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_af191e22dd4e31fa80d0012d2bc2dd3e7}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!ValidateAddBoneFollowerGameObject@{ValidateAddBoneFollowerGameObject}}
+\index{ValidateAddBoneFollowerGameObject@{ValidateAddBoneFollowerGameObject}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{ValidateAddBoneFollowerGameObject()}{ValidateAddBoneFollowerGameObject()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+Validate\+Add\+Bone\+Follower\+Game\+Object (\begin{DoxyParamCaption}\item[{Menu\+Command}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                                         \{}
+\DoxyCodeLine{65             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}} = cmd.context as SkeletonRenderer;}
+\DoxyCodeLine{66             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}{skeletonRenderer}}.valid;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ab9383e7f67b67daa570fc474fb25a3fa}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_ab9383e7f67b67daa570fc474fb25a3fa}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!followBoneRotation@{followBoneRotation}}
+\index{followBoneRotation@{followBoneRotation}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{followBoneRotation}{followBoneRotation}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+follow\+Bone\+Rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a8477c6f12133af109392186fbbcb9737}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a8477c6f12133af109392186fbbcb9737}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!followSkeletonFlip@{followSkeletonFlip}}
+\index{followSkeletonFlip@{followSkeletonFlip}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{followSkeletonFlip}{followSkeletonFlip}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+follow\+Skeleton\+Flip\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4d068d9fb6cd781ae3fba007794f9968}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4d068d9fb6cd781ae3fba007794f9968}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!followZPosition@{followZPosition}}
+\index{followZPosition@{followZPosition}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{followZPosition}{followZPosition}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+follow\+Z\+Position\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a0e735a8773de82f001e95c4b43c202e1}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!needsReset@{needsReset}}
+\index{needsReset@{needsReset}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{needsReset}{needsReset}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+needs\+Reset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a893b1512b7926b296c14d6fab52a6f52}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!pointAttachmentName@{pointAttachmentName}}
+\index{pointAttachmentName@{pointAttachmentName}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{pointAttachmentName}{pointAttachmentName}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+point\+Attachment\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a226679c630c6a1ba42e3ebf4f1c3944b}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+skeleton\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4ed4010d322765ef1ec619a01190b19a}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a4ed4010d322765ef1ec619a01190b19a}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!slotName@{slotName}}
+\index{slotName@{slotName}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{slotName}{slotName}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+slot\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}\label{class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor_a32ec42244a2f5580164fc11a8b8e9c80}} 
+\index{Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}!targetPointFollower@{targetPointFollower}}
+\index{targetPointFollower@{targetPointFollower}!Spine.Unity.Editor.PointFollowerEditor@{Spine.Unity.Editor.PointFollowerEditor}}
+\doxysubsubsection{\texorpdfstring{targetPointFollower}{targetPointFollower}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_point_follower}{Point\+Follower}} Spine.\+Unity.\+Editor.\+Point\+Follower\+Editor.\+target\+Point\+Follower\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Point\+Follower\+Editor.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_point_follower_editor_8cs}{Point\+Follower\+Editor.\+cs}}\end{DoxyCompactItemize}

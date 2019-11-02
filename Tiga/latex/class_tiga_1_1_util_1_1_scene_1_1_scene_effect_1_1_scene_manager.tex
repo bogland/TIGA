@@ -1,0 +1,87 @@
+\hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager}{}\doxysection{Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager 클래스 참조}
+\label{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager}\index{Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}}
+
+
+Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Canvas\+Group \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a31947406287a4a4631d250fc9f106ba1}{Transition\+Panel}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a3ceda4cc88652100ee422049294f9f2e}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a29b6f0e610c89d6ec74f194079464d4c}{Update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Scene\+Manager.\+cs 파일의 7 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a3ceda4cc88652100ee422049294f9f2e}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a3ceda4cc88652100ee422049294f9f2e}} 
+\index{Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}!Start@{Start}}
+\index{Start@{Start}!Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Manager.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{12         \{}
+\DoxyCodeLine{13             \mbox{\hyperlink{class_scene_effector}{SceneEffector}} sceneEffector = \textcolor{keyword}{new} \mbox{\hyperlink{class_scene_effector}{SceneEffector}}(\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a31947406287a4a4631d250fc9f106ba1}{TransitionPanel}});}
+\DoxyCodeLine{14             StartCoroutine(sceneEffector.\mbox{\hyperlink{class_scene_effector_a07bf016a347cb35b3111f5b09b5fe046}{FadeOut}}());}
+\DoxyCodeLine{15         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a29b6f0e610c89d6ec74f194079464d4c}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a29b6f0e610c89d6ec74f194079464d4c}} 
+\index{Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}!Update@{Update}}
+\index{Update@{Update}!Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Manager.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a31947406287a4a4631d250fc9f106ba1}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_effect_1_1_scene_manager_a31947406287a4a4631d250fc9f106ba1}} 
+\index{Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}!TransitionPanel@{TransitionPanel}}
+\index{TransitionPanel@{TransitionPanel}!Tiga.Util.Scene.SceneEffect.SceneManager@{Tiga.Util.Scene.SceneEffect.SceneManager}}
+\doxysubsubsection{\texorpdfstring{TransitionPanel}{TransitionPanel}}
+{\footnotesize\ttfamily Canvas\+Group Tiga.\+Util.\+Scene.\+Scene\+Effect.\+Scene\+Manager.\+Transition\+Panel}
+
+
+
+Scene\+Manager.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Util/\+Scene/\+Scene\+Effect/\mbox{\hyperlink{_scene_manager_8cs}{Scene\+Manager.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset}{}\doxysection{Spine.\+Unity.\+Animation\+Reference\+Asset 클래스 참조}
+\label{class_spine_1_1_unity_1_1_animation_reference_asset}\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+
+
+Spine.\+Unity.\+Animation\+Reference\+Asset에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Animation\+Reference\+Asset에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ae70321ed60d8378275e540088f06a5c6}{Initialize}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static implicit \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a022fe9ed8dac8f11731201358607ffdb}{operator Animation}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} asset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}{skeleton\+Data\+Asset}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a734b7444c86330c0adcc98e61109def1}{animation\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ac49b5d933fb448336ce8d9765b165eea}{Skeleton\+Data\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a41c0fd47ac488a8b4958f90a7f114ce1}{Animation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}{animation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a1ad53500cab0c4c78120d08d25516e33}{Quiet\+Skeleton\+Data}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation\+Reference\+Asset.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_ae70321ed60d8378275e540088f06a5c6}\label{class_spine_1_1_unity_1_1_animation_reference_asset_ae70321ed60d8378275e540088f06a5c6}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Animation\+Reference\+Asset.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                   \{}
+\DoxyCodeLine{58             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}{skeletonDataAsset}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{59             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}{animation}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}{skeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(AnimationReferenceAsset.QuietSkeletonData).\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a734b7444c86330c0adcc98e61109def1}{animationName}});}
+\DoxyCodeLine{60             \textcolor{keywordflow}{if} (this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}{animation}} == \textcolor{keyword}{null}) Debug.LogWarningFormat(\textcolor{stringliteral}{"Animation '\{0\}' not found in SkeletonData : \{1\}."}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a734b7444c86330c0adcc98e61109def1}{animationName}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}{skeletonDataAsset}}.name);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_a022fe9ed8dac8f11731201358607ffdb}\label{class_spine_1_1_unity_1_1_animation_reference_asset_a022fe9ed8dac8f11731201358607ffdb}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!operator Animation@{operator Animation}}
+\index{operator Animation@{operator Animation}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{operator Animation()}{operator Animation()}}
+{\footnotesize\ttfamily static implicit Spine.\+Unity.\+Animation\+Reference\+Asset.\+operator \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}}}]{asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                                                                   \{}
+\DoxyCodeLine{64             \textcolor{keywordflow}{return} asset.Animation;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}\label{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!animation@{animation}}
+\index{animation@{animation}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} Spine.\+Unity.\+Animation\+Reference\+Asset.\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_a734b7444c86330c0adcc98e61109def1}\label{class_spine_1_1_unity_1_1_animation_reference_asset_a734b7444c86330c0adcc98e61109def1}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!animationName@{animationName}}
+\index{animationName@{animationName}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{animationName}{animationName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Animation\+Reference\+Asset.\+animation\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_a1ad53500cab0c4c78120d08d25516e33}\label{class_spine_1_1_unity_1_1_animation_reference_asset_a1ad53500cab0c4c78120d08d25516e33}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!QuietSkeletonData@{QuietSkeletonData}}
+\index{QuietSkeletonData@{QuietSkeletonData}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{QuietSkeletonData}{QuietSkeletonData}}
+{\footnotesize\ttfamily const bool Spine.\+Unity.\+Animation\+Reference\+Asset.\+Quiet\+Skeleton\+Data = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}\label{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!skeletonDataAsset@{skeletonDataAsset}}
+\index{skeletonDataAsset@{skeletonDataAsset}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{skeletonDataAsset}{skeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Animation\+Reference\+Asset.\+skeleton\+Data\+Asset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_a41c0fd47ac488a8b4958f90a7f114ce1}\label{class_spine_1_1_unity_1_1_animation_reference_asset_a41c0fd47ac488a8b4958f90a7f114ce1}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!Animation@{Animation}}
+\index{Animation@{Animation}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{Animation}{Animation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} Spine.\+Unity.\+Animation\+Reference\+Asset.\+Animation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                    \{}
+\DoxyCodeLine{47             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{48 \textcolor{preprocessor}{                \#if AUTOINIT\_SPINEREFERENCE}}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}{animation}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{50                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ae70321ed60d8378275e540088f06a5c6}{Initialize}}();}
+\DoxyCodeLine{51 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_ab160a4bbb5bbfe128f6495914c8c1bda}{animation}};}
+\DoxyCodeLine{54             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_animation_reference_asset_ac49b5d933fb448336ce8d9765b165eea}\label{class_spine_1_1_unity_1_1_animation_reference_asset_ac49b5d933fb448336ce8d9765b165eea}} 
+\index{Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}!SkeletonDataAsset@{SkeletonDataAsset}}
+\index{SkeletonDataAsset@{SkeletonDataAsset}!Spine.Unity.AnimationReferenceAsset@{Spine.Unity.AnimationReferenceAsset}}
+\doxysubsubsection{\texorpdfstring{SkeletonDataAsset}{SkeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Animation\+Reference\+Asset.\+Skeleton\+Data\+Asset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation\+Reference\+Asset.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a3a680934b379a861fc2456a8782ffd16}{skeletonDataAsset}}; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Asset Types/\mbox{\hyperlink{_animation_reference_asset_8cs}{Animation\+Reference\+Asset.\+cs}}\end{DoxyCompactItemize}

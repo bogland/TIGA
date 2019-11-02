@@ -1,0 +1,10 @@
+digraph "Spine.TransformConstraint.ApplyRelativeLocal"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.TransformConstraint.\lApplyRelativeLocal",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Bone.UpdateWorldTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone.html#a7cb46c9bf47dc1c82334464ddad0f4f3",tooltip="Computes the world transform using the parent bone and this bone's local transform."];
+}

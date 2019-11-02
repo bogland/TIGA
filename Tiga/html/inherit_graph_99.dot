@@ -1,0 +1,14 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node231 [label="IDisposable",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node231 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Spine.Unity.Editor.Spine\lInspectorUtility.BoxScope",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_box_scope.html",tooltip=" "];
+  Node231 -> Node233 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node233 [label="Spine.Unity.Editor.Spine\lInspectorUtility.IndentScope",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_indent_scope.html",tooltip=" "];
+  Node231 -> Node234 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node234 [label="Spine.Unity.Editor.Spine\lInspectorUtility.LabelWidthScope",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_label_width_scope.html",tooltip=" "];
+}

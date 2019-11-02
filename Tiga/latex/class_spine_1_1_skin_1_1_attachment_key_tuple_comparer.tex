@@ -1,0 +1,64 @@
+\hypertarget{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer}{}\doxysection{Spine.\+Skin.\+Attachment\+Key\+Tuple\+Comparer 클래스 참조}
+\label{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer}\index{Spine.Skin.AttachmentKeyTupleComparer@{Spine.Skin.AttachmentKeyTupleComparer}}
+
+
+Spine.\+Skin.\+Attachment\+Key\+Tuple\+Comparer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Skin.\+Attachment\+Key\+Tuple\+Comparer에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool I\+Equality\+Comparer$<$ \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}} $>$. \mbox{\hyperlink{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_af76f1e558a80b437e535fb87870730e2}{Equals}} (\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}} o1, \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}} o2)
+\item 
+int I\+Equality\+Comparer$<$ \mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}} $>$. \mbox{\hyperlink{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_add6c7c8d910eae26ddacd3ba2737ff36}{Get\+Hash\+Code}} (\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}} o)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skin.\+cs 파일의 112 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_af76f1e558a80b437e535fb87870730e2}\label{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_af76f1e558a80b437e535fb87870730e2}} 
+\index{Spine.Skin.AttachmentKeyTupleComparer@{Spine.Skin.AttachmentKeyTupleComparer}!Equals@{Equals}}
+\index{Equals@{Equals}!Spine.Skin.AttachmentKeyTupleComparer@{Spine.Skin.AttachmentKeyTupleComparer}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool I\+Equality\+Comparer$<$\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}$>$. Spine.\+Skin.\+Attachment\+Key\+Tuple\+Comparer.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}}]{o1,  }\item[{\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}}]{o2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skin.\+cs 파일의 115 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116                                                                                                              \{}
+\DoxyCodeLine{117                 \textcolor{keywordflow}{return} o1.slotIndex == o2.slotIndex \&\& o1.nameHashCode == o2.nameHashCode \&\& \textcolor{keywordtype}{string}.Equals(o1.name, o2.name, StringComparison.Ordinal);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_add6c7c8d910eae26ddacd3ba2737ff36}\label{class_spine_1_1_skin_1_1_attachment_key_tuple_comparer_add6c7c8d910eae26ddacd3ba2737ff36}} 
+\index{Spine.Skin.AttachmentKeyTupleComparer@{Spine.Skin.AttachmentKeyTupleComparer}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!Spine.Skin.AttachmentKeyTupleComparer@{Spine.Skin.AttachmentKeyTupleComparer}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily int I\+Equality\+Comparer$<$\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}$>$. Spine.\+Skin.\+Attachment\+Key\+Tuple\+Comparer.\+Get\+Hash\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_skin_1_1_attachment_key_tuple}{Attachment\+Key\+Tuple}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skin.\+cs 파일의 119 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{120                                                                                          \{}
+\DoxyCodeLine{121                 \textcolor{keywordflow}{return} o.slotIndex;}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_skin_8cs}{Skin.\+cs}}\end{DoxyCompactItemize}

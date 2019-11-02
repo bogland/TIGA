@@ -1,0 +1,84 @@
+\hypertarget{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{}\doxysection{Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer 클래스 참조}
+\label{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}\index{Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}}
+
+
+Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static readonly \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{Animation\+Pair\+Comparer}} \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a43283b31fabd0cce79da3dab3cc2e671}{Instance}} = new \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{Animation\+Pair\+Comparer}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool I\+Equality\+Comparer$<$ \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}} $>$. \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a36ac90e6b8857dbe9cb3c6e93323ba3f}{Equals}} (\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}} x, \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}} y)
+\item 
+int I\+Equality\+Comparer$<$ \mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}} $>$. \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_af8297fe5ee4bd7dec5dc143629db7780}{Get\+Hash\+Code}} (\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}} obj)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation\+State\+Data.\+cs 파일의 100 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a36ac90e6b8857dbe9cb3c6e93323ba3f}\label{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a36ac90e6b8857dbe9cb3c6e93323ba3f}} 
+\index{Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}!Equals@{Equals}}
+\index{Equals@{Equals}!Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool I\+Equality\+Comparer$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}$>$. Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}}]{x,  }\item[{\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State\+Data.\+cs 파일의 103 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104                                                                                             \{}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{return} ReferenceEquals(x.a1, y.a1) \&\& ReferenceEquals(x.a2, y.a2);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_af8297fe5ee4bd7dec5dc143629db7780}\label{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_af8297fe5ee4bd7dec5dc143629db7780}} 
+\index{Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}!GetHashCode@{GetHashCode}}
+\index{GetHashCode@{GetHashCode}!Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}}
+\doxysubsubsection{\texorpdfstring{GetHashCode()}{GetHashCode()}}
+{\footnotesize\ttfamily int I\+Equality\+Comparer$<$\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}$>$. Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer.\+Get\+Hash\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_animation_state_data_1_1_animation_pair}{Animation\+Pair}}}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State\+Data.\+cs 파일의 107 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                                                                  \{}
+\DoxyCodeLine{109                 \textcolor{comment}{// from Tuple.CombineHashCodes // return (((h1 << 5) + h1) \string^ h2);}}
+\DoxyCodeLine{110                 \textcolor{keywordtype}{int} h1 = obj.a1.GetHashCode();}
+\DoxyCodeLine{111                 \textcolor{keywordflow}{return} (((h1 << 5) + h1) \string^ obj.a2.GetHashCode());}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a43283b31fabd0cce79da3dab3cc2e671}\label{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer_a43283b31fabd0cce79da3dab3cc2e671}} 
+\index{Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}!Instance@{Instance}}
+\index{Instance@{Instance}!Spine.AnimationStateData.AnimationPairComparer@{Spine.AnimationStateData.AnimationPairComparer}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{Animation\+Pair\+Comparer}} Spine.\+Animation\+State\+Data.\+Animation\+Pair\+Comparer.\+Instance = new \mbox{\hyperlink{class_spine_1_1_animation_state_data_1_1_animation_pair_comparer}{Animation\+Pair\+Comparer}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Animation\+State\+Data.\+cs 파일의 101 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_state_data_8cs}{Animation\+State\+Data.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+digraph "Spine.AtlasAttachmentLoader.NewRegionAttachment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.AtlasAttachmentLoader.\lNewRegionAttachment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="<return>May be null to not load any attachment.</return>"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.AtlasAttachmentLoader.\lFindRegion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Atlas.FindRegion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_atlas.html#a0c3e63b796443fd755114f9bea61c780",tooltip="Returns the first region found with the specified name. This method uses string comparison to find th..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.RegionAttachment.SetUVs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_region_attachment.html#a0226ca72aa847e51a00dd75a701ec8cb",tooltip=" "];
+}

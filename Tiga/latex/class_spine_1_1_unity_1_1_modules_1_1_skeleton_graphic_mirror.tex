@@ -1,0 +1,294 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror}\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_ae8a17f2baddda72e2e8b3a82511bd558}{Start\+Mirroring}} ()
+\begin{DoxyCompactList}\small\item\em Freeze the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} on this Game\+Object, and use the source as the \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} to be rendered by the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_af598f29a7f73b5bb1e3693edaa6b3bc9}{Update\+Texture}} (Texture2D new\+Override\+Texture)
+\begin{DoxyCompactList}\small\item\em Use a new texture for the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}}. Use this if your source skeleton uses a repacked atlas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a0948014ae5b97aea9cf33ac418857377}{Restore\+Independent\+Skeleton}} ()
+\begin{DoxyCompactList}\small\item\em Stops mirroring the source \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} and allows the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} to become an independent \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} component again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_aa0e47dde6ea9f98138d2f79b01e2d801}{source}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a33f6d1937d24fc843024721d84fcf9e6}{mirror\+On\+Start}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13c5789eda976de2f340e1b2688a949e}{restore\+On\+Disable}} = true
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_acb2e2ad2c3313aee0f152912dc71c23a}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a18fc023e7e1faf8b22e6ceccdea36bb8}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4001ca65fa40eb1b20cc4bf5387a3e8c}{Late\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a7b5a680bede3f180cc2589c3be0ae114}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeleton\+Graphic}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{original\+Skeleton}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3e22ce3bc45da9454d2b0ee8bf8fca18}{original\+Freeze}}
+\item 
+Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}{override\+Texture}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_acb2e2ad2c3313aee0f152912dc71c23a}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_acb2e2ad2c3313aee0f152912dc71c23a}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                               \{}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}} = GetComponent<SkeletonGraphic>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4001ca65fa40eb1b20cc4bf5387a3e8c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4001ca65fa40eb1b20cc4bf5387a3e8c}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                            \{}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a1811fb0d59465b27a278b3aaf8058c36}{UpdateMesh}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a7b5a680bede3f180cc2589c3be0ae114}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a7b5a680bede3f180cc2589c3be0ae114}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                           \{}
+\DoxyCodeLine{60             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13c5789eda976de2f340e1b2688a949e}{restoreOnDisable}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a0948014ae5b97aea9cf33ac418857377}{RestoreIndependentSkeleton}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a0948014ae5b97aea9cf33ac418857377}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a0948014ae5b97aea9cf33ac418857377}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!RestoreIndependentSkeleton@{RestoreIndependentSkeleton}}
+\index{RestoreIndependentSkeleton@{RestoreIndependentSkeleton}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{RestoreIndependentSkeleton()}{RestoreIndependentSkeleton()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Restore\+Independent\+Skeleton (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops mirroring the source \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} and allows the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} to become an independent \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} component again. 
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 88 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                                   \{}
+\DoxyCodeLine{90             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{originalSkeleton}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a6ab9b7418886660097bf793044441e68}{Skeleton}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{originalSkeleton}};}
+\DoxyCodeLine{94             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a2012b4741e9f57d57f2af746788ec195}{freeze}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3e22ce3bc45da9454d2b0ee8bf8fca18}{originalFreeze}};}
+\DoxyCodeLine{95             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_ac0cffedf16395ba4ad85127d225e8ee2}{OverrideTexture}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{originalSkeleton}} = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a18fc023e7e1faf8b22e6ceccdea36bb8}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a18fc023e7e1faf8b22e6ceccdea36bb8}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                       \{}
+\DoxyCodeLine{52             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a33f6d1937d24fc843024721d84fcf9e6}{mirrorOnStart}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_ae8a17f2baddda72e2e8b3a82511bd558}{StartMirroring}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_ae8a17f2baddda72e2e8b3a82511bd558}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_ae8a17f2baddda72e2e8b3a82511bd558}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!StartMirroring@{StartMirroring}}
+\index{StartMirroring@{StartMirroring}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{StartMirroring()}{StartMirroring()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Start\+Mirroring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Freeze the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} on this Game\+Object, and use the source as the \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} to be rendered by the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}}. 
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                       \{}
+\DoxyCodeLine{65             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_aa0e47dde6ea9f98138d2f79b01e2d801}{source}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a4bae007960a8a150fb1092540e400bf6}{startingAnimation}} = \textcolor{keywordtype}{string}.Empty;}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{originalSkeleton}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{71                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}{originalSkeleton}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a6ab9b7418886660097bf793044441e68}{Skeleton}};}
+\DoxyCodeLine{72                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3e22ce3bc45da9454d2b0ee8bf8fca18}{originalFreeze}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a2012b4741e9f57d57f2af746788ec195}{freeze}};}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a6ab9b7418886660097bf793044441e68}{Skeleton}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_aa0e47dde6ea9f98138d2f79b01e2d801}{source}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{76             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_a2012b4741e9f57d57f2af746788ec195}{freeze}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}{overrideTexture}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{78                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_ac0cffedf16395ba4ad85127d225e8ee2}{OverrideTexture}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}{overrideTexture}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_af598f29a7f73b5bb1e3693edaa6b3bc9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_af598f29a7f73b5bb1e3693edaa6b3bc9}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!UpdateTexture@{UpdateTexture}}
+\index{UpdateTexture@{UpdateTexture}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{UpdateTexture()}{UpdateTexture()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+Update\+Texture (\begin{DoxyParamCaption}\item[{Texture2D}]{new\+Override\+Texture }\end{DoxyParamCaption})}
+
+
+
+Use a new texture for the \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}}. Use this if your source skeleton uses a repacked atlas. 
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 81 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                                                  \{}
+\DoxyCodeLine{83             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}{overrideTexture}} = newOverrideTexture;}
+\DoxyCodeLine{84             \textcolor{keywordflow}{if} (newOverrideTexture != \textcolor{keyword}{null})}
+\DoxyCodeLine{85                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}{skeletonGraphic}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic_ac0cffedf16395ba4ad85127d225e8ee2}{OverrideTexture}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}{overrideTexture}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a33f6d1937d24fc843024721d84fcf9e6}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a33f6d1937d24fc843024721d84fcf9e6}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!mirrorOnStart@{mirrorOnStart}}
+\index{mirrorOnStart@{mirrorOnStart}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{mirrorOnStart}{mirrorOnStart}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+mirror\+On\+Start = true}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3e22ce3bc45da9454d2b0ee8bf8fca18}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3e22ce3bc45da9454d2b0ee8bf8fca18}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!originalFreeze@{originalFreeze}}
+\index{originalFreeze@{originalFreeze}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{originalFreeze}{originalFreeze}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+original\+Freeze\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13ac5b114181c7d1815db93af45751f3}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!originalSkeleton@{originalSkeleton}}
+\index{originalSkeleton@{originalSkeleton}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{originalSkeleton}{originalSkeleton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+original\+Skeleton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a4ec794cfb11221f04e24a39c9bc44a98}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!overrideTexture@{overrideTexture}}
+\index{overrideTexture@{overrideTexture}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{overrideTexture}{overrideTexture}}
+{\footnotesize\ttfamily Texture2D Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+override\+Texture\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13c5789eda976de2f340e1b2688a949e}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a13c5789eda976de2f340e1b2688a949e}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!restoreOnDisable@{restoreOnDisable}}
+\index{restoreOnDisable@{restoreOnDisable}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{restoreOnDisable}{restoreOnDisable}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+restore\+On\+Disable = true}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_a3a7926978f2f3adf985703917ab22db9}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!skeletonGraphic@{skeletonGraphic}}
+\index{skeletonGraphic@{skeletonGraphic}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{skeletonGraphic}{skeletonGraphic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_graphic}{Skeleton\+Graphic}} Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+skeleton\+Graphic\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_aa0e47dde6ea9f98138d2f79b01e2d801}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror_aa0e47dde6ea9f98138d2f79b01e2d801}} 
+\index{Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}!source@{source}}
+\index{source@{source}!Spine.Unity.Modules.SkeletonGraphicMirror@{Spine.Unity.Modules.SkeletonGraphicMirror}}
+\doxysubsubsection{\texorpdfstring{source}{source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Modules.\+Skeleton\+Graphic\+Mirror.\+source}
+
+
+
+Skeleton\+Graphic\+Mirror.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Skeleton\+Graphic/\mbox{\hyperlink{_skeleton_graphic_mirror_8cs}{Skeleton\+Graphic\+Mirror.\+cs}}\end{DoxyCompactItemize}

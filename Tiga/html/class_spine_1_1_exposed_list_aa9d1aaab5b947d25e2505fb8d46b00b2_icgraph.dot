@@ -1,0 +1,14 @@
+digraph "Spine.ExposedList.CheckCollection"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.ExposedList.CheckCollection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.ExposedList\<\l Spine::Animation \>\l::AddRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#aeefbb3b3b5ec829aecf399028387c9e6",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.ExposedList\<\l Spine::Animation \>\l::ExposedList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#acc9e09f3678262e54c7548f4653a8958",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.ExposedList\<\l Spine::Animation \>\l::InsertRange",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab7a243c73d46b0d27b5fa7ea5d2c4b49",tooltip=" "];
+}

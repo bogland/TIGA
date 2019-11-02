@@ -1,0 +1,13 @@
+digraph "Spine.Unity.SkeletonUtilityConstraint"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.SkeletonUtility\lConstraint\n|# utilBone\l# skeletonUtility\l|+ DoUpdate()\l# OnEnable()\l# OnDisable()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Spine.Unity.Modules.Skeleton\lUtilityEyeConstraint\n|+ eyes\l+ radius\l+ target\l+ targetPosition\l+ speed\l- origins\l- centerPoint\l|+ DoUpdate()\l# OnEnable()\l# OnDisable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{Spine.Unity.Modules.Skeleton\lUtilityGroundConstraint\n|+ groundMask\l+ use2D\l+ useRadius\l+ castRadius\l+ castDistance\l+ castOffset\l+ groundOffset\l+ adjustSpeed\l- rayOrigin\l- rayDir\l- hitY\l- lastHitY\l|+ DoUpdate()\l# OnEnable()\l- OnDrawGizmos()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint.html",tooltip=" "];
+}

@@ -1,0 +1,298 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic}{}\doxysection{Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic}\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+
+
+Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1ac45f0e466eb4204425d676065c67f9}{base\+Skin\+Name}} = \char`\"{}base\char`\"{}
+\item 
+Material \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{source\+Material}}
+\item 
+Sprite \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a05ecacf80bed615b8af6d12d378f61bb}{visor\+Sprite}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a44f30ace0afa636ea80b9a9a75d01a05}{visor\+Slot}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_af107f4486c3c41ea46f35cc684b77235}{visor\+Key}} = \char`\"{}goggles\char`\"{}
+\item 
+Sprite \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ae96f03fb6bd581b695991265a38ac069}{gun\+Sprite}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a8142e8da2d8203d16f2a378fe0f08b42}{gun\+Slot}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a3c1cc09acca602866195b2803f0d50bb}{gun\+Key}} = \char`\"{}gun\char`\"{}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a174897dd69413f20b87178417bffa9fa}{repack}} = true
+\item 
+Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1f7d02ea4fe000554200be132dc23a9c}{runtime\+Atlas}}
+\item 
+Material \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ad589d509311ce9849944bde282ff93cb}{runtime\+Material}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_adcf5a7bd9abd6247c233072553ae20a1}{On\+Validate}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ace76fcfaff93fd34b492f9782480bf37}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1fff40ec0e3e0f790c41573a74fe257d}{Apply}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{custom\+Skin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1fff40ec0e3e0f790c41573a74fe257d}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1fff40ec0e3e0f790c41573a74fe257d}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                       \{}
+\DoxyCodeLine{80             var skeletonGraphic = GetComponent<SkeletonGraphic>();}
+\DoxyCodeLine{81             var skeleton = skeletonGraphic.Skeleton;}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83             \textcolor{comment}{// STEP 0: PREPARE SKINS}}
+\DoxyCodeLine{84             \textcolor{comment}{// Let's prepare a new skin to be our custom skin with equips/customizations. We get a clone so our original skins are unaffected.}}
+\DoxyCodeLine{85             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}} ?? \textcolor{keyword}{new} Skin(\textcolor{stringliteral}{"custom skin"}); \textcolor{comment}{// This requires that all customizations are done with skin placeholders defined in Spine.}}
+\DoxyCodeLine{86             \textcolor{comment}{//customSkin = customSkin ?? skeleton.UnshareSkin(true, false, skeletonAnimation.AnimationState); // use this if you are not customizing on the default skin and don't plan to remove }}
+\DoxyCodeLine{87             \textcolor{comment}{// Next let's get the skin that contains our source attachments. These are the attachments that }}
+\DoxyCodeLine{88             var baseSkin = skeleton.Data.FindSkin(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1ac45f0e466eb4204425d676065c67f9}{baseSkinName}});}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90             \textcolor{comment}{// STEP 1: "EQUIP" ITEMS USING SPRITES}}
+\DoxyCodeLine{91             \textcolor{comment}{// STEP 1.1 Find the original attachment.}}
+\DoxyCodeLine{92             \textcolor{comment}{// Step 1.2 Get a clone of the original attachment.}}
+\DoxyCodeLine{93             \textcolor{comment}{// Step 1.3 Apply the Sprite image to it.}}
+\DoxyCodeLine{94             \textcolor{comment}{// Step 1.4 Add the remapped clone to the new custom skin.}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{comment}{// Let's do this for the visor.}}
+\DoxyCodeLine{97             \textcolor{keywordtype}{int} visorSlotIndex = skeleton.FindSlotIndex(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a44f30ace0afa636ea80b9a9a75d01a05}{visorSlot}}); \textcolor{comment}{// You can access GetAttachment and SetAttachment via string, but caching the slotIndex is faster.}}
+\DoxyCodeLine{98             Attachment baseAttachment = baseSkin.GetAttachment(visorSlotIndex, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_af107f4486c3c41ea46f35cc684b77235}{visorKey}});  \textcolor{comment}{// STEP 1.1}}
+\DoxyCodeLine{99             Attachment newAttachment = baseAttachment.GetRemappedClone(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a05ecacf80bed615b8af6d12d378f61bb}{visorSprite}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{sourceMaterial}}); \textcolor{comment}{// STEP 1.2 -\/ 1.3}}
+\DoxyCodeLine{100             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}}.SetAttachment(visorSlotIndex, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_af107f4486c3c41ea46f35cc684b77235}{visorKey}}, newAttachment); \textcolor{comment}{// STEP 1.4}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             \textcolor{comment}{// And now for the gun.}}
+\DoxyCodeLine{103             \textcolor{keywordtype}{int} gunSlotIndex = skeleton.FindSlotIndex(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a8142e8da2d8203d16f2a378fe0f08b42}{gunSlot}});}
+\DoxyCodeLine{104             Attachment baseGun = baseSkin.GetAttachment(gunSlotIndex, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a3c1cc09acca602866195b2803f0d50bb}{gunKey}}); \textcolor{comment}{// STEP 1.1}}
+\DoxyCodeLine{105             Attachment newGun = baseGun.GetRemappedClone(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ae96f03fb6bd581b695991265a38ac069}{gunSprite}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{sourceMaterial}}); \textcolor{comment}{// STEP 1.2 -\/ 1.3}}
+\DoxyCodeLine{106             \textcolor{keywordflow}{if} (newGun != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}}.SetAttachment(gunSlotIndex, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a3c1cc09acca602866195b2803f0d50bb}{gunKey}}, newGun); \textcolor{comment}{// STEP 1.4}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             \textcolor{comment}{// customSkin.RemoveAttachment(gunSlotIndex, gunKey); // To remove an item.}}
+\DoxyCodeLine{109             \textcolor{comment}{// customSkin.Clear()}}
+\DoxyCodeLine{110             \textcolor{comment}{// Use skin.Clear() To remove all customizations.}}
+\DoxyCodeLine{111             \textcolor{comment}{// Customizations will fall back to the value in the default skin if it was defined there.}}
+\DoxyCodeLine{112             \textcolor{comment}{// To prevent fallback from happening, make sure the key is not defined in the default skin.}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114             \textcolor{comment}{// STEP 3: APPLY AND CLEAN UP.}}
+\DoxyCodeLine{115             \textcolor{comment}{// Recommended: REPACK THE CUSTOM SKIN TO MINIMIZE DRAW CALLS}}
+\DoxyCodeLine{116             \textcolor{comment}{//              Repacking requires that you set all source textures/sprites/atlases to be Read/Write enabled in the inspector.}}
+\DoxyCodeLine{117             \textcolor{comment}{//              Combine all the attachment sources into one skin. Usually this means the default skin and the custom skin.}}
+\DoxyCodeLine{118             \textcolor{comment}{//              call Skin.GetRepackedSkin to get a cloned skin with cloned attachments that all use one texture.}}
+\DoxyCodeLine{119             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a174897dd69413f20b87178417bffa9fa}{repack}})   \{}
+\DoxyCodeLine{120                 var repackedSkin = \textcolor{keyword}{new} Skin(\textcolor{stringliteral}{"repacked skin"});}
+\DoxyCodeLine{121                 repackedSkin.Append(skeleton.Data.DefaultSkin);}
+\DoxyCodeLine{122                 repackedSkin.Append(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}});}
+\DoxyCodeLine{123                 repackedSkin = repackedSkin.GetRepackedSkin(\textcolor{stringliteral}{"repacked skin"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{sourceMaterial}}, out \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ad589d509311ce9849944bde282ff93cb}{runtimeMaterial}}, out \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1f7d02ea4fe000554200be132dc23a9c}{runtimeAtlas}});}
+\DoxyCodeLine{124                 skeleton.SetSkin(repackedSkin);}
+\DoxyCodeLine{125             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{126                 skeleton.SetSkin(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}{customSkin}});}
+\DoxyCodeLine{127             \}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129             \textcolor{comment}{//skeleton.SetSlotsToSetupPose();}}
+\DoxyCodeLine{130             skeleton.SetToSetupPose();}
+\DoxyCodeLine{131             skeletonGraphic.Update(0);}
+\DoxyCodeLine{132             skeletonGraphic.OverrideTexture = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1f7d02ea4fe000554200be132dc23a9c}{runtimeAtlas}};}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134             Resources.UnloadUnusedAssets();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_adcf5a7bd9abd6247c233072553ae20a1}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_adcf5a7bd9abd6247c233072553ae20a1}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!OnValidate@{OnValidate}}
+\index{OnValidate@{OnValidate}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{OnValidate()}{OnValidate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+On\+Validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                            \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{sourceMaterial}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{67                 var skeletonGraphic = GetComponent<SkeletonGraphic>();}
+\DoxyCodeLine{68                 \textcolor{keywordflow}{if} (skeletonGraphic != \textcolor{keyword}{null})}
+\DoxyCodeLine{69                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}{sourceMaterial}} = skeletonGraphic.SkeletonDataAsset.atlasAssets[0].materials[0];}
+\DoxyCodeLine{70             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ace76fcfaff93fd34b492f9782480bf37}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ace76fcfaff93fd34b492f9782480bf37}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                              \{}
+\DoxyCodeLine{74             yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1f); \textcolor{comment}{// Delay for 1 second. For testing.}}
+\DoxyCodeLine{75             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1fff40ec0e3e0f790c41573a74fe257d}{Apply}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1ac45f0e466eb4204425d676065c67f9}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1ac45f0e466eb4204425d676065c67f9}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!baseSkinName@{baseSkinName}}
+\index{baseSkinName@{baseSkinName}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{baseSkinName}{baseSkinName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+base\+Skin\+Name = \char`\"{}base\char`\"{}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a5bdd1a573a84bb1ff4639b8e1ddcd6db}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!customSkin@{customSkin}}
+\index{customSkin@{customSkin}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{customSkin}{customSkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+custom\+Skin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a3c1cc09acca602866195b2803f0d50bb}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a3c1cc09acca602866195b2803f0d50bb}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!gunKey@{gunKey}}
+\index{gunKey@{gunKey}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{gunKey}{gunKey}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+gun\+Key = \char`\"{}gun\char`\"{}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a8142e8da2d8203d16f2a378fe0f08b42}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a8142e8da2d8203d16f2a378fe0f08b42}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!gunSlot@{gunSlot}}
+\index{gunSlot@{gunSlot}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{gunSlot}{gunSlot}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+gun\+Slot}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ae96f03fb6bd581b695991265a38ac069}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ae96f03fb6bd581b695991265a38ac069}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!gunSprite@{gunSprite}}
+\index{gunSprite@{gunSprite}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{gunSprite}{gunSprite}}
+{\footnotesize\ttfamily Sprite Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+gun\+Sprite}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a174897dd69413f20b87178417bffa9fa}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a174897dd69413f20b87178417bffa9fa}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!repack@{repack}}
+\index{repack@{repack}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{repack}{repack}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+repack = true}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1f7d02ea4fe000554200be132dc23a9c}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a1f7d02ea4fe000554200be132dc23a9c}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!runtimeAtlas@{runtimeAtlas}}
+\index{runtimeAtlas@{runtimeAtlas}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{runtimeAtlas}{runtimeAtlas}}
+{\footnotesize\ttfamily Texture2D Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+runtime\+Atlas}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ad589d509311ce9849944bde282ff93cb}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ad589d509311ce9849944bde282ff93cb}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!runtimeMaterial@{runtimeMaterial}}
+\index{runtimeMaterial@{runtimeMaterial}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{runtimeMaterial}{runtimeMaterial}}
+{\footnotesize\ttfamily Material Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+runtime\+Material}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_ac9906544efd4912611823159e20972f6}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!sourceMaterial@{sourceMaterial}}
+\index{sourceMaterial@{sourceMaterial}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{sourceMaterial}{sourceMaterial}}
+{\footnotesize\ttfamily Material Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+source\+Material}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_af107f4486c3c41ea46f35cc684b77235}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_af107f4486c3c41ea46f35cc684b77235}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!visorKey@{visorKey}}
+\index{visorKey@{visorKey}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{visorKey}{visorKey}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+visor\+Key = \char`\"{}goggles\char`\"{}}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a44f30ace0afa636ea80b9a9a75d01a05}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a44f30ace0afa636ea80b9a9a75d01a05}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!visorSlot@{visorSlot}}
+\index{visorSlot@{visorSlot}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{visorSlot}{visorSlot}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+visor\+Slot}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a05ecacf80bed615b8af6d12d378f61bb}\label{class_spine_1_1_unity_1_1_examples_1_1_mix_and_match_graphic_a05ecacf80bed615b8af6d12d378f61bb}} 
+\index{Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}!visorSprite@{visorSprite}}
+\index{visorSprite@{visorSprite}!Spine.Unity.Examples.MixAndMatchGraphic@{Spine.Unity.Examples.MixAndMatchGraphic}}
+\doxysubsubsection{\texorpdfstring{visorSprite}{visorSprite}}
+{\footnotesize\ttfamily Sprite Spine.\+Unity.\+Examples.\+Mix\+And\+Match\+Graphic.\+visor\+Sprite}
+
+
+
+Mix\+And\+Match\+Graphic.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_mix_and_match_graphic_8cs}{Mix\+And\+Match\+Graphic.\+cs}}\end{DoxyCompactItemize}

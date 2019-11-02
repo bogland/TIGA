@@ -1,0 +1,335 @@
+\hypertarget{class_spine_1_1_skeleton_extensions}{}\doxysection{Spine.\+Skeleton\+Extensions 클래스 참조}
+\label{class_spine_1_1_skeleton_extensions}\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+
+
+Spine.\+Skeleton\+Extensions에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a3494985207b99e57d4ad8010b6c09528}{Is\+Weighted}} (this \mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}} va)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_abdda1aad910f173cdaf01d8ecca2c044}{Is\+Renderable}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} a)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a9ab0a8f493e6d63f63dcc0618777be9d}{Inherits\+Rotation}} (this \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}} mode)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a1524a74b832ba245c9eebbf5a5a3a68e}{Inherits\+Scale}} (this \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}} mode)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a68bbbe2446e0510a62dc5d8b8df25a24}{Set\+Draw\+Order\+To\+Setup\+Pose}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\begin{DoxyCompactList}\small\item\em Resets the Draw\+Order to the Setup Pose\textquotesingle{}s draw order \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_aa1867383f7ce39fc670dcb830b0b5965}{Set\+Color\+To\+Setup\+Pose}} (this \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot)
+\begin{DoxyCompactList}\small\item\em Resets the color of a slot to Setup Pose value. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_acfc2b748cf792eee30d221be883af2a1}{Set\+Attachment\+To\+Setup\+Pose}} (this \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot)
+\begin{DoxyCompactList}\small\item\em Sets a slot\textquotesingle{}s attachment to setup pose. If you have the slot\+Index, Skeleton.\+Set\+Slot\+Attachment\+To\+Setup\+Pose is faster. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a1629b893a7b51cfc57e81ca8df86c161}{Set\+Slot\+Attachment\+To\+Setup\+Pose}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, int slot\+Index)
+\begin{DoxyCompactList}\small\item\em Resets the attachment of slot at a given slot\+Index to setup pose. This is faster than Slot.\+Set\+Attachment\+To\+Setup\+Pose. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_adf92bf7beca1825d3b685cb9d03c2e96}{Pose\+With\+Animation}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, string animation\+Name, float time, bool loop=false)
+\begin{DoxyCompactList}\small\item\em Shortcut for posing a skeleton at a specific time. Time is in seconds. (frame\+Number / 30f) will give you seconds. If you need to do this often, you should get the \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} object yourself using skeleton.\+data.\+Find\+Animation. and call Apply on that. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_ac0db3e5c0ec85cd9541ea20e22ce01f4}{Pose\+Skeleton}} (this \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} animation, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, float time, bool loop=false)
+\begin{DoxyCompactList}\small\item\em Pose a skeleton according to a given time in an animation. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a33185533365332b3dba5360e2b208ed3}{Set\+Keyed\+Items\+To\+Setup\+Pose}} (this \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} animation, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\begin{DoxyCompactList}\small\item\em Resets \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} parts to Setup Pose according to a \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}\textquotesingle{}s keyed items. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a2018cc91668746eb1fafec2937dd89b7}{Find\+Names\+For\+Slot}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string slot\+Name, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data, List$<$ string $>$ results)
+\begin{DoxyCompactList}\small\item\em Spine.\+Skin.\+Find\+Names\+For\+Slot(int,\+List) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a864be9b68b17ddd4bd090bd28ac6fb53}{Find\+Attachments\+For\+Slot}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string slot\+Name, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data, List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ results)
+\begin{DoxyCompactList}\small\item\em Spine.\+Skin.\+Find\+Attachments\+For\+Slot(int,\+List) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Extensions.\+cs 파일의 429 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a864be9b68b17ddd4bd090bd28ac6fb53}\label{class_spine_1_1_skeleton_extensions_a864be9b68b17ddd4bd090bd28ac6fb53}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!FindAttachmentsForSlot@{FindAttachmentsForSlot}}
+\index{FindAttachmentsForSlot@{FindAttachmentsForSlot}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{FindAttachmentsForSlot()}{FindAttachmentsForSlot()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Find\+Attachments\+For\+Slot (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{slot\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$}]{results }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine.\+Skin.\+Find\+Attachments\+For\+Slot(int,\+List) 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 610 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{611                                                                                                                                          \{}
+\DoxyCodeLine{612             \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex(slotName);}
+\DoxyCodeLine{613             skin.FindAttachmentsForSlot(slotIndex, results);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a2018cc91668746eb1fafec2937dd89b7}\label{class_spine_1_1_skeleton_extensions_a2018cc91668746eb1fafec2937dd89b7}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!FindNamesForSlot@{FindNamesForSlot}}
+\index{FindNamesForSlot@{FindNamesForSlot}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{FindNamesForSlot()}{FindNamesForSlot()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Find\+Names\+For\+Slot (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{slot\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data,  }\item[{List$<$ string $>$}]{results }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine.\+Skin.\+Find\+Names\+For\+Slot(int,\+List) 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 604 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{605                                                                                                                                \{}
+\DoxyCodeLine{606             \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex(slotName);}
+\DoxyCodeLine{607             skin.FindNamesForSlot(slotIndex, results);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a9ab0a8f493e6d63f63dcc0618777be9d}\label{class_spine_1_1_skeleton_extensions_a9ab0a8f493e6d63f63dcc0618777be9d}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!InheritsRotation@{InheritsRotation}}
+\index{InheritsRotation@{InheritsRotation}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{InheritsRotation()}{InheritsRotation()}}
+{\footnotesize\ttfamily static bool Spine.\+Skeleton\+Extensions.\+Inherits\+Rotation (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Extensions.\+cs 파일의 439 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{440                                                                       \{}
+\DoxyCodeLine{441             \textcolor{keyword}{const} \textcolor{keywordtype}{int} RotationBit = 0;}
+\DoxyCodeLine{442             \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})mode \& (1U << RotationBit)) == 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a1524a74b832ba245c9eebbf5a5a3a68e}\label{class_spine_1_1_skeleton_extensions_a1524a74b832ba245c9eebbf5a5a3a68e}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!InheritsScale@{InheritsScale}}
+\index{InheritsScale@{InheritsScale}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{InheritsScale()}{InheritsScale()}}
+{\footnotesize\ttfamily static bool Spine.\+Skeleton\+Extensions.\+Inherits\+Scale (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{Transform\+Mode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Extensions.\+cs 파일의 444 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{445                                                                    \{}
+\DoxyCodeLine{446             \textcolor{keyword}{const} \textcolor{keywordtype}{int} ScaleBit = 1;}
+\DoxyCodeLine{447             \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})mode \& (1U << ScaleBit)) == 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_abdda1aad910f173cdaf01d8ecca2c044}\label{class_spine_1_1_skeleton_extensions_abdda1aad910f173cdaf01d8ecca2c044}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!IsRenderable@{IsRenderable}}
+\index{IsRenderable@{IsRenderable}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{IsRenderable()}{IsRenderable()}}
+{\footnotesize\ttfamily static bool Spine.\+Skeleton\+Extensions.\+Is\+Renderable (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Extensions.\+cs 파일의 434 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{435                                                             \{}
+\DoxyCodeLine{436             \textcolor{keywordflow}{return} a is IHasRendererObject;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a3494985207b99e57d4ad8010b6c09528}\label{class_spine_1_1_skeleton_extensions_a3494985207b99e57d4ad8010b6c09528}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!IsWeighted@{IsWeighted}}
+\index{IsWeighted@{IsWeighted}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{IsWeighted()}{IsWeighted()}}
+{\footnotesize\ttfamily static bool Spine.\+Skeleton\+Extensions.\+Is\+Weighted (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}}}]{va }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Extensions.\+cs 파일의 430 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{430                                            \{}
+\DoxyCodeLine{431         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_spine_1_1_skeleton_extensions_a3494985207b99e57d4ad8010b6c09528}{IsWeighted}} (\textcolor{keyword}{this} VertexAttachment va) \{}
+\DoxyCodeLine{432             \textcolor{keywordflow}{return} va.bones != \textcolor{keyword}{null} \&\& va.bones.Length > 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_ac0db3e5c0ec85cd9541ea20e22ce01f4}\label{class_spine_1_1_skeleton_extensions_ac0db3e5c0ec85cd9541ea20e22ce01f4}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!PoseSkeleton@{PoseSkeleton}}
+\index{PoseSkeleton@{PoseSkeleton}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{PoseSkeleton()}{PoseSkeleton()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Pose\+Skeleton (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{animation,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{float}]{time,  }\item[{bool}]{loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pose a skeleton according to a given time in an animation. 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 590 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{591                                                                                                                      \{}
+\DoxyCodeLine{592             animation.Apply(skeleton, 0, time, loop, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_adf92bf7beca1825d3b685cb9d03c2e96}\label{class_spine_1_1_skeleton_extensions_adf92bf7beca1825d3b685cb9d03c2e96}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!PoseWithAnimation@{PoseWithAnimation}}
+\index{PoseWithAnimation@{PoseWithAnimation}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{PoseWithAnimation()}{PoseWithAnimation()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Pose\+With\+Animation (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{string}]{animation\+Name,  }\item[{float}]{time,  }\item[{bool}]{loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Shortcut for posing a skeleton at a specific time. Time is in seconds. (frame\+Number / 30f) will give you seconds. If you need to do this often, you should get the \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} object yourself using skeleton.\+data.\+Find\+Animation. and call Apply on that. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em skeleton} & The skeleton to pose.\\
+\hline
+{\em animation\+Name} & The name of the animation to use.\\
+\hline
+{\em time} & The time of the pose within the animation.\\
+\hline
+{\em loop} & Wraps the time around if it is longer than the duration of the animation.\\
+\hline
+\end{DoxyParams}
+
+
+Skeleton\+Extensions.\+cs 파일의 582 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{583                                                                                                                            \{}
+\DoxyCodeLine{584             \textcolor{comment}{// Fail loud when skeleton.data is null.}}
+\DoxyCodeLine{585             \mbox{\hyperlink{namespace_spine}{Spine}}.\mbox{\hyperlink{class_spine_1_1_animation}{Animation}} animation = skeleton.data.FindAnimation(animationName);}
+\DoxyCodeLine{586             \textcolor{keywordflow}{if} (animation == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{587             animation.\mbox{\hyperlink{class_spine_1_1_animation_a8eae4b99cb29bf2c1bb38dab08dd24ee}{Apply}}(skeleton, 0, time, loop, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_acfc2b748cf792eee30d221be883af2a1}\label{class_spine_1_1_skeleton_extensions_acfc2b748cf792eee30d221be883af2a1}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!SetAttachmentToSetupPose@{SetAttachmentToSetupPose}}
+\index{SetAttachmentToSetupPose@{SetAttachmentToSetupPose}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{SetAttachmentToSetupPose()}{SetAttachmentToSetupPose()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Set\+Attachment\+To\+Setup\+Pose (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets a slot\textquotesingle{}s attachment to setup pose. If you have the slot\+Index, Skeleton.\+Set\+Slot\+Attachment\+To\+Setup\+Pose is faster. 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 558 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{559                                                                      \{}
+\DoxyCodeLine{560             var slotData = slot.data;}
+\DoxyCodeLine{561             slot.Attachment = slot.bone.skeleton.GetAttachment(slotData.name, slotData.attachmentName);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_aa1867383f7ce39fc670dcb830b0b5965}\label{class_spine_1_1_skeleton_extensions_aa1867383f7ce39fc670dcb830b0b5965}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!SetColorToSetupPose@{SetColorToSetupPose}}
+\index{SetColorToSetupPose@{SetColorToSetupPose}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{SetColorToSetupPose()}{SetColorToSetupPose()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Set\+Color\+To\+Setup\+Pose (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets the color of a slot to Setup Pose value. 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 547 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{548                                                                 \{}
+\DoxyCodeLine{549             slot.r = slot.data.r;}
+\DoxyCodeLine{550             slot.g = slot.data.g;}
+\DoxyCodeLine{551             slot.b = slot.data.b;}
+\DoxyCodeLine{552             slot.a = slot.data.a;}
+\DoxyCodeLine{553             slot.r2 = slot.data.r2;}
+\DoxyCodeLine{554             slot.g2 = slot.data.g2;}
+\DoxyCodeLine{555             slot.b2 = slot.data.b2;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a68bbbe2446e0510a62dc5d8b8df25a24}\label{class_spine_1_1_skeleton_extensions_a68bbbe2446e0510a62dc5d8b8df25a24}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!SetDrawOrderToSetupPose@{SetDrawOrderToSetupPose}}
+\index{SetDrawOrderToSetupPose@{SetDrawOrderToSetupPose}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{SetDrawOrderToSetupPose()}{SetDrawOrderToSetupPose()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Set\+Draw\+Order\+To\+Setup\+Pose (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets the Draw\+Order to the Setup Pose\textquotesingle{}s draw order 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 536 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{537                                                                             \{}
+\DoxyCodeLine{538             var slotsItems = skeleton.slots.Items;}
+\DoxyCodeLine{539             \textcolor{keywordtype}{int} n = skeleton.slots.Count;}
+\DoxyCodeLine{540 }
+\DoxyCodeLine{541             var drawOrder = skeleton.drawOrder;}
+\DoxyCodeLine{542             drawOrder.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{543             drawOrder.GrowIfNeeded(n);}
+\DoxyCodeLine{544             System.Array.Copy(slotsItems, drawOrder.Items, n);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a33185533365332b3dba5360e2b208ed3}\label{class_spine_1_1_skeleton_extensions_a33185533365332b3dba5360e2b208ed3}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!SetKeyedItemsToSetupPose@{SetKeyedItemsToSetupPose}}
+\index{SetKeyedItemsToSetupPose@{SetKeyedItemsToSetupPose}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{SetKeyedItemsToSetupPose()}{SetKeyedItemsToSetupPose()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Set\+Keyed\+Items\+To\+Setup\+Pose (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_animation}{Animation}}}]{animation,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} parts to Setup Pose according to a \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}\textquotesingle{}s keyed items. 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 595 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{596                                                                                                   \{}
+\DoxyCodeLine{597             animation.Apply(skeleton, 0, 0, \textcolor{keyword}{false}, \textcolor{keyword}{null}, 0, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.Out);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_extensions_a1629b893a7b51cfc57e81ca8df86c161}\label{class_spine_1_1_skeleton_extensions_a1629b893a7b51cfc57e81ca8df86c161}} 
+\index{Spine.SkeletonExtensions@{Spine.SkeletonExtensions}!SetSlotAttachmentToSetupPose@{SetSlotAttachmentToSetupPose}}
+\index{SetSlotAttachmentToSetupPose@{SetSlotAttachmentToSetupPose}!Spine.SkeletonExtensions@{Spine.SkeletonExtensions}}
+\doxysubsubsection{\texorpdfstring{SetSlotAttachmentToSetupPose()}{SetSlotAttachmentToSetupPose()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Extensions.\+Set\+Slot\+Attachment\+To\+Setup\+Pose (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{int}]{slot\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resets the attachment of slot at a given slot\+Index to setup pose. This is faster than Slot.\+Set\+Attachment\+To\+Setup\+Pose. 
+
+
+
+Skeleton\+Extensions.\+cs 파일의 564 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{565                                                                                                 \{}
+\DoxyCodeLine{566             var slot = skeleton.slots.Items[slotIndex];}
+\DoxyCodeLine{567             var attachmentName = slot.data.attachmentName;}
+\DoxyCodeLine{568             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(attachmentName)) \{}
+\DoxyCodeLine{569                 slot.Attachment = \textcolor{keyword}{null};}
+\DoxyCodeLine{570             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{571                 var attachment = skeleton.GetAttachment(slotIndex, attachmentName);}
+\DoxyCodeLine{572                 slot.Attachment = attachment;}
+\DoxyCodeLine{573             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\mbox{\hyperlink{_skeleton_extensions_8cs}{Skeleton\+Extensions.\+cs}}\end{DoxyCompactItemize}

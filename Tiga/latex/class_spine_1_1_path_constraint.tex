@@ -1,0 +1,790 @@
+\hypertarget{class_spine_1_1_path_constraint}{}\doxysection{Spine.\+Path\+Constraint 클래스 참조}
+\label{class_spine_1_1_path_constraint}\index{Spine.PathConstraint@{Spine.PathConstraint}}
+
+
+Spine.\+Path\+Constraint에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Path\+Constraint에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{Path\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_path_constraint_data}{Path\+Constraint\+Data}} data, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_path_constraint_ab572371e2a74b92b1047dc9ca3e3e446}{Apply}} ()
+\begin{DoxyCompactList}\small\item\em Applies the constraint to the constrained bones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_path_constraint_a1b84dbe4fd8e07faa1e9f1e4f61948f7}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_path_constraint_abd04bd2d3be132b4143af38db9cef7d2}{Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_a569f512fde6b1162ae0e900f0317f5d3}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_a0840f5ca6541fd71c041fe0af65aff09}{Spacing}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_adffa8798feacf067b2580fc6de970ebd}{Rotate\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_aa4936a31fa2adfd2fe182e4af91067e4}{Translate\+Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$ \mbox{\hyperlink{class_spine_1_1_path_constraint_afcdcb1971465317906e3fa1616688f5f}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_path_constraint_a74e9d43879bf9f6e4383f66ab6bedab0}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_path_constraint_data}{Path\+Constraint\+Data}} \mbox{\hyperlink{class_spine_1_1_path_constraint_a59f4ca9a13976d9b584fc09e85f8141c}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_path_constraint_a0a486ebfb77dc0339a9cd45bd12ad9d2}{Compute\+World\+Positions}} (\mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} path, int spaces\+Count, bool tangents, bool percent\+Position, bool percent\+Spacing)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_path_constraint_a3086313512cfee8dc03c0ed0b1c48fda}{Add\+Before\+Position}} (float p, float\mbox{[}$\,$\mbox{]} temp, int i, float\mbox{[}$\,$\mbox{]} output, int o)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_path_constraint_a09ff5cb5acc91c834109513418e61943}{Add\+After\+Position}} (float p, float\mbox{[}$\,$\mbox{]} temp, int i, float\mbox{[}$\,$\mbox{]} output, int o)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_path_constraint_afd74a4dbaf77c432e3b33838f1019f91}{Add\+Curve\+Position}} (float p, float x1, float y1, float cx1, float cy1, float cx2, float cy2, float x2, float y2, float\mbox{[}$\,$\mbox{]} output, int o, bool tangents)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotate\+Mix}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translate\+Mix}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ float $>$ \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ float $>$ \mbox{\hyperlink{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}{curves}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ float $>$ \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_a3a6373c6039dadc63596b45bf2f4104c}{N\+O\+NE}} = -\/1
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_a50d385842e991385d8edcffd6f0dbaf5}{B\+E\+F\+O\+RE}} = -\/2
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_a41b7aca5aed1c81d2847cfba1013cc8d}{A\+F\+T\+ER}} = -\/3
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_path_constraint_a3b5276a8faa2c8039f5f5f4124dc9318}{Epsilon}} = 0.\+00001f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Path\+Constraint.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}\label{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!PathConstraint@{PathConstraint}}
+\index{PathConstraint@{PathConstraint}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{PathConstraint()}{PathConstraint()}}
+{\footnotesize\ttfamily Spine.\+Path\+Constraint.\+Path\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_path_constraint_data}{Path\+Constraint\+Data}}}]{data,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})}
+
+
+
+Path\+Constraint.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                                            \{}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"data"}, \textcolor{stringliteral}{"data cannot be null."});}
+\DoxyCodeLine{58             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{59             this.data = data;}
+\DoxyCodeLine{60             bones = \textcolor{keyword}{new} ExposedList<Bone>(data.\mbox{\hyperlink{class_spine_1_1_path_constraint_data_a4b7297cd5685de32a511876f9abe66f8}{Bones}}.Count);}
+\DoxyCodeLine{61             \textcolor{keywordflow}{foreach} (BoneData boneData \textcolor{keywordflow}{in} data.bones)}
+\DoxyCodeLine{62                 bones.Add(skeleton.FindBone(boneData.name));}
+\DoxyCodeLine{63             target = skeleton.FindSlot(data.target.name);}
+\DoxyCodeLine{64             position = data.position;}
+\DoxyCodeLine{65             \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}} = data.\mbox{\hyperlink{class_spine_1_1_path_constraint_data_ad7c2198fa072b0697dd0d63c7274b5a4}{spacing}};}
+\DoxyCodeLine{66             \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}} = data.\mbox{\hyperlink{class_spine_1_1_path_constraint_data_ab9842cb4a986d45aa9a966ad5648ac53}{rotateMix}};}
+\DoxyCodeLine{67             \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}} = data.\mbox{\hyperlink{class_spine_1_1_path_constraint_data_ad4dcd712e49fb88707187fafdc0d6f2c}{translateMix}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a09ff5cb5acc91c834109513418e61943}\label{class_spine_1_1_path_constraint_a09ff5cb5acc91c834109513418e61943}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!AddAfterPosition@{AddAfterPosition}}
+\index{AddAfterPosition@{AddAfterPosition}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{AddAfterPosition()}{AddAfterPosition()}}
+{\footnotesize\ttfamily static void Spine.\+Path\+Constraint.\+Add\+After\+Position (\begin{DoxyParamCaption}\item[{float}]{p,  }\item[{float\mbox{[}$\,$\mbox{]}}]{temp,  }\item[{int}]{i,  }\item[{float\mbox{[}$\,$\mbox{]}}]{output,  }\item[{int}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 397 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{398                                                                                            \{}
+\DoxyCodeLine{399             \textcolor{keywordtype}{float} x1 = temp[i + 2], y1 = temp[i + 3], dx = x1 -\/ temp[i], dy = y1 -\/ temp[i + 1], r = MathUtils.Atan2(dy, dx);}
+\DoxyCodeLine{400             output[o] = x1 + p * MathUtils.Cos(r);}
+\DoxyCodeLine{401             output[o + 1] = y1 + p * MathUtils.Sin(r);}
+\DoxyCodeLine{402             output[o + 2] = r;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a3086313512cfee8dc03c0ed0b1c48fda}\label{class_spine_1_1_path_constraint_a3086313512cfee8dc03c0ed0b1c48fda}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!AddBeforePosition@{AddBeforePosition}}
+\index{AddBeforePosition@{AddBeforePosition}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{AddBeforePosition()}{AddBeforePosition()}}
+{\footnotesize\ttfamily static void Spine.\+Path\+Constraint.\+Add\+Before\+Position (\begin{DoxyParamCaption}\item[{float}]{p,  }\item[{float\mbox{[}$\,$\mbox{]}}]{temp,  }\item[{int}]{i,  }\item[{float\mbox{[}$\,$\mbox{]}}]{output,  }\item[{int}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 390 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{391                                                                                             \{}
+\DoxyCodeLine{392             \textcolor{keywordtype}{float} x1 = temp[i], y1 = temp[i + 1], dx = temp[i + 2] -\/ x1, dy = temp[i + 3] -\/ y1, r = MathUtils.Atan2(dy, dx);}
+\DoxyCodeLine{393             output[o] = x1 + p * MathUtils.Cos(r);}
+\DoxyCodeLine{394             output[o + 1] = y1 + p * MathUtils.Sin(r);}
+\DoxyCodeLine{395             output[o + 2] = r;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_afd74a4dbaf77c432e3b33838f1019f91}\label{class_spine_1_1_path_constraint_afd74a4dbaf77c432e3b33838f1019f91}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!AddCurvePosition@{AddCurvePosition}}
+\index{AddCurvePosition@{AddCurvePosition}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{AddCurvePosition()}{AddCurvePosition()}}
+{\footnotesize\ttfamily static void Spine.\+Path\+Constraint.\+Add\+Curve\+Position (\begin{DoxyParamCaption}\item[{float}]{p,  }\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{cx1,  }\item[{float}]{cy1,  }\item[{float}]{cx2,  }\item[{float}]{cy2,  }\item[{float}]{x2,  }\item[{float}]{y2,  }\item[{float\mbox{[}$\,$\mbox{]}}]{output,  }\item[{int}]{o,  }\item[{bool}]{tangents }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 404 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{406                                                   \{}
+\DoxyCodeLine{407             \textcolor{keywordflow}{if} (p < \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon || \textcolor{keywordtype}{float}.IsNaN(p)) p = \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon;}
+\DoxyCodeLine{408             \textcolor{keywordtype}{float} tt = p * p, ttt = tt * p, u = 1 -\/ p, uu = u * u, uuu = uu * u;}
+\DoxyCodeLine{409             \textcolor{keywordtype}{float} ut = u * p, ut3 = ut * 3, uut3 = u * ut3, utt3 = ut3 * p;}
+\DoxyCodeLine{410             \textcolor{keywordtype}{float} x = x1 * uuu + cx1 * uut3 + cx2 * utt3 + x2 * ttt, y = y1 * uuu + cy1 * uut3 + cy2 * utt3 + y2 * ttt;}
+\DoxyCodeLine{411             output[o] = x;}
+\DoxyCodeLine{412             output[o + 1] = y;}
+\DoxyCodeLine{413             if (tangents)}
+\DoxyCodeLine{414                 output[o + 2] = (float)Math.Atan2(y -\/ (y1 * uu + cy1 * ut * 2 + cy2 * tt), x -\/ (x1 * uu + cx1 * ut * 2 + cx2 * tt));}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_ab572371e2a74b92b1047dc9ca3e3e446}\label{class_spine_1_1_path_constraint_ab572371e2a74b92b1047dc9ca3e3e446}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Path\+Constraint.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Applies the constraint to the constrained bones. 
+
+
+
+Path\+Constraint.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                              \{}
+\DoxyCodeLine{72             \mbox{\hyperlink{class_spine_1_1_path_constraint_a1b84dbe4fd8e07faa1e9f1e4f61948f7}{Update}}();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a0a486ebfb77dc0339a9cd45bd12ad9d2}\label{class_spine_1_1_path_constraint_a0a486ebfb77dc0339a9cd45bd12ad9d2}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!ComputeWorldPositions@{ComputeWorldPositions}}
+\index{ComputeWorldPositions@{ComputeWorldPositions}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{ComputeWorldPositions()}{ComputeWorldPositions()}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Path\+Constraint.\+Compute\+World\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}}}]{path,  }\item[{int}]{spaces\+Count,  }\item[{bool}]{tangents,  }\item[{bool}]{percent\+Position,  }\item[{bool}]{percent\+Spacing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 171 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                  \{}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175             Slot target = this.target;}
+\DoxyCodeLine{176             \textcolor{keywordtype}{float} position = this.position;}
+\DoxyCodeLine{177             \textcolor{keywordtype}{float}[] spacesItems = this.spaces.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, output = this.\mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(spacesCount * 3 + 2).Items, world;}
+\DoxyCodeLine{178             \textcolor{keywordtype}{bool} closed = path.Closed;}
+\DoxyCodeLine{179             \textcolor{keywordtype}{int} verticesLength = path.WorldVerticesLength, curveCount = verticesLength / 6, prevCurve = \mbox{\hyperlink{class_spine_1_1_path_constraint_a3a6373c6039dadc63596b45bf2f4104c}{NONE}};}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181             \textcolor{keywordtype}{float} pathLength;}
+\DoxyCodeLine{182             \textcolor{keywordflow}{if} (!path.ConstantSpeed) \{}
+\DoxyCodeLine{183                 \textcolor{keywordtype}{float}[] \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}} = path.Lengths;}
+\DoxyCodeLine{184                 curveCount -\/= closed ? 1 : 2;}
+\DoxyCodeLine{185                 pathLength = \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}[curveCount];}
+\DoxyCodeLine{186                 \textcolor{keywordflow}{if} (percentPosition) position *= pathLength;}
+\DoxyCodeLine{187                 \textcolor{keywordflow}{if} (percentSpacing) \{}
+\DoxyCodeLine{188                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < spacesCount; i++)}
+\DoxyCodeLine{189                         spacesItems[i] *= pathLength;}
+\DoxyCodeLine{190                 \}}
+\DoxyCodeLine{191                 world = this.world.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(8).Items;}
+\DoxyCodeLine{192                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, o = 0, curve = 0; i < spacesCount; i++, o += 3) \{}
+\DoxyCodeLine{193                     \textcolor{keywordtype}{float} space = spacesItems[i];}
+\DoxyCodeLine{194                     position += space;}
+\DoxyCodeLine{195                     \textcolor{keywordtype}{float} p = position;}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197                     \textcolor{keywordflow}{if} (closed) \{}
+\DoxyCodeLine{198                         p \%= pathLength;}
+\DoxyCodeLine{199                         \textcolor{keywordflow}{if} (p < 0) p += pathLength;}
+\DoxyCodeLine{200                         curve = 0;}
+\DoxyCodeLine{201                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p < 0) \{}
+\DoxyCodeLine{202                         \textcolor{keywordflow}{if} (prevCurve != \mbox{\hyperlink{class_spine_1_1_path_constraint_a50d385842e991385d8edcffd6f0dbaf5}{BEFORE}}) \{}
+\DoxyCodeLine{203                             prevCurve = \mbox{\hyperlink{class_spine_1_1_path_constraint_a50d385842e991385d8edcffd6f0dbaf5}{BEFORE}};}
+\DoxyCodeLine{204                             path.ComputeWorldVertices(target, 2, 4, world, 0);}
+\DoxyCodeLine{205                         \}}
+\DoxyCodeLine{206                         \mbox{\hyperlink{class_spine_1_1_path_constraint_a3086313512cfee8dc03c0ed0b1c48fda}{AddBeforePosition}}(p, world, 0, output, o);}
+\DoxyCodeLine{207                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{208                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p > pathLength) \{}
+\DoxyCodeLine{209                         \textcolor{keywordflow}{if} (prevCurve != \mbox{\hyperlink{class_spine_1_1_path_constraint_a41b7aca5aed1c81d2847cfba1013cc8d}{AFTER}}) \{}
+\DoxyCodeLine{210                             prevCurve = \mbox{\hyperlink{class_spine_1_1_path_constraint_a41b7aca5aed1c81d2847cfba1013cc8d}{AFTER}};}
+\DoxyCodeLine{211                             path.ComputeWorldVertices(target, verticesLength -\/ 6, 4, world, 0);}
+\DoxyCodeLine{212                         \}}
+\DoxyCodeLine{213                         \mbox{\hyperlink{class_spine_1_1_path_constraint_a09ff5cb5acc91c834109513418e61943}{AddAfterPosition}}(p -\/ pathLength, world, 0, output, o);}
+\DoxyCodeLine{214                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{215                     \}}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217                     \textcolor{comment}{// Determine curve containing position.}}
+\DoxyCodeLine{218                     \textcolor{keywordflow}{for} (;; curve++) \{}
+\DoxyCodeLine{219                         \textcolor{keywordtype}{float} length = \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}[curve];}
+\DoxyCodeLine{220                         \textcolor{keywordflow}{if} (p > length) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{221                         \textcolor{keywordflow}{if} (curve == 0)}
+\DoxyCodeLine{222                             p /= length;}
+\DoxyCodeLine{223                         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{224                             \textcolor{keywordtype}{float} prev = \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}[curve -\/ 1];}
+\DoxyCodeLine{225                             p = (p -\/ prev) / (length -\/ prev);}
+\DoxyCodeLine{226                         \}}
+\DoxyCodeLine{227                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{228                     \}}
+\DoxyCodeLine{229                     \textcolor{keywordflow}{if} (curve != prevCurve) \{}
+\DoxyCodeLine{230                         prevCurve = curve;}
+\DoxyCodeLine{231                         \textcolor{keywordflow}{if} (closed \&\& curve == curveCount) \{}
+\DoxyCodeLine{232                             path.ComputeWorldVertices(target, verticesLength -\/ 4, 4, world, 0);}
+\DoxyCodeLine{233                             path.ComputeWorldVertices(target, 0, 4, world, 4);}
+\DoxyCodeLine{234                         \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{235                             path.ComputeWorldVertices(target, curve * 6 + 2, 8, world, 0);}
+\DoxyCodeLine{236                     \}}
+\DoxyCodeLine{237                     \mbox{\hyperlink{class_spine_1_1_path_constraint_afd74a4dbaf77c432e3b33838f1019f91}{AddCurvePosition}}(p, world[0], world[1], world[2], world[3], world[4], world[5], world[6], world[7], output, o,}
+\DoxyCodeLine{238                         tangents || (i > 0 \&\& space < \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon));}
+\DoxyCodeLine{239                 \}}
+\DoxyCodeLine{240                 \textcolor{keywordflow}{return} output;}
+\DoxyCodeLine{241             \}}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243             \textcolor{comment}{// World vertices.}}
+\DoxyCodeLine{244             \textcolor{keywordflow}{if} (closed) \{}
+\DoxyCodeLine{245                 verticesLength += 2;}
+\DoxyCodeLine{246                 world = this.world.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(verticesLength).Items;}
+\DoxyCodeLine{247                 path.ComputeWorldVertices(target, 2, verticesLength -\/ 4, world, 0);}
+\DoxyCodeLine{248                 path.ComputeWorldVertices(target, 0, 2, world, verticesLength -\/ 4);}
+\DoxyCodeLine{249                 world[verticesLength -\/ 2] = world[0];}
+\DoxyCodeLine{250                 world[verticesLength -\/ 1] = world[1];}
+\DoxyCodeLine{251             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{252                 curveCount-\/-\/;}
+\DoxyCodeLine{253                 verticesLength -\/= 4;}
+\DoxyCodeLine{254                 world = this.world.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(verticesLength).Items;}
+\DoxyCodeLine{255                 path.ComputeWorldVertices(target, 2, verticesLength, world, 0);}
+\DoxyCodeLine{256             \}}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258             \textcolor{comment}{// Curve lengths.}}
+\DoxyCodeLine{259             \textcolor{keywordtype}{float}[] \mbox{\hyperlink{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}{curves}} = this.curves.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(curveCount).Items;}
+\DoxyCodeLine{260             pathLength = 0;}
+\DoxyCodeLine{261             \textcolor{keywordtype}{float} x1 = world[0], y1 = world[1], cx1 = 0, cy1 = 0, cx2 = 0, cy2 = 0, x2 = 0, y2 = 0;}
+\DoxyCodeLine{262             \textcolor{keywordtype}{float} tmpx, tmpy, dddfx, dddfy, ddfx, ddfy, dfx, dfy;}
+\DoxyCodeLine{263             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, w = 2; i < curveCount; i++, w += 6) \{}
+\DoxyCodeLine{264                 cx1 = world[w];}
+\DoxyCodeLine{265                 cy1 = world[w + 1];}
+\DoxyCodeLine{266                 cx2 = world[w + 2];}
+\DoxyCodeLine{267                 cy2 = world[w + 3];}
+\DoxyCodeLine{268                 x2 = world[w + 4];}
+\DoxyCodeLine{269                 y2 = world[w + 5];}
+\DoxyCodeLine{270                 tmpx = (x1 -\/ cx1 * 2 + cx2) * 0.1875f;}
+\DoxyCodeLine{271                 tmpy = (y1 -\/ cy1 * 2 + cy2) * 0.1875f;}
+\DoxyCodeLine{272                 dddfx = ((cx1 -\/ cx2) * 3 -\/ x1 + x2) * 0.09375f;}
+\DoxyCodeLine{273                 dddfy = ((cy1 -\/ cy2) * 3 -\/ y1 + y2) * 0.09375f;}
+\DoxyCodeLine{274                 ddfx = tmpx * 2 + dddfx;}
+\DoxyCodeLine{275                 ddfy = tmpy * 2 + dddfy;}
+\DoxyCodeLine{276                 dfx = (cx1 -\/ x1) * 0.75f + tmpx + dddfx * 0.16666667f;}
+\DoxyCodeLine{277                 dfy = (cy1 -\/ y1) * 0.75f + tmpy + dddfy * 0.16666667f;}
+\DoxyCodeLine{278                 pathLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{279                 dfx += ddfx;}
+\DoxyCodeLine{280                 dfy += ddfy;}
+\DoxyCodeLine{281                 ddfx += dddfx;}
+\DoxyCodeLine{282                 ddfy += dddfy;}
+\DoxyCodeLine{283                 pathLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{284                 dfx += ddfx;}
+\DoxyCodeLine{285                 dfy += ddfy;}
+\DoxyCodeLine{286                 pathLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{287                 dfx += ddfx + dddfx;}
+\DoxyCodeLine{288                 dfy += ddfy + dddfy;}
+\DoxyCodeLine{289                 pathLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{290                 \mbox{\hyperlink{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}{curves}}[i] = pathLength;}
+\DoxyCodeLine{291                 x1 = x2;}
+\DoxyCodeLine{292                 y1 = y2;}
+\DoxyCodeLine{293             \}}
+\DoxyCodeLine{294             \textcolor{keywordflow}{if} (percentPosition) position *= pathLength;}
+\DoxyCodeLine{295             \textcolor{keywordflow}{if} (percentSpacing) \{}
+\DoxyCodeLine{296                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < spacesCount; i++)}
+\DoxyCodeLine{297                     spacesItems[i] *= pathLength;}
+\DoxyCodeLine{298             \}}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             \textcolor{keywordtype}{float}[] segments = this.segments;}
+\DoxyCodeLine{301             \textcolor{keywordtype}{float} curveLength = 0;}
+\DoxyCodeLine{302             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, o = 0, curve = 0, segment = 0; i < spacesCount; i++, o += 3) \{}
+\DoxyCodeLine{303                 \textcolor{keywordtype}{float} space = spacesItems[i];}
+\DoxyCodeLine{304                 position += space;}
+\DoxyCodeLine{305                 \textcolor{keywordtype}{float} p = position;}
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307                 \textcolor{keywordflow}{if} (closed) \{}
+\DoxyCodeLine{308                     p \%= pathLength;}
+\DoxyCodeLine{309                     \textcolor{keywordflow}{if} (p < 0) p += pathLength;}
+\DoxyCodeLine{310                     curve = 0;}
+\DoxyCodeLine{311                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p < 0) \{}
+\DoxyCodeLine{312                     \mbox{\hyperlink{class_spine_1_1_path_constraint_a3086313512cfee8dc03c0ed0b1c48fda}{AddBeforePosition}}(p, world, 0, output, o);}
+\DoxyCodeLine{313                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{314                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (p > pathLength) \{}
+\DoxyCodeLine{315                     \mbox{\hyperlink{class_spine_1_1_path_constraint_a09ff5cb5acc91c834109513418e61943}{AddAfterPosition}}(p -\/ pathLength, world, verticesLength -\/ 4, output, o);}
+\DoxyCodeLine{316                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{317                 \}}
+\DoxyCodeLine{318 }
+\DoxyCodeLine{319                 \textcolor{comment}{// Determine curve containing position.}}
+\DoxyCodeLine{320                 \textcolor{keywordflow}{for} (;; curve++) \{}
+\DoxyCodeLine{321                     \textcolor{keywordtype}{float} length = \mbox{\hyperlink{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}{curves}}[curve];}
+\DoxyCodeLine{322                     \textcolor{keywordflow}{if} (p > length) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{323                     \textcolor{keywordflow}{if} (curve == 0)}
+\DoxyCodeLine{324                         p /= length;}
+\DoxyCodeLine{325                     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{326                         \textcolor{keywordtype}{float} prev = \mbox{\hyperlink{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}{curves}}[curve -\/ 1];}
+\DoxyCodeLine{327                         p = (p -\/ prev) / (length -\/ prev);}
+\DoxyCodeLine{328                     \}}
+\DoxyCodeLine{329                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{330                 \}}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332                 \textcolor{comment}{// Curve segment lengths.}}
+\DoxyCodeLine{333                 \textcolor{keywordflow}{if} (curve != prevCurve) \{}
+\DoxyCodeLine{334                     prevCurve = curve;}
+\DoxyCodeLine{335                     \textcolor{keywordtype}{int} ii = curve * 6;}
+\DoxyCodeLine{336                     x1 = world[ii];}
+\DoxyCodeLine{337                     y1 = world[ii + 1];}
+\DoxyCodeLine{338                     cx1 = world[ii + 2];}
+\DoxyCodeLine{339                     cy1 = world[ii + 3];}
+\DoxyCodeLine{340                     cx2 = world[ii + 4];}
+\DoxyCodeLine{341                     cy2 = world[ii + 5];}
+\DoxyCodeLine{342                     x2 = world[ii + 6];}
+\DoxyCodeLine{343                     y2 = world[ii + 7];}
+\DoxyCodeLine{344                     tmpx = (x1 -\/ cx1 * 2 + cx2) * 0.03f;}
+\DoxyCodeLine{345                     tmpy = (y1 -\/ cy1 * 2 + cy2) * 0.03f;}
+\DoxyCodeLine{346                     dddfx = ((cx1 -\/ cx2) * 3 -\/ x1 + x2) * 0.006f;}
+\DoxyCodeLine{347                     dddfy = ((cy1 -\/ cy2) * 3 -\/ y1 + y2) * 0.006f;}
+\DoxyCodeLine{348                     ddfx = tmpx * 2 + dddfx;}
+\DoxyCodeLine{349                     ddfy = tmpy * 2 + dddfy;}
+\DoxyCodeLine{350                     dfx = (cx1 -\/ x1) * 0.3f + tmpx + dddfx * 0.16666667f;}
+\DoxyCodeLine{351                     dfy = (cy1 -\/ y1) * 0.3f + tmpy + dddfy * 0.16666667f;}
+\DoxyCodeLine{352                     curveLength = (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{353                     segments[0] = curveLength;}
+\DoxyCodeLine{354                     \textcolor{keywordflow}{for} (ii = 1; ii < 8; ii++) \{}
+\DoxyCodeLine{355                         dfx += ddfx;}
+\DoxyCodeLine{356                         dfy += ddfy;}
+\DoxyCodeLine{357                         ddfx += dddfx;}
+\DoxyCodeLine{358                         ddfy += dddfy;}
+\DoxyCodeLine{359                         curveLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{360                         segments[ii] = curveLength;}
+\DoxyCodeLine{361                     \}}
+\DoxyCodeLine{362                     dfx += ddfx;}
+\DoxyCodeLine{363                     dfy += ddfy;}
+\DoxyCodeLine{364                     curveLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{365                     segments[8] = curveLength;}
+\DoxyCodeLine{366                     dfx += ddfx + dddfx;}
+\DoxyCodeLine{367                     dfy += ddfy + dddfy;}
+\DoxyCodeLine{368                     curveLength += (float)Math.Sqrt(dfx * dfx + dfy * dfy);}
+\DoxyCodeLine{369                     segments[9] = curveLength;}
+\DoxyCodeLine{370                     segment = 0;}
+\DoxyCodeLine{371                 \}}
+\DoxyCodeLine{372 }
+\DoxyCodeLine{373                 \textcolor{comment}{// Weight by segment length.}}
+\DoxyCodeLine{374                 p *= curveLength;}
+\DoxyCodeLine{375                 \textcolor{keywordflow}{for} (;; segment++) \{}
+\DoxyCodeLine{376                     \textcolor{keywordtype}{float} length = segments[segment];}
+\DoxyCodeLine{377                     \textcolor{keywordflow}{if} (p > length) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{378                     \textcolor{keywordflow}{if} (segment == 0)}
+\DoxyCodeLine{379                         p /= length;}
+\DoxyCodeLine{380                     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{381                         \textcolor{keywordtype}{float} prev = segments[segment -\/ 1];}
+\DoxyCodeLine{382                         p = segment + (p -\/ prev) / (length -\/ prev);}
+\DoxyCodeLine{383                     \}}
+\DoxyCodeLine{384                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{385                 \}}
+\DoxyCodeLine{386                 \mbox{\hyperlink{class_spine_1_1_path_constraint_afd74a4dbaf77c432e3b33838f1019f91}{AddCurvePosition}}(p * 0.1f, x1, y1, cx1, cy1, cx2, cy2, x2, y2, output, o, tangents || (i > 0 \&\& space < \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon));}
+\DoxyCodeLine{387             \}}
+\DoxyCodeLine{388             \textcolor{keywordflow}{return} output;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a1b84dbe4fd8e07faa1e9f1e4f61948f7}\label{class_spine_1_1_path_constraint_a1b84dbe4fd8e07faa1e9f1e4f61948f7}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Update@{Update}}
+\index{Update@{Update}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Path\+Constraint.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_i_updatable_af75ae5ed7483a4734dc1ee40b825ab77}{Spine.\+I\+Updatable}}를 구현.
+
+
+
+Path\+Constraint.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                               \{}
+\DoxyCodeLine{76             PathAttachment attachment = target.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} as PathAttachment;}
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (attachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}} = this.\mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}}, \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}} = this.\mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}};}
+\DoxyCodeLine{80             \textcolor{keywordtype}{bool} translate = \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}} > 0, rotate = \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}} > 0;}
+\DoxyCodeLine{81             \textcolor{keywordflow}{if} (!translate \&\& !rotate) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83             PathConstraintData data = this.data;}
+\DoxyCodeLine{84             \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}} spacingMode = data.spacingMode;}
+\DoxyCodeLine{85             \textcolor{keywordtype}{bool} lengthSpacing = spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Length;}
+\DoxyCodeLine{86             \mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}} rotateMode = data.rotateMode;}
+\DoxyCodeLine{87             \textcolor{keywordtype}{bool} tangents = rotateMode == \mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}}.Tangent, scale = rotateMode == \mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}}.ChainScale;}
+\DoxyCodeLine{88             \textcolor{keywordtype}{int} boneCount = this.bones.Count, spacesCount = tangents ? boneCount : boneCount + 1;}
+\DoxyCodeLine{89             Bone[] bonesItems = this.bones.Items;}
+\DoxyCodeLine{90             ExposedList<float> spaces = this.spaces.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(spacesCount), \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{91             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}} = this.\mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}};}
+\DoxyCodeLine{92             \textcolor{keywordflow}{if} (scale || lengthSpacing) \{}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{if} (scale) \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}} = this.\mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(boneCount);}
+\DoxyCodeLine{94                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = spacesCount -\/ 1; i < n;) \{}
+\DoxyCodeLine{95                     Bone bone = bonesItems[i];}
+\DoxyCodeLine{96                     \textcolor{keywordtype}{float} setupLength = bone.data.length;}
+\DoxyCodeLine{97                     \textcolor{keywordflow}{if} (setupLength < \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon) \{}
+\DoxyCodeLine{98                         \textcolor{keywordflow}{if} (scale) \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i] = 0;}
+\DoxyCodeLine{99                         spaces.Items[++i] = 0;}
+\DoxyCodeLine{100                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{101                         \textcolor{keywordtype}{float} x = setupLength * bone.a, y = setupLength * bone.c;}
+\DoxyCodeLine{102                         \textcolor{keywordtype}{float} length = (float)Math.Sqrt(x * x + y * y);}
+\DoxyCodeLine{103                         \textcolor{keywordflow}{if} (scale) \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i] = length;}
+\DoxyCodeLine{104                         spaces.Items[++i] = (lengthSpacing ? setupLength + \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}} : \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}}) * length / setupLength;}
+\DoxyCodeLine{105                     \}}
+\DoxyCodeLine{106                 \}}
+\DoxyCodeLine{107             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < spacesCount; i++)}
+\DoxyCodeLine{109                     spaces.Items[i] = \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}};}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112             \textcolor{keywordtype}{float}[] \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}} = \mbox{\hyperlink{class_spine_1_1_path_constraint_a0a486ebfb77dc0339a9cd45bd12ad9d2}{ComputeWorldPositions}}(attachment, spacesCount, tangents,}
+\DoxyCodeLine{113                 data.positionMode == \mbox{\hyperlink{namespace_spine_a54932cd85ab60420fe7be3b8a25b54f6}{PositionMode}}.Percent, spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Percent);}
+\DoxyCodeLine{114             \textcolor{keywordtype}{float} boneX = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[0], boneY = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[1], offsetRotation = data.offsetRotation;}
+\DoxyCodeLine{115             \textcolor{keywordtype}{bool} tip;}
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} (offsetRotation == 0) \{}
+\DoxyCodeLine{117                 tip = rotateMode == \mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}}.Chain;}
+\DoxyCodeLine{118             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{119                 tip = \textcolor{keyword}{false};}
+\DoxyCodeLine{120                 Bone p = target.bone;}
+\DoxyCodeLine{121                 offsetRotation *= p.a * p.d -\/ p.b * p.c > 0 ? MathUtils.DegRad : -\/MathUtils.DegRad;}
+\DoxyCodeLine{122             \}}
+\DoxyCodeLine{123             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, p = 3; i < boneCount; i++, p += 3) \{}
+\DoxyCodeLine{124                 Bone bone = bonesItems[i];}
+\DoxyCodeLine{125                 bone.worldX += (boneX -\/ bone.worldX) * \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}};}
+\DoxyCodeLine{126                 bone.worldY += (boneY -\/ bone.worldY) * \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}};}
+\DoxyCodeLine{127                 \textcolor{keywordtype}{float} x = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[p], y = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[p + 1], dx = x -\/ boneX, dy = y -\/ boneY;}
+\DoxyCodeLine{128                 \textcolor{keywordflow}{if} (scale) \{}
+\DoxyCodeLine{129                     \textcolor{keywordtype}{float} length = \mbox{\hyperlink{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}{lengths}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i];}
+\DoxyCodeLine{130                     \textcolor{keywordflow}{if} (length >= \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon) \{}
+\DoxyCodeLine{131                         \textcolor{keywordtype}{float} s = ((float)Math.Sqrt(dx * dx + dy * dy) / length -\/ 1) * \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}} + 1;}
+\DoxyCodeLine{132                         bone.a *= s;}
+\DoxyCodeLine{133                         bone.c *= s;}
+\DoxyCodeLine{134                     \}}
+\DoxyCodeLine{135                 \}}
+\DoxyCodeLine{136                 boneX = x;}
+\DoxyCodeLine{137                 boneY = y;}
+\DoxyCodeLine{138                 \textcolor{keywordflow}{if} (rotate) \{}
+\DoxyCodeLine{139                     \textcolor{keywordtype}{float} a = bone.a, b = bone.b, c = bone.c, d = bone.d, r, cos, sin;}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{if} (tangents)}
+\DoxyCodeLine{141                         r = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[p -\/ 1];}
+\DoxyCodeLine{142                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (spaces.Items[i + 1] < \mbox{\hyperlink{class_spine_1_1_path_constraint_a7772684e06a4822a2c633ee5e9a6cf28}{PathConstraint}}.Epsilon)}
+\DoxyCodeLine{143                         r = \mbox{\hyperlink{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}{positions}}[p + 2];}
+\DoxyCodeLine{144                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{145                         r = MathUtils.Atan2(dy, dx);}
+\DoxyCodeLine{146                     r -\/= MathUtils.Atan2(c, a);}
+\DoxyCodeLine{147                     \textcolor{keywordflow}{if} (tip) \{}
+\DoxyCodeLine{148                         cos = MathUtils.Cos(r);}
+\DoxyCodeLine{149                         sin = MathUtils.Sin(r);}
+\DoxyCodeLine{150                         \textcolor{keywordtype}{float} length = bone.data.length;}
+\DoxyCodeLine{151                         boneX += (length * (cos * a -\/ sin * c) -\/ dx) * \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}};}
+\DoxyCodeLine{152                         boneY += (length * (sin * a + cos * c) -\/ dy) * \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}};}
+\DoxyCodeLine{153                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{154                         r += offsetRotation;}
+\DoxyCodeLine{155                     \}}
+\DoxyCodeLine{156                     \textcolor{keywordflow}{if} (r > MathUtils.PI)}
+\DoxyCodeLine{157                         r -\/= MathUtils.PI2;}
+\DoxyCodeLine{158                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (r < -\/MathUtils.PI) \textcolor{comment}{//}}
+\DoxyCodeLine{159                         r += MathUtils.PI2;}
+\DoxyCodeLine{160                     r *= \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}};}
+\DoxyCodeLine{161                     cos = MathUtils.Cos(r);}
+\DoxyCodeLine{162                     sin = MathUtils.Sin(r);}
+\DoxyCodeLine{163                     bone.a = cos * a -\/ sin * c;}
+\DoxyCodeLine{164                     bone.b = cos * b -\/ sin * d;}
+\DoxyCodeLine{165                     bone.c = sin * a + cos * c;}
+\DoxyCodeLine{166                     bone.d = sin * b + cos * d;}
+\DoxyCodeLine{167                 \}}
+\DoxyCodeLine{168                 bone.appliedValid = \textcolor{keyword}{false};}
+\DoxyCodeLine{169             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a41b7aca5aed1c81d2847cfba1013cc8d}\label{class_spine_1_1_path_constraint_a41b7aca5aed1c81d2847cfba1013cc8d}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!AFTER@{AFTER}}
+\index{AFTER@{AFTER}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{AFTER}{AFTER}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint.\+A\+F\+T\+ER = -\/3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a50d385842e991385d8edcffd6f0dbaf5}\label{class_spine_1_1_path_constraint_a50d385842e991385d8edcffd6f0dbaf5}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!BEFORE@{BEFORE}}
+\index{BEFORE@{BEFORE}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{BEFORE}{BEFORE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint.\+B\+E\+F\+O\+RE = -\/2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}\label{class_spine_1_1_path_constraint_ab96bd1e29b371ced01db7a93f01741da}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!curves@{curves}}
+\index{curves@{curves}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{curves}{curves}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$ Spine.\+Path\+Constraint.\+curves = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a3b5276a8faa2c8039f5f5f4124dc9318}\label{class_spine_1_1_path_constraint_a3b5276a8faa2c8039f5f5f4124dc9318}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Epsilon@{Epsilon}}
+\index{Epsilon@{Epsilon}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Epsilon}{Epsilon}}
+{\footnotesize\ttfamily const float Spine.\+Path\+Constraint.\+Epsilon = 0.\+00001f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}\label{class_spine_1_1_path_constraint_adceed6f90bf3b307bca2d5efac1b79f5}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!lengths@{lengths}}
+\index{lengths@{lengths}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{lengths}{lengths}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$ Spine.\+Path\+Constraint.\+lengths = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a3a6373c6039dadc63596b45bf2f4104c}\label{class_spine_1_1_path_constraint_a3a6373c6039dadc63596b45bf2f4104c}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!NONE@{NONE}}
+\index{NONE@{NONE}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{NONE}{NONE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint.\+N\+O\+NE = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}\label{class_spine_1_1_path_constraint_a4210359fde2bf60b75509d1c5aa1f56a}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!positions@{positions}}
+\index{positions@{positions}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{positions}{positions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$ Spine.\+Path\+Constraint.\+positions = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$float$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}\label{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!rotateMix@{rotateMix}}
+\index{rotateMix@{rotateMix}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{rotateMix}{rotateMix}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+rotate\+Mix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}\label{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!spacing@{spacing}}
+\index{spacing@{spacing}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{spacing}{spacing}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+spacing\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}\label{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!translateMix@{translateMix}}
+\index{translateMix@{translateMix}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{translateMix}{translateMix}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+translate\+Mix\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Path\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_afcdcb1971465317906e3fa1616688f5f}\label{class_spine_1_1_path_constraint_afcdcb1971465317906e3fa1616688f5f}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}$>$ Spine.\+Path\+Constraint.\+Bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Path\+Constraint.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_path_constraint_a75e5295a0edf64b6d422d2fe56d87d76}{translateMix}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a59f4ca9a13976d9b584fc09e85f8141c}\label{class_spine_1_1_path_constraint_a59f4ca9a13976d9b584fc09e85f8141c}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Data@{Data}}
+\index{Data@{Data}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_path_constraint_data}{Path\+Constraint\+Data}} Spine.\+Path\+Constraint.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Path\+Constraint.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target; \} \textcolor{keyword}{set} \{ target = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_abd04bd2d3be132b4143af38db9cef7d2}\label{class_spine_1_1_path_constraint_abd04bd2d3be132b4143af38db9cef7d2}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Order@{Order}}
+\index{Order@{Order}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily int Spine.\+Path\+Constraint.\+Order\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Path\+Constraint.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data.order; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a569f512fde6b1162ae0e900f0317f5d3}\label{class_spine_1_1_path_constraint_a569f512fde6b1162ae0e900f0317f5d3}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Position@{Position}}
+\index{Position@{Position}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Path\+Constraint.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data.order; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_adffa8798feacf067b2580fc6de970ebd}\label{class_spine_1_1_path_constraint_adffa8798feacf067b2580fc6de970ebd}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!RotateMix@{RotateMix}}
+\index{RotateMix@{RotateMix}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{RotateMix}{RotateMix}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+Rotate\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Path\+Constraint.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_path_constraint_ae9e2191cf55072fb77110f264c5b9e3a}{spacing}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a0840f5ca6541fd71c041fe0af65aff09}\label{class_spine_1_1_path_constraint_a0840f5ca6541fd71c041fe0af65aff09}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Spacing@{Spacing}}
+\index{Spacing@{Spacing}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Spacing}{Spacing}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+Spacing\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Path\+Constraint.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} position; \} \textcolor{keyword}{set} \{ position = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_a74e9d43879bf9f6e4383f66ab6bedab0}\label{class_spine_1_1_path_constraint_a74e9d43879bf9f6e4383f66ab6bedab0}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!Target@{Target}}
+\index{Target@{Target}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Path\+Constraint.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Path\+Constraint.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_aa4936a31fa2adfd2fe182e4af91067e4}\label{class_spine_1_1_path_constraint_aa4936a31fa2adfd2fe182e4af91067e4}} 
+\index{Spine.PathConstraint@{Spine.PathConstraint}!TranslateMix@{TranslateMix}}
+\index{TranslateMix@{TranslateMix}!Spine.PathConstraint@{Spine.PathConstraint}}
+\doxysubsubsection{\texorpdfstring{TranslateMix}{TranslateMix}}
+{\footnotesize\ttfamily float Spine.\+Path\+Constraint.\+Translate\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Path\+Constraint.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_path_constraint_a3ef43b74ef72fd628af2a2442b933f29}{rotateMix}} = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_path_constraint_8cs}{Path\+Constraint.\+cs}}\end{DoxyCompactItemize}

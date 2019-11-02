@@ -1,0 +1,20 @@
+digraph "Spine.Unity.Editor.SpineInspectorUtility.LargeCenteredButton"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Editor.Spine\lInspectorUtility.LargeCentered\lButton",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Skeleton\lBakingWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window.html#a7e83d787166c9dc42cc9e9ced4f74ae3",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Modules.Skeleton\lRenderPartInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_part_inspector.html#a5f594fce0c91526913347d2bc63607df",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Editor.Bounding\lBoxFollowerInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_bounding_box_follower_inspector.html#a084af8dc275c9343a399bbd93ed98ff5",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a6f52ece3c7e4f67f2e25c41b40adba3f",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.Editor.Skeleton\lRendererCustomMaterialsInspector.\lOnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_custom_materials_inspector.html#a205184a20da561541bf81b32712276b2",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.Editor.Atlas\lAssetInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#af6ddd653797bc2c7455e585776e4fe53",tooltip=" "];
+}

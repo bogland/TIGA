@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Modules.AttachmentTools.SkinUtilities"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Attachment\lTools.SkinUtilities\n||+ UnshareSkin()\l+ GetClonedSkin()\l+ GetClone()\l+ SetAttachment()\l+ GetAttachment()\l+ SetAttachment()\l+ RemoveAttachment()\l+ RemoveAttachment()\l+ Clear()\l+ Append()\l+ CopyTo()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "Spine.Unity.Editor.SkeletonDataAssetInspector.DrawAnimationStateInfo"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector.DrawAnimation\lStateInfo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.SkeletonData\lAsset.FillStateData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a5d04a3d60b96aef178736fd6d10a8421",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.AnimationStateData.\lSetMix",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_animation_state_data.html#ac73823921fef29d2c9ccd75b6ab5b56f",tooltip="Sets a mix duration by animation names."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.Editor.Spine\lInspectorUtility.PropertyField\lWideLabel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#a505b0df7d29dc091616fb3e19b33f14e",tooltip=" "];
+}

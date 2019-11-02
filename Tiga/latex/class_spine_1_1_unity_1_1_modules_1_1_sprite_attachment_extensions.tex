@@ -1,0 +1,111 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions}{}\doxysection{Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions}\index{Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}}
+
+
+Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a91b125fd5e37cc6228171024fb5cfce3}{Attach\+Unity\+Sprite}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, string slot\+Name, Sprite sprite, string shader\+Name=\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{Sprite\+Attacher.\+Default\+P\+M\+A\+Shader}}, bool apply\+P\+MA=true, float rotation=0f)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a1803863b6fcfbb516d09aecb4d51fbd2}{Add\+Unity\+Sprite}} (this \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data, string slot\+Name, Sprite sprite, string skin\+Name=\char`\"{}\char`\"{}, string shader\+Name=\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{Sprite\+Attacher.\+Default\+P\+M\+A\+Shader}}, bool apply\+P\+MA=true, float rotation=0f)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a00a6a62a10c5cd398ac501738c9c4877}{Attach\+Unity\+Sprite}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, string slot\+Name, Sprite sprite, Shader shader, bool apply\+P\+MA, float rotation=0f)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_af569bff9d30d61cfdd8a0835bd95cd02}{Add\+Unity\+Sprite}} (this \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data, string slot\+Name, Sprite sprite, string skin\+Name, Shader shader, bool apply\+P\+MA, float rotation=0f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Sprite\+Attacher.\+cs 파일의 146 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_af569bff9d30d61cfdd8a0835bd95cd02}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_af569bff9d30d61cfdd8a0835bd95cd02}} 
+\index{Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}!AddUnitySprite@{AddUnitySprite}}
+\index{AddUnitySprite@{AddUnitySprite}!Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}}
+\doxysubsubsection{\texorpdfstring{AddUnitySprite()}{AddUnitySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions.\+Add\+Unity\+Sprite (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data,  }\item[{string}]{slot\+Name,  }\item[{Sprite}]{sprite,  }\item[{string}]{skin\+Name,  }\item[{Shader}]{shader,  }\item[{bool}]{apply\+P\+MA,  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 165 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166                                                                                                                                                                                            \{}
+\DoxyCodeLine{167             RegionAttachment att = applyPMA ? sprite.ToRegionAttachmentPMAClone(shader, rotation: rotation) : sprite.ToRegionAttachment(\textcolor{keyword}{new} Material(shader), rotation);}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169             var slotIndex = skeletonData.FindSlotIndex(slotName);}
+\DoxyCodeLine{170             Skin skin = skeletonData.DefaultSkin;}
+\DoxyCodeLine{171             \textcolor{keywordflow}{if} (skinName != \textcolor{stringliteral}{""})}
+\DoxyCodeLine{172                 skin = skeletonData.FindSkin(skinName);}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             skin.AddAttachment(slotIndex, att.Name, att);}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176             \textcolor{keywordflow}{return} att;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a1803863b6fcfbb516d09aecb4d51fbd2}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a1803863b6fcfbb516d09aecb4d51fbd2}} 
+\index{Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}!AddUnitySprite@{AddUnitySprite}}
+\index{AddUnitySprite@{AddUnitySprite}!Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}}
+\doxysubsubsection{\texorpdfstring{AddUnitySprite()}{AddUnitySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions.\+Add\+Unity\+Sprite (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data,  }\item[{string}]{slot\+Name,  }\item[{Sprite}]{sprite,  }\item[{string}]{skin\+Name = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{shader\+Name = {\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{Sprite\+Attacher.\+Default\+P\+M\+A\+Shader}}},  }\item[{bool}]{apply\+P\+MA = {\ttfamily true},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{154                                                                                                                                                                                                                                              \{}
+\DoxyCodeLine{155             \textcolor{keywordflow}{return} skeletonData.AddUnitySprite(slotName, sprite, skinName, Shader.Find(shaderName), applyPMA, rotation: rotation);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a00a6a62a10c5cd398ac501738c9c4877}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a00a6a62a10c5cd398ac501738c9c4877}} 
+\index{Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}!AttachUnitySprite@{AttachUnitySprite}}
+\index{AttachUnitySprite@{AttachUnitySprite}!Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}}
+\doxysubsubsection{\texorpdfstring{AttachUnitySprite()}{AttachUnitySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions.\+Attach\+Unity\+Sprite (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{string}]{slot\+Name,  }\item[{Sprite}]{sprite,  }\item[{Shader}]{shader,  }\item[{bool}]{apply\+P\+MA,  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 158 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159                                                                                                                                                                      \{}
+\DoxyCodeLine{160             RegionAttachment att = applyPMA ? sprite.ToRegionAttachmentPMAClone(shader, rotation: rotation) : sprite.ToRegionAttachment(\textcolor{keyword}{new} Material(shader), rotation: rotation);}
+\DoxyCodeLine{161             skeleton.FindSlot(slotName).Attachment = att;}
+\DoxyCodeLine{162             \textcolor{keywordflow}{return} att;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a91b125fd5e37cc6228171024fb5cfce3}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions_a91b125fd5e37cc6228171024fb5cfce3}} 
+\index{Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}!AttachUnitySprite@{AttachUnitySprite}}
+\index{AttachUnitySprite@{AttachUnitySprite}!Spine.Unity.Modules.SpriteAttachmentExtensions@{Spine.Unity.Modules.SpriteAttachmentExtensions}}
+\doxysubsubsection{\texorpdfstring{AttachUnitySprite()}{AttachUnitySprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Sprite\+Attachment\+Extensions.\+Attach\+Unity\+Sprite (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{string}]{slot\+Name,  }\item[{Sprite}]{sprite,  }\item[{string}]{shader\+Name = {\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{Sprite\+Attacher.\+Default\+P\+M\+A\+Shader}}},  }\item[{bool}]{apply\+P\+MA = {\ttfamily true},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 148 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149                                                                                                                                                                                                                   \{}
+\DoxyCodeLine{150             \textcolor{keywordflow}{return} skeleton.AttachUnitySprite(slotName, sprite, Shader.Find(shaderName), applyPMA, rotation: rotation);}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\+Legacy/\mbox{\hyperlink{_sprite_attacher_8cs}{Sprite\+Attacher.\+cs}}\end{DoxyCompactItemize}

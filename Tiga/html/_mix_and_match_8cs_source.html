@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/MixAndMatch.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_mix_and_match_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">MixAndMatch.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mix_and_match_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules.html">Modules</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">AttachmentTools</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html">   37</a></span>&#160;    <span class="comment">// This is an example script that shows you how to change images on your skeleton using UnityEngine.Sprites.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html">MixAndMatch</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">        #region Inspector</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4cafa860250c023e8860da0fb17e29e9">   41</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_skin.html">SpineSkin</a>]</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">   42</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4cafa860250c023e8860da0fb17e29e9">templateAttachmentsSkin</a> = <span class="stringliteral">&quot;base&quot;</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">public</span> Material <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a>; <span class="comment">// This will be used as the basis for shader and material property settings.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a775d32ce8bf45a40f3496dbec74ed2ae">   45</a></span>&#160;        [Header(<span class="stringliteral">&quot;Visor&quot;</span>)]</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#aa041ffe572601184a4a6da5c15afbe7e">   46</a></span>&#160;        <span class="keyword">public</span> Sprite <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a775d32ce8bf45a40f3496dbec74ed2ae">visorSprite</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a982db0dffca26caf5ea7dc43cb095b6e">   47</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_slot.html">SpineSlot</a>] <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#aa041ffe572601184a4a6da5c15afbe7e">visorSlot</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_attachment.html">SpineAttachment</a>(slotField:<span class="stringliteral">&quot;visorSlot&quot;</span>, skinField:<span class="stringliteral">&quot;baseSkinName&quot;</span>)] <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a982db0dffca26caf5ea7dc43cb095b6e">visorKey</a> = <span class="stringliteral">&quot;goggles&quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a418414ca81206ae20ced26e9cf54417b">   50</a></span>&#160;        [Header(<span class="stringliteral">&quot;Gun&quot;</span>)]</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ad80a825d0e64cb159c0454828f8282b2">   51</a></span>&#160;        <span class="keyword">public</span> Sprite <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a418414ca81206ae20ced26e9cf54417b">gunSprite</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#acae1d43a88694dcc16dcf15f01eca47e">   52</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_slot.html">SpineSlot</a>] <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ad80a825d0e64cb159c0454828f8282b2">gunSlot</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_attachment.html">SpineAttachment</a>(slotField:<span class="stringliteral">&quot;gunSlot&quot;</span>, skinField:<span class="stringliteral">&quot;baseSkinName&quot;</span>)] <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#acae1d43a88694dcc16dcf15f01eca47e">gunKey</a> = <span class="stringliteral">&quot;gun&quot;</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ae5429b68c4ee00aa1c5945bfe8fe3cbd">   55</a></span>&#160;        [Header(<span class="stringliteral">&quot;Runtime Repack&quot;</span>)]</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4075a6d86d52c62c58405ac16fd71a00">   56</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ae5429b68c4ee00aa1c5945bfe8fe3cbd">repack</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html">BoundingBoxFollower</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4075a6d86d52c62c58405ac16fd71a00">bbFollower</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afaf5ec7e1bebced818ebc5c46352686e">   59</a></span>&#160;        [Header(<span class="stringliteral">&quot;Do not assign&quot;</span>)]</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#abe131ba3a8f4b86dc4d66ed01fcb22fb">   60</a></span>&#160;        <span class="keyword">public</span> Texture2D <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afaf5ec7e1bebced818ebc5c46352686e">runtimeAtlas</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">public</span> Material <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#abe131ba3a8f4b86dc4d66ed01fcb22fb">runtimeMaterial</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">   63</a></span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_spine_1_1_skin.html">Skin</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a6c4aeb59396833b31c0f2711b3f1acff">   65</a></span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a6c4aeb59396833b31c0f2711b3f1acff">OnValidate</a> () {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                var skeletonAnimation = GetComponent&lt;SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span> (skeletonAnimation != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a> = skeletonAnimation.SkeletonDataAsset.atlasAssets[0].materials[0];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ac5322399bdf016267600f1b6a0a0ed06">   73</a></span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        IEnumerator <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ac5322399bdf016267600f1b6a0a0ed06">Start</a> () {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(1f); <span class="comment">// Delay for one second before applying. For testing.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a0f76eedb176ad77e150dc08562468dc4">Apply</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a0f76eedb176ad77e150dc08562468dc4">   78</a></span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a0f76eedb176ad77e150dc08562468dc4">Apply</a> () {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            var skeletonAnimation = GetComponent&lt;SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            var skeleton = skeletonAnimation.Skeleton;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment">// STEP 0: PREPARE SKINS</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// Let&#39;s prepare a new skin to be our custom skin with equips/customizations. We get a clone so our original skins are unaffected.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a> ?? <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin.html">Skin</a>(<span class="stringliteral">&quot;custom skin&quot;</span>); <span class="comment">// This requires that all customizations are done with skin placeholders defined in Spine.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="comment">//customSkin = customSkin ?? skeleton.UnshareSkin(true, false, skeletonAnimation.AnimationState); // use this if you are not customizing on the default skin.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            var templateSkin = skeleton.Data.FindSkin(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4cafa860250c023e8860da0fb17e29e9">templateAttachmentsSkin</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="comment">// STEP 1: &quot;EQUIP&quot; ITEMS USING SPRITES</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="comment">// STEP 1.1 Find the original/template attachment.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">// Step 1.2 Get a clone of the original/template attachment.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="comment">// Step 1.3 Apply the Sprite image to the clone.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// Step 1.4 Add the remapped clone to the new custom skin.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="comment">// Let&#39;s do this for the visor.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordtype">int</span> visorSlotIndex = skeleton.FindSlotIndex(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#aa041ffe572601184a4a6da5c15afbe7e">visorSlot</a>); <span class="comment">// You can access GetAttachment and SetAttachment via string, but caching the slotIndex is faster.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> templateAttachment = templateSkin.GetAttachment(visorSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a982db0dffca26caf5ea7dc43cb095b6e">visorKey</a>);  <span class="comment">// STEP 1.1</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> newAttachment = templateAttachment.GetRemappedClone(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a775d32ce8bf45a40f3496dbec74ed2ae">visorSprite</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a>); <span class="comment">// STEP 1.2 - 1.3</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a>.SetAttachment(visorSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a982db0dffca26caf5ea7dc43cb095b6e">visorKey</a>, newAttachment); <span class="comment">// STEP 1.4</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="comment">// And now for the gun.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordtype">int</span> gunSlotIndex = skeleton.FindSlotIndex(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ad80a825d0e64cb159c0454828f8282b2">gunSlot</a>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> templateGun = templateSkin.GetAttachment(gunSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#acae1d43a88694dcc16dcf15f01eca47e">gunKey</a>); <span class="comment">// STEP 1.1</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> newGun = templateGun.GetRemappedClone(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a418414ca81206ae20ced26e9cf54417b">gunSprite</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a>); <span class="comment">// STEP 1.2 - 1.3</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span> (newGun != <span class="keyword">null</span>) <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a>.SetAttachment(gunSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#acae1d43a88694dcc16dcf15f01eca47e">gunKey</a>, newGun); <span class="comment">// STEP 1.4</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">// customSkin.RemoveAttachment(gunSlotIndex, gunKey); // To remove an item.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="comment">// customSkin.Clear()</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="comment">// Use skin.Clear() To remove all customizations.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="comment">// Customizations will fall back to the value in the default skin if it was defined there.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="comment">// To prevent fallback from happening, make sure the key is not defined in the default skin.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="comment">// STEP 3: APPLY AND CLEAN UP.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="comment">// Recommended: REPACK THE CUSTOM SKIN TO MINIMIZE DRAW CALLS</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="comment">//              Repacking requires that you set all source textures/sprites/atlases to be Read/Write enabled in the inspector.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="comment">//              Combine all the attachment sources into one skin. Usually this means the default skin and the custom skin.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="comment">//              call Skin.GetRepackedSkin to get a cloned skin with cloned attachments that all use one texture.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">//              Under the hood, this relies on </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ae5429b68c4ee00aa1c5945bfe8fe3cbd">repack</a>) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                var repackedSkin = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin.html">Skin</a>(<span class="stringliteral">&quot;repacked skin&quot;</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                repackedSkin.Append(skeleton.Data.DefaultSkin); <span class="comment">// Include the &quot;default&quot; skin. (everything outside of skin placeholders)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                repackedSkin.Append(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a>); <span class="comment">// Include your new custom skin.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                repackedSkin = repackedSkin.GetRepackedSkin(<span class="stringliteral">&quot;repacked skin&quot;</span>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">sourceMaterial</a>, out <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#abe131ba3a8f4b86dc4d66ed01fcb22fb">runtimeMaterial</a>, out <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afaf5ec7e1bebced818ebc5c46352686e">runtimeAtlas</a>); <span class="comment">// Pack all the items in the skin.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                skeleton.SetSkin(repackedSkin); <span class="comment">// Assign the repacked skin to your Skeleton.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4075a6d86d52c62c58405ac16fd71a00">bbFollower</a> != <span class="keyword">null</span>) <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4075a6d86d52c62c58405ac16fd71a00">bbFollower</a>.<a class="code" href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Initialize</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                skeleton.SetSkin(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">customSkin</a>); <span class="comment">// Just use the custom skin directly.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            skeleton.SetSlotsToSetupPose(); <span class="comment">// Use the pose from setup pose.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            skeletonAnimation.Update(0); <span class="comment">// Use the pose in the currently active animation.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            Resources.UnloadUnusedAssets();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_ac5322399bdf016267600f1b6a0a0ed06"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ac5322399bdf016267600f1b6a0a0ed06">Spine.Unity.Examples.MixAndMatch.Start</a></div><div class="ttdeci">IEnumerator Start()</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00073">MixAndMatch.cs:73</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a418414ca81206ae20ced26e9cf54417b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a418414ca81206ae20ced26e9cf54417b">Spine.Unity.Examples.MixAndMatch.gunSprite</a></div><div class="ttdeci">Sprite gunSprite</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00050">MixAndMatch.cs:50</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">Spine.Unity.Modules.AttachmentTools</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_afaf5ec7e1bebced818ebc5c46352686e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afaf5ec7e1bebced818ebc5c46352686e">Spine.Unity.Examples.MixAndMatch.runtimeAtlas</a></div><div class="ttdeci">Texture2D runtimeAtlas</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00059">MixAndMatch.cs:59</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a4cafa860250c023e8860da0fb17e29e9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4cafa860250c023e8860da0fb17e29e9">Spine.Unity.Examples.MixAndMatch.templateAttachmentsSkin</a></div><div class="ttdeci">string templateAttachmentsSkin</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00041">MixAndMatch.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a775d32ce8bf45a40f3496dbec74ed2ae"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a775d32ce8bf45a40f3496dbec74ed2ae">Spine.Unity.Examples.MixAndMatch.visorSprite</a></div><div class="ttdeci">Sprite visorSprite</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00045">MixAndMatch.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_afee178ce2d3fb35ef03a4c3d60b4f84c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#afee178ce2d3fb35ef03a4c3d60b4f84c">Spine.Unity.Examples.MixAndMatch.sourceMaterial</a></div><div class="ttdeci">Material sourceMaterial</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00042">MixAndMatch.cs:42</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a6c4aeb59396833b31c0f2711b3f1acff"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a6c4aeb59396833b31c0f2711b3f1acff">Spine.Unity.Examples.MixAndMatch.OnValidate</a></div><div class="ttdeci">void OnValidate()</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00065">MixAndMatch.cs:65</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a982db0dffca26caf5ea7dc43cb095b6e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a982db0dffca26caf5ea7dc43cb095b6e">Spine.Unity.Examples.MixAndMatch.visorKey</a></div><div class="ttdeci">string visorKey</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00047">MixAndMatch.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_abe131ba3a8f4b86dc4d66ed01fcb22fb"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#abe131ba3a8f4b86dc4d66ed01fcb22fb">Spine.Unity.Examples.MixAndMatch.runtimeMaterial</a></div><div class="ttdeci">Material runtimeMaterial</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00060">MixAndMatch.cs:60</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a0f76eedb176ad77e150dc08562468dc4"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a0f76eedb176ad77e150dc08562468dc4">Spine.Unity.Examples.MixAndMatch.Apply</a></div><div class="ttdeci">void Apply()</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00078">MixAndMatch.cs:78</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a450853276d63d875c3e3d42b45d00ca8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a450853276d63d875c3e3d42b45d00ca8">Spine.Unity.Examples.MixAndMatch.customSkin</a></div><div class="ttdeci">Skin customSkin</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00063">MixAndMatch.cs:63</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_slot_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_slot.html">Spine.Unity.SpineSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00046">SpineAttributes.cs:46</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_skin_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_skin.html">Spine.Unity.SpineSkin</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00144">SpineAttributes.cs:144</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_acae1d43a88694dcc16dcf15f01eca47e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#acae1d43a88694dcc16dcf15f01eca47e">Spine.Unity.Examples.MixAndMatch.gunKey</a></div><div class="ttdeci">string gunKey</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00052">MixAndMatch.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html">Spine.Unity.Examples.MixAndMatch</a></div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00037">MixAndMatch.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_ad80a825d0e64cb159c0454828f8282b2"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ad80a825d0e64cb159c0454828f8282b2">Spine.Unity.Examples.MixAndMatch.gunSlot</a></div><div class="ttdeci">string gunSlot</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00051">MixAndMatch.cs:51</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_a4075a6d86d52c62c58405ac16fd71a00"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#a4075a6d86d52c62c58405ac16fd71a00">Spine.Unity.Examples.MixAndMatch.bbFollower</a></div><div class="ttdeci">BoundingBoxFollower bbFollower</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00056">MixAndMatch.cs:56</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_ae5429b68c4ee00aa1c5945bfe8fe3cbd"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#ae5429b68c4ee00aa1c5945bfe8fe3cbd">Spine.Unity.Examples.MixAndMatch.repack</a></div><div class="ttdeci">bool repack</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00055">MixAndMatch.cs:55</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules.html">Spine.Unity.Modules</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_mix_and_match_html_aa041ffe572601184a4a6da5c15afbe7e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_mix_and_match.html#aa041ffe572601184a4a6da5c15afbe7e">Spine.Unity.Examples.MixAndMatch.visorSlot</a></div><div class="ttdeci">string visorSlot</div><div class="ttdef"><b>Definition:</b> <a href="_mix_and_match_8cs_source.html#l00046">MixAndMatch.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html_a6ba3bb70a58ca9977e1d0dfb512286fb"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb">Spine.Unity.BoundingBoxFollower.Initialize</a></div><div class="ttdeci">void Initialize(bool overwrite=false)</div><div class="ttdoc">Initialize and instantiate the BoundingBoxFollower colliders. This is method checks if the BoundingBo...</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00081">BoundingBoxFollower.cs:81</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_attachment_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_attachment.html">Spine.Unity.SpineAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00181">SpineAttributes.cs:181</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_bounding_box_follower_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_bounding_box_follower.html">Spine.Unity.BoundingBoxFollower</a></div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_follower_8cs_source.html#l00036">BoundingBoxFollower.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="_mix_and_match_8cs.html">MixAndMatch.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

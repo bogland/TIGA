@@ -1,0 +1,24 @@
+digraph "SpineSpriteShaderGUI.SetBlendMode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SpineSpriteShaderGUI.Set\lBlendMode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpineSpriteShaderGUI.Render\lModes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a99deda42205ebd0acbe7a4f42ca3acf4",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpineSpriteShaderGUI.Shader\lPropertiesGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a1088235c84c163a78b1f71fd3327e179",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpineSpriteShaderGUI.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a998a43129f59c07e3924f5334311331d",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpineSpriteShaderGUI.Set\lDefaultSpriteKeywords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a530b726bcb7f7b65f4f1a8a4b84971b8",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SpineSpriteShaderGUI.Assign\lNewShaderToMaterial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#ada3e0513f18e6f4bdc1d30f1f6575409",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SpineSpriteShaderGUI.Set\lMaterialKeywords",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#aa6a2258be20d2d5f250955067280db1f",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SpineSpriteShaderGUI.Material\lChanged",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a462da0f64fc27d12de7734539605045c",tooltip=" "];
+  Node8 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

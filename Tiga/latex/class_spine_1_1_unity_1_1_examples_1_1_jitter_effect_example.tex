@@ -1,0 +1,145 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example}\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+
+
+Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_aa06208af87bf39d42403ccb502b131d0}{jitter\+Magnitude}} = 0.\+2f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_ac940d5fca67d2dc276bb941145602d5e}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}{Process\+Vertices}} (\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_buffers}{Mesh\+Generator\+Buffers}} buffers)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a8d8858e482f320bc35f6adb2db93b743}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeleton\+Renderer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Jitter\+Effect\+Example.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a8d8858e482f320bc35f6adb2db93b743}\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a8d8858e482f320bc35f6adb2db93b743}} 
+\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Jitter\+Effect\+Example.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                           \{}
+\DoxyCodeLine{78             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{79             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a96da7e8b0403d155291f70f360165b19}{OnPostProcessVertices}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}{ProcessVertices}};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             Debug.Log(\textcolor{stringliteral}{"Jitter Effect Disabled."});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_ac940d5fca67d2dc276bb941145602d5e}\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_ac940d5fca67d2dc276bb941145602d5e}} 
+\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Jitter\+Effect\+Example.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                          \{}
+\DoxyCodeLine{49             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}} = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52             \textcolor{comment}{// Use the OnPostProcessVertices callback to modify the vertices at the correct time.}}
+\DoxyCodeLine{53             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a96da7e8b0403d155291f70f360165b19}{OnPostProcessVertices}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}{ProcessVertices}};}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a96da7e8b0403d155291f70f360165b19}{OnPostProcessVertices}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}{ProcessVertices}};}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56             Debug.Log(\textcolor{stringliteral}{"Jitter Effect Enabled."});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_a065a4b14ef546af5442246c7cacb50df}} 
+\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}!ProcessVertices@{ProcessVertices}}
+\index{ProcessVertices@{ProcessVertices}!Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+\doxysubsubsection{\texorpdfstring{ProcessVertices()}{ProcessVertices()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example.\+Process\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_buffers}{Mesh\+Generator\+Buffers}}}]{buffers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Jitter\+Effect\+Example.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                                             \{}
+\DoxyCodeLine{60             \textcolor{keywordflow}{if} (!this.enabled) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62             \textcolor{comment}{// For efficiency, limit your effect to the actual mesh vertex count using vertexCount}}
+\DoxyCodeLine{63             \textcolor{keywordtype}{int} vertexCount = buffers.vertexCount;}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65             \textcolor{comment}{// Modify vertex positions by accessing Vector3[] vertexBuffer}}
+\DoxyCodeLine{66             var vertices = buffers.vertexBuffer;}
+\DoxyCodeLine{67             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vertexCount; i++)}
+\DoxyCodeLine{68                 vertices[i] += (Vector3)(Random.insideUnitCircle * \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_aa06208af87bf39d42403ccb502b131d0}{jitterMagnitude}});}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70             \textcolor{comment}{// You can also modify uvs and colors.}}
+\DoxyCodeLine{71             \textcolor{comment}{//var uvs = buffers.uvBuffer;}}
+\DoxyCodeLine{72             \textcolor{comment}{//var colors = buffers.colorBuffer;}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74             \textcolor{comment}{// }}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_aa06208af87bf39d42403ccb502b131d0}\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_aa06208af87bf39d42403ccb502b131d0}} 
+\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}!jitterMagnitude@{jitterMagnitude}}
+\index{jitterMagnitude@{jitterMagnitude}!Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+\doxysubsubsection{\texorpdfstring{jitterMagnitude}{jitterMagnitude}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example.\+jitter\+Magnitude = 0.\+2f}
+
+
+
+Jitter\+Effect\+Example.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}\label{class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example_af5fc833cec5f270c7cb6065ad6031085}} 
+\index{Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.Examples.JitterEffectExample@{Spine.Unity.Examples.JitterEffectExample}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Examples.\+Jitter\+Effect\+Example.\+skeleton\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Jitter\+Effect\+Example.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\+Sample Vertex\+Effects/\mbox{\hyperlink{_jitter_effect_example_8cs}{Jitter\+Effect\+Example.\+cs}}\end{DoxyCompactItemize}

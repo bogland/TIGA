@@ -1,0 +1,33 @@
+digraph "Spine.PathConstraint.Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.PathConstraint.Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.MathUtils.Atan2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3e98f9d30d651fcde8320c2bdaa41f74",tooltip="Returns atan2 in radians, faster but less accurate than Math.Atan2. Average error of 0...."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.PathConstraint.Compute\lWorldPositions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a0a486ebfb77dc0339a9cd45bd12ad9d2",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.PathConstraint.Add\lAfterPosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a09ff5cb5acc91c834109513418e61943",tooltip=" "];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.MathUtils.Cos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a5a54380abac57117f618e55d51c8ffd3",tooltip="Returns the cosine in radians from a lookup table."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.MathUtils.Sin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a28ddf17f11f78969b5dc2d7588071d7b",tooltip="Returns the sine in radians from a lookup table."];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.PathConstraint.Add\lBeforePosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a3086313512cfee8dc03c0ed0b1c48fda",tooltip=" "];
+  Node7 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.PathConstraint.Add\lCurvePosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#afd74a4dbaf77c432e3b33838f1019f91",tooltip=" "];
+  Node3 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.VertexAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced",tooltip=" "];
+  Node3 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Spine.ExposedList.Resize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#a0c2a380505e78617e824331c75f06fc7",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

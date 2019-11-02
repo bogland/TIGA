@@ -1,0 +1,1003 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities}{}\doxysection{Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities}\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+
+
+Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a033c529f5f3aebf87bb46de91407bdc1}{To\+Atlas\+Region}} (this Texture2D t, Material material\+Property\+Source, float scale=Default\+Scale)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a23939cba718995dec07d0241104b3187}{To\+Atlas\+Region}} (this Texture2D t, Shader shader, float scale=Default\+Scale, Material material\+Property\+Source=null)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9cfdf6f1a7371944544414243659495b}{To\+Atlas\+Region\+P\+M\+A\+Clone}} (this Texture2D t, Material material\+Property\+Source, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9826ba2f4f886e34cb3f497fae1a0756}{To\+Atlas\+Region\+P\+M\+A\+Clone}} (this Texture2D t, Shader shader, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps, Material material\+Property\+Source=null)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a216697494e334d55e5221551dbdfe0e1}{To\+Spine\+Atlas\+Page}} (this Material m)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Spine.\+Atlas\+Page}} from a Unity\+Engine.\+Material. If the material has a preassigned texture, the page width and height will be set. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aa8a3e94c910ded24665e6b4be2087ef4}{To\+Atlas\+Region}} (this Sprite s, \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} page)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} from a Unity\+Engine.\+Sprite. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a2247bf10eab77362ad25babf01aaa183}{To\+Atlas\+Region}} (this Sprite s, Material material)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} from a Unity\+Engine.\+Sprite. This creates a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} object for every \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} you create. You can centralize Material control by creating a shared atlas page using Material.\+To\+Spine\+Atlas\+Page and using the sprite.\+To\+Atlas\+Region(\+Atlas\+Page) overload. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9b3bbd7f79d3f3005fb9be29422c3de9}{To\+Atlas\+Region\+P\+M\+A\+Clone}} (this Sprite s, Shader shader, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps, Material material\+Property\+Source=null)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_adc6fa944dc3c4609356bc67affe7e593}{To\+Atlas\+Region\+P\+M\+A\+Clone}} (this Sprite s, Material material\+Property\+Source, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5152d787bce6931649a4588e5cd90858}{Get\+Repacked\+Attachments}} (List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ source\+Attachments, List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$ output\+Attachments, Material material\+Property\+Source, out Material output\+Material, out Texture2D output\+Texture, int max\+Atlas\+Size=1024, int padding=2, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps, string new\+Asset\+Name=\char`\"{}Repacked Attachments\char`\"{}, bool clear\+Cache=false, bool use\+Original\+Nonrenderables=true)
+\begin{DoxyCompactList}\small\item\em Fills the output\+Attachments list with new attachment objects based on the attachments in source\+Attachments, but mapped to a new single texture using the same material. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aefdc903e3dc5148769ff13bbcd544745}{Get\+Repacked\+Skin}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} o, string new\+Name, Material material\+Property\+Source, out Material output\+Material, out Texture2D output\+Texture, int max\+Atlas\+Size=1024, int padding=2, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps, bool use\+Original\+Nonrenderables=true)
+\begin{DoxyCompactList}\small\item\em Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas comprised of all the regions from the original skin. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8f58ec85872b0d3da02750572b2d1fba}{Get\+Repacked\+Skin}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} o, string new\+Name, Shader shader, out Material output\+Material, out Texture2D output\+Texture, int max\+Atlas\+Size=1024, int padding=2, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps, Material material\+Property\+Source=null, bool clear\+Cache=false, bool use\+Original\+Nonrenderables=true)
+\begin{DoxyCompactList}\small\item\em Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas comprised of all the regions from the original skin. \end{DoxyCompactList}\item 
+static Sprite \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a39f8f0475c361dccfe250fd2922cf72a}{To\+Sprite}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} ar, float pixels\+Per\+Unit=100)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af41c7b5b05e12fb154b4c07a3f4137b3}{Clear\+Cache}} ()
+\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8d88438109b98b0364856876100bf2ae}{To\+Texture}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} ar, bool apply\+Immediately=true, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps)
+\begin{DoxyCompactList}\small\item\em Creates a new Texture2D object based on an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. If apply\+Immediately is true, Texture2\+D.\+Apply is called immediately after the Texture2D is filled with data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af0bc8f979f32ce66cc71a338b2aba117}{To\+Texture}} (this Sprite s, bool apply\+Immediately=true, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps)
+\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a0b1d04a22231501f58c3e22f6d3f1782}{Get\+Clone}} (this Texture2D t, bool apply\+Immediately=true, Texture\+Format texture\+Format=Spine\+Texture\+Format, bool mipmaps=Use\+Mip\+Maps)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}{Is\+Renderable}} (\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} a)
+\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a6ac8df1aca2ed833eed7fb1b4a23e104}{Spine\+Unity\+Flip\+Rect}} (this Rect rect, int texture\+Height)
+\begin{DoxyCompactList}\small\item\em Get a rect with flipped Y so that a \mbox{\hyperlink{namespace_spine}{Spine}} atlas rect gets converted to a \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Sprite rect and vice versa. \end{DoxyCompactList}\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aff3d7165524ad2b9b4f23af77bfce547}{Get\+Unity\+Rect}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region)
+\begin{DoxyCompactList}\small\item\em Gets the Rect of an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} texture coordinates (x-\/right, y-\/up). This overload relies on region.\+page.\+height being correctly set. \end{DoxyCompactList}\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ae0ad0e415e302d225e776545be2df177}{Get\+Unity\+Rect}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, int texture\+Height)
+\begin{DoxyCompactList}\small\item\em Gets the Rect of an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} texture coordinates (x-\/right, y-\/up). \end{DoxyCompactList}\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ab0d77746fd6a1b639d501d620963c039}{Get\+Spine\+Atlas\+Rect}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool include\+Rotate=true)
+\begin{DoxyCompactList}\small\item\em Returns a Rect of the \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine}{Spine}} texture coordinates. (x-\/right, y-\/down) \end{DoxyCompactList}\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5f71f971c2ae2a6c9d2d33cd7c984b5f}{U\+V\+Rect\+To\+Texture\+Rect}} (Rect uv\+Rect, int tex\+Width, int tex\+Height)
+\begin{DoxyCompactList}\small\item\em Denormalize a uv\+Rect into a texture-\/space Rect. \end{DoxyCompactList}\item 
+static Rect \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a799c0b6bb994b551b5d96e4482e2caa7}{Texture\+Rect\+To\+U\+V\+Rect}} (Rect texture\+Rect, int tex\+Width, int tex\+Height)
+\begin{DoxyCompactList}\small\item\em Normalize a texture Rect into UV coordinates. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda056312c0db1246c0fcc99a5642b35}{U\+V\+Rect\+To\+Atlas\+Region}} (Rect uv\+Rect, string name, \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} page, float offsetX, float offsetY, bool rotate)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{namespace_spine}{Spine}} \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to a \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} UV Rect (x-\/right, y-\/up, uv-\/normalized). \end{DoxyCompactList}\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a492d7d987767fb78703f97ed97bc76d3}{Get\+Main\+Texture}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region)
+\begin{DoxyCompactList}\small\item\em Convenience method for getting the main texture of the material of the page of the region. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a17501a10c77734faae01b557f5837640}{Apply\+P\+MA}} (this Texture2D texture, bool apply\+Immediately=true)
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a88035dd9603935d5e5335073a99284ce}{Inverse\+Lerp}} (float a, float b, float value)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a541939bada29954f4db0698e67be978a}{Nonrendering\+Region}} = -\/1
+\item 
+static Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}, Texture2D $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}{Cached\+Region\+Textures}} = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}, Texture2D$>$()
+\item 
+static List$<$ Texture2D $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}{Cached\+Region\+Textures\+List}} = new List$<$Texture2D$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Attachment\+Tools.\+cs 파일의 207 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a17501a10c77734faae01b557f5837640}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a17501a10c77734faae01b557f5837640}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ApplyPMA@{ApplyPMA}}
+\index{ApplyPMA@{ApplyPMA}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ApplyPMA()}{ApplyPMA()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Apply\+P\+MA (\begin{DoxyParamCaption}\item[{this Texture2D}]{texture,  }\item[{bool}]{apply\+Immediately = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 735 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{736                                                                                     \{}
+\DoxyCodeLine{737             var pixels = texture.GetPixels();}
+\DoxyCodeLine{738             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pixels.Length; i < n; i++) \{}
+\DoxyCodeLine{739                 Color p = pixels[i];}
+\DoxyCodeLine{740                 \textcolor{keywordtype}{float} a = p.a;}
+\DoxyCodeLine{741                 p.r = p.r * a;}
+\DoxyCodeLine{742                 p.g = p.g * a;}
+\DoxyCodeLine{743                 p.b = p.b * a;}
+\DoxyCodeLine{744                 pixels[i] = p;}
+\DoxyCodeLine{745             \}}
+\DoxyCodeLine{746             texture.SetPixels(pixels);}
+\DoxyCodeLine{747             \textcolor{keywordflow}{if} (applyImmediately)}
+\DoxyCodeLine{748                 texture.Apply();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af41c7b5b05e12fb154b4c07a3f4137b3}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af41c7b5b05e12fb154b4c07a3f4137b3}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ClearCache@{ClearCache}}
+\index{ClearCache@{ClearCache}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ClearCache()}{ClearCache()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Clear\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 578 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{579                                          \{}
+\DoxyCodeLine{580             \textcolor{keywordflow}{foreach} (var t \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}{CachedRegionTexturesList}}) \{}
+\DoxyCodeLine{581                 UnityEngine.Object.Destroy(t);}
+\DoxyCodeLine{582             \}}
+\DoxyCodeLine{583             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}{CachedRegionTextures}}.Clear();}
+\DoxyCodeLine{584             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}{CachedRegionTexturesList}}.Clear();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a0b1d04a22231501f58c3e22f6d3f1782}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a0b1d04a22231501f58c3e22f6d3f1782}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}}
+{\footnotesize\ttfamily static Texture2D Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this Texture2D}]{t,  }\item[{bool}]{apply\+Immediately = {\ttfamily true},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 624 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{625                                                                                                                                                                 \{}
+\DoxyCodeLine{626             var spritePixels = t.GetPixels(0, 0, (\textcolor{keywordtype}{int})t.width, (\textcolor{keywordtype}{int})t.height);}
+\DoxyCodeLine{627             var newTexture = \textcolor{keyword}{new} Texture2D((\textcolor{keywordtype}{int})t.width, (\textcolor{keywordtype}{int})t.height, textureFormat, mipmaps);}
+\DoxyCodeLine{628             newTexture.SetPixels(spritePixels);}
+\DoxyCodeLine{629 }
+\DoxyCodeLine{630             \textcolor{keywordflow}{if} (applyImmediately)}
+\DoxyCodeLine{631                 newTexture.Apply();}
+\DoxyCodeLine{632 }
+\DoxyCodeLine{633             \textcolor{keywordflow}{return} newTexture;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a492d7d987767fb78703f97ed97bc76d3}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a492d7d987767fb78703f97ed97bc76d3}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetMainTexture@{GetMainTexture}}
+\index{GetMainTexture@{GetMainTexture}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetMainTexture()}{GetMainTexture()}}
+{\footnotesize\ttfamily static Texture2D Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Main\+Texture (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Convenience method for getting the main texture of the material of the page of the region. 
+
+
+
+Attachment\+Tools.\+cs 파일의 730 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{731                                                                   \{}
+\DoxyCodeLine{732             var material = (region.page.rendererObject as Material);}
+\DoxyCodeLine{733             \textcolor{keywordflow}{return} material.mainTexture as Texture2D;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5152d787bce6931649a4588e5cd90858}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5152d787bce6931649a4588e5cd90858}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetRepackedAttachments@{GetRepackedAttachments}}
+\index{GetRepackedAttachments@{GetRepackedAttachments}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetRepackedAttachments()}{GetRepackedAttachments()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Repacked\+Attachments (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$}]{source\+Attachments,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} $>$}]{output\+Attachments,  }\item[{Material}]{material\+Property\+Source,  }\item[{out Material}]{output\+Material,  }\item[{out Texture2D}]{output\+Texture,  }\item[{int}]{max\+Atlas\+Size = {\ttfamily 1024},  }\item[{int}]{padding = {\ttfamily 2},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps},  }\item[{string}]{new\+Asset\+Name = {\ttfamily \char`\"{}Repacked~Attachments\char`\"{}},  }\item[{bool}]{clear\+Cache = {\ttfamily false},  }\item[{bool}]{use\+Original\+Nonrenderables = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills the output\+Attachments list with new attachment objects based on the attachments in source\+Attachments, but mapped to a new single texture using the same material. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em source\+Attachments} & The list of attachments to be repacked.\\
+\hline
+{\em output\+Attachments} & The List(\+Attachment) to populate with the newly created \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} objects.\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{매개변수}
+{\em material\+Property\+Source} & May be null. If no Material property source is provided, no special \\
+\hline
+\end{DoxyParams}
+
+
+Attachment\+Tools.\+cs 파일의 399 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{400                                                                                                                                                                                                                                                                                                                                                                                                                                                            \{}
+\DoxyCodeLine{401             \textcolor{keywordflow}{if} (sourceAttachments == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"sourceAttachments"});}
+\DoxyCodeLine{402             \textcolor{keywordflow}{if} (outputAttachments == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"outputAttachments"});}
+\DoxyCodeLine{403 }
+\DoxyCodeLine{404             \textcolor{comment}{// Use these to detect and use shared regions.}}
+\DoxyCodeLine{405             var existingRegions = \textcolor{keyword}{new} Dictionary<AtlasRegion, int>();}
+\DoxyCodeLine{406             var regionIndexes = \textcolor{keyword}{new} List<int>();}
+\DoxyCodeLine{407             var texturesToPack = \textcolor{keyword}{new} List<Texture2D>();}
+\DoxyCodeLine{408             var originalRegions = \textcolor{keyword}{new} List<AtlasRegion>();}
+\DoxyCodeLine{409 }
+\DoxyCodeLine{410             outputAttachments.Clear();}
+\DoxyCodeLine{411             outputAttachments.AddRange(sourceAttachments);}
+\DoxyCodeLine{412 }
+\DoxyCodeLine{413             \textcolor{keywordtype}{int} newRegionIndex = 0;}
+\DoxyCodeLine{414             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = sourceAttachments.Count; i < n; i++) \{}
+\DoxyCodeLine{415                 var originalAttachment = sourceAttachments[i];}
+\DoxyCodeLine{416                 }
+\DoxyCodeLine{417                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}{IsRenderable}}(originalAttachment)) \{}
+\DoxyCodeLine{418                     var newAttachment = originalAttachment.GetClone(\textcolor{keyword}{true});}
+\DoxyCodeLine{419                     var region = newAttachment.GetRegion();}
+\DoxyCodeLine{420                     \textcolor{keywordtype}{int} existingIndex;}
+\DoxyCodeLine{421                     \textcolor{keywordflow}{if} (existingRegions.TryGetValue(region, out existingIndex)) \{}
+\DoxyCodeLine{422                         regionIndexes.Add(existingIndex); \textcolor{comment}{// Store the region index for the eventual new attachment.}}
+\DoxyCodeLine{423                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{424                         originalRegions.Add(region);}
+\DoxyCodeLine{425                         texturesToPack.Add(region.ToTexture()); \textcolor{comment}{// Add the texture to the PackTextures argument}}
+\DoxyCodeLine{426                         existingRegions.Add(region, newRegionIndex); \textcolor{comment}{// Add the region to the dictionary of known regions}}
+\DoxyCodeLine{427                         regionIndexes.Add(newRegionIndex); \textcolor{comment}{// Store the region index for the eventual new attachment.}}
+\DoxyCodeLine{428                         newRegionIndex++;}
+\DoxyCodeLine{429                     \}}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431                     outputAttachments[i] = newAttachment;}
+\DoxyCodeLine{432                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{433                     outputAttachments[i] = useOriginalNonrenderables ? originalAttachment : originalAttachment.GetClone(\textcolor{keyword}{true});}
+\DoxyCodeLine{434                     regionIndexes.Add(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a541939bada29954f4db0698e67be978a}{NonrenderingRegion}}); \textcolor{comment}{// Output attachments pairs with regionIndexes list 1:1. Pad with a sentinel if the attachment doesn't have a region.}}
+\DoxyCodeLine{435                 \}}
+\DoxyCodeLine{436             \}}
+\DoxyCodeLine{437 }
+\DoxyCodeLine{438             \textcolor{comment}{// Fill a new texture with the collected attachment textures.}}
+\DoxyCodeLine{439             var newTexture = \textcolor{keyword}{new} Texture2D(maxAtlasSize, maxAtlasSize, textureFormat, mipmaps);}
+\DoxyCodeLine{440             newTexture.mipMapBias = AtlasUtilities.DefaultMipmapBias;}
+\DoxyCodeLine{441             newTexture.anisoLevel = texturesToPack[0].anisoLevel;}
+\DoxyCodeLine{442             newTexture.name = newAssetName;}
+\DoxyCodeLine{443             var rects = newTexture.PackTextures(texturesToPack.ToArray(), padding, maxAtlasSize);}
+\DoxyCodeLine{444 }
+\DoxyCodeLine{445             \textcolor{comment}{// Rehydrate the repacked textures as a Material, Spine atlas and Spine.AtlasAttachments}}
+\DoxyCodeLine{446             Shader shader = materialPropertySource == \textcolor{keyword}{null} ? Shader.Find(\textcolor{stringliteral}{"Spine/Skeleton"}) : materialPropertySource.shader;}
+\DoxyCodeLine{447             var newMaterial = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{448             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{449                 newMaterial.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{450                 newMaterial.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{451             \}}
+\DoxyCodeLine{452 }
+\DoxyCodeLine{453             newMaterial.name = newAssetName;}
+\DoxyCodeLine{454             newMaterial.mainTexture = newTexture;}
+\DoxyCodeLine{455             var page = newMaterial.ToSpineAtlasPage();}
+\DoxyCodeLine{456             page.name = newAssetName;}
+\DoxyCodeLine{457 }
+\DoxyCodeLine{458             var repackedRegions = \textcolor{keyword}{new} List<AtlasRegion>();}
+\DoxyCodeLine{459             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = originalRegions.Count; i < n; i++) \{}
+\DoxyCodeLine{460                 var oldRegion = originalRegions[i];}
+\DoxyCodeLine{461                 var newRegion = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda056312c0db1246c0fcc99a5642b35}{UVRectToAtlasRegion}}(rects[i], oldRegion.name, page, oldRegion.offsetX, oldRegion.offsetY, oldRegion.rotate);}
+\DoxyCodeLine{462                 repackedRegions.Add(newRegion);}
+\DoxyCodeLine{463             \}}
+\DoxyCodeLine{464 }
+\DoxyCodeLine{465             \textcolor{comment}{// Map the cloned attachments to the repacked atlas.}}
+\DoxyCodeLine{466             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = outputAttachments.Count; i < n; i++) \{}
+\DoxyCodeLine{467                 var a = outputAttachments[i];}
+\DoxyCodeLine{468                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}{IsRenderable}}(a))}
+\DoxyCodeLine{469                     a.SetRegion(repackedRegions[regionIndexes[i]]);}
+\DoxyCodeLine{470             \}}
+\DoxyCodeLine{471 }
+\DoxyCodeLine{472             \textcolor{comment}{// Clean up.}}
+\DoxyCodeLine{473             \textcolor{keywordflow}{if} (clearCache)}
+\DoxyCodeLine{474                 AtlasUtilities.ClearCache();}
+\DoxyCodeLine{475 }
+\DoxyCodeLine{476             outputTexture = newTexture;}
+\DoxyCodeLine{477             outputMaterial = newMaterial;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aefdc903e3dc5148769ff13bbcd544745}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aefdc903e3dc5148769ff13bbcd544745}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetRepackedSkin@{GetRepackedSkin}}
+\index{GetRepackedSkin@{GetRepackedSkin}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetRepackedSkin()}{GetRepackedSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Repacked\+Skin (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{o,  }\item[{string}]{new\+Name,  }\item[{Material}]{material\+Property\+Source,  }\item[{out Material}]{output\+Material,  }\item[{out Texture2D}]{output\+Texture,  }\item[{int}]{max\+Atlas\+Size = {\ttfamily 1024},  }\item[{int}]{padding = {\ttfamily 2},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps},  }\item[{bool}]{use\+Original\+Nonrenderables = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas comprised of all the regions from the original skin. 
+
+No \mbox{\hyperlink{class_spine_1_1_atlas}{Spine.\+Atlas}} object is created so there is no way to find Atlas\+Regions except through the Attachments using them.
+
+Attachment\+Tools.\+cs 파일의 482 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{483                                                                                                                                                                                                                                                                                                                                   \{}
+\DoxyCodeLine{484             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aefdc903e3dc5148769ff13bbcd544745}{GetRepackedSkin}}(o, newName, materialPropertySource.shader, out outputMaterial, out outputTexture, maxAtlasSize, padding, textureFormat, mipmaps, materialPropertySource, useOriginalNonrenderables);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8f58ec85872b0d3da02750572b2d1fba}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8f58ec85872b0d3da02750572b2d1fba}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetRepackedSkin@{GetRepackedSkin}}
+\index{GetRepackedSkin@{GetRepackedSkin}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetRepackedSkin()}{GetRepackedSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Repacked\+Skin (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{o,  }\item[{string}]{new\+Name,  }\item[{Shader}]{shader,  }\item[{out Material}]{output\+Material,  }\item[{out Texture2D}]{output\+Texture,  }\item[{int}]{max\+Atlas\+Size = {\ttfamily 1024},  }\item[{int}]{padding = {\ttfamily 2},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null},  }\item[{bool}]{clear\+Cache = {\ttfamily false},  }\item[{bool}]{use\+Original\+Nonrenderables = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates and populates a duplicate skin with cloned attachments that are backed by a new packed texture atlas comprised of all the regions from the original skin. 
+
+No \mbox{\hyperlink{class_spine_1_1_atlas}{Spine.\+Atlas}} object is created so there is no way to find Atlas\+Regions except through the Attachments using them.
+
+Attachment\+Tools.\+cs 파일의 489 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{490                                                                                                                                                                                                                                                                                                                                                                                  \{}
+\DoxyCodeLine{491             \textcolor{keywordflow}{if} (o == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.NullReferenceException(\textcolor{stringliteral}{"Skin was null"});}
+\DoxyCodeLine{492             var skinAttachments = o.Attachments;}
+\DoxyCodeLine{493             var newSkin = \textcolor{keyword}{new} Skin(newName);}
+\DoxyCodeLine{494 }
+\DoxyCodeLine{495             \textcolor{comment}{// Use these to detect and use shared regions.}}
+\DoxyCodeLine{496             var existingRegions = \textcolor{keyword}{new} Dictionary<AtlasRegion, int>();}
+\DoxyCodeLine{497             var regionIndexes = \textcolor{keyword}{new} List<int>();}
+\DoxyCodeLine{498 }
+\DoxyCodeLine{499             \textcolor{comment}{// Collect all textures from the attachments of the original skin.}}
+\DoxyCodeLine{500             var repackedAttachments = \textcolor{keyword}{new} List<Attachment>();}
+\DoxyCodeLine{501             var texturesToPack = \textcolor{keyword}{new} List<Texture2D>();}
+\DoxyCodeLine{502             var originalRegions = \textcolor{keyword}{new} List<AtlasRegion>();}
+\DoxyCodeLine{503             \textcolor{keywordtype}{int} newRegionIndex = 0;}
+\DoxyCodeLine{504             \textcolor{keywordflow}{foreach} (var skinEntry \textcolor{keywordflow}{in} skinAttachments) \{}
+\DoxyCodeLine{505                 var originalKey = skinEntry.Key;}
+\DoxyCodeLine{506                 var originalAttachment = skinEntry.Value;}
+\DoxyCodeLine{507 }
+\DoxyCodeLine{508                 Attachment newAttachment;}
+\DoxyCodeLine{509                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}{IsRenderable}}(originalAttachment)) \{}
+\DoxyCodeLine{510                     newAttachment = originalAttachment.GetClone(\textcolor{keyword}{true});}
+\DoxyCodeLine{511                     var region = newAttachment.GetRegion();}
+\DoxyCodeLine{512                     \textcolor{keywordtype}{int} existingIndex;}
+\DoxyCodeLine{513                     \textcolor{keywordflow}{if} (existingRegions.TryGetValue(region, out existingIndex)) \{}
+\DoxyCodeLine{514                         regionIndexes.Add(existingIndex); \textcolor{comment}{// Store the region index for the eventual new attachment.}}
+\DoxyCodeLine{515                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{516                         originalRegions.Add(region);}
+\DoxyCodeLine{517                         texturesToPack.Add(region.ToTexture()); \textcolor{comment}{// Add the texture to the PackTextures argument}}
+\DoxyCodeLine{518                         existingRegions.Add(region, newRegionIndex); \textcolor{comment}{// Add the region to the dictionary of known regions}}
+\DoxyCodeLine{519                         regionIndexes.Add(newRegionIndex); \textcolor{comment}{// Store the region index for the eventual new attachment.}}
+\DoxyCodeLine{520                         newRegionIndex++;}
+\DoxyCodeLine{521                     \}}
+\DoxyCodeLine{522 }
+\DoxyCodeLine{523                     repackedAttachments.Add(newAttachment);}
+\DoxyCodeLine{524                     newSkin.AddAttachment(originalKey.slotIndex, originalKey.name, newAttachment);}
+\DoxyCodeLine{525                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{526                     newSkin.AddAttachment(originalKey.slotIndex, originalKey.name, useOriginalNonrenderables ? originalAttachment : originalAttachment.GetClone(\textcolor{keyword}{true}));}
+\DoxyCodeLine{527                 \}   }
+\DoxyCodeLine{528             \}}
+\DoxyCodeLine{529 }
+\DoxyCodeLine{530             \textcolor{comment}{// Fill a new texture with the collected attachment textures.}}
+\DoxyCodeLine{531             var newTexture = \textcolor{keyword}{new} Texture2D(maxAtlasSize, maxAtlasSize, textureFormat, mipmaps);}
+\DoxyCodeLine{532             newTexture.mipMapBias = AtlasUtilities.DefaultMipmapBias;}
+\DoxyCodeLine{533             newTexture.anisoLevel = texturesToPack[0].anisoLevel;}
+\DoxyCodeLine{534             newTexture.name = newName;}
+\DoxyCodeLine{535             var rects = newTexture.PackTextures(texturesToPack.ToArray(), padding, maxAtlasSize);}
+\DoxyCodeLine{536 }
+\DoxyCodeLine{537             \textcolor{comment}{// Rehydrate the repacked textures as a Material, Spine atlas and Spine.AtlasAttachments}}
+\DoxyCodeLine{538             var newMaterial = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{539             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{540                 newMaterial.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{541                 newMaterial.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{542             \}}
+\DoxyCodeLine{543 }
+\DoxyCodeLine{544             newMaterial.name = newName;}
+\DoxyCodeLine{545             newMaterial.mainTexture = newTexture;}
+\DoxyCodeLine{546             var page = newMaterial.ToSpineAtlasPage();}
+\DoxyCodeLine{547             page.name = newName;}
+\DoxyCodeLine{548 }
+\DoxyCodeLine{549             var repackedRegions = \textcolor{keyword}{new} List<AtlasRegion>();}
+\DoxyCodeLine{550             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = originalRegions.Count; i < n; i++) \{}
+\DoxyCodeLine{551                 var oldRegion = originalRegions[i];}
+\DoxyCodeLine{552                 var newRegion = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda056312c0db1246c0fcc99a5642b35}{UVRectToAtlasRegion}}(rects[i], oldRegion.name, page, oldRegion.offsetX, oldRegion.offsetY, oldRegion.rotate);}
+\DoxyCodeLine{553                 repackedRegions.Add(newRegion);}
+\DoxyCodeLine{554             \}}
+\DoxyCodeLine{555 }
+\DoxyCodeLine{556             \textcolor{comment}{// Map the cloned attachments to the repacked atlas.}}
+\DoxyCodeLine{557             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = repackedAttachments.Count; i < n; i++) \{}
+\DoxyCodeLine{558                 var a = repackedAttachments[i];}
+\DoxyCodeLine{559                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}{IsRenderable}}(a))}
+\DoxyCodeLine{560                     a.SetRegion(repackedRegions[regionIndexes[i]]);}
+\DoxyCodeLine{561             \}}
+\DoxyCodeLine{562 }
+\DoxyCodeLine{563             \textcolor{comment}{// Clean up.}}
+\DoxyCodeLine{564             \textcolor{keywordflow}{if} (clearCache)}
+\DoxyCodeLine{565                 AtlasUtilities.ClearCache();}
+\DoxyCodeLine{566 }
+\DoxyCodeLine{567             outputTexture = newTexture;}
+\DoxyCodeLine{568             outputMaterial = newMaterial;}
+\DoxyCodeLine{569             \textcolor{keywordflow}{return} newSkin;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ab0d77746fd6a1b639d501d620963c039}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ab0d77746fd6a1b639d501d620963c039}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetSpineAtlasRect@{GetSpineAtlasRect}}
+\index{GetSpineAtlasRect@{GetSpineAtlasRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetSpineAtlasRect()}{GetSpineAtlasRect()}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Spine\+Atlas\+Rect (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{include\+Rotate = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns a Rect of the \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine}{Spine}} texture coordinates. (x-\/right, y-\/down) 
+
+
+
+Attachment\+Tools.\+cs 파일의 661 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{662                                                                                            \{}
+\DoxyCodeLine{663             \textcolor{keywordflow}{if} (includeRotate \&\& region.rotate)}
+\DoxyCodeLine{664                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} Rect(region.x, region.y, region.height, region.width);               }
+\DoxyCodeLine{665             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{666                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} Rect(region.x, region.y, region.width, region.height);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aff3d7165524ad2b9b4f23af77bfce547}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aff3d7165524ad2b9b4f23af77bfce547}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetUnityRect@{GetUnityRect}}
+\index{GetUnityRect@{GetUnityRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetUnityRect()}{GetUnityRect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Unity\+Rect (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Rect of an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} texture coordinates (x-\/right, y-\/up). This overload relies on region.\+page.\+height being correctly set. 
+
+
+
+Attachment\+Tools.\+cs 파일의 649 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{650                                                            \{}
+\DoxyCodeLine{651             \textcolor{keywordflow}{return} region.GetSpineAtlasRect().SpineUnityFlipRect(region.page.height);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ae0ad0e415e302d225e776545be2df177}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_ae0ad0e415e302d225e776545be2df177}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!GetUnityRect@{GetUnityRect}}
+\index{GetUnityRect@{GetUnityRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{GetUnityRect()}{GetUnityRect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Get\+Unity\+Rect (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{int}]{texture\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Gets the Rect of an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} texture coordinates (x-\/right, y-\/up). 
+
+
+
+Attachment\+Tools.\+cs 파일의 655 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{656                                                                               \{}
+\DoxyCodeLine{657             \textcolor{keywordflow}{return} region.GetSpineAtlasRect().SpineUnityFlipRect(textureHeight);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a88035dd9603935d5e5335073a99284ce}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a88035dd9603935d5e5335073a99284ce}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!InverseLerp@{InverseLerp}}
+\index{InverseLerp@{InverseLerp}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{InverseLerp()}{InverseLerp()}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Inverse\+Lerp (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 751 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{752                                                                  \{}
+\DoxyCodeLine{753             \textcolor{keywordflow}{return} (value -\/ a) / (b -\/ a);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3a10ac3780879cf8c339721bd08be2ee}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!IsRenderable@{IsRenderable}}
+\index{IsRenderable@{IsRenderable}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{IsRenderable()}{IsRenderable()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Is\+Renderable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 635 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{636                                                 \{}
+\DoxyCodeLine{637             \textcolor{keywordflow}{return} a is IHasRendererObject;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a6ac8df1aca2ed833eed7fb1b4a23e104}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a6ac8df1aca2ed833eed7fb1b4a23e104}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!SpineUnityFlipRect@{SpineUnityFlipRect}}
+\index{SpineUnityFlipRect@{SpineUnityFlipRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{SpineUnityFlipRect()}{SpineUnityFlipRect()}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Spine\+Unity\+Flip\+Rect (\begin{DoxyParamCaption}\item[{this Rect}]{rect,  }\item[{int}]{texture\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Get a rect with flipped Y so that a \mbox{\hyperlink{namespace_spine}{Spine}} atlas rect gets converted to a \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Sprite rect and vice versa. 
+
+
+
+Attachment\+Tools.\+cs 파일의 641 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{642                                                                            \{}
+\DoxyCodeLine{643             rect.y = textureHeight -\/ rect.y -\/ rect.height;}
+\DoxyCodeLine{644             \textcolor{keywordflow}{return} rect;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a799c0b6bb994b551b5d96e4482e2caa7}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a799c0b6bb994b551b5d96e4482e2caa7}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!TextureRectToUVRect@{TextureRectToUVRect}}
+\index{TextureRectToUVRect@{TextureRectToUVRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{TextureRectToUVRect()}{TextureRectToUVRect()}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Texture\+Rect\+To\+U\+V\+Rect (\begin{DoxyParamCaption}\item[{Rect}]{texture\+Rect,  }\item[{int}]{tex\+Width,  }\item[{int}]{tex\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Normalize a texture Rect into UV coordinates. 
+
+
+
+Attachment\+Tools.\+cs 파일의 680 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{681                                                                                         \{}
+\DoxyCodeLine{682             textureRect.x = Mathf.InverseLerp(0, texWidth, textureRect.x);}
+\DoxyCodeLine{683             textureRect.y = Mathf.InverseLerp(0, texHeight, textureRect.y);}
+\DoxyCodeLine{684             textureRect.width = Mathf.InverseLerp(0, texWidth, textureRect.width);}
+\DoxyCodeLine{685             textureRect.height = Mathf.InverseLerp(0, texHeight, textureRect.height);}
+\DoxyCodeLine{686             \textcolor{keywordflow}{return} textureRect;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aa8a3e94c910ded24665e6b4be2087ef4}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_aa8a3e94c910ded24665e6b4be2087ef4}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegion@{ToAtlasRegion}}
+\index{ToAtlasRegion@{ToAtlasRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegion()}{ToAtlasRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region (\begin{DoxyParamCaption}\item[{this Sprite}]{s,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}}]{page }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} from a Unity\+Engine.\+Sprite. 
+
+
+
+Attachment\+Tools.\+cs 파일의 309 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{310                                                                                 \{}
+\DoxyCodeLine{311             \textcolor{keywordflow}{if} (page == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"page"}, \textcolor{stringliteral}{"page cannot be null. AtlasPage determines which texture region belongs and how it should be rendered. You can use material.ToSpineAtlasPage() to get a shareable AtlasPage from a Material, or use the sprite.ToAtlasRegion(material) overload."});}
+\DoxyCodeLine{312             var region = s.ToAtlasRegion();}
+\DoxyCodeLine{313             region.page = page;}
+\DoxyCodeLine{314             \textcolor{keywordflow}{return} region;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a2247bf10eab77362ad25babf01aaa183}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a2247bf10eab77362ad25babf01aaa183}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegion@{ToAtlasRegion}}
+\index{ToAtlasRegion@{ToAtlasRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegion()}{ToAtlasRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region (\begin{DoxyParamCaption}\item[{this Sprite}]{s,  }\item[{Material}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} from a Unity\+Engine.\+Sprite. This creates a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} object for every \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} you create. You can centralize Material control by creating a shared atlas page using Material.\+To\+Spine\+Atlas\+Page and using the sprite.\+To\+Atlas\+Region(\+Atlas\+Page) overload. 
+
+
+
+Attachment\+Tools.\+cs 파일의 318 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{319                                                                                    \{}
+\DoxyCodeLine{320             var region = s.ToAtlasRegion();}
+\DoxyCodeLine{321             region.page = material.ToSpineAtlasPage();}
+\DoxyCodeLine{322             \textcolor{keywordflow}{return} region;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a033c529f5f3aebf87bb46de91407bdc1}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a033c529f5f3aebf87bb46de91407bdc1}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegion@{ToAtlasRegion}}
+\index{ToAtlasRegion@{ToAtlasRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegion()}{ToAtlasRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region (\begin{DoxyParamCaption}\item[{this Texture2D}]{t,  }\item[{Material}]{material\+Property\+Source,  }\item[{float}]{scale = {\ttfamily DefaultScale} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 215 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{216                                                                                                                                 \{}
+\DoxyCodeLine{217             \textcolor{keywordflow}{return} t.ToAtlasRegion(materialPropertySource.shader, scale, materialPropertySource);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a23939cba718995dec07d0241104b3187}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a23939cba718995dec07d0241104b3187}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegion@{ToAtlasRegion}}
+\index{ToAtlasRegion@{ToAtlasRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegion()}{ToAtlasRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region (\begin{DoxyParamCaption}\item[{this Texture2D}]{t,  }\item[{Shader}]{shader,  }\item[{float}]{scale = {\ttfamily DefaultScale},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 219 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220                                                                                                                                                       \{}
+\DoxyCodeLine{221             var material = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{222             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{223                 material.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{224                 material.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{225             \}}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227             material.mainTexture = t;}
+\DoxyCodeLine{228             var page = material.ToSpineAtlasPage();}
+\DoxyCodeLine{229 }
+\DoxyCodeLine{230             \textcolor{keywordtype}{float} width = t.width;}
+\DoxyCodeLine{231             \textcolor{keywordtype}{float} height = t.height;}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233             var region = \textcolor{keyword}{new} AtlasRegion();}
+\DoxyCodeLine{234             region.name = t.name;}
+\DoxyCodeLine{235             region.index = -\/1;}
+\DoxyCodeLine{236             region.rotate = \textcolor{keyword}{false};}
+\DoxyCodeLine{237 }
+\DoxyCodeLine{238             \textcolor{comment}{// World space units}}
+\DoxyCodeLine{239             Vector2 boundsMin = Vector2.zero, boundsMax = \textcolor{keyword}{new} Vector2(width, height) * scale;}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241             \textcolor{comment}{// Texture space/pixel units}}
+\DoxyCodeLine{242             region.width = (int)width;}
+\DoxyCodeLine{243             region.originalWidth = (int)width;}
+\DoxyCodeLine{244             region.height = (int)height;}
+\DoxyCodeLine{245             region.originalHeight = (int)height;}
+\DoxyCodeLine{246             region.offsetX = width * (0.5f -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a88035dd9603935d5e5335073a99284ce}{InverseLerp}}(boundsMin.x, boundsMax.x, 0));}
+\DoxyCodeLine{247             region.offsetY = height * (0.5f -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a88035dd9603935d5e5335073a99284ce}{InverseLerp}}(boundsMin.y, boundsMax.y, 0));}
+\DoxyCodeLine{248 }
+\DoxyCodeLine{249             \textcolor{comment}{// Use the full area of the texture.}}
+\DoxyCodeLine{250             region.u = 0;}
+\DoxyCodeLine{251             region.v = 1;}
+\DoxyCodeLine{252             region.u2 = 1;}
+\DoxyCodeLine{253             region.v2 = 0;}
+\DoxyCodeLine{254             region.x = 0;}
+\DoxyCodeLine{255             region.y = 0;}
+\DoxyCodeLine{256 }
+\DoxyCodeLine{257             region.page = page;}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259             \textcolor{keywordflow}{return} region;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_adc6fa944dc3c4609356bc67affe7e593}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_adc6fa944dc3c4609356bc67affe7e593}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}}
+\index{ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegionPMAClone()}{ToAtlasRegionPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Sprite}]{s,  }\item[{Material}]{material\+Property\+Source,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 348 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{349                                                                                                                                                                                       \{}
+\DoxyCodeLine{350             \textcolor{keywordflow}{return} s.ToAtlasRegionPMAClone(materialPropertySource.shader, textureFormat, mipmaps, materialPropertySource);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9b3bbd7f79d3f3005fb9be29422c3de9}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9b3bbd7f79d3f3005fb9be29422c3de9}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}}
+\index{ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegionPMAClone()}{ToAtlasRegionPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Sprite}]{s,  }\item[{Shader}]{shader,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. 
+
+
+
+Attachment\+Tools.\+cs 파일의 326 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{327                                                                                                                                                                                                             \{}
+\DoxyCodeLine{328             var material = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{329             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{330                 material.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{331                 material.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{332             \}}
+\DoxyCodeLine{333 }
+\DoxyCodeLine{334             var tex = s.ToTexture(\textcolor{keyword}{false}, textureFormat, mipmaps);}
+\DoxyCodeLine{335             tex.ApplyPMA(\textcolor{keyword}{true});}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337             tex.name = s.name + \textcolor{stringliteral}{"-\/pma-\/"};}
+\DoxyCodeLine{338             material.name = tex.name + shader.name;}
+\DoxyCodeLine{339 }
+\DoxyCodeLine{340             material.mainTexture = tex;}
+\DoxyCodeLine{341             var page = material.ToSpineAtlasPage();}
+\DoxyCodeLine{342 }
+\DoxyCodeLine{343             var region = s.ToAtlasRegion(\textcolor{keyword}{true});}
+\DoxyCodeLine{344             region.page = page;}
+\DoxyCodeLine{345 }
+\DoxyCodeLine{346             \textcolor{keywordflow}{return} region;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9cfdf6f1a7371944544414243659495b}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9cfdf6f1a7371944544414243659495b}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}}
+\index{ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegionPMAClone()}{ToAtlasRegionPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Texture2D}]{t,  }\item[{Material}]{material\+Property\+Source,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. 
+
+
+
+Attachment\+Tools.\+cs 파일의 263 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{264                                                                                                                                                                                          \{}
+\DoxyCodeLine{265             \textcolor{keywordflow}{return} t.ToAtlasRegionPMAClone(materialPropertySource.shader, textureFormat, mipmaps, materialPropertySource);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9826ba2f4f886e34cb3f497fae1a0756}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a9826ba2f4f886e34cb3f497fae1a0756}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}}
+\index{ToAtlasRegionPMAClone@{ToAtlasRegionPMAClone}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToAtlasRegionPMAClone()}{ToAtlasRegionPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Atlas\+Region\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Texture2D}]{t,  }\item[{Shader}]{shader,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate of the Sprite\textquotesingle{}s texture data. 
+
+
+
+Attachment\+Tools.\+cs 파일의 269 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{270                                                                                                                                                                                                                \{}
+\DoxyCodeLine{271             var material = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{272             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{273                 material.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{274                 material.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{275             \}}
+\DoxyCodeLine{276             var newTexture = t.GetClone(\textcolor{keyword}{false}, textureFormat, mipmaps);}
+\DoxyCodeLine{277             newTexture.ApplyPMA(\textcolor{keyword}{true});}
+\DoxyCodeLine{278 }
+\DoxyCodeLine{279             newTexture.name = t.name + \textcolor{stringliteral}{"-\/pma-\/"};}
+\DoxyCodeLine{280             material.name = t.name + shader.name;}
+\DoxyCodeLine{281 }
+\DoxyCodeLine{282             material.mainTexture = newTexture;}
+\DoxyCodeLine{283             var page = material.ToSpineAtlasPage();}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285             var region = newTexture.ToAtlasRegion(shader);}
+\DoxyCodeLine{286             region.page = page;}
+\DoxyCodeLine{287 }
+\DoxyCodeLine{288             \textcolor{keywordflow}{return} region;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a216697494e334d55e5221551dbdfe0e1}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a216697494e334d55e5221551dbdfe0e1}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToSpineAtlasPage@{ToSpineAtlasPage}}
+\index{ToSpineAtlasPage@{ToSpineAtlasPage}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToSpineAtlasPage()}{ToSpineAtlasPage()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Spine\+Atlas\+Page (\begin{DoxyParamCaption}\item[{this Material}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Spine.\+Atlas\+Page}} from a Unity\+Engine.\+Material. If the material has a preassigned texture, the page width and height will be set. 
+
+
+
+Attachment\+Tools.\+cs 파일의 292 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{293                                                                    \{}
+\DoxyCodeLine{294             var newPage = \textcolor{keyword}{new} AtlasPage \{}
+\DoxyCodeLine{295                 rendererObject = m,}
+\DoxyCodeLine{296                 name = m.name}
+\DoxyCodeLine{297             \};}
+\DoxyCodeLine{298 }
+\DoxyCodeLine{299             var t = m.mainTexture;}
+\DoxyCodeLine{300             \textcolor{keywordflow}{if} (t != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{301                 newPage.width = t.width;}
+\DoxyCodeLine{302                 newPage.height = t.height;}
+\DoxyCodeLine{303             \}}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305             \textcolor{keywordflow}{return} newPage;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a39f8f0475c361dccfe250fd2922cf72a}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a39f8f0475c361dccfe250fd2922cf72a}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToSprite@{ToSprite}}
+\index{ToSprite@{ToSprite}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToSprite()}{ToSprite()}}
+{\footnotesize\ttfamily static Sprite Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Sprite (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{ar,  }\item[{float}]{pixels\+Per\+Unit = {\ttfamily 100} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 571 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{572                                                                                        \{}
+\DoxyCodeLine{573             \textcolor{keywordflow}{return} Sprite.Create(ar.GetMainTexture(), ar.GetUnityRect(), \textcolor{keyword}{new} Vector2(0.5f, 0.5f), pixelsPerUnit);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8d88438109b98b0364856876100bf2ae}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a8d88438109b98b0364856876100bf2ae}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToTexture@{ToTexture}}
+\index{ToTexture@{ToTexture}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToTexture()}{ToTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Texture2D Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Texture (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{ar,  }\item[{bool}]{apply\+Immediately = {\ttfamily true},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new Texture2D object based on an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. If apply\+Immediately is true, Texture2\+D.\+Apply is called immediately after the Texture2D is filled with data. 
+
+
+
+Attachment\+Tools.\+cs 파일의 588 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{589                                                                                                                                                                            \{}
+\DoxyCodeLine{590             Texture2D output;}
+\DoxyCodeLine{591 }
+\DoxyCodeLine{592             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}{CachedRegionTextures}}.TryGetValue(ar, out output);}
+\DoxyCodeLine{593             \textcolor{keywordflow}{if} (output == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{594                 Texture2D sourceTexture = ar.GetMainTexture();}
+\DoxyCodeLine{595                 Rect r = ar.GetUnityRect(sourceTexture.height);}
+\DoxyCodeLine{596                 \textcolor{keywordtype}{int} width = (int)r.width;}
+\DoxyCodeLine{597                 \textcolor{keywordtype}{int} height = (\textcolor{keywordtype}{int})r.height;}
+\DoxyCodeLine{598                 output = \textcolor{keyword}{new} Texture2D(width, height, textureFormat, mipmaps);}
+\DoxyCodeLine{599                 output.name = ar.name;}
+\DoxyCodeLine{600                 Color[] pixelBuffer = sourceTexture.GetPixels((\textcolor{keywordtype}{int})r.x, (\textcolor{keywordtype}{int})r.y, width, height);}
+\DoxyCodeLine{601                 output.SetPixels(pixelBuffer);}
+\DoxyCodeLine{602                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}{CachedRegionTextures}}.Add(ar, output);}
+\DoxyCodeLine{603                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}{CachedRegionTexturesList}}.Add(output);}
+\DoxyCodeLine{604 }
+\DoxyCodeLine{605                 \textcolor{keywordflow}{if} (applyImmediately)}
+\DoxyCodeLine{606                     output.Apply();}
+\DoxyCodeLine{607             \}}
+\DoxyCodeLine{608 }
+\DoxyCodeLine{609             \textcolor{keywordflow}{return} output;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af0bc8f979f32ce66cc71a338b2aba117}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_af0bc8f979f32ce66cc71a338b2aba117}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!ToTexture@{ToTexture}}
+\index{ToTexture@{ToTexture}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{ToTexture()}{ToTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Texture2D Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+To\+Texture (\begin{DoxyParamCaption}\item[{this Sprite}]{s,  }\item[{bool}]{apply\+Immediately = {\ttfamily true},  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily UseMipMaps} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 611 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{612                                                                                                                                                               \{}
+\DoxyCodeLine{613             var spriteTexture = s.texture;}
+\DoxyCodeLine{614             var r = s.textureRect;}
+\DoxyCodeLine{615             var spritePixels = spriteTexture.GetPixels((\textcolor{keywordtype}{int})r.x, (\textcolor{keywordtype}{int})r.y, (\textcolor{keywordtype}{int})r.width, (\textcolor{keywordtype}{int})r.height);}
+\DoxyCodeLine{616             var newTexture = \textcolor{keyword}{new} Texture2D((\textcolor{keywordtype}{int})r.width, (\textcolor{keywordtype}{int})r.height, textureFormat, mipmaps);}
+\DoxyCodeLine{617             newTexture.SetPixels(spritePixels);}
+\DoxyCodeLine{618 }
+\DoxyCodeLine{619             \textcolor{keywordflow}{if} (applyImmediately)}
+\DoxyCodeLine{620                 newTexture.Apply();}
+\DoxyCodeLine{621 }
+\DoxyCodeLine{622             \textcolor{keywordflow}{return} newTexture;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda056312c0db1246c0fcc99a5642b35}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda056312c0db1246c0fcc99a5642b35}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!UVRectToAtlasRegion@{UVRectToAtlasRegion}}
+\index{UVRectToAtlasRegion@{UVRectToAtlasRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{UVRectToAtlasRegion()}{UVRectToAtlasRegion()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+U\+V\+Rect\+To\+Atlas\+Region (\begin{DoxyParamCaption}\item[{Rect}]{uv\+Rect,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}}]{page,  }\item[{float}]{offsetX,  }\item[{float}]{offsetY,  }\item[{bool}]{rotate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Creates a new \mbox{\hyperlink{namespace_spine}{Spine}} \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} according to a \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} UV Rect (x-\/right, y-\/up, uv-\/normalized). 
+
+
+
+Attachment\+Tools.\+cs 파일의 690 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{691                                                                                                                                      \{          }
+\DoxyCodeLine{692             var tr  = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5f71f971c2ae2a6c9d2d33cd7c984b5f}{UVRectToTextureRect}}(uvRect, page.width, page.height);}
+\DoxyCodeLine{693             var rr = tr.SpineUnityFlipRect(page.height);}
+\DoxyCodeLine{694 }
+\DoxyCodeLine{695             \textcolor{keywordtype}{int} x = (int)rr.x, y = (\textcolor{keywordtype}{int})rr.y;}
+\DoxyCodeLine{696             \textcolor{keywordtype}{int} w, h;}
+\DoxyCodeLine{697             \textcolor{keywordflow}{if} (rotate) \{}
+\DoxyCodeLine{698                 w = (int)rr.height;}
+\DoxyCodeLine{699                 h = (\textcolor{keywordtype}{int})rr.width;}
+\DoxyCodeLine{700             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{701                 w = (int)rr.width;}
+\DoxyCodeLine{702                 h = (\textcolor{keywordtype}{int})rr.height;}
+\DoxyCodeLine{703             \}}
+\DoxyCodeLine{704 }
+\DoxyCodeLine{705             \textcolor{keywordflow}{return} \textcolor{keyword}{new} AtlasRegion \{}
+\DoxyCodeLine{706                 page = page,}
+\DoxyCodeLine{707                 name = name,}
+\DoxyCodeLine{708 }
+\DoxyCodeLine{709                 u = uvRect.xMin,}
+\DoxyCodeLine{710                 u2 = uvRect.xMax,}
+\DoxyCodeLine{711                 v = uvRect.yMax,}
+\DoxyCodeLine{712                 v2 = uvRect.yMin,}
+\DoxyCodeLine{713 }
+\DoxyCodeLine{714                 index = -\/1,}
+\DoxyCodeLine{715 }
+\DoxyCodeLine{716                 width = w,}
+\DoxyCodeLine{717                 originalWidth = w,}
+\DoxyCodeLine{718                 height = h,}
+\DoxyCodeLine{719                 originalHeight = h,}
+\DoxyCodeLine{720                 offsetX = offsetX,}
+\DoxyCodeLine{721                 offsetY = offsetY,}
+\DoxyCodeLine{722                 x = x,}
+\DoxyCodeLine{723                 y = y,}
+\DoxyCodeLine{724 }
+\DoxyCodeLine{725                 rotate = rotate}
+\DoxyCodeLine{726             \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5f71f971c2ae2a6c9d2d33cd7c984b5f}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a5f71f971c2ae2a6c9d2d33cd7c984b5f}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!UVRectToTextureRect@{UVRectToTextureRect}}
+\index{UVRectToTextureRect@{UVRectToTextureRect}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{UVRectToTextureRect()}{UVRectToTextureRect()}}
+{\footnotesize\ttfamily static Rect Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+U\+V\+Rect\+To\+Texture\+Rect (\begin{DoxyParamCaption}\item[{Rect}]{uv\+Rect,  }\item[{int}]{tex\+Width,  }\item[{int}]{tex\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Denormalize a uv\+Rect into a texture-\/space Rect. 
+
+
+
+Attachment\+Tools.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{671                                                                                    \{}
+\DoxyCodeLine{672             uvRect.x *= texWidth;}
+\DoxyCodeLine{673             uvRect.width *= texWidth;}
+\DoxyCodeLine{674             uvRect.y *= texHeight;}
+\DoxyCodeLine{675             uvRect.height *= texHeight;}
+\DoxyCodeLine{676             \textcolor{keywordflow}{return} uvRect;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_afda4226f07882b8df433ef5b725fef97}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!CachedRegionTextures@{CachedRegionTextures}}
+\index{CachedRegionTextures@{CachedRegionTextures}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{CachedRegionTextures}{CachedRegionTextures}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}, Texture2D$>$ Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Cached\+Region\+Textures = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}, Texture2D$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 575 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a3fc6f16084b2914b840c3bcf5322b800}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!CachedRegionTexturesList@{CachedRegionTexturesList}}
+\index{CachedRegionTexturesList@{CachedRegionTexturesList}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{CachedRegionTexturesList}{CachedRegionTexturesList}}
+{\footnotesize\ttfamily List$<$Texture2D$>$ Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Cached\+Region\+Textures\+List = new List$<$Texture2D$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 576 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a541939bada29954f4db0698e67be978a}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_atlas_utilities_a541939bada29954f4db0698e67be978a}} 
+\index{Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}!NonrenderingRegion@{NonrenderingRegion}}
+\index{NonrenderingRegion@{NonrenderingRegion}!Spine.Unity.Modules.AttachmentTools.AtlasUtilities@{Spine.Unity.Modules.AttachmentTools.AtlasUtilities}}
+\doxysubsubsection{\texorpdfstring{NonrenderingRegion}{NonrenderingRegion}}
+{\footnotesize\ttfamily const int Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Atlas\+Utilities.\+Nonrendering\+Region = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 213 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Attachment\+Tools/\mbox{\hyperlink{_attachment_tools_8cs}{Attachment\+Tools.\+cs}}\end{DoxyCompactItemize}

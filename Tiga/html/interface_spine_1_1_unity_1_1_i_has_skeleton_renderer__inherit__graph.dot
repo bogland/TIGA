@@ -1,0 +1,9 @@
+digraph "Spine.Unity.IHasSkeletonRenderer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.IHasSkeleton\lRenderer\n|+ SkeletonRenderer\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A Spine-Unity Component that holds a reference to a SkeletonRenderer."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Spine.Unity.PointFollower\n|+ skeletonRenderer\l+ slotName\l+ pointAttachmentName\l+ followRotation\l+ followSkeletonFlip\l+ followSkeletonZPosition\l+ SkeletonRenderer\l+ SkeletonComponent\l+ IsValid\l- skeletonTransform\l- skeletonTransformIsParent\l- point\l- bone\l- valid\l|+ Initialize()\l+ LateUpdate()\l- HandleRebuildRenderer()\l- UpdateReferences()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_point_follower.html",tooltip=" "];
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Sample Components/SkeletonAnimationMulti/SkeletonAnimationMulti.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_skeleton_animation_multi_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SkeletonAnimationMulti.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_skeleton_animation_multi_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity.html">Spine.Unity</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">   10</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">Animation</a> = <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="class_spine_1_1_animation.html">Animation</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespace_spine_1_1_unity.html#af8b1ef8c88ab61e80cadb65a72f955b4">   11</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespace_spine_1_1_unity.html#af8b1ef8c88ab61e80cadb65a72f955b4">AnimationState</a> = <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="class_spine_1_1_animation_state.html">AnimationState</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html">   13</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html">SkeletonAnimationMulti</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">   14</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">MainTrackIndex</a> = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a3969d6bfeaaec609941b7914260cedf8">   16</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a6194128cb1a54d12e3cb18540ed4dff2">initialFlipX</a>, <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a3969d6bfeaaec609941b7914260cedf8">initialFlipY</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a98c0d4636544a59329ead95e67de911e">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a98c0d4636544a59329ead95e67de911e">initialAnimation</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#abe293dd2c4853b1686602b12967d394c">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#abe293dd2c4853b1686602b12967d394c">initialLoop</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        [Space]</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a030fce37800e23372b0ccc6fa1bb69dc">   20</a></span>&#160;        <span class="keyword">public</span> List&lt;SkeletonDataAsset&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a030fce37800e23372b0ccc6fa1bb69dc">skeletonDataAssets</a> = <span class="keyword">new</span> List&lt;SkeletonDataAsset&gt;();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        [Header(<span class="stringliteral">&quot;Settings&quot;</span>)]</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a65ec26cc25cdf6d380f3d3a132ebf550">   22</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_mesh_generator.html">MeshGenerator</a>.<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings.html">Settings</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a65ec26cc25cdf6d380f3d3a132ebf550">meshGeneratorSettings</a> = <a class="code" href="class_spine_1_1_unity_1_1_mesh_generator.html">MeshGenerator</a>.<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings.html">Settings</a>.<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings.html#ac37fbf425eb1f4703bf3359c58582498">Default</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">   24</a></span>&#160;        readonly List&lt;SkeletonAnimation&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a> = <span class="keyword">new</span> List&lt;SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">   25</a></span>&#160;        readonly Dictionary&lt;string, Animation&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a> = <span class="keyword">new</span> Dictionary&lt;string, Animation&gt;();</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">   26</a></span>&#160;        readonly Dictionary&lt;Animation, SkeletonAnimation&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a> = <span class="keyword">new</span> Dictionary&lt;Animation, SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">//Stateful</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">   28</a></span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a57d100d51f77a9fed1a026efc7c2fc34">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a57d100d51f77a9fed1a026efc7c2fc34">Clear</a> () {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">foreach</span> (var s <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>)</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                Destroy(s.gameObject);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>.Clear();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a>.Clear();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a>.Clear();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c">   39</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c">SetActiveSkeleton</a> (<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> skeletonAnimation) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">foreach</span> (var sa <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                sa.gameObject.SetActive(sa == skeletonAnimation);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a> = skeletonAnimation;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">        #region Lifecycle</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a728a162bd985d8ef42754dccaa836b08">   47</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a728a162bd985d8ef42754dccaa836b08">Awake</a> () {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a53c1470b8fef85409cdf283449236000">Initialize</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        #region API</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae5858b3ef30105bb381bc8534a082106">   53</a></span>&#160;        <span class="keyword">public</span> Dictionary&lt;Animation, SkeletonAnimation&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae5858b3ef30105bb381bc8534a082106">AnimationSkeletonTable</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a>; } }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#af0ca58e92ae04d1f792bd89e0a096470">   54</a></span>&#160;        <span class="keyword">public</span> Dictionary&lt;string, Animation&gt; <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#af0ca58e92ae04d1f792bd89e0a096470">AnimationNameTable</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a>; } }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a1ac85e7732da282d1196aea8d46b1690">   55</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a1ac85e7732da282d1196aea8d46b1690">CurrentSkeletonAnimation</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a>; } }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a53c1470b8fef85409cdf283449236000">   57</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a53c1470b8fef85409cdf283449236000">Initialize</a> (<span class="keywordtype">bool</span> overwrite) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>.Count != 0 &amp;&amp; !overwrite) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a57d100d51f77a9fed1a026efc7c2fc34">Clear</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            var settings = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a65ec26cc25cdf6d380f3d3a132ebf550">meshGeneratorSettings</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Transform thisTransform = this.transform;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">foreach</span> (var sda <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a030fce37800e23372b0ccc6fa1bb69dc">skeletonDataAssets</a>) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                var sa = <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e">NewSkeletonAnimationGameObject</a>(sda);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                sa.transform.SetParent(thisTransform, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                sa.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#ae742f05394283ec3675d3e130587bae2">SetMeshSettings</a>(settings);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                sa.initialFlipX = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a6194128cb1a54d12e3cb18540ed4dff2">initialFlipX</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                sa.initialFlipY = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a3969d6bfeaaec609941b7914260cedf8">initialFlipY</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                var skeleton = sa.skeleton;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                skeleton.FlipX = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a6194128cb1a54d12e3cb18540ed4dff2">initialFlipX</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                skeleton.FlipY = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a3969d6bfeaaec609941b7914260cedf8">initialFlipY</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                sa.Initialize(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>.Add(sa);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">// Build cache</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            var <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a> = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            var <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a> = this.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">foreach</span> (var skeletonAnimation <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                <span class="keywordflow">foreach</span> (var animationObject <span class="keywordflow">in</span> skeletonAnimation.Skeleton.Data.Animations) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a>[animationObject.Name] = animationObject;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a>[animationObject] = skeletonAnimation;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c">SetActiveSkeleton</a>(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">skeletonAnimations</a>[0]);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953">SetAnimation</a>(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a98c0d4636544a59329ead95e67de911e">initialAnimation</a>, <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#abe293dd2c4853b1686602b12967d394c">initialLoop</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a09b72afa90140d9071f84e40de7a7a8c">   93</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">Animation</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a09b72afa90140d9071f84e40de7a7a8c">FindAnimation</a> (<span class="keywordtype">string</span> animationName) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">// Analysis disable once LocalVariableHidesMember</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">Animation</a> animation;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">animationNameTable</a>.TryGetValue(animationName, out animation);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">return</span> animation;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953">  100</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_track_entry.html">TrackEntry</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953">SetAnimation</a> (<span class="keywordtype">string</span> animationName, <span class="keywordtype">bool</span> loop) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953">SetAnimation</a>(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a09b72afa90140d9071f84e40de7a7a8c">FindAnimation</a>(animationName), loop);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a475b9e83c52e7ab2348dfa8ef2d52f30">  104</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_track_entry.html">TrackEntry</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a475b9e83c52e7ab2348dfa8ef2d52f30">SetAnimation</a> (<a class="code" href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">Animation</a> animation, <span class="keywordtype">bool</span> loop) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span> (animation == <span class="keyword">null</span>) <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> skeletonAnimation;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">animationSkeletonTable</a>.TryGetValue(animation, out skeletonAnimation);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">if</span> (skeletonAnimation != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c">SetActiveSkeleton</a>(skeletonAnimation);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                skeletonAnimation.skeleton.SetToSetupPose();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <span class="keywordflow">return</span> skeletonAnimation.state.SetAnimation(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">MainTrackIndex</a>, animation, loop);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a8bd5cc8051e0921d9ce348b2c9191170">  119</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a8bd5cc8051e0921d9ce348b2c9191170">SetEmptyAnimation</a> (<span class="keywordtype">float</span> mixDuration) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a7ee3fba86aaa662dd7a6e93b446be709">state</a>.SetEmptyAnimation(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">MainTrackIndex</a>, mixDuration);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ab2add44b4cdba40df124a9685d3925bf">  123</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ab2add44b4cdba40df124a9685d3925bf">ClearAnimation</a> () {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a7ee3fba86aaa662dd7a6e93b446be709">state</a>.ClearTrack(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">MainTrackIndex</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a395bcb44d7e1104617aca222de328abe">  127</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_track_entry.html">TrackEntry</a> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a395bcb44d7e1104617aca222de328abe">GetCurrent</a> () {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">currentSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a7ee3fba86aaa662dd7a6e93b446be709">state</a>.GetCurrent(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">MainTrackIndex</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a02bd7b231bc5ccbbe4dddf820339868c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a02bd7b231bc5ccbbe4dddf820339868c">Spine.Unity.SkeletonAnimationMulti.currentSkeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation currentSkeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00028">SkeletonAnimationMulti.cs:28</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a395bcb44d7e1104617aca222de328abe"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a395bcb44d7e1104617aca222de328abe">Spine.Unity.SkeletonAnimationMulti.GetCurrent</a></div><div class="ttdeci">TrackEntry GetCurrent()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00127">SkeletonAnimationMulti.cs:127</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_mesh_generator_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_mesh_generator.html">Spine.Unity.MeshGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00105">SpineMesh.cs:105</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html">Spine.Unity.SkeletonAnimationMulti</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00013">SkeletonAnimationMulti.cs:13</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html_a591594f94698c26db56f9db5ff861e48"><div class="ttname"><a href="namespace_spine_1_1_unity.html#a591594f94698c26db56f9db5ff861e48">Spine.Unity.Animation</a></div><div class="ttdeci">Spine.Animation Animation</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00010">SkeletonAnimationMulti.cs:10</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_a5392d5e12e3752d56126da781aa8027e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e">Spine.Unity.SkeletonAnimation.NewSkeletonAnimationGameObject</a></div><div class="ttdeci">static SkeletonAnimation NewSkeletonAnimationGameObject(SkeletonDataAsset skeletonDataAsset)</div><div class="ttdoc">Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00130">SkeletonAnimation.cs:130</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a09b72afa90140d9071f84e40de7a7a8c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a09b72afa90140d9071f84e40de7a7a8c">Spine.Unity.SkeletonAnimationMulti.FindAnimation</a></div><div class="ttdeci">Animation FindAnimation(string animationName)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00093">SkeletonAnimationMulti.cs:93</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_ae8785c48664601b90bf9001758d38ee4"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae8785c48664601b90bf9001758d38ee4">Spine.Unity.SkeletonAnimationMulti.skeletonAnimations</a></div><div class="ttdeci">readonly List&lt; SkeletonAnimation &gt; skeletonAnimations</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00024">SkeletonAnimationMulti.cs:24</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_abe293dd2c4853b1686602b12967d394c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#abe293dd2c4853b1686602b12967d394c">Spine.Unity.SkeletonAnimationMulti.initialLoop</a></div><div class="ttdeci">bool initialLoop</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00018">SkeletonAnimationMulti.cs:18</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a3969d6bfeaaec609941b7914260cedf8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a3969d6bfeaaec609941b7914260cedf8">Spine.Unity.SkeletonAnimationMulti.initialFlipY</a></div><div class="ttdeci">bool initialFlipY</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00016">SkeletonAnimationMulti.cs:16</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_a7ee3fba86aaa662dd7a6e93b446be709"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#a7ee3fba86aaa662dd7a6e93b446be709">Spine.Unity.SkeletonAnimation.state</a></div><div class="ttdeci">Spine.AnimationState state</div><div class="ttdoc">This is the Spine.AnimationState object of this SkeletonAnimation. You can control animations through...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00043">SkeletonAnimation.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_ae742f05394283ec3675d3e130587bae2"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#ae742f05394283ec3675d3e130587bae2">Spine.Unity.SkeletonRenderer.SetMeshSettings</a></div><div class="ttdeci">void SetMeshSettings(MeshGenerator.Settings settings)</div><div class="ttdoc">Applies MeshGenerator settings to the SkeletonRenderer and its internal MeshGenerator.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00139">SkeletonRenderer.cs:139</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a728a162bd985d8ef42754dccaa836b08"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a728a162bd985d8ef42754dccaa836b08">Spine.Unity.SkeletonAnimationMulti.Awake</a></div><div class="ttdeci">void Awake()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00047">SkeletonAnimationMulti.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a57d100d51f77a9fed1a026efc7c2fc34"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a57d100d51f77a9fed1a026efc7c2fc34">Spine.Unity.SkeletonAnimationMulti.Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00030">SkeletonAnimationMulti.cs:30</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a030fce37800e23372b0ccc6fa1bb69dc"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a030fce37800e23372b0ccc6fa1bb69dc">Spine.Unity.SkeletonAnimationMulti.skeletonDataAssets</a></div><div class="ttdeci">List&lt; SkeletonDataAsset &gt; skeletonDataAssets</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00020">SkeletonAnimationMulti.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html">Spine.Unity.SkeletonAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00037">SkeletonAnimation.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_af0ca58e92ae04d1f792bd89e0a096470"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#af0ca58e92ae04d1f792bd89e0a096470">Spine.Unity.SkeletonAnimationMulti.AnimationNameTable</a></div><div class="ttdeci">Dictionary&lt; string, Animation &gt; AnimationNameTable</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00054">SkeletonAnimationMulti.cs:54</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_aab2cbd6f05064cb37bda1496ec64666c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c">Spine.Unity.SkeletonAnimationMulti.SetActiveSkeleton</a></div><div class="ttdeci">void SetActiveSkeleton(SkeletonAnimation skeletonAnimation)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00039">SkeletonAnimationMulti.cs:39</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html_af8b1ef8c88ab61e80cadb65a72f955b4"><div class="ttname"><a href="namespace_spine_1_1_unity.html#af8b1ef8c88ab61e80cadb65a72f955b4">Spine.Unity.AnimationState</a></div><div class="ttdeci">Spine.AnimationState AnimationState</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00011">SkeletonAnimationMulti.cs:11</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a8bd5cc8051e0921d9ce348b2c9191170"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a8bd5cc8051e0921d9ce348b2c9191170">Spine.Unity.SkeletonAnimationMulti.SetEmptyAnimation</a></div><div class="ttdeci">void SetEmptyAnimation(float mixDuration)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00119">SkeletonAnimationMulti.cs:119</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a1ac85e7732da282d1196aea8d46b1690"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a1ac85e7732da282d1196aea8d46b1690">Spine.Unity.SkeletonAnimationMulti.CurrentSkeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation CurrentSkeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00055">SkeletonAnimationMulti.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a42f6d1a0362521c4de02b82d33451448"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a42f6d1a0362521c4de02b82d33451448">Spine.Unity.SkeletonAnimationMulti.MainTrackIndex</a></div><div class="ttdeci">const int MainTrackIndex</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00014">SkeletonAnimationMulti.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_ac1e07e3fee6b8860782e8176d6057e0a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ac1e07e3fee6b8860782e8176d6057e0a">Spine.Unity.SkeletonAnimationMulti.animationNameTable</a></div><div class="ttdeci">readonly Dictionary&lt; string, Animation &gt; animationNameTable</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00025">SkeletonAnimationMulti.cs:25</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a53c1470b8fef85409cdf283449236000"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a53c1470b8fef85409cdf283449236000">Spine.Unity.SkeletonAnimationMulti.Initialize</a></div><div class="ttdeci">void Initialize(bool overwrite)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00057">SkeletonAnimationMulti.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_ad003ed4f608538ab2be0ef583e2ac953"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953">Spine.Unity.SkeletonAnimationMulti.SetAnimation</a></div><div class="ttdeci">TrackEntry SetAnimation(string animationName, bool loop)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00100">SkeletonAnimationMulti.cs:100</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a65ec26cc25cdf6d380f3d3a132ebf550"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a65ec26cc25cdf6d380f3d3a132ebf550">Spine.Unity.SkeletonAnimationMulti.meshGeneratorSettings</a></div><div class="ttdeci">MeshGenerator.Settings meshGeneratorSettings</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00022">SkeletonAnimationMulti.cs:22</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_html"><div class="ttname"><a href="class_spine_1_1_animation_state.html">Spine.AnimationState</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_8cs_source.html#l00034">AnimationState.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a475b9e83c52e7ab2348dfa8ef2d52f30"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a475b9e83c52e7ab2348dfa8ef2d52f30">Spine.Unity.SkeletonAnimationMulti.SetAnimation</a></div><div class="ttdeci">TrackEntry SetAnimation(Animation animation, bool loop)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00104">SkeletonAnimationMulti.cs:104</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_html"><div class="ttname"><a href="struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings.html">Spine.Unity.MeshGenerator.Settings</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00109">SpineMesh.cs:109</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a98c0d4636544a59329ead95e67de911e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a98c0d4636544a59329ead95e67de911e">Spine.Unity.SkeletonAnimationMulti.initialAnimation</a></div><div class="ttdeci">string initialAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00017">SkeletonAnimationMulti.cs:17</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_html_ac37fbf425eb1f4703bf3359c58582498"><div class="ttname"><a href="struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings.html#ac37fbf425eb1f4703bf3359c58582498">Spine.Unity.MeshGenerator.Settings.Default</a></div><div class="ttdeci">static Settings Default</div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00121">SpineMesh.cs:121</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_html"><div class="ttname"><a href="class_spine_1_1_animation.html">Spine.Animation</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00034">Animation.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_ab2add44b4cdba40df124a9685d3925bf"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ab2add44b4cdba40df124a9685d3925bf">Spine.Unity.SkeletonAnimationMulti.ClearAnimation</a></div><div class="ttdeci">void ClearAnimation()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00123">SkeletonAnimationMulti.cs:123</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a6194128cb1a54d12e3cb18540ed4dff2"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a6194128cb1a54d12e3cb18540ed4dff2">Spine.Unity.SkeletonAnimationMulti.initialFlipX</a></div><div class="ttdeci">bool initialFlipX</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00016">SkeletonAnimationMulti.cs:16</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_a72df560bdae9fc470a71733f36cef44f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a72df560bdae9fc470a71733f36cef44f">Spine.Unity.SkeletonAnimationMulti.animationSkeletonTable</a></div><div class="ttdeci">readonly Dictionary&lt; Animation, SkeletonAnimation &gt; animationSkeletonTable</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00026">SkeletonAnimationMulti.cs:26</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_track_entry_html"><div class="ttname"><a href="class_spine_1_1_track_entry.html">Spine.TrackEntry</a></div><div class="ttdoc">State for the playback of an animation.</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_8cs_source.html#l00661">AnimationState.cs:661</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_multi_html_ae5858b3ef30105bb381bc8534a082106"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ae5858b3ef30105bb381bc8534a082106">Spine.Unity.SkeletonAnimationMulti.AnimationSkeletonTable</a></div><div class="ttdeci">Dictionary&lt; Animation, SkeletonAnimation &gt; AnimationSkeletonTable</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_multi_8cs_source.html#l00053">SkeletonAnimationMulti.cs:53</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_8d355f1d624c50c9e3eb2033d942fcf0.html">Sample Components</a></li><li class="navelem"><a class="el" href="dir_897bd6685cd97bd3ae03ecafcd745a8d.html">SkeletonAnimationMulti</a></li><li class="navelem"><a class="el" href="_skeleton_animation_multi_8cs.html">SkeletonAnimationMulti.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

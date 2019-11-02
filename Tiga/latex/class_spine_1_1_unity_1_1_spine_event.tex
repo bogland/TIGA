@@ -1,0 +1,118 @@
+\hypertarget{class_spine_1_1_unity_1_1_spine_event}{}\doxysection{Spine.\+Unity.\+Spine\+Event 클래스 참조}
+\label{class_spine_1_1_unity_1_1_spine_event}\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+
+
+Spine.\+Unity.\+Spine\+Event에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Spine\+Event에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_event_a2275fde6c21ac0c951f7f150dc13743e}{Spine\+Event}} (string \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}{starts\+With}}=\char`\"{}\char`\"{}, string \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}{data\+Field}}=\char`\"{}\char`\"{}, bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}{include\+None}}=true, bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}{fallback\+To\+Text\+Field}}=false)
+\begin{DoxyCompactList}\small\item\em Smart popup menu for \mbox{\hyperlink{namespace_spine}{Spine}} Events (\mbox{\hyperlink{class_spine_1_1_event_data}{Spine.\+Event\+Data}}) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}{data\+Field}} = \char`\"{}\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}{starts\+With}} = \char`\"{}\char`\"{}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}{include\+None}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}{fallback\+To\+Text\+Field}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Attributes.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_event_a2275fde6c21ac0c951f7f150dc13743e}\label{class_spine_1_1_unity_1_1_spine_event_a2275fde6c21ac0c951f7f150dc13743e}} 
+\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}!SpineEvent@{SpineEvent}}
+\index{SpineEvent@{SpineEvent}!Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+\doxysubsubsection{\texorpdfstring{SpineEvent()}{SpineEvent()}}
+{\footnotesize\ttfamily Spine.\+Unity.\+Spine\+Event.\+Spine\+Event (\begin{DoxyParamCaption}\item[{string}]{starts\+With = {\ttfamily \char`\"{}\char`\"{}},  }\item[{string}]{data\+Field = {\ttfamily \char`\"{}\char`\"{}},  }\item[{bool}]{include\+None = {\ttfamily true},  }\item[{bool}]{fallback\+To\+Text\+Field = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Smart popup menu for \mbox{\hyperlink{namespace_spine}{Spine}} Events (\mbox{\hyperlink{class_spine_1_1_event_data}{Spine.\+Event\+Data}}) 
+
+
+\begin{DoxyParams}{매개변수}
+{\em starts\+With} & Filters popup results to elements that begin with supplied string.\\
+\hline
+{\em include\+None} & If true, the dropdown list will include a \char`\"{}none\char`\"{} option which stored as an empty string.\\
+\hline
+{\em data\+Field} & If specified, a locally scoped field with the name supplied by in data\+Field will be used to fill the popup results. Valid types are \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} and \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} (and derivatives). If left empty and the script the attribute is applied to is derived from Component, Get\+Component(\+Skeleton\+Renderer)() will be called as a fallback. \\
+\hline
+{\em fallback\+To\+Text\+Field} & If true, and an animation list source can\textquotesingle{}t be found, the field will fall back to a normal text field. If false, it will show an error.\\
+\hline
+\end{DoxyParams}
+
+
+Spine\+Attributes.\+cs 파일의 80 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                                                                                                      \{}
+\DoxyCodeLine{82             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}{startsWith}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}{startsWith}};}
+\DoxyCodeLine{83             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}{dataField}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}{dataField}};}
+\DoxyCodeLine{84             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}{includeNone}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}{includeNone}};}
+\DoxyCodeLine{85             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}{fallbackToTextField}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}{fallbackToTextField}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}\label{class_spine_1_1_unity_1_1_spine_attribute_base_a12a6e35906344b58c6de1b8d87a295e5}} 
+\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}!dataField@{dataField}}
+\index{dataField@{dataField}!Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+\doxysubsubsection{\texorpdfstring{dataField}{dataField}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Spine\+Attribute\+Base.\+data\+Field = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Spine\+Attributes.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}\label{class_spine_1_1_unity_1_1_spine_attribute_base_ad26c0e6767b76099323f8b01ed8175e5}} 
+\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}!fallbackToTextField@{fallbackToTextField}}
+\index{fallbackToTextField@{fallbackToTextField}!Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+\doxysubsubsection{\texorpdfstring{fallbackToTextField}{fallbackToTextField}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Spine\+Attribute\+Base.\+fallback\+To\+Text\+Field = false\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Spine\+Attributes.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}\label{class_spine_1_1_unity_1_1_spine_attribute_base_adc185251e3abf21e98937ebab29aedb1}} 
+\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}!includeNone@{includeNone}}
+\index{includeNone@{includeNone}!Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+\doxysubsubsection{\texorpdfstring{includeNone}{includeNone}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Spine\+Attribute\+Base.\+include\+None = true\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Spine\+Attributes.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}\label{class_spine_1_1_unity_1_1_spine_attribute_base_a0268b704de832425c1fdcac15b1e3bc7}} 
+\index{Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}!startsWith@{startsWith}}
+\index{startsWith@{startsWith}!Spine.Unity.SpineEvent@{Spine.Unity.SpineEvent}}
+\doxysubsubsection{\texorpdfstring{startsWith}{startsWith}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Spine\+Attribute\+Base.\+starts\+With = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Spine\+Attributes.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\mbox{\hyperlink{_spine_attributes_8cs}{Spine\+Attributes.\+cs}}\end{DoxyCompactItemize}

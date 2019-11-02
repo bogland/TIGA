@@ -1,0 +1,16 @@
+digraph "Spine.Unity.Examples.RaggedySpineboy.AddRigidbody"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Examples.Raggedy\lSpineboy.AddRigidbody",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Examples.Raggedy\lSpineboy.Restore",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy.html#a8c76d5fd0fd155bca1aa39fb8d2c9bea",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Examples.Raggedy\lSpineboy.WaitUntilStopped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy.html#af28eaf3f26517130f19e865d4085ab09",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Examples.Raggedy\lSpineboy.Launch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy.html#a34812bdd6f9688158b93c20ce3ebc4ef",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Examples.Raggedy\lSpineboy.OnMouseUp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy.html#af775b7760436959e7ccccd12dc6e3a6d",tooltip=" "];
+}

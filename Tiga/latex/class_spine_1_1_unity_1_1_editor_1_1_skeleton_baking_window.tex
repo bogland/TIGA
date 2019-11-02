@@ -1,0 +1,305 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window}{}\doxysection{Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window}\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+
+
+Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aa0ab69fd50ebf4df56b156a41aa9837e}{Init}} (Menu\+Command command)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeleton\+Data\+Asset}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a53027f720cf2142a5a92cc0b695e0fce}{skin\+To\+Bake}} = \char`\"{}default\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a8a85b3a493c69fc09a285c8f298df320}{Data\+Asset\+Changed}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7e83d787166c9dc42cc9e9ced4f74ae3}{On\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bake\+Animations}} = false
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bake\+IK}} = true
+\item 
+Send\+Message\+Options \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bake\+Event\+Options}}
+\item 
+Serialized\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bake\+Skin}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aee189fa6cfd77997e1b0fb20cca6a37c}{Is\+Utility\+Window}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a8a85b3a493c69fc09a285c8f298df320}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a8a85b3a493c69fc09a285c8f298df320}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!DataAssetChanged@{DataAssetChanged}}
+\index{DataAssetChanged@{DataAssetChanged}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{DataAssetChanged()}{DataAssetChanged()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+Data\+Asset\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                  \{}
+\DoxyCodeLine{38             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{39         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aa0ab69fd50ebf4df56b156a41aa9837e}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aa0ab69fd50ebf4df56b156a41aa9837e}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!Init@{Init}}
+\index{Init@{Init}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+Init (\begin{DoxyParamCaption}\item[{Menu\+Command}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                                                       \{}
+\DoxyCodeLine{16             var window = EditorWindow.GetWindow<SkeletonBakingWindow>(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aee189fa6cfd77997e1b0fb20cca6a37c}{IsUtilityWindow}});}
+\DoxyCodeLine{17             window.minSize = \textcolor{keyword}{new} Vector2(330f, 530f);}
+\DoxyCodeLine{18             window.maxSize = \textcolor{keyword}{new} Vector2(600f, 1000f);}
+\DoxyCodeLine{19             window.titleContent = \textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Skeleton Baking"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.spine);}
+\DoxyCodeLine{20             window.skeletonDataAsset = command.context as SkeletonDataAsset;}
+\DoxyCodeLine{21             window.Show();}
+\DoxyCodeLine{22         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7e83d787166c9dc42cc9e9ced4f74ae3}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7e83d787166c9dc42cc9e9ced4f74ae3}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+On\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                       \{}
+\DoxyCodeLine{42             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}} ?? \textcolor{keyword}{new} SerializedObject(\textcolor{keyword}{this});}
+\DoxyCodeLine{43         }
+\DoxyCodeLine{44             EditorGUIUtility.wideMode = \textcolor{keyword}{true};}
+\DoxyCodeLine{45             EditorGUILayout.LabelField(\textcolor{stringliteral}{"Spine Skeleton Prefab Baking"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47             \textcolor{keyword}{const} \textcolor{keywordtype}{string} BakingWarningMessage = \textcolor{stringliteral}{"\(\backslash\)nSkeleton baking is not the primary use case for Spine skeletons."} +}
+\DoxyCodeLine{48                 \textcolor{stringliteral}{"\(\backslash\)nUse baking if you have specialized uses, such as simplified skeletons with movement driven by physics."} +}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBaked Skeletons do not support the following:"} +}
+\DoxyCodeLine{51                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tDisabled rotation or scale inheritance"} +}
+\DoxyCodeLine{52                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tLocal Shear"} +}
+\DoxyCodeLine{53                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tAll Constraint types"} +}
+\DoxyCodeLine{54                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tWeighted mesh verts with more than 4 bound bones"} +}
+\DoxyCodeLine{55             }
+\DoxyCodeLine{56                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nBaked Animations do not support the following:"} +}
+\DoxyCodeLine{57                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tMesh Deform Keys"} +}
+\DoxyCodeLine{58                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tColor Keys"} +}
+\DoxyCodeLine{59                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tDraw Order Keys"} +}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61                 \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)nAnimation Curves are sampled at 60fps and are not realtime."} +}
+\DoxyCodeLine{62                 \textcolor{stringliteral}{"\(\backslash\)nConstraint animations are also baked into animation curves."} +}
+\DoxyCodeLine{63                 \textcolor{stringliteral}{"\(\backslash\)nSee SkeletonBaker.cs comments for full details.\(\backslash\)n"};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65             EditorGUILayout.HelpBox(BakingWarningMessage, MessageType.Info, \textcolor{keyword}{true});}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{68             var skeletonDataAssetProperty = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}}.FindProperty(\textcolor{stringliteral}{"skeletonDataAsset"});}
+\DoxyCodeLine{69             EditorGUILayout.PropertyField(skeletonDataAssetProperty, \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"SkeletonDataAsset"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.spine));}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{71                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}}.ApplyModifiedProperties();}
+\DoxyCodeLine{72                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a8a85b3a493c69fc09a285c8f298df320}{DataAssetChanged}}();}
+\DoxyCodeLine{73             \}}
+\DoxyCodeLine{74             EditorGUILayout.Space();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{77             var skeletonData = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{78             \textcolor{keywordflow}{if} (skeletonData == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{79             \textcolor{keywordtype}{bool} hasExtraSkins = skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a680670820ea8ce38d0a1835e4aefb1a5}{Skins}}.Count > 1;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.BoxScope(\textcolor{keyword}{false})) \{}
+\DoxyCodeLine{82                 EditorGUILayout.LabelField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}}.name, EditorStyles.boldLabel);}
+\DoxyCodeLine{83                 \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.IndentScope()) \{}
+\DoxyCodeLine{84                     EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Bones: "} + skeletonData.Bones.Count, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.bone));}
+\DoxyCodeLine{85                     EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Slots: "} + skeletonData.Slots.Count, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.slotRoot));}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87                     \textcolor{keywordflow}{if} (hasExtraSkins) \{}
+\DoxyCodeLine{88                         EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Skins: "} + skeletonData.Skins.Count, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.skinsRoot));}
+\DoxyCodeLine{89                         EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Current skin attachments: "} + (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} == \textcolor{keyword}{null} ? 0 : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}}.\mbox{\hyperlink{class_spine_1_1_skin_a3dd9c1779f9ebabd27c71953cb5235fa}{Attachments}}.Count), \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.skinPlaceholder));}
+\DoxyCodeLine{90                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skeletonData.Skins.Count == 1) \{}
+\DoxyCodeLine{91                         EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Skins: 1 (only default Skin)"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.skinsRoot));}
+\DoxyCodeLine{92                     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94                     \textcolor{keywordtype}{int} totalAttachments = 0;}
+\DoxyCodeLine{95                     \textcolor{keywordflow}{foreach} (var s \textcolor{keywordflow}{in} skeletonData.Skins)}
+\DoxyCodeLine{96                         totalAttachments += s.Attachments.Count;}
+\DoxyCodeLine{97                     EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Total Attachments: "} + totalAttachments, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.genericAttachment));}
+\DoxyCodeLine{98                 \}}
+\DoxyCodeLine{99             \}}
+\DoxyCodeLine{100             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.BoxScope(\textcolor{keyword}{false})) \{}
+\DoxyCodeLine{101                 EditorGUILayout.LabelField(\textcolor{stringliteral}{"Animations"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{102                 EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Animations: "} + skeletonData.Animations.Count, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.animation));}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104                 \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.IndentScope()) \{}
+\DoxyCodeLine{105                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}} = EditorGUILayout.Toggle(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Bake Animations"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.animationRoot), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}});}
+\DoxyCodeLine{106                     \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUI.DisabledScope(!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}})) \{}
+\DoxyCodeLine{107                         \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.IndentScope()) \{}
+\DoxyCodeLine{108                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bakeIK}} = EditorGUILayout.Toggle(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Bake IK"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.constraintIK), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bakeIK}});}
+\DoxyCodeLine{109                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bakeEventOptions}} = (SendMessageOptions)EditorGUILayout.EnumPopup(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Event Options"}, \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.userEvent), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bakeEventOptions}});}
+\DoxyCodeLine{110                         \}}
+\DoxyCodeLine{111                     \}}
+\DoxyCodeLine{112                 \}}
+\DoxyCodeLine{113             \}}
+\DoxyCodeLine{114             EditorGUILayout.Space();}
+\DoxyCodeLine{115             }
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a53027f720cf2142a5a92cc0b695e0fce}{skinToBake}}) \&\& UnityEngine.Event.current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.Repaint)}
+\DoxyCodeLine{117                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} = skeletonData.FindSkin(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a53027f720cf2142a5a92cc0b695e0fce}{skinToBake}}) ?? skeletonData.DefaultSkin;}
+\DoxyCodeLine{118             }
+\DoxyCodeLine{119             var prefabIcon = EditorGUIUtility.FindTexture(\textcolor{stringliteral}{"PrefabModel Icon"});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (hasExtraSkins) \{}
+\DoxyCodeLine{122                 EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{123                 EditorGUILayout.PropertyField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}}.FindProperty(\textcolor{stringliteral}{"skinToBake"}));}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{125                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}{so}}.ApplyModifiedProperties();}
+\DoxyCodeLine{126                     Repaint();}
+\DoxyCodeLine{127                 \}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.LargeCenteredButton(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Bake Skeleton with Skin (\{0\})"}, (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"default"} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}}.\mbox{\hyperlink{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}{Name}})), prefabIcon))) \{}
+\DoxyCodeLine{130                     SkeletonBaker.BakeToPrefab(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}}, \textcolor{keyword}{new} ExposedList<Skin>(\textcolor{keyword}{new}[] \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} \}), \textcolor{stringliteral}{""}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bakeIK}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bakeEventOptions}});}
+\DoxyCodeLine{131                 \}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.LargeCenteredButton(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Bake All (\{0\} skins)"}, skeletonData.Skins.Count), prefabIcon))) \{}
+\DoxyCodeLine{134                     SkeletonBaker.BakeToPrefab(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}}, skeletonData.Skins, \textcolor{stringliteral}{""}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bakeIK}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bakeEventOptions}});}
+\DoxyCodeLine{135                 \}}
+\DoxyCodeLine{136             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{137                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.LargeCenteredButton(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Bake Skeleton"}, prefabIcon))) \{}
+\DoxyCodeLine{138                     SkeletonBaker.BakeToPrefab(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}{skeletonDataAsset}}, \textcolor{keyword}{new} ExposedList<Skin>(\textcolor{keyword}{new}[] \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}{bakeSkin}} \}), \textcolor{stringliteral}{""}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}{bakeAnimations}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}{bakeIK}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}{bakeEventOptions}});}
+\DoxyCodeLine{139                 \}}
+\DoxyCodeLine{140                 }
+\DoxyCodeLine{141             \}           }
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a3356ce6db6a3e41c6eac15fc49cf8eb5}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!bakeAnimations@{bakeAnimations}}
+\index{bakeAnimations@{bakeAnimations}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{bakeAnimations}{bakeAnimations}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+bake\+Animations = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 29 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_affaf9c44ec0d6813f60c114ef2798ac4}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!bakeEventOptions@{bakeEventOptions}}
+\index{bakeEventOptions@{bakeEventOptions}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{bakeEventOptions}{bakeEventOptions}}
+{\footnotesize\ttfamily Send\+Message\+Options Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+bake\+Event\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 31 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a180fc2512dd4f57e1897e76ab2d4598d}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!bakeIK@{bakeIK}}
+\index{bakeIK@{bakeIK}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{bakeIK}{bakeIK}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+bake\+IK = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 30 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a7725051bd7ed960bd3b263a5740a051c}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!bakeSkin@{bakeSkin}}
+\index{bakeSkin@{bakeSkin}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{bakeSkin}{bakeSkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+bake\+Skin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aee189fa6cfd77997e1b0fb20cca6a37c}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_aee189fa6cfd77997e1b0fb20cca6a37c}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!IsUtilityWindow@{IsUtilityWindow}}
+\index{IsUtilityWindow@{IsUtilityWindow}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{IsUtilityWindow}{IsUtilityWindow}}
+{\footnotesize\ttfamily const bool Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+Is\+Utility\+Window = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ad0b80200e30e934f8d05b575d6927fa8}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!skeletonDataAsset@{skeletonDataAsset}}
+\index{skeletonDataAsset@{skeletonDataAsset}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{skeletonDataAsset}{skeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+skeleton\+Data\+Asset}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 24 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a53027f720cf2142a5a92cc0b695e0fce}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_a53027f720cf2142a5a92cc0b695e0fce}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!skinToBake@{skinToBake}}
+\index{skinToBake@{skinToBake}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{skinToBake}{skinToBake}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+skin\+To\+Bake = \char`\"{}default\char`\"{}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 26 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}\label{class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window_ab10bcf1322a256a32fb741a598f66998}} 
+\index{Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}!so@{so}}
+\index{so@{so}!Spine.Unity.Editor.SkeletonBakingWindow@{Spine.Unity.Editor.SkeletonBakingWindow}}
+\doxysubsubsection{\texorpdfstring{so}{so}}
+{\footnotesize\ttfamily Serialized\+Object Spine.\+Unity.\+Editor.\+Skeleton\+Baking\+Window.\+so\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Baking\+Window.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_skeleton_baking_window_8cs}{Skeleton\+Baking\+Window.\+cs}}\end{DoxyCompactItemize}

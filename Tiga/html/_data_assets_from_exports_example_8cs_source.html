@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/DataAssetsFromExportsExample.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_data_assets_from_exports_example_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DataAssetsFromExportsExample.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_data_assets_from_exports_example_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html">    6</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html">DataAssetsFromExportsExample</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a40a976d295215e210cea1db61f5e6ea3">    8</a></span>&#160;        <span class="keyword">public</span> TextAsset <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a40a976d295215e210cea1db61f5e6ea3">skeletonJson</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a0c6b86fbbfb887ee0400d4948532562f">    9</a></span>&#160;        <span class="keyword">public</span> TextAsset <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a0c6b86fbbfb887ee0400d4948532562f">atlasText</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a33d00c9ce9d3b6a7b15d3c7a914615b6">   10</a></span>&#160;        <span class="keyword">public</span> Texture2D[] <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a33d00c9ce9d3b6a7b15d3c7a914615b6">textures</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a2b80f7f75100f5b179802eaf23a88a41">   11</a></span>&#160;        <span class="keyword">public</span> Material <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a2b80f7f75100f5b179802eaf23a88a41">materialPropertySource</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ab4125b5a17c22dce3f81e014345272c4">   13</a></span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ab4125b5a17c22dce3f81e014345272c4">runtimeAtlasAsset</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">   14</a></span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_skeleton_data_asset.html">SkeletonDataAsset</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">runtimeSkeletonDataAsset</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">   15</a></span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a58816c24ac149c1a22d998a5c444aa38">   17</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a58816c24ac149c1a22d998a5c444aa38">CreateRuntimeAssetsAndGameObject</a> () {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="comment">// 1. Create the AtlasAsset (needs atlas text asset and textures, and materials/shader);</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="comment">// 2. Create SkeletonDataAsset (needs json or binary asset file, and an AtlasAsset)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="comment">// 3. Create SkeletonAnimation (needs a valid SkeletonDataAsset)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ab4125b5a17c22dce3f81e014345272c4">runtimeAtlasAsset</a> = <a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#ab10ec39778cb41ce637494206afc925e">CreateRuntimeInstance</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a0c6b86fbbfb887ee0400d4948532562f">atlasText</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a33d00c9ce9d3b6a7b15d3c7a914615b6">textures</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a2b80f7f75100f5b179802eaf23a88a41">materialPropertySource</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">runtimeSkeletonDataAsset</a> = <a class="code" href="class_spine_1_1_unity_1_1_skeleton_data_asset.html">SkeletonDataAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a7e7c2b66ef726e11e5a9536b03d5884a">CreateRuntimeInstance</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a40a976d295215e210cea1db61f5e6ea3">skeletonJson</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ab4125b5a17c22dce3f81e014345272c4">runtimeAtlasAsset</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ae073836d2a0983f784abc976f8f03531">   26</a></span>&#160;        IEnumerator <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ae073836d2a0983f784abc976f8f03531">Start</a> () {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a58816c24ac149c1a22d998a5c444aa38">CreateRuntimeAssetsAndGameObject</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">runtimeSkeletonDataAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e">GetSkeletonData</a>(<span class="keyword">false</span>); <span class="comment">// preload.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(0.5f);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a> = <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e">NewSkeletonAnimationGameObject</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">runtimeSkeletonDataAsset</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="comment">// Extra Stuff</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#a6c87e552fabe217a7292a78f9d6919dc">Initialize</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8">SetSkin</a>(<span class="stringliteral">&quot;base&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904">SetSlotsToSetupPose</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">AnimationState</a>.SetAnimation(0, <span class="stringliteral">&quot;run&quot;</span>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.GetComponent&lt;MeshRenderer&gt;().sortingOrder = 10;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">runtimeSkeletonAnimation</a>.transform.Translate(Vector3.down * 2);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html">Spine.Unity.Examples.DataAssetsFromExportsExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00006">DataAssetsFromExportsExample.cs:6</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_data_asset_html_a7e7c2b66ef726e11e5a9536b03d5884a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a7e7c2b66ef726e11e5a9536b03d5884a">Spine.Unity.SkeletonDataAsset.CreateRuntimeInstance</a></div><div class="ttdeci">static SkeletonDataAsset CreateRuntimeInstance(TextAsset skeletonDataFile, AtlasAsset atlasAsset, bool initialize, float scale=0.01f)</div><div class="ttdoc">Creates a runtime SkeletonDataAsset.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_asset_8cs_source.html#l00067">SkeletonDataAsset.cs:67</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_ab4125b5a17c22dce3f81e014345272c4"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ab4125b5a17c22dce3f81e014345272c4">Spine.Unity.Examples.DataAssetsFromExportsExample.runtimeAtlasAsset</a></div><div class="ttdeci">AtlasAsset runtimeAtlasAsset</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00013">DataAssetsFromExportsExample.cs:13</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_a5392d5e12e3752d56126da781aa8027e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e">Spine.Unity.SkeletonAnimation.NewSkeletonAnimationGameObject</a></div><div class="ttdeci">static SkeletonAnimation NewSkeletonAnimationGameObject(SkeletonDataAsset skeletonDataAsset)</div><div class="ttdoc">Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00130">SkeletonAnimation.cs:130</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a8018f6075e7578e9bccf1cd81c92f904"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904">Spine.Skeleton.SetSlotsToSetupPose</a></div><div class="ttdeci">void SetSlotsToSetupPose()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00329">Skeleton.cs:329</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_data_asset_html_a2b0df38bd74c1b464ed8543f72c7fd4e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e">Spine.Unity.SkeletonDataAsset.GetSkeletonData</a></div><div class="ttdeci">SkeletonData GetSkeletonData(bool quiet)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_asset_8cs_source.html#l00092">SkeletonDataAsset.cs:92</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_aca997f96ffb5a89579dc325b790f0fd6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Spine.Unity.SkeletonRenderer.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00111">SkeletonRenderer.cs:111</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a58816c24ac149c1a22d998a5c444aa38"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a58816c24ac149c1a22d998a5c444aa38">Spine.Unity.Examples.DataAssetsFromExportsExample.CreateRuntimeAssetsAndGameObject</a></div><div class="ttdeci">void CreateRuntimeAssetsAndGameObject()</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00017">DataAssetsFromExportsExample.cs:17</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html_ab10ec39778cb41ce637494206afc925e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html#ab10ec39778cb41ce637494206afc925e">Spine.Unity.AtlasAsset.CreateRuntimeInstance</a></div><div class="ttdeci">static AtlasAsset CreateRuntimeInstance(TextAsset atlasText, Material[] materials, bool initialize)</div><div class="ttdoc">Creates a runtime AtlasAsset</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00048">AtlasAsset.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a11f026635a9bb7ce2df7734d311a3a81"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a11f026635a9bb7ce2df7734d311a3a81">Spine.Unity.Examples.DataAssetsFromExportsExample.runtimeSkeletonDataAsset</a></div><div class="ttdeci">SkeletonDataAsset runtimeSkeletonDataAsset</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00014">DataAssetsFromExportsExample.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_a6c87e552fabe217a7292a78f9d6919dc"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#a6c87e552fabe217a7292a78f9d6919dc">Spine.Unity.SkeletonAnimation.Initialize</a></div><div class="ttdeci">override void Initialize(bool overwrite)</div><div class="ttdoc">Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects a...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00145">SkeletonAnimation.cs:145</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html">Spine.Unity.SkeletonAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00037">SkeletonAnimation.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a2b80f7f75100f5b179802eaf23a88a41"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a2b80f7f75100f5b179802eaf23a88a41">Spine.Unity.Examples.DataAssetsFromExportsExample.materialPropertySource</a></div><div class="ttdeci">Material materialPropertySource</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00011">DataAssetsFromExportsExample.cs:11</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_data_asset_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_data_asset.html">Spine.Unity.SkeletonDataAsset</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_asset_8cs_source.html#l00036">SkeletonDataAsset.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_af80bbbc3b2b5d588152eba7e83430dc8"><div class="ttname"><a href="class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8">Spine.Skeleton.SetSkin</a></div><div class="ttdeci">void SetSkin(string skinName)</div><div class="ttdoc">Sets a skin by name (see SetSkin).</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00385">Skeleton.cs:385</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_ab1694ead3860e2f34dd892747aef356b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">Spine.Unity.SkeletonAnimation.AnimationState</a></div><div class="ttdeci">Spine.AnimationState AnimationState</div><div class="ttdoc">This is the Spine.AnimationState object of this SkeletonAnimation. You can control animations through...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00047">SkeletonAnimation.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a40a976d295215e210cea1db61f5e6ea3"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a40a976d295215e210cea1db61f5e6ea3">Spine.Unity.Examples.DataAssetsFromExportsExample.skeletonJson</a></div><div class="ttdeci">TextAsset skeletonJson</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00008">DataAssetsFromExportsExample.cs:8</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a357ae7e88418db279abf209975c207d5"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a357ae7e88418db279abf209975c207d5">Spine.Unity.Examples.DataAssetsFromExportsExample.runtimeSkeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation runtimeSkeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00015">DataAssetsFromExportsExample.cs:15</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a33d00c9ce9d3b6a7b15d3c7a914615b6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a33d00c9ce9d3b6a7b15d3c7a914615b6">Spine.Unity.Examples.DataAssetsFromExportsExample.textures</a></div><div class="ttdeci">Texture2D[] textures</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00010">DataAssetsFromExportsExample.cs:10</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_a0c6b86fbbfb887ee0400d4948532562f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a0c6b86fbbfb887ee0400d4948532562f">Spine.Unity.Examples.DataAssetsFromExportsExample.atlasText</a></div><div class="ttdeci">TextAsset atlasText</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00009">DataAssetsFromExportsExample.cs:9</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html">Spine.Unity.AtlasAsset</a></div><div class="ttdoc">Loads and stores a Spine atlas and list of materials.</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00038">AtlasAsset.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example_html_ae073836d2a0983f784abc976f8f03531"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ae073836d2a0983f784abc976f8f03531">Spine.Unity.Examples.DataAssetsFromExportsExample.Start</a></div><div class="ttdeci">IEnumerator Start()</div><div class="ttdef"><b>Definition:</b> <a href="_data_assets_from_exports_example_8cs_source.html#l00026">DataAssetsFromExportsExample.cs:26</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="_data_assets_from_exports_example_8cs.html">DataAssetsFromExportsExample.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

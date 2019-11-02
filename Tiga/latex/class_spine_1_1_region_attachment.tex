@@ -1,0 +1,902 @@
+\hypertarget{class_spine_1_1_region_attachment}{}\doxysection{Spine.\+Region\+Attachment 클래스 참조}
+\label{class_spine_1_1_region_attachment}\index{Spine.RegionAttachment@{Spine.RegionAttachment}}
+
+
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} that displays a texture region.  
+
+
+
+
+Spine.\+Region\+Attachment에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Region\+Attachment에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_region_attachment_a714beb5d8e0dcac6cecff7207220cef0}{Region\+Attachment}} (string name)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_region_attachment_aaa7a5c3106159f8e8dbd9da13a64ac29}{Update\+Offset}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_region_attachment_a0226ca72aa847e51a00dd75a701ec8cb}{Set\+U\+Vs}} (float u, float v, float u2, float v2, bool rotate)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_region_attachment_a06e20a82691dfcedf87339edf34c9de3}{Compute\+World\+Vertices}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, float\mbox{[}$\,$\mbox{]} world\+Vertices, int offset, int stride=2)
+\begin{DoxyCompactList}\small\item\em Transforms the attachment\textquotesingle{}s four vertices to world coordinates. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}{B\+LX}} = 0
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}{B\+LY}} = 1
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}{U\+LX}} = 2
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}{U\+LY}} = 3
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}{U\+RX}} = 4
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}{U\+RY}} = 5
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}{B\+RX}} = 6
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}{B\+RY}} = 7
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a31b47eea538136311152ffeaba18bb2b}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a868a73359ef809fcb621bae11c551c27}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a648b307524d3931124d3813c0e9db637}{Rotation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_ab600292b987a0a6b69db3b2115ac711f}{ScaleX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_af2bf292e6a83805a0ce4623c8e585355}{ScaleY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a2e04bf0f188f25cefcd3c0f9cc347032}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_abc8a5cf06d82a1c62c6c433c8b76e2a4}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a4306b64b2df7894047435e16df73d77f}{R}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a9ba6d6d939b8cf4409eab8ba4c0c7b79}{G}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_ab4495e3b95695edd237a05ff14bab405}{B}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a046310cc53356a7d50137a75affe06e2}{A}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_region_attachment_a2e7ba8e9f71d28553ecfce1c1bef904d}{Path}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+object \mbox{\hyperlink{class_spine_1_1_region_attachment_a35e47f777b6d0c6cf1def392155bc89d}{Renderer\+Object}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a1487cb561ea9b5488733cb1dabc9d9d5}{Region\+OffsetX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a6f637496d4dfb7a4e1f620ce54df500e}{Region\+OffsetY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a09a4541bfe0e552d6126f8930f403b7d}{Region\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_ac640cdc0bd4c09ab11a08ea1331b44b0}{Region\+Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_afa99724b09d2798f1273de89d203f446}{Region\+Original\+Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_aeba63b18788467fcaf67fffb58fd8ff8}{Region\+Original\+Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_region_attachment_af2da01ae99b5555b7f3b9df1f2a85b9b}{Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_region_attachment_abdd29e149904690151671767e9314ef9}{U\+Vs}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}{region\+OffsetY}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}{region\+Width}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}{region\+Height}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{region\+Original\+Width}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}{region\+Original\+Height}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}} = new float\mbox{[}8\mbox{]}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a5a15e4d8ba7b4a4dfee9dcaa2a8c53b6}{g}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} that displays a texture region. 
+
+
+
+Region\+Attachment.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a714beb5d8e0dcac6cecff7207220cef0}\label{class_spine_1_1_region_attachment_a714beb5d8e0dcac6cecff7207220cef0}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionAttachment@{RegionAttachment}}
+\index{RegionAttachment@{RegionAttachment}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionAttachment()}{RegionAttachment()}}
+{\footnotesize\ttfamily Spine.\+Region\+Attachment.\+Region\+Attachment (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Region\+Attachment.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76             : base(name) \{}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a06e20a82691dfcedf87339edf34c9de3}\label{class_spine_1_1_region_attachment_a06e20a82691dfcedf87339edf34c9de3}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ComputeWorldVertices@{ComputeWorldVertices}}
+\index{ComputeWorldVertices@{ComputeWorldVertices}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ComputeWorldVertices()}{ComputeWorldVertices()}}
+{\footnotesize\ttfamily void Spine.\+Region\+Attachment.\+Compute\+World\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{float\mbox{[}$\,$\mbox{]}}]{world\+Vertices,  }\item[{int}]{offset,  }\item[{int}]{stride = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+Transforms the attachment\textquotesingle{}s four vertices to world coordinates. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em bone} & The parent bone.\\
+\hline
+{\em world\+Vertices} & The output world vertices. Must have a length greater than or equal to offset + 8.\\
+\hline
+{\em offset} & The world\+Vertices index to begin writing values.\\
+\hline
+{\em stride} & The number of world\+Vertices entries between the value pairs written.\\
+\hline
+\end{DoxyParams}
+
+
+Region\+Attachment.\+cs 파일의 150 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151                                                                                                         \{}
+\DoxyCodeLine{152             \textcolor{keywordtype}{float}[] vertexOffset = this.offset;}
+\DoxyCodeLine{153             \textcolor{keywordtype}{float} bwx = bone.worldX, bwy = bone.worldY;}
+\DoxyCodeLine{154             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} = bone.a, \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} = bone.b, c = bone.c, d = bone.d;}
+\DoxyCodeLine{155             \textcolor{keywordtype}{float} offsetX, offsetY;}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157             \textcolor{comment}{// Vertex order is different from RegionAttachment.java}}
+\DoxyCodeLine{158             offsetX = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}{BRX}}]; \textcolor{comment}{// 0}}
+\DoxyCodeLine{159             offsetY = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}{BRY}}]; \textcolor{comment}{// 1}}
+\DoxyCodeLine{160             worldVertices[offset] = offsetX * \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} + offsetY * \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} + bwx; \textcolor{comment}{// bl}}
+\DoxyCodeLine{161             worldVertices[offset + 1] = offsetX * c + offsetY * d + bwy;}
+\DoxyCodeLine{162             offset += stride;}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164             offsetX = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}{BLX}}]; \textcolor{comment}{// 2}}
+\DoxyCodeLine{165             offsetY = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}{BLY}}]; \textcolor{comment}{// 3}}
+\DoxyCodeLine{166             worldVertices[offset] = offsetX * \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} + offsetY * \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} + bwx; \textcolor{comment}{// ul}}
+\DoxyCodeLine{167             worldVertices[offset + 1] = offsetX * c + offsetY * d + bwy;}
+\DoxyCodeLine{168             offset += stride;}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170             offsetX = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}{ULX}}]; \textcolor{comment}{// 4}}
+\DoxyCodeLine{171             offsetY = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}{ULY}}]; \textcolor{comment}{// 5}}
+\DoxyCodeLine{172             worldVertices[offset] = offsetX * \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} + offsetY * \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} + bwx; \textcolor{comment}{// ur}}
+\DoxyCodeLine{173             worldVertices[offset + 1] = offsetX * c + offsetY * d + bwy;}
+\DoxyCodeLine{174             offset += stride;}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176             offsetX = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}{URX}}]; \textcolor{comment}{// 6}}
+\DoxyCodeLine{177             offsetY = vertexOffset[\mbox{\hyperlink{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}{URY}}]; \textcolor{comment}{// 7}}
+\DoxyCodeLine{178             worldVertices[offset] = offsetX * \mbox{\hyperlink{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}{a}} + offsetY * \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} + bwx; \textcolor{comment}{// br}}
+\DoxyCodeLine{179             worldVertices[offset + 1] = offsetX * c + offsetY * d + bwy;}
+\DoxyCodeLine{180             \textcolor{comment}{//offset += stride;}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a0226ca72aa847e51a00dd75a701ec8cb}\label{class_spine_1_1_region_attachment_a0226ca72aa847e51a00dd75a701ec8cb}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!SetUVs@{SetUVs}}
+\index{SetUVs@{SetUVs}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{SetUVs()}{SetUVs()}}
+{\footnotesize\ttfamily void Spine.\+Region\+Attachment.\+Set\+U\+Vs (\begin{DoxyParamCaption}\item[{float}]{u,  }\item[{float}]{v,  }\item[{float}]{u2,  }\item[{float}]{v2,  }\item[{bool}]{rotate }\end{DoxyParamCaption})}
+
+
+
+Region\+Attachment.\+cs 파일의 121 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                                                                                \{}
+\DoxyCodeLine{123             \textcolor{keywordtype}{float}[] \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}};}
+\DoxyCodeLine{124             \textcolor{comment}{// UV values differ from RegionAttachment.java}}
+\DoxyCodeLine{125             \textcolor{keywordflow}{if} (rotate) \{}
+\DoxyCodeLine{126                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}{URX}}] = u;}
+\DoxyCodeLine{127                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}{URY}}] = v2;}
+\DoxyCodeLine{128                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}{BRX}}] = u;}
+\DoxyCodeLine{129                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}{BRY}}] = v;}
+\DoxyCodeLine{130                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}{BLX}}] = u2;}
+\DoxyCodeLine{131                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}{BLY}}] = v;}
+\DoxyCodeLine{132                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}{ULX}}] = u2;}
+\DoxyCodeLine{133                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}{ULY}}] = v2;}
+\DoxyCodeLine{134             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{135                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}{ULX}}] = u;}
+\DoxyCodeLine{136                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}{ULY}}] = v2;}
+\DoxyCodeLine{137                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}{URX}}] = u;}
+\DoxyCodeLine{138                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}{URY}}] = v;}
+\DoxyCodeLine{139                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}{BRX}}] = u2;}
+\DoxyCodeLine{140                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}{BRY}}] = v;}
+\DoxyCodeLine{141                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}{BLX}}] = u2;}
+\DoxyCodeLine{142                 \mbox{\hyperlink{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}{uvs}}[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}{BLY}}] = v2;}
+\DoxyCodeLine{143             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}\label{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Attachment.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Attachment.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                            \{}
+\DoxyCodeLine{43             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}{Name}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aaa7a5c3106159f8e8dbd9da13a64ac29}\label{class_spine_1_1_region_attachment_aaa7a5c3106159f8e8dbd9da13a64ac29}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!UpdateOffset@{UpdateOffset}}
+\index{UpdateOffset@{UpdateOffset}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{UpdateOffset()}{UpdateOffset()}}
+{\footnotesize\ttfamily void Spine.\+Region\+Attachment.\+Update\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Region\+Attachment.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                     \{}
+\DoxyCodeLine{80             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}};}
+\DoxyCodeLine{81             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}};}
+\DoxyCodeLine{82             \textcolor{keywordtype}{float} localX2 = \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}} * 0.5f;}
+\DoxyCodeLine{83             \textcolor{keywordtype}{float} localY2 = \mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}} * 0.5f;}
+\DoxyCodeLine{84             \textcolor{keywordtype}{float} localX = -\/localX2;}
+\DoxyCodeLine{85             \textcolor{keywordtype}{float} localY = -\/localY2;}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}} != 0) \{ \textcolor{comment}{// if (region != null)}}
+\DoxyCodeLine{87                 localX += regionOffsetX / \mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}} * \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}};}
+\DoxyCodeLine{88                 localY += \mbox{\hyperlink{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}{regionOffsetY}} / \mbox{\hyperlink{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}{regionOriginalHeight}} * \mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}};}
+\DoxyCodeLine{89                 localX2 -\/= (\mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}} -\/ regionOffsetX -\/ \mbox{\hyperlink{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}{regionWidth}}) / \mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}} * \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}};}
+\DoxyCodeLine{90                 localY2 -\/= (\mbox{\hyperlink{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}{regionOriginalHeight}} -\/ \mbox{\hyperlink{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}{regionOffsetY}} -\/ \mbox{\hyperlink{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}{regionHeight}}) / \mbox{\hyperlink{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}{regionOriginalHeight}} * \mbox{\hyperlink{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}{height}};}
+\DoxyCodeLine{91             \}}
+\DoxyCodeLine{92             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}};}
+\DoxyCodeLine{93             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}};}
+\DoxyCodeLine{94             localX *= \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}};}
+\DoxyCodeLine{95             localY *= \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}};}
+\DoxyCodeLine{96             localX2 *= \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}};}
+\DoxyCodeLine{97             localY2 *= \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}};}
+\DoxyCodeLine{98             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}};}
+\DoxyCodeLine{99             \textcolor{keywordtype}{float} cos = MathUtils.CosDeg(\mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}});}
+\DoxyCodeLine{100             \textcolor{keywordtype}{float} sin = MathUtils.SinDeg(\mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}});}
+\DoxyCodeLine{101             \textcolor{keywordtype}{float} x = this.x;}
+\DoxyCodeLine{102             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}} = this.\mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}};}
+\DoxyCodeLine{103             \textcolor{keywordtype}{float} localXCos = localX * cos + x;}
+\DoxyCodeLine{104             \textcolor{keywordtype}{float} localXSin = localX * sin;}
+\DoxyCodeLine{105             \textcolor{keywordtype}{float} localYCos = localY * cos + \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}};}
+\DoxyCodeLine{106             \textcolor{keywordtype}{float} localYSin = localY * sin;}
+\DoxyCodeLine{107             \textcolor{keywordtype}{float} localX2Cos = localX2 * cos + x;}
+\DoxyCodeLine{108             \textcolor{keywordtype}{float} localX2Sin = localX2 * sin;}
+\DoxyCodeLine{109             \textcolor{keywordtype}{float} localY2Cos = localY2 * cos + \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}};}
+\DoxyCodeLine{110             \textcolor{keywordtype}{float} localY2Sin = localY2 * sin;}
+\DoxyCodeLine{111             \textcolor{keywordtype}{float}[] offset = this.offset;}
+\DoxyCodeLine{112             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}{BLX}}] = localXCos -\/ localYSin;}
+\DoxyCodeLine{113             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}{BLY}}] = localYCos + localXSin;}
+\DoxyCodeLine{114             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}{ULX}}] = localXCos -\/ localY2Sin;}
+\DoxyCodeLine{115             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}{ULY}}] = localY2Cos + localXSin;}
+\DoxyCodeLine{116             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}{URX}}] = localX2Cos -\/ localY2Sin;}
+\DoxyCodeLine{117             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}{URY}}] = localY2Cos + localX2Sin;}
+\DoxyCodeLine{118             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}{BRX}}] = localX2Cos -\/ localYSin;}
+\DoxyCodeLine{119             offset[\mbox{\hyperlink{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}{BRY}}] = localYCos + localX2Sin;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}\label{class_spine_1_1_region_attachment_a94435e49666ecbe57968358aea4cbb53}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!a@{a}}
+\index{a@{a}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+a = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}\label{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!b@{b}}
+\index{b@{b}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+b = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}\label{class_spine_1_1_region_attachment_a47b44486259b110a4dc3ac8c6dda02ea}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!BLX@{BLX}}
+\index{BLX@{BLX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{BLX}{BLX}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+B\+LX = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}\label{class_spine_1_1_region_attachment_a2f927265f0c2f0c3058173d25bddea5d}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!BLY@{BLY}}
+\index{BLY@{BLY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{BLY}{BLY}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+B\+LY = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}\label{class_spine_1_1_region_attachment_addc6c66bbe30567a8cef95c293bcb5b9}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!BRX@{BRX}}
+\index{BRX@{BRX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{BRX}{BRX}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+B\+RX = 6\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}\label{class_spine_1_1_region_attachment_a3ebb6fe2a6c7680d9ee4952e6e52528c}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!BRY@{BRY}}
+\index{BRY@{BRY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{BRY}{BRY}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+B\+RY = 7\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a5a15e4d8ba7b4a4dfee9dcaa2a8c53b6}\label{class_spine_1_1_region_attachment_a5a15e4d8ba7b4a4dfee9dcaa2a8c53b6}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!g@{g}}
+\index{g@{g}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+g = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}\label{class_spine_1_1_region_attachment_a744baeff66e46c249b553bfb4e25b142}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!height@{height}}
+\index{height@{height}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}\label{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!regionHeight@{regionHeight}}
+\index{regionHeight@{regionHeight}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{regionHeight}{regionHeight}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+region\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}\label{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!regionOffsetY@{regionOffsetY}}
+\index{regionOffsetY@{regionOffsetY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{regionOffsetY}{regionOffsetY}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+region\+OffsetY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}\label{class_spine_1_1_region_attachment_a8c526b21a3c3e404dffe9141e39cbea5}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!regionOriginalHeight@{regionOriginalHeight}}
+\index{regionOriginalHeight@{regionOriginalHeight}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{regionOriginalHeight}{regionOriginalHeight}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+region\+Original\+Height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}\label{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!regionOriginalWidth@{regionOriginalWidth}}
+\index{regionOriginalWidth@{regionOriginalWidth}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{regionOriginalWidth}{regionOriginalWidth}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+region\+Original\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}\label{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!regionWidth@{regionWidth}}
+\index{regionWidth@{regionWidth}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{regionWidth}{regionWidth}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+region\+Width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}\label{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!rotation@{rotation}}
+\index{rotation@{rotation}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{rotation}{rotation}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}\label{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!scaleX@{scaleX}}
+\index{scaleX@{scaleX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{scaleX}{scaleX}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+scaleX = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}\label{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!scaleY@{scaleY}}
+\index{scaleY@{scaleY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{scaleY}{scaleY}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+scaleY = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}\label{class_spine_1_1_region_attachment_aec777bc24bff8155e61d32bb194c5893}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ULX@{ULX}}
+\index{ULX@{ULX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ULX}{ULX}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+U\+LX = 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}\label{class_spine_1_1_region_attachment_ab150d5b2e37269a9534937778a068c2c}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ULY@{ULY}}
+\index{ULY@{ULY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ULY}{ULY}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+U\+LY = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}\label{class_spine_1_1_region_attachment_a2d47734f0e852e16d3a52137c4be5a8b}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!URX@{URX}}
+\index{URX@{URX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{URX}{URX}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+U\+RX = 4\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}\label{class_spine_1_1_region_attachment_aa87449776283983698b4948a150e9c7a}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!URY@{URY}}
+\index{URY@{URY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{URY}{URY}}
+{\footnotesize\ttfamily const int Spine.\+Region\+Attachment.\+U\+RY = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Region\+Attachment.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}\label{class_spine_1_1_region_attachment_a1e3629ff53ee99f2e4a008b917300a0d}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!uvs@{uvs}}
+\index{uvs@{uvs}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{uvs}{uvs}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Region\+Attachment.\+uvs = new float\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}\label{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!width@{width}}
+\index{width@{width}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+width\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}\label{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!y@{y}}
+\index{y@{y}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Region\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a046310cc53356a7d50137a75affe06e2}\label{class_spine_1_1_region_attachment_a046310cc53356a7d50137a75affe06e2}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!A@{A}}
+\index{A@{A}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+A\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a302e00825a139c0cf80b6f579cbbb022}{b}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_ab4495e3b95695edd237a05ff14bab405}\label{class_spine_1_1_region_attachment_ab4495e3b95695edd237a05ff14bab405}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!B@{B}}
+\index{B@{B}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+B\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a5a15e4d8ba7b4a4dfee9dcaa2a8c53b6}{g}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a5a15e4d8ba7b4a4dfee9dcaa2a8c53b6}{g}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a9ba6d6d939b8cf4409eab8ba4c0c7b79}\label{class_spine_1_1_region_attachment_a9ba6d6d939b8cf4409eab8ba4c0c7b79}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!G@{G}}
+\index{G@{G}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+G\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} r; \} \textcolor{keyword}{set} \{ r = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_abc8a5cf06d82a1c62c6c433c8b76e2a4}\label{class_spine_1_1_region_attachment_abc8a5cf06d82a1c62c6c433c8b76e2a4}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Height@{Height}}
+\index{Height@{Height}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a6fe84f9d2648056264c12343557fb719}{width}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}\label{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Name@{Name}}
+\index{Name@{Name}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Spine.\+Attachment.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [inherited]}}
+
+
+
+Attachment.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_af2da01ae99b5555b7f3b9df1f2a85b9b}\label{class_spine_1_1_region_attachment_af2da01ae99b5555b7f3b9df1f2a85b9b}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Offset@{Offset}}
+\index{Offset@{Offset}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Offset}{Offset}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Region\+Attachment.\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Region\+Attachment.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} offset; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a2e7ba8e9f71d28553ecfce1c1bef904d}\label{class_spine_1_1_region_attachment_a2e7ba8e9f71d28553ecfce1c1bef904d}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Path@{Path}}
+\index{Path@{Path}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Path}{Path}}
+{\footnotesize\ttfamily string Spine.\+Region\+Attachment.\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a4306b64b2df7894047435e16df73d77f}\label{class_spine_1_1_region_attachment_a4306b64b2df7894047435e16df73d77f}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!R@{R}}
+\index{R@{R}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+R\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} r; \} \textcolor{keyword}{set} \{ r = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_ac640cdc0bd4c09ab11a08ea1331b44b0}\label{class_spine_1_1_region_attachment_ac640cdc0bd4c09ab11a08ea1331b44b0}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionHeight@{RegionHeight}}
+\index{RegionHeight@{RegionHeight}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionHeight}{RegionHeight}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}{regionWidth}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a4d1d5059ca518c1243671875ed52ded5}{regionWidth}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a1487cb561ea9b5488733cb1dabc9d9d5}\label{class_spine_1_1_region_attachment_a1487cb561ea9b5488733cb1dabc9d9d5}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionOffsetX@{RegionOffsetX}}
+\index{RegionOffsetX@{RegionOffsetX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionOffsetX}{RegionOffsetX}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+OffsetX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a6f637496d4dfb7a4e1f620ce54df500e}\label{class_spine_1_1_region_attachment_a6f637496d4dfb7a4e1f620ce54df500e}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionOffsetY@{RegionOffsetY}}
+\index{RegionOffsetY@{RegionOffsetY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionOffsetY}{RegionOffsetY}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+OffsetY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} regionOffsetX; \} \textcolor{keyword}{set} \{ regionOffsetX = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_aeba63b18788467fcaf67fffb58fd8ff8}\label{class_spine_1_1_region_attachment_aeba63b18788467fcaf67fffb58fd8ff8}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionOriginalHeight@{RegionOriginalHeight}}
+\index{RegionOriginalHeight@{RegionOriginalHeight}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionOriginalHeight}{RegionOriginalHeight}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+Original\+Height\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_acd2013225d6838145d15de0db498c23a}{regionOriginalWidth}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_afa99724b09d2798f1273de89d203f446}\label{class_spine_1_1_region_attachment_afa99724b09d2798f1273de89d203f446}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionOriginalWidth@{RegionOriginalWidth}}
+\index{RegionOriginalWidth@{RegionOriginalWidth}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionOriginalWidth}{RegionOriginalWidth}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+Original\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}{regionHeight}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_adf51bb462951135602ca8c4ad3e20572}{regionHeight}} = value; \} \} \textcolor{comment}{// Unrotated, stripped size.}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a09a4541bfe0e552d6126f8930f403b7d}\label{class_spine_1_1_region_attachment_a09a4541bfe0e552d6126f8930f403b7d}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RegionWidth@{RegionWidth}}
+\index{RegionWidth@{RegionWidth}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RegionWidth}{RegionWidth}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Region\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}{regionOffsetY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_ad1182a4097a2453a85df1aac7a24a6c8}{regionOffsetY}} = value; \} \} \textcolor{comment}{// Pixels stripped from the bottom left, unrotated.}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a35e47f777b6d0c6cf1def392155bc89d}\label{class_spine_1_1_region_attachment_a35e47f777b6d0c6cf1def392155bc89d}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!RendererObject@{RendererObject}}
+\index{RendererObject@{RendererObject}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{RendererObject}{RendererObject}}
+{\footnotesize\ttfamily object Spine.\+Region\+Attachment.\+Renderer\+Object\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keyword}{get}; \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a648b307524d3931124d3813c0e9db637}\label{class_spine_1_1_region_attachment_a648b307524d3931124d3813c0e9db637}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Rotation@{Rotation}}
+\index{Rotation@{Rotation}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Rotation}{Rotation}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Rotation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a61328296139120bd67dacb603ca28b7b}{y}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_ab600292b987a0a6b69db3b2115ac711f}\label{class_spine_1_1_region_attachment_ab600292b987a0a6b69db3b2115ac711f}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ScaleX@{ScaleX}}
+\index{ScaleX@{ScaleX}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ScaleX}{ScaleX}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+ScaleX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_aca071d77ef014bc66babef85b885fac8}{rotation}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_af2bf292e6a83805a0ce4623c8e585355}\label{class_spine_1_1_region_attachment_af2bf292e6a83805a0ce4623c8e585355}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!ScaleY@{ScaleY}}
+\index{ScaleY@{ScaleY}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{ScaleY}{ScaleY}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+ScaleY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_aae14e35d6ec01e049edc250cc868d57e}{scaleX}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_abdd29e149904690151671767e9314ef9}\label{class_spine_1_1_region_attachment_abdd29e149904690151671767e9314ef9}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!UVs@{UVs}}
+\index{UVs@{UVs}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{UVs}{UVs}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Region\+Attachment.\+U\+Vs\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Region\+Attachment.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} offset; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a2e04bf0f188f25cefcd3c0f9cc347032}\label{class_spine_1_1_region_attachment_a2e04bf0f188f25cefcd3c0f9cc347032}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Width@{Width}}
+\index{Width@{Width}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Width\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_region_attachment_a93cce6cea245fabb0a534e020be5c871}{scaleY}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a31b47eea538136311152ffeaba18bb2b}\label{class_spine_1_1_region_attachment_a31b47eea538136311152ffeaba18bb2b}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!X@{X}}
+\index{X@{X}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} x; \} \textcolor{keyword}{set} \{ x = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_region_attachment_a868a73359ef809fcb621bae11c551c27}\label{class_spine_1_1_region_attachment_a868a73359ef809fcb621bae11c551c27}} 
+\index{Spine.RegionAttachment@{Spine.RegionAttachment}!Y@{Y}}
+\index{Y@{Y}!Spine.RegionAttachment@{Spine.RegionAttachment}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Spine.\+Region\+Attachment.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Region\+Attachment.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} x; \} \textcolor{keyword}{set} \{ x = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\+Attachments/\mbox{\hyperlink{_region_attachment_8cs}{Region\+Attachment.\+cs}}\end{DoxyCompactItemize}

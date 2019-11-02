@@ -1,0 +1,337 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher}{}\doxysection{Spine.\+Unity.\+Modules.\+Sprite\+Attacher 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher}\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+
+
+Spine.\+Unity.\+Modules.\+Sprite\+Attacher에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Sprite\+Attacher에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a675873208237ce5899bfb8424b6641fd}{Initialize}} (bool overwrite=true)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_afdc92125b568b80a7c216b354b9ad652}{Attach}} ()
+\begin{DoxyCompactList}\small\item\em Update the slot\textquotesingle{}s attachment to the \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} generated from the sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a5fd8581c76be5433aab83fea309f9dd7}{attach\+On\+Start}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a01e95279d08405b6f34d74080a6b4fe2}{override\+Animation}} = true
+\item 
+Sprite \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}{sprite}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a8f44b1a777bf203d7dd4405eb8fd7bbd}{slot}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{Default\+P\+M\+A\+Shader}} = \char`\"{}Spine/\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa67b7a4fcd2de7ab4055cefb11bc90a3}{Default\+Straight\+Alpha\+Shader}} = \char`\"{}Sprites/Default\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a711fb8c373416fa229712c10eebc6aa4}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}{Animation\+Override\+Sprite\+Attach}} (\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} animated)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abc7367a2968fc33cef72743c4e39336e}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a2c83fdd98c131b86f1853b42182f4429}{Get\+Page\+For}} (Texture texture, Shader shader)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}{attachment}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}{spine\+Slot}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}{apply\+P\+MA}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static Dictionary$<$ Texture, \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}{atlas\+Page\+Cache}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Sprite\+Attacher.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!AnimationOverrideSpriteAttach@{AnimationOverrideSpriteAttach}}
+\index{AnimationOverrideSpriteAttach@{AnimationOverrideSpriteAttach}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{AnimationOverrideSpriteAttach()}{AnimationOverrideSpriteAttach()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Animation\+Override\+Sprite\+Attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}}}]{animated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 98 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99                                                                          \{}
+\DoxyCodeLine{100             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a01e95279d08405b6f34d74080a6b4fe2}{overrideAnimation}} \&\& isActiveAndEnabled)}
+\DoxyCodeLine{101                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_afdc92125b568b80a7c216b354b9ad652}{Attach}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_afdc92125b568b80a7c216b354b9ad652}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_afdc92125b568b80a7c216b354b9ad652}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!Attach@{Attach}}
+\index{Attach@{Attach}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the slot\textquotesingle{}s attachment to the \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} generated from the sprite. 
+
+
+
+Sprite\+Attacher.\+cs 파일의 138 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139                               \{}
+\DoxyCodeLine{140             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}{spineSlot}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{141                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}{spineSlot}}.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}{attachment}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a2c83fdd98c131b86f1853b42182f4429}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a2c83fdd98c131b86f1853b42182f4429}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!GetPageFor@{GetPageFor}}
+\index{GetPageFor@{GetPageFor}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{GetPageFor()}{GetPageFor()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Get\+Page\+For (\begin{DoxyParamCaption}\item[{Texture}]{texture,  }\item[{Shader}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                                                      \{}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}{atlasPageCache}} == \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}{atlasPageCache}} = \textcolor{keyword}{new} Dictionary<Texture, AtlasPage>();}
+\DoxyCodeLine{81             AtlasPage atlasPage;}
+\DoxyCodeLine{82             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}{atlasPageCache}}.TryGetValue(texture, out atlasPage);}
+\DoxyCodeLine{83             \textcolor{keywordflow}{if} (atlasPage == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{84                 var newMaterial = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{85                 atlasPage = newMaterial.ToSpineAtlasPage();}
+\DoxyCodeLine{86                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}{atlasPageCache}}[texture] = atlasPage;}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} atlasPage;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a675873208237ce5899bfb8424b6641fd}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a675873208237ce5899bfb8424b6641fd}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Initialize (\begin{DoxyParamCaption}\item[{bool}]{overwrite = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Sprite\+Attacher.\+cs 파일의 103 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{104                                                        \{}
+\DoxyCodeLine{105             \textcolor{keywordflow}{if} (overwrite || \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}{attachment}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{106                 \textcolor{comment}{// Get the applyPMA value.}}
+\DoxyCodeLine{107                 var skeletonComponent = GetComponent<ISkeletonComponent>();}
+\DoxyCodeLine{108                 var skeletonRenderer = skeletonComponent as SkeletonRenderer;}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{if} (skeletonRenderer != \textcolor{keyword}{null})}
+\DoxyCodeLine{110                     this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}{applyPMA}} = skeletonRenderer.pmaVertexColors;}
+\DoxyCodeLine{111                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{112                     var skeletonGraphic = skeletonComponent as SkeletonGraphic;}
+\DoxyCodeLine{113                     \textcolor{keywordflow}{if} (skeletonGraphic != \textcolor{keyword}{null})}
+\DoxyCodeLine{114                         this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}{applyPMA}} = skeletonGraphic.MeshGenerator.settings.pmaVertexColors;}
+\DoxyCodeLine{115                 \}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117                 \textcolor{comment}{// Subscribe to UpdateComplete to override animation keys.}}
+\DoxyCodeLine{118                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a01e95279d08405b6f34d74080a6b4fe2}{overrideAnimation}}) \{}
+\DoxyCodeLine{119                     var animatedSkeleton = skeletonComponent as ISkeletonAnimation;}
+\DoxyCodeLine{120                     \textcolor{keywordflow}{if} (animatedSkeleton != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{121                         animatedSkeleton.UpdateComplete -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}{AnimationOverrideSpriteAttach}};}
+\DoxyCodeLine{122                         animatedSkeleton.UpdateComplete += \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}{AnimationOverrideSpriteAttach}};}
+\DoxyCodeLine{123                     \}}
+\DoxyCodeLine{124                 \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}{spineSlot}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}{spineSlot}} ?? skeletonComponent.\mbox{\hyperlink{class_spine_1_1_slot_a60be6be5435fd073a1a31d90e9948231}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}{FindSlot}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a8f44b1a777bf203d7dd4405eb8fd7bbd}{slot}});}
+\DoxyCodeLine{127                 Shader attachmentShader = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}{applyPMA}} ? Shader.Find(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}{DefaultPMAShader}}) : Shader.Find(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa67b7a4fcd2de7ab4055cefb11bc90a3}{DefaultStraightAlphaShader}});}
+\DoxyCodeLine{128                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}{attachment}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}{applyPMA}} ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}{sprite}}.ToRegionAttachmentPMAClone(attachmentShader) : \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}{sprite}}.ToRegionAttachment(SpriteAttacher.GetPageFor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}{sprite}}.texture, attachmentShader));}
+\DoxyCodeLine{129             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abc7367a2968fc33cef72743c4e39336e}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abc7367a2968fc33cef72743c4e39336e}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 131 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132                           \{}
+\DoxyCodeLine{133             var animatedSkeleton = GetComponent<ISkeletonAnimation>();}
+\DoxyCodeLine{134             \textcolor{keywordflow}{if} (animatedSkeleton != \textcolor{keyword}{null})}
+\DoxyCodeLine{135                 animatedSkeleton.UpdateComplete -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a25f728df122ef511fa373b130bb77dc1}{AnimationOverrideSpriteAttach}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a711fb8c373416fa229712c10eebc6aa4}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a711fb8c373416fa229712c10eebc6aa4}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 90 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                       \{}
+\DoxyCodeLine{92             \textcolor{comment}{// Initialize slot and attachment references.}}
+\DoxyCodeLine{93             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a675873208237ce5899bfb8424b6641fd}{Initialize}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a5fd8581c76be5433aab83fea309f9dd7}{attachOnStart}})}
+\DoxyCodeLine{96                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_afdc92125b568b80a7c216b354b9ad652}{Attach}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_abff928050cc1548f71546a4920a745a4}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!applyPMA@{applyPMA}}
+\index{applyPMA@{applyPMA}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{applyPMA}{applyPMA}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+apply\+P\+MA\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 75 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa4f5340b5c30eec4f310a7955aad2479}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!atlasPageCache@{atlasPageCache}}
+\index{atlasPageCache@{atlasPageCache}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{atlasPageCache}{atlasPageCache}}
+{\footnotesize\ttfamily Dictionary$<$Texture, \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}$>$ Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+atlas\+Page\+Cache\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a9abaebeab99d099d2fc937ad2f2e23cd}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!attachment@{attachment}}
+\index{attachment@{attachment}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{attachment}{attachment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+attachment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a5fd8581c76be5433aab83fea309f9dd7}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a5fd8581c76be5433aab83fea309f9dd7}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!attachOnStart@{attachOnStart}}
+\index{attachOnStart@{attachOnStart}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{attachOnStart}{attachOnStart}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+attach\+On\+Start = true}
+
+
+
+Sprite\+Attacher.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a999bfc4e148e6d54f5e0ca2cdd75fec5}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!DefaultPMAShader@{DefaultPMAShader}}
+\index{DefaultPMAShader@{DefaultPMAShader}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{DefaultPMAShader}{DefaultPMAShader}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Default\+P\+M\+A\+Shader = \char`\"{}Spine/\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa67b7a4fcd2de7ab4055cefb11bc90a3}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_aa67b7a4fcd2de7ab4055cefb11bc90a3}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!DefaultStraightAlphaShader@{DefaultStraightAlphaShader}}
+\index{DefaultStraightAlphaShader@{DefaultStraightAlphaShader}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{DefaultStraightAlphaShader}{DefaultStraightAlphaShader}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+Default\+Straight\+Alpha\+Shader = \char`\"{}Sprites/Default\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a01e95279d08405b6f34d74080a6b4fe2}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a01e95279d08405b6f34d74080a6b4fe2}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!overrideAnimation@{overrideAnimation}}
+\index{overrideAnimation@{overrideAnimation}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{overrideAnimation}{overrideAnimation}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+override\+Animation = true}
+
+
+
+Sprite\+Attacher.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a8f44b1a777bf203d7dd4405eb8fd7bbd}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_a8f44b1a777bf203d7dd4405eb8fd7bbd}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!slot@{slot}}
+\index{slot@{slot}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+slot}
+
+
+
+Sprite\+Attacher.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_af3e3131c8000c40ac1a52fa2bda1a68e}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!spineSlot@{spineSlot}}
+\index{spineSlot@{spineSlot}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{spineSlot}{spineSlot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+spine\+Slot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sprite\+Attacher.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}\label{class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher_ad8d19e2d26088220ae08c964be2cc4cd}} 
+\index{Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}!sprite@{sprite}}
+\index{sprite@{sprite}!Spine.Unity.Modules.SpriteAttacher@{Spine.Unity.Modules.SpriteAttacher}}
+\doxysubsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily Sprite Spine.\+Unity.\+Modules.\+Sprite\+Attacher.\+sprite}
+
+
+
+Sprite\+Attacher.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\+Legacy/\mbox{\hyperlink{_sprite_attacher_8cs}{Sprite\+Attacher.\+cs}}\end{DoxyCompactItemize}

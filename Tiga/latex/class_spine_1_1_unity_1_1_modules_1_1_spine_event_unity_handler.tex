@@ -1,0 +1,135 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler}{}\doxysection{Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler}\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+
+
+Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_1_1_event_pair}{Event\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_1_1_event_pair}{Event\+Pair}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a4c75f450fccca0b960ff59bbdaece930}{events}} = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_1_1_event_pair}{Event\+Pair}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a7a81922dc8641ba1a2b4af1a33064a0d}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a30e7ad95ff22691cdb04d02ae64cb974}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_component}{I\+Skeleton\+Component}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeleton\+Component}}
+\item 
+\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component}{I\+Animation\+State\+Component}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animation\+State\+Component}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a30e7ad95ff22691cdb04d02ae64cb974}\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a30e7ad95ff22691cdb04d02ae64cb974}} 
+\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                           \{}
+\DoxyCodeLine{70             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} ?? GetComponent<IAnimationStateComponent>();}
+\DoxyCodeLine{71             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             var state = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component_a26624556d0ef520205b8a7e722a8241f}{AnimationState}};}
+\DoxyCodeLine{74             \textcolor{keywordflow}{foreach} (var ep \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a4c75f450fccca0b960ff59bbdaece930}{events}}) \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{if} (ep.eventDelegate != \textcolor{keyword}{null}) state.Event -\/= ep.eventDelegate;}
+\DoxyCodeLine{76                 ep.eventDelegate = \textcolor{keyword}{null};}
+\DoxyCodeLine{77             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a7a81922dc8641ba1a2b4af1a33064a0d}\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a7a81922dc8641ba1a2b4af1a33064a0d}} 
+\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                       \{}
+\DoxyCodeLine{52             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeletonComponent}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeletonComponent}} ?? GetComponent<ISkeletonComponent>();}
+\DoxyCodeLine{53             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeletonComponent}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} ?? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeletonComponent}} as IAnimationStateComponent;}
+\DoxyCodeLine{55             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{56             var skeleton = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}{skeletonComponent}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_component_a378f283bd1514c0ce61719fa2ce0a467}{Skeleton}};}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60             var skeletonData = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}};}
+\DoxyCodeLine{61             var state = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}{animationStateComponent}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component_a26624556d0ef520205b8a7e722a8241f}{AnimationState}};}
+\DoxyCodeLine{62             \textcolor{keywordflow}{foreach} (var ep \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a4c75f450fccca0b960ff59bbdaece930}{events}}) \{}
+\DoxyCodeLine{63                 var eventData = skeletonData.FindEvent(ep.spineEvent);}
+\DoxyCodeLine{64                 ep.eventDelegate = ep.eventDelegate ?? delegate(TrackEntry trackEntry, Event e) \{ \textcolor{keywordflow}{if} (e.Data == eventData) ep.unityHandler.Invoke(); \};}
+\DoxyCodeLine{65                 state.Event += ep.eventDelegate;}
+\DoxyCodeLine{66             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_ada0c2cefcfc0d87d266bf055ae9b2e3a}} 
+\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}!animationStateComponent@{animationStateComponent}}
+\index{animationStateComponent@{animationStateComponent}!Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+\doxysubsubsection{\texorpdfstring{animationStateComponent}{animationStateComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component}{I\+Animation\+State\+Component}} Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler.\+animation\+State\+Component\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a4c75f450fccca0b960ff59bbdaece930}\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a4c75f450fccca0b960ff59bbdaece930}} 
+\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}!events@{events}}
+\index{events@{events}!Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+\doxysubsubsection{\texorpdfstring{events}{events}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_1_1_event_pair}{Event\+Pair}}$>$ Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler.\+events = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_1_1_event_pair}{Event\+Pair}}$>$()}
+
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}\label{class_spine_1_1_unity_1_1_modules_1_1_spine_event_unity_handler_a5aacfdf0461568ab5fc969cd711a58e9}} 
+\index{Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}!skeletonComponent@{skeletonComponent}}
+\index{skeletonComponent@{skeletonComponent}!Spine.Unity.Modules.SpineEventUnityHandler@{Spine.Unity.Modules.SpineEventUnityHandler}}
+\doxysubsubsection{\texorpdfstring{skeletonComponent}{skeletonComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_component}{I\+Skeleton\+Component}} Spine.\+Unity.\+Modules.\+Spine\+Event\+Unity\+Handler.\+skeleton\+Component\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Event\+Unity\+Handler.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\mbox{\hyperlink{_spine_event_unity_handler_8cs}{Spine\+Event\+Unity\+Handler.\+cs}}\end{DoxyCompactItemize}

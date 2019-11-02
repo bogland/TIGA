@@ -1,0 +1,195 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole}{}\doxysection{Spine.\+Unity.\+Examples.\+Spineboy\+Pole 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole}\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Pole에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Pole에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a2dbaf6490c40ffa95fd1d80612cf9945}{skeleton\+Animation}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_ab004fc3f3586cf60182cc64fa6dd1da6}{separator}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a3c9c3eba513dd5afb1b8f6e47b34191d}{run}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_aec034a172374bd10e156754e146d5cb0}{pole}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_af20de096e79afc0f5df87153f367a7d1}{startX}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a38e3d900b527de96f0a6fa06c3b6e349}{endX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6d845651de2983a3f25c2ca608707f56}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a469c138daa2c9edcddf8ec41b709ac2d}{Set\+X\+Position}} (float x)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6fdf032491a3c4a611e71e82a8b02cbc}{Speed}} = 18f
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a72209356f731315b62d99d8840388977}{Run\+Time\+Scale}} = 1.\+5f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spineboy\+Pole.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a469c138daa2c9edcddf8ec41b709ac2d}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a469c138daa2c9edcddf8ec41b709ac2d}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!SetXPosition@{SetXPosition}}
+\index{SetXPosition@{SetXPosition}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{SetXPosition()}{SetXPosition()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+Set\+X\+Position (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Pole.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                     \{}
+\DoxyCodeLine{76             var tp = transform.localPosition;}
+\DoxyCodeLine{77             tp.x = x;}
+\DoxyCodeLine{78             transform.localPosition = tp;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6d845651de2983a3f25c2ca608707f56}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6d845651de2983a3f25c2ca608707f56}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Pole.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                              \{}
+\DoxyCodeLine{52             var state = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a2dbaf6490c40ffa95fd1d80612cf9945}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a7ee3fba86aaa662dd7a6e93b446be709}{state}};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{55                 \textcolor{comment}{// Run phase}}
+\DoxyCodeLine{56                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a469c138daa2c9edcddf8ec41b709ac2d}{SetXPosition}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_af20de096e79afc0f5df87153f367a7d1}{startX}});}
+\DoxyCodeLine{57                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_ab004fc3f3586cf60182cc64fa6dd1da6}{separator}}.enabled = \textcolor{keyword}{false}; \textcolor{comment}{// Disable Separator during run.}}
+\DoxyCodeLine{58                 state.SetAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a3c9c3eba513dd5afb1b8f6e47b34191d}{run}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{59                 state.TimeScale = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a72209356f731315b62d99d8840388977}{RunTimeScale}};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61                 \textcolor{keywordflow}{while} (transform.localPosition.x < \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a38e3d900b527de96f0a6fa06c3b6e349}{endX}}) \{}
+\DoxyCodeLine{62                     transform.Translate(Vector3.right * \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6fdf032491a3c4a611e71e82a8b02cbc}{Speed}} * Time.deltaTime);}
+\DoxyCodeLine{63                     yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{64                 \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66                 \textcolor{comment}{// Hit phase}}
+\DoxyCodeLine{67                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a469c138daa2c9edcddf8ec41b709ac2d}{SetXPosition}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a38e3d900b527de96f0a6fa06c3b6e349}{endX}});}
+\DoxyCodeLine{68                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_ab004fc3f3586cf60182cc64fa6dd1da6}{separator}}.enabled = \textcolor{keyword}{true}; \textcolor{comment}{// Enable Separator when hit}}
+\DoxyCodeLine{69                 var poleTrack = state.SetAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_aec034a172374bd10e156754e146d5cb0}{pole}}, \textcolor{keyword}{false});}
+\DoxyCodeLine{70                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{WaitForSpineAnimationComplete}}(poleTrack);}
+\DoxyCodeLine{71                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1f);}
+\DoxyCodeLine{72             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a38e3d900b527de96f0a6fa06c3b6e349}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a38e3d900b527de96f0a6fa06c3b6e349}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!endX@{endX}}
+\index{endX@{endX}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{endX}{endX}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+endX}
+
+
+
+Spineboy\+Pole.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_aec034a172374bd10e156754e146d5cb0}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_aec034a172374bd10e156754e146d5cb0}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!pole@{pole}}
+\index{pole@{pole}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{pole}{pole}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+pole}
+
+
+
+Spineboy\+Pole.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a3c9c3eba513dd5afb1b8f6e47b34191d}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a3c9c3eba513dd5afb1b8f6e47b34191d}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!run@{run}}
+\index{run@{run}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+run}
+
+
+
+Spineboy\+Pole.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a72209356f731315b62d99d8840388977}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a72209356f731315b62d99d8840388977}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!RunTimeScale@{RunTimeScale}}
+\index{RunTimeScale@{RunTimeScale}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{RunTimeScale}{RunTimeScale}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+Run\+Time\+Scale = 1.\+5f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spineboy\+Pole.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_ab004fc3f3586cf60182cc64fa6dd1da6}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_ab004fc3f3586cf60182cc64fa6dd1da6}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!separator@{separator}}
+\index{separator@{separator}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{separator}{separator}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}} Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+separator}
+
+
+
+Spineboy\+Pole.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a2dbaf6490c40ffa95fd1d80612cf9945}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a2dbaf6490c40ffa95fd1d80612cf9945}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+skeleton\+Animation}
+
+
+
+Spineboy\+Pole.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6fdf032491a3c4a611e71e82a8b02cbc}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_a6fdf032491a3c4a611e71e82a8b02cbc}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!Speed@{Speed}}
+\index{Speed@{Speed}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+Speed = 18f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spineboy\+Pole.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_af20de096e79afc0f5df87153f367a7d1}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_pole_af20de096e79afc0f5df87153f367a7d1}} 
+\index{Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}!startX@{startX}}
+\index{startX@{startX}!Spine.Unity.Examples.SpineboyPole@{Spine.Unity.Examples.SpineboyPole}}
+\doxysubsubsection{\texorpdfstring{startX}{startX}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Pole.\+startX}
+
+
+
+Spineboy\+Pole.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spineboy_pole_8cs}{Spineboy\+Pole.\+cs}}\end{DoxyCompactItemize}

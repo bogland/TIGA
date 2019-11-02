@@ -1,0 +1,1117 @@
+\hypertarget{class_spine_1_1_skeleton_json}{}\doxysection{Spine.\+Skeleton\+Json 클래스 참조}
+\label{class_spine_1_1_skeleton_json}\index{Spine.SkeletonJson@{Spine.SkeletonJson}}
+
+
+Spine.\+Skeleton\+Json에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Linked\+Mesh}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_json_a23d8f56b901cdbd4a147ae69f4cc42a0}{Skeleton\+Json}} (params \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}\mbox{[}$\,$\mbox{]} atlas\+Array)
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_json_aca187da2ea443e5dbf61fb99874e1233}{Skeleton\+Json}} (\mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachment\+Loader}})
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a704649387f4ec99db38cd1df092135e2}{Read\+Skeleton\+Data}} (string path)
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_skeleton_json_ae7e26ebf33823ab41245076dee691647}{Read\+Skeleton\+Data}} (Text\+Reader reader)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a126916681c1f8e7b2cea7b4f85eb3f9a}{Read\+Attachment}} (Dictionary$<$ string, Object $>$ map, \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, int slot\+Index, string name, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}{Read\+Vertices}} (Dictionary$<$ string, Object $>$ map, \mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}} attachment, int vertices\+Length)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5a511206252f8a690d6f82b91f24b57b}{Read\+Animation}} (Dictionary$<$ string, Object $>$ map, string name, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{Read\+Curve}} (Dictionary$<$ string, Object $>$ value\+Map, \mbox{\hyperlink{class_spine_1_1_curve_timeline}{Curve\+Timeline}} timeline, int frame\+Index)
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}{Get\+Float\+Array}} (Dictionary$<$ string, Object $>$ map, string name, float scale)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a78e861c13410275ad7354f26e61f8667}{Get\+Int\+Array}} (Dictionary$<$ string, Object $>$ map, string name)
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{Get\+Float}} (Dictionary$<$ string, Object $>$ map, string name, float default\+Value)
+\item 
+static int \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{Get\+Int}} (Dictionary$<$ string, Object $>$ map, string name, int default\+Value)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{Get\+Boolean}} (Dictionary$<$ string, Object $>$ map, string name, bool default\+Value)
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{Get\+String}} (Dictionary$<$ string, Object $>$ map, string name, string default\+Value)
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{To\+Color}} (string hex\+String, int color\+Index, int expected\+Length=8)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}} \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachment\+Loader}}
+\item 
+List$<$ Linked\+Mesh $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}{linked\+Meshes}} = new List$<$Linked\+Mesh$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Json.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a23d8f56b901cdbd4a147ae69f4cc42a0}\label{class_spine_1_1_skeleton_json_a23d8f56b901cdbd4a147ae69f4cc42a0}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!SkeletonJson@{SkeletonJson}}
+\index{SkeletonJson@{SkeletonJson}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{SkeletonJson()}{SkeletonJson()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Spine.\+Skeleton\+Json.\+Skeleton\+Json (\begin{DoxyParamCaption}\item[{params \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}\mbox{[}$\,$\mbox{]}}]{atlas\+Array }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Json.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52             : \textcolor{keyword}{this}(\textcolor{keyword}{new} AtlasAttachmentLoader(atlasArray)) \{}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_aca187da2ea443e5dbf61fb99874e1233}\label{class_spine_1_1_skeleton_json_aca187da2ea443e5dbf61fb99874e1233}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!SkeletonJson@{SkeletonJson}}
+\index{SkeletonJson@{SkeletonJson}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{SkeletonJson()}{SkeletonJson()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Spine.\+Skeleton\+Json.\+Skeleton\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}}}]{attachment\+Loader }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Json.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                                                 \{}
+\DoxyCodeLine{56             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"attachmentLoader"}, \textcolor{stringliteral}{"attachmentLoader cannot be null."});}
+\DoxyCodeLine{57             this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}} = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}};}
+\DoxyCodeLine{58             \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}} = 1;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}\label{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetBoolean@{GetBoolean}}
+\index{GetBoolean@{GetBoolean}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetBoolean()}{GetBoolean()}}
+{\footnotesize\ttfamily static bool Spine.\+Skeleton\+Json.\+Get\+Boolean (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{bool}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 846 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{847                                                                                                \{}
+\DoxyCodeLine{848             \textcolor{keywordflow}{if} (!map.ContainsKey(name))}
+\DoxyCodeLine{849                 \textcolor{keywordflow}{return} defaultValue;}
+\DoxyCodeLine{850             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{bool})map[name];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}\label{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetFloat@{GetFloat}}
+\index{GetFloat@{GetFloat}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetFloat()}{GetFloat()}}
+{\footnotesize\ttfamily static float Spine.\+Skeleton\+Json.\+Get\+Float (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{float}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 834 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{835                                                                                                \{}
+\DoxyCodeLine{836             \textcolor{keywordflow}{if} (!map.ContainsKey(name))}
+\DoxyCodeLine{837                 \textcolor{keywordflow}{return} defaultValue;}
+\DoxyCodeLine{838             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{float})map[name];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}\label{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetFloatArray@{GetFloatArray}}
+\index{GetFloatArray@{GetFloatArray}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetFloatArray()}{GetFloatArray()}}
+{\footnotesize\ttfamily static float \mbox{[}$\,$\mbox{]} Spine.\+Skeleton\+Json.\+Get\+Float\+Array (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{float}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 813 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{814                                                                                                \{}
+\DoxyCodeLine{815             var list = (List<Object>)map[name];}
+\DoxyCodeLine{816             var values = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[list.Count];}
+\DoxyCodeLine{817             \textcolor{keywordflow}{if} (scale == 1) \{}
+\DoxyCodeLine{818                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = list.Count; i < n; i++)}
+\DoxyCodeLine{819                     values[i] = (float)list[i];}
+\DoxyCodeLine{820             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{821                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = list.Count; i < n; i++)}
+\DoxyCodeLine{822                     values[i] = (float)list[i] * scale;}
+\DoxyCodeLine{823             \}}
+\DoxyCodeLine{824             \textcolor{keywordflow}{return} values;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}\label{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetInt@{GetInt}}
+\index{GetInt@{GetInt}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetInt()}{GetInt()}}
+{\footnotesize\ttfamily static int Spine.\+Skeleton\+Json.\+Get\+Int (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{int}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 840 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{841                                                                                          \{}
+\DoxyCodeLine{842             \textcolor{keywordflow}{if} (!map.ContainsKey(name))}
+\DoxyCodeLine{843                 \textcolor{keywordflow}{return} defaultValue;}
+\DoxyCodeLine{844             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})(float)map[name];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a78e861c13410275ad7354f26e61f8667}\label{class_spine_1_1_skeleton_json_a78e861c13410275ad7354f26e61f8667}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetIntArray@{GetIntArray}}
+\index{GetIntArray@{GetIntArray}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetIntArray()}{GetIntArray()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} Spine.\+Skeleton\+Json.\+Get\+Int\+Array (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 826 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{827                                                                               \{}
+\DoxyCodeLine{828             var list = (List<Object>)map[name];}
+\DoxyCodeLine{829             var values = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[list.Count];}
+\DoxyCodeLine{830             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = list.Count; i < n; i++)}
+\DoxyCodeLine{831                 values[i] = (int)(\textcolor{keywordtype}{float})list[i];}
+\DoxyCodeLine{832             \textcolor{keywordflow}{return} values;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}\label{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!GetString@{GetString}}
+\index{GetString@{GetString}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{GetString()}{GetString()}}
+{\footnotesize\ttfamily static string Spine.\+Skeleton\+Json.\+Get\+String (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{string}]{default\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 852 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{853                                                                                                   \{}
+\DoxyCodeLine{854             \textcolor{keywordflow}{if} (!map.ContainsKey(name))}
+\DoxyCodeLine{855                 \textcolor{keywordflow}{return} defaultValue;}
+\DoxyCodeLine{856             \textcolor{keywordflow}{return} (\textcolor{keywordtype}{string})map[name];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a5a511206252f8a690d6f82b91f24b57b}\label{class_spine_1_1_skeleton_json_a5a511206252f8a690d6f82b91f24b57b}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadAnimation@{ReadAnimation}}
+\index{ReadAnimation@{ReadAnimation}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadAnimation()}{ReadAnimation()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton\+Json.\+Read\+Animation (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 467 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{468                                                                                                             \{}
+\DoxyCodeLine{469             var scale = this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}};}
+\DoxyCodeLine{470             var timelines = \textcolor{keyword}{new} ExposedList<Timeline>();}
+\DoxyCodeLine{471             \textcolor{keywordtype}{float} duration = 0;}
+\DoxyCodeLine{472 }
+\DoxyCodeLine{473             \textcolor{comment}{// Slot timelines.}}
+\DoxyCodeLine{474             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"slots"})) \{}
+\DoxyCodeLine{475                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> entry \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"slots"}]) \{}
+\DoxyCodeLine{476                     \textcolor{keywordtype}{string} slotName = entry.Key;}
+\DoxyCodeLine{477                     \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex(slotName);}
+\DoxyCodeLine{478                     var timelineMap = (Dictionary<string, Object>)entry.Value;}
+\DoxyCodeLine{479                     foreach (KeyValuePair<string, Object> timelineEntry in timelineMap) \{}
+\DoxyCodeLine{480                         var values = (List<Object>)timelineEntry.Value;}
+\DoxyCodeLine{481                         var timelineName = (\textcolor{keywordtype}{string})timelineEntry.Key;}
+\DoxyCodeLine{482                         \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"attachment"}) \{}
+\DoxyCodeLine{483                             var timeline = \textcolor{keyword}{new} AttachmentTimeline(values.Count);}
+\DoxyCodeLine{484                             timeline.slotIndex = slotIndex;}
+\DoxyCodeLine{485 }
+\DoxyCodeLine{486                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{487                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{488                                 \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{489                                 timeline.SetFrame(frameIndex++, time, (\textcolor{keywordtype}{string})valueMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{490                             \}}
+\DoxyCodeLine{491                             timelines.Add(timeline);}
+\DoxyCodeLine{492                             duration = Math.Max(duration, timeline.frames[timeline.FrameCount -\/ 1]);}
+\DoxyCodeLine{493 }
+\DoxyCodeLine{494                         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"color"}) \{}
+\DoxyCodeLine{495                             var timeline = \textcolor{keyword}{new} ColorTimeline(values.Count);}
+\DoxyCodeLine{496                             timeline.slotIndex = slotIndex;}
+\DoxyCodeLine{497 }
+\DoxyCodeLine{498                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{499                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{500                                 \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{501                                 \textcolor{keywordtype}{string} c = (string)valueMap[\textcolor{stringliteral}{"color"}];}
+\DoxyCodeLine{502                                 timeline.SetFrame(frameIndex, time, \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(c, 0), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(c, 1), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(c, 2), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(c, 3));}
+\DoxyCodeLine{503                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{504                                 frameIndex++;}
+\DoxyCodeLine{505                             \}}
+\DoxyCodeLine{506                             timelines.Add(timeline);}
+\DoxyCodeLine{507                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * ColorTimeline.ENTRIES]);}
+\DoxyCodeLine{508 }
+\DoxyCodeLine{509                         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"twoColor"}) \{}
+\DoxyCodeLine{510                             var timeline = \textcolor{keyword}{new} TwoColorTimeline(values.Count);}
+\DoxyCodeLine{511                             timeline.slotIndex = slotIndex;}
+\DoxyCodeLine{512 }
+\DoxyCodeLine{513                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{514                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{515                                 \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{516                                 \textcolor{keywordtype}{string} light = (string)valueMap[\textcolor{stringliteral}{"light"}];}
+\DoxyCodeLine{517                                 \textcolor{keywordtype}{string} dark = (string)valueMap[\textcolor{stringliteral}{"dark"}];}
+\DoxyCodeLine{518                                 timeline.SetFrame(frameIndex, time, \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(light, 0), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(light, 1), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(light, 2), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(light, 3),}
+\DoxyCodeLine{519                                     \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(dark, 0, 6), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(dark, 1, 6), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(dark, 2, 6));}
+\DoxyCodeLine{520                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{521                                 frameIndex++;}
+\DoxyCodeLine{522                             \}}
+\DoxyCodeLine{523                             timelines.Add(timeline);}
+\DoxyCodeLine{524                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * TwoColorTimeline.ENTRIES]);}
+\DoxyCodeLine{525 }
+\DoxyCodeLine{526                         \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{527                             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Invalid timeline type for a slot: "} + timelineName + \textcolor{stringliteral}{" ("} + slotName + \textcolor{stringliteral}{")"});}
+\DoxyCodeLine{528                     \}}
+\DoxyCodeLine{529                 \}}
+\DoxyCodeLine{530             \}}
+\DoxyCodeLine{531 }
+\DoxyCodeLine{532             \textcolor{comment}{// Bone timelines.}}
+\DoxyCodeLine{533             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"bones"})) \{}
+\DoxyCodeLine{534                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> entry \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"bones"}]) \{}
+\DoxyCodeLine{535                     \textcolor{keywordtype}{string} boneName = entry.Key;}
+\DoxyCodeLine{536                     \textcolor{keywordtype}{int} boneIndex = skeletonData.FindBoneIndex(boneName);}
+\DoxyCodeLine{537                     \textcolor{keywordflow}{if} (boneIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Bone not found: "} + boneName);}
+\DoxyCodeLine{538                     var timelineMap = (Dictionary<string, Object>)entry.Value;}
+\DoxyCodeLine{539                     foreach (KeyValuePair<string, Object> timelineEntry in timelineMap) \{}
+\DoxyCodeLine{540                         var values = (List<Object>)timelineEntry.Value;}
+\DoxyCodeLine{541                         var timelineName = (\textcolor{keywordtype}{string})timelineEntry.Key;}
+\DoxyCodeLine{542                         \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"rotate"}) \{}
+\DoxyCodeLine{543                             var timeline = \textcolor{keyword}{new} RotateTimeline(values.Count);}
+\DoxyCodeLine{544                             timeline.boneIndex = boneIndex;}
+\DoxyCodeLine{545 }
+\DoxyCodeLine{546                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{547                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{548                                 timeline.SetFrame(frameIndex, (\textcolor{keywordtype}{float})valueMap[\textcolor{stringliteral}{"time"}], (\textcolor{keywordtype}{float})valueMap[\textcolor{stringliteral}{"angle"}]);}
+\DoxyCodeLine{549                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{550                                 frameIndex++;}
+\DoxyCodeLine{551                             \}}
+\DoxyCodeLine{552                             timelines.Add(timeline);}
+\DoxyCodeLine{553                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * RotateTimeline.ENTRIES]);}
+\DoxyCodeLine{554 }
+\DoxyCodeLine{555                         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"translate"} || timelineName == \textcolor{stringliteral}{"scale"} || timelineName == \textcolor{stringliteral}{"shear"}) \{}
+\DoxyCodeLine{556                             TranslateTimeline timeline;}
+\DoxyCodeLine{557                             \textcolor{keywordtype}{float} timelineScale = 1;}
+\DoxyCodeLine{558                             \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"scale"})}
+\DoxyCodeLine{559                                 timeline = \textcolor{keyword}{new} ScaleTimeline(values.Count);}
+\DoxyCodeLine{560                             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"shear"})}
+\DoxyCodeLine{561                                 timeline = \textcolor{keyword}{new} ShearTimeline(values.Count);}
+\DoxyCodeLine{562                             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{563                                 timeline = \textcolor{keyword}{new} TranslateTimeline(values.Count);}
+\DoxyCodeLine{564                                 timelineScale = scale;}
+\DoxyCodeLine{565                             \}}
+\DoxyCodeLine{566                             timeline.boneIndex = boneIndex;}
+\DoxyCodeLine{567 }
+\DoxyCodeLine{568                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{569                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{570                                 \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{571                                 \textcolor{keywordtype}{float} x = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"x"}, 0);}
+\DoxyCodeLine{572                                 \textcolor{keywordtype}{float} y = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"y"}, 0);}
+\DoxyCodeLine{573                                 timeline.SetFrame(frameIndex, time, x * timelineScale, y * timelineScale);}
+\DoxyCodeLine{574                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{575                                 frameIndex++;}
+\DoxyCodeLine{576                             \}}
+\DoxyCodeLine{577                             timelines.Add(timeline);}
+\DoxyCodeLine{578                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * TranslateTimeline.ENTRIES]);}
+\DoxyCodeLine{579 }
+\DoxyCodeLine{580                         \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{581                             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Invalid timeline type for a bone: "} + timelineName + \textcolor{stringliteral}{" ("} + boneName + \textcolor{stringliteral}{")"});}
+\DoxyCodeLine{582                     \}}
+\DoxyCodeLine{583                 \}}
+\DoxyCodeLine{584             \}}
+\DoxyCodeLine{585 }
+\DoxyCodeLine{586             \textcolor{comment}{// IK constraint timelines.}}
+\DoxyCodeLine{587             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"ik"})) \{}
+\DoxyCodeLine{588                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> constraintMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"ik"}]) \{}
+\DoxyCodeLine{589                     IkConstraintData constraint = skeletonData.FindIkConstraint(constraintMap.Key);}
+\DoxyCodeLine{590                     var values = (List<Object>)constraintMap.Value;}
+\DoxyCodeLine{591                     var timeline = \textcolor{keyword}{new} IkConstraintTimeline(values.Count);}
+\DoxyCodeLine{592                     timeline.ikConstraintIndex = skeletonData.ikConstraints.IndexOf(constraint);}
+\DoxyCodeLine{593                     \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{594                     \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{595                         \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{596                         \textcolor{keywordtype}{float} mix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"mix"}, 1);}
+\DoxyCodeLine{597                         \textcolor{keywordtype}{bool} bendPositive = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(valueMap, \textcolor{stringliteral}{"bendPositive"}, \textcolor{keyword}{true});}
+\DoxyCodeLine{598                         timeline.SetFrame(frameIndex, time, mix, bendPositive ? 1 : -\/1);}
+\DoxyCodeLine{599                         \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{600                         frameIndex++;}
+\DoxyCodeLine{601                     \}}
+\DoxyCodeLine{602                     timelines.Add(timeline);}
+\DoxyCodeLine{603                     duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * IkConstraintTimeline.ENTRIES]);}
+\DoxyCodeLine{604                 \}}
+\DoxyCodeLine{605             \}}
+\DoxyCodeLine{606 }
+\DoxyCodeLine{607             \textcolor{comment}{// Transform constraint timelines.}}
+\DoxyCodeLine{608             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"transform"})) \{}
+\DoxyCodeLine{609                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> constraintMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"transform"}]) \{}
+\DoxyCodeLine{610                     TransformConstraintData constraint = skeletonData.FindTransformConstraint(constraintMap.Key);}
+\DoxyCodeLine{611                     var values = (List<Object>)constraintMap.Value;}
+\DoxyCodeLine{612                     var timeline = \textcolor{keyword}{new} TransformConstraintTimeline(values.Count);}
+\DoxyCodeLine{613                     timeline.transformConstraintIndex = skeletonData.transformConstraints.IndexOf(constraint);}
+\DoxyCodeLine{614                     \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{615                     \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{616                         \textcolor{keywordtype}{float} time = (float)valueMap[\textcolor{stringliteral}{"time"}];}
+\DoxyCodeLine{617                         \textcolor{keywordtype}{float} rotateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"rotateMix"}, 1);}
+\DoxyCodeLine{618                         \textcolor{keywordtype}{float} translateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"translateMix"}, 1);}
+\DoxyCodeLine{619                         \textcolor{keywordtype}{float} scaleMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"scaleMix"}, 1);}
+\DoxyCodeLine{620                         \textcolor{keywordtype}{float} shearMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"shearMix"}, 1);}
+\DoxyCodeLine{621                         timeline.SetFrame(frameIndex, time, rotateMix, translateMix, scaleMix, shearMix);}
+\DoxyCodeLine{622                         \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{623                         frameIndex++;}
+\DoxyCodeLine{624                     \}}
+\DoxyCodeLine{625                     timelines.Add(timeline);}
+\DoxyCodeLine{626                     duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * TransformConstraintTimeline.ENTRIES]);}
+\DoxyCodeLine{627                 \}}
+\DoxyCodeLine{628             \}}
+\DoxyCodeLine{629 }
+\DoxyCodeLine{630             \textcolor{comment}{// Path constraint timelines.}}
+\DoxyCodeLine{631             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"paths"})) \{}
+\DoxyCodeLine{632                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> constraintMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"paths"}]) \{}
+\DoxyCodeLine{633                     \textcolor{keywordtype}{int} index = skeletonData.FindPathConstraintIndex(constraintMap.Key);}
+\DoxyCodeLine{634                     \textcolor{keywordflow}{if} (index == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Path constraint not found: "} + constraintMap.Key);}
+\DoxyCodeLine{635                     PathConstraintData data = skeletonData.pathConstraints.Items[index];}
+\DoxyCodeLine{636                     var timelineMap = (Dictionary<string, Object>)constraintMap.Value;}
+\DoxyCodeLine{637                     foreach (KeyValuePair<string, Object> timelineEntry in timelineMap) \{}
+\DoxyCodeLine{638                         var values = (List<Object>)timelineEntry.Value;}
+\DoxyCodeLine{639                         var timelineName = (\textcolor{keywordtype}{string})timelineEntry.Key;}
+\DoxyCodeLine{640                         \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"position"} || timelineName == \textcolor{stringliteral}{"spacing"}) \{}
+\DoxyCodeLine{641                             PathConstraintPositionTimeline timeline;}
+\DoxyCodeLine{642                             \textcolor{keywordtype}{float} timelineScale = 1;}
+\DoxyCodeLine{643                             \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"spacing"}) \{}
+\DoxyCodeLine{644                                 timeline = \textcolor{keyword}{new} PathConstraintSpacingTimeline(values.Count);}
+\DoxyCodeLine{645                                 \textcolor{keywordflow}{if} (data.spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Length || data.spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Fixed) timelineScale = scale;}
+\DoxyCodeLine{646                             \}}
+\DoxyCodeLine{647                             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{648                                 timeline = \textcolor{keyword}{new} PathConstraintPositionTimeline(values.Count);}
+\DoxyCodeLine{649                                 \textcolor{keywordflow}{if} (data.positionMode == \mbox{\hyperlink{namespace_spine_a54932cd85ab60420fe7be3b8a25b54f6}{PositionMode}}.Fixed) timelineScale = scale;}
+\DoxyCodeLine{650                             \}}
+\DoxyCodeLine{651                             timeline.pathConstraintIndex = index;}
+\DoxyCodeLine{652                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{653                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{654                                 timeline.SetFrame(frameIndex, (\textcolor{keywordtype}{float})valueMap[\textcolor{stringliteral}{"time"}], \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, timelineName, 0) * timelineScale);}
+\DoxyCodeLine{655                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{656                                 frameIndex++;}
+\DoxyCodeLine{657                             \}}
+\DoxyCodeLine{658                             timelines.Add(timeline);}
+\DoxyCodeLine{659                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * PathConstraintPositionTimeline.ENTRIES]);}
+\DoxyCodeLine{660                         \}}
+\DoxyCodeLine{661                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (timelineName == \textcolor{stringliteral}{"mix"}) \{}
+\DoxyCodeLine{662                             PathConstraintMixTimeline timeline = \textcolor{keyword}{new} PathConstraintMixTimeline(values.Count);}
+\DoxyCodeLine{663                             timeline.pathConstraintIndex = index;}
+\DoxyCodeLine{664                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{665                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{666                                 timeline.SetFrame(frameIndex, (\textcolor{keywordtype}{float})valueMap[\textcolor{stringliteral}{"time"}], \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"rotateMix"}, 1), \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(valueMap, \textcolor{stringliteral}{"translateMix"}, 1));}
+\DoxyCodeLine{667                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{668                                 frameIndex++;}
+\DoxyCodeLine{669                             \}}
+\DoxyCodeLine{670                             timelines.Add(timeline);}
+\DoxyCodeLine{671                             duration = Math.Max(duration, timeline.frames[(timeline.FrameCount -\/ 1) * PathConstraintMixTimeline.ENTRIES]);}
+\DoxyCodeLine{672                         \}}
+\DoxyCodeLine{673                     \}}
+\DoxyCodeLine{674                 \}}
+\DoxyCodeLine{675             \}}
+\DoxyCodeLine{676 }
+\DoxyCodeLine{677             \textcolor{comment}{// Deform timelines.}}
+\DoxyCodeLine{678             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"deform"})) \{}
+\DoxyCodeLine{679                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> deformMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)map[\textcolor{stringliteral}{"deform"}]) \{}
+\DoxyCodeLine{680                     Skin skin = skeletonData.FindSkin(deformMap.Key);}
+\DoxyCodeLine{681                     \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> slotMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)deformMap.Value) \{}
+\DoxyCodeLine{682                         \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex(slotMap.Key);}
+\DoxyCodeLine{683                         \textcolor{keywordflow}{if} (slotIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Slot not found: "} + slotMap.Key);}
+\DoxyCodeLine{684                         \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> timelineMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)slotMap.Value) \{}
+\DoxyCodeLine{685                             var values = (List<Object>)timelineMap.Value;}
+\DoxyCodeLine{686                             VertexAttachment attachment = (VertexAttachment)skin.GetAttachment(slotIndex, timelineMap.Key);}
+\DoxyCodeLine{687                             \textcolor{keywordflow}{if} (attachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Deform attachment not found: "} + timelineMap.Key);}
+\DoxyCodeLine{688                             \textcolor{keywordtype}{bool} weighted = attachment.bones != \textcolor{keyword}{null};}
+\DoxyCodeLine{689                             \textcolor{keywordtype}{float}[] vertices = attachment.vertices;}
+\DoxyCodeLine{690                             \textcolor{keywordtype}{int} deformLength = weighted ? vertices.Length / 3 * 2 : vertices.Length;}
+\DoxyCodeLine{691 }
+\DoxyCodeLine{692                             var timeline = \textcolor{keyword}{new} DeformTimeline(values.Count);}
+\DoxyCodeLine{693                             timeline.slotIndex = slotIndex;}
+\DoxyCodeLine{694                             timeline.attachment = attachment;}
+\DoxyCodeLine{695                             }
+\DoxyCodeLine{696                             \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{697                             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> valueMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{698                                 \textcolor{keywordtype}{float}[] deform;}
+\DoxyCodeLine{699                                 \textcolor{keywordflow}{if} (!valueMap.ContainsKey(\textcolor{stringliteral}{"vertices"})) \{}
+\DoxyCodeLine{700                                     deform = weighted ? \textcolor{keyword}{new} \textcolor{keywordtype}{float}[deformLength] : vertices;}
+\DoxyCodeLine{701                                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{702                                     deform = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[deformLength];}
+\DoxyCodeLine{703                                     \textcolor{keywordtype}{int} start = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(valueMap, \textcolor{stringliteral}{"offset"}, 0);}
+\DoxyCodeLine{704                                     \textcolor{keywordtype}{float}[] verticesValue = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}{GetFloatArray}}(valueMap, \textcolor{stringliteral}{"vertices"}, 1);}
+\DoxyCodeLine{705                                     Array.Copy(verticesValue, 0, deform, start, verticesValue.Length);}
+\DoxyCodeLine{706                                     \textcolor{keywordflow}{if} (scale != 1) \{}
+\DoxyCodeLine{707                                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = start, n = i + verticesValue.Length; i < n; i++)}
+\DoxyCodeLine{708                                             deform[i] *= scale;}
+\DoxyCodeLine{709                                     \}}
+\DoxyCodeLine{710 }
+\DoxyCodeLine{711                                     \textcolor{keywordflow}{if} (!weighted) \{}
+\DoxyCodeLine{712                                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < deformLength; i++)}
+\DoxyCodeLine{713                                             deform[i] += vertices[i];}
+\DoxyCodeLine{714                                     \}}
+\DoxyCodeLine{715                                 \}}
+\DoxyCodeLine{716 }
+\DoxyCodeLine{717                                 timeline.SetFrame(frameIndex, (\textcolor{keywordtype}{float})valueMap[\textcolor{stringliteral}{"time"}], deform);}
+\DoxyCodeLine{718                                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}{ReadCurve}}(valueMap, timeline, frameIndex);}
+\DoxyCodeLine{719                                 frameIndex++;}
+\DoxyCodeLine{720                             \}}
+\DoxyCodeLine{721                             timelines.Add(timeline);}
+\DoxyCodeLine{722                             duration = Math.Max(duration, timeline.frames[timeline.FrameCount -\/ 1]);}
+\DoxyCodeLine{723                         \}}
+\DoxyCodeLine{724                     \}}
+\DoxyCodeLine{725                 \}}
+\DoxyCodeLine{726             \}}
+\DoxyCodeLine{727 }
+\DoxyCodeLine{728             \textcolor{comment}{// Draw order timeline.}}
+\DoxyCodeLine{729             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"drawOrder"}) || map.ContainsKey(\textcolor{stringliteral}{"draworder"})) \{}
+\DoxyCodeLine{730                 var values = (List<Object>)map[map.ContainsKey(\textcolor{stringliteral}{"drawOrder"}) ? \textcolor{stringliteral}{"drawOrder"} : \textcolor{stringliteral}{"draworder"}];}
+\DoxyCodeLine{731                 var timeline = \textcolor{keyword}{new} DrawOrderTimeline(values.Count);}
+\DoxyCodeLine{732                 \textcolor{keywordtype}{int} slotCount = skeletonData.slots.Count;}
+\DoxyCodeLine{733                 \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{734                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> drawOrderMap \textcolor{keywordflow}{in} values) \{}
+\DoxyCodeLine{735                     \textcolor{keywordtype}{int}[] drawOrder = \textcolor{keyword}{null};}
+\DoxyCodeLine{736                     \textcolor{keywordflow}{if} (drawOrderMap.ContainsKey(\textcolor{stringliteral}{"offsets"})) \{}
+\DoxyCodeLine{737                         drawOrder = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[slotCount];}
+\DoxyCodeLine{738                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = slotCount -\/ 1; i >= 0; i-\/-\/)}
+\DoxyCodeLine{739                             drawOrder[i] = -\/1;}
+\DoxyCodeLine{740                         var offsets = (List<Object>)drawOrderMap[\textcolor{stringliteral}{"offsets"}];}
+\DoxyCodeLine{741                         \textcolor{keywordtype}{int}[] unchanged = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[slotCount -\/ offsets.Count];}
+\DoxyCodeLine{742                         \textcolor{keywordtype}{int} originalIndex = 0, unchangedIndex = 0;}
+\DoxyCodeLine{743                         \textcolor{keywordflow}{foreach} (Dictionary<string, Object> offsetMap \textcolor{keywordflow}{in} offsets) \{}
+\DoxyCodeLine{744                             \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex((\textcolor{keywordtype}{string})offsetMap[\textcolor{stringliteral}{"slot"}]);}
+\DoxyCodeLine{745                             \textcolor{keywordflow}{if} (slotIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Slot not found: "} + offsetMap[\textcolor{stringliteral}{"slot"}]);}
+\DoxyCodeLine{746                             \textcolor{comment}{// Collect unchanged items.}}
+\DoxyCodeLine{747                             \textcolor{keywordflow}{while} (originalIndex != slotIndex)}
+\DoxyCodeLine{748                                 unchanged[unchangedIndex++] = originalIndex++;}
+\DoxyCodeLine{749                             \textcolor{comment}{// Set changed items.}}
+\DoxyCodeLine{750                             \textcolor{keywordtype}{int} index = originalIndex + (int)(\textcolor{keywordtype}{float})offsetMap[\textcolor{stringliteral}{"offset"}];}
+\DoxyCodeLine{751                             drawOrder[index] = originalIndex++;}
+\DoxyCodeLine{752                         \}}
+\DoxyCodeLine{753                         \textcolor{comment}{// Collect remaining unchanged items.}}
+\DoxyCodeLine{754                         \textcolor{keywordflow}{while} (originalIndex < slotCount)}
+\DoxyCodeLine{755                             unchanged[unchangedIndex++] = originalIndex++;}
+\DoxyCodeLine{756                         \textcolor{comment}{// Fill in unchanged items.}}
+\DoxyCodeLine{757                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = slotCount -\/ 1; i >= 0; i-\/-\/)}
+\DoxyCodeLine{758                             \textcolor{keywordflow}{if} (drawOrder[i] == -\/1) drawOrder[i] = unchanged[-\/-\/unchangedIndex];}
+\DoxyCodeLine{759                     \}}
+\DoxyCodeLine{760                     timeline.SetFrame(frameIndex++, (\textcolor{keywordtype}{float})drawOrderMap[\textcolor{stringliteral}{"time"}], drawOrder);}
+\DoxyCodeLine{761                 \}}
+\DoxyCodeLine{762                 timelines.Add(timeline);}
+\DoxyCodeLine{763                 duration = Math.Max(duration, timeline.frames[timeline.FrameCount -\/ 1]);}
+\DoxyCodeLine{764             \}}
+\DoxyCodeLine{765 }
+\DoxyCodeLine{766             \textcolor{comment}{// Event timeline.}}
+\DoxyCodeLine{767             \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"events"})) \{}
+\DoxyCodeLine{768                 var eventsMap = (List<Object>)map[\textcolor{stringliteral}{"events"}];}
+\DoxyCodeLine{769                 var timeline = \textcolor{keyword}{new} EventTimeline(eventsMap.Count);}
+\DoxyCodeLine{770                 \textcolor{keywordtype}{int} frameIndex = 0;}
+\DoxyCodeLine{771                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> eventMap \textcolor{keywordflow}{in} eventsMap) \{}
+\DoxyCodeLine{772                     EventData eventData = skeletonData.FindEvent((\textcolor{keywordtype}{string})eventMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{773                     \textcolor{keywordflow}{if} (eventData == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Event not found: "} + eventMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{774                     var e = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a1d77fd0f2c3570d8f4ebdc48b2afacaf}{Event}}((\textcolor{keywordtype}{float})eventMap[\textcolor{stringliteral}{"time"}], eventData);}
+\DoxyCodeLine{775                     e.Int = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(eventMap, \textcolor{stringliteral}{"int"}, eventData.Int);}
+\DoxyCodeLine{776                     e.Float = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(eventMap, \textcolor{stringliteral}{"float"}, eventData.Float);}
+\DoxyCodeLine{777                     e.String = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(eventMap, \textcolor{stringliteral}{"string"}, eventData.String);}
+\DoxyCodeLine{778                     timeline.SetFrame(frameIndex++, e);}
+\DoxyCodeLine{779                 \}}
+\DoxyCodeLine{780                 timelines.Add(timeline);}
+\DoxyCodeLine{781                 duration = Math.Max(duration, timeline.frames[timeline.FrameCount -\/ 1]);}
+\DoxyCodeLine{782             \}}
+\DoxyCodeLine{783 }
+\DoxyCodeLine{784             timelines.TrimExcess();}
+\DoxyCodeLine{785             skeletonData.animations.Add(\textcolor{keyword}{new} \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}}(name, timelines, duration));}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a126916681c1f8e7b2cea7b4f85eb3f9a}\label{class_spine_1_1_skeleton_json_a126916681c1f8e7b2cea7b4f85eb3f9a}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadAttachment@{ReadAttachment}}
+\index{ReadAttachment@{ReadAttachment}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadAttachment()}{ReadAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Skeleton\+Json.\+Read\+Attachment (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{int}]{slot\+Index,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 319 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{320                                                                                                                                              \{}
+\DoxyCodeLine{321             \textcolor{keywordtype}{float} scale = this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}};}
+\DoxyCodeLine{322             name = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"name"}, name);}
+\DoxyCodeLine{323 }
+\DoxyCodeLine{324             var typeName = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"type"}, \textcolor{stringliteral}{"region"});}
+\DoxyCodeLine{325             \textcolor{keywordflow}{if} (typeName == \textcolor{stringliteral}{"skinnedmesh"}) typeName = \textcolor{stringliteral}{"weightedmesh"};}
+\DoxyCodeLine{326             \textcolor{keywordflow}{if} (typeName == \textcolor{stringliteral}{"weightedmesh"}) typeName = \textcolor{stringliteral}{"mesh"};}
+\DoxyCodeLine{327             \textcolor{keywordflow}{if} (typeName == \textcolor{stringliteral}{"weightedlinkedmesh"}) typeName = \textcolor{stringliteral}{"linkedmesh"};}
+\DoxyCodeLine{328             var type = (\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}), typeName, \textcolor{keyword}{true});}
+\DoxyCodeLine{329 }
+\DoxyCodeLine{330             \textcolor{keywordtype}{string} path = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"path"}, name);}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332             \textcolor{keywordflow}{switch} (type) \{}
+\DoxyCodeLine{333             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Region:}
+\DoxyCodeLine{334                 RegionAttachment region = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_acd15c9fd5f434324a0f30872a35b828c}{NewRegionAttachment}}(skin, name, path);}
+\DoxyCodeLine{335                 \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{336                 region.\mbox{\hyperlink{class_spine_1_1_region_attachment_a2e7ba8e9f71d28553ecfce1c1bef904d}{Path}} = path;}
+\DoxyCodeLine{337                 region.x = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"x"}, 0) * scale;}
+\DoxyCodeLine{338                 region.y = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"y"}, 0) * scale;}
+\DoxyCodeLine{339                 region.scaleX = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"scaleX"}, 1);}
+\DoxyCodeLine{340                 region.scaleY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"scaleY"}, 1);}
+\DoxyCodeLine{341                 region.rotation = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"rotation"}, 0);}
+\DoxyCodeLine{342                 region.width = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"width"}, 32) * scale;}
+\DoxyCodeLine{343                 region.height = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"height"}, 32) * scale;}
+\DoxyCodeLine{344 }
+\DoxyCodeLine{345                 \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"color"})) \{}
+\DoxyCodeLine{346                     var color = (string)map[\textcolor{stringliteral}{"color"}];}
+\DoxyCodeLine{347                     region.r = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 0);}
+\DoxyCodeLine{348                     region.g = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 1);}
+\DoxyCodeLine{349                     region.b = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 2);}
+\DoxyCodeLine{350                     region.a = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 3);}
+\DoxyCodeLine{351                 \}}
+\DoxyCodeLine{352 }
+\DoxyCodeLine{353                 region.UpdateOffset();}
+\DoxyCodeLine{354                 \textcolor{keywordflow}{return} region;}
+\DoxyCodeLine{355             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Boundingbox:}
+\DoxyCodeLine{356                 BoundingBoxAttachment box = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a06b5733cb67b13536797601adc6db6b4}{NewBoundingBoxAttachment}}(skin, name);}
+\DoxyCodeLine{357                 \textcolor{keywordflow}{if} (box == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{358                 \mbox{\hyperlink{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}{ReadVertices}}(map, box, \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(map, \textcolor{stringliteral}{"vertexCount"}, 0) << 1);}
+\DoxyCodeLine{359                 \textcolor{keywordflow}{return} box;}
+\DoxyCodeLine{360             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Mesh:}
+\DoxyCodeLine{361             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Linkedmesh: \{}
+\DoxyCodeLine{362                     MeshAttachment mesh = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_af5979e352d0a75f981f966290377cc05}{NewMeshAttachment}}(skin, name, path);}
+\DoxyCodeLine{363                     \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{364                     mesh.\mbox{\hyperlink{class_spine_1_1_mesh_attachment_a968a4110ab99fc02a4f5ad311a1b295f}{Path}} = path;}
+\DoxyCodeLine{365 }
+\DoxyCodeLine{366                     \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"color"})) \{}
+\DoxyCodeLine{367                         var color = (string)map[\textcolor{stringliteral}{"color"}];}
+\DoxyCodeLine{368                         mesh.r = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 0);}
+\DoxyCodeLine{369                         mesh.g = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 1);}
+\DoxyCodeLine{370                         mesh.b = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 2);}
+\DoxyCodeLine{371                         mesh.a = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 3);}
+\DoxyCodeLine{372                     \}}
+\DoxyCodeLine{373 }
+\DoxyCodeLine{374                     mesh.Width = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"width"}, 0) * scale;}
+\DoxyCodeLine{375                     mesh.Height = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"height"}, 0) * scale;}
+\DoxyCodeLine{376 }
+\DoxyCodeLine{377                     \textcolor{keywordtype}{string} parent = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"parent"}, \textcolor{keyword}{null});}
+\DoxyCodeLine{378                     \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{379                         mesh.InheritDeform = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(map, \textcolor{stringliteral}{"deform"}, \textcolor{keyword}{true});}
+\DoxyCodeLine{380                         \mbox{\hyperlink{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}{linkedMeshes}}.Add(\textcolor{keyword}{new} LinkedMesh(mesh, \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"skin"}, \textcolor{keyword}{null}), slotIndex, parent));}
+\DoxyCodeLine{381                         \textcolor{keywordflow}{return} mesh;}
+\DoxyCodeLine{382                     \}}
+\DoxyCodeLine{383 }
+\DoxyCodeLine{384                     \textcolor{keywordtype}{float}[] uvs = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}{GetFloatArray}}(map, \textcolor{stringliteral}{"uvs"}, 1);}
+\DoxyCodeLine{385                     \mbox{\hyperlink{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}{ReadVertices}}(map, mesh, uvs.Length);}
+\DoxyCodeLine{386                     mesh.triangles = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a78e861c13410275ad7354f26e61f8667}{GetIntArray}}(map, \textcolor{stringliteral}{"triangles"});}
+\DoxyCodeLine{387                     mesh.regionUVs = uvs;}
+\DoxyCodeLine{388                     mesh.UpdateUVs();}
+\DoxyCodeLine{389 }
+\DoxyCodeLine{390                     \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"hull"})) mesh.HullLength = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(map, \textcolor{stringliteral}{"hull"}, 0) * 2;}
+\DoxyCodeLine{391                     \textcolor{keywordflow}{if} (map.ContainsKey(\textcolor{stringliteral}{"edges"})) mesh.Edges = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a78e861c13410275ad7354f26e61f8667}{GetIntArray}}(map, \textcolor{stringliteral}{"edges"});}
+\DoxyCodeLine{392                     \textcolor{keywordflow}{return} mesh;}
+\DoxyCodeLine{393                 \}}
+\DoxyCodeLine{394             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Path: \{}
+\DoxyCodeLine{395                     PathAttachment pathAttachment = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a6b5e631c0773ecedecc3121e84db109d}{NewPathAttachment}}(skin, name);}
+\DoxyCodeLine{396                     \textcolor{keywordflow}{if} (pathAttachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{397                     pathAttachment.closed = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(map, \textcolor{stringliteral}{"closed"}, \textcolor{keyword}{false});}
+\DoxyCodeLine{398                     pathAttachment.constantSpeed = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(map, \textcolor{stringliteral}{"constantSpeed"}, \textcolor{keyword}{true});}
+\DoxyCodeLine{399 }
+\DoxyCodeLine{400                     \textcolor{keywordtype}{int} vertexCount = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(map, \textcolor{stringliteral}{"vertexCount"}, 0);}
+\DoxyCodeLine{401                     \mbox{\hyperlink{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}{ReadVertices}}(map, pathAttachment, vertexCount << 1);}
+\DoxyCodeLine{402 }
+\DoxyCodeLine{403                     \textcolor{comment}{// potential BOZO see Java impl}}
+\DoxyCodeLine{404                     pathAttachment.lengths = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}{GetFloatArray}}(map, \textcolor{stringliteral}{"lengths"}, scale);}
+\DoxyCodeLine{405                     \textcolor{keywordflow}{return} pathAttachment;}
+\DoxyCodeLine{406                 \}}
+\DoxyCodeLine{407             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Point: \{}
+\DoxyCodeLine{408                     PointAttachment point = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a76d650e21df14366dc3f9a0a6c0a92ba}{NewPointAttachment}}(skin, name);}
+\DoxyCodeLine{409                     \textcolor{keywordflow}{if} (point == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{410                     point.x = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"x"}, 0) * scale;}
+\DoxyCodeLine{411                     point.y = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"y"}, 0) * scale;}
+\DoxyCodeLine{412                     point.rotation = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(map, \textcolor{stringliteral}{"rotation"}, 0);}
+\DoxyCodeLine{413 }
+\DoxyCodeLine{414                     \textcolor{comment}{//string color = GetString(map, "color", null);}}
+\DoxyCodeLine{415                     \textcolor{comment}{//if (color != null) point.color = color;}}
+\DoxyCodeLine{416                     \textcolor{keywordflow}{return} point;}
+\DoxyCodeLine{417                 \}}
+\DoxyCodeLine{418             \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}.Clipping: \{}
+\DoxyCodeLine{419                     ClippingAttachment clip = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}{attachmentLoader}}.\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a27f4d730a36f1ca83e756ae6825ed474}{NewClippingAttachment}}(skin, name);}
+\DoxyCodeLine{420                     \textcolor{keywordflow}{if} (clip == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{421 }
+\DoxyCodeLine{422                     \textcolor{keywordtype}{string} end = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(map, \textcolor{stringliteral}{"end"}, \textcolor{keyword}{null});}
+\DoxyCodeLine{423                     \textcolor{keywordflow}{if} (end != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{424                         SlotData slot = skeletonData.FindSlot(end);}
+\DoxyCodeLine{425                         \textcolor{keywordflow}{if} (slot == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Clipping end slot not found: "} + end);}
+\DoxyCodeLine{426                         clip.EndSlot = slot;}
+\DoxyCodeLine{427                     \}}
+\DoxyCodeLine{428 }
+\DoxyCodeLine{429                     \mbox{\hyperlink{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}{ReadVertices}}(map, clip, \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(map, \textcolor{stringliteral}{"vertexCount"}, 0) << 1);}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431                     \textcolor{comment}{//string color = GetString(map, "color", null);}}
+\DoxyCodeLine{432                     \textcolor{comment}{// if (color != null) clip.color = color;}}
+\DoxyCodeLine{433                     \textcolor{keywordflow}{return} clip;}
+\DoxyCodeLine{434                 \}}
+\DoxyCodeLine{435             \}}
+\DoxyCodeLine{436             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}\label{class_spine_1_1_skeleton_json_ad8560242abf5194a1161d7935b0b8f2d}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadCurve@{ReadCurve}}
+\index{ReadCurve@{ReadCurve}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadCurve()}{ReadCurve()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton\+Json.\+Read\+Curve (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{value\+Map,  }\item[{\mbox{\hyperlink{class_spine_1_1_curve_timeline}{Curve\+Timeline}}}]{timeline,  }\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 787 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{788                                                                                                             \{}
+\DoxyCodeLine{789             \textcolor{keywordflow}{if} (!valueMap.ContainsKey(\textcolor{stringliteral}{"curve"}))}
+\DoxyCodeLine{790                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{791             Object curveObject = valueMap[\textcolor{stringliteral}{"curve"}];}
+\DoxyCodeLine{792             \textcolor{keywordflow}{if} (curveObject.Equals(\textcolor{stringliteral}{"stepped"}))}
+\DoxyCodeLine{793                 timeline.SetStepped(frameIndex);}
+\DoxyCodeLine{794             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{795                 var curve = curveObject as List<Object>;}
+\DoxyCodeLine{796                 \textcolor{keywordflow}{if} (curve != \textcolor{keyword}{null})}
+\DoxyCodeLine{797                     timeline.SetCurve(frameIndex, (\textcolor{keywordtype}{float})curve[0], (\textcolor{keywordtype}{float})curve[1], (\textcolor{keywordtype}{float})curve[2], (\textcolor{keywordtype}{float})curve[3]);}
+\DoxyCodeLine{798             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a704649387f4ec99db38cd1df092135e2}\label{class_spine_1_1_skeleton_json_a704649387f4ec99db38cd1df092135e2}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadSkeletonData@{ReadSkeletonData}}
+\index{ReadSkeletonData@{ReadSkeletonData}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadSkeletonData()}{ReadSkeletonData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} Spine.\+Skeleton\+Json.\+Read\+Skeleton\+Data (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Json.\+cs 파일의 75 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                            \{}
+\DoxyCodeLine{77 \textcolor{preprocessor}{        \#if WINDOWS\_PHONE}}
+\DoxyCodeLine{78             \textcolor{keyword}{using} (var reader = \textcolor{keyword}{new} StreamReader(Microsoft.Xna.Framework.TitleContainer.OpenStream(path))) \{}
+\DoxyCodeLine{79 \textcolor{preprocessor}{        \#else}}
+\DoxyCodeLine{80             \textcolor{keyword}{using} (var reader = \textcolor{keyword}{new} StreamReader(\textcolor{keyword}{new} FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read))) \{}
+\DoxyCodeLine{81 \textcolor{preprocessor}{        \#endif}}
+\DoxyCodeLine{82                 SkeletonData skeletonData = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a704649387f4ec99db38cd1df092135e2}{ReadSkeletonData}}(reader);}
+\DoxyCodeLine{83                 skeletonData.name = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(path);}
+\DoxyCodeLine{84                 \textcolor{keywordflow}{return} skeletonData;}
+\DoxyCodeLine{85             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_ae7e26ebf33823ab41245076dee691647}\label{class_spine_1_1_skeleton_json_ae7e26ebf33823ab41245076dee691647}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadSkeletonData@{ReadSkeletonData}}
+\index{ReadSkeletonData@{ReadSkeletonData}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadSkeletonData()}{ReadSkeletonData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} Spine.\+Skeleton\+Json.\+Read\+Skeleton\+Data (\begin{DoxyParamCaption}\item[{Text\+Reader}]{reader }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Json.\+cs 파일의 88 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                                                  \{}
+\DoxyCodeLine{90             \textcolor{keywordflow}{if} (reader == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"reader"}, \textcolor{stringliteral}{"reader cannot be null."});}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92             \textcolor{keywordtype}{float} scale = this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}};}
+\DoxyCodeLine{93             var skeletonData = \textcolor{keyword}{new} SkeletonData();}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             var root = Json.Deserialize(reader) as Dictionary<string, Object>;}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (root == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Invalid JSON."});}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             \textcolor{comment}{// Skeleton.}}
+\DoxyCodeLine{99             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"skeleton"})) \{}
+\DoxyCodeLine{100                 var skeletonMap = (Dictionary<string, Object>)root[\textcolor{stringliteral}{"skeleton"}];}
+\DoxyCodeLine{101                 skeletonData.hash = (string)skeletonMap[\textcolor{stringliteral}{"hash"}];}
+\DoxyCodeLine{102                 skeletonData.version = (string)skeletonMap[\textcolor{stringliteral}{"spine"}];}
+\DoxyCodeLine{103                 skeletonData.width = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(skeletonMap, \textcolor{stringliteral}{"width"}, 0);}
+\DoxyCodeLine{104                 skeletonData.height = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(skeletonMap, \textcolor{stringliteral}{"height"}, 0);}
+\DoxyCodeLine{105                 skeletonData.fps = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(skeletonMap, \textcolor{stringliteral}{"fps"}, 0);}
+\DoxyCodeLine{106                 skeletonData.imagesPath = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(skeletonMap, \textcolor{stringliteral}{"images"}, \textcolor{keyword}{null});}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109             \textcolor{comment}{// Bones.}}
+\DoxyCodeLine{110             \textcolor{keywordflow}{foreach} (Dictionary<string, Object> boneMap \textcolor{keywordflow}{in} (List<Object>)root[\textcolor{stringliteral}{"bones"}]) \{}
+\DoxyCodeLine{111                 BoneData parent = \textcolor{keyword}{null};}
+\DoxyCodeLine{112                 \textcolor{keywordflow}{if} (boneMap.ContainsKey(\textcolor{stringliteral}{"parent"})) \{}
+\DoxyCodeLine{113                     parent = skeletonData.FindBone((\textcolor{keywordtype}{string})boneMap[\textcolor{stringliteral}{"parent"}]);}
+\DoxyCodeLine{114                     \textcolor{keywordflow}{if} (parent == \textcolor{keyword}{null})}
+\DoxyCodeLine{115                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Parent bone not found: "} + boneMap[\textcolor{stringliteral}{"parent"}]);}
+\DoxyCodeLine{116                 \}}
+\DoxyCodeLine{117                 var data = \textcolor{keyword}{new} BoneData(skeletonData.Bones.Count, (\textcolor{keywordtype}{string})boneMap[\textcolor{stringliteral}{"name"}], parent);}
+\DoxyCodeLine{118                 data.length = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"length"}, 0) * scale;}
+\DoxyCodeLine{119                 data.x = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"x"}, 0) * scale;}
+\DoxyCodeLine{120                 data.y = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"y"}, 0) * scale;}
+\DoxyCodeLine{121                 data.rotation = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"rotation"}, 0);}
+\DoxyCodeLine{122                 data.scaleX = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"scaleX"}, 1);}
+\DoxyCodeLine{123                 data.scaleY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"scaleY"}, 1);}
+\DoxyCodeLine{124                 data.shearX = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"shearX"}, 0);}
+\DoxyCodeLine{125                 data.shearY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(boneMap, \textcolor{stringliteral}{"shearY"}, 0);}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127                 \textcolor{keywordtype}{string} tm = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(boneMap, \textcolor{stringliteral}{"transform"}, \mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{TransformMode}}.Normal.ToString());}
+\DoxyCodeLine{128                 data.transformMode = (\mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{TransformMode}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_ac63c7efffe745fc4b7363275e345d349}{TransformMode}}), tm, \textcolor{keyword}{true});}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130                 skeletonData.bones.Add(data);}
+\DoxyCodeLine{131             \}}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133             \textcolor{comment}{// Slots.}}
+\DoxyCodeLine{134             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"slots"})) \{}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> slotMap \textcolor{keywordflow}{in} (List<Object>)root[\textcolor{stringliteral}{"slots"}]) \{}
+\DoxyCodeLine{136                     var slotName = (string)slotMap[\textcolor{stringliteral}{"name"}];}
+\DoxyCodeLine{137                     var boneName = (string)slotMap[\textcolor{stringliteral}{"bone"}];}
+\DoxyCodeLine{138                     BoneData boneData = skeletonData.FindBone(boneName);}
+\DoxyCodeLine{139                     \textcolor{keywordflow}{if} (boneData == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Slot bone not found: "} + boneName);}
+\DoxyCodeLine{140                     var data = \textcolor{keyword}{new} SlotData(skeletonData.Slots.Count, slotName, boneData);}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142                     \textcolor{keywordflow}{if} (slotMap.ContainsKey(\textcolor{stringliteral}{"color"})) \{}
+\DoxyCodeLine{143                         \textcolor{keywordtype}{string} color = (string)slotMap[\textcolor{stringliteral}{"color"}];}
+\DoxyCodeLine{144                         data.r = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 0);}
+\DoxyCodeLine{145                         data.g = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 1);}
+\DoxyCodeLine{146                         data.b = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 2);}
+\DoxyCodeLine{147                         data.a = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color, 3);}
+\DoxyCodeLine{148                     \}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                     \textcolor{keywordflow}{if} (slotMap.ContainsKey(\textcolor{stringliteral}{"dark"})) \{}
+\DoxyCodeLine{151                         var color2 = (string)slotMap[\textcolor{stringliteral}{"dark"}];}
+\DoxyCodeLine{152                         data.r2 = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color2, 0, 6); \textcolor{comment}{// expectedLength = 6. ie. "RRGGBB"}}
+\DoxyCodeLine{153                         data.g2 = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color2, 1, 6);}
+\DoxyCodeLine{154                         data.b2 = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}{ToColor}}(color2, 2, 6);}
+\DoxyCodeLine{155                         data.hasSecondColor = \textcolor{keyword}{true};}
+\DoxyCodeLine{156                     \}}
+\DoxyCodeLine{157                         }
+\DoxyCodeLine{158                     data.attachmentName = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(slotMap, \textcolor{stringliteral}{"attachment"}, \textcolor{keyword}{null});}
+\DoxyCodeLine{159                     \textcolor{keywordflow}{if} (slotMap.ContainsKey(\textcolor{stringliteral}{"blend"}))}
+\DoxyCodeLine{160                         data.blendMode = (\mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}), (\textcolor{keywordtype}{string})slotMap[\textcolor{stringliteral}{"blend"}], \textcolor{keyword}{true});}
+\DoxyCodeLine{161                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{162                         data.blendMode = \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Normal;}
+\DoxyCodeLine{163                     skeletonData.slots.Add(data);}
+\DoxyCodeLine{164                 \}}
+\DoxyCodeLine{165             \}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167             \textcolor{comment}{// IK constraints.}}
+\DoxyCodeLine{168             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"ik"})) \{}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> constraintMap \textcolor{keywordflow}{in} (List<Object>)root[\textcolor{stringliteral}{"ik"}]) \{}
+\DoxyCodeLine{170                     IkConstraintData data = \textcolor{keyword}{new} IkConstraintData((\textcolor{keywordtype}{string})constraintMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{171                     data.order = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(constraintMap, \textcolor{stringliteral}{"order"}, 0);}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173                     \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} boneName \textcolor{keywordflow}{in} (List<Object>)constraintMap[\textcolor{stringliteral}{"bones"}]) \{}
+\DoxyCodeLine{174                         BoneData bone = skeletonData.FindBone(boneName);}
+\DoxyCodeLine{175                         \textcolor{keywordflow}{if} (bone == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"IK constraint bone not found: "} + boneName);}
+\DoxyCodeLine{176                         data.bones.Add(bone);}
+\DoxyCodeLine{177                     \}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179                     \textcolor{keywordtype}{string} targetName = (string)constraintMap[\textcolor{stringliteral}{"target"}];}
+\DoxyCodeLine{180                     data.target = skeletonData.FindBone(targetName);}
+\DoxyCodeLine{181                     \textcolor{keywordflow}{if} (data.target == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Target bone not found: "} + targetName);}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183                     data.bendDirection = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(constraintMap, \textcolor{stringliteral}{"bendPositive"}, \textcolor{keyword}{true}) ? 1 : -\/1;}
+\DoxyCodeLine{184                     data.mix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"mix"}, 1);}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186                     skeletonData.ikConstraints.Add(data);}
+\DoxyCodeLine{187                 \}}
+\DoxyCodeLine{188             \}}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \textcolor{comment}{// Transform constraints.}}
+\DoxyCodeLine{191             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"transform"})) \{}
+\DoxyCodeLine{192                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> constraintMap \textcolor{keywordflow}{in} (List<Object>)root[\textcolor{stringliteral}{"transform"}]) \{}
+\DoxyCodeLine{193                     TransformConstraintData data = \textcolor{keyword}{new} TransformConstraintData((\textcolor{keywordtype}{string})constraintMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{194                     data.order = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(constraintMap, \textcolor{stringliteral}{"order"}, 0);}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196                     \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} boneName \textcolor{keywordflow}{in} (List<Object>)constraintMap[\textcolor{stringliteral}{"bones"}]) \{}
+\DoxyCodeLine{197                         BoneData bone = skeletonData.FindBone(boneName);}
+\DoxyCodeLine{198                         \textcolor{keywordflow}{if} (bone == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Transform constraint bone not found: "} + boneName);}
+\DoxyCodeLine{199                         data.bones.Add(bone);}
+\DoxyCodeLine{200                     \}}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202                     \textcolor{keywordtype}{string} targetName = (string)constraintMap[\textcolor{stringliteral}{"target"}];}
+\DoxyCodeLine{203                     data.target = skeletonData.FindBone(targetName);}
+\DoxyCodeLine{204                     \textcolor{keywordflow}{if} (data.target == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Target bone not found: "} + targetName);}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206                     data.local = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(constraintMap, \textcolor{stringliteral}{"local"}, \textcolor{keyword}{false});}
+\DoxyCodeLine{207                     data.relative = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a8cad42fe44438deec162af175490fead}{GetBoolean}}(constraintMap, \textcolor{stringliteral}{"relative"}, \textcolor{keyword}{false});}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{209                     data.offsetRotation = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"rotation"}, 0);}
+\DoxyCodeLine{210                     data.offsetX = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"x"}, 0) * scale;}
+\DoxyCodeLine{211                     data.offsetY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"y"}, 0) * scale;}
+\DoxyCodeLine{212                     data.offsetScaleX = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"scaleX"}, 0);}
+\DoxyCodeLine{213                     data.offsetScaleY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"scaleY"}, 0);}
+\DoxyCodeLine{214                     data.offsetShearY = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"shearY"}, 0);}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216                     data.rotateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"rotateMix"}, 1);}
+\DoxyCodeLine{217                     data.translateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"translateMix"}, 1);}
+\DoxyCodeLine{218                     data.scaleMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"scaleMix"}, 1);}
+\DoxyCodeLine{219                     data.shearMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"shearMix"}, 1);}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221                     skeletonData.transformConstraints.Add(data);}
+\DoxyCodeLine{222                 \}}
+\DoxyCodeLine{223             \}}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225             \textcolor{comment}{// Path constraints.}}
+\DoxyCodeLine{226             \textcolor{keywordflow}{if}(root.ContainsKey(\textcolor{stringliteral}{"path"})) \{}
+\DoxyCodeLine{227                 \textcolor{keywordflow}{foreach} (Dictionary<string, Object> constraintMap \textcolor{keywordflow}{in} (List<Object>)root[\textcolor{stringliteral}{"path"}]) \{}
+\DoxyCodeLine{228                     PathConstraintData data = \textcolor{keyword}{new} PathConstraintData((\textcolor{keywordtype}{string})constraintMap[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{229                     data.order = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(constraintMap, \textcolor{stringliteral}{"order"}, 0);}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231                     \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} boneName \textcolor{keywordflow}{in} (List<Object>)constraintMap[\textcolor{stringliteral}{"bones"}]) \{}
+\DoxyCodeLine{232                         BoneData bone = skeletonData.FindBone(boneName);}
+\DoxyCodeLine{233                         \textcolor{keywordflow}{if} (bone == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Path bone not found: "} + boneName);}
+\DoxyCodeLine{234                         data.bones.Add(bone);}
+\DoxyCodeLine{235                     \}}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237                     \textcolor{keywordtype}{string} targetName = (string)constraintMap[\textcolor{stringliteral}{"target"}];}
+\DoxyCodeLine{238                     data.target = skeletonData.FindSlot(targetName);}
+\DoxyCodeLine{239                     \textcolor{keywordflow}{if} (data.target == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Target slot not found: "} + targetName);}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241                     data.positionMode = (\mbox{\hyperlink{namespace_spine_a54932cd85ab60420fe7be3b8a25b54f6}{PositionMode}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a54932cd85ab60420fe7be3b8a25b54f6}{PositionMode}}), \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(constraintMap, \textcolor{stringliteral}{"positionMode"}, \textcolor{stringliteral}{"percent"}), \textcolor{keyword}{true});}
+\DoxyCodeLine{242                     data.spacingMode = (\mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}), \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(constraintMap, \textcolor{stringliteral}{"spacingMode"}, \textcolor{stringliteral}{"length"}), \textcolor{keyword}{true});}
+\DoxyCodeLine{243                     data.rotateMode = (\mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a28a1ebbef6455472835a689039bdf84a}{RotateMode}}), \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(constraintMap, \textcolor{stringliteral}{"rotateMode"}, \textcolor{stringliteral}{"tangent"}), \textcolor{keyword}{true});}
+\DoxyCodeLine{244                     data.offsetRotation = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"rotation"}, 0);}
+\DoxyCodeLine{245                     data.position = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"position"}, 0);}
+\DoxyCodeLine{246                     \textcolor{keywordflow}{if} (data.positionMode == \mbox{\hyperlink{namespace_spine_a54932cd85ab60420fe7be3b8a25b54f6}{PositionMode}}.Fixed) data.position *= scale;}
+\DoxyCodeLine{247                     data.spacing = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"spacing"}, 0);}
+\DoxyCodeLine{248                     \textcolor{keywordflow}{if} (data.spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Length || data.spacingMode == \mbox{\hyperlink{namespace_spine_a9405593b6830c0b785f93d08faac0788}{SpacingMode}}.Fixed) data.spacing *= scale;}
+\DoxyCodeLine{249                     data.rotateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"rotateMix"}, 1);}
+\DoxyCodeLine{250                     data.translateMix = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(constraintMap, \textcolor{stringliteral}{"translateMix"}, 1);}
+\DoxyCodeLine{251 }
+\DoxyCodeLine{252                     skeletonData.pathConstraints.Add(data);}
+\DoxyCodeLine{253                 \}}
+\DoxyCodeLine{254             \}}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256             \textcolor{comment}{// Skins.}}
+\DoxyCodeLine{257             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"skins"})) \{}
+\DoxyCodeLine{258                     \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> skinMap \textcolor{keywordflow}{in} (Dictionary<string, Object>)root[\textcolor{stringliteral}{"skins"}]) \{}
+\DoxyCodeLine{259                     var skin = \textcolor{keyword}{new} Skin(skinMap.Key);}
+\DoxyCodeLine{260                     \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> slotEntry \textcolor{keywordflow}{in} (Dictionary<string, Object>)skinMap.Value) \{}
+\DoxyCodeLine{261                         \textcolor{keywordtype}{int} slotIndex = skeletonData.FindSlotIndex(slotEntry.Key);}
+\DoxyCodeLine{262                         \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> entry \textcolor{keywordflow}{in} ((Dictionary<string, Object>)slotEntry.Value)) \{}
+\DoxyCodeLine{263                             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{264                                 Attachment attachment = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a126916681c1f8e7b2cea7b4f85eb3f9a}{ReadAttachment}}((Dictionary<string, Object>)entry.Value, skin, slotIndex, entry.Key, skeletonData);}
+\DoxyCodeLine{265                                 \textcolor{keywordflow}{if} (attachment != \textcolor{keyword}{null}) skin.AddAttachment(slotIndex, entry.Key, attachment);}
+\DoxyCodeLine{266                             \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{267                                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Error reading attachment: "} + entry.Key + \textcolor{stringliteral}{", skin: "} + skin, e);}
+\DoxyCodeLine{268                             \}}
+\DoxyCodeLine{269                         \} }
+\DoxyCodeLine{270                     \}}
+\DoxyCodeLine{271                     skeletonData.skins.Add(skin);}
+\DoxyCodeLine{272                     \textcolor{keywordflow}{if} (skin.name == \textcolor{stringliteral}{"default"}) skeletonData.defaultSkin = skin;}
+\DoxyCodeLine{273                 \}}
+\DoxyCodeLine{274             \}}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276             \textcolor{comment}{// Linked meshes.}}
+\DoxyCodeLine{277             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}{linkedMeshes}}.Count; i < n; i++) \{}
+\DoxyCodeLine{278                 LinkedMesh linkedMesh = \mbox{\hyperlink{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}{linkedMeshes}}[i];}
+\DoxyCodeLine{279                 Skin skin = linkedMesh.skin == \textcolor{keyword}{null} ? skeletonData.defaultSkin : skeletonData.FindSkin(linkedMesh.skin);}
+\DoxyCodeLine{280                 \textcolor{keywordflow}{if} (skin == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Slot not found: "} + linkedMesh.skin);}
+\DoxyCodeLine{281                 Attachment parent = skin.GetAttachment(linkedMesh.slotIndex, linkedMesh.parent);}
+\DoxyCodeLine{282                 \textcolor{keywordflow}{if} (parent == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Parent mesh not found: "} + linkedMesh.parent);}
+\DoxyCodeLine{283                 linkedMesh.mesh.ParentMesh = (MeshAttachment)parent;}
+\DoxyCodeLine{284                 linkedMesh.mesh.UpdateUVs();}
+\DoxyCodeLine{285             \}}
+\DoxyCodeLine{286             \mbox{\hyperlink{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}{linkedMeshes}}.Clear();}
+\DoxyCodeLine{287 }
+\DoxyCodeLine{288             \textcolor{comment}{// Events.}}
+\DoxyCodeLine{289             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"events"})) \{}
+\DoxyCodeLine{290                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> entry \textcolor{keywordflow}{in} (Dictionary<string, Object>)root[\textcolor{stringliteral}{"events"}]) \{}
+\DoxyCodeLine{291                     var entryMap = (Dictionary<string, Object>)entry.Value;}
+\DoxyCodeLine{292                     var data = \textcolor{keyword}{new} EventData(entry.Key);}
+\DoxyCodeLine{293                     data.Int = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a250a6d602dc595a6c13055c6e7f3b532}{GetInt}}(entryMap, \textcolor{stringliteral}{"int"}, 0);}
+\DoxyCodeLine{294                     data.Float = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a29c20e91461fdeca52dc9404f1b6677d}{GetFloat}}(entryMap, \textcolor{stringliteral}{"float"}, 0);}
+\DoxyCodeLine{295                     data.String = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad3606c5722d887945ced39f3bfb52d2a}{GetString}}(entryMap, \textcolor{stringliteral}{"string"}, \textcolor{keywordtype}{string}.Empty);}
+\DoxyCodeLine{296                     skeletonData.events.Add(data);}
+\DoxyCodeLine{297                 \}}
+\DoxyCodeLine{298             \}}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             \textcolor{comment}{// Animations.}}
+\DoxyCodeLine{301             \textcolor{keywordflow}{if} (root.ContainsKey(\textcolor{stringliteral}{"animations"})) \{}
+\DoxyCodeLine{302                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, Object> entry \textcolor{keywordflow}{in} (Dictionary<string, Object>)root[\textcolor{stringliteral}{"animations"}]) \{}
+\DoxyCodeLine{303                     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{304                         \mbox{\hyperlink{class_spine_1_1_skeleton_json_a5a511206252f8a690d6f82b91f24b57b}{ReadAnimation}}((Dictionary<string, Object>)entry.Value, entry.Key, skeletonData);}
+\DoxyCodeLine{305                     \} \textcolor{keywordflow}{catch} (Exception e) \{}
+\DoxyCodeLine{306                         \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Error reading animation: "} + entry.Key, e);}
+\DoxyCodeLine{307                     \}}
+\DoxyCodeLine{308                 \}   }
+\DoxyCodeLine{309             \}}
+\DoxyCodeLine{310 }
+\DoxyCodeLine{311             skeletonData.bones.TrimExcess();}
+\DoxyCodeLine{312             skeletonData.slots.TrimExcess();}
+\DoxyCodeLine{313             skeletonData.skins.TrimExcess();}
+\DoxyCodeLine{314             skeletonData.events.TrimExcess();}
+\DoxyCodeLine{315             skeletonData.animations.TrimExcess();}
+\DoxyCodeLine{316             skeletonData.ikConstraints.TrimExcess();}
+\DoxyCodeLine{317             \textcolor{keywordflow}{return} skeletonData;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}\label{class_spine_1_1_skeleton_json_aefc53ec1e3b6d9a26cc9a5f93804a8bc}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ReadVertices@{ReadVertices}}
+\index{ReadVertices@{ReadVertices}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ReadVertices()}{ReadVertices()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton\+Json.\+Read\+Vertices (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, Object $>$}]{map,  }\item[{\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}}}]{attachment,  }\item[{int}]{vertices\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 438 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{439                                                                                                                     \{}
+\DoxyCodeLine{440             attachment.WorldVerticesLength = verticesLength;}
+\DoxyCodeLine{441             \textcolor{keywordtype}{float}[] vertices = \mbox{\hyperlink{class_spine_1_1_skeleton_json_a3f190682d45b4beec66525e07f039cf2}{GetFloatArray}}(map, \textcolor{stringliteral}{"vertices"}, 1);}
+\DoxyCodeLine{442             \textcolor{keywordtype}{float} scale = \mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}};}
+\DoxyCodeLine{443             \textcolor{keywordflow}{if} (verticesLength == vertices.Length) \{}
+\DoxyCodeLine{444                 \textcolor{keywordflow}{if} (scale != 1) \{}
+\DoxyCodeLine{445                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vertices.Length; i++) \{}
+\DoxyCodeLine{446                         vertices[i] *= scale;}
+\DoxyCodeLine{447                     \}}
+\DoxyCodeLine{448                 \}}
+\DoxyCodeLine{449                 attachment.vertices = vertices;}
+\DoxyCodeLine{450                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{451             \}}
+\DoxyCodeLine{452             ExposedList<float> weights = \textcolor{keyword}{new} ExposedList<float>(verticesLength * 3 * 3);}
+\DoxyCodeLine{453             ExposedList<int> bones = \textcolor{keyword}{new} ExposedList<int>(verticesLength * 3);}
+\DoxyCodeLine{454             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = vertices.Length; i < n;) \{}
+\DoxyCodeLine{455                 \textcolor{keywordtype}{int} boneCount = (int)vertices[i++];}
+\DoxyCodeLine{456                 bones.Add(boneCount);}
+\DoxyCodeLine{457                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} nn = i + boneCount * 4; i < nn; i += 4) \{}
+\DoxyCodeLine{458                     bones.Add((\textcolor{keywordtype}{int})vertices[i]);}
+\DoxyCodeLine{459                     weights.Add(vertices[i + 1] * this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}});}
+\DoxyCodeLine{460                     weights.Add(vertices[i + 2] * this.\mbox{\hyperlink{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}{Scale}});}
+\DoxyCodeLine{461                     weights.Add(vertices[i + 3]);}
+\DoxyCodeLine{462                 \}}
+\DoxyCodeLine{463             \}}
+\DoxyCodeLine{464             attachment.bones = bones.ToArray();}
+\DoxyCodeLine{465             attachment.vertices = weights.ToArray();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}\label{class_spine_1_1_skeleton_json_a6157e23f3838d250da058f86f811a208}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!ToColor@{ToColor}}
+\index{ToColor@{ToColor}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{ToColor()}{ToColor()}}
+{\footnotesize\ttfamily static float Spine.\+Skeleton\+Json.\+To\+Color (\begin{DoxyParamCaption}\item[{string}]{hex\+String,  }\item[{int}]{color\+Index,  }\item[{int}]{expected\+Length = {\ttfamily 8} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 858 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{859                                                                                        \{}
+\DoxyCodeLine{860             \textcolor{keywordflow}{if} (hexString.Length != expectedLength)}
+\DoxyCodeLine{861                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"Color hexidecimal length must be "} + expectedLength + \textcolor{stringliteral}{", recieved: "} + hexString, \textcolor{stringliteral}{"hexString"});}
+\DoxyCodeLine{862             \textcolor{keywordflow}{return} Convert.ToInt32(hexString.Substring(colorIndex * 2, 2), 16) / (\textcolor{keywordtype}{float})255;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}\label{class_spine_1_1_skeleton_json_a5c3975d59b453ae0a6a0773764cfa260}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!attachmentLoader@{attachmentLoader}}
+\index{attachmentLoader@{attachmentLoader}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{attachmentLoader}{attachmentLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}} Spine.\+Skeleton\+Json.\+attachment\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}\label{class_spine_1_1_skeleton_json_adc8632b8d6a26afc2e76ea700e83dc36}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!linkedMeshes@{linkedMeshes}}
+\index{linkedMeshes@{linkedMeshes}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{linkedMeshes}{linkedMeshes}}
+{\footnotesize\ttfamily List$<$Linked\+Mesh$>$ Spine.\+Skeleton\+Json.\+linked\+Meshes = new List$<$Linked\+Mesh$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}\label{class_spine_1_1_skeleton_json_ad8baa2777e24a8c5977ae5007ee2433c}} 
+\index{Spine.SkeletonJson@{Spine.SkeletonJson}!Scale@{Scale}}
+\index{Scale@{Scale}!Spine.SkeletonJson@{Spine.SkeletonJson}}
+\doxysubsubsection{\texorpdfstring{Scale}{Scale}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Json.\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton\+Json.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_skeleton_json_8cs}{Skeleton\+Json.\+cs}}\end{DoxyCompactItemize}

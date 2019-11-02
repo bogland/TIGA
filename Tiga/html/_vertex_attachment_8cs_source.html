@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/Attachments/VertexAttachment.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_vertex_attachment_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">VertexAttachment.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_vertex_attachment_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a131eecd35cf5d950711c162d0bf3d522">   35</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_vertex_attachment.html">VertexAttachment</a> : <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a672d4fe051e6511956525d757efd0c84">   36</a></span>&#160;        <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a131eecd35cf5d950711c162d0bf3d522">nextID</a> = 0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">static</span> readonly Object <a class="code" href="class_spine_1_1_vertex_attachment.html#a672d4fe051e6511956525d757efd0c84">nextIdLock</a> = <span class="keyword">new</span> Object();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">internal</span> readonly <span class="keywordtype">int</span> id;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">int</span>[] bones;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span>[] vertices;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">int</span> worldVerticesLength;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a2fc2cbedce9853f6f25aa6a65febd60c">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a68f9c385cb4e5cac2e682312c8fbd72a">Id</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> id; } }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a1eb0b1000871b10626c168cd52c25447">   46</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span>[] <a class="code" href="class_spine_1_1_vertex_attachment.html#a2fc2cbedce9853f6f25aa6a65febd60c">Bones</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> bones; } <span class="keyword">set</span> { bones = value; } }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a6ccccde921aef221c82b4a71a70fcdad">   47</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span>[] <a class="code" href="class_spine_1_1_vertex_attachment.html#a1eb0b1000871b10626c168cd52c25447">Vertices</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> vertices; } <span class="keyword">set</span> { vertices = value; } }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a6ccccde921aef221c82b4a71a70fcdad">WorldVerticesLength</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> worldVerticesLength; } <span class="keyword">set</span> { worldVerticesLength = value; } }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#ab28ba8a413d1a4fdda1128d37a673fb7">   49</a></span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#ab28ba8a413d1a4fdda1128d37a673fb7">VertexAttachment</a> (<span class="keywordtype">string</span> name)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            : base(name) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            lock (<a class="code" href="class_spine_1_1_vertex_attachment.html">VertexAttachment</a>.<a class="code" href="class_spine_1_1_vertex_attachment.html#a672d4fe051e6511956525d757efd0c84">nextIdLock</a>) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">id</span> = (<a class="code" href="class_spine_1_1_vertex_attachment.html">VertexAttachment</a>.<a class="code" href="class_spine_1_1_vertex_attachment.html#a131eecd35cf5d950711c162d0bf3d522">nextID</a>++ &amp; 65535) &lt;&lt; 11;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced">   57</a></span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced">ComputeWorldVertices</a> (<a class="code" href="class_spine_1_1_slot.html">Slot</a> slot, <span class="keywordtype">float</span>[] worldVertices) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced">ComputeWorldVertices</a>(slot, 0, worldVerticesLength, worldVertices, 0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced">ComputeWorldVertices</a> (<a class="code" href="class_spine_1_1_slot.html">Slot</a> slot, <span class="keywordtype">int</span> start, <span class="keywordtype">int</span> count, <span class="keywordtype">float</span>[] worldVertices, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> stride = 2) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            count = offset + (count &gt;&gt; 1) * stride;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_spine_1_1_skeleton.html">Skeleton</a> skeleton = slot.bone.skeleton;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            var deformArray = slot.attachmentVertices;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">float</span>[] vertices = this.vertices;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordtype">int</span>[] bones = this.bones;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">if</span> (bones == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">if</span> (deformArray.Count &gt; 0) vertices = deformArray.<a class="code" href="class_spine_1_1_exposed_list.html#a8c08a889d5162a41b308c119ac7c0330">Items</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="class_spine_1_1_bone.html">Bone</a> bone = slot.bone;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordtype">float</span> x = bone.<a class="code" href="class_spine_1_1_bone.html#a53ba5c142aa020c446c03378c4523cdf">worldX</a>, y = bone.<a class="code" href="class_spine_1_1_bone.html#a5b8fa0cf6fb60e012ec9879f263b810f">worldY</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <span class="keywordtype">float</span> a = bone.a, b = bone.<a class="code" href="class_spine_1_1_bone.html#a0d9938d082c80d1c2969fb0a0d1a261f">b</a>, c = bone.c, d = bone.<a class="code" href="class_spine_1_1_bone.html#ac4196005ae435d861d26bd20a9edc2f8">d</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> vv = start, w = offset; w &lt; count; vv += 2, w += stride) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <span class="keywordtype">float</span> vx = vertices[vv], vy = vertices[vv + 1];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    worldVertices[w] = vx * a + vy * b + x;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                    worldVertices[w + 1] = vx * c + vy * d + y;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">int</span> v = 0, skip = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; start; i += 2) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordtype">int</span> n = bones[v];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                v += n + 1;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                skip += n;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            var skeletonBones = skeleton.bones.Items;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span> (deformArray.Count == 0) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> w = offset, b = skip * 3; w &lt; count; w += stride) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <span class="keywordtype">float</span> wx = 0, wy = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordtype">int</span> n = bones[v++];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    n += v;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    <span class="keywordflow">for</span> (; v &lt; n; v++, b += 3) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        Bone bone = skeletonBones[bones[v]];</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        <span class="keywordtype">float</span> vx = vertices[b], vy = vertices[b + 1], weight = vertices[b + 2];</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                        wx += (vx * bone.a + vy * bone.b + bone.worldX) * weight;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                        wy += (vx * bone.c + vy * bone.d + bone.worldY) * weight;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    worldVertices[w] = wx;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    worldVertices[w + 1] = wy;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordtype">float</span>[] deform = deformArray.Items;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> w = offset, b = skip * 3, f = skip &lt;&lt; 1; w &lt; count; w += stride) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    <span class="keywordtype">float</span> wx = 0, wy = 0;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    <span class="keywordtype">int</span> n = bones[v++];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    n += v;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="keywordflow">for</span> (; v &lt; n; v++, b += 3, f += 2) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                        Bone bone = skeletonBones[bones[v]];</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                        <span class="keywordtype">float</span> vx = vertices[b] + deform[f], vy = vertices[b + 1] + deform[f + 1], weight = vertices[b + 2];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                        wx += (vx * bone.a + vy * bone.b + bone.worldX) * weight;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                        wy += (vx * bone.c + vy * bone.d + bone.worldY) * weight;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    worldVertices[w] = wx;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                    worldVertices[w + 1] = wy;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">virtual</span> <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_vertex_attachment.html#a8e63b13f5fcaabd9d3b455d5798fb3d2">ApplyDeform</a> (<a class="code" href="class_spine_1_1_vertex_attachment.html#ab28ba8a413d1a4fdda1128d37a673fb7">VertexAttachment</a> sourceAttachment) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">this</span> == sourceAttachment;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }           </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_skeleton_html"><div class="ttname"><a href="class_spine_1_1_skeleton.html">Spine.Skeleton</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00034">Skeleton.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_exposed_list_html_a8c08a889d5162a41b308c119ac7c0330"><div class="ttname"><a href="class_spine_1_1_exposed_list.html#a8c08a889d5162a41b308c119ac7c0330">Spine.ExposedList.Items</a></div><div class="ttdeci">T[] Items</div><div class="ttdef"><b>Definition:</b> <a href="_exposed_list_8cs_source.html#l00041">ExposedList.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a2fc2cbedce9853f6f25aa6a65febd60c"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a2fc2cbedce9853f6f25aa6a65febd60c">Spine.VertexAttachment.Bones</a></div><div class="ttdeci">int[] Bones</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00045">VertexAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_ab28ba8a413d1a4fdda1128d37a673fb7"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#ab28ba8a413d1a4fdda1128d37a673fb7">Spine.VertexAttachment.VertexAttachment</a></div><div class="ttdeci">VertexAttachment(string name)</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00049">VertexAttachment.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a0d9938d082c80d1c2969fb0a0d1a261f"><div class="ttname"><a href="class_spine_1_1_bone.html#a0d9938d082c80d1c2969fb0a0d1a261f">Spine.Bone.b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00052">Bone.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a53ba5c142aa020c446c03378c4523cdf"><div class="ttname"><a href="class_spine_1_1_bone.html#a53ba5c142aa020c446c03378c4523cdf">Spine.Bone.worldX</a></div><div class="ttdeci">float worldX</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00052">Bone.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html"><div class="ttname"><a href="class_spine_1_1_bone.html">Spine.Bone</a></div><div class="ttdoc">Stores a bone's current pose.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00041">Bone.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_ac4196005ae435d861d26bd20a9edc2f8"><div class="ttname"><a href="class_spine_1_1_bone.html#ac4196005ae435d861d26bd20a9edc2f8">Spine.Bone.d</a></div><div class="ttdeci">float d</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00053">Bone.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a5b8fa0cf6fb60e012ec9879f263b810f"><div class="ttname"><a href="class_spine_1_1_bone.html#a5b8fa0cf6fb60e012ec9879f263b810f">Spine.Bone.worldY</a></div><div class="ttdeci">float worldY</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00053">Bone.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a1eb0b1000871b10626c168cd52c25447"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a1eb0b1000871b10626c168cd52c25447">Spine.VertexAttachment.Vertices</a></div><div class="ttdeci">float[] Vertices</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00046">VertexAttachment.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a68f9c385cb4e5cac2e682312c8fbd72a"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a68f9c385cb4e5cac2e682312c8fbd72a">Spine.VertexAttachment.Id</a></div><div class="ttdeci">int Id</div><div class="ttdoc">Gets a unique ID for this attachment.</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00044">VertexAttachment.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a3a09094aaa5c85778385a1b19397fced"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced">Spine.VertexAttachment.ComputeWorldVertices</a></div><div class="ttdeci">void ComputeWorldVertices(Slot slot, float[] worldVertices)</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00057">VertexAttachment.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a672d4fe051e6511956525d757efd0c84"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a672d4fe051e6511956525d757efd0c84">Spine.VertexAttachment.nextIdLock</a></div><div class="ttdeci">static readonly Object nextIdLock</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00036">VertexAttachment.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a131eecd35cf5d950711c162d0bf3d522"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a131eecd35cf5d950711c162d0bf3d522">Spine.VertexAttachment.nextID</a></div><div class="ttdeci">static int nextID</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00035">VertexAttachment.cs:35</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a6ccccde921aef221c82b4a71a70fcdad"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a6ccccde921aef221c82b4a71a70fcdad">Spine.VertexAttachment.WorldVerticesLength</a></div><div class="ttdeci">int WorldVerticesLength</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00047">VertexAttachment.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html_a8e63b13f5fcaabd9d3b455d5798fb3d2"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html#a8e63b13f5fcaabd9d3b455d5798fb3d2">Spine.VertexAttachment.ApplyDeform</a></div><div class="ttdeci">virtual bool ApplyDeform(VertexAttachment sourceAttachment)</div><div class="ttdoc">Returns true if a deform originally applied to the specified attachment should be applied to this att...</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00125">VertexAttachment.cs:125</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_vertex_attachment_html"><div class="ttname"><a href="class_spine_1_1_vertex_attachment.html">Spine.VertexAttachment</a></div><div class="ttdoc">&gt;An attachment with vertices that are transformed by one or more bones and can be deformed by a slot'...</div><div class="ttdef"><b>Definition:</b> <a href="_vertex_attachment_8cs_source.html#l00034">VertexAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="dir_6e12d4f1286b562c1f0f375ae074ad41.html">Attachments</a></li><li class="navelem"><a class="el" href="_vertex_attachment_8cs.html">VertexAttachment.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

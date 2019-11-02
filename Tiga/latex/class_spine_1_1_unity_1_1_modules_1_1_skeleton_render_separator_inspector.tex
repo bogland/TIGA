@@ -1,0 +1,508 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector}\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a46d50248aad31896ca94bf8763c70b33}{On\+Inspector\+G\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af124cf3c0288239078b2ea0329ceb2f8}{Add\+Parts\+Renderer}} (int count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_adec34f1187718d3dfa393ea30b68868f}{Detect\+Orphaned\+Parts\+Renderers}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}})
+\begin{DoxyCompactList}\small\item\em Detects orphaned parts renderers and offers to delete them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}{Skeleton\+Renderer\+Separator\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a10e12c8f64a33c19870477a281556c83}{On\+Enable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a04fcb97fec027bca0fbd90c41b481a30}{Add\+Render\+Separator\+Component}} (Menu\+Command cmd)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a1a51441b7416646a2e8393942b46f2c8}{Validate\+Add\+Render\+Separator\+Component}} (Menu\+Command cmd)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}{skeleton\+Renderer\+\_\+}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_addc2954b1b0eb466d4132d3733ba3c19}{copy\+Property\+Block\+\_\+}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_abe38ca79263ff3651a24aecd691d6ed0}{copy\+Mesh\+Renderer\+Flags\+\_\+}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{parts\+Renderers\+\_\+}}
+\item 
+Serialized\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeleton\+Renderer\+Serialized\+Object}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separator\+Names\+Prop}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}{slots\+Reapply\+Required}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}{parts\+Renderers\+Expanded}} = false
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}{skeleton\+Renderer\+Expanded}} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af124cf3c0288239078b2ea0329ceb2f8}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af124cf3c0288239078b2ea0329ceb2f8}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!AddPartsRenderer@{AddPartsRenderer}}
+\index{AddPartsRenderer@{AddPartsRenderer}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{AddPartsRenderer()}{AddPartsRenderer()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+Add\+Parts\+Renderer (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 220 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221                                                  \{}
+\DoxyCodeLine{222             var componentRenderers = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_ac47ea25a6cea0a2071c5b0c0531a9f9a}{partsRenderers}};}
+\DoxyCodeLine{223             \textcolor{keywordtype}{bool} emptyFound = componentRenderers.Contains(\textcolor{keyword}{null});}
+\DoxyCodeLine{224             \textcolor{keywordflow}{if} (emptyFound) \{}
+\DoxyCodeLine{225                 \textcolor{keywordtype}{bool} userClearEntries = EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Empty entries found"}, \textcolor{stringliteral}{"Null entries found. Do you want to remove null entries before adding the new renderer? "}, \textcolor{stringliteral}{"Clear Empty Entries"}, \textcolor{stringliteral}{"Don't Clear"});}
+\DoxyCodeLine{226                 \textcolor{keywordflow}{if} (userClearEntries) componentRenderers.RemoveAll(x => x == \textcolor{keyword}{null});}
+\DoxyCodeLine{227             \}}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229             Undo.RegisterCompleteObjectUndo(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}, \textcolor{stringliteral}{"Add Parts Renderers"});}
+\DoxyCodeLine{230             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++) \{}
+\DoxyCodeLine{231                 \textcolor{keywordtype}{int} index = componentRenderers.Count;}
+\DoxyCodeLine{232                 var smr = SkeletonPartsRenderer.NewPartsRendererGameObject(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.transform, index.ToString());}
+\DoxyCodeLine{233                 Undo.RegisterCreatedObjectUndo(smr.gameObject, \textcolor{stringliteral}{"New Parts Renderer GameObject."});}
+\DoxyCodeLine{234                 componentRenderers.Add(smr);}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236                 \textcolor{comment}{// increment renderer sorting order.}}
+\DoxyCodeLine{237                 \textcolor{keywordflow}{if} (index == 0) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{238                 var prev = componentRenderers[index -\/ 1]; \textcolor{keywordflow}{if} (prev == \textcolor{keyword}{null}) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{239 }
+\DoxyCodeLine{240                 var prevMeshRenderer = prev.GetComponent<MeshRenderer>();}
+\DoxyCodeLine{241                 var currentMeshRenderer = smr.GetComponent<MeshRenderer>();}
+\DoxyCodeLine{242                 \textcolor{keywordflow}{if} (prevMeshRenderer == \textcolor{keyword}{null} || currentMeshRenderer == \textcolor{keyword}{null}) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244                 \textcolor{keywordtype}{int} prevSortingLayer = prevMeshRenderer.sortingLayerID;}
+\DoxyCodeLine{245                 \textcolor{keywordtype}{int} prevSortingOrder = prevMeshRenderer.sortingOrder;}
+\DoxyCodeLine{246                 currentMeshRenderer.sortingLayerID = prevSortingLayer;}
+\DoxyCodeLine{247                 currentMeshRenderer.sortingOrder = prevSortingOrder + SkeletonRenderSeparator.DefaultSortingOrderIncrement;}
+\DoxyCodeLine{248             \}}
+\DoxyCodeLine{249 }
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a04fcb97fec027bca0fbd90c41b481a30}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a04fcb97fec027bca0fbd90c41b481a30}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!AddRenderSeparatorComponent@{AddRenderSeparatorComponent}}
+\index{AddRenderSeparatorComponent@{AddRenderSeparatorComponent}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{AddRenderSeparatorComponent()}{AddRenderSeparatorComponent()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+Add\+Render\+Separator\+Component (\begin{DoxyParamCaption}\item[{Menu\+Command}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 272 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273                                                                   \{}
+\DoxyCodeLine{274             var skeletonRenderer = cmd.context as \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{SkeletonRenderer}};}
+\DoxyCodeLine{275             var newComponent = skeletonRenderer.gameObject.AddComponent<SkeletonRenderSeparator>();}
+\DoxyCodeLine{276 }
+\DoxyCodeLine{277             Undo.RegisterCreatedObjectUndo(newComponent, \textcolor{stringliteral}{"Add SkeletonRenderSeparator"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_adec34f1187718d3dfa393ea30b68868f}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_adec34f1187718d3dfa393ea30b68868f}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!DetectOrphanedPartsRenderers@{DetectOrphanedPartsRenderers}}
+\index{DetectOrphanedPartsRenderers@{DetectOrphanedPartsRenderers}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{DetectOrphanedPartsRenderers()}{DetectOrphanedPartsRenderers()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+Detect\+Orphaned\+Parts\+Renderers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}}}]{component }\end{DoxyParamCaption})}
+
+
+
+Detects orphaned parts renderers and offers to delete them. 
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 252 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{253                                                                                      \{}
+\DoxyCodeLine{254             var children = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.GetComponentsInChildren<SkeletonPartsRenderer>();}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256             var orphans = \textcolor{keyword}{new} System.Collections.Generic.List<SkeletonPartsRenderer>();}
+\DoxyCodeLine{257             \textcolor{keywordflow}{foreach} (var r \textcolor{keywordflow}{in} children) \{}
+\DoxyCodeLine{258                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_ac47ea25a6cea0a2071c5b0c0531a9f9a}{partsRenderers}}.Contains(r))}
+\DoxyCodeLine{259                     orphans.Add(r);}
+\DoxyCodeLine{260             \}}
+\DoxyCodeLine{261 }
+\DoxyCodeLine{262             \textcolor{keywordflow}{if} (orphans.Count > 0) \{}
+\DoxyCodeLine{263                 \textcolor{keywordflow}{if} (EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Destroy Submesh Renderers"}, \textcolor{stringliteral}{"Unassigned renderers were found. Do you want to delete them? (These may belong to another Render Separator in the same hierarchy. If you don't have another Render Separator component in the children of this GameObject, it's likely safe to delete. Warning: This operation cannot be undone.)"}, \textcolor{stringliteral}{"Delete"}, \textcolor{stringliteral}{"Cancel"})) \{}
+\DoxyCodeLine{264                     \textcolor{keywordflow}{foreach} (var o \textcolor{keywordflow}{in} orphans) \{}
+\DoxyCodeLine{265                         Undo.DestroyObjectImmediate(o.gameObject);}
+\DoxyCodeLine{266                     \}}
+\DoxyCodeLine{267                 \}}
+\DoxyCodeLine{268             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a10e12c8f64a33c19870477a281556c83}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a10e12c8f64a33c19870477a281556c83}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                          \{}
+\DoxyCodeLine{56             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{57                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}} = target as SkeletonRenderSeparator;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}{skeletonRenderer\_}} = serializedObject.FindProperty(\textcolor{stringliteral}{"skeletonRenderer"});}
+\DoxyCodeLine{60             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_addc2954b1b0eb466d4132d3733ba3c19}{copyPropertyBlock\_}} = serializedObject.FindProperty(\textcolor{stringliteral}{"copyPropertyBlock"});}
+\DoxyCodeLine{61             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_abe38ca79263ff3651a24aecd691d6ed0}{copyMeshRendererFlags\_}} = serializedObject.FindProperty(\textcolor{stringliteral}{"copyMeshRendererFlags"});}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63             var partsRenderers = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_ac47ea25a6cea0a2071c5b0c0531a9f9a}{partsRenderers}};}
+\DoxyCodeLine{64             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}} = serializedObject.FindProperty(\textcolor{stringliteral}{"partsRenderers"});}
+\DoxyCodeLine{65             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}}.isExpanded = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}{partsRenderersExpanded}} || \textcolor{comment}{// last state}}
+\DoxyCodeLine{66                 partsRenderers.Contains(\textcolor{keyword}{null}) ||    \textcolor{comment}{// null items found}}
+\DoxyCodeLine{67                 partsRenderers.Count < 1 ||         \textcolor{comment}{// no parts renderers}}
+\DoxyCodeLine{68                 (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}{skeletonRenderer\_}}.objectReferenceValue != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}{SkeletonRendererSeparatorCount}} + 1 > partsRenderers.Count); \textcolor{comment}{// not enough parts renderers}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a46d50248aad31896ca94bf8763c70b33}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a46d50248aad31896ca94bf8763c70b33}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!OnInspectorGUI@{OnInspectorGUI}}
+\index{OnInspectorGUI@{OnInspectorGUI}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{OnInspectorGUI()}{OnInspectorGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+On\+Inspector\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 79 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                                \{}
+\DoxyCodeLine{81             var componentRenderers = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_ac47ea25a6cea0a2071c5b0c0531a9f9a}{partsRenderers}};}
+\DoxyCodeLine{82             \textcolor{keywordtype}{int} totalParts;}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_label_width_scope}{LabelWidthScope}}()) \{}
+\DoxyCodeLine{85                 \textcolor{keywordtype}{bool} componentEnabled = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.enabled;}
+\DoxyCodeLine{86                 \textcolor{keywordtype}{bool} checkBox = EditorGUILayout.Toggle(\textcolor{stringliteral}{"Enable Separator"}, componentEnabled);}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{if} (checkBox != componentEnabled)}
+\DoxyCodeLine{88                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.enabled = checkBox;}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a962c33e4296ea7a470fdd555ee694878}{disableRenderingOnOverride}} \&\& !\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.enabled)}
+\DoxyCodeLine{90                     EditorGUILayout.HelpBox(\textcolor{stringliteral}{"By default, SkeletonRenderer's MeshRenderer is disabled while the SkeletonRenderSeparator takes over rendering. It is re-\/enabled when SkeletonRenderSeparator is disabled."}, MessageType.Info);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92                 EditorGUILayout.PropertyField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_addc2954b1b0eb466d4132d3733ba3c19}{copyPropertyBlock\_}});}
+\DoxyCodeLine{93                 EditorGUILayout.PropertyField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_abe38ca79263ff3651a24aecd691d6ed0}{copyMeshRendererFlags\_}});}
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{comment}{// SkeletonRenderer Box}}
+\DoxyCodeLine{97             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_box_scope}{BoxScope}}(\textcolor{keyword}{false})) \{}
+\DoxyCodeLine{98                 \textcolor{comment}{// Fancy SkeletonRenderer foldout reference field}}
+\DoxyCodeLine{99                 \{}
+\DoxyCodeLine{100                     EditorGUI.indentLevel++;}
+\DoxyCodeLine{101                     EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{102                     var foldoutSkeletonRendererRect = EditorGUILayout.GetControlRect(\textcolor{keyword}{true}, EditorGUIUtility.singleLineHeight);}
+\DoxyCodeLine{103                     EditorGUI.PropertyField(foldoutSkeletonRendererRect, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}{skeletonRenderer\_}});}
+\DoxyCodeLine{104                     \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck())}
+\DoxyCodeLine{105                         serializedObject.ApplyModifiedProperties();}
+\DoxyCodeLine{106                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{107                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}{skeletonRendererExpanded}} = EditorGUI.Foldout(foldoutSkeletonRendererRect, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}{skeletonRendererExpanded}}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{108                     \}}
+\DoxyCodeLine{109                     EditorGUI.indentLevel-\/-\/;}
+\DoxyCodeLine{110                 \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112                 \textcolor{keywordtype}{int} separatorCount = 0;}
+\DoxyCodeLine{113                 EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{115                     \textcolor{comment}{// Separators from SkeletonRenderer}}
+\DoxyCodeLine{116                     \{}
+\DoxyCodeLine{117                         \textcolor{keywordtype}{bool} skeletonRendererMismatch = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeletonRendererSerializedObject}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeletonRendererSerializedObject}}.targetObject != \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}};}
+\DoxyCodeLine{118                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}} == \textcolor{keyword}{null} || skeletonRendererMismatch) \{}
+\DoxyCodeLine{119                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{120                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeletonRendererSerializedObject}} = \textcolor{keyword}{new} SerializedObject(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}});}
+\DoxyCodeLine{121                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeletonRendererSerializedObject}}.FindProperty(\textcolor{stringliteral}{"separatorSlotNames"});}
+\DoxyCodeLine{122                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}}.isExpanded = \textcolor{keyword}{true};}
+\DoxyCodeLine{123                             \}}
+\DoxyCodeLine{124                         \}}
+\DoxyCodeLine{125                             }
+\DoxyCodeLine{126                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{127                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}{skeletonRendererExpanded}}) \{}
+\DoxyCodeLine{128                                 EditorGUI.indentLevel++;}
+\DoxyCodeLine{129                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_inspector}{SkeletonRendererInspector}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_inspector_a76149d583ce98edd2e4355b6255d2931}{SeparatorsField}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}});}
+\DoxyCodeLine{130                                 EditorGUI.indentLevel-\/-\/;}
+\DoxyCodeLine{131                             \}}
+\DoxyCodeLine{132                             separatorCount = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}{SkeletonRendererSeparatorCount}};}
+\DoxyCodeLine{133                         \}}
+\DoxyCodeLine{134                     \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}{SkeletonRendererSeparatorCount}} == 0) \{}
+\DoxyCodeLine{137                         EditorGUILayout.HelpBox(\textcolor{stringliteral}{"Separators are empty. Change the size to 1 and choose a slot if you want the render to be separated."}, MessageType.Info);}
+\DoxyCodeLine{138                     \}}
+\DoxyCodeLine{139                 \}}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141                 \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{142                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}{skeletonRendererSerializedObject}}.ApplyModifiedProperties();}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144                     \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{145                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}{slotsReapplyRequired}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{146                 \}}
+\DoxyCodeLine{147                     }
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149                 totalParts = separatorCount + 1;}
+\DoxyCodeLine{150                 var counterStyle = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}{skeletonRendererExpanded}} ? EditorStyles.label : EditorStyles.miniLabel;}
+\DoxyCodeLine{151                 EditorGUILayout.LabelField(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\{0\}: separates into \{1\}."}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a513e320302bc79febef713e371a95e8c}{Pluralize}}(separatorCount, \textcolor{stringliteral}{"separator"}, \textcolor{stringliteral}{"separators"}), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a513e320302bc79febef713e371a95e8c}{Pluralize}}(totalParts, \textcolor{stringliteral}{"part"}, \textcolor{stringliteral}{"parts"}) ), counterStyle);}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             \textcolor{comment}{// Parts renderers}}
+\DoxyCodeLine{155             \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_box_scope}{BoxScope}}(\textcolor{keyword}{false})) \{}
+\DoxyCodeLine{156                 EditorGUI.indentLevel++;}
+\DoxyCodeLine{157                 EditorGUILayout.PropertyField(this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{158                 EditorGUI.indentLevel-\/-\/;}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160                 \textcolor{comment}{// Null items warning}}
+\DoxyCodeLine{161                 \textcolor{keywordtype}{bool} nullItemsFound = componentRenderers.Contains(\textcolor{keyword}{null});}
+\DoxyCodeLine{162                 \textcolor{keywordflow}{if} (nullItemsFound)}
+\DoxyCodeLine{163                     EditorGUILayout.HelpBox(\textcolor{stringliteral}{"Some items in the parts renderers list are null and may cause problems.\(\backslash\)n\(\backslash\)nYou can right-\/click on that element and choose 'Delete Array Element' to remove it."}, MessageType.Warning);}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165                 \textcolor{comment}{// (Button) Match Separators count}}
+\DoxyCodeLine{166                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{167                     \textcolor{keywordtype}{int} currentRenderers = 0;}
+\DoxyCodeLine{168                     \textcolor{keywordflow}{foreach} (var r \textcolor{keywordflow}{in} componentRenderers) \{}
+\DoxyCodeLine{169                         \textcolor{keywordflow}{if} (r != \textcolor{keyword}{null})}
+\DoxyCodeLine{170                             currentRenderers++;}
+\DoxyCodeLine{171                     \}}
+\DoxyCodeLine{172                     \textcolor{keywordtype}{int} extraRenderersNeeded = totalParts -\/ currentRenderers;}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.enabled \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}} != \textcolor{keyword}{null} \&\& extraRenderersNeeded > 0) \{}
+\DoxyCodeLine{175                         EditorGUILayout.HelpBox(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Insufficient parts renderers. Some parts will not be rendered."}), MessageType.Warning);}
+\DoxyCodeLine{176                         \textcolor{keywordtype}{string} addMissingLabel = \textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Add the missing renderer\{1\} (\{0\}) "}, extraRenderersNeeded, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{SpineInspectorUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ac9232a01370d3b2586207fe101cf8aeb}{PluralThenS}}(extraRenderersNeeded));}
+\DoxyCodeLine{177                         \textcolor{keywordflow}{if} (GUILayout.Button(addMissingLabel, GUILayout.Height(40f))) \{}
+\DoxyCodeLine{178                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af124cf3c0288239078b2ea0329ceb2f8}{AddPartsRenderer}}(extraRenderersNeeded);}
+\DoxyCodeLine{179                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_adec34f1187718d3dfa393ea30b68868f}{DetectOrphanedPartsRenderers}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}});}
+\DoxyCodeLine{180                         \}}
+\DoxyCodeLine{181                     \}}
+\DoxyCodeLine{182                 \}}
+\DoxyCodeLine{183                     }
+\DoxyCodeLine{184                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}}.isExpanded != \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}{partsRenderersExpanded}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}{partsRenderersExpanded}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}}.isExpanded;}
+\DoxyCodeLine{185                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}{partsRenderers\_}}.isExpanded) \{}
+\DoxyCodeLine{186                     \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUILayout.HorizontalScope()) \{}
+\DoxyCodeLine{187                         \textcolor{comment}{// (Button) Destroy Renderers button}}
+\DoxyCodeLine{188                         \textcolor{keywordflow}{if} (componentRenderers.Count > 0) \{}
+\DoxyCodeLine{189                             \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"Clear Parts Renderers"})) \{}
+\DoxyCodeLine{190                                 \textcolor{comment}{// Do you really want to destroy all?}}
+\DoxyCodeLine{191                                 Undo.RegisterCompleteObjectUndo(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}, \textcolor{stringliteral}{"Clear Parts Renderers"});}
+\DoxyCodeLine{192                                 \textcolor{keywordflow}{if} (EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Destroy Renderers"}, \textcolor{stringliteral}{"Do you really want to destroy all the Parts Renderer GameObjects in the list?"}, \textcolor{stringliteral}{"Destroy"}, \textcolor{stringliteral}{"Cancel"})) \{                       }
+\DoxyCodeLine{193                                     \textcolor{keywordflow}{foreach} (var r \textcolor{keywordflow}{in} componentRenderers) \{}
+\DoxyCodeLine{194                                         \textcolor{keywordflow}{if} (r != \textcolor{keyword}{null})}
+\DoxyCodeLine{195                                             Undo.DestroyObjectImmediate(r.gameObject);}
+\DoxyCodeLine{196                                     \}}
+\DoxyCodeLine{197                                     componentRenderers.Clear();}
+\DoxyCodeLine{198                                     \textcolor{comment}{// Do you also want to destroy orphans? (You monster.)}}
+\DoxyCodeLine{199                                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_adec34f1187718d3dfa393ea30b68868f}{DetectOrphanedPartsRenderers}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}});}
+\DoxyCodeLine{200                                 \}}
+\DoxyCodeLine{201                             \}}
+\DoxyCodeLine{202                         \}}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204                         \textcolor{comment}{// (Button) Add Part Renderer button}}
+\DoxyCodeLine{205                         \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"Add Parts Renderer"}))}
+\DoxyCodeLine{206                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af124cf3c0288239078b2ea0329ceb2f8}{AddPartsRenderer}}(1);                }
+\DoxyCodeLine{207                     \}}
+\DoxyCodeLine{208                 \}}
+\DoxyCodeLine{209             \}}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211             serializedObject.ApplyModifiedProperties();}
+\DoxyCodeLine{212 }
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}{slotsReapplyRequired}} \&\& UnityEngine.Event.current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.Repaint) \{}
+\DoxyCodeLine{214                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_inspector}{SkeletonRendererInspector}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_inspector_ab7edd3e35e2ef9b41387f049fecb8b2a}{ReapplySeparatorSlotNames}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}});}
+\DoxyCodeLine{215                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a5ec8980c57b9b42ba4f518767d7badba}{LateUpdate}}();}
+\DoxyCodeLine{216                 SceneView.RepaintAll();}
+\DoxyCodeLine{217                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}{slotsReapplyRequired}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{218             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a1a51441b7416646a2e8393942b46f2c8}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a1a51441b7416646a2e8393942b46f2c8}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!ValidateAddRenderSeparatorComponent@{ValidateAddRenderSeparatorComponent}}
+\index{ValidateAddRenderSeparatorComponent@{ValidateAddRenderSeparatorComponent}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{ValidateAddRenderSeparatorComponent()}{ValidateAddRenderSeparatorComponent()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+Validate\+Add\+Render\+Separator\+Component (\begin{DoxyParamCaption}\item[{Menu\+Command}]{cmd }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 281 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{282                                                                           \{}
+\DoxyCodeLine{283             var skeletonRenderer = cmd.context as \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{SkeletonRenderer}};}
+\DoxyCodeLine{284             var separator = skeletonRenderer.GetComponent<SkeletonRenderSeparator>();}
+\DoxyCodeLine{285             \textcolor{keywordtype}{bool} separatorNotOnObject = separator == \textcolor{keyword}{null};}
+\DoxyCodeLine{286             \textcolor{keywordflow}{return} separatorNotOnObject;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!component@{component}}
+\index{component@{component}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{component}{component}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator}{Skeleton\+Render\+Separator}} Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+component\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_abe38ca79263ff3651a24aecd691d6ed0}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_abe38ca79263ff3651a24aecd691d6ed0}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!copyMeshRendererFlags\_@{copyMeshRendererFlags\_}}
+\index{copyMeshRendererFlags\_@{copyMeshRendererFlags\_}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{copyMeshRendererFlags\_}{copyMeshRendererFlags\_}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+copy\+Mesh\+Renderer\+Flags\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_addc2954b1b0eb466d4132d3733ba3c19}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_addc2954b1b0eb466d4132d3733ba3c19}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!copyPropertyBlock\_@{copyPropertyBlock\_}}
+\index{copyPropertyBlock\_@{copyPropertyBlock\_}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{copyPropertyBlock\_}{copyPropertyBlock\_}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+copy\+Property\+Block\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afa3ab77b1c04b1b5f35b153e275530e6}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!partsRenderers\_@{partsRenderers\_}}
+\index{partsRenderers\_@{partsRenderers\_}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{partsRenderers\_}{partsRenderers\_}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+parts\+Renderers\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a048cdc04bed97db76379aee189d134bd}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!partsRenderersExpanded@{partsRenderersExpanded}}
+\index{partsRenderersExpanded@{partsRenderersExpanded}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{partsRenderersExpanded}{partsRenderersExpanded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+parts\+Renderers\+Expanded = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!separatorNamesProp@{separatorNamesProp}}
+\index{separatorNamesProp@{separatorNamesProp}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{separatorNamesProp}{separatorNamesProp}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+separator\+Names\+Prop\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a3ddd3febeffee99f1cb8a74187198e20}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!skeletonRenderer\_@{skeletonRenderer\_}}
+\index{skeletonRenderer\_@{skeletonRenderer\_}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer\_}{skeletonRenderer\_}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+skeleton\+Renderer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a70697852c0468bc6a7162f69867b3c91}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!skeletonRendererExpanded@{skeletonRendererExpanded}}
+\index{skeletonRendererExpanded@{skeletonRendererExpanded}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{skeletonRendererExpanded}{skeletonRendererExpanded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+skeleton\+Renderer\+Expanded = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a5c98345fc0e8ee16a1732c3b2dffba83}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!skeletonRendererSerializedObject@{skeletonRendererSerializedObject}}
+\index{skeletonRendererSerializedObject@{skeletonRendererSerializedObject}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{skeletonRendererSerializedObject}{skeletonRendererSerializedObject}}
+{\footnotesize\ttfamily Serialized\+Object Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+skeleton\+Renderer\+Serialized\+Object\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_ab85f40822e7a1d66b8ca8b09c986f418}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!slotsReapplyRequired@{slotsReapplyRequired}}
+\index{slotsReapplyRequired@{slotsReapplyRequired}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{slotsReapplyRequired}{slotsReapplyRequired}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+slots\+Reapply\+Required = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_afe7be82e99fced25c4eeca2fedb669cd}} 
+\index{Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}!SkeletonRendererSeparatorCount@{SkeletonRendererSeparatorCount}}
+\index{SkeletonRendererSeparatorCount@{SkeletonRendererSeparatorCount}!Spine.Unity.Modules.SkeletonRenderSeparatorInspector@{Spine.Unity.Modules.SkeletonRenderSeparatorInspector}}
+\doxysubsubsection{\texorpdfstring{SkeletonRendererSeparatorCount}{SkeletonRendererSeparatorCount}}
+{\footnotesize\ttfamily int? Spine.\+Unity.\+Modules.\+Skeleton\+Render\+Separator\+Inspector.\+Skeleton\+Renderer\+Separator\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Render\+Separator\+Inspector.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                            \{}
+\DoxyCodeLine{72             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{if} (Application.isPlaying)}
+\DoxyCodeLine{74                     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_a95d4c0ff26c90b54e43f65a71099dcbe}{component}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_a04d4bb6cd436c934fc89f449274971a4}{SkeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a4c7bec387d10a8498a5d1ce6ccd48c8f}{separatorSlots}}.Count;}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{76                     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}} == \textcolor{keyword}{null} ? 0 : \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector_af77465685e3ba36235f2da08ee6d7a76}{separatorNamesProp}}.arraySize;}
+\DoxyCodeLine{77             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Skeleton\+Render\+Separator/\+Editor/\mbox{\hyperlink{_skeleton_render_separator_inspector_8cs}{Skeleton\+Render\+Separator\+Inspector.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,51 @@
+digraph "Spine.Unity.SkeletonUtility.UpdateAllBones"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.SkeletonUtility.\lUpdateAllBones",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.SkeletonUtility.\lUpdateComplete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a594711858f18430e3a4bb903cb50b7f9",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.SkeletonUtility.\lCollectBones",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#ae32bbea21478c73e94adea6af43e0a52",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.SkeletonUtility.\lHandleRendererReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a3e082cff6cee7236a52c1d2e180858e6",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.SkeletonUtility.\lOnDisable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#ab6d579cc0b750cdb5cda3b229bee548e",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.SkeletonUtility.\lOnEnable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#aa78b163706d319ad90dc479f8aaeef8f",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.SkeletonUtility.\lSpawnHierarchy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#aca7429047790d57b9da23180484224c7",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.SpawnFollowHierarchy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a92860705b113a15e7dad148fd33ebd48",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.SpawnHierarchy\lContextMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#ac788bccb16956f14571306f3f4dfc13d",tooltip=" "];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a6f52ece3c7e4f67f2e25c41b40adba3f",tooltip=" "];
+  Node7 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.SpawnOverrideHierarchy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a2708a1e7073263a0c030b8bcaa40638c",tooltip=" "];
+  Node11 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.Unity.SkeletonUtility.\lSpawnRoot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a0f885c2a30cd961443484ca28ec77701",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.SpawnFollowHierarchy\lRootOnly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a1a639c83e8127cd48223f24076c880bb",tooltip=" "];
+  Node13 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.SpawnOverrideHierarchy\lRootOnly",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a461c26edb5aa51272b5c7d0b0af02bf4",tooltip=" "];
+  Node14 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.Unity.SkeletonUtility.\lStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a5a0b0a15d3643eac13d5eac42bac0536",tooltip=" "];
+  Node3 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.Unity.SkeletonUtility.\lUpdateLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a3456ddafc7f626b07ec0226e00c787b9",tooltip=" "];
+  Node16 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.Unity.SkeletonUtility.\lUpdateWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a118b3e9fc284b8b231e7a66f0ce2fe44",tooltip=" "];
+  Node17 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node17 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

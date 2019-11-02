@@ -1,0 +1,474 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Ghost 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost}\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ghost에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ghost에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}{ghosting\+Enabled}} = true
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}{spawn\+Rate}} = 0.\+05f
+\item 
+Color32 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab45c8f21242b95717bf049e916a5a8c7}{color}} = new Color32(0x\+FF, 0x\+FF, 0x\+FF, 0x00)
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ad4d678bdefef4ad816c50a8bd6a815af}{additive}} = true
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}{maximum\+Ghosts}} = 10
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac53201f68298856851f07a49007983d8}{fade\+Speed}} = 10
+\item 
+Shader \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}{ghost\+Shader}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a6fea07ffa1d98481d795ff66616c5df4}{texture\+Fade}} = 1
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa70c04a9e490f3195d8e587f56a0cf95}{sort\+With\+Distance\+Only}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a5d28224ab593bab2b6ea8fd2c3581e85}{z\+Offset}} = 0f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac33e78e3ea777bdb1497765cd0dd2ab3}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a2a601f7f4cf97467ebb02daf7217f08b}{On\+Event}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}} track\+Entry, \mbox{\hyperlink{class_spine_1_1_event}{Spine.\+Event}} e)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa05489af6e32faa203bcd4384140a773}{Ghosting}} (float val)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8466d249acef365ff2a8c24f4b28af49}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8f5b52b55669a3bd2ed4e34f41ec26e3}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static Color32 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa0bdaed7aaa20c809514645b2a851185}{Hex\+To\+Color}} (string hex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}{next\+Spawn\+Time}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer}{Skeleton\+Ghost\+Renderer}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{pool\+Index}} = 0
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a7fe817cf0223f04724145e5266c929a2}{skeleton\+Renderer}}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{mesh\+Renderer}}
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab883f17622d52c9d2c4c54a408ff2b31}{mesh\+Filter}}
+\item 
+readonly Dictionary$<$ Material, Material $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}{material\+Table}} = new Dictionary$<$Material, Material$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const Hide\+Flags \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1fb043fcd3a1dfee4142e062d1d16e58}{Ghost\+Hide\+Flags}} = Hide\+Flags.\+Hide\+In\+Hierarchy
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a744984c588832230261cda4c8eafae1d}{Ghosting\+Shader\+Name}} = \char`\"{}Spine/Special/\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost}{Skeleton\+Ghost}}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Ghost.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa05489af6e32faa203bcd4384140a773}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa05489af6e32faa203bcd4384140a773}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!Ghosting@{Ghosting}}
+\index{Ghosting@{Ghosting}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{Ghosting()}{Ghosting()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Ghosting (\begin{DoxyParamCaption}\item[{float}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 107 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                   \{}
+\DoxyCodeLine{109             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}{ghostingEnabled}} = val > 0;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa0bdaed7aaa20c809514645b2a851185}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa0bdaed7aaa20c809514645b2a851185}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!HexToColor@{HexToColor}}
+\index{HexToColor@{HexToColor}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{HexToColor()}{HexToColor()}}
+{\footnotesize\ttfamily static Color32 Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Hex\+To\+Color (\begin{DoxyParamCaption}\item[{string}]{hex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 167 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168                                                \{}
+\DoxyCodeLine{169             \textcolor{keyword}{const} System.Globalization.NumberStyles HexStyle = System.Globalization.NumberStyles.HexNumber;}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171             \textcolor{keywordflow}{if} (hex.Length < 6)}
+\DoxyCodeLine{172                 \textcolor{keywordflow}{return} Color.magenta;}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             hex = hex.Replace(\textcolor{stringliteral}{"\#"}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{175             \textcolor{keywordtype}{byte} r = \textcolor{keywordtype}{byte}.Parse(hex.Substring(0, 2), HexStyle);}
+\DoxyCodeLine{176             \textcolor{keywordtype}{byte} g = \textcolor{keywordtype}{byte}.Parse(hex.Substring(2, 2), HexStyle);}
+\DoxyCodeLine{177             \textcolor{keywordtype}{byte} b = \textcolor{keywordtype}{byte}.Parse(hex.Substring(4, 2), HexStyle);}
+\DoxyCodeLine{178             \textcolor{keywordtype}{byte} a = 0xFF;}
+\DoxyCodeLine{179             \textcolor{keywordflow}{if} (hex.Length == 8)}
+\DoxyCodeLine{180                 a = \textcolor{keywordtype}{byte}.Parse(hex.Substring(6, 2), HexStyle);}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Color32(r, g, b, a);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8f5b52b55669a3bd2ed4e34f41ec26e3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8f5b52b55669a3bd2ed4e34f41ec26e3}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 156 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{157                           \{}
+\DoxyCodeLine{158             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{159                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}{maximumGhosts}}; i++)}
+\DoxyCodeLine{160                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}[i] != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}[i].\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a9443aeccc2c8eb0b90b270ece4826114}{Cleanup}}();}
+\DoxyCodeLine{161             \}}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163             \textcolor{keywordflow}{foreach} (var mat \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}{materialTable}}.Values)}
+\DoxyCodeLine{164                 Destroy(mat);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a2a601f7f4cf97467ebb02daf7217f08b}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a2a601f7f4cf97467ebb02daf7217f08b}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!OnEvent@{OnEvent}}
+\index{OnEvent@{OnEvent}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{OnEvent()}{OnEvent()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+On\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}}}]{track\+Entry,  }\item[{\mbox{\hyperlink{class_spine_1_1_event}{Spine.\+Event}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 94 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                                                                   \{}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (e.Data.Name.Equals(\textcolor{stringliteral}{"Ghosting"}, System.StringComparison.Ordinal)) \{}
+\DoxyCodeLine{97                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}{ghostingEnabled}} = e.Int > 0;}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{if} (e.Float > 0)}
+\DoxyCodeLine{99                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}{spawnRate}} = e.Float;}
+\DoxyCodeLine{100                 }
+\DoxyCodeLine{101                 \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(e.stringValue))}
+\DoxyCodeLine{102                     this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab45c8f21242b95717bf049e916a5a8c7}{color}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa0bdaed7aaa20c809514645b2a851185}{HexToColor}}(e.String);}
+\DoxyCodeLine{103             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac33e78e3ea777bdb1497765cd0dd2ab3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac33e78e3ea777bdb1497765cd0dd2ab3}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                       \{}
+\DoxyCodeLine{70             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}{ghostShader}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{71                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}{ghostShader}} = Shader.Find(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a744984c588832230261cda4c8eafae1d}{GhostingShaderName}});}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a7fe817cf0223f04724145e5266c929a2}{skeletonRenderer}} = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{74             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab883f17622d52c9d2c4c54a408ff2b31}{meshFilter}} = GetComponent<MeshFilter>();}
+\DoxyCodeLine{75             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{meshRenderer}} = GetComponent<MeshRenderer>();}
+\DoxyCodeLine{76             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}{nextSpawnTime}} = Time.time + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}{spawnRate}};}
+\DoxyCodeLine{77             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}} = \textcolor{keyword}{new} SkeletonGhostRenderer[\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}{maximumGhosts}}];}
+\DoxyCodeLine{78             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}{maximumGhosts}}; i++) \{}
+\DoxyCodeLine{79                 GameObject go = \textcolor{keyword}{new} GameObject(gameObject.name + \textcolor{stringliteral}{" Ghost"}, typeof(SkeletonGhostRenderer));}
+\DoxyCodeLine{80                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}[i] = go.GetComponent<SkeletonGhostRenderer>();}
+\DoxyCodeLine{81                 go.SetActive(\textcolor{keyword}{false});}
+\DoxyCodeLine{82                 go.hideFlags = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1fb043fcd3a1dfee4142e062d1d16e58}{GhostHideFlags}};}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85             var skeletonAnimation = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a7fe817cf0223f04724145e5266c929a2}{skeletonRenderer}} as \mbox{\hyperlink{namespace_spine}{Spine}}.\mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component}{IAnimationStateComponent}};}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (skeletonAnimation != \textcolor{keyword}{null}) skeletonAnimation.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_animation_state_component_a26624556d0ef520205b8a7e722a8241f}{AnimationState}}.Event += \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a2a601f7f4cf97467ebb02daf7217f08b}{OnEvent}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8466d249acef365ff2a8c24f4b28af49}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a8466d249acef365ff2a8c24f4b28af49}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                        \{}
+\DoxyCodeLine{113             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}{ghostingEnabled}})}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} (Time.time >= \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}{nextSpawnTime}}) \{}
+\DoxyCodeLine{117                 GameObject go = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}[\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{poolIndex}}].gameObject;}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119                 Material[] materials = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{meshRenderer}}.sharedMaterials;}
+\DoxyCodeLine{120                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < materials.Length; i++) \{}
+\DoxyCodeLine{121                     var originalMat = materials[i];}
+\DoxyCodeLine{122                     Material ghostMat;}
+\DoxyCodeLine{123                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}{materialTable}}.ContainsKey(originalMat)) \{}
+\DoxyCodeLine{124                         ghostMat = \textcolor{keyword}{new} Material(originalMat);}
+\DoxyCodeLine{125                         ghostMat.shader = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}{ghostShader}};}
+\DoxyCodeLine{126                         ghostMat.color = Color.white;}
+\DoxyCodeLine{127                         \textcolor{keywordflow}{if} (ghostMat.HasProperty(\textcolor{stringliteral}{"\_TextureFade"}))}
+\DoxyCodeLine{128                             ghostMat.SetFloat(\textcolor{stringliteral}{"\_TextureFade"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a6fea07ffa1d98481d795ff66616c5df4}{textureFade}});}
+\DoxyCodeLine{129                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}{materialTable}}.Add(originalMat, ghostMat);}
+\DoxyCodeLine{130                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{131                         ghostMat = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}{materialTable}}[originalMat];}
+\DoxyCodeLine{132                     \}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134                     materials[i] = ghostMat;}
+\DoxyCodeLine{135                 \}}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137                 var goTransform = go.transform;}
+\DoxyCodeLine{138                 goTransform.parent = transform;}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}[\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{poolIndex}}].\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a82652648fc3b4fc6ddcf945eb88b2727}{Initialize}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab883f17622d52c9d2c4c54a408ff2b31}{meshFilter}}.sharedMesh, materials, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab45c8f21242b95717bf049e916a5a8c7}{color}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ad4d678bdefef4ad816c50a8bd6a815af}{additive}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac53201f68298856851f07a49007983d8}{fadeSpeed}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{meshRenderer}}.sortingLayerID, (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa70c04a9e490f3195d8e587f56a0cf95}{sortWithDistanceOnly}}) ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{meshRenderer}}.sortingOrder : \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}{meshRenderer}}.sortingOrder -\/ 1);}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142                 goTransform.localPosition = \textcolor{keyword}{new} Vector3(0f, 0f, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a5d28224ab593bab2b6ea8fd2c3581e85}{zOffset}});}
+\DoxyCodeLine{143                 goTransform.localRotation = Quaternion.identity;}
+\DoxyCodeLine{144                 goTransform.localScale = Vector3.one;}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146                 goTransform.parent = \textcolor{keyword}{null};}
+\DoxyCodeLine{147 }
+\DoxyCodeLine{148                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{poolIndex}}++;}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{poolIndex}} == \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}{pool}}.Length)}
+\DoxyCodeLine{151                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}{poolIndex}} = 0;}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}{nextSpawnTime}} = Time.time + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}{spawnRate}};}
+\DoxyCodeLine{154             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ad4d678bdefef4ad816c50a8bd6a815af}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ad4d678bdefef4ad816c50a8bd6a815af}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!additive@{additive}}
+\index{additive@{additive}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{additive}{additive}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+additive = true}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab45c8f21242b95717bf049e916a5a8c7}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab45c8f21242b95717bf049e916a5a8c7}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!color@{color}}
+\index{color@{color}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily Color32 Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+color = new Color32(0x\+FF, 0x\+FF, 0x\+FF, 0x00)}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac53201f68298856851f07a49007983d8}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ac53201f68298856851f07a49007983d8}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!fadeSpeed@{fadeSpeed}}
+\index{fadeSpeed@{fadeSpeed}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{fadeSpeed}{fadeSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+fade\+Speed = 10}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1fb043fcd3a1dfee4142e062d1d16e58}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1fb043fcd3a1dfee4142e062d1d16e58}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!GhostHideFlags@{GhostHideFlags}}
+\index{GhostHideFlags@{GhostHideFlags}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{GhostHideFlags}{GhostHideFlags}}
+{\footnotesize\ttfamily const Hide\+Flags Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Ghost\+Hide\+Flags = Hide\+Flags.\+Hide\+In\+Hierarchy\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a93679f2ae6fd10918e44b450d3f5ee08}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!ghostingEnabled@{ghostingEnabled}}
+\index{ghostingEnabled@{ghostingEnabled}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{ghostingEnabled}{ghostingEnabled}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+ghosting\+Enabled = true}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a744984c588832230261cda4c8eafae1d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a744984c588832230261cda4c8eafae1d}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!GhostingShaderName@{GhostingShaderName}}
+\index{GhostingShaderName@{GhostingShaderName}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{GhostingShaderName}{GhostingShaderName}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+Ghosting\+Shader\+Name = \char`\"{}Spine/Special/\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost}{Skeleton\+Ghost}}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a1d31c47b57d7cde73e2fac4f48f65e02}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!ghostShader@{ghostShader}}
+\index{ghostShader@{ghostShader}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{ghostShader}{ghostShader}}
+{\footnotesize\ttfamily Shader Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+ghost\+Shader}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a3ea72898f9aa12f36a2b60c538562da7}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!materialTable@{materialTable}}
+\index{materialTable@{materialTable}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{materialTable}{materialTable}}
+{\footnotesize\ttfamily readonly Dictionary$<$Material, Material$>$ Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+material\+Table = new Dictionary$<$Material, Material$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aab98bb41c9dc9bf5f7e008e0345aabb4}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!maximumGhosts@{maximumGhosts}}
+\index{maximumGhosts@{maximumGhosts}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{maximumGhosts}{maximumGhosts}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+maximum\+Ghosts = 10}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab883f17622d52c9d2c4c54a408ff2b31}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_ab883f17622d52c9d2c4c54a408ff2b31}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!meshFilter@{meshFilter}}
+\index{meshFilter@{meshFilter}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{meshFilter}{meshFilter}}
+{\footnotesize\ttfamily Mesh\+Filter Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+mesh\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a4007373d142712ff3078c250e57b4505}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!meshRenderer@{meshRenderer}}
+\index{meshRenderer@{meshRenderer}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{meshRenderer}{meshRenderer}}
+{\footnotesize\ttfamily Mesh\+Renderer Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+mesh\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a604d5ae6480944f67038068fcc98bf10}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!nextSpawnTime@{nextSpawnTime}}
+\index{nextSpawnTime@{nextSpawnTime}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{nextSpawnTime}{nextSpawnTime}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+next\+Spawn\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a42248a122a00ab74b4c4bace9ae17cc9}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!pool@{pool}}
+\index{pool@{pool}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{pool}{pool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer}{Skeleton\+Ghost\+Renderer}} \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+pool\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a941bbe9d50cb27bd5e06331dec288fed}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!poolIndex@{poolIndex}}
+\index{poolIndex@{poolIndex}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{poolIndex}{poolIndex}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+pool\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a7fe817cf0223f04724145e5266c929a2}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a7fe817cf0223f04724145e5266c929a2}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+skeleton\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa70c04a9e490f3195d8e587f56a0cf95}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_aa70c04a9e490f3195d8e587f56a0cf95}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!sortWithDistanceOnly@{sortWithDistanceOnly}}
+\index{sortWithDistanceOnly@{sortWithDistanceOnly}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{sortWithDistanceOnly}{sortWithDistanceOnly}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+sort\+With\+Distance\+Only}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_adeedf2cef5f3920c43e625e62839d7fd}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!spawnRate@{spawnRate}}
+\index{spawnRate@{spawnRate}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{spawnRate}{spawnRate}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+spawn\+Rate = 0.\+05f}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a6fea07ffa1d98481d795ff66616c5df4}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a6fea07ffa1d98481d795ff66616c5df4}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!textureFade@{textureFade}}
+\index{textureFade@{textureFade}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{textureFade}{textureFade}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+texture\+Fade = 1}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a5d28224ab593bab2b6ea8fd2c3581e85}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_a5d28224ab593bab2b6ea8fd2c3581e85}} 
+\index{Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}!zOffset@{zOffset}}
+\index{zOffset@{zOffset}!Spine.Unity.Modules.SkeletonGhost@{Spine.Unity.Modules.SkeletonGhost}}
+\doxysubsubsection{\texorpdfstring{zOffset}{zOffset}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost.\+z\+Offset = 0f}
+
+
+
+Skeleton\+Ghost.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Ghost/\mbox{\hyperlink{_skeleton_ghost_8cs}{Skeleton\+Ghost.\+cs}}\end{DoxyCompactItemize}

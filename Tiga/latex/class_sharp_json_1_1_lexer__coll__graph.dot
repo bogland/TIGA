@@ -1,0 +1,7 @@
+digraph "SharpJson.Lexer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SharpJson.Lexer\n|+ hasError\l+ lineNumber\l+ parseNumbersAsFloat\l- json\l- index\l- success\l- stringBuffer\l|+ Lexer()\l+ Reset()\l+ ParseString()\l+ ParseFloatNumber()\l+ ParseDoubleNumber()\l+ LookAhead()\l+ NextToken()\l- GetNumberString()\l- GetLastIndexOfNumber()\l- SkipWhiteSpaces()\l- NextToken()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

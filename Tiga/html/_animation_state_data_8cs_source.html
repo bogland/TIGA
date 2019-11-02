@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/AnimationStateData.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_animation_state_data_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AnimationStateData.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_animation_state_data_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>AnimationStateData {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">   38</a></span>&#160;        <span class="keyword">internal</span> <a class="code" href="class_spine_1_1_skeleton_data.html">SkeletonData</a> skeletonData;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        readonly Dictionary&lt;AnimationPair, float&gt; <a class="code" href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">animationToMixTime</a> = <span class="keyword">new</span> Dictionary&lt;AnimationPair, float&gt;(<a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">AnimationPairComparer</a>.<a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#a43283b31fabd0cce79da3dab3cc2e671">Instance</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span> defaultMix;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_skeleton_data.html">SkeletonData</a> <a class="code" href="class_spine_1_1_skeleton_data.html">SkeletonData</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> skeletonData; } }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_animation_state_data.html#a6cfdb35a391cc33dcd080ec1374f332e">DefaultMix</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> defaultMix; } <span class="keyword">set</span> { defaultMix = value; } }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data.html#aefb9c7c841c4bb075b38d02087800962">   48</a></span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_animation_state_data.html#aefb9c7c841c4bb075b38d02087800962">AnimationStateData</a> (<a class="code" href="class_spine_1_1_skeleton_data.html">SkeletonData</a> skeletonData) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (skeletonData == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;skeletonData cannot be null.&quot;</span>, <span class="stringliteral">&quot;skeletonData&quot;</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            this.skeletonData = skeletonData;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_animation_state_data.html#ac73823921fef29d2c9ccd75b6ab5b56f">SetMix</a> (<span class="keywordtype">string</span> fromName, <span class="keywordtype">string</span> toName, <span class="keywordtype">float</span> duration) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="class_spine_1_1_animation.html">Animation</a> from = skeletonData.<a class="code" href="class_spine_1_1_skeleton_data.html#a16a1061325d5653eb3632fe5bf12d4ef">FindAnimation</a>(fromName);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span> (from == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;Animation not found: &quot;</span> + fromName, <span class="stringliteral">&quot;fromName&quot;</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="class_spine_1_1_animation.html">Animation</a> to = skeletonData.<a class="code" href="class_spine_1_1_skeleton_data.html#a16a1061325d5653eb3632fe5bf12d4ef">FindAnimation</a>(toName);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (to == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="stringliteral">&quot;Animation not found: &quot;</span> + toName, <span class="stringliteral">&quot;toName&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_spine_1_1_animation_state_data.html#ac73823921fef29d2c9ccd75b6ab5b56f">SetMix</a>(from, to, duration);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_animation_state_data.html#ac73823921fef29d2c9ccd75b6ab5b56f">SetMix</a> (<a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a03ed3bef4d69471026ba5333ff4bce13">Animation</a> from, <a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a03ed3bef4d69471026ba5333ff4bce13">Animation</a> to, <span class="keywordtype">float</span> duration) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (from == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;from&quot;</span>, <span class="stringliteral">&quot;from cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> (to == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;to&quot;</span>, <span class="stringliteral">&quot;to cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            AnimationPair key = <span class="keyword">new</span> AnimationPair(from, to);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">animationToMixTime</a>.Remove(key);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">animationToMixTime</a>.Add(key, duration);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_animation_state_data.html#ac96b3c2ad1d813d906f90acfb7d2fdf0">GetMix</a> (<a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a03ed3bef4d69471026ba5333ff4bce13">Animation</a> from, <a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a03ed3bef4d69471026ba5333ff4bce13">Animation</a> to) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (from == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;from&quot;</span>, <span class="stringliteral">&quot;from cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">if</span> (to == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;to&quot;</span>, <span class="stringliteral">&quot;to cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            AnimationPair key = <span class="keyword">new</span> AnimationPair(from, to);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordtype">float</span> duration;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">animationToMixTime</a>.TryGetValue(key, out duration)) <span class="keywordflow">return</span> duration;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">return</span> defaultMix;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">   85</a></span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">   86</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">struct </span><a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">AnimationPair</a> {</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">   87</a></span>&#160;            <span class="keyword">public</span> readonly <a class="code" href="class_spine_1_1_animation.html">Animation</a> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keyword">public</span> readonly <a class="code" href="class_spine_1_1_animation.html">Animation</a> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#a096e73b4b2d1a7e2348ac7ddbb01d5d7">   89</a></span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">public</span> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#a096e73b4b2d1a7e2348ac7ddbb01d5d7">AnimationPair</a> (<a class="code" href="class_spine_1_1_animation.html">Animation</a> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>, <a class="code" href="class_spine_1_1_animation.html">Animation</a> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                this.a1 = <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                this.a2 = <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ab7638d1c15ea9973aba4bbca2025ea41">   94</a></span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ab7638d1c15ea9973aba4bbca2025ea41">ToString</a> () {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>.name + <span class="stringliteral">&quot;-&gt;&quot;</span> + <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>.name;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">  100</a></span>&#160;        <span class="comment">// Avoids boxing in the dictionary.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#a43283b31fabd0cce79da3dab3cc2e671">  101</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">AnimationPairComparer</a> : IEqualityComparer&lt;AnimationPair&gt; {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">public</span> <span class="keyword">static</span> readonly <a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">AnimationPairComparer</a> <a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#a43283b31fabd0cce79da3dab3cc2e671">Instance</a> = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">AnimationPairComparer</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#a36ac90e6b8857dbe9cb3c6e93323ba3f">  103</a></span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordtype">bool</span> IEqualityComparer&lt;AnimationPair&gt;.Equals (<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">AnimationPair</a> x, <a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">AnimationPair</a> y) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keywordflow">return</span> ReferenceEquals(x.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>, y.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>) &amp;&amp; ReferenceEquals(x.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>, y.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#af8297fe5ee4bd7dec5dc143629db7780">  107</a></span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">int</span> IEqualityComparer&lt;AnimationPair&gt;.GetHashCode (<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">AnimationPair</a> obj) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="comment">// from Tuple.CombineHashCodes // return (((h1 &lt;&lt; 5) + h1) ^ h2);</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keywordtype">int</span> h1 = obj.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">a1</a>.GetHashCode();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">return</span> (((h1 &lt;&lt; 5) + h1) ^ obj.<a class="code" href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">a2</a>.GetHashCode());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_html_ac73823921fef29d2c9ccd75b6ab5b56f"><div class="ttname"><a href="class_spine_1_1_animation_state_data.html#ac73823921fef29d2c9ccd75b6ab5b56f">Spine.AnimationStateData.SetMix</a></div><div class="ttdeci">void SetMix(string fromName, string toName, float duration)</div><div class="ttdoc">Sets a mix duration by animation names.</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00054">AnimationStateData.cs:54</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_html_a38e4434cc9ea582886ebbece03b79fc6"><div class="ttname"><a href="class_spine_1_1_animation_state_data.html#a38e4434cc9ea582886ebbece03b79fc6">Spine.AnimationStateData.animationToMixTime</a></div><div class="ttdeci">readonly Dictionary&lt; AnimationPair, float &gt; animationToMixTime</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00038">AnimationStateData.cs:38</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_animation_state_data_1_1_animation_pair_html_ad53d6c7b7d051f932e0c58a3ee1b765a"><div class="ttname"><a href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ad53d6c7b7d051f932e0c58a3ee1b765a">Spine.AnimationStateData.AnimationPair.a2</a></div><div class="ttdeci">readonly Animation a2</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00087">AnimationStateData.cs:87</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_data_html"><div class="ttname"><a href="class_spine_1_1_skeleton_data.html">Spine.SkeletonData</a></div><div class="ttdoc">Stores the setup pose and all of the stateless data for a skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_8cs_source.html#l00035">SkeletonData.cs:35</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_1_1_animation_pair_comparer_html"><div class="ttname"><a href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html">Spine.AnimationStateData.AnimationPairComparer</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00100">AnimationStateData.cs:100</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_animation_state_data_1_1_animation_pair_html_acc705bfa0549248a872bef0eaedaa5bf"><div class="ttname"><a href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#acc705bfa0549248a872bef0eaedaa5bf">Spine.AnimationStateData.AnimationPair.a1</a></div><div class="ttdeci">readonly Animation a1</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00086">AnimationStateData.cs:86</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_data_html_a16a1061325d5653eb3632fe5bf12d4ef"><div class="ttname"><a href="class_spine_1_1_skeleton_data.html#a16a1061325d5653eb3632fe5bf12d4ef">Spine.SkeletonData.FindAnimation</a></div><div class="ttdeci">Animation FindAnimation(string animationName)</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_8cs_source.html#l00159">SkeletonData.cs:159</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_html_ac96b3c2ad1d813d906f90acfb7d2fdf0"><div class="ttname"><a href="class_spine_1_1_animation_state_data.html#ac96b3c2ad1d813d906f90acfb7d2fdf0">Spine.AnimationStateData.GetMix</a></div><div class="ttdeci">float GetMix(Animation from, Animation to)</div><div class="ttdoc">The mix duration to use when changing from the specified animation to the other, or the DefaultMix if...</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00076">AnimationStateData.cs:76</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_html_aefb9c7c841c4bb075b38d02087800962"><div class="ttname"><a href="class_spine_1_1_animation_state_data.html#aefb9c7c841c4bb075b38d02087800962">Spine.AnimationStateData.AnimationStateData</a></div><div class="ttdeci">AnimationStateData(SkeletonData skeletonData)</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00048">AnimationStateData.cs:48</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_animation_state_data_1_1_animation_pair_html_a096e73b4b2d1a7e2348ac7ddbb01d5d7"><div class="ttname"><a href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#a096e73b4b2d1a7e2348ac7ddbb01d5d7">Spine.AnimationStateData.AnimationPair.AnimationPair</a></div><div class="ttdeci">AnimationPair(Animation a1, Animation a2)</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00089">AnimationStateData.cs:89</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_editor_html_a03ed3bef4d69471026ba5333ff4bce13"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_editor.html#a03ed3bef4d69471026ba5333ff4bce13">Spine.Unity.Editor.Animation</a></div><div class="ttdeci">Spine.Animation Animation</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_asset_inspector_8cs_source.html#l00043">SkeletonDataAssetInspector.cs:43</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_animation_state_data_1_1_animation_pair_html_ab7638d1c15ea9973aba4bbca2025ea41"><div class="ttname"><a href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html#ab7638d1c15ea9973aba4bbca2025ea41">Spine.AnimationStateData.AnimationPair.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00094">AnimationStateData.cs:94</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_html_a6cfdb35a391cc33dcd080ec1374f332e"><div class="ttname"><a href="class_spine_1_1_animation_state_data.html#a6cfdb35a391cc33dcd080ec1374f332e">Spine.AnimationStateData.DefaultMix</a></div><div class="ttdeci">float DefaultMix</div><div class="ttdoc">The mix duration to use when no mix duration has been specifically defined between two animations.</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00046">AnimationStateData.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_html"><div class="ttname"><a href="class_spine_1_1_animation.html">Spine.Animation</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00034">Animation.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_animation_state_data_1_1_animation_pair_comparer_html_a43283b31fabd0cce79da3dab3cc2e671"><div class="ttname"><a href="class_spine_1_1_animation_state_data_1_1_animation_pair_comparer.html#a43283b31fabd0cce79da3dab3cc2e671">Spine.AnimationStateData.AnimationPairComparer.Instance</a></div><div class="ttdeci">static readonly AnimationPairComparer Instance</div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00101">AnimationStateData.cs:101</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_animation_state_data_1_1_animation_pair_html"><div class="ttname"><a href="struct_spine_1_1_animation_state_data_1_1_animation_pair.html">Spine.AnimationStateData.AnimationPair</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_state_data_8cs_source.html#l00085">AnimationStateData.cs:85</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="_animation_state_data_8cs.html">AnimationStateData.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

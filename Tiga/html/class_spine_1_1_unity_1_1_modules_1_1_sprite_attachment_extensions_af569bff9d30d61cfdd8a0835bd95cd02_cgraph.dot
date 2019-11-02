@@ -1,0 +1,14 @@
+digraph "Spine.Unity.Modules.SpriteAttachmentExtensions.AddUnitySprite"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Modules.Sprite\lAttachmentExtensions.AddUnitySprite",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Skin.AddAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676",tooltip="Adds an attachment to the skin for the specified slot index and name. If the name already exists for ..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.SkeletonData.FindSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369",tooltip="May be null."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.SkeletonData.FindSlot\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#ab83e3ab9fbf2c1a3f2d800bffc482985",tooltip="-1 if the slot was not found."];
+}

@@ -1,0 +1,49 @@
+digraph "Spine.Unity.SkeletonGraphic.UpdateMesh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.SkeletonGraphic.\lUpdateMesh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.MeshGenerator.\lAddSubmesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#aa952a9e80b0019d3bbeb457175e00e7a",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.MeshGenerator.\lAddAttachmentTintBlack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a2973ceef783dac952bd6d5eccc90d41d",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.SkeletonClipping.ClipEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#a1a07278048c33b547f8a596c41ceb4bb",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.SkeletonClipping.ClipEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#a4351ab3c136c8d55809579933d943770",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.SkeletonClipping.Clip\lStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#ae62e72353332993c8e3c7bc437edfd67",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.VertexAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced",tooltip=" "];
+  Node7 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.SkeletonClipping.Make\lClockwise",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#aba7209fd235ecabbf7c0af1a994e65a8",tooltip=" "];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.SkeletonClipping.Clip\lTriangles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#aec7fae2af5eac108aa788fb43a091bbb",tooltip=" "];
+  Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.RegionAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_region_attachment.html#a06e20a82691dfcedf87339edf34c9de3",tooltip="Transforms the attachment's four vertices to world coordinates."];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.Unity.MeshGenerator.\lBegin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a2e1652f1dac9f494da4dfe73c91b564d",tooltip=" "];
+  Node12 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.Unity.MeshGenerator.\lBuildMeshWithArrays",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a627386e6a724f78211ef1ef258eeafcd",tooltip=" "];
+  Node13 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.Unity.MeshGenerator.\lFillLateVertexData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#af42d751fee1dc4f18107753ff17e0dc9",tooltip=" "];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.Unity.MeshGenerator.\lFillTrianglesSingle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a8527e8fefcbc2eeed396ccc88a19ddc3",tooltip=" "];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.Unity.MeshGenerator.\lFillVertexData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#afb4387f3a4fe800d64bba1e17bf1d9bd",tooltip=" "];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.Unity.MeshGenerator.\lGenerateSingleSubmeshInstruction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a581230789bb08b6f9100216257ed5c9a",tooltip=" "];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Spine.Unity.SkeletonRenderer\lInstruction.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_renderer_instruction.html#abe026d6be1737795d804bfbface0713c",tooltip=" "];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Spine.Unity.SkeletonRenderer\lInstruction.GeometryNotEqual",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_renderer_instruction.html#a6ea986f462eac2cac4e50e8206b69c81",tooltip=" "];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="Spine.Unity.MeshGenerator.\lScaleVertexData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a52baa653a39ac13f5b366c60d8edcb32",tooltip=" "];
+}

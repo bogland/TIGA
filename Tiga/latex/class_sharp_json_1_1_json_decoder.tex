@@ -1,0 +1,372 @@
+\hypertarget{class_sharp_json_1_1_json_decoder}{}\doxysection{Sharp\+Json.\+Json\+Decoder 클래스 참조}
+\label{class_sharp_json_1_1_json_decoder}\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+
+
+Sharp\+Json.\+Json\+Decoder에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_aaac72c05f74bd408ae48a58d3914fd99}{Json\+Decoder}} ()
+\item 
+object \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a6300221209a5b9cccd906817263a2e3c}{Decode}} (string text)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static object \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_aac6bdb9891f963e5a09a4820dc0948a1}{Decode\+Text}} (string text)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{error\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}{parse\+Numbers\+As\+Float}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Dictionary$<$ string, object $>$ \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad6d5d2ed661ee7fd724784616ebfff7b}{Parse\+Object}} ()
+\item 
+I\+List$<$ object $>$ \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a8ea9277fbcda21fc40d79634cbb96c89}{Parse\+Array}} ()
+\item 
+object \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}{Parse\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{Trigger\+Error}} (string message)
+\item 
+T \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a5257f808b48a66fdf9159ed80fccee99}{Eval\+Lexer$<$ T $>$}} (T value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sharp_json_1_1_lexer}{Lexer}} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Json.\+cs 파일의 370 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_aaac72c05f74bd408ae48a58d3914fd99}\label{class_sharp_json_1_1_json_decoder_aaac72c05f74bd408ae48a58d3914fd99}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!JsonDecoder@{JsonDecoder}}
+\index{JsonDecoder@{JsonDecoder}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{JsonDecoder()}{JsonDecoder()}}
+{\footnotesize\ttfamily Sharp\+Json.\+Json\+Decoder.\+Json\+Decoder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Json.\+cs 파일의 384 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{386         \{}
+\DoxyCodeLine{387             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{388             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}{parseNumbersAsFloat}} = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a6300221209a5b9cccd906817263a2e3c}\label{class_sharp_json_1_1_json_decoder_a6300221209a5b9cccd906817263a2e3c}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!Decode@{Decode}}
+\index{Decode@{Decode}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{Decode()}{Decode()}}
+{\footnotesize\ttfamily object Sharp\+Json.\+Json\+Decoder.\+Decode (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})}
+
+
+
+Json.\+cs 파일의 390 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{392         \{}
+\DoxyCodeLine{393             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{394 }
+\DoxyCodeLine{395             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}} = \textcolor{keyword}{new} Lexer(text);}
+\DoxyCodeLine{396             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_aab88b3c3d476d76b3fd0bd001241e826}{parseNumbersAsFloat}} = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}{parseNumbersAsFloat}};}
+\DoxyCodeLine{397 }
+\DoxyCodeLine{398             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}{ParseValue}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_aac6bdb9891f963e5a09a4820dc0948a1}\label{class_sharp_json_1_1_json_decoder_aac6bdb9891f963e5a09a4820dc0948a1}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!DecodeText@{DecodeText}}
+\index{DecodeText@{DecodeText}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{DecodeText()}{DecodeText()}}
+{\footnotesize\ttfamily static object Sharp\+Json.\+Json\+Decoder.\+Decode\+Text (\begin{DoxyParamCaption}\item[{string}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Json.\+cs 파일의 400 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{402         \{}
+\DoxyCodeLine{403             var builder = \textcolor{keyword}{new} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_aaac72c05f74bd408ae48a58d3914fd99}{JsonDecoder}}();}
+\DoxyCodeLine{404             \textcolor{keywordflow}{return} builder.Decode(text);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a5257f808b48a66fdf9159ed80fccee99}\label{class_sharp_json_1_1_json_decoder_a5257f808b48a66fdf9159ed80fccee99}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!EvalLexer$<$ T $>$@{EvalLexer$<$ T $>$}}
+\index{EvalLexer$<$ T $>$@{EvalLexer$<$ T $>$}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{EvalLexer$<$ T $>$()}{EvalLexer< T >()}}
+{\footnotesize\ttfamily T Sharp\+Json.\+Json\+Decoder.\+Eval\+Lexer$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 526 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{528         \{}
+\DoxyCodeLine{529             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a1e5b09411903f3ddd734c4f933281f7e}{hasError}})}
+\DoxyCodeLine{530                 \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{TriggerError}}(\textcolor{stringliteral}{"Lexical error ocurred"});}
+\DoxyCodeLine{531 }
+\DoxyCodeLine{532             \textcolor{keywordflow}{return} value;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a8ea9277fbcda21fc40d79634cbb96c89}\label{class_sharp_json_1_1_json_decoder_a8ea9277fbcda21fc40d79634cbb96c89}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!ParseArray@{ParseArray}}
+\index{ParseArray@{ParseArray}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{ParseArray()}{ParseArray()}}
+{\footnotesize\ttfamily I\+List$<$object$>$ Sharp\+Json.\+Json\+Decoder.\+Parse\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 455 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{457         \{}
+\DoxyCodeLine{458             var array = \textcolor{keyword}{new} List<object>();}
+\DoxyCodeLine{459             }
+\DoxyCodeLine{460             \textcolor{comment}{// [}}
+\DoxyCodeLine{461             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{462 }
+\DoxyCodeLine{463             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{464                 var token = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a220de50f8092ba08305379cf8bb38363}{LookAhead}}();}
+\DoxyCodeLine{465 }
+\DoxyCodeLine{466                 \textcolor{keywordflow}{switch} (token) \{}
+\DoxyCodeLine{467                 \textcolor{keywordflow}{case} Lexer.Token.None:}
+\DoxyCodeLine{468                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{TriggerError}}(\textcolor{stringliteral}{"Invalid token"});}
+\DoxyCodeLine{469                     \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{470                 \textcolor{keywordflow}{case} Lexer.Token.Comma:}
+\DoxyCodeLine{471                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{472                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{473                 \textcolor{keywordflow}{case} Lexer.Token.SquaredClose:}
+\DoxyCodeLine{474                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{475                     \textcolor{keywordflow}{return} array;}
+\DoxyCodeLine{476                 \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{477                     \textcolor{keywordtype}{object} value = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}{ParseValue}}();}
+\DoxyCodeLine{478 }
+\DoxyCodeLine{479                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{480                         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{481 }
+\DoxyCodeLine{482                     array.Add(value);}
+\DoxyCodeLine{483                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{484                 \}}
+\DoxyCodeLine{485             \}}
+\DoxyCodeLine{486             }
+\DoxyCodeLine{487             \textcolor{comment}{//return null; // Unreachable code}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_ad6d5d2ed661ee7fd724784616ebfff7b}\label{class_sharp_json_1_1_json_decoder_ad6d5d2ed661ee7fd724784616ebfff7b}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!ParseObject@{ParseObject}}
+\index{ParseObject@{ParseObject}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{ParseObject()}{ParseObject()}}
+{\footnotesize\ttfamily I\+Dictionary$<$string, object$>$ Sharp\+Json.\+Json\+Decoder.\+Parse\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 406 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{408         \{}
+\DoxyCodeLine{409             var table = \textcolor{keyword}{new} Dictionary<string, object>();}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411             \textcolor{comment}{// \{}}
+\DoxyCodeLine{412             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{413 }
+\DoxyCodeLine{414             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{415                 var token = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a220de50f8092ba08305379cf8bb38363}{LookAhead}}();}
+\DoxyCodeLine{416 }
+\DoxyCodeLine{417                 \textcolor{keywordflow}{switch} (token) \{}
+\DoxyCodeLine{418                 \textcolor{keywordflow}{case} Lexer.Token.None:}
+\DoxyCodeLine{419                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{TriggerError}}(\textcolor{stringliteral}{"Invalid token"});}
+\DoxyCodeLine{420                     \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{421                 \textcolor{keywordflow}{case} Lexer.Token.Comma:}
+\DoxyCodeLine{422                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{423                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{424                 \textcolor{keywordflow}{case} Lexer.Token.CurlyClose:}
+\DoxyCodeLine{425                     \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{426                     \textcolor{keywordflow}{return} table;}
+\DoxyCodeLine{427                 \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{428                     \textcolor{comment}{// name}}
+\DoxyCodeLine{429                     \textcolor{keywordtype}{string} name = EvalLexer(\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a6b4182a915ee2fd3cfb2ed415dd9b644}{ParseString}}());}
+\DoxyCodeLine{430 }
+\DoxyCodeLine{431                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{432                         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{433 }
+\DoxyCodeLine{434                     \textcolor{comment}{// :}}
+\DoxyCodeLine{435                     token = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{436 }
+\DoxyCodeLine{437                     \textcolor{keywordflow}{if} (token != Lexer.Token.Colon) \{}
+\DoxyCodeLine{438                         \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{TriggerError}}(\textcolor{stringliteral}{"Invalid token; expected ':'"});}
+\DoxyCodeLine{439                         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{440                     \}}
+\DoxyCodeLine{441                     }
+\DoxyCodeLine{442                     \textcolor{comment}{// value}}
+\DoxyCodeLine{443                     \textcolor{keywordtype}{object} value = \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}{ParseValue}}();}
+\DoxyCodeLine{444 }
+\DoxyCodeLine{445                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{446                         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{447                     }
+\DoxyCodeLine{448                     table[name] = value;}
+\DoxyCodeLine{449                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{450                 \}}
+\DoxyCodeLine{451             \}}
+\DoxyCodeLine{452             }
+\DoxyCodeLine{453             \textcolor{comment}{//return null; // Unreachable code}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}\label{class_sharp_json_1_1_json_decoder_ad67cc8fc02cea01cd101c09631fb3d05}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!ParseValue@{ParseValue}}
+\index{ParseValue@{ParseValue}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{ParseValue()}{ParseValue()}}
+{\footnotesize\ttfamily object Sharp\+Json.\+Json\+Decoder.\+Parse\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 489 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{491         \{}
+\DoxyCodeLine{492             \textcolor{keywordflow}{switch} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a220de50f8092ba08305379cf8bb38363}{LookAhead}}()) \{}
+\DoxyCodeLine{493             \textcolor{keywordflow}{case} Lexer.Token.String:}
+\DoxyCodeLine{494                 \textcolor{keywordflow}{return} EvalLexer(\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a6b4182a915ee2fd3cfb2ed415dd9b644}{ParseString}}());}
+\DoxyCodeLine{495             \textcolor{keywordflow}{case} Lexer.Token.Number:}
+\DoxyCodeLine{496                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}{parseNumbersAsFloat}})}
+\DoxyCodeLine{497                     \textcolor{keywordflow}{return} EvalLexer(\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_aea207308302033e727e342c8deb0fe5b}{ParseFloatNumber}}());}
+\DoxyCodeLine{498                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{499                     \textcolor{keywordflow}{return} EvalLexer(\mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a17df5147901bf78b35e4768ae98a03da}{ParseDoubleNumber}}());}
+\DoxyCodeLine{500             \textcolor{keywordflow}{case} Lexer.Token.CurlyOpen:}
+\DoxyCodeLine{501                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ad6d5d2ed661ee7fd724784616ebfff7b}{ParseObject}}();}
+\DoxyCodeLine{502             \textcolor{keywordflow}{case} Lexer.Token.SquaredOpen:}
+\DoxyCodeLine{503                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a8ea9277fbcda21fc40d79634cbb96c89}{ParseArray}}();}
+\DoxyCodeLine{504             \textcolor{keywordflow}{case} Lexer.Token.True:}
+\DoxyCodeLine{505                 \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{506                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{507             \textcolor{keywordflow}{case} Lexer.Token.False:}
+\DoxyCodeLine{508                 \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{509                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{510             \textcolor{keywordflow}{case} Lexer.Token.Null:}
+\DoxyCodeLine{511                 \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_a2dafe2e9f3aa19f29e262a07ce597530}{NextToken}}();}
+\DoxyCodeLine{512                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{513             \textcolor{keywordflow}{case} Lexer.Token.None:}
+\DoxyCodeLine{514                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{515             \}}
+\DoxyCodeLine{516 }
+\DoxyCodeLine{517             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}{TriggerError}}(\textcolor{stringliteral}{"Unable to parse value"});}
+\DoxyCodeLine{518             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}\label{class_sharp_json_1_1_json_decoder_a0835819f4bc401580a84999dfd03df1a}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!TriggerError@{TriggerError}}
+\index{TriggerError@{TriggerError}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{TriggerError()}{TriggerError()}}
+{\footnotesize\ttfamily void Sharp\+Json.\+Json\+Decoder.\+Trigger\+Error (\begin{DoxyParamCaption}\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 520 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{522         \{}
+\DoxyCodeLine{523             \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} = \textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Error: '\{0\}' at line \{1\}"},}
+\DoxyCodeLine{524                                          message, \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}{lexer}}.\mbox{\hyperlink{class_sharp_json_1_1_lexer_adcded453f7c16ba06a59f57e4d8eba9c}{lineNumber}});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}\label{class_sharp_json_1_1_json_decoder_a937dfdfbb63e36addeabe32927cd5f82}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!lexer@{lexer}}
+\index{lexer@{lexer}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{lexer}{lexer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sharp_json_1_1_lexer}{Lexer}} Sharp\+Json.\+Json\+Decoder.\+lexer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json.\+cs 파일의 382 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}\label{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!errorMessage@{errorMessage}}
+\index{errorMessage@{errorMessage}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{errorMessage}{errorMessage}}
+{\footnotesize\ttfamily string Sharp\+Json.\+Json\+Decoder.\+error\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Json.\+cs 파일의 372 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{372     \{}
+\DoxyCodeLine{373         \textcolor{keyword}{public} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_sharp_json_1_1_json_decoder_ac1efc464e106bfbb15bde085e46f5a19}{errorMessage}} \{}
+\DoxyCodeLine{374             \textcolor{keyword}{get};}
+\DoxyCodeLine{375             \textcolor{keyword}{private} \textcolor{keyword}{set};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}\label{class_sharp_json_1_1_json_decoder_a208fdbfb46f9388afa116af4ae4248f3}} 
+\index{SharpJson.JsonDecoder@{SharpJson.JsonDecoder}!parseNumbersAsFloat@{parseNumbersAsFloat}}
+\index{parseNumbersAsFloat@{parseNumbersAsFloat}!SharpJson.JsonDecoder@{SharpJson.JsonDecoder}}
+\doxysubsubsection{\texorpdfstring{parseNumbersAsFloat}{parseNumbersAsFloat}}
+{\footnotesize\ttfamily bool Sharp\+Json.\+Json\+Decoder.\+parse\+Numbers\+As\+Float\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Json.\+cs 파일의 377 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{378                                         \{}
+\DoxyCodeLine{379             \textcolor{keyword}{get};}
+\DoxyCodeLine{380             \textcolor{keyword}{set};}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_plugins_2_spine_2spine-csharp_2json_8cs}{Json.\+cs}}\end{DoxyCompactItemize}

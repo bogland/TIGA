@@ -1,0 +1,15 @@
+digraph "Spine.AnimationState.ApplyRotateTimeline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.AnimationState.Apply\lRotateTimeline",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.RotateTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_rotate_timeline.html#a3b3e4cf2156400da2452f7d1c5ab3bdd",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.CurveTimeline.GetCurve\lPercent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#aecaa64a855f59f759923bd2edc0f71a5",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.MathUtils.Clamp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3b8ef063e95d6adf57582ded0defd8e7",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

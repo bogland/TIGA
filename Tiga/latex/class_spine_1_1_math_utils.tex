@@ -1,0 +1,358 @@
+\hypertarget{class_spine_1_1_math_utils}{}\doxysection{Spine.\+Math\+Utils 클래스 참조}
+\label{class_spine_1_1_math_utils}\index{Spine.MathUtils@{Spine.MathUtils}}
+
+
+Spine.\+Math\+Utils에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a28ddf17f11f78969b5dc2d7588071d7b}{Sin}} (float radians)
+\begin{DoxyCompactList}\small\item\em Returns the sine in radians from a lookup table. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a5a54380abac57117f618e55d51c8ffd3}{Cos}} (float radians)
+\begin{DoxyCompactList}\small\item\em Returns the cosine in radians from a lookup table. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a9c43b99917f17838ece89205052a2820}{Sin\+Deg}} (float degrees)
+\begin{DoxyCompactList}\small\item\em Returns the sine in radians from a lookup table. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a86984dbed809bd6ec2f9295b5ad96db3}{Cos\+Deg}} (float degrees)
+\begin{DoxyCompactList}\small\item\em Returns the cosine in radians from a lookup table. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a3e98f9d30d651fcde8320c2bdaa41f74}{Atan2}} (float y, float x)
+\begin{DoxyCompactList}\small\item\em Returns atan2 in radians, faster but less accurate than Math.\+Atan2. Average error of 0.\+00231 radians (0.\+1323 degrees), largest error of 0.\+00488 radians (0.\+2796 degrees). \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_spine_1_1_math_utils_a3b8ef063e95d6adf57582ded0defd8e7}{Clamp}} (float value, float min, float max)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} = 3.\+1415927f
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a9166e7fcd844b2935b069c555c8c1962}{P\+I2}} = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} $\ast$ 2
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a2680716d71d3d11b590cb0ff86732e21}{Rad\+Deg}} = 180f / \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_aad55aecd45490754ac4834affd61896b}{Deg\+Rad}} = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 180
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_math_utils_acb21a18e46680abb87fe52ff64778a52}{Math\+Utils}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_math_utils_ac810d64e2eeb35b68850f0c0d20d9f40}{S\+I\+N\+\_\+\+B\+I\+TS}} = 14
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{S\+I\+N\+\_\+\+M\+A\+SK}} = $\sim$(-\/1 $<$$<$ \mbox{\hyperlink{class_spine_1_1_math_utils_ac810d64e2eeb35b68850f0c0d20d9f40}{S\+I\+N\+\_\+\+B\+I\+TS}})
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}} = \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{S\+I\+N\+\_\+\+M\+A\+SK}} + 1
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}{Rad\+Full}} = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} $\ast$ 2
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a137bb4bb23f7091164bf77bac0e6639d}{Deg\+Full}} = 360
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a3654d050c7eaab636134ebf60861eecc}{Rad\+To\+Index}} = \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}} / \mbox{\hyperlink{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}{Rad\+Full}}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}{Deg\+To\+Index}} = \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}} / \mbox{\hyperlink{class_spine_1_1_math_utils_a137bb4bb23f7091164bf77bac0e6639d}{Deg\+Full}}
+\item 
+static float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}} = new float\mbox{[}\mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Math\+Utils.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_math_utils_acb21a18e46680abb87fe52ff64778a52}\label{class_spine_1_1_math_utils_acb21a18e46680abb87fe52ff64778a52}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!MathUtils@{MathUtils}}
+\index{MathUtils@{MathUtils}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{MathUtils()}{MathUtils()}}
+{\footnotesize\ttfamily static Spine.\+Math\+Utils.\+Math\+Utils (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                             \{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{SIN\_COUNT}}; i++)}
+\DoxyCodeLine{51                 \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[i] = (\textcolor{keywordtype}{float})Math.Sin((i + 0.5f) / \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{SIN\_COUNT}} * \mbox{\hyperlink{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}{RadFull}});}
+\DoxyCodeLine{52             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 360; i += 90)}
+\DoxyCodeLine{53                 \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[(\textcolor{keywordtype}{int})(i * \mbox{\hyperlink{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}{DegToIndex}}) \& \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{SIN\_MASK}}] = (\textcolor{keywordtype}{float})Math.Sin(i * \mbox{\hyperlink{class_spine_1_1_math_utils_aad55aecd45490754ac4834affd61896b}{DegRad}});}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a3e98f9d30d651fcde8320c2bdaa41f74}\label{class_spine_1_1_math_utils_a3e98f9d30d651fcde8320c2bdaa41f74}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!Atan2@{Atan2}}
+\index{Atan2@{Atan2}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{Atan2()}{Atan2()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Atan2 (\begin{DoxyParamCaption}\item[{float}]{y,  }\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns atan2 in radians, faster but less accurate than Math.\+Atan2. Average error of 0.\+00231 radians (0.\+1323 degrees), largest error of 0.\+00488 radians (0.\+2796 degrees). 
+
+
+
+Math\+Utils.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                                      \{}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (x == 0f) \{}
+\DoxyCodeLine{80                 \textcolor{keywordflow}{if} (y > 0f) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 2;}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (y == 0f) \textcolor{keywordflow}{return} 0f;}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{return} -\/\mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 2;}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84             \textcolor{keywordtype}{float} atan, z = y / x;}
+\DoxyCodeLine{85             \textcolor{keywordflow}{if} (Math.Abs(z) < 1f) \{}
+\DoxyCodeLine{86                 atan = z / (1f + 0.28f * z * z);}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{if} (x < 0f) \textcolor{keywordflow}{return} atan + (y < 0f ? -\/\mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} : \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}});}
+\DoxyCodeLine{88                 \textcolor{keywordflow}{return} atan;}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90             atan = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 2 -\/ z / (z * z + 0.28f);}
+\DoxyCodeLine{91             \textcolor{keywordflow}{return} y < 0f ? atan -\/ \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} : atan;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a3b8ef063e95d6adf57582ded0defd8e7}\label{class_spine_1_1_math_utils_a3b8ef063e95d6adf57582ded0defd8e7}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!Clamp@{Clamp}}
+\index{Clamp@{Clamp}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{Clamp()}{Clamp()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Clamp (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Math\+Utils.\+cs 파일의 93 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                                                       \{}
+\DoxyCodeLine{95             \textcolor{keywordflow}{if} (value < min) \textcolor{keywordflow}{return} min;}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (value > max) \textcolor{keywordflow}{return} max;}
+\DoxyCodeLine{97             \textcolor{keywordflow}{return} value;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a5a54380abac57117f618e55d51c8ffd3}\label{class_spine_1_1_math_utils_a5a54380abac57117f618e55d51c8ffd3}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!Cos@{Cos}}
+\index{Cos@{Cos}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{Cos()}{Cos()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Cos (\begin{DoxyParamCaption}\item[{float}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the cosine in radians from a lookup table. 
+
+
+
+Math\+Utils.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                                                 \{}
+\DoxyCodeLine{63             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[(int)((radians + \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 2) * \mbox{\hyperlink{class_spine_1_1_math_utils_a3654d050c7eaab636134ebf60861eecc}{RadToIndex}}) \& \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{SIN\_MASK}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a86984dbed809bd6ec2f9295b5ad96db3}\label{class_spine_1_1_math_utils_a86984dbed809bd6ec2f9295b5ad96db3}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!CosDeg@{CosDeg}}
+\index{CosDeg@{CosDeg}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{CosDeg()}{CosDeg()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Cos\+Deg (\begin{DoxyParamCaption}\item[{float}]{degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the cosine in radians from a lookup table. 
+
+
+
+Math\+Utils.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                                    \{}
+\DoxyCodeLine{73             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[(int)((degrees + 90) * \mbox{\hyperlink{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}{DegToIndex}}) \& \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{SIN\_MASK}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a28ddf17f11f78969b5dc2d7588071d7b}\label{class_spine_1_1_math_utils_a28ddf17f11f78969b5dc2d7588071d7b}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!Sin@{Sin}}
+\index{Sin@{Sin}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{Sin()}{Sin()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Sin (\begin{DoxyParamCaption}\item[{float}]{radians }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the sine in radians from a lookup table. 
+
+
+
+Math\+Utils.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57                                                 \{}
+\DoxyCodeLine{58             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[(int)(radians * \mbox{\hyperlink{class_spine_1_1_math_utils_a3654d050c7eaab636134ebf60861eecc}{RadToIndex}}) \& \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{SIN\_MASK}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a9c43b99917f17838ece89205052a2820}\label{class_spine_1_1_math_utils_a9c43b99917f17838ece89205052a2820}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!SinDeg@{SinDeg}}
+\index{SinDeg@{SinDeg}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{SinDeg()}{SinDeg()}}
+{\footnotesize\ttfamily static float Spine.\+Math\+Utils.\+Sin\+Deg (\begin{DoxyParamCaption}\item[{float}]{degrees }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the sine in radians from a lookup table. 
+
+
+
+Math\+Utils.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                                    \{}
+\DoxyCodeLine{68             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}{sin}}[(int)(degrees * \mbox{\hyperlink{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}{DegToIndex}}) \& \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{SIN\_MASK}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a137bb4bb23f7091164bf77bac0e6639d}\label{class_spine_1_1_math_utils_a137bb4bb23f7091164bf77bac0e6639d}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!DegFull@{DegFull}}
+\index{DegFull@{DegFull}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{DegFull}{DegFull}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Deg\+Full = 360\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_aad55aecd45490754ac4834affd61896b}\label{class_spine_1_1_math_utils_aad55aecd45490754ac4834affd61896b}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!DegRad@{DegRad}}
+\index{DegRad@{DegRad}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{DegRad}{DegRad}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Deg\+Rad = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} / 180\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Math\+Utils.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}\label{class_spine_1_1_math_utils_a3e9c3c1aa408a62dda0d46052c049002}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!DegToIndex@{DegToIndex}}
+\index{DegToIndex@{DegToIndex}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{DegToIndex}{DegToIndex}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Deg\+To\+Index = \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}} / \mbox{\hyperlink{class_spine_1_1_math_utils_a137bb4bb23f7091164bf77bac0e6639d}{Deg\+Full}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}\label{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!PI@{PI}}
+\index{PI@{PI}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+PI = 3.\+1415927f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Math\+Utils.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a9166e7fcd844b2935b069c555c8c1962}\label{class_spine_1_1_math_utils_a9166e7fcd844b2935b069c555c8c1962}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!PI2@{PI2}}
+\index{PI2@{PI2}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{PI2}{PI2}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+P\+I2 = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} $\ast$ 2\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Math\+Utils.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a2680716d71d3d11b590cb0ff86732e21}\label{class_spine_1_1_math_utils_a2680716d71d3d11b590cb0ff86732e21}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!RadDeg@{RadDeg}}
+\index{RadDeg@{RadDeg}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{RadDeg}{RadDeg}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Rad\+Deg = 180f / \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Math\+Utils.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}\label{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!RadFull@{RadFull}}
+\index{RadFull@{RadFull}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{RadFull}{RadFull}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Rad\+Full = \mbox{\hyperlink{class_spine_1_1_math_utils_a9da84cf0f349c2237fb180a63fc54c56}{PI}} $\ast$ 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a3654d050c7eaab636134ebf60861eecc}\label{class_spine_1_1_math_utils_a3654d050c7eaab636134ebf60861eecc}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!RadToIndex@{RadToIndex}}
+\index{RadToIndex@{RadToIndex}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{RadToIndex}{RadToIndex}}
+{\footnotesize\ttfamily const float Spine.\+Math\+Utils.\+Rad\+To\+Index = \mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}} / \mbox{\hyperlink{class_spine_1_1_math_utils_a1878504e459ce0ddacde262176a39bca}{Rad\+Full}}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}\label{class_spine_1_1_math_utils_a18cd928851a4faeb2abf916bc5a8343e}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!sin@{sin}}
+\index{sin@{sin}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{sin}{sin}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Math\+Utils.\+sin = new float\mbox{[}\mbox{\hyperlink{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}{S\+I\+N\+\_\+\+C\+O\+U\+NT}}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_ac810d64e2eeb35b68850f0c0d20d9f40}\label{class_spine_1_1_math_utils_ac810d64e2eeb35b68850f0c0d20d9f40}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!SIN\_BITS@{SIN\_BITS}}
+\index{SIN\_BITS@{SIN\_BITS}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{SIN\_BITS}{SIN\_BITS}}
+{\footnotesize\ttfamily const int Spine.\+Math\+Utils.\+S\+I\+N\+\_\+\+B\+I\+TS = 14\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}\label{class_spine_1_1_math_utils_ad298354be9006b2311369552d2508410}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!SIN\_COUNT@{SIN\_COUNT}}
+\index{SIN\_COUNT@{SIN\_COUNT}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{SIN\_COUNT}{SIN\_COUNT}}
+{\footnotesize\ttfamily const int Spine.\+Math\+Utils.\+S\+I\+N\+\_\+\+C\+O\+U\+NT = \mbox{\hyperlink{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}{S\+I\+N\+\_\+\+M\+A\+SK}} + 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}\label{class_spine_1_1_math_utils_a9f79760783f4aa9ba9a9b4333f8139fd}} 
+\index{Spine.MathUtils@{Spine.MathUtils}!SIN\_MASK@{SIN\_MASK}}
+\index{SIN\_MASK@{SIN\_MASK}!Spine.MathUtils@{Spine.MathUtils}}
+\doxysubsubsection{\texorpdfstring{SIN\_MASK}{SIN\_MASK}}
+{\footnotesize\ttfamily const int Spine.\+Math\+Utils.\+S\+I\+N\+\_\+\+M\+A\+SK = $\sim$(-\/1 $<$$<$ \mbox{\hyperlink{class_spine_1_1_math_utils_ac810d64e2eeb35b68850f0c0d20d9f40}{S\+I\+N\+\_\+\+B\+I\+TS}})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Math\+Utils.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_math_utils_8cs}{Math\+Utils.\+cs}}\end{DoxyCompactItemize}

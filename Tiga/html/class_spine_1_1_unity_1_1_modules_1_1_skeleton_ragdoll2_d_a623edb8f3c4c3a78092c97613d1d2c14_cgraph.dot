@@ -1,0 +1,12 @@
+digraph "Spine.Unity.Modules.SkeletonRagdoll2D.AttachBoundingBoxRagdollColliders"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Modules.Skeleton\lRagdoll2D.AttachBoundingBoxRagdoll\lColliders",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.SkeletonUtility.\lAddBoundingBoxAsComponent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a2fc833730b8296436bf5db3cdcbcf7dd",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.SkeletonUtility.\lSetColliderPointsLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a1caa5e8b981d3a6cd292f1ddedd1eef5",tooltip=" "];
+}

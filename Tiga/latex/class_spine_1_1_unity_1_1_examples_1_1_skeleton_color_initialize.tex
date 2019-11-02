@@ -1,0 +1,122 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize}{}\doxysection{Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize}\index{Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}}
+
+
+Stores and serializes initial settings for a \mbox{\hyperlink{namespace_spine}{Spine}} \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} component. The settings only get applied on Start at runtime.  
+
+
+
+
+Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_1_1_slot_settings}{Slot\+Settings}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a9ea0eb5910899a68db0bb329fb436e59}{skeleton\+Color}} = Color.\+white
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_1_1_slot_settings}{Slot\+Settings}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a1be48471fd3a7607066e4656c02ffc43}{slot\+Settings}} = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_1_1_slot_settings}{Slot\+Settings}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ab3a7019a359bb4a88334bf2437e2a7d0}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ad7450a6db04362e991620e45e7f30b75}{Apply\+Settings}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Stores and serializes initial settings for a \mbox{\hyperlink{namespace_spine}{Spine}} \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} component. The settings only get applied on Start at runtime. 
+
+
+
+Skeleton\+Color\+Initialize.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ad7450a6db04362e991620e45e7f30b75}\label{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ad7450a6db04362e991620e45e7f30b75}} 
+\index{Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}!ApplySettings@{ApplySettings}}
+\index{ApplySettings@{ApplySettings}!Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}}
+\doxysubsubsection{\texorpdfstring{ApplySettings()}{ApplySettings()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize.\+Apply\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Color\+Initialize.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                               \{}
+\DoxyCodeLine{39             var skeletonComponent = GetComponent<ISkeletonComponent>();}
+\DoxyCodeLine{40             \textcolor{keywordflow}{if} (skeletonComponent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{41                 var skeleton = skeletonComponent.Skeleton;}
+\DoxyCodeLine{42                 skeleton.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a9ea0eb5910899a68db0bb329fb436e59}{skeletonColor}});}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44                 \textcolor{keywordflow}{foreach} (var s \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a1be48471fd3a7607066e4656c02ffc43}{slotSettings}}) \{}
+\DoxyCodeLine{45                     var slot = skeleton.FindSlot(s.slot);}
+\DoxyCodeLine{46                     \textcolor{keywordflow}{if} (slot != \textcolor{keyword}{null}) slot.SetColor(s.color);}
+\DoxyCodeLine{47                 \}}
+\DoxyCodeLine{48                     }
+\DoxyCodeLine{49             \}}
+\DoxyCodeLine{50         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ab3a7019a359bb4a88334bf2437e2a7d0}\label{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ab3a7019a359bb4a88334bf2437e2a7d0}} 
+\index{Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Color\+Initialize.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34                       \{}
+\DoxyCodeLine{35             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_ad7450a6db04362e991620e45e7f30b75}{ApplySettings}}();}
+\DoxyCodeLine{36         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a9ea0eb5910899a68db0bb329fb436e59}\label{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a9ea0eb5910899a68db0bb329fb436e59}} 
+\index{Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}!skeletonColor@{skeletonColor}}
+\index{skeletonColor@{skeletonColor}!Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}}
+\doxysubsubsection{\texorpdfstring{skeletonColor}{skeletonColor}}
+{\footnotesize\ttfamily Color Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize.\+skeleton\+Color = Color.\+white}
+
+
+
+Skeleton\+Color\+Initialize.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a1be48471fd3a7607066e4656c02ffc43}\label{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_a1be48471fd3a7607066e4656c02ffc43}} 
+\index{Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}!slotSettings@{slotSettings}}
+\index{slotSettings@{slotSettings}!Spine.Unity.Examples.SkeletonColorInitialize@{Spine.Unity.Examples.SkeletonColorInitialize}}
+\doxysubsubsection{\texorpdfstring{slotSettings}{slotSettings}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_1_1_slot_settings}{Slot\+Settings}}$>$ Spine.\+Unity.\+Examples.\+Skeleton\+Color\+Initialize.\+slot\+Settings = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_skeleton_color_initialize_1_1_slot_settings}{Slot\+Settings}}$>$()}
+
+
+
+Skeleton\+Color\+Initialize.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\mbox{\hyperlink{_skeleton_color_initialize_8cs}{Skeleton\+Color\+Initialize.\+cs}}\end{DoxyCompactItemize}

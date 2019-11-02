@@ -1,0 +1,38 @@
+digraph "Spine.SkeletonJson.ReadAnimation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.SkeletonJson.ReadAnimation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.SkeletonData.FindBone\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a2937204ed2b9eefc63e931132fdb533c",tooltip="-1 if the bone was not found."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.SkeletonData.FindEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6e0a2691d3795a1222ff9158042e2a59",tooltip="May be null."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.SkeletonData.FindIk\lConstraint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a93e79d1a34536675194c8ddec23c1728",tooltip="May be null."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.SkeletonData.FindPath\lConstraintIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a3be43e80c6dfae760c21f5808dd0788c",tooltip="-1 if the path constraint was not found."];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.SkeletonData.FindSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369",tooltip="May be null."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.SkeletonData.FindSlot\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#ab83e3ab9fbf2c1a3f2d800bffc482985",tooltip="-1 if the slot was not found."];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.SkeletonData.FindTransform\lConstraint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#aef8754d89bce314ccf5dcbd4e79af409",tooltip="May be null."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.SkeletonJson.GetBoolean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a8cad42fe44438deec162af175490fead",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.SkeletonJson.GetFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a29c20e91461fdeca52dc9404f1b6677d",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.SkeletonJson.GetFloat\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a3f190682d45b4beec66525e07f039cf2",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.SkeletonJson.GetInt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a250a6d602dc595a6c13055c6e7f3b532",tooltip=" "];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.SkeletonJson.ReadCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#ad8560242abf5194a1161d7935b0b8f2d",tooltip=" "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.CurveTimeline.SetCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#a17799c5d17120175dd78b9cb77a2e569",tooltip="Sets the control handle positions for an interpolation bezier curve used to transition from this keyf..."];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.CurveTimeline.SetStepped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#ac9f50bb59d3a6a81aebf2ce6331eed76",tooltip=" "];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.SkeletonJson.ToColor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a6157e23f3838d250da058f86f811a208",tooltip=" "];
+}

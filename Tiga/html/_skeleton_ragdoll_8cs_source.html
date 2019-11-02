@@ -1,0 +1,574 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-unity/Modules/Ragdoll/SkeletonRagdoll.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_skeleton_ragdoll_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SkeletonRagdoll.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_skeleton_ragdoll_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// Contributed by: Mitch Thompson</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_modules.html">Spine.Unity.Modules</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html">   38</a></span>&#160;    [RequireComponent(typeof(<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html">SkeletonRenderer</a>))]</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">   39</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html">SkeletonRagdoll</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">static</span> Transform <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">parentSpaceHelper</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">        #region Inspector</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        [Header(<span class="stringliteral">&quot;Hierarchy&quot;</span>)]</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6a8e2fde47e71df49d8e1f8b9aae04c3">   44</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_bone.html">SpineBone</a>]</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6a8e2fde47e71df49d8e1f8b9aae04c3">startingBoneName</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad54624157849875469ab25d064cdb52b">   46</a></span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_bone.html">SpineBone</a>]</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> List&lt;string&gt; <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad54624157849875469ab25d064cdb52b">stopBoneNames</a> = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac950e00c60a99cd494c49cbf7b05f2b2">   49</a></span>&#160;        [Header(<span class="stringliteral">&quot;Parameters&quot;</span>)]</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac950e00c60a99cd494c49cbf7b05f2b2">applyOnStart</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac4a86fa9aafef118988de0e498f16a31">   51</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;Warning!  You will have to re-enable and tune mix values manually if attempting to remove the ragdoll system.&quot;</span>)]</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a06ff682edc764d27566b7f7ea4df02de">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac4a86fa9aafef118988de0e498f16a31">disableIK</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a06ff682edc764d27566b7f7ea4df02de">disableOtherConstraints</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        [Space(18)]</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7a112e88e4b702fa4aeb433390b6d326">   55</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;Set RootRigidbody IsKinematic to true when Apply is called.&quot;</span>)]</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7a112e88e4b702fa4aeb433390b6d326">pinStartBone</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a813d94c8aa2358e000e860e90c1de03c">   57</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;Enable Collision between adjacent ragdoll elements (IE: Neck and Head)&quot;</span>)]</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a54b944305569d9cd660ec85073a3a2b8">   58</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a813d94c8aa2358e000e860e90c1de03c">enableJointCollision</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a54b944305569d9cd660ec85073a3a2b8">useGravity</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a63b9ad4ee0fb5fd64429580b40f5b65f">   60</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;If no BoundingBox Attachment is attached to a bone, this becomes the default Width or Radius of a Bone&#39;s ragdoll Rigidbody&quot;</span>)]</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a63b9ad4ee0fb5fd64429580b40f5b65f">thickness</a> = 0.125f;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6ad8b4b05b81df396c687a49653821ac">   62</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;Default rotational limit value.  Min is negative this value, Max is this value.&quot;</span>)]</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a801c91f6057b191b86b4bb9d69db9670">   63</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6ad8b4b05b81df396c687a49653821ac">rotationLimit</a> = 20;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a801c91f6057b191b86b4bb9d69db9670">rootMass</a> = 20;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        [Tooltip(<span class="stringliteral">&quot;If your ragdoll seems unstable or uneffected by limits, try lowering this value.&quot;</span>)]</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aec227c96249601d912e0580867e8310d">   66</a></span>&#160;        [Range(0.01f, 1f)]</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aec227c96249601d912e0580867e8310d">massFalloffFactor</a> = 0.4f;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a808b819b10328b456fdbd88e87438937">   68</a></span>&#160;        [Tooltip(<span class="stringliteral">&quot;The layer assigned to all of the rigidbody parts.&quot;</span>)]</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a808b819b10328b456fdbd88e87438937">colliderLayer</a> = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a214de0a94ceca9f6e0818320052e62a3">   70</a></span>&#160;        [Range(0, 1)]</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a214de0a94ceca9f6e0818320052e62a3">mix</a> = 1;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">   73</a></span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">   74</a></span>&#160;        <a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html">ISkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">targetSkeletonComponent</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">   75</a></span>&#160;        <a class="code" href="class_spine_1_1_skeleton.html">Skeleton</a> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">   76</a></span>&#160;        Dictionary&lt;Bone, Transform&gt; <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a> = <span class="keyword">new</span> Dictionary&lt;Bone, Transform&gt;();</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">   77</a></span>&#160;        Transform <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">   78</a></span>&#160;        <span class="keyword">public</span> Rigidbody <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">RootRigidbody</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">   79</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_bone.html">Bone</a> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">StartingBone</a> { <span class="keyword">get</span>; <span class="keyword">private</span> <span class="keyword">set</span>; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7bdea862650e549b0dddfd5ceb7c04aa">   80</a></span>&#160;        Vector3 <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">rootOffset</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">   81</a></span>&#160;        <span class="keyword">public</span> Vector3 <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7bdea862650e549b0dddfd5ceb7c04aa">RootOffset</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> this.<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">rootOffset</a>; } }</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aa1d5b99b9e57c26c31d913f1068e125e">   82</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">isActive</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aa1d5b99b9e57c26c31d913f1068e125e">IsActive</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> this.<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">isActive</a>; } }</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9ab3db3b00076c0cc9ae5b90073acf6a">   84</a></span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        IEnumerator <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9ab3db3b00076c0cc9ae5b90073acf6a">Start</a> () {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">parentSpaceHelper</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">parentSpaceHelper</a> = (<span class="keyword">new</span> GameObject(<span class="stringliteral">&quot;Parent Space Helper&quot;</span>)).transform;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">parentSpaceHelper</a>.hideFlags = HideFlags.HideInHierarchy;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">targetSkeletonComponent</a> = GetComponent&lt;SkeletonRenderer&gt;() as <a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html">ISkeletonAnimation</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">targetSkeletonComponent</a> == <span class="keyword">null</span>) Debug.LogError(<span class="stringliteral">&quot;Attached Spine component does not implement ISkeletonAnimation. This script is not compatible.&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a> = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">targetSkeletonComponent</a>.<a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html#a3cdb4646e198792398d8ed3190cc55a7">Skeleton</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac950e00c60a99cd494c49cbf7b05f2b2">applyOnStart</a>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e7039294f3f21c6974e1889eeea4469">Apply</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a4a8cc6fc7d49feecc2afde65461dde8a">  101</a></span>&#160;<span class="preprocessor">        #region API</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">public</span> Rigidbody[] <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a4a8cc6fc7d49feecc2afde65461dde8a">RigidbodyArray</a> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">get</span> {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">isActive</a>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">new</span> Rigidbody[0];</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                var rigidBodies = <span class="keyword">new</span> Rigidbody[<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a>.Count];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordtype">int</span> i = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">foreach</span> (Transform t <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a>.Values) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                    rigidBodies[i] = t.GetComponent&lt;Rigidbody&gt;();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    i++;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">return</span> rigidBodies;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a99ae1760a45cfc5184c3c4ff5b059327">  117</a></span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">public</span> Vector3 <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a99ae1760a45cfc5184c3c4ff5b059327">EstimatedSkeletonPosition</a> {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">RootRigidbody</a>.position - <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">rootOffset</a>; }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e7039294f3f21c6974e1889eeea4469">Apply</a> () {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">isActive</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a214de0a94ceca9f6e0818320052e62a3">mix</a> = 1;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">StartingBone</a> = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666">FindBone</a>(<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6a8e2fde47e71df49d8e1f8b9aae04c3">startingBoneName</a>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad3bed4c90f58d1254b3a5a6fc8e47b75">RecursivelyCreateBoneProxies</a>(<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">StartingBone</a>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">RootRigidbody</a> = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a>[<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">StartingBone</a>].GetComponent&lt;Rigidbody&gt;();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">RootRigidbody</a>.isKinematic = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7a112e88e4b702fa4aeb433390b6d326">pinStartBone</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">RootRigidbody</a>.mass = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a801c91f6057b191b86b4bb9d69db9670">rootMass</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            var boneColliders = <span class="keyword">new</span> List&lt;Collider&gt;();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">foreach</span> (var pair <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a>) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                var b = pair.Key;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                var t = pair.Value;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                Transform parentTransform;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                boneColliders.Add(t.GetComponent&lt;Collider&gt;());</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">if</span> (b == <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">StartingBone</a>) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a> = <span class="keyword">new</span> GameObject(<span class="stringliteral">&quot;RagdollRoot&quot;</span>).transform;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>.SetParent(transform, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    <span class="keywordflow">if</span> (b == <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#aa5f94e0868346eb600d46d28a23151de">RootBone</a>) { <span class="comment">// RagdollRoot is skeleton root.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>.localPosition = <span class="keyword">new</span> Vector3(b.WorldX, b.WorldY, 0);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>.localRotation = Quaternion.Euler(0, 0, <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e59e3648c0b9e93c8b1fe9fed85a584">GetPropagatedRotation</a>(b));</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>.localPosition = <span class="keyword">new</span> Vector3(b.Parent.WorldX, b.Parent.WorldY, 0);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>.localRotation = Quaternion.Euler(0, 0, <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e59e3648c0b9e93c8b1fe9fed85a584">GetPropagatedRotation</a>(b.Parent));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    parentTransform = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">ragdollRoot</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">rootOffset</a> = t.position - transform.position;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                    parentTransform = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">boneTable</a>[b.Parent];</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="comment">// Add joint and attach to parent.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                var rbParent = parentTransform.GetComponent&lt;Rigidbody&gt;();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                <span class="keywordflow">if</span> (rbParent != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                    var joint = t.gameObject.AddComponent&lt;HingeJoint&gt;();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    joint.connectedBody = rbParent;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                    Vector3 localPos = parentTransform.InverseTransformPoint(t.position);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                    localPos.x *= 1;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                    joint.connectedAnchor = localPos;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                    joint.axis = Vector3.forward;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    joint.GetComponent&lt;Rigidbody&gt;().mass = joint.connectedBody.mass * <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aec227c96249601d912e0580867e8310d">massFalloffFactor</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    joint.limits = <span class="keyword">new</span> JointLimits {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                        min = -<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6ad8b4b05b81df396c687a49653821ac">rotationLimit</a>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                        max = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6ad8b4b05b81df396c687a49653821ac">rotationLimit</a>,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    };</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    joint.useLimits = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    joint.enableCollision = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a813d94c8aa2358e000e860e90c1de03c">enableJointCollision</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="comment">// Ignore collisions among bones.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; boneColliders.Count; x++) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; boneColliders.Count; y++) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">if</span> (x == y) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    Physics.IgnoreCollision(boneColliders[x], boneColliders[y]);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                }</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">// Destroy existing override-mode SkeletonUtilityBones.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            var utilityBones = GetComponentsInChildren&lt;SkeletonUtilityBone&gt;();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span> (utilityBones.Length &gt; 0) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                var destroyedUtilityBoneNames = <span class="keyword">new</span> List&lt;string&gt;();</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="keywordflow">foreach</span> (var ub <span class="keywordflow">in</span> utilityBones) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    <span class="keywordflow">if</span> (ub.mode == SkeletonUtilityBone.Mode.Override) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        destroyedUtilityBoneNames.Add(ub.gameObject.name);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        Destroy(ub.gameObject);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                }</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                <span class="keywordflow">if</span> (destroyedUtilityBoneNames.Count &gt; 0) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    <span class="keywordtype">string</span> msg = <span class="stringliteral">&quot;Destroyed Utility Bones: &quot;</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; destroyedUtilityBoneNames.Count; i++) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                        msg += destroyedUtilityBoneNames[i];</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        <span class="keywordflow">if</span> (i != destroyedUtilityBoneNames.Count - 1) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                            msg += <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    Debug.LogWarning(msg);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <span class="comment">// Disable skeleton constraints.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac4a86fa9aafef118988de0e498f16a31">disableIK</a>) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                var ikConstraints = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#a9fc9acb3f7d51836ebc40388758e13c6">IkConstraints</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0, n = ikConstraints.Count; i &lt; n; i++)</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    ikConstraints.Items[i].mix = 0;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a06ff682edc764d27566b7f7ea4df02de">disableOtherConstraints</a>) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                var transformConstraints = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>.transformConstraints;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0, n = transformConstraints.Count; i &lt; n; i++) {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    transformConstraints.Items[i].rotateMix = 0;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    transformConstraints.Items[i].scaleMix = 0;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                    transformConstraints.Items[i].shearMix = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    transformConstraints.Items[i].translateMix = 0;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                var pathConstraints = <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">skeleton</a>.pathConstraints;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0, n = pathConstraints.Count; i &lt; n; i++) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    pathConstraints.Items[i].rotateMix = 0;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                    pathConstraints.Items[i].translateMix = 0;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">targetSkeletonComponent</a>.<a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html#ae1c662ef2143a2f3d3529f1f7b6f66d6">UpdateWorld</a> += <a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af000cb024df9daaccb1ac0f2edb4a9b8">UpdateSpineSkeleton</a>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">public</span> Coroutine SmoothMix (<span class="keywordtype">float</span> target, <span class="keywordtype">float</span> duration) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keywordflow">return</span> StartCoroutine(SmoothMixCoroutine(target, duration));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ae821d405584a82a0d898d6a5d372ed6d">  235</a></span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        IEnumerator SmoothMixCoroutine (<span class="keywordtype">float</span> target, <span class="keywordtype">float</span> duration) {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordtype">float</span> startTime = Time.time;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordtype">float</span> startMix = mix;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">while</span> (mix &gt; 0) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                skeleton.<a class="code" href="class_spine_1_1_skeleton.html#acdcb41164c617375a198124234134312">SetBonesToSetupPose</a>();</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                mix = Mathf.SmoothStep(startMix, target, (Time.time - startTime) / duration);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> SetSkeletonPosition (Vector3 worldPosition) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keywordflow">if</span> (!isActive) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                Debug.LogWarning(<span class="stringliteral">&quot;Can&#39;t call SetSkeletonPosition while Ragdoll is not active!&quot;</span>);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            Vector3 offset = worldPosition - transform.position;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            transform.position = worldPosition;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordflow">foreach</span> (Transform t <span class="keywordflow">in</span> boneTable.Values)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                t.position -= offset;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            UpdateSpineSkeleton(<span class="keyword">null</span>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            skeleton.<a class="code" href="class_spine_1_1_skeleton.html#a108d4c6208e6c9a1ed4ca6bd50da1aa2">UpdateWorldTransform</a>();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> Remove () {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            isActive = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">foreach</span> (var t <span class="keywordflow">in</span> boneTable.Values)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                Destroy(t.gameObject);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            Destroy(ragdollRoot.gameObject);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            boneTable.Clear();</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            targetSkeletonComponent.<a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html#ae1c662ef2143a2f3d3529f1f7b6f66d6">UpdateWorld</a> -= UpdateSpineSkeleton;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
+<div class="line"><a name="l00273"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab61b65423ed5213fc2ef32ab779c51c0">  273</a></span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="keyword">public</span> Rigidbody GetRigidbody (<span class="keywordtype">string</span> boneName) {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            var bone = skeleton.<a class="code" href="class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666">FindBone</a>(boneName);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="keywordflow">return</span> (bone != <span class="keyword">null</span> &amp;&amp; boneTable.ContainsKey(bone)) ? boneTable[bone].GetComponent&lt;Rigidbody&gt;() : <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad3bed4c90f58d1254b3a5a6fc8e47b75">  279</a></span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordtype">void</span> RecursivelyCreateBoneProxies (<a class="code" href="class_spine_1_1_bone.html">Bone</a> b) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordtype">string</span> boneName = b.data.name;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            <span class="keywordflow">if</span> (stopBoneNames.Contains(boneName))</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            var boneGameObject = <span class="keyword">new</span> GameObject(boneName);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            boneGameObject.layer = colliderLayer;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            Transform t = boneGameObject.transform;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            boneTable.Add(b, t);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            t.parent = transform;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            t.localPosition = <span class="keyword">new</span> Vector3(b.<a class="code" href="class_spine_1_1_bone.html#ac8f234829fb48b94eb694537100b3570">WorldX</a>, b.<a class="code" href="class_spine_1_1_bone.html#af22e54e68b742c6378c87fa2f5ad7d6c">WorldY</a>, 0);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            t.localRotation = Quaternion.Euler(0, 0, b.<a class="code" href="class_spine_1_1_bone.html#a6f9dcc12c596710439b0545275401ccf">WorldRotationX</a> - b.<a class="code" href="class_spine_1_1_bone.html#a8dfe2a65502b5fa9652a3dadc9d5231f">shearX</a>);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            t.localScale = <span class="keyword">new</span> Vector3(b.<a class="code" href="class_spine_1_1_bone.html#a2d81978145b54c3531ef3ceeb70904d5">WorldScaleX</a>, b.<a class="code" href="class_spine_1_1_bone.html#ad86cf0fe043b18cd39791f38f411fb2a">WorldScaleY</a>, 1);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="comment">// MITCH: You left &quot;todo: proper ragdoll branching&quot;</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            var colliders = AttachBoundingBoxRagdollColliders(b);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="keywordflow">if</span> (colliders.Count == 0) {</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="keywordtype">float</span> length = b.<a class="code" href="class_spine_1_1_bone.html#a3c4ec0f40027d9604f8d46a68af8052c">Data</a>.<a class="code" href="class_spine_1_1_bone_data.html#a70e065fd258060e337536d086bd44e19">Length</a>;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                <span class="keywordflow">if</span> (length == 0) {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                    var ball = boneGameObject.AddComponent&lt;SphereCollider&gt;();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                    ball.radius = thickness * 0.5f;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                } <span class="keywordflow">else</span> {                    </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                    var box = boneGameObject.AddComponent&lt;BoxCollider&gt;();</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    box.size = <span class="keyword">new</span> Vector3(length, thickness, thickness);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                    box.center = <span class="keyword">new</span> Vector3(length * 0.5f, 0);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            var rb = boneGameObject.AddComponent&lt;Rigidbody&gt;();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            rb.constraints = RigidbodyConstraints.FreezePositionZ;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_spine_1_1_bone.html">Bone</a> child <span class="keywordflow">in</span> b.<a class="code" href="class_spine_1_1_bone.html#a1b8a66d5894a29a97b2073226c38ccd5">Children</a>)</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                RecursivelyCreateBoneProxies(child);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af000cb024df9daaccb1ac0f2edb4a9b8">  314</a></span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="keywordtype">void</span> UpdateSpineSkeleton (<a class="code" href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html">ISkeletonAnimation</a> skeletonRenderer) {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordtype">bool</span> flipX = skeleton.flipX;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordtype">bool</span> flipY = skeleton.<a class="code" href="class_spine_1_1_skeleton.html#a822b9b8fcd7317f2bcce7aa217d989c7">flipY</a>;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keywordtype">bool</span> flipXOR = flipX ^ flipY;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            <span class="keywordtype">bool</span> flipOR = flipX || flipY;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="keywordflow">foreach</span> (var pair <span class="keywordflow">in</span> boneTable) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                var b = pair.Key;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                var t = pair.Value;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordtype">bool</span> isStartingBone = b == StartingBone;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                Transform parentTransform = isStartingBone ? ragdollRoot : boneTable[b.Parent];</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                Vector3 parentTransformWorldPosition = parentTransform.position;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                Quaternion parentTransformWorldRotation = parentTransform.rotation;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                parentSpaceHelper.position = parentTransformWorldPosition;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                parentSpaceHelper.rotation = parentTransformWorldRotation;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                parentSpaceHelper.localScale = parentTransform.localScale;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                Vector3 boneWorldPosition = t.position;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                Vector3 right = parentSpaceHelper.InverseTransformDirection(t.right);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                Vector3 boneLocalPosition = parentSpaceHelper.InverseTransformPoint(boneWorldPosition);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <span class="keywordtype">float</span> boneLocalRotation = Mathf.Atan2(right.y, right.x) * Mathf.Rad2Deg;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                <span class="keywordflow">if</span> (flipOR) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                    <span class="keywordflow">if</span> (isStartingBone) {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                        <span class="keywordflow">if</span> (flipX) boneLocalPosition.x *= -1f;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        <span class="keywordflow">if</span> (flipY) boneLocalPosition.y *= -1f;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        boneLocalRotation = boneLocalRotation * (flipXOR ? -1f : 1f);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        <span class="keywordflow">if</span> (flipX) boneLocalRotation += 180;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        <span class="keywordflow">if</span> (flipXOR) {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                            boneLocalRotation *= -1f;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                            boneLocalPosition.y *= -1f; <span class="comment">// wtf??</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                        }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                    }</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                b.x = Mathf.Lerp(b.x, boneLocalPosition.x, mix);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                b.y = Mathf.Lerp(b.y, boneLocalPosition.y, mix);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                b.rotation = Mathf.Lerp(b.rotation, boneLocalRotation, mix);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                <span class="comment">//b.AppliedRotation = Mathf.Lerp(b.AppliedRotation, boneLocalRotation, mix);</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            }</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aa861aacbef345540e389de58ca22685c">  360</a></span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        List&lt;Collider&gt; AttachBoundingBoxRagdollColliders (<a class="code" href="class_spine_1_1_bone.html">Bone</a> b) {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">string</span> AttachmentNameMarker = <span class="stringliteral">&quot;ragdoll&quot;</span>;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            var colliders = <span class="keyword">new</span> List&lt;Collider&gt;();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            Transform t = boneTable[b];</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            GameObject go = t.gameObject;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            var skin = skeleton.<a class="code" href="class_spine_1_1_skeleton.html#a4e21d4e0b6aa6dd23ae81cc6dfabfd8e">Skin</a> ?? skeleton.<a class="code" href="class_spine_1_1_skeleton.html#aa7ca532fb2a76b9998bb44b8066e99fc">Data</a>.<a class="code" href="class_spine_1_1_skeleton_data.html#a0f9f1afae68d6dd031d776d50b5b4e8f">DefaultSkin</a>;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            var attachments = <span class="keyword">new</span> List&lt;Attachment&gt;();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordflow">foreach</span> (<a class="code" href="class_spine_1_1_slot.html">Slot</a> s <span class="keywordflow">in</span> skeleton.<a class="code" href="class_spine_1_1_skeleton.html#af72992c14e5cab05511330483a21e902">Slots</a>) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                <span class="keywordflow">if</span> (s.<a class="code" href="class_spine_1_1_slot.html#a31ea34a42ecc5cc6791856d7937a70a3">Bone</a> == b) {</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                    skin.FindAttachmentsForSlot(skeleton.<a class="code" href="class_spine_1_1_skeleton.html#af72992c14e5cab05511330483a21e902">Slots</a>.IndexOf(s), attachments);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                    <span class="keywordflow">foreach</span> (var a <span class="keywordflow">in</span> attachments) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                        var bbAttachment = a as <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                        <span class="keywordflow">if</span> (bbAttachment != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                            <span class="keywordflow">if</span> (!a.Name.ToLower().Contains(AttachmentNameMarker))</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                            var bbCollider = go.AddComponent&lt;BoxCollider&gt;();</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                            var bounds = <a class="code" href="class_spine_1_1_unity_1_1_skeleton_utility.html">SkeletonUtility</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_utility.html#aed27598167513f9671caf80a7feb92d9">GetBoundingBoxBounds</a>(bbAttachment, thickness);</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                            bbCollider.center = bounds.center;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                            bbCollider.size = bounds.size;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                            colliders.Add(bbCollider);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                        }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                    }</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;            <span class="keywordflow">return</span> colliders;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        }</div>
+<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e59e3648c0b9e93c8b1fe9fed85a584">  391</a></span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> GetPropagatedRotation (<a class="code" href="class_spine_1_1_bone.html">Bone</a> b) {</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            <a class="code" href="class_spine_1_1_bone.html">Bone</a> parent = b.<a class="code" href="class_spine_1_1_bone.html#aabeafbc6e34199fa8660adef6461c7c0">Parent</a>;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordtype">float</span> a = b.<a class="code" href="class_spine_1_1_bone.html#a6a3cc7c4448f3859b6bfc6f0157c3a6f">AppliedRotation</a>;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;            <span class="keywordflow">while</span> (parent != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                a += parent.<a class="code" href="class_spine_1_1_bone.html#a6a3cc7c4448f3859b6bfc6f0157c3a6f">AppliedRotation</a>;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;                parent = parent.parent;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;            }</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        }</div>
+<div class="line"><a name="l00401"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_1_1_layer_field_attribute.html">  401</a></span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_1_1_layer_field_attribute.html">LayerFieldAttribute</a> : PropertyAttribute {}</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a6ad8b4b05b81df396c687a49653821ac"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6ad8b4b05b81df396c687a49653821ac">Spine.Unity.Modules.SkeletonRagdoll.rotationLimit</a></div><div class="ttdeci">float rotationLimit</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00062">SkeletonRagdoll.cs:62</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a7bdea862650e549b0dddfd5ceb7c04aa"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7bdea862650e549b0dddfd5ceb7c04aa">Spine.Unity.Modules.SkeletonRagdoll.RootOffset</a></div><div class="ttdeci">Vector3 RootOffset</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00080">SkeletonRagdoll.cs:80</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html"><div class="ttname"><a href="class_spine_1_1_skeleton.html">Spine.Skeleton</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00034">Skeleton.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ac950e00c60a99cd494c49cbf7b05f2b2"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac950e00c60a99cd494c49cbf7b05f2b2">Spine.Unity.Modules.SkeletonRagdoll.applyOnStart</a></div><div class="ttdeci">bool applyOnStart</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00049">SkeletonRagdoll.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_ac17fa59f8524f84672419a2e9c676666"><div class="ttname"><a href="class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666">Spine.Skeleton.FindBone</a></div><div class="ttdeci">Bone FindBone(string boneName)</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00341">Skeleton.cs:341</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_ad86cf0fe043b18cd39791f38f411fb2a"><div class="ttname"><a href="class_spine_1_1_bone.html#ad86cf0fe043b18cd39791f38f411fb2a">Spine.Bone.WorldScaleY</a></div><div class="ttdeci">float WorldScaleY</div><div class="ttdoc">Returns the magnitide (always positive) of the world scale Y.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00118">Bone.cs:118</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a2e7039294f3f21c6974e1889eeea4469"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e7039294f3f21c6974e1889eeea4469">Spine.Unity.Modules.SkeletonRagdoll.Apply</a></div><div class="ttdeci">void Apply()</div><div class="ttdoc">Instantiates the ragdoll simulation and applies its transforms to the skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00122">SkeletonRagdoll.cs:122</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a8dfe2a65502b5fa9652a3dadc9d5231f"><div class="ttname"><a href="class_spine_1_1_bone.html#a8dfe2a65502b5fa9652a3dadc9d5231f">Spine.Bone.shearX</a></div><div class="ttdeci">float shearX</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00048">Bone.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ac78eee156a1d8eb267bdde247b9c8ec1"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac78eee156a1d8eb267bdde247b9c8ec1">Spine.Unity.Modules.SkeletonRagdoll.boneTable</a></div><div class="ttdeci">Dictionary&lt; Bone, Transform &gt; boneTable</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00075">SkeletonRagdoll.cs:75</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a6a8e2fde47e71df49d8e1f8b9aae04c3"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a6a8e2fde47e71df49d8e1f8b9aae04c3">Spine.Unity.Modules.SkeletonRagdoll.startingBoneName</a></div><div class="ttdeci">string startingBoneName</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00044">SkeletonRagdoll.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a2e59e3648c0b9e93c8b1fe9fed85a584"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a2e59e3648c0b9e93c8b1fe9fed85a584">Spine.Unity.Modules.SkeletonRagdoll.GetPropagatedRotation</a></div><div class="ttdeci">static float GetPropagatedRotation(Bone b)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00391">SkeletonRagdoll.cs:391</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a63b9ad4ee0fb5fd64429580b40f5b65f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a63b9ad4ee0fb5fd64429580b40f5b65f">Spine.Unity.Modules.SkeletonRagdoll.thickness</a></div><div class="ttdeci">float thickness</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00060">SkeletonRagdoll.cs:60</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html"><div class="ttname"><a href="class_spine_1_1_bone.html">Spine.Bone</a></div><div class="ttdoc">Stores a bone's current pose.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00041">Bone.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_aabeafbc6e34199fa8660adef6461c7c0"><div class="ttname"><a href="class_spine_1_1_bone.html#aabeafbc6e34199fa8660adef6461c7c0">Spine.Bone.Parent</a></div><div class="ttdeci">Bone Parent</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00063">Bone.cs:63</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_unity_1_1_i_skeleton_animation_html_a3cdb4646e198792398d8ed3190cc55a7"><div class="ttname"><a href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html#a3cdb4646e198792398d8ed3190cc55a7">Spine.Unity.ISkeletonAnimation.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_i_skeleton_animation_8cs_source.html#l00067">ISkeletonAnimation.cs:67</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a0f5c1cac6e57e0003d8e85ce4ad4f0c5"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a0f5c1cac6e57e0003d8e85ce4ad4f0c5">Spine.Unity.Modules.SkeletonRagdoll.StartingBone</a></div><div class="ttdeci">Bone StartingBone</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00078">SkeletonRagdoll.cs:78</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a822b9b8fcd7317f2bcce7aa217d989c7"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a822b9b8fcd7317f2bcce7aa217d989c7">Spine.Skeleton.flipY</a></div><div class="ttdeci">bool flipY</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00047">Skeleton.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a813d94c8aa2358e000e860e90c1de03c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a813d94c8aa2358e000e860e90c1de03c">Spine.Unity.Modules.SkeletonRagdoll.enableJointCollision</a></div><div class="ttdeci">bool enableJointCollision</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00057">SkeletonRagdoll.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a6f9dcc12c596710439b0545275401ccf"><div class="ttname"><a href="class_spine_1_1_bone.html#a6f9dcc12c596710439b0545275401ccf">Spine.Bone.WorldRotationX</a></div><div class="ttdeci">float WorldRotationX</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00112">Bone.cs:112</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a4a8cc6fc7d49feecc2afde65461dde8a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a4a8cc6fc7d49feecc2afde65461dde8a">Spine.Unity.Modules.SkeletonRagdoll.RigidbodyArray</a></div><div class="ttdeci">Rigidbody[] RigidbodyArray</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00101">SkeletonRagdoll.cs:101</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a214de0a94ceca9f6e0818320052e62a3"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a214de0a94ceca9f6e0818320052e62a3">Spine.Unity.Modules.SkeletonRagdoll.mix</a></div><div class="ttdeci">float mix</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00070">SkeletonRagdoll.cs:70</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_ac8f234829fb48b94eb694537100b3570"><div class="ttname"><a href="class_spine_1_1_bone.html#ac8f234829fb48b94eb694537100b3570">Spine.Bone.WorldX</a></div><div class="ttdeci">float WorldX</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00110">Bone.cs:110</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_aec227c96249601d912e0580867e8310d"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aec227c96249601d912e0580867e8310d">Spine.Unity.Modules.SkeletonRagdoll.massFalloffFactor</a></div><div class="ttdeci">float massFalloffFactor</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00066">SkeletonRagdoll.cs:66</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a7a112e88e4b702fa4aeb433390b6d326"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a7a112e88e4b702fa4aeb433390b6d326">Spine.Unity.Modules.SkeletonRagdoll.pinStartBone</a></div><div class="ttdeci">bool pinStartBone</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00055">SkeletonRagdoll.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a808b819b10328b456fdbd88e87438937"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a808b819b10328b456fdbd88e87438937">Spine.Unity.Modules.SkeletonRagdoll.colliderLayer</a></div><div class="ttdeci">int colliderLayer</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00068">SkeletonRagdoll.cs:68</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a6a3cc7c4448f3859b6bfc6f0157c3a6f"><div class="ttname"><a href="class_spine_1_1_bone.html#a6a3cc7c4448f3859b6bfc6f0157c3a6f">Spine.Bone.AppliedRotation</a></div><div class="ttdeci">float AppliedRotation</div><div class="ttdoc">The rotation, as calculated by any constraints.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00085">Bone.cs:85</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_af000cb024df9daaccb1ac0f2edb4a9b8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af000cb024df9daaccb1ac0f2edb4a9b8">Spine.Unity.Modules.SkeletonRagdoll.UpdateSpineSkeleton</a></div><div class="ttdeci">void UpdateSpineSkeleton(ISkeletonAnimation skeletonRenderer)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00314">SkeletonRagdoll.cs:314</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ab2ce0e358ad5f322b1e5520374597a9f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ab2ce0e358ad5f322b1e5520374597a9f">Spine.Unity.Modules.SkeletonRagdoll.parentSpaceHelper</a></div><div class="ttdeci">static Transform parentSpaceHelper</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00039">SkeletonRagdoll.cs:39</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a9fc9acb3f7d51836ebc40388758e13c6"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a9fc9acb3f7d51836ebc40388758e13c6">Spine.Skeleton.IkConstraints</a></div><div class="ttdeci">ExposedList&lt; IkConstraint &gt; IkConstraints</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00055">Skeleton.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a22a4bbb47a6ad75852e6635a82f4ec71"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a22a4bbb47a6ad75852e6635a82f4ec71">Spine.Unity.Modules.SkeletonRagdoll.targetSkeletonComponent</a></div><div class="ttdeci">ISkeletonAnimation targetSkeletonComponent</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00073">SkeletonRagdoll.cs:73</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_aa5f94e0868346eb600d46d28a23151de"><div class="ttname"><a href="class_spine_1_1_skeleton.html#aa5f94e0868346eb600d46d28a23151de">Spine.Skeleton.RootBone</a></div><div class="ttdeci">Bone? RootBone</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00069">Skeleton.cs:69</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_afd0014c17f7dd036ef2d0f511509f861"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#afd0014c17f7dd036ef2d0f511509f861">Spine.Unity.Modules.SkeletonRagdoll.rootOffset</a></div><div class="ttdeci">Vector3 rootOffset</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00079">SkeletonRagdoll.cs:79</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_af72992c14e5cab05511330483a21e902"><div class="ttname"><a href="class_spine_1_1_skeleton.html#af72992c14e5cab05511330483a21e902">Spine.Skeleton.Slots</a></div><div class="ttdeci">ExposedList&lt; Slot &gt; Slots</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00053">Skeleton.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html">Spine.Unity.SkeletonRenderer</a></div><div class="ttdoc">Renders a skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00040">SkeletonRenderer.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a9a3187aaccfec5789312f7947caa64cd"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9a3187aaccfec5789312f7947caa64cd">Spine.Unity.Modules.SkeletonRagdoll.skeleton</a></div><div class="ttdeci">Skeleton skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00074">SkeletonRagdoll.cs:74</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_data_html_a0f9f1afae68d6dd031d776d50b5b4e8f"><div class="ttname"><a href="class_spine_1_1_skeleton_data.html#a0f9f1afae68d6dd031d776d50b5b4e8f">Spine.SkeletonData.DefaultSkin</a></div><div class="ttdeci">Skin DefaultSkin</div><div class="ttdoc">The skeleton's default skin. By default this skin contains all attachments that were not in a skin in...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_data_8cs_source.html#l00068">SkeletonData.cs:68</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a9ab3db3b00076c0cc9ae5b90073acf6a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9ab3db3b00076c0cc9ae5b90073acf6a">Spine.Unity.Modules.SkeletonRagdoll.Start</a></div><div class="ttdeci">IEnumerator Start()</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00084">SkeletonRagdoll.cs:84</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_1_1_layer_field_attribute_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_1_1_layer_field_attribute.html">Spine.Unity.Modules.SkeletonRagdoll.LayerFieldAttribute</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00401">SkeletonRagdoll.cs:401</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_utility_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_utility.html">Spine.Unity.SkeletonUtility</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_utility_8cs_source.html#l00039">SkeletonUtility.cs:39</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a06ff682edc764d27566b7f7ea4df02de"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a06ff682edc764d27566b7f7ea4df02de">Spine.Unity.Modules.SkeletonRagdoll.disableOtherConstraints</a></div><div class="ttdeci">bool disableOtherConstraints</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00052">SkeletonRagdoll.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_utility_html_aed27598167513f9671caf80a7feb92d9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_utility.html#aed27598167513f9671caf80a7feb92d9">Spine.Unity.SkeletonUtility.GetBoundingBoxBounds</a></div><div class="ttdeci">static Bounds GetBoundingBoxBounds(BoundingBoxAttachment boundingBox, float depth=0)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_utility_8cs_source.html#l00100">SkeletonUtility.cs:100</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_data_html_a70e065fd258060e337536d086bd44e19"><div class="ttname"><a href="class_spine_1_1_bone_data.html#a70e065fd258060e337536d086bd44e19">Spine.BoneData.Length</a></div><div class="ttdeci">float Length</div><div class="ttdef"><b>Definition:</b> <a href="_bone_data_8cs_source.html#l00050">BoneData.cs:50</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html">Spine.Unity.Modules.SkeletonRagdoll</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00038">SkeletonRagdoll.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a108d4c6208e6c9a1ed4ca6bd50da1aa2"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a108d4c6208e6c9a1ed4ca6bd50da1aa2">Spine.Skeleton.UpdateWorldTransform</a></div><div class="ttdeci">void UpdateWorldTransform()</div><div class="ttdoc">Updates the world transform for each bone and applies constraints.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00270">Skeleton.cs:270</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_aecd078cdda76d4cc9998af5a59e86038"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aecd078cdda76d4cc9998af5a59e86038">Spine.Unity.Modules.SkeletonRagdoll.RootRigidbody</a></div><div class="ttdeci">Rigidbody RootRigidbody</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00077">SkeletonRagdoll.cs:77</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ad54624157849875469ab25d064cdb52b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad54624157849875469ab25d064cdb52b">Spine.Unity.Modules.SkeletonRagdoll.stopBoneNames</a></div><div class="ttdeci">List&lt; string &gt; stopBoneNames</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00046">SkeletonRagdoll.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a801c91f6057b191b86b4bb9d69db9670"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a801c91f6057b191b86b4bb9d69db9670">Spine.Unity.Modules.SkeletonRagdoll.rootMass</a></div><div class="ttdeci">float rootMass</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00063">SkeletonRagdoll.cs:63</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_aa1d5b99b9e57c26c31d913f1068e125e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#aa1d5b99b9e57c26c31d913f1068e125e">Spine.Unity.Modules.SkeletonRagdoll.IsActive</a></div><div class="ttdeci">bool IsActive</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00082">SkeletonRagdoll.cs:82</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e"><div class="ttname"><a href="class_spine_1_1_skeleton.html#a4e21d4e0b6aa6dd23ae81cc6dfabfd8e">Spine.Skeleton.Skin</a></div><div class="ttdeci">Skin Skin</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00058">Skeleton.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a1b8a66d5894a29a97b2073226c38ccd5"><div class="ttname"><a href="class_spine_1_1_bone.html#a1b8a66d5894a29a97b2073226c38ccd5">Spine.Bone.Children</a></div><div class="ttdeci">ExposedList&lt; Bone &gt; Children</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00064">Bone.cs:64</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_acdcb41164c617375a198124234134312"><div class="ttname"><a href="class_spine_1_1_skeleton.html#acdcb41164c617375a198124234134312">Spine.Skeleton.SetBonesToSetupPose</a></div><div class="ttdeci">void SetBonesToSetupPose()</div><div class="ttdoc">Sets the bones and constraints to their setup pose values.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00296">Skeleton.cs:296</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a31ea34a42ecc5cc6791856d7937a70a3"><div class="ttname"><a href="class_spine_1_1_slot.html#a31ea34a42ecc5cc6791856d7937a70a3">Spine.Slot.Bone</a></div><div class="ttdeci">Bone Bone</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00044">Slot.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a99ae1760a45cfc5184c3c4ff5b059327"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a99ae1760a45cfc5184c3c4ff5b059327">Spine.Unity.Modules.SkeletonRagdoll.EstimatedSkeletonPosition</a></div><div class="ttdeci">Vector3 EstimatedSkeletonPosition</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00117">SkeletonRagdoll.cs:117</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a8ddc34455c5cbc54ae323a6fd8936116"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a8ddc34455c5cbc54ae323a6fd8936116">Spine.Unity.Modules.SkeletonRagdoll.isActive</a></div><div class="ttdeci">bool isActive</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00081">SkeletonRagdoll.cs:81</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a3c4ec0f40027d9604f8d46a68af8052c"><div class="ttname"><a href="class_spine_1_1_bone.html#a3c4ec0f40027d9604f8d46a68af8052c">Spine.Bone.Data</a></div><div class="ttdeci">BoneData Data</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00061">Bone.cs:61</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_unity_1_1_i_skeleton_animation_html_ae1c662ef2143a2f3d3529f1f7b6f66d6"><div class="ttname"><a href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html#ae1c662ef2143a2f3d3529f1f7b6f66d6">Spine.Unity.ISkeletonAnimation.UpdateWorld</a></div><div class="ttdeci">UpdateBonesDelegate UpdateWorld</div><div class="ttdef"><b>Definition:</b> <a href="_i_skeleton_animation_8cs_source.html#l00063">ISkeletonAnimation.cs:63</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ac4a86fa9aafef118988de0e498f16a31"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ac4a86fa9aafef118988de0e498f16a31">Spine.Unity.Modules.SkeletonRagdoll.disableIK</a></div><div class="ttdeci">bool disableIK</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00051">SkeletonRagdoll.cs:51</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules.html">Spine.Unity.Modules</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_ad3bed4c90f58d1254b3a5a6fc8e47b75"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#ad3bed4c90f58d1254b3a5a6fc8e47b75">Spine.Unity.Modules.SkeletonRagdoll.RecursivelyCreateBoneProxies</a></div><div class="ttdeci">void RecursivelyCreateBoneProxies(Bone b)</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00279">SkeletonRagdoll.cs:279</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_a2d81978145b54c3531ef3ceeb70904d5"><div class="ttname"><a href="class_spine_1_1_bone.html#a2d81978145b54c3531ef3ceeb70904d5">Spine.Bone.WorldScaleX</a></div><div class="ttdeci">float WorldScaleX</div><div class="ttdoc">Returns the magnitide (always positive) of the world scale X.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00116">Bone.cs:116</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_bone_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_bone.html">Spine.Unity.SpineBone</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00254">SpineAttributes.cs:254</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_a54b944305569d9cd660ec85073a3a2b8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a54b944305569d9cd660ec85073a3a2b8">Spine.Unity.Modules.SkeletonRagdoll.useGravity</a></div><div class="ttdeci">bool useGravity</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00058">SkeletonRagdoll.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_aa7ca532fb2a76b9998bb44b8066e99fc"><div class="ttname"><a href="class_spine_1_1_skeleton.html#aa7ca532fb2a76b9998bb44b8066e99fc">Spine.Skeleton.Data</a></div><div class="ttdeci">SkeletonData Data</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00050">Skeleton.cs:50</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_unity_1_1_i_skeleton_animation_html"><div class="ttname"><a href="interface_spine_1_1_unity_1_1_i_skeleton_animation.html">Spine.Unity.ISkeletonAnimation</a></div><div class="ttdoc">A Spine-Unity Component that animates a Skeleton but not necessarily with a Spine....</div><div class="ttdef"><b>Definition:</b> <a href="_i_skeleton_animation_8cs_source.html#l00061">ISkeletonAnimation.cs:61</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html_af22e54e68b742c6378c87fa2f5ad7d6c"><div class="ttname"><a href="class_spine_1_1_bone.html#af22e54e68b742c6378c87fa2f5ad7d6c">Spine.Bone.WorldY</a></div><div class="ttdeci">float WorldY</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00111">Bone.cs:111</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bounding_box_attachment_html"><div class="ttname"><a href="class_spine_1_1_bounding_box_attachment.html">Spine.BoundingBoxAttachment</a></div><div class="ttdoc">Attachment that has a polygon for bounds checking.</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_attachment_8cs_source.html#l00034">BoundingBoxAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_html_af31990e31b879caf2c0a3ad4ef2af8ec"><div class="ttname"><a href="class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#af31990e31b879caf2c0a3ad4ef2af8ec">Spine.Unity.Modules.SkeletonRagdoll.ragdollRoot</a></div><div class="ttdeci">Transform ragdollRoot</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_ragdoll_8cs_source.html#l00076">SkeletonRagdoll.cs:76</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_951c4f09499d9c65937740bb62fad379.html">spine-unity</a></li><li class="navelem"><a class="el" href="dir_5f09bf8e311d6e562830c0fafc451e5f.html">Modules</a></li><li class="navelem"><a class="el" href="dir_e5277a5c295ffcc1eff288243e769ba7.html">Ragdoll</a></li><li class="navelem"><a class="el" href="_skeleton_ragdoll_8cs.html">SkeletonRagdoll.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

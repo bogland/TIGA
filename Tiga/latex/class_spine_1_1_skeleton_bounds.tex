@@ -1,0 +1,593 @@
+\hypertarget{class_spine_1_1_skeleton_bounds}{}\doxysection{Spine.\+Skeleton\+Bounds 클래스 참조}
+\label{class_spine_1_1_skeleton_bounds}\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+
+
+Collects each \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} that is visible and computes the world vertices for its polygon. The polygon vertices are provided along with convenience methods for doing hit detection.  
+
+
+
+
+Spine.\+Skeleton\+Bounds에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a72a91a5f9e330a20bb58600d699e8f86}{Skeleton\+Bounds}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acd919255a615f17879835bcc1b218bd4}{Update}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, bool update\+Aabb)
+\begin{DoxyCompactList}\small\item\em Clears any previous polygons, finds all visible bounding box attachments, and computes the world vertices for each bounding box\textquotesingle{}s polygon. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_abec83b44391262fa8c3379755088e497}{Aabb\+Contains\+Point}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Returns true if the axis aligned bounding box contains the point. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad16bbda004b392f723c68d8d53be85a3}{Aabb\+Intersects\+Segment}} (float x1, float y1, float x2, float y2)
+\begin{DoxyCompactList}\small\item\em Returns true if the axis aligned bounding box intersects the line segment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ae7b42a01f199285bd65961d77838cde9}{Aabb\+Intersects\+Skeleton}} (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds}{Skeleton\+Bounds}} bounds)
+\begin{DoxyCompactList}\small\item\em Returns true if the axis aligned bounding box intersects the axis aligned bounding box of the specified bounds. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_aa76b1181551163ecee40e28e0af5893b}{Contains\+Point}} (\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} polygon, float x, float y)
+\begin{DoxyCompactList}\small\item\em Returns true if the polygon contains the point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac29c76479a3cb6c9b02c1c92f70b67dd}{Contains\+Point}} (float x, float y)
+\begin{DoxyCompactList}\small\item\em Returns the first bounding box attachment that contains the point, or null. When doing many checks, it is usually more efficient to only call this method if \mbox{\hyperlink{}{aabb\+Contains\+Point(float, float)}} returns true. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad2af777c0038837f5a8b49939c096198}{Intersects\+Segment}} (float x1, float y1, float x2, float y2)
+\begin{DoxyCompactList}\small\item\em Returns the first bounding box attachment that contains the line segment, or null. When doing many checks, it is usually more efficient to only call this method if \mbox{\hyperlink{}{aabb\+Intersects\+Segment(float, float, float, float)}} returns true. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ae6fa812c792b9dbac92854113a238731}{Intersects\+Segment}} (\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} polygon, float x1, float y1, float x2, float y2)
+\begin{DoxyCompactList}\small\item\em Returns true if the polygon contains the line segment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a9363ab84c726b888c791921bc0bfdb66}{Get\+Polygon}} (\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} attachment)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{Bounding\+Boxes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a33c5f7041bdb7371fcfb0b2c1893000e}{MinX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a3950547a9548e604a80786e90634a754}{MinY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad47f19660666838cca87d30929130078}{MaxX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_aa2d410c22cc63e15c2efd77bad745064}{MaxY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a0d0dc7aeb4eb483b2ebb327f253c677b}{Width}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ab98dc4e3771dbf390db69b73172b1d7e}{Height}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_aa315101202026a85d4aedf21fe88a8fe}{Aabb\+Compute}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}{polygon\+Pool}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}$>$()
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Collects each \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} that is visible and computes the world vertices for its polygon. The polygon vertices are provided along with convenience methods for doing hit detection. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a72a91a5f9e330a20bb58600d699e8f86}\label{class_spine_1_1_skeleton_bounds_a72a91a5f9e330a20bb58600d699e8f86}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!SkeletonBounds@{SkeletonBounds}}
+\index{SkeletonBounds@{SkeletonBounds}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{SkeletonBounds()}{SkeletonBounds()}}
+{\footnotesize\ttfamily Spine.\+Skeleton\+Bounds.\+Skeleton\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                  \{}
+\DoxyCodeLine{53             \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{BoundingBoxes}} = \textcolor{keyword}{new} ExposedList<BoundingBoxAttachment>();}
+\DoxyCodeLine{54             \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}} = \textcolor{keyword}{new} ExposedList<Polygon>();}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_aa315101202026a85d4aedf21fe88a8fe}\label{class_spine_1_1_skeleton_bounds_aa315101202026a85d4aedf21fe88a8fe}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!AabbCompute@{AabbCompute}}
+\index{AabbCompute@{AabbCompute}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{AabbCompute()}{AabbCompute()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton\+Bounds.\+Aabb\+Compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 106 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107                                     \{}
+\DoxyCodeLine{108             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} = \textcolor{keywordtype}{int}.MaxValue, \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = \textcolor{keywordtype}{int}.MaxValue, \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = \textcolor{keywordtype}{int}.MinValue, \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = \textcolor{keywordtype}{int}.MinValue;}
+\DoxyCodeLine{109             ExposedList<Polygon> polygons = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}};}
+\DoxyCodeLine{110             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = polygons.Count; i < n; i++) \{}
+\DoxyCodeLine{111                 Polygon polygon = polygons.Items[i];}
+\DoxyCodeLine{112                 \textcolor{keywordtype}{float}[] vertices = polygon.Vertices;}
+\DoxyCodeLine{113                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0, nn = polygon.Count; ii < nn; ii += 2) \{}
+\DoxyCodeLine{114                     \textcolor{keywordtype}{float} x = vertices[ii];}
+\DoxyCodeLine{115                     \textcolor{keywordtype}{float} y = vertices[ii + 1];}
+\DoxyCodeLine{116                     \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} = Math.Min(\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}}, x);}
+\DoxyCodeLine{117                     \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = Math.Min(\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}}, y);}
+\DoxyCodeLine{118                     \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = Math.Max(\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}, x);}
+\DoxyCodeLine{119                     \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = Math.Max(\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}, y);}
+\DoxyCodeLine{120                 \}}
+\DoxyCodeLine{121             \}}
+\DoxyCodeLine{122             this.minX = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}};}
+\DoxyCodeLine{123             this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}};}
+\DoxyCodeLine{124             this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}};}
+\DoxyCodeLine{125             this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_abec83b44391262fa8c3379755088e497}\label{class_spine_1_1_skeleton_bounds_abec83b44391262fa8c3379755088e497}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!AabbContainsPoint@{AabbContainsPoint}}
+\index{AabbContainsPoint@{AabbContainsPoint}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{AabbContainsPoint()}{AabbContainsPoint()}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton\+Bounds.\+Aabb\+Contains\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns true if the axis aligned bounding box contains the point. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 129 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{130                                                          \{}
+\DoxyCodeLine{131             \textcolor{keywordflow}{return} x >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} \&\& x <= maxX \&\& y >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} \&\& y <= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ad16bbda004b392f723c68d8d53be85a3}\label{class_spine_1_1_skeleton_bounds_ad16bbda004b392f723c68d8d53be85a3}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!AabbIntersectsSegment@{AabbIntersectsSegment}}
+\index{AabbIntersectsSegment@{AabbIntersectsSegment}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{AabbIntersectsSegment()}{AabbIntersectsSegment()}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton\+Bounds.\+Aabb\+Intersects\+Segment (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Returns true if the axis aligned bounding box intersects the line segment. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 134 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{135                                                                                    \{}
+\DoxyCodeLine{136             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} = this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}};}
+\DoxyCodeLine{137             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}};}
+\DoxyCodeLine{138             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}};}
+\DoxyCodeLine{139             \textcolor{keywordtype}{float} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = this.\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}};}
+\DoxyCodeLine{140             \textcolor{keywordflow}{if} ((x1 <= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} \&\& x2 <= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}}) || (y1 <= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} \&\& y2 <= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}}) || (x1 >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} \&\& x2 >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}) || (y1 >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} \&\& y2 >= \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}))}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{142             \textcolor{keywordtype}{float} m = (y2 -\/ y1) / (x2 -\/ x1);}
+\DoxyCodeLine{143             \textcolor{keywordtype}{float} y = m * (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} -\/ x1) + y1;}
+\DoxyCodeLine{144             \textcolor{keywordflow}{if} (y > \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} \&\& y < \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{145             y = m * (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} -\/ x1) + y1;}
+\DoxyCodeLine{146             \textcolor{keywordflow}{if} (y > \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} \&\& y < \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{147             \textcolor{keywordtype}{float} x = (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} -\/ y1) / m + x1;}
+\DoxyCodeLine{148             \textcolor{keywordflow}{if} (x > \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} \&\& x < \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{149             x = (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} -\/ y1) / m + x1;}
+\DoxyCodeLine{150             \textcolor{keywordflow}{if} (x > \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} \&\& x < \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{151             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ae7b42a01f199285bd65961d77838cde9}\label{class_spine_1_1_skeleton_bounds_ae7b42a01f199285bd65961d77838cde9}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!AabbIntersectsSkeleton@{AabbIntersectsSkeleton}}
+\index{AabbIntersectsSkeleton@{AabbIntersectsSkeleton}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{AabbIntersectsSkeleton()}{AabbIntersectsSkeleton()}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton\+Bounds.\+Aabb\+Intersects\+Skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_bounds}{Skeleton\+Bounds}}}]{bounds }\end{DoxyParamCaption})}
+
+
+
+Returns true if the axis aligned bounding box intersects the axis aligned bounding box of the specified bounds. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 154 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155                                                                    \{}
+\DoxyCodeLine{156             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} < bounds.maxX \&\& \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} > bounds.minX \&\& \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} < bounds.maxY \&\& \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} > bounds.minY;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ac29c76479a3cb6c9b02c1c92f70b67dd}\label{class_spine_1_1_skeleton_bounds_ac29c76479a3cb6c9b02c1c92f70b67dd}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!ContainsPoint@{ContainsPoint}}
+\index{ContainsPoint@{ContainsPoint}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{ContainsPoint()}{ContainsPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Skeleton\+Bounds.\+Contains\+Point (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns the first bounding box attachment that contains the point, or null. When doing many checks, it is usually more efficient to only call this method if \mbox{\hyperlink{}{aabb\+Contains\+Point(float, float)}} returns true. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 179 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                                       \{}
+\DoxyCodeLine{181             ExposedList<Polygon> polygons = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}};}
+\DoxyCodeLine{182             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = polygons.Count; i < n; i++)}
+\DoxyCodeLine{183                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_aa76b1181551163ecee40e28e0af5893b}{ContainsPoint}}(polygons.Items[i], x, y)) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{BoundingBoxes}}.Items[i];}
+\DoxyCodeLine{184             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_aa76b1181551163ecee40e28e0af5893b}\label{class_spine_1_1_skeleton_bounds_aa76b1181551163ecee40e28e0af5893b}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!ContainsPoint@{ContainsPoint}}
+\index{ContainsPoint@{ContainsPoint}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{ContainsPoint()}{ContainsPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton\+Bounds.\+Contains\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}}]{polygon,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+
+
+Returns true if the polygon contains the point. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 159 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160                                                                       \{}
+\DoxyCodeLine{161             \textcolor{keywordtype}{float}[] vertices = polygon.Vertices;}
+\DoxyCodeLine{162             \textcolor{keywordtype}{int} nn = polygon.Count;}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164             \textcolor{keywordtype}{int} prevIndex = nn -\/ 2;}
+\DoxyCodeLine{165             \textcolor{keywordtype}{bool} inside = \textcolor{keyword}{false};}
+\DoxyCodeLine{166             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < nn; ii += 2) \{}
+\DoxyCodeLine{167                 \textcolor{keywordtype}{float} vertexY = vertices[ii + 1];}
+\DoxyCodeLine{168                 \textcolor{keywordtype}{float} prevY = vertices[prevIndex + 1];}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{if} ((vertexY < y \&\& prevY >= y) || (prevY < y \&\& vertexY >= y)) \{}
+\DoxyCodeLine{170                     \textcolor{keywordtype}{float} vertexX = vertices[ii];}
+\DoxyCodeLine{171                     \textcolor{keywordflow}{if} (vertexX + (y -\/ vertexY) / (prevY -\/ vertexY) * (vertices[prevIndex] -\/ vertexX) < x) inside = !inside;}
+\DoxyCodeLine{172                 \}}
+\DoxyCodeLine{173                 prevIndex = ii;}
+\DoxyCodeLine{174             \}}
+\DoxyCodeLine{175             \textcolor{keywordflow}{return} inside;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a9363ab84c726b888c791921bc0bfdb66}\label{class_spine_1_1_skeleton_bounds_a9363ab84c726b888c791921bc0bfdb66}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!GetPolygon@{GetPolygon}}
+\index{GetPolygon@{GetPolygon}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{GetPolygon()}{GetPolygon()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}} Spine.\+Skeleton\+Bounds.\+Get\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{attachment }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 219 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{220                                                                      \{}
+\DoxyCodeLine{221             \textcolor{keywordtype}{int} index = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{BoundingBoxes}}.IndexOf(attachment);}
+\DoxyCodeLine{222             \textcolor{keywordflow}{return} index == -\/1 ? null : \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}}.Items[index];}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ad2af777c0038837f5a8b49939c096198}\label{class_spine_1_1_skeleton_bounds_ad2af777c0038837f5a8b49939c096198}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!IntersectsSegment@{IntersectsSegment}}
+\index{IntersectsSegment@{IntersectsSegment}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{IntersectsSegment()}{IntersectsSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Skeleton\+Bounds.\+Intersects\+Segment (\begin{DoxyParamCaption}\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Returns the first bounding box attachment that contains the line segment, or null. When doing many checks, it is usually more efficient to only call this method if \mbox{\hyperlink{}{aabb\+Intersects\+Segment(float, float, float, float)}} returns true. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 188 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{189                                                                                                 \{}
+\DoxyCodeLine{190             ExposedList<Polygon> polygons = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}};}
+\DoxyCodeLine{191             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = polygons.Count; i < n; i++)}
+\DoxyCodeLine{192                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad2af777c0038837f5a8b49939c096198}{IntersectsSegment}}(polygons.Items[i], x1, y1, x2, y2)) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{BoundingBoxes}}.Items[i];}
+\DoxyCodeLine{193             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ae6fa812c792b9dbac92854113a238731}\label{class_spine_1_1_skeleton_bounds_ae6fa812c792b9dbac92854113a238731}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!IntersectsSegment@{IntersectsSegment}}
+\index{IntersectsSegment@{IntersectsSegment}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{IntersectsSegment()}{IntersectsSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton\+Bounds.\+Intersects\+Segment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}}]{polygon,  }\item[{float}]{x1,  }\item[{float}]{y1,  }\item[{float}]{x2,  }\item[{float}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Returns true if the polygon contains the line segment. 
+
+
+
+Skeleton\+Bounds.\+cs 파일의 196 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{197                                                                                                 \{}
+\DoxyCodeLine{198             \textcolor{keywordtype}{float}[] vertices = polygon.Vertices;}
+\DoxyCodeLine{199             \textcolor{keywordtype}{int} nn = polygon.Count;}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201             \textcolor{keywordtype}{float} width12 = x1 -\/ x2, height12 = y1 -\/ y2;}
+\DoxyCodeLine{202             \textcolor{keywordtype}{float} det1 = x1 * y2 -\/ y1 * x2;}
+\DoxyCodeLine{203             \textcolor{keywordtype}{float} x3 = vertices[nn -\/ 2], y3 = vertices[nn -\/ 1];}
+\DoxyCodeLine{204             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < nn; ii += 2) \{}
+\DoxyCodeLine{205                 \textcolor{keywordtype}{float} x4 = vertices[ii], y4 = vertices[ii + 1];}
+\DoxyCodeLine{206                 \textcolor{keywordtype}{float} det2 = x3 * y4 -\/ y3 * x4;}
+\DoxyCodeLine{207                 \textcolor{keywordtype}{float} width34 = x3 -\/ x4, height34 = y3 -\/ y4;}
+\DoxyCodeLine{208                 \textcolor{keywordtype}{float} det3 = width12 * height34 -\/ height12 * width34;}
+\DoxyCodeLine{209                 \textcolor{keywordtype}{float} x = (det1 * width34 -\/ width12 * det2) / det3;}
+\DoxyCodeLine{210                 \textcolor{keywordflow}{if} (((x >= x3 \&\& x <= x4) || (x >= x4 \&\& x <= x3)) \&\& ((x >= x1 \&\& x <= x2) || (x >= x2 \&\& x <= x1))) \{}
+\DoxyCodeLine{211                     \textcolor{keywordtype}{float} y = (det1 * height34 -\/ height12 * det2) / det3;}
+\DoxyCodeLine{212                     \textcolor{keywordflow}{if} (((y >= y3 \&\& y <= y4) || (y >= y4 \&\& y <= y3)) \&\& ((y >= y1 \&\& y <= y2) || (y >= y2 \&\& y <= y1))) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{213                 \}}
+\DoxyCodeLine{214                 x3 = x4;}
+\DoxyCodeLine{215                 y3 = y4;}
+\DoxyCodeLine{216             \}}
+\DoxyCodeLine{217             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_acd919255a615f17879835bcc1b218bd4}\label{class_spine_1_1_skeleton_bounds_acd919255a615f17879835bcc1b218bd4}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!Update@{Update}}
+\index{Update@{Update}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton\+Bounds.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{bool}]{update\+Aabb }\end{DoxyParamCaption})}
+
+
+
+Clears any previous polygons, finds all visible bounding box attachments, and computes the world vertices for each bounding box\textquotesingle{}s polygon. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em skeleton} & The skeleton.\\
+\hline
+{\em update\+Aabb} & If true, the axis aligned bounding box containing all the polygons is computed. If false, the \mbox{\hyperlink{class_spine_1_1_skeleton_bounds}{Skeleton\+Bounds}} A\+A\+BB methods will always return true. \\
+\hline
+\end{DoxyParams}
+
+
+Skeleton\+Bounds.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                                 \{}
+\DoxyCodeLine{66             ExposedList<BoundingBoxAttachment> boundingBoxes = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}{BoundingBoxes}};}
+\DoxyCodeLine{67             ExposedList<Polygon> polygons = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}{Polygons}};}
+\DoxyCodeLine{68             ExposedList<Slot> slots = skeleton.slots;}
+\DoxyCodeLine{69             \textcolor{keywordtype}{int} slotCount = slots.Count;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71             boundingBoxes.Clear();}
+\DoxyCodeLine{72             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = polygons.Count; i < n; i++)}
+\DoxyCodeLine{73                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}{polygonPool}}.Add(polygons.Items[i]);}
+\DoxyCodeLine{74             polygons.Clear();}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < slotCount; i++) \{}
+\DoxyCodeLine{77                 Slot slot = slots.Items[i];}
+\DoxyCodeLine{78                 BoundingBoxAttachment boundingBox = slot.attachment as BoundingBoxAttachment;}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{if} (boundingBox == \textcolor{keyword}{null}) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{80                 boundingBoxes.Add(boundingBox);}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82                 Polygon polygon = \textcolor{keyword}{null};}
+\DoxyCodeLine{83                 \textcolor{keywordtype}{int} poolCount = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}{polygonPool}}.Count;}
+\DoxyCodeLine{84                 \textcolor{keywordflow}{if} (poolCount > 0) \{}
+\DoxyCodeLine{85                     polygon = \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}{polygonPool}}.Items[poolCount -\/ 1];}
+\DoxyCodeLine{86                     \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}{polygonPool}}.RemoveAt(poolCount -\/ 1);}
+\DoxyCodeLine{87                 \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{88                     polygon = \textcolor{keyword}{new} Polygon();}
+\DoxyCodeLine{89                 polygons.Add(polygon);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91                 \textcolor{keywordtype}{int} count = boundingBox.worldVerticesLength;}
+\DoxyCodeLine{92                 polygon.Count = count;}
+\DoxyCodeLine{93                 \textcolor{keywordflow}{if} (polygon.Vertices.Length < count) polygon.Vertices = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[count];}
+\DoxyCodeLine{94                 boundingBox.ComputeWorldVertices(slot, polygon.Vertices);}
+\DoxyCodeLine{95             \}}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97             \textcolor{keywordflow}{if} (updateAabb) \{}
+\DoxyCodeLine{98                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_aa315101202026a85d4aedf21fe88a8fe}{AabbCompute}}();}
+\DoxyCodeLine{99             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{100                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} = \textcolor{keywordtype}{int}.MinValue;}
+\DoxyCodeLine{101                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = \textcolor{keywordtype}{int}.MinValue;}
+\DoxyCodeLine{102                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = \textcolor{keywordtype}{int}.MaxValue;}
+\DoxyCodeLine{103                 \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = \textcolor{keywordtype}{int}.MaxValue;}
+\DoxyCodeLine{104             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}\label{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!maxX@{maxX}}
+\index{maxX@{maxX}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{maxX}{maxX}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+maxX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}\label{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!maxY@{maxY}}
+\index{maxY@{maxY}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{maxY}{maxY}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+maxY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}\label{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!minX@{minX}}
+\index{minX@{minX}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{minX}{minX}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+minX\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}\label{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!minY@{minY}}
+\index{minY@{minY}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{minY}{minY}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+minY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}\label{class_spine_1_1_skeleton_bounds_ad7840c2f5552dde1270e69a8066a646c}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!polygonPool@{polygonPool}}
+\index{polygonPool@{polygonPool}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{polygonPool}{polygonPool}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}$>$ Spine.\+Skeleton\+Bounds.\+polygon\+Pool = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}\label{class_spine_1_1_skeleton_bounds_a841a55e838834c274f0ebcae189a77f9}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!BoundingBoxes@{BoundingBoxes}}
+\index{BoundingBoxes@{BoundingBoxes}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{BoundingBoxes}{BoundingBoxes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}$>$ Spine.\+Skeleton\+Bounds.\+Bounding\+Boxes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ab98dc4e3771dbf390db69b73172b1d7e}\label{class_spine_1_1_skeleton_bounds_ab98dc4e3771dbf390db69b73172b1d7e}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!Height@{Height}}
+\index{Height@{Height}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{Height}{Height}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+Height\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} -\/ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ad47f19660666838cca87d30929130078}\label{class_spine_1_1_skeleton_bounds_ad47f19660666838cca87d30929130078}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!MaxX@{MaxX}}
+\index{MaxX@{MaxX}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{MaxX}{MaxX}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+MaxX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_ace5e7b1c608d1ba2e47d9546ae8446ae}{minY}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_aa2d410c22cc63e15c2efd77bad745064}\label{class_spine_1_1_skeleton_bounds_aa2d410c22cc63e15c2efd77bad745064}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!MaxY@{MaxY}}
+\index{MaxY@{MaxY}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{MaxY}{MaxY}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+MaxY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a79d1f60a1d2c2a80c26a7ec95a66ef89}{maxX}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a33c5f7041bdb7371fcfb0b2c1893000e}\label{class_spine_1_1_skeleton_bounds_a33c5f7041bdb7371fcfb0b2c1893000e}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!MinX@{MinX}}
+\index{MinX@{MinX}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{MinX}{MinX}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+MinX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a3950547a9548e604a80786e90634a754}\label{class_spine_1_1_skeleton_bounds_a3950547a9548e604a80786e90634a754}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!MinY@{MinY}}
+\index{MinY@{MinY}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{MinY}{MinY}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+MinY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_a8e8729ded3035c959cee027bc6858f03}{minX}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}\label{class_spine_1_1_skeleton_bounds_ac2ffe9ef8fec69cb53c27f3de1a036df}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!Polygons@{Polygons}}
+\index{Polygons@{Polygons}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{Polygons}{Polygons}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_polygon}{Polygon}}$>$ Spine.\+Skeleton\+Bounds.\+Polygons\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_bounds_a0d0dc7aeb4eb483b2ebb327f253c677b}\label{class_spine_1_1_skeleton_bounds_a0d0dc7aeb4eb483b2ebb327f253c677b}} 
+\index{Spine.SkeletonBounds@{Spine.SkeletonBounds}!Width@{Width}}
+\index{Width@{Width}!Spine.SkeletonBounds@{Spine.SkeletonBounds}}
+\doxysubsubsection{\texorpdfstring{Width}{Width}}
+{\footnotesize\ttfamily float Spine.\+Skeleton\+Bounds.\+Width\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Bounds.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_bounds_acf73234ea24ed34380a1502173289046}{maxY}} = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_skeleton_bounds_8cs}{Skeleton\+Bounds.\+cs}}\end{DoxyCompactItemize}

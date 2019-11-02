@@ -1,0 +1,18 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node280 [label="Editor",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node280 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Spine.Unity.Editor.Animation\lReferenceAssetEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor.html",tooltip=" "];
+  Node280 -> Node282 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node282 [label="Spine.Unity.Editor.BoneFollower\lGraphicInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_bone_follower_graphic_inspector.html",tooltip=" "];
+  Node280 -> Node283 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node283 [label="Spine.Unity.Editor.BoneFollower\lInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_bone_follower_inspector.html",tooltip=" "];
+  Node280 -> Node284 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node284 [label="Spine.Unity.Editor.Point\lFollowerEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_point_follower_editor.html",tooltip=" "];
+  Node280 -> Node285 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node285 [label="Spine.Unity.Editor.SlotBlend\lModesEditor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_slot_blend_modes_editor.html",tooltip=" "];
+}

@@ -1,0 +1,26 @@
+digraph "Spine.Unity.MeshGenerator.AddSubmesh"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.MeshGenerator.\lAddSubmesh",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.MeshGenerator.\lAddAttachmentTintBlack",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a2973ceef783dac952bd6d5eccc90d41d",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.SkeletonClipping.ClipEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#a1a07278048c33b547f8a596c41ceb4bb",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.SkeletonClipping.ClipEnd",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#a4351ab3c136c8d55809579933d943770",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.SkeletonClipping.Clip\lStart",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#ae62e72353332993c8e3c7bc437edfd67",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.VertexAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced",tooltip=" "];
+  Node6 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.SkeletonClipping.Make\lClockwise",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#aba7209fd235ecabbf7c0af1a994e65a8",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.SkeletonClipping.Clip\lTriangles",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_clipping.html#aec7fae2af5eac108aa788fb43a091bbb",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Spine.RegionAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_region_attachment.html#a06e20a82691dfcedf87339edf34c9de3",tooltip="Transforms the attachment's four vertices to world coordinates."];
+}

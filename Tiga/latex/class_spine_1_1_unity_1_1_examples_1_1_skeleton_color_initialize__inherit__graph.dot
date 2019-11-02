@@ -1,0 +1,9 @@
+digraph "Spine.Unity.Examples.SkeletonColorInitialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Examples.Skeleton\lColorInitialize\n|+ skeletonColor\l+ slotSettings\l|- Start()\l- ApplySettings()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Stores and serializes initial settings for a Spine Skeleton component. The settings only get applied ..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

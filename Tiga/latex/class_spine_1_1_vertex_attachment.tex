@@ -1,0 +1,338 @@
+\hypertarget{class_spine_1_1_vertex_attachment}{}\doxysection{Spine.\+Vertex\+Attachment 클래스 참조}
+\label{class_spine_1_1_vertex_attachment}\index{Spine.VertexAttachment@{Spine.VertexAttachment}}
+
+
+$>$An attachment with vertices that are transformed by one or more bones and can be deformed by a slot\textquotesingle{}s vertices.  
+
+
+
+
+Spine.\+Vertex\+Attachment에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Vertex\+Attachment에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_vertex_attachment_ab28ba8a413d1a4fdda1128d37a673fb7}{Vertex\+Attachment}} (string name)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a3a09094aaa5c85778385a1b19397fced}{Compute\+World\+Vertices}} (\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot, float\mbox{[}$\,$\mbox{]} world\+Vertices)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a25f1e3acec837d3932b1d008fedfa933}{Compute\+World\+Vertices}} (\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot, int start, int count, float\mbox{[}$\,$\mbox{]} world\+Vertices, int offset, int stride=2)
+\begin{DoxyCompactList}\small\item\em Transforms local vertices to world coordinates. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a8e63b13f5fcaabd9d3b455d5798fb3d2}{Apply\+Deform}} (\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}} source\+Attachment)
+\begin{DoxyCompactList}\small\item\em Returns true if a deform originally applied to the specified attachment should be applied to this attachment. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a68f9c385cb4e5cac2e682312c8fbd72a}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a unique ID for this attachment. \end{DoxyCompactList}\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a2fc2cbedce9853f6f25aa6a65febd60c}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a1eb0b1000871b10626c168cd52c25447}{Vertices}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a6ccccde921aef221c82b4a71a70fcdad}{World\+Vertices\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a131eecd35cf5d950711c162d0bf3d522}{next\+ID}} = 0
+\item 
+static readonly Object \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a672d4fe051e6511956525d757efd0c84}{next\+Id\+Lock}} = new Object()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+$>$An attachment with vertices that are transformed by one or more bones and can be deformed by a slot\textquotesingle{}s vertices. 
+
+
+
+Vertex\+Attachment.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_ab28ba8a413d1a4fdda1128d37a673fb7}\label{class_spine_1_1_vertex_attachment_ab28ba8a413d1a4fdda1128d37a673fb7}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!VertexAttachment@{VertexAttachment}}
+\index{VertexAttachment@{VertexAttachment}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{VertexAttachment()}{VertexAttachment()}}
+{\footnotesize\ttfamily Spine.\+Vertex\+Attachment.\+Vertex\+Attachment (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Vertex\+Attachment.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51             : base(name) \{}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53             lock (\mbox{\hyperlink{class_spine_1_1_vertex_attachment_ab28ba8a413d1a4fdda1128d37a673fb7}{VertexAttachment}}.nextIdLock) \{}
+\DoxyCodeLine{54                 \textcolor{keywordtype}{id} = (\mbox{\hyperlink{class_spine_1_1_vertex_attachment_ab28ba8a413d1a4fdda1128d37a673fb7}{VertexAttachment}}.nextID++ \& 65535) << 11;}
+\DoxyCodeLine{55             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a8e63b13f5fcaabd9d3b455d5798fb3d2}\label{class_spine_1_1_vertex_attachment_a8e63b13f5fcaabd9d3b455d5798fb3d2}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!ApplyDeform@{ApplyDeform}}
+\index{ApplyDeform@{ApplyDeform}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{ApplyDeform()}{ApplyDeform()}}
+{\footnotesize\ttfamily virtual bool Spine.\+Vertex\+Attachment.\+Apply\+Deform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}}}]{source\+Attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns true if a deform originally applied to the specified attachment should be applied to this attachment. 
+
+
+
+\mbox{\hyperlink{class_spine_1_1_mesh_attachment_abceb0c996ef16969a5566c380a7c3b1e}{Spine.\+Mesh\+Attachment}}에서 재구현되었습니다.
+
+
+
+Vertex\+Attachment.\+cs 파일의 125 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126                                                                             \{}
+\DoxyCodeLine{127             \textcolor{keywordflow}{return} \textcolor{keyword}{this} == sourceAttachment;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a3a09094aaa5c85778385a1b19397fced}\label{class_spine_1_1_vertex_attachment_a3a09094aaa5c85778385a1b19397fced}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!ComputeWorldVertices@{ComputeWorldVertices}}
+\index{ComputeWorldVertices@{ComputeWorldVertices}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{ComputeWorldVertices()}{ComputeWorldVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spine.\+Vertex\+Attachment.\+Compute\+World\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot,  }\item[{float\mbox{[}$\,$\mbox{]}}]{world\+Vertices }\end{DoxyParamCaption})}
+
+
+
+Vertex\+Attachment.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                             \{}
+\DoxyCodeLine{59             \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a3a09094aaa5c85778385a1b19397fced}{ComputeWorldVertices}}(slot, 0, worldVerticesLength, worldVertices, 0);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a25f1e3acec837d3932b1d008fedfa933}\label{class_spine_1_1_vertex_attachment_a25f1e3acec837d3932b1d008fedfa933}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!ComputeWorldVertices@{ComputeWorldVertices}}
+\index{ComputeWorldVertices@{ComputeWorldVertices}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{ComputeWorldVertices()}{ComputeWorldVertices()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spine.\+Vertex\+Attachment.\+Compute\+World\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot,  }\item[{int}]{start,  }\item[{int}]{count,  }\item[{float\mbox{[}$\,$\mbox{]}}]{world\+Vertices,  }\item[{int}]{offset,  }\item[{int}]{stride = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+
+
+Transforms local vertices to world coordinates. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em start} & The index of the first \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a1eb0b1000871b10626c168cd52c25447}{Vertices}} value to transform. Each vertex has 2 values, x and y.\\
+\hline
+{\em count} & The number of world vertex values to output. Must be less than or equal to \mbox{\hyperlink{class_spine_1_1_vertex_attachment_a6ccccde921aef221c82b4a71a70fcdad}{World\+Vertices\+Length}} -\/ start.\\
+\hline
+{\em world\+Vertices} & The output world vertices. Must have a length greater than or equal to {\itshape offset}  + {\itshape count} .\\
+\hline
+{\em offset} & The {\itshape world\+Vertices}  index to begin writing values.\\
+\hline
+{\em stride} & The number of {\itshape world\+Vertices}  entries between the value pairs written.\\
+\hline
+\end{DoxyParams}
+
+
+Vertex\+Attachment.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                                                                                                               \{}
+\DoxyCodeLine{69             count = offset + (count >> 1) * stride;}
+\DoxyCodeLine{70             Skeleton skeleton = slot.bone.skeleton;}
+\DoxyCodeLine{71             var deformArray = slot.attachmentVertices;}
+\DoxyCodeLine{72             \textcolor{keywordtype}{float}[] vertices = this.vertices;}
+\DoxyCodeLine{73             \textcolor{keywordtype}{int}[] bones = this.bones;}
+\DoxyCodeLine{74             \textcolor{keywordflow}{if} (bones == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{if} (deformArray.Count > 0) vertices = deformArray.Items;}
+\DoxyCodeLine{76                 Bone bone = slot.bone;}
+\DoxyCodeLine{77                 \textcolor{keywordtype}{float} x = bone.worldX, y = bone.worldY;}
+\DoxyCodeLine{78                 \textcolor{keywordtype}{float} a = bone.a, b = bone.b, c = bone.c, d = bone.d;}
+\DoxyCodeLine{79                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} vv = start, w = offset; w < count; vv += 2, w += stride) \{}
+\DoxyCodeLine{80                     \textcolor{keywordtype}{float} vx = vertices[vv], vy = vertices[vv + 1];}
+\DoxyCodeLine{81                     worldVertices[w] = vx * a + vy * b + x;}
+\DoxyCodeLine{82                     worldVertices[w + 1] = vx * c + vy * d + y;}
+\DoxyCodeLine{83                 \}}
+\DoxyCodeLine{84                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{85             \}}
+\DoxyCodeLine{86             \textcolor{keywordtype}{int} v = 0, skip = 0;}
+\DoxyCodeLine{87             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < start; i += 2) \{}
+\DoxyCodeLine{88                 \textcolor{keywordtype}{int} n = bones[v];}
+\DoxyCodeLine{89                 v += n + 1;}
+\DoxyCodeLine{90                 skip += n;}
+\DoxyCodeLine{91             \}}
+\DoxyCodeLine{92             var skeletonBones = skeleton.bones.Items;}
+\DoxyCodeLine{93             \textcolor{keywordflow}{if} (deformArray.Count == 0) \{}
+\DoxyCodeLine{94                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w = offset, b = skip * 3; w < count; w += stride) \{}
+\DoxyCodeLine{95                     \textcolor{keywordtype}{float} wx = 0, wy = 0;}
+\DoxyCodeLine{96                     \textcolor{keywordtype}{int} n = bones[v++];}
+\DoxyCodeLine{97                     n += v;}
+\DoxyCodeLine{98                     \textcolor{keywordflow}{for} (; v < n; v++, b += 3) \{}
+\DoxyCodeLine{99                         Bone bone = skeletonBones[bones[v]];}
+\DoxyCodeLine{100                         \textcolor{keywordtype}{float} vx = vertices[b], vy = vertices[b + 1], weight = vertices[b + 2];}
+\DoxyCodeLine{101                         wx += (vx * bone.a + vy * bone.b + bone.worldX) * weight;}
+\DoxyCodeLine{102                         wy += (vx * bone.c + vy * bone.d + bone.worldY) * weight;}
+\DoxyCodeLine{103                     \}}
+\DoxyCodeLine{104                     worldVertices[w] = wx;}
+\DoxyCodeLine{105                     worldVertices[w + 1] = wy;}
+\DoxyCodeLine{106                 \}}
+\DoxyCodeLine{107             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{108                 \textcolor{keywordtype}{float}[] deform = deformArray.Items;}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w = offset, b = skip * 3, f = skip << 1; w < count; w += stride) \{}
+\DoxyCodeLine{110                     \textcolor{keywordtype}{float} wx = 0, wy = 0;}
+\DoxyCodeLine{111                     \textcolor{keywordtype}{int} n = bones[v++];}
+\DoxyCodeLine{112                     n += v;}
+\DoxyCodeLine{113                     \textcolor{keywordflow}{for} (; v < n; v++, b += 3, f += 2) \{}
+\DoxyCodeLine{114                         Bone bone = skeletonBones[bones[v]];}
+\DoxyCodeLine{115                         \textcolor{keywordtype}{float} vx = vertices[b] + deform[f], vy = vertices[b + 1] + deform[f + 1], weight = vertices[b + 2];}
+\DoxyCodeLine{116                         wx += (vx * bone.a + vy * bone.b + bone.worldX) * weight;}
+\DoxyCodeLine{117                         wy += (vx * bone.c + vy * bone.d + bone.worldY) * weight;}
+\DoxyCodeLine{118                     \}}
+\DoxyCodeLine{119                     worldVertices[w] = wx;}
+\DoxyCodeLine{120                     worldVertices[w + 1] = wy;}
+\DoxyCodeLine{121                 \}}
+\DoxyCodeLine{122             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}\label{class_spine_1_1_attachment_ab3d15d41fbd2ee38f490735a16cc88a0}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Attachment.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Attachment.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                            \{}
+\DoxyCodeLine{43             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}{Name}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a131eecd35cf5d950711c162d0bf3d522}\label{class_spine_1_1_vertex_attachment_a131eecd35cf5d950711c162d0bf3d522}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!nextID@{nextID}}
+\index{nextID@{nextID}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{nextID}{nextID}}
+{\footnotesize\ttfamily int Spine.\+Vertex\+Attachment.\+next\+ID = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vertex\+Attachment.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a672d4fe051e6511956525d757efd0c84}\label{class_spine_1_1_vertex_attachment_a672d4fe051e6511956525d757efd0c84}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!nextIdLock@{nextIdLock}}
+\index{nextIdLock@{nextIdLock}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{nextIdLock}{nextIdLock}}
+{\footnotesize\ttfamily readonly Object Spine.\+Vertex\+Attachment.\+next\+Id\+Lock = new Object()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vertex\+Attachment.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a2fc2cbedce9853f6f25aa6a65febd60c}\label{class_spine_1_1_vertex_attachment_a2fc2cbedce9853f6f25aa6a65febd60c}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Spine.\+Vertex\+Attachment.\+Bones\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Vertex\+Attachment.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} id; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a68f9c385cb4e5cac2e682312c8fbd72a}\label{class_spine_1_1_vertex_attachment_a68f9c385cb4e5cac2e682312c8fbd72a}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!Id@{Id}}
+\index{Id@{Id}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily int Spine.\+Vertex\+Attachment.\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a unique ID for this attachment. 
+
+
+
+Vertex\+Attachment.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} id; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}\label{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!Name@{Name}}
+\index{Name@{Name}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Spine.\+Attachment.\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}, {\ttfamily [inherited]}}
+
+
+
+Attachment.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{34 \{}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a1eb0b1000871b10626c168cd52c25447}\label{class_spine_1_1_vertex_attachment_a1eb0b1000871b10626c168cd52c25447}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!Vertices@{Vertices}}
+\index{Vertices@{Vertices}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{Vertices}{Vertices}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Vertex\+Attachment.\+Vertices\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Vertex\+Attachment.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \} \textcolor{keyword}{set} \{ bones = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_vertex_attachment_a6ccccde921aef221c82b4a71a70fcdad}\label{class_spine_1_1_vertex_attachment_a6ccccde921aef221c82b4a71a70fcdad}} 
+\index{Spine.VertexAttachment@{Spine.VertexAttachment}!WorldVerticesLength@{WorldVerticesLength}}
+\index{WorldVerticesLength@{WorldVerticesLength}!Spine.VertexAttachment@{Spine.VertexAttachment}}
+\doxysubsubsection{\texorpdfstring{WorldVerticesLength}{WorldVerticesLength}}
+{\footnotesize\ttfamily int Spine.\+Vertex\+Attachment.\+World\+Vertices\+Length\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Vertex\+Attachment.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} vertices; \} \textcolor{keyword}{set} \{ vertices = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\+Attachments/\mbox{\hyperlink{_vertex_attachment_8cs}{Vertex\+Attachment.\+cs}}\end{DoxyCompactItemize}

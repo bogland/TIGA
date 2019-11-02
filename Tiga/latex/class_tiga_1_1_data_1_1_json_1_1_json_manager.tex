@@ -1,0 +1,88 @@
+\hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_manager}{}\doxysection{Tiga.\+Data.\+Json.\+Json\+Manager 클래스 참조}
+\label{class_tiga_1_1_data_1_1_json_1_1_json_manager}\index{Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}}
+
+
+Tiga.\+Data.\+Json.\+Json\+Manager에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Tiga.\+Data.\+Json.\+Json\+Manager에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_addeebb3108473f21dd37fe2921893f35}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_ac2aed5cd81c7199941468e72bf2472c7}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_player_data}{Player\+Data}} \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}{player\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Json\+Manager.\+cs 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_manager_addeebb3108473f21dd37fe2921893f35}\label{class_tiga_1_1_data_1_1_json_1_1_json_manager_addeebb3108473f21dd37fe2921893f35}} 
+\index{Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}!Start@{Start}}
+\index{Start@{Start}!Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Tiga.\+Data.\+Json.\+Json\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json\+Manager.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22         \{}
+\DoxyCodeLine{23             \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}{playerData}} = \textcolor{keyword}{new} PlayerData();}
+\DoxyCodeLine{24             Json<PlayerData>.Write(\textcolor{stringliteral}{"GameResources/UserData/Player.json"}, \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}{playerData}});}
+\DoxyCodeLine{25             \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}{playerData}} = Json<PlayerData>.Read(\textcolor{stringliteral}{"GameResources/UserData/Player.json"});}
+\DoxyCodeLine{26         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_manager_ac2aed5cd81c7199941468e72bf2472c7}\label{class_tiga_1_1_data_1_1_json_1_1_json_manager_ac2aed5cd81c7199941468e72bf2472c7}} 
+\index{Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}!Update@{Update}}
+\index{Update@{Update}!Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Tiga.\+Data.\+Json.\+Json\+Manager.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json\+Manager.\+cs 파일의 29 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30         \{}
+\DoxyCodeLine{31             Debug.Log(\mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}{playerData}}.\mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_player_data_a7c2de6907370b8cb2a86e1447f840abe}{name}});}
+\DoxyCodeLine{32         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}\label{class_tiga_1_1_data_1_1_json_1_1_json_manager_aac6f94840080c6beae115c4e2c51ddb0}} 
+\index{Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}!playerData@{playerData}}
+\index{playerData@{playerData}!Tiga.Data.Json.JsonManager@{Tiga.Data.Json.JsonManager}}
+\doxysubsubsection{\texorpdfstring{playerData}{playerData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_player_data}{Player\+Data}} Tiga.\+Data.\+Json.\+Json\+Manager.\+player\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Json\+Manager.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Data/\+Json/\mbox{\hyperlink{_json_manager_8cs}{Json\+Manager.\+cs}}\end{DoxyCompactItemize}

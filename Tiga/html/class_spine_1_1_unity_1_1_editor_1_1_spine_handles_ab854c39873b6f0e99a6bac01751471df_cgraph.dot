@@ -1,0 +1,12 @@
+digraph "Spine.Unity.Editor.SpineHandles.DrawPath"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Spine\lHandles.DrawPath",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.VertexAttachment.Compute\lWorldVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_vertex_attachment.html#a3a09094aaa5c85778385a1b19397fced",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Editor.Spine\lHandles.DrawDot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_handles.html#afa4e0cc677ccce86dc695dead8a55c41",tooltip=" "];
+}

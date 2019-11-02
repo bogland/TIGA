@@ -1,0 +1,842 @@
+\hypertarget{class_spine_1_1_track_entry}{}\doxysection{Spine.\+Track\+Entry 클래스 참조}
+\label{class_spine_1_1_track_entry}\index{Spine.TrackEntry@{Spine.TrackEntry}}
+
+
+State for the playback of an animation.  
+
+
+
+
+Spine.\+Track\+Entry에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Track\+Entry에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_track_entry_aa10a1a18e66801c9e284ca91806ce710}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_track_entry_a8073e634c4a6c891ae4d43fc4ef71c72}{Reset\+Rotation\+Directions}} ()
+\begin{DoxyCompactList}\small\item\em Resets the rotation directions for mixing this entry\textquotesingle{}s rotate timelines. This can be useful to avoid bones rotating the long way around when using alpha and starting animations on other tracks. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_spine_1_1_track_entry_a8470c1b3b4cb0b601bbb5462af76d8df}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_track_entry_a8ff80753d9c6b2cdb8d0933492581e55}{Track\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The index of the track where this entry is either current or queued. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_animation}{Animation}} \mbox{\hyperlink{class_spine_1_1_track_entry_ac36eff87ff69899a0f334e3204bd52b5}{Animation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The animation to apply for this track entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_track_entry_a70e1121898ba103bb8d1a4dea9ee54c0}{Loop}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em If true, the animation will repeat. If false, it will not, instead its last frame is applied if played beyond its duration. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a563de99e2e105a42230a4bc9d9341e36}{Delay}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a8104fb3d74b206be90def0b93c82ce72}{Track\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current time in seconds this track entry has been the current track entry. The track time determines \mbox{\hyperlink{class_spine_1_1_track_entry_a01f657f1b734da34ee20b0e5d7cdfe28}{Track\+Entry.\+Animation\+Time}}. The track time can be set to start the animation at a time other than 0, without affecting looping. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_aa254fe30bcab539987445ff34cc811db}{Track\+End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The track time in seconds when this animation will be removed from the track. Defaults to the animation duration for non-\/looping animations and to int.\+Max\+Value for looping animations. If the track end time is reached and no other animations are queued for playback, and mixing from any previous animations is complete, properties keyed by the animation, are set to the setup pose and the track is cleared. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}{Animation\+Start}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Seconds when this animation starts, both initially and after looping. Defaults to 0. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_aeaf284518a91e9d899ec1492623a1e77}{Animation\+End}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Seconds for the last frame of this animation. Non-\/looping animations won\textquotesingle{}t play past this time. Looping animations will loop back to \mbox{\hyperlink{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}{Track\+Entry.\+Animation\+Start}} at this time. Defaults to the animation duration. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a6a470c10c78ef3c6561b5151bfef493a}{Animation\+Last}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time in seconds this animation was last applied. Some timelines use this for one-\/time triggers. Eg, when this animation is applied, event timelines will fire all events between the animation last time (exclusive) and animation time (inclusive). Defaults to -\/1 to ensure triggers on frame 0 happen the first time this animation is applied. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a01f657f1b734da34ee20b0e5d7cdfe28}{Animation\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Uses \mbox{\hyperlink{class_spine_1_1_track_entry_a8104fb3d74b206be90def0b93c82ce72}{Track\+Entry.\+Track\+Time}} to compute the animation time between \mbox{\hyperlink{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}{Track\+Entry.\+Animation\+Start}}. and \mbox{\hyperlink{class_spine_1_1_track_entry_aeaf284518a91e9d899ec1492623a1e77}{Track\+Entry.\+Animation\+End}}. When the track time is 0, the animation time is equal to the animation start time. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a77624ba48a598aac736319a8890be765}{Time\+Scale}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Multiplier for the delta time when the animation state is updated, causing time for this animation to play slower or faster. Defaults to 1. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_aee9b0e2833c675c897f6877119827525}{Alpha}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Values less than 1 mix this animation with the last skeleton pose. Defaults to 1, which overwrites the last skeleton pose with this animation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_ae10f57faef1cd44c7e2ecc5eec6b9b42}{Event\+Threshold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When the mix percentage (mix time / mix duration) is less than the event threshold, event timelines for the animation being mixed out will be applied. Defaults to 0, so event timelines are not applied for an animation being mixed out. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_aa79c8392d2c5bfc8aba7cb2f02977646}{Attachment\+Threshold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When the mix percentage (mix time / mix duration) is less than the attachment threshold, attachment timelines for the animation being mixed out will be applied. Defaults to 0, so attachment timelines are not applied for an animation being mixed out. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a73109953362a74e64d3df6777e26e7c5}{Draw\+Order\+Threshold}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em When the mix percentage (mix time / mix duration) is less than the draw order threshold, draw order timelines for the animation being mixed out will be applied. Defaults to 0, so draw order timelines are not applied for an animation being mixed out. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} \mbox{\hyperlink{class_spine_1_1_track_entry_ab2737f1203eb20e073666b12529242ee}{Next}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The animation queued to start after this animation, or null. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_track_entry_a2d9e95ff056669415e53eb9fcc3ad648}{Is\+Complete}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Returns true if at least one loop has been completed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a728a1dca9cbcd60a8bb97298fe4dc21e}{Mix\+Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Seconds from 0 to the mix duration when mixing from the previous animation to this animation. May be slightly more than \mbox{\hyperlink{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}{Track\+Entry.\+Mix\+Duration}} when the mix is complete. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}{Mix\+Duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Seconds for mixing from the previous animation to this animation. Defaults to the value provided by \mbox{\hyperlink{class_spine_1_1_animation_state_data}{Animation\+State\+Data}} based on the animation before this animation (if any). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} \mbox{\hyperlink{class_spine_1_1_track_entry_a8164fd8ea8752502cd153609cc68bef9}{Mixing\+From}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The track entry for the previous animation when mixing from the previous animation to this animation, or null if no mixing is currently occuring. When mixing from multiple animations, Mixing\+From makes up a linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{이벤트}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_abe97882137bc73cd4c27faa57606dd90}{Start}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ac871995e7e15ca5b7eca605216c21993}{Animation\+State.\+Track\+Entry\+Event\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_a177cd3ac82708469e99ff4b09376c582}{Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_track_entry_a321c413f4dca86d0a6146fa134c44d3f}{Has\+Timeline}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} \mbox{\hyperlink{class_spine_1_1_track_entry_a7b4130e536ca81fd2efff1c5d0234b9d}{mixing\+From}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_af0f49111d58f56e3f208e59552ad5617}{attachment\+Threshold}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_ab3071a304bbe397f139faf514b00fa1a}{draw\+Order\+Threshold}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animation\+End}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a3caf7ffa6d544ffdbdbad219058f4ddd}{animation\+Last}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a92e71c985cfb454dbf1907b1af94cfcd}{next\+Animation\+Last}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{track\+Time}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a35f4df449afaf4373169169c26d95b11}{track\+Last}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a37f87b983393883925a9b6d881f8c975}{next\+Track\+Last}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a626c8c80e15f01cd57ada557d7f766f2}{track\+End}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a176047a361e5b35d6651fb20c3d73b3b}{time\+Scale}} = 1f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a0acaf95c5b7f84df4313b9091f380ad9}{mix\+Time}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a0c2d88090e7063fd0b73293dbc631c5b}{mix\+Duration}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a45c3d2859e76aeb52717f1fed5f0ce1f}{interrupt\+Alpha}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_track_entry_a55e14953c632f269835881d1ae9e242f}{total\+Alpha}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_a773fb4535636a27bbf7c2290376bef2b}{Interrupt}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_a3a778e48df0475adea3585c2846aaaca}{End}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_afcf81e947e203f20be8430e742d23bd8}{Dispose}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} \mbox{\hyperlink{class_spine_1_1_track_entry_af3644974566b16d70d6b631372dd3a2a}{Complete}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+State for the playback of an animation. 
+
+
+
+Animation\+State.\+cs 파일의 661 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a321c413f4dca86d0a6146fa134c44d3f}\label{class_spine_1_1_track_entry_a321c413f4dca86d0a6146fa134c44d3f}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!HasTimeline@{HasTimeline}}
+\index{HasTimeline@{HasTimeline}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{HasTimeline()}{HasTimeline()}}
+{\footnotesize\ttfamily bool Spine.\+Track\+Entry.\+Has\+Timeline (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 734 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{735                                   \{}
+\DoxyCodeLine{736             var timelines = animation.timelines.Items;}
+\DoxyCodeLine{737             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = animation.timelines.Count; i < n; i++)}
+\DoxyCodeLine{738                 \textcolor{keywordflow}{if} (timelines[i].PropertyId == \textcolor{keywordtype}{id}) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{739             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aa10a1a18e66801c9e284ca91806ce710}\label{class_spine_1_1_track_entry_aa10a1a18e66801c9e284ca91806ce710}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Reset@{Reset}}
+\index{Reset@{Reset}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Spine.\+Track\+Entry.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 677 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{678                              \{}
+\DoxyCodeLine{679             next = \textcolor{keyword}{null};}
+\DoxyCodeLine{680             \mbox{\hyperlink{class_spine_1_1_track_entry_a7b4130e536ca81fd2efff1c5d0234b9d}{mixingFrom}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{681             animation = \textcolor{keyword}{null};}
+\DoxyCodeLine{682             timelineData.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}();}
+\DoxyCodeLine{683             timelineDipMix.Clear();}
+\DoxyCodeLine{684             timelinesRotation.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}();}
+\DoxyCodeLine{685 }
+\DoxyCodeLine{686             \mbox{\hyperlink{class_spine_1_1_track_entry_abe97882137bc73cd4c27faa57606dd90}{Start}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{687             \mbox{\hyperlink{class_spine_1_1_track_entry_a773fb4535636a27bbf7c2290376bef2b}{Interrupt}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{688             \mbox{\hyperlink{class_spine_1_1_track_entry_a3a778e48df0475adea3585c2846aaaca}{End}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{689             \mbox{\hyperlink{class_spine_1_1_track_entry_afcf81e947e203f20be8430e742d23bd8}{Dispose}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{690             \mbox{\hyperlink{class_spine_1_1_track_entry_af3644974566b16d70d6b631372dd3a2a}{Complete}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{691             \mbox{\hyperlink{class_spine_1_1_track_entry_a177cd3ac82708469e99ff4b09376c582}{Event}} = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a8073e634c4a6c891ae4d43fc4ef71c72}\label{class_spine_1_1_track_entry_a8073e634c4a6c891ae4d43fc4ef71c72}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!ResetRotationDirections@{ResetRotationDirections}}
+\index{ResetRotationDirections@{ResetRotationDirections}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{ResetRotationDirections()}{ResetRotationDirections()}}
+{\footnotesize\ttfamily void Spine.\+Track\+Entry.\+Reset\+Rotation\+Directions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the rotation directions for mixing this entry\textquotesingle{}s rotate timelines. This can be useful to avoid bones rotating the long way around when using alpha and starting animations on other tracks. 
+
+Mixing involves finding a rotation between two others, which has two possible solutions\+: the short way or the long way around. The two rotations likely change over time, so which direction is the short or long way also changes. If the short way was always chosen, bones would flip to the other side when that direction became the long way. \mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} chooses the short way the first time it is applied and remembers that direction. 
+
+Animation\+State.\+cs 파일의 897 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{898                                                \{}
+\DoxyCodeLine{899             timelinesRotation.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a8470c1b3b4cb0b601bbb5462af76d8df}\label{class_spine_1_1_track_entry_a8470c1b3b4cb0b601bbb5462af76d8df}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Track\+Entry.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+State.\+cs 파일의 901 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{902                                            \{}
+\DoxyCodeLine{903             \textcolor{keywordflow}{return} animation == \textcolor{keyword}{null} ? \textcolor{stringliteral}{"<none>"} : animation.name;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}\label{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!animationEnd@{animationEnd}}
+\index{animationEnd@{animationEnd}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{animationEnd}{animationEnd}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+animation\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 669 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a3caf7ffa6d544ffdbdbad219058f4ddd}\label{class_spine_1_1_track_entry_a3caf7ffa6d544ffdbdbad219058f4ddd}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!animationLast@{animationLast}}
+\index{animationLast@{animationLast}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{animationLast}{animationLast}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+animation\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 669 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_af0f49111d58f56e3f208e59552ad5617}\label{class_spine_1_1_track_entry_af0f49111d58f56e3f208e59552ad5617}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!attachmentThreshold@{attachmentThreshold}}
+\index{attachmentThreshold@{attachmentThreshold}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{attachmentThreshold}{attachmentThreshold}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+attachment\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 668 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_af3644974566b16d70d6b631372dd3a2a}\label{class_spine_1_1_track_entry_af3644974566b16d70d6b631372dd3a2a}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Complete@{Complete}}
+\index{Complete@{Complete}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Complete}{Complete}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} Spine.\+Track\+Entry.\+Complete\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 880 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_afcf81e947e203f20be8430e742d23bd8}\label{class_spine_1_1_track_entry_afcf81e947e203f20be8430e742d23bd8}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Dispose}{Dispose}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} Spine.\+Track\+Entry.\+Dispose\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 880 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_ab3071a304bbe397f139faf514b00fa1a}\label{class_spine_1_1_track_entry_ab3071a304bbe397f139faf514b00fa1a}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!drawOrderThreshold@{drawOrderThreshold}}
+\index{drawOrderThreshold@{drawOrderThreshold}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{drawOrderThreshold}{drawOrderThreshold}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+draw\+Order\+Threshold\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 668 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a3a778e48df0475adea3585c2846aaaca}\label{class_spine_1_1_track_entry_a3a778e48df0475adea3585c2846aaaca}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!End@{End}}
+\index{End@{End}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{End}{End}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} Spine.\+Track\+Entry.\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 880 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a773fb4535636a27bbf7c2290376bef2b}\label{class_spine_1_1_track_entry_a773fb4535636a27bbf7c2290376bef2b}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Interrupt@{Interrupt}}
+\index{Interrupt@{Interrupt}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Interrupt}{Interrupt}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} Spine.\+Track\+Entry.\+Interrupt\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 880 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a45c3d2859e76aeb52717f1fed5f0ce1f}\label{class_spine_1_1_track_entry_a45c3d2859e76aeb52717f1fed5f0ce1f}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!interruptAlpha@{interruptAlpha}}
+\index{interruptAlpha@{interruptAlpha}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{interruptAlpha}{interruptAlpha}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+interrupt\+Alpha\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 671 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a0c2d88090e7063fd0b73293dbc631c5b}\label{class_spine_1_1_track_entry_a0c2d88090e7063fd0b73293dbc631c5b}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!mixDuration@{mixDuration}}
+\index{mixDuration@{mixDuration}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{mixDuration}{mixDuration}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+mix\+Duration\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 671 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a7b4130e536ca81fd2efff1c5d0234b9d}\label{class_spine_1_1_track_entry_a7b4130e536ca81fd2efff1c5d0234b9d}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!mixingFrom@{mixingFrom}}
+\index{mixingFrom@{mixingFrom}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{mixingFrom}{mixingFrom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} Spine.\+Track\+Entry.\+mixing\+From\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 664 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a0acaf95c5b7f84df4313b9091f380ad9}\label{class_spine_1_1_track_entry_a0acaf95c5b7f84df4313b9091f380ad9}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!mixTime@{mixTime}}
+\index{mixTime@{mixTime}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{mixTime}{mixTime}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+mix\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 671 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a92e71c985cfb454dbf1907b1af94cfcd}\label{class_spine_1_1_track_entry_a92e71c985cfb454dbf1907b1af94cfcd}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!nextAnimationLast@{nextAnimationLast}}
+\index{nextAnimationLast@{nextAnimationLast}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{nextAnimationLast}{nextAnimationLast}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+next\+Animation\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 669 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a37f87b983393883925a9b6d881f8c975}\label{class_spine_1_1_track_entry_a37f87b983393883925a9b6d881f8c975}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!nextTrackLast@{nextTrackLast}}
+\index{nextTrackLast@{nextTrackLast}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{nextTrackLast}{nextTrackLast}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+next\+Track\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a176047a361e5b35d6651fb20c3d73b3b}\label{class_spine_1_1_track_entry_a176047a361e5b35d6651fb20c3d73b3b}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!timeScale@{timeScale}}
+\index{timeScale@{timeScale}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{timeScale}{timeScale}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+time\+Scale = 1f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a55e14953c632f269835881d1ae9e242f}\label{class_spine_1_1_track_entry_a55e14953c632f269835881d1ae9e242f}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!totalAlpha@{totalAlpha}}
+\index{totalAlpha@{totalAlpha}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{totalAlpha}{totalAlpha}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+total\+Alpha\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 671 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a626c8c80e15f01cd57ada557d7f766f2}\label{class_spine_1_1_track_entry_a626c8c80e15f01cd57ada557d7f766f2}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!trackEnd@{trackEnd}}
+\index{trackEnd@{trackEnd}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{trackEnd}{trackEnd}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+track\+End\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a35f4df449afaf4373169169c26d95b11}\label{class_spine_1_1_track_entry_a35f4df449afaf4373169169c26d95b11}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!trackLast@{trackLast}}
+\index{trackLast@{trackLast}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{trackLast}{trackLast}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+track\+Last\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}\label{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!trackTime@{trackTime}}
+\index{trackTime@{trackTime}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{trackTime}{trackTime}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+track\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+State.\+cs 파일의 670 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aee9b0e2833c675c897f6877119827525}\label{class_spine_1_1_track_entry_aee9b0e2833c675c897f6877119827525}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Alpha@{Alpha}}
+\index{Alpha@{Alpha}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Alpha}{Alpha}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Alpha\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Values less than 1 mix this animation with the last skeleton pose. Defaults to 1, which overwrites the last skeleton pose with this animation. 
+
+Typically track 0 is used to completely pose the skeleton, then alpha can be used on higher tracks. It doesn\textquotesingle{}t make sense to use alpha on track 0 if the skeleton pose is from the last frame render.
+
+Animation\+State.\+cs 파일의 826 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{827 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} alpha; \} \textcolor{keyword}{set} \{ alpha = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_ac36eff87ff69899a0f334e3204bd52b5}\label{class_spine_1_1_track_entry_ac36eff87ff69899a0f334e3204bd52b5}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Animation@{Animation}}
+\index{Animation@{Animation}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Animation}{Animation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation}{Animation}} Spine.\+Track\+Entry.\+Animation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The animation to apply for this track entry. 
+
+
+
+Animation\+State.\+cs 파일의 745 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{746 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} animation; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aeaf284518a91e9d899ec1492623a1e77}\label{class_spine_1_1_track_entry_aeaf284518a91e9d899ec1492623a1e77}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!AnimationEnd@{AnimationEnd}}
+\index{AnimationEnd@{AnimationEnd}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{AnimationEnd}{AnimationEnd}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Animation\+End\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Seconds for the last frame of this animation. Non-\/looping animations won\textquotesingle{}t play past this time. Looping animations will loop back to \mbox{\hyperlink{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}{Track\+Entry.\+Animation\+Start}} at this time. Defaults to the animation duration. 
+
+
+
+Animation\+State.\+cs 파일의 784 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{785 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animationEnd}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animationEnd}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a6a470c10c78ef3c6561b5151bfef493a}\label{class_spine_1_1_track_entry_a6a470c10c78ef3c6561b5151bfef493a}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!AnimationLast@{AnimationLast}}
+\index{AnimationLast@{AnimationLast}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{AnimationLast}{AnimationLast}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Animation\+Last\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The time in seconds this animation was last applied. Some timelines use this for one-\/time triggers. Eg, when this animation is applied, event timelines will fire all events between the animation last time (exclusive) and animation time (inclusive). Defaults to -\/1 to ensure triggers on frame 0 happen the first time this animation is applied. 
+
+
+
+Animation\+State.\+cs 파일의 790 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{791                                    \{}
+\DoxyCodeLine{792             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a3caf7ffa6d544ffdbdbad219058f4ddd}{animationLast}}; \}}
+\DoxyCodeLine{793             \textcolor{keyword}{set} \{}
+\DoxyCodeLine{794                 \mbox{\hyperlink{class_spine_1_1_track_entry_a3caf7ffa6d544ffdbdbad219058f4ddd}{animationLast}} = value;}
+\DoxyCodeLine{795                 \mbox{\hyperlink{class_spine_1_1_track_entry_a92e71c985cfb454dbf1907b1af94cfcd}{nextAnimationLast}} = value;}
+\DoxyCodeLine{796             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}\label{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!AnimationStart@{AnimationStart}}
+\index{AnimationStart@{AnimationStart}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{AnimationStart}{AnimationStart}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Animation\+Start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Seconds when this animation starts, both initially and after looping. Defaults to 0. 
+
+When changing the animation start time, it often makes sense to set \mbox{\hyperlink{class_spine_1_1_track_entry_a6a470c10c78ef3c6561b5151bfef493a}{Track\+Entry.\+Animation\+Last}} to the same value to prevent timeline keys before the start time from triggering.
+
+Animation\+State.\+cs 파일의 779 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{780 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} animationStart; \} \textcolor{keyword}{set} \{ animationStart = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a01f657f1b734da34ee20b0e5d7cdfe28}\label{class_spine_1_1_track_entry_a01f657f1b734da34ee20b0e5d7cdfe28}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!AnimationTime@{AnimationTime}}
+\index{AnimationTime@{AnimationTime}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{AnimationTime}{AnimationTime}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Animation\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Uses \mbox{\hyperlink{class_spine_1_1_track_entry_a8104fb3d74b206be90def0b93c82ce72}{Track\+Entry.\+Track\+Time}} to compute the animation time between \mbox{\hyperlink{class_spine_1_1_track_entry_a07018b32548ddf711aafaf2fbce2341a}{Track\+Entry.\+Animation\+Start}}. and \mbox{\hyperlink{class_spine_1_1_track_entry_aeaf284518a91e9d899ec1492623a1e77}{Track\+Entry.\+Animation\+End}}. When the track time is 0, the animation time is equal to the animation start time. 
+
+
+
+Animation\+State.\+cs 파일의 802 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{803                                    \{}
+\DoxyCodeLine{804             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{805                 \textcolor{keywordflow}{if} (loop) \{}
+\DoxyCodeLine{806                     \textcolor{keywordtype}{float} duration = \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animationEnd}} -\/ animationStart;}
+\DoxyCodeLine{807                     \textcolor{keywordflow}{if} (duration == 0) \textcolor{keywordflow}{return} animationStart;}
+\DoxyCodeLine{808                     \textcolor{keywordflow}{return} (\mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{trackTime}} \% duration) + animationStart;}
+\DoxyCodeLine{809                 \}}
+\DoxyCodeLine{810                 \textcolor{keywordflow}{return} Math.Min(\mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{trackTime}} + animationStart, \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animationEnd}});}
+\DoxyCodeLine{811             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aa79c8392d2c5bfc8aba7cb2f02977646}\label{class_spine_1_1_track_entry_aa79c8392d2c5bfc8aba7cb2f02977646}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!AttachmentThreshold@{AttachmentThreshold}}
+\index{AttachmentThreshold@{AttachmentThreshold}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{AttachmentThreshold}{AttachmentThreshold}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Attachment\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When the mix percentage (mix time / mix duration) is less than the attachment threshold, attachment timelines for the animation being mixed out will be applied. Defaults to 0, so attachment timelines are not applied for an animation being mixed out. 
+
+
+
+Animation\+State.\+cs 파일의 837 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{838 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_af0f49111d58f56e3f208e59552ad5617}{attachmentThreshold}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_af0f49111d58f56e3f208e59552ad5617}{attachmentThreshold}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a563de99e2e105a42230a4bc9d9341e36}\label{class_spine_1_1_track_entry_a563de99e2e105a42230a4bc9d9341e36}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Delay@{Delay}}
+\index{Delay@{Delay}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Delay}{Delay}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Delay\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation\+State.\+cs 파일의 755 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{756 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} delay; \} \textcolor{keyword}{set} \{ delay = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a73109953362a74e64d3df6777e26e7c5}\label{class_spine_1_1_track_entry_a73109953362a74e64d3df6777e26e7c5}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!DrawOrderThreshold@{DrawOrderThreshold}}
+\index{DrawOrderThreshold@{DrawOrderThreshold}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{DrawOrderThreshold}{DrawOrderThreshold}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Draw\+Order\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When the mix percentage (mix time / mix duration) is less than the draw order threshold, draw order timelines for the animation being mixed out will be applied. Defaults to 0, so draw order timelines are not applied for an animation being mixed out. 
+
+
+
+Animation\+State.\+cs 파일의 844 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{845 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_ab3071a304bbe397f139faf514b00fa1a}{drawOrderThreshold}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_ab3071a304bbe397f139faf514b00fa1a}{drawOrderThreshold}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_ae10f57faef1cd44c7e2ecc5eec6b9b42}\label{class_spine_1_1_track_entry_ae10f57faef1cd44c7e2ecc5eec6b9b42}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!EventThreshold@{EventThreshold}}
+\index{EventThreshold@{EventThreshold}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{EventThreshold}{EventThreshold}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Event\+Threshold\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+When the mix percentage (mix time / mix duration) is less than the event threshold, event timelines for the animation being mixed out will be applied. Defaults to 0, so event timelines are not applied for an animation being mixed out. 
+
+
+
+Animation\+State.\+cs 파일의 831 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{832 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} eventThreshold; \} \textcolor{keyword}{set} \{ eventThreshold = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a2d9e95ff056669415e53eb9fcc3ad648}\label{class_spine_1_1_track_entry_a2d9e95ff056669415e53eb9fcc3ad648}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!IsComplete@{IsComplete}}
+\index{IsComplete@{IsComplete}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{IsComplete}{IsComplete}}
+{\footnotesize\ttfamily bool Spine.\+Track\+Entry.\+Is\+Complete\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Returns true if at least one loop has been completed. 
+
+
+
+Animation\+State.\+cs 파일의 852 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{853                                \{}
+\DoxyCodeLine{854             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{trackTime}} >= \mbox{\hyperlink{class_spine_1_1_track_entry_a9d318dc7031c8d1fca95a404126045dc}{animationEnd}} -\/ animationStart; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a70e1121898ba103bb8d1a4dea9ee54c0}\label{class_spine_1_1_track_entry_a70e1121898ba103bb8d1a4dea9ee54c0}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Loop@{Loop}}
+\index{Loop@{Loop}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Loop}{Loop}}
+{\footnotesize\ttfamily bool Spine.\+Track\+Entry.\+Loop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+If true, the animation will repeat. If false, it will not, instead its last frame is applied if played beyond its duration. 
+
+summary$>$ Seconds to postpone playing the animation. When a track entry is the current track entry, delay postpones incrementing the track time. When a track entry is queued, delay is the time from the start of the previous animation to when the track entry will become the current track entry. 
+
+Animation\+State.\+cs 파일의 749 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{750 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} loop; \} \textcolor{keyword}{set} \{ loop = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}\label{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!MixDuration@{MixDuration}}
+\index{MixDuration@{MixDuration}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{MixDuration}{MixDuration}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Mix\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Seconds for mixing from the previous animation to this animation. Defaults to the value provided by \mbox{\hyperlink{class_spine_1_1_animation_state_data}{Animation\+State\+Data}} based on the animation before this animation (if any). 
+
+The mix duration can be set manually rather than use the value from \mbox{\hyperlink{class_spine_1_1_animation_state_data_ac96b3c2ad1d813d906f90acfb7d2fdf0}{Animation\+State\+Data.\+Get\+Mix}}. In that case, the mix\+Duration must be set before \mbox{\hyperlink{class_spine_1_1_animation_state_a4ed7f862d670d498caebe5cb3eba9aab}{Animation\+State.\+Update(float)}} is next called. 
+
+When using \begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{class_spine_1_1_animation_state_ab48930b5a6e503d9ce000cc4d681df89}{Animation\+State.\+Add\+Animation(int, Animation, bool, float)}}, \mbox{\hyperlink{class_spine_1_1_track_entry_a563de99e2e105a42230a4bc9d9341e36}{Delay}}
+
+
+\end{DoxySeeAlso}
+with a 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{delay}
+\end{DoxyCode}
+ less than or equal to 0, note the  is set using the mix duration from the \mbox{\hyperlink{class_spine_1_1_animation_state_data}{ Animation\+State\+Data}} 
+
+Animation\+State.\+cs 파일의 873 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{874 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a0c2d88090e7063fd0b73293dbc631c5b}{mixDuration}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_a0c2d88090e7063fd0b73293dbc631c5b}{mixDuration}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a8164fd8ea8752502cd153609cc68bef9}\label{class_spine_1_1_track_entry_a8164fd8ea8752502cd153609cc68bef9}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!MixingFrom@{MixingFrom}}
+\index{MixingFrom@{MixingFrom}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{MixingFrom}{MixingFrom}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} Spine.\+Track\+Entry.\+Mixing\+From\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The track entry for the previous animation when mixing from the previous animation to this animation, or null if no mixing is currently occuring. When mixing from multiple animations, Mixing\+From makes up a linked list. 
+
+
+
+Animation\+State.\+cs 파일의 878 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{879 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a7b4130e536ca81fd2efff1c5d0234b9d}{mixingFrom}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a728a1dca9cbcd60a8bb97298fe4dc21e}\label{class_spine_1_1_track_entry_a728a1dca9cbcd60a8bb97298fe4dc21e}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!MixTime@{MixTime}}
+\index{MixTime@{MixTime}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{MixTime}{MixTime}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Mix\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Seconds from 0 to the mix duration when mixing from the previous animation to this animation. May be slightly more than \mbox{\hyperlink{class_spine_1_1_track_entry_afda9e78152aff443314acdbce1b8df43}{Track\+Entry.\+Mix\+Duration}} when the mix is complete. 
+
+
+
+Animation\+State.\+cs 파일의 859 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{860 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a0acaf95c5b7f84df4313b9091f380ad9}{mixTime}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_a0acaf95c5b7f84df4313b9091f380ad9}{mixTime}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_ab2737f1203eb20e073666b12529242ee}\label{class_spine_1_1_track_entry_ab2737f1203eb20e073666b12529242ee}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Next@{Next}}
+\index{Next@{Next}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Next}{Next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} Spine.\+Track\+Entry.\+Next\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The animation queued to start after this animation, or null. 
+
+
+
+Animation\+State.\+cs 파일의 848 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{849 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} next; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a77624ba48a598aac736319a8890be765}\label{class_spine_1_1_track_entry_a77624ba48a598aac736319a8890be765}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!TimeScale@{TimeScale}}
+\index{TimeScale@{TimeScale}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{TimeScale}{TimeScale}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Time\+Scale\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Multiplier for the delta time when the animation state is updated, causing time for this animation to play slower or faster. Defaults to 1. 
+
+
+
+Animation\+State.\+cs 파일의 817 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{818 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a176047a361e5b35d6651fb20c3d73b3b}{timeScale}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_a176047a361e5b35d6651fb20c3d73b3b}{timeScale}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_aa254fe30bcab539987445ff34cc811db}\label{class_spine_1_1_track_entry_aa254fe30bcab539987445ff34cc811db}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!TrackEnd@{TrackEnd}}
+\index{TrackEnd@{TrackEnd}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{TrackEnd}{TrackEnd}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Track\+End\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The track time in seconds when this animation will be removed from the track. Defaults to the animation duration for non-\/looping animations and to int.\+Max\+Value for looping animations. If the track end time is reached and no other animations are queued for playback, and mixing from any previous animations is complete, properties keyed by the animation, are set to the setup pose and the track is cleared. 
+
+It may be desired to use \mbox{\hyperlink{class_spine_1_1_animation_state_ad66c903cef5ad7fa9eee840342d7388a}{Animation\+State.\+Add\+Empty\+Animation(int, float, float)}} to mix the properties back to the setup pose over time, rather than have it happen instantly.
+
+Animation\+State.\+cs 파일의 771 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{772 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_a626c8c80e15f01cd57ada557d7f766f2}{trackEnd}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_a626c8c80e15f01cd57ada557d7f766f2}{trackEnd}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a8ff80753d9c6b2cdb8d0933492581e55}\label{class_spine_1_1_track_entry_a8ff80753d9c6b2cdb8d0933492581e55}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!TrackIndex@{TrackIndex}}
+\index{TrackIndex@{TrackIndex}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{TrackIndex}{TrackIndex}}
+{\footnotesize\ttfamily int Spine.\+Track\+Entry.\+Track\+Index\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The index of the track where this entry is either current or queued. 
+
+
+
+Animation\+State.\+cs 파일의 742 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{743 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} trackIndex; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a8104fb3d74b206be90def0b93c82ce72}\label{class_spine_1_1_track_entry_a8104fb3d74b206be90def0b93c82ce72}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!TrackTime@{TrackTime}}
+\index{TrackTime@{TrackTime}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{TrackTime}{TrackTime}}
+{\footnotesize\ttfamily float Spine.\+Track\+Entry.\+Track\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Current time in seconds this track entry has been the current track entry. The track time determines \mbox{\hyperlink{class_spine_1_1_track_entry_a01f657f1b734da34ee20b0e5d7cdfe28}{Track\+Entry.\+Animation\+Time}}. The track time can be set to start the animation at a time other than 0, without affecting looping. 
+
+
+
+Animation\+State.\+cs 파일의 760 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{761 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{trackTime}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_track_entry_aa3119ba2f2ff27f2ec7715523a55e77a}{trackTime}} = value; \} \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{이벤트 문서화}
+\mbox{\Hypertarget{class_spine_1_1_track_entry_a177cd3ac82708469e99ff4b09376c582}\label{class_spine_1_1_track_entry_a177cd3ac82708469e99ff4b09376c582}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Event@{Event}}
+\index{Event@{Event}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Event}{Event}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ac871995e7e15ca5b7eca605216c21993}{Animation\+State.\+Track\+Entry\+Event\+Delegate}} Spine.\+Track\+Entry.\+Event}
+
+
+
+Animation\+State.\+cs 파일의 881 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_track_entry_abe97882137bc73cd4c27faa57606dd90}\label{class_spine_1_1_track_entry_abe97882137bc73cd4c27faa57606dd90}} 
+\index{Spine.TrackEntry@{Spine.TrackEntry}!Start@{Start}}
+\index{Start@{Start}!Spine.TrackEntry@{Spine.TrackEntry}}
+\doxysubsubsection{\texorpdfstring{Start}{Start}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_animation_state_ab5240204320b79b14717a78435049dac}{Animation\+State.\+Track\+Entry\+Delegate}} Spine.\+Track\+Entry.\+Start}
+
+
+
+Animation\+State.\+cs 파일의 880 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_state_8cs}{Animation\+State.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer}{}\doxysection{Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer}\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+
+
+Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a06565d13b60affd9092b905ff36ad21f}{On\+G\+UI}} (Rect position, Serialized\+Property property, G\+U\+I\+Content label)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_atlas_region}{Spine\+Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_ae189b53b87c783e1c73e2617b3117345}{Target\+Attribute}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a56f94bd4b34b5d2279905624963cdcde}{Selector}} (Serialized\+Property property)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a3be2f50a08408ffa968c260c6b0bd74a}{Handle\+Select}} (object val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlas\+Prop}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 499 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a3be2f50a08408ffa968c260c6b0bd74a}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a3be2f50a08408ffa968c260c6b0bd74a}} 
+\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}!HandleSelect@{HandleSelect}}
+\index{HandleSelect@{HandleSelect}!Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+\doxysubsubsection{\texorpdfstring{HandleSelect()}{HandleSelect()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer.\+Handle\+Select (\begin{DoxyParamCaption}\item[{object}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 548 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{549                                               \{}
+\DoxyCodeLine{550             var pair = (SpineDrawerValuePair)val;}
+\DoxyCodeLine{551             pair.property.stringValue = pair.str;}
+\DoxyCodeLine{552             pair.property.serializedObject.ApplyModifiedProperties();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a06565d13b60affd9092b905ff36ad21f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a06565d13b60affd9092b905ff36ad21f}} 
+\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}!OnGUI@{OnGUI}}
+\index{OnGUI@{OnGUI}!Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+\doxysubsubsection{\texorpdfstring{OnGUI()}{OnGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer.\+On\+G\+UI (\begin{DoxyParamCaption}\item[{Rect}]{position,  }\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label }\end{DoxyParamCaption})}
+
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 504 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{505                                                                                                   \{}
+\DoxyCodeLine{506             \textcolor{keywordflow}{if} (property.propertyType != SerializedPropertyType.String) \{}
+\DoxyCodeLine{507                 EditorGUI.LabelField(position, \textcolor{stringliteral}{"ERROR:"}, \textcolor{stringliteral}{"May only apply to type string"});}
+\DoxyCodeLine{508                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{509             \}}
+\DoxyCodeLine{510 }
+\DoxyCodeLine{511             \textcolor{keywordtype}{string} atlasAssetFieldName = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_ae189b53b87c783e1c73e2617b3117345}{TargetAttribute}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_atlas_region_afe4b63dffce7518bba6c3c276cda3fc0}{atlasAssetField}};}
+\DoxyCodeLine{512             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(atlasAssetFieldName))}
+\DoxyCodeLine{513                 atlasAssetFieldName = \textcolor{stringliteral}{"atlasAsset"};}
+\DoxyCodeLine{514 }
+\DoxyCodeLine{515             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlasProp}} = \textcolor{keyword}{property}.FindBaseOrSiblingProperty(atlasAssetFieldName);}
+\DoxyCodeLine{516 }
+\DoxyCodeLine{517             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlasProp}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{518                 EditorGUI.LabelField(position, \textcolor{stringliteral}{"ERROR:"}, \textcolor{stringliteral}{"Must have AtlasAsset variable!"});}
+\DoxyCodeLine{519                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{520             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlasProp}}.objectReferenceValue == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{521                 EditorGUI.LabelField(position, \textcolor{stringliteral}{"ERROR:"}, \textcolor{stringliteral}{"Atlas variable must not be null!"});}
+\DoxyCodeLine{522                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{523             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlasProp}}.objectReferenceValue.GetType() != typeof(AtlasAsset)) \{}
+\DoxyCodeLine{524                 EditorGUI.LabelField(position, \textcolor{stringliteral}{"ERROR:"}, \textcolor{stringliteral}{"Atlas variable must be of type AtlasAsset!"});}
+\DoxyCodeLine{525             \}}
+\DoxyCodeLine{526 }
+\DoxyCodeLine{527             position = EditorGUI.PrefixLabel(position, label);}
+\DoxyCodeLine{528 }
+\DoxyCodeLine{529             \textcolor{keywordflow}{if} (GUI.Button(position, property.stringValue, EditorStyles.popup))}
+\DoxyCodeLine{530                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a56f94bd4b34b5d2279905624963cdcde}{Selector}}(property);}
+\DoxyCodeLine{531 }
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a56f94bd4b34b5d2279905624963cdcde}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a56f94bd4b34b5d2279905624963cdcde}} 
+\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}!Selector@{Selector}}
+\index{Selector@{Selector}!Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+\doxysubsubsection{\texorpdfstring{Selector()}{Selector()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer.\+Selector (\begin{DoxyParamCaption}\item[{Serialized\+Property}]{property }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 533 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{534                                                     \{}
+\DoxyCodeLine{535             GenericMenu menu = \textcolor{keyword}{new} GenericMenu();}
+\DoxyCodeLine{536             AtlasAsset atlasAsset = (AtlasAsset)\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}{atlasProp}}.objectReferenceValue;}
+\DoxyCodeLine{537             \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas = atlasAsset.GetAtlas();}
+\DoxyCodeLine{538             FieldInfo field = typeof(\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}).GetField(\textcolor{stringliteral}{"regions"}, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);}
+\DoxyCodeLine{539             List<AtlasRegion> regions = (List<AtlasRegion>)field.GetValue(atlas);}
+\DoxyCodeLine{540 }
+\DoxyCodeLine{541             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{542                 \textcolor{keywordtype}{string} name = regions[i].name;}
+\DoxyCodeLine{543                 menu.AddItem(\textcolor{keyword}{new} GUIContent(name), name == property.stringValue, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a3be2f50a08408ffa968c260c6b0bd74a}{HandleSelect}}, \textcolor{keyword}{new} SpineDrawerValuePair(name, property));}
+\DoxyCodeLine{544             \}}
+\DoxyCodeLine{545 }
+\DoxyCodeLine{546             menu.ShowAsContext();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_a6b9a9f7121f2b4a5b785f0dc96331ec6}} 
+\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}!atlasProp@{atlasProp}}
+\index{atlasProp@{atlasProp}!Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+\doxysubsubsection{\texorpdfstring{atlasProp}{atlasProp}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer.\+atlas\+Prop\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 500 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_ae189b53b87c783e1c73e2617b3117345}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer_ae189b53b87c783e1c73e2617b3117345}} 
+\index{Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}!TargetAttribute@{TargetAttribute}}
+\index{TargetAttribute@{TargetAttribute}!Spine.Unity.Editor.SpineAtlasRegionDrawer@{Spine.Unity.Editor.SpineAtlasRegionDrawer}}
+\doxysubsubsection{\texorpdfstring{TargetAttribute}{TargetAttribute}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_atlas_region}{Spine\+Atlas\+Region}} Spine.\+Unity.\+Editor.\+Spine\+Atlas\+Region\+Drawer.\+Target\+Attribute\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected]}}
+
+
+
+Spine\+Attribute\+Drawers.\+cs 파일의 502 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{503 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} (SpineAtlasRegion)attribute; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_spine_attribute_drawers_8cs}{Spine\+Attribute\+Drawers.\+cs}}\end{DoxyCompactItemize}

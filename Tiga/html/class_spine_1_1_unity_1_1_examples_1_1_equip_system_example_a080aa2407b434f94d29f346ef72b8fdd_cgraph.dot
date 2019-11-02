@@ -1,0 +1,36 @@
+digraph "Spine.Unity.Examples.EquipSystemExample.Equip"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Equip\lSystemExample.Equip",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Equip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a1c3c4caaaf3eae2862aa46f453bfab02",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Skin.AddAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676",tooltip="Adds an attachment to the skin for the specified slot index and name. If the name already exists for ..."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Refresh\lSkeletonAttachments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.Skeleton.SetSlotsTo\lSetupPose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.ExposedList.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#af1b402437b46a187ebc58bc9f200689b",tooltip=" "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.Skeleton.SetSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8",tooltip="Sets a skin by name (see SetSkin)."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.SkeletonData.FindSlot\lIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#ab83e3ab9fbf2c1a3f2d800bffc482985",tooltip="-1 if the slot was not found."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Spine.Unity.Examples.Equip\lSystemExample.GenerateAttachment\lFromEquipAsset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#af49d14785d32acf6ad832b98570eb9d8",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Spine.SkeletonData.FindSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369",tooltip="May be null."];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Spine.Unity.SkeletonData\lAsset.GetSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e",tooltip=" "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Spine.Unity.SkeletonData\lAsset.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a0609f106c8b6f209cdcc696dc7ef5361",tooltip=" "];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Spine.Unity.SkeletonData\lAsset.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a36c686acb39535dbb13d1a55692b0f04",tooltip=" "];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,177 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher}{}\doxysection{Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher}\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+
+
+Example code for a component that replaces the default attachment of a slot with an image from a \mbox{\hyperlink{namespace_spine}{Spine}} atlas.  
+
+
+
+
+Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_1_1_slot_region_pair}{Slot\+Region\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a78adf1088f6930cb2a9939537addf6fa}{atlas\+Asset}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aba9c624cd0e2eba294cc25ba1c2f8ac8}{inherit\+Properties}} = true
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_1_1_slot_region_pair}{Slot\+Region\+Pair}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_ae6ec44be626bbf59b31f2bcd6d556963}{attachments}} = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_1_1_slot_region_pair}{Slot\+Region\+Pair}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aef3cd8a07331024424fc1644872b300f}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a0d0c5119c9b4378e6a401500990bc304}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aec14628ab539992661961911c82cb2fe}{Apply}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} skeleton\+Renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}{atlas}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Example code for a component that replaces the default attachment of a slot with an image from a \mbox{\hyperlink{namespace_spine}{Spine}} atlas. 
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aec14628ab539992661961911c82cb2fe}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aec14628ab539992661961911c82cb2fe}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{skeleton\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                        \{}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if} (!this.enabled) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}{atlas}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a78adf1088f6930cb2a9939537addf6fa}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}{GetAtlas}}();}
+\DoxyCodeLine{65             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}{atlas}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{66             \textcolor{keywordtype}{float} scale = skeletonRenderer.skeletonDataAsset.scale;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68             \textcolor{keywordflow}{foreach} (var entry \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_ae6ec44be626bbf59b31f2bcd6d556963}{attachments}}) \{}
+\DoxyCodeLine{69                 \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot = skeletonRenderer.\mbox{\hyperlink{class_spine_1_1_slot_a60be6be5435fd073a1a31d90e9948231}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}{FindSlot}}(entry.slot);}
+\DoxyCodeLine{70                 \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} originalAttachment = slot.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}};}
+\DoxyCodeLine{71                 \mbox{\hyperlink{class_spine_1_1_atlas_region}{AtlasRegion}} region = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}{atlas}}.\mbox{\hyperlink{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}{FindRegion}}(entry.region);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73                 \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{74                     slot.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{75                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aba9c624cd0e2eba294cc25ba1c2f8ac8}{inheritProperties}} \&\& originalAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{76                     slot.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} = originalAttachment.GetRemappedClone(region, \textcolor{keyword}{true}, \textcolor{keyword}{true}, scale);}
+\DoxyCodeLine{77                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{78                     var newRegionAttachment = region.ToRegionAttachment(region.\mbox{\hyperlink{class_spine_1_1_atlas_region_af99497eb4a22dcba88f89c21c763fba2}{name}}, scale);}
+\DoxyCodeLine{79                     slot.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} = newRegionAttachment;}
+\DoxyCodeLine{80                 \}}
+\DoxyCodeLine{81             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aef3cd8a07331024424fc1644872b300f}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aef3cd8a07331024424fc1644872b300f}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                       \{}
+\DoxyCodeLine{54             var skeletonRenderer = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{55             skeletonRenderer.OnRebuild += \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aec14628ab539992661961911c82cb2fe}{Apply}};}
+\DoxyCodeLine{56             \textcolor{keywordflow}{if} (skeletonRenderer.valid) \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aec14628ab539992661961911c82cb2fe}{Apply}}(skeletonRenderer);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a0d0c5119c9b4378e6a401500990bc304}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a0d0c5119c9b4378e6a401500990bc304}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \} \textcolor{comment}{// Allow checkbox in inspector}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a94be6fc137aa98776739231c6aeedbc0}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!atlas@{atlas}}
+\index{atlas@{atlas}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{atlas}{atlas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+atlas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a78adf1088f6930cb2a9939537addf6fa}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_a78adf1088f6930cb2a9939537addf6fa}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!atlasAsset@{atlasAsset}}
+\index{atlasAsset@{atlasAsset}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{atlasAsset}{atlasAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+atlas\+Asset\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_ae6ec44be626bbf59b31f2bcd6d556963}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_ae6ec44be626bbf59b31f2bcd6d556963}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!attachments@{attachments}}
+\index{attachments@{attachments}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{attachments}{attachments}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_1_1_slot_region_pair}{Slot\+Region\+Pair}}$>$ Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+attachments = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_1_1_slot_region_pair}{Slot\+Region\+Pair}}$>$()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aba9c624cd0e2eba294cc25ba1c2f8ac8}\label{class_spine_1_1_unity_1_1_modules_1_1_atlas_region_attacher_aba9c624cd0e2eba294cc25ba1c2f8ac8}} 
+\index{Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}!inheritProperties@{inheritProperties}}
+\index{inheritProperties@{inheritProperties}!Spine.Unity.Modules.AtlasRegionAttacher@{Spine.Unity.Modules.AtlasRegionAttacher}}
+\doxysubsubsection{\texorpdfstring{inheritProperties}{inheritProperties}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Atlas\+Region\+Attacher.\+inherit\+Properties = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Atlas\+Region\+Attacher.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\+Legacy/\mbox{\hyperlink{_atlas_region_attacher_8cs}{Atlas\+Region\+Attacher.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,147 @@
+\hypertarget{class_scene_effector}{}\doxysection{Scene\+Effector 클래스 참조}
+\label{class_scene_effector}\index{SceneEffector@{SceneEffector}}
+
+
+Scene\+Effector에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_effector_a2dff4d23fa51f15b6c33be03c2a83d11}{Scene\+Effector}} (Canvas\+Group \mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}})
+\item 
+void \mbox{\hyperlink{class_scene_effector_ac156dc38bd0bd4b2b7d6c136ec21975d}{set\+Time}} (float \mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{duration\+Time}})
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_effector_a07bf016a347cb35b3111f5b09b5fe046}{Fade\+Out}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_effector_a08bab9ae8a83bc95b86d081557cf9c3d}{Fade\+In}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Canvas\+Group \mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}}
+\item 
+float \mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{duration\+Time}} = 5f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Scene\+Effector.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_scene_effector_a2dff4d23fa51f15b6c33be03c2a83d11}\label{class_scene_effector_a2dff4d23fa51f15b6c33be03c2a83d11}} 
+\index{SceneEffector@{SceneEffector}!SceneEffector@{SceneEffector}}
+\index{SceneEffector@{SceneEffector}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{SceneEffector()}{SceneEffector()}}
+{\footnotesize\ttfamily Scene\+Effector.\+Scene\+Effector (\begin{DoxyParamCaption}\item[{Canvas\+Group}]{panel }\end{DoxyParamCaption})}
+
+
+
+Scene\+Effector.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13     \{}
+\DoxyCodeLine{14         this.\mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}} = \mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}};}
+\DoxyCodeLine{15     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_scene_effector_a08bab9ae8a83bc95b86d081557cf9c3d}\label{class_scene_effector_a08bab9ae8a83bc95b86d081557cf9c3d}} 
+\index{SceneEffector@{SceneEffector}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Effector.\+Fade\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scene\+Effector.\+cs 파일의 32 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33     \{}
+\DoxyCodeLine{34         \textcolor{keywordtype}{float} time = 0;}
+\DoxyCodeLine{35         \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}}.alpha < 1f)}
+\DoxyCodeLine{36         \{}
+\DoxyCodeLine{37             time += Time.deltaTime / \mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{durationTime}};}
+\DoxyCodeLine{38             \mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}}.alpha = Mathf.Lerp(0, 1, time);}
+\DoxyCodeLine{39             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{40         \}}
+\DoxyCodeLine{41     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_scene_effector_a07bf016a347cb35b3111f5b09b5fe046}\label{class_scene_effector_a07bf016a347cb35b3111f5b09b5fe046}} 
+\index{SceneEffector@{SceneEffector}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Effector.\+Fade\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scene\+Effector.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23         \textcolor{keywordtype}{float} time = 0;}
+\DoxyCodeLine{24         \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}}.alpha > 0f)}
+\DoxyCodeLine{25         \{}
+\DoxyCodeLine{26             time += Time.deltaTime / \mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{durationTime}};}
+\DoxyCodeLine{27             \mbox{\hyperlink{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}{panel}}.alpha = Mathf.Lerp(1, 0, time);}
+\DoxyCodeLine{28             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{29         \}}
+\DoxyCodeLine{30     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_scene_effector_ac156dc38bd0bd4b2b7d6c136ec21975d}\label{class_scene_effector_ac156dc38bd0bd4b2b7d6c136ec21975d}} 
+\index{SceneEffector@{SceneEffector}!setTime@{setTime}}
+\index{setTime@{setTime}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily void Scene\+Effector.\+set\+Time (\begin{DoxyParamCaption}\item[{float}]{duration\+Time }\end{DoxyParamCaption})}
+
+
+
+Scene\+Effector.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18     \{}
+\DoxyCodeLine{19         this.\mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{durationTime}} = \mbox{\hyperlink{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}{durationTime}};}
+\DoxyCodeLine{20     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}\label{class_scene_effector_ab4c9696570bbfcaca4e56da2b53a2509}} 
+\index{SceneEffector@{SceneEffector}!durationTime@{durationTime}}
+\index{durationTime@{durationTime}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{durationTime}{durationTime}}
+{\footnotesize\ttfamily float Scene\+Effector.\+duration\+Time = 5f}
+
+
+
+Scene\+Effector.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}\label{class_scene_effector_ab6ca346921243ae457a000ca58f198dc}} 
+\index{SceneEffector@{SceneEffector}!panel@{panel}}
+\index{panel@{panel}!SceneEffector@{SceneEffector}}
+\doxysubsubsection{\texorpdfstring{panel}{panel}}
+{\footnotesize\ttfamily Canvas\+Group Scene\+Effector.\+panel}
+
+
+
+Scene\+Effector.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Util/\+Scene/\+Scene\+Effect/\mbox{\hyperlink{_scene_effector_8cs}{Scene\+Effector.\+cs}}\end{DoxyCompactItemize}

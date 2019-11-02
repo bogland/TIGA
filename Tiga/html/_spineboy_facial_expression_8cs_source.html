@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/SpineboyFacialExpression.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_spineboy_facial_expression_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpineboyFacialExpression.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_spineboy_facial_expression_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html">    6</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html">SpineboyFacialExpression</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad2b81b62b6cdfa98b7de702ac82c3674">    8</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter.html">SpineboyFootplanter</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad2b81b62b6cdfa98b7de702ac82c3674">footPlanter</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_slot.html">SpineSlot</a>]</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#adf6dae35d5627cbb62abafdf6ff10206">   11</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a9c667edf2c6e930bfa9c915849086f06">eyeSlotName</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#adf6dae35d5627cbb62abafdf6ff10206">mouthSlotName</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_attachment.html">SpineAttachment</a>(slotField:<span class="stringliteral">&quot;eyeSlotName&quot;</span>)]</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ade9bb84edac59547c547c2b66964981a">   14</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ade9bb84edac59547c547c2b66964981a">shockEyeName</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0c9a2ad8299e49e1422d85be60d8502c">normalEyeName</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_attachment.html">SpineAttachment</a>(slotField: <span class="stringliteral">&quot;mouthSlotName&quot;</span>)]</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a07b80e46fb74ede79f28a588dfe847ee">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a07b80e46fb74ede79f28a588dfe847ee">shockMouthName</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6f773f1dbc621d9ed14438b1ad5332af">normalMouthName</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">   19</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_slot.html">Slot</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6bc8df3b0515761ada0c7cbc92b527d6">eyeSlot</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">mouthSlot</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ac1c7593e9b5165d8381b262193c2d641">   20</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_attachment.html">Attachment</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af87bfbe8cbc9d67357d694b5653789db">shockEye</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af891806edac5a377234d0a62b7150032">normalEye</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ac1c7593e9b5165d8381b262193c2d641">shockMouth</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0cca0dace616481d49588fa02abd5c75">normalMouth</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a00f68dc821abf36d69e1d7f85b152475">   22</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a00f68dc821abf36d69e1d7f85b152475">balanceThreshold</a> = 2.5f;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a1ccf60c940895a3cf79dfacf9487f37d">   23</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a1ccf60c940895a3cf79dfacf9487f37d">shockDuration</a> = 1f;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        [Header(<span class="stringliteral">&quot;Debug&quot;</span>)]</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">   26</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">shockTimer</a> = 0f;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af708a7ba015493d518cb1f3bf9ef6b95">   28</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af708a7ba015493d518cb1f3bf9ef6b95">Start</a> () {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            var skeletonAnimation = GetComponent&lt;SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            var skeleton = skeletonAnimation.Skeleton;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6bc8df3b0515761ada0c7cbc92b527d6">eyeSlot</a> = skeleton.FindSlot(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a9c667edf2c6e930bfa9c915849086f06">eyeSlotName</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">mouthSlot</a> = skeleton.FindSlot(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#adf6dae35d5627cbb62abafdf6ff10206">mouthSlotName</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">int</span> eyeSlotIndex = skeleton.FindSlotIndex(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a9c667edf2c6e930bfa9c915849086f06">eyeSlotName</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af87bfbe8cbc9d67357d694b5653789db">shockEye</a> = skeleton.GetAttachment(eyeSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ade9bb84edac59547c547c2b66964981a">shockEyeName</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af891806edac5a377234d0a62b7150032">normalEye</a> = skeleton.GetAttachment(eyeSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0c9a2ad8299e49e1422d85be60d8502c">normalEyeName</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordtype">int</span> mouthSlotIndex = skeleton.FindSlotIndex(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#adf6dae35d5627cbb62abafdf6ff10206">mouthSlotName</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ac1c7593e9b5165d8381b262193c2d641">shockMouth</a> = skeleton.GetAttachment(mouthSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a07b80e46fb74ede79f28a588dfe847ee">shockMouthName</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0cca0dace616481d49588fa02abd5c75">normalMouth</a> = skeleton.GetAttachment(mouthSlotIndex, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6f773f1dbc621d9ed14438b1ad5332af">normalMouthName</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a24452ca78acea0e3fd168cac774a2efe">   43</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a24452ca78acea0e3fd168cac774a2efe">Update</a> () {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> (Mathf.Abs(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad2b81b62b6cdfa98b7de702ac82c3674">footPlanter</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter.html#ab052398cc2e1b2a648c8f348d9425a86">Balance</a>) &gt; <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a00f68dc821abf36d69e1d7f85b152475">balanceThreshold</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">shockTimer</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a1ccf60c940895a3cf79dfacf9487f37d">shockDuration</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">shockTimer</a> &gt; 0)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">shockTimer</a> -= Time.deltaTime;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">shockTimer</a> &gt; 0) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6bc8df3b0515761ada0c7cbc92b527d6">eyeSlot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af87bfbe8cbc9d67357d694b5653789db">shockEye</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">mouthSlot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ac1c7593e9b5165d8381b262193c2d641">shockMouth</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6bc8df3b0515761ada0c7cbc92b527d6">eyeSlot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af891806edac5a377234d0a62b7150032">normalEye</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">mouthSlot</a>.<a class="code" href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Attachment</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0cca0dace616481d49588fa02abd5c75">normalMouth</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_ad701047779cffef24a50e47eeed48d65"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad701047779cffef24a50e47eeed48d65">Spine.Unity.Examples.SpineboyFacialExpression.shockTimer</a></div><div class="ttdeci">float shockTimer</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00026">SpineboyFacialExpression.cs:26</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a24452ca78acea0e3fd168cac774a2efe"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a24452ca78acea0e3fd168cac774a2efe">Spine.Unity.Examples.SpineboyFacialExpression.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00043">SpineboyFacialExpression.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a6f773f1dbc621d9ed14438b1ad5332af"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6f773f1dbc621d9ed14438b1ad5332af">Spine.Unity.Examples.SpineboyFacialExpression.normalMouthName</a></div><div class="ttdeci">string normalMouthName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00017">SpineboyFacialExpression.cs:17</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a1ccf60c940895a3cf79dfacf9487f37d"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a1ccf60c940895a3cf79dfacf9487f37d">Spine.Unity.Examples.SpineboyFacialExpression.shockDuration</a></div><div class="ttdeci">float shockDuration</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00023">SpineboyFacialExpression.cs:23</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter.html">Spine.Unity.Examples.SpineboyFootplanter</a></div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_footplanter_8cs_source.html#l00009">SpineboyFootplanter.cs:9</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_ad2b81b62b6cdfa98b7de702ac82c3674"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ad2b81b62b6cdfa98b7de702ac82c3674">Spine.Unity.Examples.SpineboyFacialExpression.footPlanter</a></div><div class="ttdeci">SpineboyFootplanter footPlanter</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00008">SpineboyFacialExpression.cs:8</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_af891806edac5a377234d0a62b7150032"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af891806edac5a377234d0a62b7150032">Spine.Unity.Examples.SpineboyFacialExpression.normalEye</a></div><div class="ttdeci">Attachment normalEye</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00020">SpineboyFacialExpression.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a00f68dc821abf36d69e1d7f85b152475"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a00f68dc821abf36d69e1d7f85b152475">Spine.Unity.Examples.SpineboyFacialExpression.balanceThreshold</a></div><div class="ttdeci">float balanceThreshold</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00022">SpineboyFacialExpression.cs:22</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_adf6dae35d5627cbb62abafdf6ff10206"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#adf6dae35d5627cbb62abafdf6ff10206">Spine.Unity.Examples.SpineboyFacialExpression.mouthSlotName</a></div><div class="ttdeci">string mouthSlotName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00011">SpineboyFacialExpression.cs:11</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a2e3bd07a4034cef3a3b438f217f2f435"><div class="ttname"><a href="class_spine_1_1_slot.html#a2e3bd07a4034cef3a3b438f217f2f435">Spine.Slot.Attachment</a></div><div class="ttdeci">Attachment Attachment</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00057">Slot.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_html_ab052398cc2e1b2a648c8f348d9425a86"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter.html#ab052398cc2e1b2a648c8f348d9425a86">Spine.Unity.Examples.SpineboyFootplanter.Balance</a></div><div class="ttdeci">float Balance</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_footplanter_8cs_source.html#l00113">SpineboyFootplanter.cs:113</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_slot_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_slot.html">Spine.Unity.SpineSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00046">SpineAttributes.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a0c9a2ad8299e49e1422d85be60d8502c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0c9a2ad8299e49e1422d85be60d8502c">Spine.Unity.Examples.SpineboyFacialExpression.normalEyeName</a></div><div class="ttdeci">string normalEyeName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00014">SpineboyFacialExpression.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a0cca0dace616481d49588fa02abd5c75"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a0cca0dace616481d49588fa02abd5c75">Spine.Unity.Examples.SpineboyFacialExpression.normalMouth</a></div><div class="ttdeci">Attachment normalMouth</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00020">SpineboyFacialExpression.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html">Spine.Unity.Examples.SpineboyFacialExpression</a></div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00006">SpineboyFacialExpression.cs:6</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a07b80e46fb74ede79f28a588dfe847ee"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a07b80e46fb74ede79f28a588dfe847ee">Spine.Unity.Examples.SpineboyFacialExpression.shockMouthName</a></div><div class="ttdeci">string shockMouthName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00017">SpineboyFacialExpression.cs:17</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_af708a7ba015493d518cb1f3bf9ef6b95"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af708a7ba015493d518cb1f3bf9ef6b95">Spine.Unity.Examples.SpineboyFacialExpression.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00028">SpineboyFacialExpression.cs:28</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_ac1c7593e9b5165d8381b262193c2d641"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ac1c7593e9b5165d8381b262193c2d641">Spine.Unity.Examples.SpineboyFacialExpression.shockMouth</a></div><div class="ttdeci">Attachment shockMouth</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00020">SpineboyFacialExpression.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a6bc8df3b0515761ada0c7cbc92b527d6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a6bc8df3b0515761ada0c7cbc92b527d6">Spine.Unity.Examples.SpineboyFacialExpression.eyeSlot</a></div><div class="ttdeci">Slot eyeSlot</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00019">SpineboyFacialExpression.cs:19</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a9c667edf2c6e930bfa9c915849086f06"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a9c667edf2c6e930bfa9c915849086f06">Spine.Unity.Examples.SpineboyFacialExpression.eyeSlotName</a></div><div class="ttdeci">string eyeSlotName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00011">SpineboyFacialExpression.cs:11</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_ade9bb84edac59547c547c2b66964981a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#ade9bb84edac59547c547c2b66964981a">Spine.Unity.Examples.SpineboyFacialExpression.shockEyeName</a></div><div class="ttdeci">string shockEyeName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00014">SpineboyFacialExpression.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_af87bfbe8cbc9d67357d694b5653789db"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#af87bfbe8cbc9d67357d694b5653789db">Spine.Unity.Examples.SpineboyFacialExpression.shockEye</a></div><div class="ttdeci">Attachment shockEye</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00020">SpineboyFacialExpression.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_attachment_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_attachment.html">Spine.Unity.SpineAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00181">SpineAttributes.cs:181</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_attachment_html"><div class="ttname"><a href="class_spine_1_1_attachment.html">Spine.Attachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_8cs_source.html#l00033">Attachment.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression_html_a2a6afa06ef093106556e5d941eb4e9b9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_facial_expression.html#a2a6afa06ef093106556e5d941eb4e9b9">Spine.Unity.Examples.SpineboyFacialExpression.mouthSlot</a></div><div class="ttdeci">Slot mouthSlot</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_facial_expression_8cs_source.html#l00019">SpineboyFacialExpression.cs:19</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="_spineboy_facial_expression_8cs.html">SpineboyFacialExpression.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

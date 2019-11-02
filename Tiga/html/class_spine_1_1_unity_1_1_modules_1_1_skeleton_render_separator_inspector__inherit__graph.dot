@@ -1,0 +1,9 @@
+digraph "Spine.Unity.Modules.SkeletonRenderSeparatorInspector"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Skeleton\lRenderSeparatorInspector\n|+ SkeletonRendererSeparator\lCount\l- component\l- skeletonRenderer_\l- copyPropertyBlock_\l- copyMeshRendererFlags_\l- partsRenderers_\l- skeletonRendererSerialized\lObject\l- separatorNamesProp\l- slotsReapplyRequired\l- partsRenderersExpanded\l- skeletonRendererExpanded\l|+ OnInspectorGUI()\l+ AddPartsRenderer()\l+ DetectOrphanedPartsRenderers()\l- OnEnable()\l- AddRenderSeparatorComponent()\l- ValidateAddRenderSeparator\lComponent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{UnityEditor::Editor\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

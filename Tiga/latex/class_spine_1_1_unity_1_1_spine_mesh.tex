@@ -1,0 +1,50 @@
+\hypertarget{class_spine_1_1_unity_1_1_spine_mesh}{}\doxysection{Spine.\+Unity.\+Spine\+Mesh 클래스 참조}
+\label{class_spine_1_1_unity_1_1_spine_mesh}\index{Spine.Unity.SpineMesh@{Spine.Unity.SpineMesh}}
+
+
+Spine.\+Unity.\+Spine\+Mesh에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static Mesh \mbox{\hyperlink{class_spine_1_1_unity_1_1_spine_mesh_a8ed064592a103f369b0817887a7055b2}{New\+Skeleton\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Factory method for creating a new mesh for use in \mbox{\hyperlink{namespace_spine}{Spine}} components. This can be called in field initializers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Mesh.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_spine_mesh_a8ed064592a103f369b0817887a7055b2}\label{class_spine_1_1_unity_1_1_spine_mesh_a8ed064592a103f369b0817887a7055b2}} 
+\index{Spine.Unity.SpineMesh@{Spine.Unity.SpineMesh}!NewSkeletonMesh@{NewSkeletonMesh}}
+\index{NewSkeletonMesh@{NewSkeletonMesh}!Spine.Unity.SpineMesh@{Spine.Unity.SpineMesh}}
+\doxysubsubsection{\texorpdfstring{NewSkeletonMesh()}{NewSkeletonMesh()}}
+{\footnotesize\ttfamily static Mesh Spine.\+Unity.\+Spine\+Mesh.\+New\+Skeleton\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Factory method for creating a new mesh for use in \mbox{\hyperlink{namespace_spine}{Spine}} components. This can be called in field initializers. 
+
+
+
+Spine\+Mesh.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                               \{}
+\DoxyCodeLine{45             var m = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}}();}
+\DoxyCodeLine{46             m.MarkDynamic();}
+\DoxyCodeLine{47             m.name = \textcolor{stringliteral}{"Skeleton Mesh"};}
+\DoxyCodeLine{48             m.hideFlags = SpineMesh.MeshHideflags;}
+\DoxyCodeLine{49             \textcolor{keywordflow}{return} m;}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Mesh Generation/\mbox{\hyperlink{_spine_mesh_8cs}{Spine\+Mesh.\+cs}}\end{DoxyCompactItemize}

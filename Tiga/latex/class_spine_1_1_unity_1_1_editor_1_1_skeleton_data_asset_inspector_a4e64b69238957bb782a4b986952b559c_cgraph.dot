@@ -1,0 +1,16 @@
+digraph "Spine.Unity.Editor.SkeletonDataAssetInspector.PopulateWarnings"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector.PopulateWarnings",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Spine\lEditorUtilities.GetRequiredAtlas\lRegions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a66ccff00a4c92e84bba62f9f4c63e0ab",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Editor.Spine\lEditorUtilities.AddRequiredAtlas\lRegionsFromBinary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a402facc75ebd4b49e2d6699ebfa0685f",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.SkeletonBinary.Read\lSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a3cfc76069391154adf58f9ee1e7b23cb",tooltip=" "];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Json.Deserialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_json.html#af98b2062414586e649da25e7db85b3b6",tooltip=" "];
+}

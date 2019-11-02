@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Editor.SpineEditorUtilities.Icons"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Editor.Spine\lEditorUtilities.Icons\n|+ skeleton\l+ nullBone\l+ bone\l+ poseBones\l+ boneNib\l+ slot\l+ slotRoot\l+ skinPlaceholder\l+ image\l+ genericAttachment\l그리고 24개 더...\l|+ Initialize()\l+ GetAttachmentIcon()\l- LoadIcon()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

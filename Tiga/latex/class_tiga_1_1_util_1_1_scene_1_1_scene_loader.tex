@@ -1,0 +1,150 @@
+\hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader}{}\doxysection{Tiga.\+Util.\+Scene.\+Scene\+Loader 클래스 참조}
+\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader}\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+
+
+Tiga.\+Util.\+Scene.\+Scene\+Loader에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a995ddae785562b4fd6836a93cfe94efd}{Scene\+Loader}} ()
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a01cf68238f119b16a1af28808a2600f6}{Register\+Scenes}} (string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}{scene\+List}})
+\item 
+void \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a13aaa96ae81da15381a51e4982491bb4}{Load\+Scene}} (string scene\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}{scene\+List}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a24b0e067a2119033adbf8c04a2bfb70e}{Is\+Scene\+Exist}} (string scene\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Scene\+Loader.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a995ddae785562b4fd6836a93cfe94efd}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a995ddae785562b4fd6836a93cfe94efd}} 
+\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}!SceneLoader@{SceneLoader}}
+\index{SceneLoader@{SceneLoader}!Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+\doxysubsubsection{\texorpdfstring{SceneLoader()}{SceneLoader()}}
+{\footnotesize\ttfamily Tiga.\+Util.\+Scene.\+Scene\+Loader.\+Scene\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Scene\+Loader.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14         \{}
+\DoxyCodeLine{15             \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}{sceneList}} = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{16         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a24b0e067a2119033adbf8c04a2bfb70e}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a24b0e067a2119033adbf8c04a2bfb70e}} 
+\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}!IsSceneExist@{IsSceneExist}}
+\index{IsSceneExist@{IsSceneExist}!Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+\doxysubsubsection{\texorpdfstring{IsSceneExist()}{IsSceneExist()}}
+{\footnotesize\ttfamily bool Tiga.\+Util.\+Scene.\+Scene\+Loader.\+Is\+Scene\+Exist (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{36         \{}
+\DoxyCodeLine{37             \textcolor{keywordtype}{bool} isExist = \textcolor{keyword}{false};}
+\DoxyCodeLine{38             \textcolor{keywordflow}{foreach} (var registedSceneName \textcolor{keywordflow}{in} \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}{sceneList}})}
+\DoxyCodeLine{39             \{}
+\DoxyCodeLine{40                 \textcolor{keywordflow}{if} (registedSceneName == sceneName)}
+\DoxyCodeLine{41                 \{}
+\DoxyCodeLine{42                     isExist = \textcolor{keyword}{true};}
+\DoxyCodeLine{43                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{44                 \}}
+\DoxyCodeLine{45             \}}
+\DoxyCodeLine{46             \textcolor{keywordflow}{return} isExist;}
+\DoxyCodeLine{47         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a13aaa96ae81da15381a51e4982491bb4}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a13aaa96ae81da15381a51e4982491bb4}} 
+\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Scene\+Loader.\+Load\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name }\end{DoxyParamCaption})}
+
+
+
+Scene\+Loader.\+cs 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{24         \{}
+\DoxyCodeLine{25             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a24b0e067a2119033adbf8c04a2bfb70e}{IsSceneExist}}(sceneName))}
+\DoxyCodeLine{26             \{}
+\DoxyCodeLine{27                 \textcolor{comment}{//씬이 없으면 벗어남}}
+\DoxyCodeLine{28                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{29             \}}
+\DoxyCodeLine{30             \textcolor{comment}{//string currentScene = SceneManager.GetActiveScene().name;}}
+\DoxyCodeLine{31             \textcolor{comment}{//SceneManager.UnloadSceneAsync(currentScene);}}
+\DoxyCodeLine{32             SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);}
+\DoxyCodeLine{33   }
+\DoxyCodeLine{34     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a01cf68238f119b16a1af28808a2600f6}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_a01cf68238f119b16a1af28808a2600f6}} 
+\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}!RegisterScenes@{RegisterScenes}}
+\index{RegisterScenes@{RegisterScenes}!Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+\doxysubsubsection{\texorpdfstring{RegisterScenes()}{RegisterScenes()}}
+{\footnotesize\ttfamily void Tiga.\+Util.\+Scene.\+Scene\+Loader.\+Register\+Scenes (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{scene\+List }\end{DoxyParamCaption})}
+
+
+
+Scene\+Loader.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20             \textcolor{keywordflow}{foreach} (var sceneName \textcolor{keywordflow}{in} \mbox{\hyperlink{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}{sceneList}})}
+\DoxyCodeLine{21                 this.sceneList.Add(sceneName);}
+\DoxyCodeLine{22         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}\label{class_tiga_1_1_util_1_1_scene_1_1_scene_loader_aeba732cce3c6347613bb4278cd428688}} 
+\index{Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}!sceneList@{sceneList}}
+\index{sceneList@{sceneList}!Tiga.Util.Scene.SceneLoader@{Tiga.Util.Scene.SceneLoader}}
+\doxysubsubsection{\texorpdfstring{sceneList}{sceneList}}
+{\footnotesize\ttfamily List$<$string$>$ Tiga.\+Util.\+Scene.\+Scene\+Loader.\+scene\+List}
+
+
+
+Scene\+Loader.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Util/\+Scene/\+Load\+Scene/\mbox{\hyperlink{_util_2_scene_2_load_scene_2_scene_loader_8cs}{Scene\+Loader.\+cs}}\end{DoxyCompactItemize}

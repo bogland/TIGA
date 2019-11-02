@@ -1,0 +1,695 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}{}\doxysection{Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility}\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+
+
+Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_box_scope}{Box\+Scope}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_indent_scope}{Indent\+Scope}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_label_width_scope}{Label\+Width\+Scope}}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_serialized_sorting_properties}{Serialized\+Sorting\+Properties}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a513e320302bc79febef713e371a95e8c}{Pluralize}} (int n, string singular, string plural)
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ac9232a01370d3b2586207fe101cf8aeb}{Plural\+ThenS}} (int n)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a505b0df7d29dc091616fb3e19b33f14e}{Property\+Field\+Wide\+Label}} (Serialized\+Property property, G\+U\+I\+Content label=null, float minimum\+Label\+Width=150)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aaaae70f6f2e1a75f4dbc63e70e96b610}{Property\+Field\+Fit\+Label}} (Serialized\+Property property, G\+U\+I\+Content label=null, float extra\+Space=5f)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a826f058ba9b980f6f274707308373939}{Toggle\+Left\+Layout}} (Serialized\+Property property, G\+U\+I\+Content label=null, float width=120f)
+\begin{DoxyCompactList}\small\item\em Multi-\/edit-\/compatible version of Editor\+G\+U\+I\+Layout.\+Toggle\+Left(\+Serialized\+Property) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a6fa6e0a81d3c031da239e44d3fd28ed1}{Toggle\+Left}} (Rect rect, Serialized\+Property property, G\+U\+I\+Content label=null)
+\begin{DoxyCompactList}\small\item\em Multi-\/edit-\/compatible version of Editor\+G\+U\+I\+Layout.\+Toggle\+Left(\+Serialized\+Property) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aa86821a029786515e2ebf23316839bec}{Undo\+Redo\+Performed}} (Unity\+Engine.\+Event current)
+\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ae9caf8d4a89dbe808d87c267fe8c389d}{Unity\+Icon$<$ T $>$}} ()
+\item 
+static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a1acb78844c34b81de6156e558627b7dd}{Unity\+Icon}} (System.\+Type type)
+\item 
+static Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acb17a5160080ebf73b8dc50cfa13686d}{Find\+Base\+Or\+Sibling\+Property}} (this Serialized\+Property property, string property\+Name)
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ab0e8f41c9e384ffb71babec60e822f81}{Large\+Centered\+Button}} (string label, bool side\+Space=true, float max\+Width=\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}})
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acd3d80e8dd6a2b262763a4b0f1d875df}{Large\+Centered\+Button}} (G\+U\+I\+Content content, bool side\+Space=true, float max\+Width=\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}})
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a33c6abe642483c61af30c1054c2b6fa7}{Centered\+Button}} (G\+U\+I\+Content content, float height=20f, bool side\+Space=true, float max\+Width=\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}})
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a2ed6fb5778afbe3a5cdb08993d2c1f8f}{Targets\+Use\+Same\+Data}} (Serialized\+Object so)
+\item 
+static Serialized\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a4bd9935d8fe9455377ee5708fe819bef}{Get\+Renderers\+Serialized\+Object}} (Serialized\+Object serialized\+Object)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad5e3a9b1d1d2963bdb04d07f96c20e09}{Sorting\+Property\+Fields}} (\mbox{\hyperlink{struct_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_serialized_sorting_properties}{Serialized\+Sorting\+Properties}} prop, bool apply\+Modified\+Properties)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad823b6f0649c41d2cd22a92df615ff9e}{Em\+Dash}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static G\+U\+I\+Style \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ace942c28dc069e8d286aa930a38083b1}{Gray\+Mini\+Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static G\+U\+I\+Style \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a112c22ddb9f94f6d6e08c99687b9c694}{Spine\+Button\+Style}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+static Method\+Info \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3703dfb50fb899dd5373ffb76af96cab}{Sorting\+Layer\+Field\+Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aca0ef3dd0eddb989d8be063539bc35f4}{temp\+Content}}
+\item 
+static G\+U\+I\+Style \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}{gray\+Mini\+Label}}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}} = 270f
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}{Center\+Button\+Height}} = 35f
+\item 
+static G\+U\+I\+Style \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spine\+Button\+Style}}
+\item 
+static readonly G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a7fc7718d147ea99545236839ae66f418}{Sorting\+Layer\+Label}} = new G\+U\+I\+Content(\char`\"{}Sorting Layer\char`\"{}, \char`\"{}Mesh\+Renderer.\+sorting\+Layer\+ID\char`\"{})
+\item 
+static readonly G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a9d0265877462491b99380d7b8b4082ef}{Order\+In\+Layer\+Label}} = new G\+U\+I\+Content(\char`\"{}Order in Layer\char`\"{}, \char`\"{}Mesh\+Renderer.\+sorting\+Order\char`\"{})
+\item 
+static Method\+Info \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}{m\+\_\+\+Sorting\+Layer\+Field\+Method}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a33c6abe642483c61af30c1054c2b6fa7}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a33c6abe642483c61af30c1054c2b6fa7}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!CenteredButton@{CenteredButton}}
+\index{CenteredButton@{CenteredButton}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{CenteredButton()}{CenteredButton()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Centered\+Button (\begin{DoxyParamCaption}\item[{G\+U\+I\+Content}]{content,  }\item[{float}]{height = {\ttfamily 20f},  }\item[{bool}]{side\+Space = {\ttfamily true},  }\item[{float}]{max\+Width = {\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 261 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{262                                                                                                                                                  \{}
+\DoxyCodeLine{263             \textcolor{keywordflow}{if} (sideSpace) \{}
+\DoxyCodeLine{264                 \textcolor{keywordtype}{bool} clicked;}
+\DoxyCodeLine{265                 \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUILayout.HorizontalScope()) \{}
+\DoxyCodeLine{266                     EditorGUILayout.Space();}
+\DoxyCodeLine{267                     clicked = GUILayout.Button(content, GUILayout.MaxWidth(maxWidth), GUILayout.Height(height));}
+\DoxyCodeLine{268                     EditorGUILayout.Space();}
+\DoxyCodeLine{269                 \}}
+\DoxyCodeLine{270                 EditorGUILayout.Space();}
+\DoxyCodeLine{271                 \textcolor{keywordflow}{return} clicked;}
+\DoxyCodeLine{272             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{273                 \textcolor{keywordflow}{return} GUILayout.Button(content, GUILayout.MaxWidth(maxWidth), GUILayout.Height(height));}
+\DoxyCodeLine{274             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acb17a5160080ebf73b8dc50cfa13686d}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acb17a5160080ebf73b8dc50cfa13686d}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!FindBaseOrSiblingProperty@{FindBaseOrSiblingProperty}}
+\index{FindBaseOrSiblingProperty@{FindBaseOrSiblingProperty}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{FindBaseOrSiblingProperty()}{FindBaseOrSiblingProperty()}}
+{\footnotesize\ttfamily static Serialized\+Property Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Find\+Base\+Or\+Sibling\+Property (\begin{DoxyParamCaption}\item[{this Serialized\+Property}]{property,  }\item[{string}]{property\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 120 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121                                                                                                                            \{}
+\DoxyCodeLine{122             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(propertyName)) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             SerializedProperty relativeProperty = \textcolor{keyword}{property}.serializedObject.FindProperty(propertyName); \textcolor{comment}{// baseProperty}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \textcolor{comment}{// If base property is not found, look for the sibling property.}}
+\DoxyCodeLine{127             \textcolor{keywordflow}{if} (relativeProperty == \textcolor{keyword}{null}) \{ }
+\DoxyCodeLine{128                 \textcolor{keywordtype}{string} propertyPath = \textcolor{keyword}{property}.propertyPath;}
+\DoxyCodeLine{129                 \textcolor{keywordtype}{int} localPathLength = \textcolor{keyword}{property}.name.Length;}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131                 \textcolor{keywordtype}{string} newPropertyPath = propertyPath.Remove(propertyPath.Length -\/ localPathLength, localPathLength) + propertyName;}
+\DoxyCodeLine{132                 relativeProperty = \textcolor{keyword}{property}.serializedObject.FindProperty(newPropertyPath);}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134                 \textcolor{comment}{// If a direct sibling property was not found, try to find the sibling of the array.}}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{if} (relativeProperty == \textcolor{keyword}{null} \&\& property.isArray) \{}
+\DoxyCodeLine{136                     \textcolor{keywordtype}{int} propertyPathLength = propertyPath.Length;}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138                     \textcolor{keywordtype}{int} dotCount = 0;}
+\DoxyCodeLine{139                     \textcolor{keyword}{const} \textcolor{keywordtype}{int} SiblingOfListDotCount = 3;}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < propertyPathLength; i++) \{}
+\DoxyCodeLine{141                         \textcolor{keywordflow}{if} (propertyPath[propertyPathLength -\/ i] == \textcolor{charliteral}{'.'}) \{}
+\DoxyCodeLine{142                             dotCount++;}
+\DoxyCodeLine{143                             \textcolor{keywordflow}{if} (dotCount >= SiblingOfListDotCount) \{}
+\DoxyCodeLine{144                                 localPathLength = i -\/ 1;}
+\DoxyCodeLine{145                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{146                             \}}
+\DoxyCodeLine{147                         \}}
+\DoxyCodeLine{148                     \}}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150                     newPropertyPath = propertyPath.Remove(propertyPath.Length -\/ localPathLength, localPathLength) + propertyName;}
+\DoxyCodeLine{151                     relativeProperty = \textcolor{keyword}{property}.serializedObject.FindProperty(newPropertyPath);}
+\DoxyCodeLine{152                 \}}
+\DoxyCodeLine{153             \}}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155             \textcolor{keywordflow}{return} relativeProperty;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a4bd9935d8fe9455377ee5708fe819bef}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a4bd9935d8fe9455377ee5708fe819bef}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!GetRenderersSerializedObject@{GetRenderersSerializedObject}}
+\index{GetRenderersSerializedObject@{GetRenderersSerializedObject}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{GetRenderersSerializedObject()}{GetRenderersSerializedObject()}}
+{\footnotesize\ttfamily static Serialized\+Object Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Get\+Renderers\+Serialized\+Object (\begin{DoxyParamCaption}\item[{Serialized\+Object}]{serialized\+Object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 291 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{292                                                                                                         \{}
+\DoxyCodeLine{293             \textcolor{keywordflow}{if} (serializedObject.isEditingMultipleObjects) \{}
+\DoxyCodeLine{294                 var renderers = \textcolor{keyword}{new} List<Object>();}
+\DoxyCodeLine{295                 \textcolor{keywordflow}{foreach} (var o \textcolor{keywordflow}{in} serializedObject.targetObjects) \{}
+\DoxyCodeLine{296                     var component = o as Component;}
+\DoxyCodeLine{297                     \textcolor{keywordflow}{if} (component != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{298                         var renderer = component.GetComponent<Renderer>();}
+\DoxyCodeLine{299                         \textcolor{keywordflow}{if} (renderer != \textcolor{keyword}{null}) }
+\DoxyCodeLine{300                             renderers.Add(renderer);}
+\DoxyCodeLine{301                     \}}
+\DoxyCodeLine{302                 \}}
+\DoxyCodeLine{303                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} SerializedObject(renderers.ToArray());}
+\DoxyCodeLine{304             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{305                 var component = serializedObject.targetObject as Component;}
+\DoxyCodeLine{306                 \textcolor{keywordflow}{if} (component != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{307                     var renderer = component.GetComponent<Renderer>();}
+\DoxyCodeLine{308                     \textcolor{keywordflow}{if} (renderer != \textcolor{keyword}{null})}
+\DoxyCodeLine{309                         \textcolor{keywordflow}{return} \textcolor{keyword}{new} SerializedObject(renderer);}
+\DoxyCodeLine{310                 \}}
+\DoxyCodeLine{311             \}}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{313             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acd3d80e8dd6a2b262763a4b0f1d875df}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_acd3d80e8dd6a2b262763a4b0f1d875df}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!LargeCenteredButton@{LargeCenteredButton}}
+\index{LargeCenteredButton@{LargeCenteredButton}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{LargeCenteredButton()}{LargeCenteredButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Large\+Centered\+Button (\begin{DoxyParamCaption}\item[{G\+U\+I\+Content}]{content,  }\item[{bool}]{side\+Space = {\ttfamily true},  }\item[{float}]{max\+Width = {\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 246 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247                                                                                                                                   \{}
+\DoxyCodeLine{248             \textcolor{keywordflow}{if} (sideSpace) \{}
+\DoxyCodeLine{249                 \textcolor{keywordtype}{bool} clicked;}
+\DoxyCodeLine{250                 \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUILayout.HorizontalScope()) \{}
+\DoxyCodeLine{251                     EditorGUILayout.Space();}
+\DoxyCodeLine{252                     clicked = GUILayout.Button(content, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a112c22ddb9f94f6d6e08c99687b9c694}{SpineButtonStyle}}, GUILayout.MaxWidth(maxWidth), GUILayout.Height(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}{CenterButtonHeight}}));}
+\DoxyCodeLine{253                     EditorGUILayout.Space();}
+\DoxyCodeLine{254                 \}}
+\DoxyCodeLine{255                 EditorGUILayout.Space();}
+\DoxyCodeLine{256                 \textcolor{keywordflow}{return} clicked;}
+\DoxyCodeLine{257             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{258                 \textcolor{keywordflow}{return} GUILayout.Button(content, GUILayout.MaxWidth(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{CenterButtonMaxWidth}}), GUILayout.Height(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}{CenterButtonHeight}}));}
+\DoxyCodeLine{259             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ab0e8f41c9e384ffb71babec60e822f81}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ab0e8f41c9e384ffb71babec60e822f81}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!LargeCenteredButton@{LargeCenteredButton}}
+\index{LargeCenteredButton@{LargeCenteredButton}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{LargeCenteredButton()}{LargeCenteredButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Large\+Centered\+Button (\begin{DoxyParamCaption}\item[{string}]{label,  }\item[{bool}]{side\+Space = {\ttfamily true},  }\item[{float}]{max\+Width = {\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{Center\+Button\+Max\+Width}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 231 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{232                                                                                                                             \{}
+\DoxyCodeLine{233             \textcolor{keywordflow}{if} (sideSpace) \{}
+\DoxyCodeLine{234                 \textcolor{keywordtype}{bool} clicked;}
+\DoxyCodeLine{235                 \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUILayout.HorizontalScope()) \{}
+\DoxyCodeLine{236                     EditorGUILayout.Space();}
+\DoxyCodeLine{237                     clicked = GUILayout.Button(label, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a112c22ddb9f94f6d6e08c99687b9c694}{SpineButtonStyle}}, GUILayout.MaxWidth(maxWidth), GUILayout.Height(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}{CenterButtonHeight}}));}
+\DoxyCodeLine{238                     EditorGUILayout.Space();}
+\DoxyCodeLine{239                 \}}
+\DoxyCodeLine{240                 EditorGUILayout.Space();}
+\DoxyCodeLine{241                 \textcolor{keywordflow}{return} clicked;}
+\DoxyCodeLine{242             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{return} GUILayout.Button(label, GUILayout.MaxWidth(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}{CenterButtonMaxWidth}}), GUILayout.Height(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}{CenterButtonHeight}}));}
+\DoxyCodeLine{244             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a513e320302bc79febef713e371a95e8c}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a513e320302bc79febef713e371a95e8c}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!Pluralize@{Pluralize}}
+\index{Pluralize@{Pluralize}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{Pluralize()}{Pluralize()}}
+{\footnotesize\ttfamily static string Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Pluralize (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{string}]{singular,  }\item[{string}]{plural }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                                                \{}
+\DoxyCodeLine{40             \textcolor{keywordflow}{return} n + \textcolor{stringliteral}{" "} + (n == 1 ? singular : plural);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ac9232a01370d3b2586207fe101cf8aeb}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ac9232a01370d3b2586207fe101cf8aeb}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!PluralThenS@{PluralThenS}}
+\index{PluralThenS@{PluralThenS}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{PluralThenS()}{PluralThenS()}}
+{\footnotesize\ttfamily static string Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Plural\+ThenS (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                  \{}
+\DoxyCodeLine{44             \textcolor{keywordflow}{return} n == 1 ? \textcolor{stringliteral}{""} : \textcolor{stringliteral}{"s"};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aaaae70f6f2e1a75f4dbc63e70e96b610}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aaaae70f6f2e1a75f4dbc63e70e96b610}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!PropertyFieldFitLabel@{PropertyFieldFitLabel}}
+\index{PropertyFieldFitLabel@{PropertyFieldFitLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{PropertyFieldFitLabel()}{PropertyFieldFitLabel()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Property\+Field\+Fit\+Label (\begin{DoxyParamCaption}\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label = {\ttfamily null},  }\item[{float}]{extra\+Space = {\ttfamily 5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                                                                                                \{}
+\DoxyCodeLine{67             label = label ?? TempContent(property.displayName, \textcolor{keyword}{null}, property.tooltip);}
+\DoxyCodeLine{68             \textcolor{keywordtype}{float} width = GUI.skin.label.CalcSize(TempContent(label.text)).x + extraSpace;}
+\DoxyCodeLine{69             \textcolor{keywordflow}{if} (label.image != \textcolor{keyword}{null})}
+\DoxyCodeLine{70                 width += EditorGUIUtility.singleLineHeight;}
+\DoxyCodeLine{71             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a505b0df7d29dc091616fb3e19b33f14e}{PropertyFieldWideLabel}}(property, label, width);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a505b0df7d29dc091616fb3e19b33f14e}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a505b0df7d29dc091616fb3e19b33f14e}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!PropertyFieldWideLabel@{PropertyFieldWideLabel}}
+\index{PropertyFieldWideLabel@{PropertyFieldWideLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{PropertyFieldWideLabel()}{PropertyFieldWideLabel()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Property\+Field\+Wide\+Label (\begin{DoxyParamCaption}\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label = {\ttfamily null},  }\item[{float}]{minimum\+Label\+Width = {\ttfamily 150} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                                                                                                         \{}
+\DoxyCodeLine{61             EditorGUIUtility.labelWidth = minimumLabelWidth;}
+\DoxyCodeLine{62             EditorGUILayout.PropertyField(property, label ?? TempContent(property.displayName, \textcolor{keyword}{null}, property.tooltip));}
+\DoxyCodeLine{63             EditorGUIUtility.labelWidth = 0; \textcolor{comment}{// Resets to default}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad5e3a9b1d1d2963bdb04d07f96c20e09}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad5e3a9b1d1d2963bdb04d07f96c20e09}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!SortingPropertyFields@{SortingPropertyFields}}
+\index{SortingPropertyFields@{SortingPropertyFields}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{SortingPropertyFields()}{SortingPropertyFields()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Sorting\+Property\+Fields (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_1_1_serialized_sorting_properties}{Serialized\+Sorting\+Properties}}}]{prop,  }\item[{bool}]{apply\+Modified\+Properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 362 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{363                                                                                                                   \{}
+\DoxyCodeLine{364             \textcolor{keywordflow}{if} (applyModifiedProperties)}
+\DoxyCodeLine{365                 EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367             \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.SortingLayerFieldMethod != \textcolor{keyword}{null} \&\& prop.sortingLayerID != \textcolor{keyword}{null})}
+\DoxyCodeLine{368                 \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.SortingLayerFieldMethod.Invoke(\textcolor{keyword}{null}, \textcolor{keyword}{new} \textcolor{keywordtype}{object}[] \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a7fc7718d147ea99545236839ae66f418}{SortingLayerLabel}}, prop.sortingLayerID, EditorStyles.popup \} );}
+\DoxyCodeLine{369             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{370                 EditorGUILayout.PropertyField(prop.sortingLayerID);}
+\DoxyCodeLine{371 }
+\DoxyCodeLine{372             EditorGUILayout.PropertyField(prop.sortingOrder, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a9d0265877462491b99380d7b8b4082ef}{OrderInLayerLabel}});}
+\DoxyCodeLine{373 }
+\DoxyCodeLine{374             \textcolor{keywordflow}{if} (applyModifiedProperties \&\& EditorGUI.EndChangeCheck())}
+\DoxyCodeLine{375                     prop.ApplyModifiedProperties();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a2ed6fb5778afbe3a5cdb08993d2c1f8f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a2ed6fb5778afbe3a5cdb08993d2c1f8f}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!TargetsUseSameData@{TargetsUseSameData}}
+\index{TargetsUseSameData@{TargetsUseSameData}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{TargetsUseSameData()}{TargetsUseSameData()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Targets\+Use\+Same\+Data (\begin{DoxyParamCaption}\item[{Serialized\+Object}]{so }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 278 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{279                                                                     \{}
+\DoxyCodeLine{280             \textcolor{keywordflow}{if} (so.isEditingMultipleObjects) \{}
+\DoxyCodeLine{281                 \textcolor{keywordtype}{int} n = so.targetObjects.Length;}
+\DoxyCodeLine{282                 var first = so.targetObjects[0] as IHasSkeletonDataAsset;}
+\DoxyCodeLine{283                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 1; i < n; i++) \{}
+\DoxyCodeLine{284                     var sr = so.targetObjects[i] as IHasSkeletonDataAsset;}
+\DoxyCodeLine{285                     \textcolor{keywordflow}{if} (sr != \textcolor{keyword}{null} \&\& sr.SkeletonDataAsset != first.SkeletonDataAsset)}
+\DoxyCodeLine{286                         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{287                 \}}
+\DoxyCodeLine{288             \}}
+\DoxyCodeLine{289             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a6fa6e0a81d3c031da239e44d3fd28ed1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a6fa6e0a81d3c031da239e44d3fd28ed1}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!ToggleLeft@{ToggleLeft}}
+\index{ToggleLeft@{ToggleLeft}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{ToggleLeft()}{ToggleLeft()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Toggle\+Left (\begin{DoxyParamCaption}\item[{Rect}]{rect,  }\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multi-\/edit-\/compatible version of Editor\+G\+U\+I\+Layout.\+Toggle\+Left(\+Serialized\+Property) 
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 91 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{92                                                                                                         \{}
+\DoxyCodeLine{93             \textcolor{keywordflow}{if} (label == \textcolor{keyword}{null}) label = \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(property.displayName, tooltip: property.tooltip);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             \textcolor{keywordflow}{if} (property.hasMultipleDifferentValues) \{}
+\DoxyCodeLine{96                 \textcolor{keywordtype}{bool} previousShowMixedValue = EditorGUI.showMixedValue;}
+\DoxyCodeLine{97                 EditorGUI.showMixedValue = \textcolor{keyword}{true};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99                 \textcolor{keywordtype}{bool} clicked = EditorGUI.ToggleLeft(rect, label, property.boolValue);}
+\DoxyCodeLine{100                 \textcolor{keywordflow}{if} (clicked) \textcolor{keyword}{property}.boolValue = \textcolor{keyword}{true}; \textcolor{comment}{// Set all values to true when clicked.}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102                 EditorGUI.showMixedValue = previousShowMixedValue;}
+\DoxyCodeLine{103             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{104                 \textcolor{keyword}{property}.boolValue = EditorGUI.ToggleLeft(rect, label, property.boolValue);}
+\DoxyCodeLine{105             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a826f058ba9b980f6f274707308373939}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a826f058ba9b980f6f274707308373939}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!ToggleLeftLayout@{ToggleLeftLayout}}
+\index{ToggleLeftLayout@{ToggleLeftLayout}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{ToggleLeftLayout()}{ToggleLeftLayout()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Toggle\+Left\+Layout (\begin{DoxyParamCaption}\item[{Serialized\+Property}]{property,  }\item[{G\+U\+I\+Content}]{label = {\ttfamily null},  }\item[{float}]{width = {\ttfamily 120f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Multi-\/edit-\/compatible version of Editor\+G\+U\+I\+Layout.\+Toggle\+Left(\+Serialized\+Property) 
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                                                                                                        \{}
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (label == \textcolor{keyword}{null}) label = \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(property.displayName, tooltip: property.tooltip);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             \textcolor{keywordflow}{if} (property.hasMultipleDifferentValues) \{}
+\DoxyCodeLine{79                 \textcolor{keywordtype}{bool} previousShowMixedValue = EditorGUI.showMixedValue;}
+\DoxyCodeLine{80                 EditorGUI.showMixedValue = \textcolor{keyword}{true};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82                 \textcolor{keywordtype}{bool} clicked = EditorGUILayout.ToggleLeft(label, property.boolValue, GUILayout.Width(width));}
+\DoxyCodeLine{83                 \textcolor{keywordflow}{if} (clicked) \textcolor{keyword}{property}.boolValue = \textcolor{keyword}{true}; \textcolor{comment}{// Set all values to true when clicked.}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85                 EditorGUI.showMixedValue = previousShowMixedValue;}
+\DoxyCodeLine{86             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{87                 \textcolor{keyword}{property}.boolValue = EditorGUILayout.ToggleLeft(label, property.boolValue, GUILayout.Width(width));}
+\DoxyCodeLine{88             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aa86821a029786515e2ebf23316839bec}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aa86821a029786515e2ebf23316839bec}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!UndoRedoPerformed@{UndoRedoPerformed}}
+\index{UndoRedoPerformed@{UndoRedoPerformed}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{UndoRedoPerformed()}{UndoRedoPerformed()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Undo\+Redo\+Performed (\begin{DoxyParamCaption}\item[{Unity\+Engine.\+Event}]{current }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 107 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                                                          \{}
+\DoxyCodeLine{109             \textcolor{keywordflow}{return} current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.ValidateCommand \&\& current.commandName == \textcolor{stringliteral}{"UndoRedoPerformed"};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a1acb78844c34b81de6156e558627b7dd}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a1acb78844c34b81de6156e558627b7dd}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!UnityIcon@{UnityIcon}}
+\index{UnityIcon@{UnityIcon}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{UnityIcon()}{UnityIcon()}}
+{\footnotesize\ttfamily static Texture2D Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Unity\+Icon (\begin{DoxyParamCaption}\item[{System.\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 115 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116                                                             \{}
+\DoxyCodeLine{117             \textcolor{keywordflow}{return} EditorGUIUtility.ObjectContent(\textcolor{keyword}{null}, type).image as Texture2D;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ae9caf8d4a89dbe808d87c267fe8c389d}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ae9caf8d4a89dbe808d87c267fe8c389d}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!UnityIcon$<$ T $>$@{UnityIcon$<$ T $>$}}
+\index{UnityIcon$<$ T $>$@{UnityIcon$<$ T $>$}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{UnityIcon$<$ T $>$()}{UnityIcon< T >()}}
+{\footnotesize\ttfamily static Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a1acb78844c34b81de6156e558627b7dd}{Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Unity\+Icon}}$<$ T $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                                                \{}
+\DoxyCodeLine{113             \textcolor{keywordflow}{return} EditorGUIUtility.ObjectContent(\textcolor{keyword}{null}, typeof(T)).image as Texture2D;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a234f04659fee3de2a268b1690ebd711f}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!CenterButtonHeight@{CenterButtonHeight}}
+\index{CenterButtonHeight@{CenterButtonHeight}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{CenterButtonHeight}{CenterButtonHeight}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Center\+Button\+Height = 35f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 218 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a75f955fb7a55a9a71457ef8b3744b91a}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!CenterButtonMaxWidth@{CenterButtonMaxWidth}}
+\index{CenterButtonMaxWidth@{CenterButtonMaxWidth}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{CenterButtonMaxWidth}{CenterButtonMaxWidth}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Center\+Button\+Max\+Width = 270f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 217 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!grayMiniLabel@{grayMiniLabel}}
+\index{grayMiniLabel@{grayMiniLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{grayMiniLabel}{grayMiniLabel}}
+{\footnotesize\ttfamily G\+U\+I\+Style Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+gray\+Mini\+Label\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 159 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!m\_SortingLayerFieldMethod@{m\_SortingLayerFieldMethod}}
+\index{m\_SortingLayerFieldMethod@{m\_SortingLayerFieldMethod}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{m\_SortingLayerFieldMethod}{m\_SortingLayerFieldMethod}}
+{\footnotesize\ttfamily Method\+Info Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+m\+\_\+\+Sorting\+Layer\+Field\+Method\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 320 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a9d0265877462491b99380d7b8b4082ef}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a9d0265877462491b99380d7b8b4082ef}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!OrderInLayerLabel@{OrderInLayerLabel}}
+\index{OrderInLayerLabel@{OrderInLayerLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{OrderInLayerLabel}{OrderInLayerLabel}}
+{\footnotesize\ttfamily readonly G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Order\+In\+Layer\+Label = new G\+U\+I\+Content(\char`\"{}Order in Layer\char`\"{}, \char`\"{}Mesh\+Renderer.\+sorting\+Order\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 318 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a7fc7718d147ea99545236839ae66f418}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a7fc7718d147ea99545236839ae66f418}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!SortingLayerLabel@{SortingLayerLabel}}
+\index{SortingLayerLabel@{SortingLayerLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{SortingLayerLabel}{SortingLayerLabel}}
+{\footnotesize\ttfamily readonly G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Sorting\+Layer\+Label = new G\+U\+I\+Content(\char`\"{}Sorting Layer\char`\"{}, \char`\"{}Mesh\+Renderer.\+sorting\+Layer\+ID\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 317 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!spineButtonStyle@{spineButtonStyle}}
+\index{spineButtonStyle@{spineButtonStyle}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{spineButtonStyle}{spineButtonStyle}}
+{\footnotesize\ttfamily G\+U\+I\+Style Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+spine\+Button\+Style\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 219 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aca0ef3dd0eddb989d8be063539bc35f4}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_aca0ef3dd0eddb989d8be063539bc35f4}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!tempContent@{tempContent}}
+\index{tempContent@{tempContent}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{tempContent}{tempContent}}
+{\footnotesize\ttfamily G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+temp\+Content\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad823b6f0649c41d2cd22a92df615ff9e}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ad823b6f0649c41d2cd22a92df615ff9e}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!EmDash@{EmDash}}
+\index{EmDash@{EmDash}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{EmDash}{EmDash}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Em\+Dash\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                     \{}
+\DoxyCodeLine{48             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"\(\backslash\)u2014"}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ace942c28dc069e8d286aa930a38083b1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_ace942c28dc069e8d286aa930a38083b1}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!GrayMiniLabel@{GrayMiniLabel}}
+\index{GrayMiniLabel@{GrayMiniLabel}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{GrayMiniLabel}{GrayMiniLabel}}
+{\footnotesize\ttfamily G\+U\+I\+Style Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Gray\+Mini\+Label\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 160 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161                                              \{}
+\DoxyCodeLine{162             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{163                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}{grayMiniLabel}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{164                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}{grayMiniLabel}} = \textcolor{keyword}{new} GUIStyle(EditorStyles.centeredGreyMiniLabel);}
+\DoxyCodeLine{165                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}{grayMiniLabel}}.alignment = TextAnchor.UpperLeft;}
+\DoxyCodeLine{166                 \}}
+\DoxyCodeLine{167                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3a2ccf024bef52797876ee52de4917a1}{grayMiniLabel}};}
+\DoxyCodeLine{168             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3703dfb50fb899dd5373ffb76af96cab}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a3703dfb50fb899dd5373ffb76af96cab}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!SortingLayerFieldMethod@{SortingLayerFieldMethod}}
+\index{SortingLayerFieldMethod@{SortingLayerFieldMethod}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{SortingLayerFieldMethod}{SortingLayerFieldMethod}}
+{\footnotesize\ttfamily Method\+Info Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Sorting\+Layer\+Field\+Method\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 321 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{322                                                   \{}
+\DoxyCodeLine{323             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{324                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}{m\_SortingLayerFieldMethod}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{325                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}{m\_SortingLayerFieldMethod}} = typeof(EditorGUILayout).GetMethod(\textcolor{stringliteral}{"SortingLayerField"}, BindingFlags.Static | BindingFlags.NonPublic, \textcolor{keyword}{null}, \textcolor{keyword}{new} [] \{ typeof(GUIContent), typeof(SerializedProperty), typeof(GUIStyle) \}, \textcolor{keyword}{null});}
+\DoxyCodeLine{326 }
+\DoxyCodeLine{327                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_adfd74e55270986f4a3b5702a75aabe2b}{m\_SortingLayerFieldMethod}};}
+\DoxyCodeLine{328             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a112c22ddb9f94f6d6e08c99687b9c694}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a112c22ddb9f94f6d6e08c99687b9c694}} 
+\index{Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}!SpineButtonStyle@{SpineButtonStyle}}
+\index{SpineButtonStyle@{SpineButtonStyle}!Spine.Unity.Editor.SpineInspectorUtility@{Spine.Unity.Editor.SpineInspectorUtility}}
+\doxysubsubsection{\texorpdfstring{SpineButtonStyle}{SpineButtonStyle}}
+{\footnotesize\ttfamily G\+U\+I\+Style Spine.\+Unity.\+Editor.\+Spine\+Inspector\+Utility.\+Spine\+Button\+Style\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Spine\+Inspector\+Utility.\+cs 파일의 220 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{221                                          \{}
+\DoxyCodeLine{222             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{223                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spineButtonStyle}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{224                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spineButtonStyle}} = \textcolor{keyword}{new} GUIStyle(GUI.skin.button);}
+\DoxyCodeLine{225                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spineButtonStyle}}.name = \textcolor{stringliteral}{"Spine Button"};}
+\DoxyCodeLine{226                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spineButtonStyle}}.padding = \textcolor{keyword}{new} RectOffset(10, 10, 10, 10);}
+\DoxyCodeLine{227                 \}}
+\DoxyCodeLine{228                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_a442fc3211286012a181d354e0c1e69df}{spineButtonStyle}};}
+\DoxyCodeLine{229             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_spine_inspector_utility_8cs}{Spine\+Inspector\+Utility.\+cs}}\end{DoxyCompactItemize}

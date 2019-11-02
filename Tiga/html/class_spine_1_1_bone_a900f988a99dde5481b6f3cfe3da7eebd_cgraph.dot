@@ -1,0 +1,14 @@
+digraph "Spine.Bone.WorldToLocalRotation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Bone.WorldToLocalRotation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.MathUtils.Atan2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3e98f9d30d651fcde8320c2bdaa41f74",tooltip="Returns atan2 in radians, faster but less accurate than Math.Atan2. Average error of 0...."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.MathUtils.CosDeg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a86984dbed809bd6ec2f9295b5ad96db3",tooltip="Returns the cosine in radians from a lookup table."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.MathUtils.SinDeg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a9c43b99917f17838ece89205052a2820",tooltip="Returns the sine in radians from a lookup table."];
+}

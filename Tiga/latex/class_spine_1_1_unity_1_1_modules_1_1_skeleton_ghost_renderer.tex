@@ -1,0 +1,266 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer}\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a82652648fc3b4fc6ddcf945eb88b2727}{Initialize}} (Mesh mesh, Material\mbox{[}$\,$\mbox{]} materials, Color32 color, bool additive, float speed, int sorting\+Layer\+ID, int sorting\+Order)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a9443aeccc2c8eb0b90b270ece4826114}{Cleanup}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}{fade\+Speed}} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af1ee3e8825672735fd48212d41d5a8a2}{Awake}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a365fc1d8d226994442840ce286d3d88d}{Fade}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ae85b8099c2d494ce447b0ef9dd530f9d}{Fade\+Additive}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Color32\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}
+\item 
+Color32 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}} = new Color32(0, 0, 0, 0)
+\item 
+Mesh\+Filter \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{mesh\+Filter}}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}{mesh\+Renderer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af1ee3e8825672735fd48212d41d5a8a2}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af1ee3e8825672735fd48212d41d5a8a2}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                       \{}
+\DoxyCodeLine{47             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}{meshRenderer}} = gameObject.AddComponent<MeshRenderer>();}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}} = gameObject.AddComponent<MeshFilter>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a9443aeccc2c8eb0b90b270ece4826114}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a9443aeccc2c8eb0b90b270ece4826114}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{Cleanup()}{Cleanup()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 124 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{125                                \{}
+\DoxyCodeLine{126             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh != \textcolor{keyword}{null})}
+\DoxyCodeLine{127                 Destroy(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh);}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129             Destroy(gameObject);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a365fc1d8d226994442840ce286d3d88d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a365fc1d8d226994442840ce286d3d88d}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!Fade@{Fade}}
+\index{Fade@{Fade}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{Fade()}{Fade()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+Fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                             \{}
+\DoxyCodeLine{75             Color32 c;}
+\DoxyCodeLine{76             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} t = 0; t < 500; t++) \{}
+\DoxyCodeLine{77                 \textcolor{keywordtype}{bool} breakout = \textcolor{keyword}{true};}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}.Length; i++) \{}
+\DoxyCodeLine{79                     c = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}[i];}
+\DoxyCodeLine{80                     \textcolor{keywordflow}{if} (c.a > 0)}
+\DoxyCodeLine{81                         breakout = \textcolor{keyword}{false};}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}[i] = Color32.Lerp(c, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}}, Time.deltaTime * \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}{fadeSpeed}});}
+\DoxyCodeLine{84                 \}}
+\DoxyCodeLine{85                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh.colors32 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87                 \textcolor{keywordflow}{if} (breakout)}
+\DoxyCodeLine{88                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{89                 }
+\DoxyCodeLine{90                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{91             \}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             Destroy(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh);}
+\DoxyCodeLine{94             gameObject.SetActive(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ae85b8099c2d494ce447b0ef9dd530f9d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ae85b8099c2d494ce447b0ef9dd530f9d}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!FadeAdditive@{FadeAdditive}}
+\index{FadeAdditive@{FadeAdditive}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{FadeAdditive()}{FadeAdditive()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+Fade\+Additive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 96 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                     \{}
+\DoxyCodeLine{98             Color32 c;}
+\DoxyCodeLine{99             Color32 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}};}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} t = 0; t < 500; t++) \{}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103                 \textcolor{keywordtype}{bool} breakout = \textcolor{keyword}{true};}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}.Length; i++) \{}
+\DoxyCodeLine{105                     c = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}[i];}
+\DoxyCodeLine{106                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}}.a = c.a;}
+\DoxyCodeLine{107                     \textcolor{keywordflow}{if} (c.r > 0 || c.g > 0 || c.b > 0)}
+\DoxyCodeLine{108                         breakout = \textcolor{keyword}{false};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}[i] = Color32.Lerp(c, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}{black}}, Time.deltaTime * \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}{fadeSpeed}});}
+\DoxyCodeLine{111                 \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh.colors32 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115                 \textcolor{keywordflow}{if} (breakout)}
+\DoxyCodeLine{116                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{117                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{118             \}}
+\DoxyCodeLine{119 }
+\DoxyCodeLine{120             Destroy(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh);}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122             gameObject.SetActive(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a82652648fc3b4fc6ddcf945eb88b2727}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a82652648fc3b4fc6ddcf945eb88b2727}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+Initialize (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{Material\mbox{[}$\,$\mbox{]}}]{materials,  }\item[{Color32}]{color,  }\item[{bool}]{additive,  }\item[{float}]{speed,  }\item[{int}]{sorting\+Layer\+ID,  }\item[{int}]{sorting\+Order }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                                                                                                                   \{}
+\DoxyCodeLine{52             StopAllCoroutines();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54             gameObject.SetActive(\textcolor{keyword}{true});}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}{meshRenderer}}.sharedMaterials = materials;}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}{meshRenderer}}.sortingLayerID = sortingLayerID;}
+\DoxyCodeLine{57             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}{meshRenderer}}.sortingOrder = sortingOrder;}
+\DoxyCodeLine{58             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh = Instantiate(mesh);}
+\DoxyCodeLine{59             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}{meshFilter}}.sharedMesh.colors32;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61             \textcolor{keywordflow}{if} ((color.a + color.r + color.g + color.b) > 0) \{}
+\DoxyCodeLine{62                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}.Length; i++)}
+\DoxyCodeLine{63                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}{colors}}[i] = color;}
+\DoxyCodeLine{64             \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}{fadeSpeed}} = speed;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68             \textcolor{keywordflow}{if} (additive)}
+\DoxyCodeLine{69                 StartCoroutine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ae85b8099c2d494ce447b0ef9dd530f9d}{FadeAdditive}}());}
+\DoxyCodeLine{70             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{71                 StartCoroutine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a365fc1d8d226994442840ce286d3d88d}{Fade}}());}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a41045b669c034eb8ea6047e01381e5df}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!black@{black}}
+\index{black@{black}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{black}{black}}
+{\footnotesize\ttfamily Color32 Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+black = new Color32(0, 0, 0, 0)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_af5eaa9dc0a85c32faddf72d85768dca0}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!colors@{colors}}
+\index{colors@{colors}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily Color32 \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_ad477e26bf889186e790d45a1441b7fb4}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!fadeSpeed@{fadeSpeed}}
+\index{fadeSpeed@{fadeSpeed}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{fadeSpeed}{fadeSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+fade\+Speed = 10}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a85955da6cb2dcb6aa3a8ed683ac285c2}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!meshFilter@{meshFilter}}
+\index{meshFilter@{meshFilter}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{meshFilter}{meshFilter}}
+{\footnotesize\ttfamily Mesh\+Filter Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+mesh\+Filter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost_renderer_a695b28b6ba03d73bd389ed75d4b9d7f6}} 
+\index{Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}!meshRenderer@{meshRenderer}}
+\index{meshRenderer@{meshRenderer}!Spine.Unity.Modules.SkeletonGhostRenderer@{Spine.Unity.Modules.SkeletonGhostRenderer}}
+\doxysubsubsection{\texorpdfstring{meshRenderer}{meshRenderer}}
+{\footnotesize\ttfamily Mesh\+Renderer Spine.\+Unity.\+Modules.\+Skeleton\+Ghost\+Renderer.\+mesh\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ghost\+Renderer.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Ghost/\mbox{\hyperlink{_skeleton_ghost_renderer_8cs}{Skeleton\+Ghost\+Renderer.\+cs}}\end{DoxyCompactItemize}

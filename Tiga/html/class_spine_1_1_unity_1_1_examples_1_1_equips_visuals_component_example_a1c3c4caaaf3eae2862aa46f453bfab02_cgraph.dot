@@ -1,0 +1,20 @@
+digraph "Spine.Unity.Examples.EquipsVisualsComponentExample.Equip"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Equip",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Skin.AddAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skin.html#a2261ca4391e956e48a6cb45eff6d5676",tooltip="Adds an attachment to the skin for the specified slot index and name. If the name already exists for ..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Refresh\lSkeletonAttachments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Skeleton.SetSlotsTo\lSetupPose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.ExposedList.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#af1b402437b46a187ebc58bc9f200689b",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.Skeleton.SetSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8",tooltip="Sets a skin by name (see SetSkin)."];
+}

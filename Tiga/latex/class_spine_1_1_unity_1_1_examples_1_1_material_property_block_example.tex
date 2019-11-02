@@ -1,0 +1,143 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example}\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+
+
+Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a2e097399a23a7c30b7c8ff7b46351b48}{time\+Interval}} = 1f
+\item 
+Gradient \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a4d0654e8ca89acdfb4e0a283d455b47a}{random\+Colors}} = new Gradient()
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a648bd9cb953b1d32fb3489524d46011f}{color\+Property\+Name}} = \char`\"{}\+\_\+\+Fill\+Color\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a3e1e46b61bd98f2671e69ac4da082c65}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a9ccd8dd3b6a2021cf50dcd1b5bef5b5f}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Material\+Property\+Block \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}{mpb}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}{time\+To\+Next\+Color}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a3e1e46b61bd98f2671e69ac4da082c65}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a3e1e46b61bd98f2671e69ac4da082c65}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                       \{}
+\DoxyCodeLine{16             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}{mpb}} = \textcolor{keyword}{new} MaterialPropertyBlock();}
+\DoxyCodeLine{17         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a9ccd8dd3b6a2021cf50dcd1b5bef5b5f}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a9ccd8dd3b6a2021cf50dcd1b5bef5b5f}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                        \{}
+\DoxyCodeLine{20             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}{timeToNextColor}} <= 0) \{}
+\DoxyCodeLine{21                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}{timeToNextColor}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a2e097399a23a7c30b7c8ff7b46351b48}{timeInterval}};}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23                 Color newColor = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a4d0654e8ca89acdfb4e0a283d455b47a}{randomColors}}.Evaluate(UnityEngine.Random.value);}
+\DoxyCodeLine{24                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}{mpb}}.SetColor(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a648bd9cb953b1d32fb3489524d46011f}{colorPropertyName}}, newColor);}
+\DoxyCodeLine{25                 GetComponent<MeshRenderer>().SetPropertyBlock(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}{mpb}});}
+\DoxyCodeLine{26             \}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}{timeToNextColor}} -\/= Time.deltaTime;}
+\DoxyCodeLine{29         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a648bd9cb953b1d32fb3489524d46011f}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a648bd9cb953b1d32fb3489524d46011f}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!colorPropertyName@{colorPropertyName}}
+\index{colorPropertyName@{colorPropertyName}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{colorPropertyName}{colorPropertyName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+color\+Property\+Name = \char`\"{}\+\_\+\+Fill\+Color\char`\"{}}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a1b6fa6bb74f7faadfbde8c0199d0b556}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!mpb@{mpb}}
+\index{mpb@{mpb}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{mpb}{mpb}}
+{\footnotesize\ttfamily Material\+Property\+Block Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+mpb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a4d0654e8ca89acdfb4e0a283d455b47a}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a4d0654e8ca89acdfb4e0a283d455b47a}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!randomColors@{randomColors}}
+\index{randomColors@{randomColors}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{randomColors}{randomColors}}
+{\footnotesize\ttfamily Gradient Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+random\+Colors = new Gradient()}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a2e097399a23a7c30b7c8ff7b46351b48}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a2e097399a23a7c30b7c8ff7b46351b48}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!timeInterval@{timeInterval}}
+\index{timeInterval@{timeInterval}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{timeInterval}{timeInterval}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+time\+Interval = 1f}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}\label{class_spine_1_1_unity_1_1_examples_1_1_material_property_block_example_a6f4cf1dcbc838f3094394d8018af717f}} 
+\index{Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}!timeToNextColor@{timeToNextColor}}
+\index{timeToNextColor@{timeToNextColor}!Spine.Unity.Examples.MaterialPropertyBlockExample@{Spine.Unity.Examples.MaterialPropertyBlockExample}}
+\doxysubsubsection{\texorpdfstring{timeToNextColor}{timeToNextColor}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Material\+Property\+Block\+Example.\+time\+To\+Next\+Color = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Material\+Property\+Block\+Example.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_material_property_block_example_8cs}{Material\+Property\+Block\+Example.\+cs}}\end{DoxyCompactItemize}

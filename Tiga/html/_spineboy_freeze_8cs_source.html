@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/SpineboyFreeze.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_spineboy_freeze_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpineboyFreeze.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_spineboy_freeze_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html">    6</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html">SpineboyFreeze</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#af581aab5cb04657b9fb2876b6cd99fcf">    8</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#af581aab5cb04657b9fb2876b6cd99fcf">skeletonAnimation</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a320715a061c203a58dda3e9e47af5824">    9</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_animation_reference_asset.html">AnimationReferenceAsset</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a320715a061c203a58dda3e9e47af5824">freeze</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a4e6d61aea97b9e443d4d47cefe3038ce">   10</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_animation_reference_asset.html">AnimationReferenceAsset</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a4e6d61aea97b9e443d4d47cefe3038ce">idle</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a88b6648b673b3f3f8e2026420d0c1dc6">   12</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a88b6648b673b3f3f8e2026420d0c1dc6">freezeColor</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aae45a4ab69c60763b5d2fd47b01388f6">   13</a></span>&#160;        <span class="keyword">public</span> Color <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aae45a4ab69c60763b5d2fd47b01388f6">freezeBlackColor</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">   14</a></span>&#160;        <span class="keyword">public</span> ParticleSystem <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">particles</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#acb5f0094b0c32c99b8f48850809da816">   15</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#acb5f0094b0c32c99b8f48850809da816">freezePoint</a> = 0.5f;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6459d9ca580875485dcb67eb34e82a3d">   17</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6459d9ca580875485dcb67eb34e82a3d">colorProperty</a> = <span class="stringliteral">&quot;_Color&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a923afce25766cbee372235eaca7938e6">   18</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a923afce25766cbee372235eaca7938e6">blackTintProperty</a> = <span class="stringliteral">&quot;_Black&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">   20</a></span>&#160;        MaterialPropertyBlock <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">   21</a></span>&#160;        MeshRenderer <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">meshRenderer</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aec00bb6a78114cd5bbdc1877b90108d7">   23</a></span>&#160;        IEnumerator <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aec00bb6a78114cd5bbdc1877b90108d7">Start</a> () {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a> = <span class="keyword">new</span> MaterialPropertyBlock();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">meshRenderer</a> = GetComponent&lt;MeshRenderer&gt;();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">particles</a>.Stop();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">particles</a>.Clear();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            var main = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">particles</a>.main;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            main.loop = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            var state = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#af581aab5cb04657b9fb2876b6cd99fcf">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">AnimationState</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(1f);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="comment">// Play freeze animation</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                state.SetAnimation(0, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a320715a061c203a58dda3e9e47af5824">freeze</a>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#acb5f0094b0c32c99b8f48850809da816">freezePoint</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="comment">// Freeze effects</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">particles</a>.Play();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6459d9ca580875485dcb67eb34e82a3d">colorProperty</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a88b6648b673b3f3f8e2026420d0c1dc6">freezeColor</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a923afce25766cbee372235eaca7938e6">blackTintProperty</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aae45a4ab69c60763b5d2fd47b01388f6">freezeBlackColor</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">meshRenderer</a>.SetPropertyBlock(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">new</span> WaitForSeconds(2f);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="comment">// Return to Idle</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                state.SetAnimation(0, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a4e6d61aea97b9e443d4d47cefe3038ce">idle</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6459d9ca580875485dcb67eb34e82a3d">colorProperty</a>, Color.white);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a923afce25766cbee372235eaca7938e6">blackTintProperty</a>, Color.black);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">meshRenderer</a>.SetPropertyBlock(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">block</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                yield <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a923afce25766cbee372235eaca7938e6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a923afce25766cbee372235eaca7938e6">Spine.Unity.Examples.SpineboyFreeze.blackTintProperty</a></div><div class="ttdeci">string blackTintProperty</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00018">SpineboyFreeze.cs:18</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html">Spine.Unity.Examples.SpineboyFreeze</a></div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00006">SpineboyFreeze.cs:6</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_aec00bb6a78114cd5bbdc1877b90108d7"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aec00bb6a78114cd5bbdc1877b90108d7">Spine.Unity.Examples.SpineboyFreeze.Start</a></div><div class="ttdeci">IEnumerator Start()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00023">SpineboyFreeze.cs:23</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html">Spine.Unity.SkeletonAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00037">SkeletonAnimation.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_af581aab5cb04657b9fb2876b6cd99fcf"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#af581aab5cb04657b9fb2876b6cd99fcf">Spine.Unity.Examples.SpineboyFreeze.skeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation skeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00008">SpineboyFreeze.cs:8</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a77445278fbc2a22bf5aad41af3a9662a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a77445278fbc2a22bf5aad41af3a9662a">Spine.Unity.Examples.SpineboyFreeze.particles</a></div><div class="ttdeci">ParticleSystem particles</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00014">SpineboyFreeze.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a88b6648b673b3f3f8e2026420d0c1dc6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a88b6648b673b3f3f8e2026420d0c1dc6">Spine.Unity.Examples.SpineboyFreeze.freezeColor</a></div><div class="ttdeci">Color freezeColor</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00012">SpineboyFreeze.cs:12</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a4e6d61aea97b9e443d4d47cefe3038ce"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a4e6d61aea97b9e443d4d47cefe3038ce">Spine.Unity.Examples.SpineboyFreeze.idle</a></div><div class="ttdeci">AnimationReferenceAsset idle</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00010">SpineboyFreeze.cs:10</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_aae45a4ab69c60763b5d2fd47b01388f6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#aae45a4ab69c60763b5d2fd47b01388f6">Spine.Unity.Examples.SpineboyFreeze.freezeBlackColor</a></div><div class="ttdeci">Color freezeBlackColor</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00013">SpineboyFreeze.cs:13</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_acb5f0094b0c32c99b8f48850809da816"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#acb5f0094b0c32c99b8f48850809da816">Spine.Unity.Examples.SpineboyFreeze.freezePoint</a></div><div class="ttdeci">float freezePoint</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00015">SpineboyFreeze.cs:15</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_ad7dd008f50bcbda9629baf9570da2237"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#ad7dd008f50bcbda9629baf9570da2237">Spine.Unity.Examples.SpineboyFreeze.meshRenderer</a></div><div class="ttdeci">MeshRenderer meshRenderer</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00021">SpineboyFreeze.cs:21</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a320715a061c203a58dda3e9e47af5824"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a320715a061c203a58dda3e9e47af5824">Spine.Unity.Examples.SpineboyFreeze.freeze</a></div><div class="ttdeci">AnimationReferenceAsset freeze</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00009">SpineboyFreeze.cs:9</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a6886ff09c51d1fe0be689245df32e747"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6886ff09c51d1fe0be689245df32e747">Spine.Unity.Examples.SpineboyFreeze.block</a></div><div class="ttdeci">MaterialPropertyBlock block</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00020">SpineboyFreeze.cs:20</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html_ab1694ead3860e2f34dd892747aef356b"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html#ab1694ead3860e2f34dd892747aef356b">Spine.Unity.SkeletonAnimation.AnimationState</a></div><div class="ttdeci">Spine.AnimationState AnimationState</div><div class="ttdoc">This is the Spine.AnimationState object of this SkeletonAnimation. You can control animations through...</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00047">SkeletonAnimation.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_animation_reference_asset_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_animation_reference_asset.html">Spine.Unity.AnimationReferenceAsset</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00036">AnimationReferenceAsset.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze_html_a6459d9ca580875485dcb67eb34e82a3d"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_freeze.html#a6459d9ca580875485dcb67eb34e82a3d">Spine.Unity.Examples.SpineboyFreeze.colorProperty</a></div><div class="ttdeci">string colorProperty</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_freeze_8cs_source.html#l00017">SpineboyFreeze.cs:17</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="_spineboy_freeze_8cs.html">SpineboyFreeze.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

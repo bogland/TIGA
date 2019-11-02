@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['offbalancethreshold_4293',['offBalanceThreshold',['../class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter.html#a99e724bed83145af9272282f920fcbc0',1,'Spine::Unity::Examples::SpineboyFootplanter']]],
+  ['offset_4294',['offset',['../class_spine_1_1_unity_1_1_examples_1_1_constrained_camera.html#aa482c7860eccb2a58f9c92af770f9c2d',1,'Spine::Unity::Examples::ConstrainedCamera']]],
+  ['offsetscalex_4295',['offsetScaleX',['../class_spine_1_1_transform_constraint_data.html#a6ea9066bd6a70d89e037c8989fe5a843',1,'Spine::TransformConstraintData']]],
+  ['offsetscaley_4296',['offsetScaleY',['../class_spine_1_1_transform_constraint_data.html#a6b42c5f5f7821b702bd07e58ca4afacb',1,'Spine::TransformConstraintData']]],
+  ['offsetsheary_4297',['offsetShearY',['../class_spine_1_1_transform_constraint_data.html#a922b954fe5c2bc7a58149dfb77fa6c5a',1,'Spine::TransformConstraintData']]],
+  ['offsetx_4298',['offsetX',['../class_spine_1_1_atlas_region.html#a4ed5cbd27bfcd2d0ddd603e8ff6f55cb',1,'Spine.AtlasRegion.offsetX()'],['../class_spine_1_1_transform_constraint_data.html#a1c24fe0a13a76741dd304aa9f6d2d9c0',1,'Spine.TransformConstraintData.offsetX()']]],
+  ['offsety_4299',['offsetY',['../class_spine_1_1_atlas_region.html#a83fbaaf62897b81345e24dba549fa16f',1,'Spine.AtlasRegion.offsetY()'],['../class_spine_1_1_transform_constraint_data.html#a7e65faa6f30c0eb39134e147ec382a01',1,'Spine.TransformConstraintData.offsetY()']]],
+  ['onattack_4300',['onAttack',['../class_spine_1_1_unity_1_1_examples_1_1_attack_spineboy.html#a8604e93eb4634e4c1695de058edf2b21',1,'Spine::Unity::Examples::AttackSpineboy']]],
+  ['orderinlayerlabel_4301',['OrderInLayerLabel',['../class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#a9d0265877462491b99380d7b8b4082ef',1,'Spine::Unity::Editor::SpineInspectorUtility']]],
+  ['originalfreeze_4302',['originalFreeze',['../class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror.html#a3e22ce3bc45da9454d2b0ee8bf8fca18',1,'Spine::Unity::Modules::SkeletonGraphicMirror']]],
+  ['originalheight_4303',['originalHeight',['../class_spine_1_1_atlas_region.html#a98a3e9f73e379e0fd99d1da1db6458ff',1,'Spine::AtlasRegion']]],
+  ['originalmaterial_4304',['originalMaterial',['../struct_spine_1_1_unity_1_1_modules_1_1_skeleton_renderer_custom_materials_1_1_atlas_material_override.html#a0ea399f6f90792d1dc6f64de952cd5de',1,'Spine::Unity::Modules::SkeletonRendererCustomMaterials::AtlasMaterialOverride']]],
+  ['originalskeleton_4305',['originalSkeleton',['../class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror.html#a13ac5b114181c7d1815db93af45751f3',1,'Spine::Unity::Modules::SkeletonGraphicMirror']]],
+  ['originalwidth_4306',['originalWidth',['../class_spine_1_1_atlas_region.html#a83aaeaa6a6fbc014dc75ed4b8fc1f5a9',1,'Spine::AtlasRegion']]],
+  ['origins_4307',['origins',['../class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint.html#a9407f6593dac901c02c51c2acb6fbcc9',1,'Spine::Unity::Modules::SkeletonUtilityEyeConstraint']]],
+  ['overridealpha_4308',['overrideAlpha',['../class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a8e7d6521491b463fc03f42e6f09c5e52',1,'Spine.Unity.Editor.SkeletonUtilityBoneInspector.overrideAlpha()'],['../class_spine_1_1_unity_1_1_skeleton_utility_bone.html#a0e0005f1285635a21d3e1b9f03b5cba4',1,'Spine.Unity.SkeletonUtilityBone.overrideAlpha()']]],
+  ['overrideanimation_4309',['overrideAnimation',['../class_spine_1_1_unity_1_1_modules_1_1_sprite_attacher.html#a01e95279d08405b6f34d74080a6b4fe2',1,'Spine::Unity::Modules::SpriteAttacher']]],
+  ['overridedisabled_4310',['overrideDisabled',['../struct_spine_1_1_unity_1_1_modules_1_1_skeleton_renderer_custom_materials_1_1_slot_material_override.html#ad7e170c2f8957e1002f54d29e71e16db',1,'Spine.Unity.Modules.SkeletonRendererCustomMaterials.SlotMaterialOverride.overrideDisabled()'],['../struct_spine_1_1_unity_1_1_modules_1_1_skeleton_renderer_custom_materials_1_1_atlas_material_override.html#a5ddf7341982a0e86a266043897f241cc',1,'Spine.Unity.Modules.SkeletonRendererCustomMaterials.AtlasMaterialOverride.overrideDisabled()']]],
+  ['overrideposition_4311',['overridePosition',['../class_spine_1_1_unity_1_1_examples_1_1_bone_local_override.html#a63eed2c11f56b2bb770a0f6bc4ce1492',1,'Spine::Unity::Examples::BoneLocalOverride']]],
+  ['overriderotation_4312',['overrideRotation',['../class_spine_1_1_unity_1_1_examples_1_1_bone_local_override.html#a394da7b4bab70a2efc9c8cca2e22dbcb',1,'Spine::Unity::Examples::BoneLocalOverride']]],
+  ['overridetexture_4313',['overrideTexture',['../class_spine_1_1_unity_1_1_skeleton_graphic.html#aafc78b83e65e9541ccc50cc432e32697',1,'Spine.Unity.SkeletonGraphic.overrideTexture()'],['../class_spine_1_1_unity_1_1_modules_1_1_skeleton_graphic_mirror.html#a4ec794cfb11221f04e24a39c9bc44a98',1,'Spine.Unity.Modules.SkeletonGraphicMirror.overrideTexture()']]]
+];

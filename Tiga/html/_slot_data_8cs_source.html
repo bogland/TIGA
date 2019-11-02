@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/SlotData.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_slot_data_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SlotData.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_slot_data_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html">   33</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_slot_data.html">SlotData</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">int</span> index;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">string</span> name;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a3f5e62a7778713efa53ca1b8c61636e1">   37</a></span>&#160;        <span class="keyword">internal</span> <a class="code" href="class_spine_1_1_bone_data.html">BoneData</a> boneData;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a0777f1673fbc17e32231949d27151232">   38</a></span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span> r = 1, <a class="code" href="class_spine_1_1_slot_data.html#a3f5e62a7778713efa53ca1b8c61636e1">g</a> = 1, <a class="code" href="class_spine_1_1_slot_data.html#acc9634d3285390b9f3eb9525feda07d1">b</a> = 1, <a class="code" href="class_spine_1_1_slot_data.html#a649d6526432f62529ebeb2afb3368b9c">a</a> = 1;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span> r2 = 0, <a class="code" href="class_spine_1_1_slot_data.html#a0777f1673fbc17e32231949d27151232">g2</a> = 0, <a class="code" href="class_spine_1_1_slot_data.html#a35ef7e1a549bf621f6b65aec1eb59e29">b2</a> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">bool</span> hasSecondColor = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">string</span> attachmentName;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">internal</span> <a class="code" href="namespace_spine.html#a8df9bf8208f7a52aee6cfe66703caae8">BlendMode</a> blendMode;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a4de0d7e679e9f1d72d56705bd4a7301c">   43</a></span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#ac5d0ab3762c4e4b8eeab0c6a99e25fc4">   44</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_slot_data.html#a4de0d7e679e9f1d72d56705bd4a7301c">Index</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> index; } }</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#ab093946febd10e7732f6302855a83695">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_slot_data.html#ac5d0ab3762c4e4b8eeab0c6a99e25fc4">Name</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> name; } }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a2e1c5bcc7ce7944977c3f91da96c9a34">   46</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_bone_data.html">BoneData</a> <a class="code" href="class_spine_1_1_bone_data.html">BoneData</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> boneData; } }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#af772a76be2f03ed140fece881a948885">   47</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#a2e1c5bcc7ce7944977c3f91da96c9a34">R</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> r; } <span class="keyword">set</span> { r = value; } }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#aede53f8e3a3e9e57686a43d68ec16445">   48</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#af772a76be2f03ed140fece881a948885">G</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_slot_data.html#a3f5e62a7778713efa53ca1b8c61636e1">g</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_slot_data.html#a3f5e62a7778713efa53ca1b8c61636e1">g</a> = value; } }</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a77bb6849d2d8b41a12e60eb2964b73f3">   49</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#aede53f8e3a3e9e57686a43d68ec16445">B</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_slot_data.html#acc9634d3285390b9f3eb9525feda07d1">b</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_slot_data.html#acc9634d3285390b9f3eb9525feda07d1">b</a> = value; } }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#a77bb6849d2d8b41a12e60eb2964b73f3">A</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_slot_data.html#a649d6526432f62529ebeb2afb3368b9c">a</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_slot_data.html#a649d6526432f62529ebeb2afb3368b9c">a</a> = value; } }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a23c16ec071fa82db85a59534d44d7d5d">   51</a></span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a627aebd2cc1707ba6569f16683c44306">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#a23c16ec071fa82db85a59534d44d7d5d">R2</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> r2; } <span class="keyword">set</span> { r2 = value; } }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a9222bc5e1a08c90dcc968f3912c8f5d9">   53</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#a627aebd2cc1707ba6569f16683c44306">G2</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_slot_data.html#a0777f1673fbc17e32231949d27151232">g2</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_slot_data.html#a0777f1673fbc17e32231949d27151232">g2</a> = value; } }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a5b79845f197d7761e9df798dabaa38aa">   54</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_slot_data.html#a9222bc5e1a08c90dcc968f3912c8f5d9">B2</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_slot_data.html#a35ef7e1a549bf621f6b65aec1eb59e29">b2</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_slot_data.html#a35ef7e1a549bf621f6b65aec1eb59e29">b2</a> = value; } }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">bool</span> <a class="code" href="class_spine_1_1_slot_data.html#a5b79845f197d7761e9df798dabaa38aa">HasSecondColor</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> hasSecondColor; } <span class="keyword">set</span> { hasSecondColor = value; } }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#ac6ff6eeea98c985fc374205263b87530">   58</a></span>&#160;        <span class="keyword">public</span> String <a class="code" href="class_spine_1_1_slot_data.html#a6f79fccb80df42fbc9bbd921aed8f934">AttachmentName</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> attachmentName; } <span class="keyword">set</span> { attachmentName = value; } }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_spine.html#a8df9bf8208f7a52aee6cfe66703caae8">BlendMode</a> <a class="code" href="namespace_spine.html#a8df9bf8208f7a52aee6cfe66703caae8">BlendMode</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> blendMode; } <span class="keyword">set</span> { blendMode = value; } }</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#a7e7195a4e2768da4456221ae32e42961">   60</a></span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_slot_data.html#a7e7195a4e2768da4456221ae32e42961">SlotData</a> (<span class="keywordtype">int</span> index, String name, <a class="code" href="class_spine_1_1_bone_data.html">BoneData</a> boneData) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">if</span> (index &lt; 0) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException (<span class="stringliteral">&quot;index must be &gt;= 0.&quot;</span>, <span class="stringliteral">&quot;index&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">if</span> (name == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;name cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (boneData == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;boneData&quot;</span>, <span class="stringliteral">&quot;boneData cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            this.index = index;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            this.name = name;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this.boneData = boneData;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_spine_1_1_slot_data.html#ab71bc5c519aeb6d859a172b1b042261c">   69</a></span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">override</span> <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_slot_data.html#ab71bc5c519aeb6d859a172b1b042261c">ToString</a> () {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">return</span> name;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a0777f1673fbc17e32231949d27151232"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a0777f1673fbc17e32231949d27151232">Spine.SlotData.g2</a></div><div class="ttdeci">float g2</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00038">SlotData.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a9222bc5e1a08c90dcc968f3912c8f5d9"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a9222bc5e1a08c90dcc968f3912c8f5d9">Spine.SlotData.B2</a></div><div class="ttdeci">float B2</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00053">SlotData.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a4de0d7e679e9f1d72d56705bd4a7301c"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a4de0d7e679e9f1d72d56705bd4a7301c">Spine.SlotData.Index</a></div><div class="ttdeci">int Index</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00043">SlotData.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a23c16ec071fa82db85a59534d44d7d5d"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a23c16ec071fa82db85a59534d44d7d5d">Spine.SlotData.R2</a></div><div class="ttdeci">float R2</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00051">SlotData.cs:51</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a8df9bf8208f7a52aee6cfe66703caae8"><div class="ttname"><a href="namespace_spine.html#a8df9bf8208f7a52aee6cfe66703caae8">Spine.BlendMode</a></div><div class="ttdeci">BlendMode</div><div class="ttdef"><b>Definition:</b> <a href="_blend_mode_8cs_source.html#l00058">BlendMode.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_acc9634d3285390b9f3eb9525feda07d1"><div class="ttname"><a href="class_spine_1_1_slot_data.html#acc9634d3285390b9f3eb9525feda07d1">Spine.SlotData.b</a></div><div class="ttdeci">float b</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00037">SlotData.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a5b79845f197d7761e9df798dabaa38aa"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a5b79845f197d7761e9df798dabaa38aa">Spine.SlotData.HasSecondColor</a></div><div class="ttdeci">bool HasSecondColor</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00054">SlotData.cs:54</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a627aebd2cc1707ba6569f16683c44306"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a627aebd2cc1707ba6569f16683c44306">Spine.SlotData.G2</a></div><div class="ttdeci">float G2</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00052">SlotData.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html"><div class="ttname"><a href="class_spine_1_1_slot_data.html">Spine.SlotData</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00033">SlotData.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_ab71bc5c519aeb6d859a172b1b042261c"><div class="ttname"><a href="class_spine_1_1_slot_data.html#ab71bc5c519aeb6d859a172b1b042261c">Spine.SlotData.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00069">SlotData.cs:69</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a3f5e62a7778713efa53ca1b8c61636e1"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a3f5e62a7778713efa53ca1b8c61636e1">Spine.SlotData.g</a></div><div class="ttdeci">float g</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00037">SlotData.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a649d6526432f62529ebeb2afb3368b9c"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a649d6526432f62529ebeb2afb3368b9c">Spine.SlotData.a</a></div><div class="ttdeci">float a</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00037">SlotData.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a2e1c5bcc7ce7944977c3f91da96c9a34"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a2e1c5bcc7ce7944977c3f91da96c9a34">Spine.SlotData.R</a></div><div class="ttdeci">float R</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00046">SlotData.cs:46</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_data_html"><div class="ttname"><a href="class_spine_1_1_bone_data.html">Spine.BoneData</a></div><div class="ttdef"><b>Definition:</b> <a href="_bone_data_8cs_source.html#l00033">BoneData.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a35ef7e1a549bf621f6b65aec1eb59e29"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a35ef7e1a549bf621f6b65aec1eb59e29">Spine.SlotData.b2</a></div><div class="ttdeci">float b2</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00038">SlotData.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a77bb6849d2d8b41a12e60eb2964b73f3"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a77bb6849d2d8b41a12e60eb2964b73f3">Spine.SlotData.A</a></div><div class="ttdeci">float A</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00049">SlotData.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_ac5d0ab3762c4e4b8eeab0c6a99e25fc4"><div class="ttname"><a href="class_spine_1_1_slot_data.html#ac5d0ab3762c4e4b8eeab0c6a99e25fc4">Spine.SlotData.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00044">SlotData.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a6f79fccb80df42fbc9bbd921aed8f934"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a6f79fccb80df42fbc9bbd921aed8f934">Spine.SlotData.AttachmentName</a></div><div class="ttdeci">String AttachmentName</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00057">SlotData.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_a7e7195a4e2768da4456221ae32e42961"><div class="ttname"><a href="class_spine_1_1_slot_data.html#a7e7195a4e2768da4456221ae32e42961">Spine.SlotData.SlotData</a></div><div class="ttdeci">SlotData(int index, String name, BoneData boneData)</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00060">SlotData.cs:60</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_aede53f8e3a3e9e57686a43d68ec16445"><div class="ttname"><a href="class_spine_1_1_slot_data.html#aede53f8e3a3e9e57686a43d68ec16445">Spine.SlotData.B</a></div><div class="ttdeci">float B</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00048">SlotData.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html_af772a76be2f03ed140fece881a948885"><div class="ttname"><a href="class_spine_1_1_slot_data.html#af772a76be2f03ed140fece881a948885">Spine.SlotData.G</a></div><div class="ttdeci">float G</div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00047">SlotData.cs:47</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="_slot_data_8cs.html">SlotData.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

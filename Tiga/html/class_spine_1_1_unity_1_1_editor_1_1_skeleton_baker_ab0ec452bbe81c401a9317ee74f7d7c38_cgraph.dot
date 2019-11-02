@@ -1,0 +1,24 @@
+digraph "Spine.Unity.Editor.SkeletonBaker.ParseTranslateTimeline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lBaker.ParseTranslateTimeline",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.TranslateTimeline.\lApply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_translate_timeline.html#ada403df06beb4eb65b6729d6f7a8d04e",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.CurveTimeline.GetCurve\lPercent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#aecaa64a855f59f759923bd2edc0f71a5",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.MathUtils.Clamp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3b8ef063e95d6adf57582ded0defd8e7",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.Unity.Editor.Skeleton\lBaker.EnsureCurveKeyCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#a0f2b660fea828303e957f78e81cbcab2",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.CurveTimeline.GetCurveType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#aa1705d1f68800d28998ed7ff9f5a6360",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.Unity.Editor.Skeleton\lBaker.GetPath",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#a4f676fb3b06c045a21886ce579e2610f",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.Unity.Editor.Skeleton\lBaker.GetPathRecurse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#ae66478beef6e0ec59ef575ff139ea9d7",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.Skeleton.SetToSetupPose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#a1633fed9631208f0f1da9a29c75eb90a",tooltip="Sets the bones, constraints, and slots to their setup pose values."];
+}

@@ -1,0 +1,468 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector}{}\doxysection{Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector}\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+
+
+Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_af6ddd653797bc2c7455e585776e4fe53}{On\+Inspector\+G\+UI}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a464ca6fe4d3117a960731251555e9468}{Update\+Sprite\+Slices}} (Texture texture, \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_aa489f57b29074b3a0d5a32b5a267b871}{Sprite\+Slices\+Label}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a8752760477c2ef60e81dafcfa26eaa5c}{On\+Enable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94129c68e12225633696d3a937bfa5b7}{Get\+Regions}} (\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlas\+File}}
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlas\+Asset}}
+\item 
+G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}{sprite\+Slices\+Label}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94129c68e12225633696d3a937bfa5b7}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94129c68e12225633696d3a937bfa5b7}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!GetRegions@{GetRegions}}
+\index{GetRegions@{GetRegions}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{GetRegions()}{GetRegions()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}$>$ Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+Get\+Regions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}}]{atlas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                           \{}
+\DoxyCodeLine{66             FieldInfo regionsField = typeof(\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}).GetField(\textcolor{stringliteral}{"regions"}, BindingFlags.Instance | BindingFlags.NonPublic);}
+\DoxyCodeLine{67             \textcolor{keywordflow}{return} (List<AtlasRegion>)regionsField.GetValue(atlas);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a8752760477c2ef60e81dafcfa26eaa5c}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a8752760477c2ef60e81dafcfa26eaa5c}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                          \{}
+\DoxyCodeLine{71             SpineEditorUtilities.ConfirmInitialization();}
+\DoxyCodeLine{72             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlasFile}} = serializedObject.FindProperty(\textcolor{stringliteral}{"atlasFile"});}
+\DoxyCodeLine{73             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}} = serializedObject.FindProperty(\textcolor{stringliteral}{"materials"});}
+\DoxyCodeLine{74             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}.isExpanded = \textcolor{keyword}{true};}
+\DoxyCodeLine{75             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}} = (AtlasAsset)target;}
+\DoxyCodeLine{76 \textcolor{preprocessor}{            \#if REGION\_BAKING\_MESH}}
+\DoxyCodeLine{77             UpdateBakedList();}
+\DoxyCodeLine{78 \textcolor{preprocessor}{            \#endif}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_af6ddd653797bc2c7455e585776e4fe53}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_af6ddd653797bc2c7455e585776e4fe53}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!OnInspectorGUI@{OnInspectorGUI}}
+\index{OnInspectorGUI@{OnInspectorGUI}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{OnInspectorGUI()}{OnInspectorGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+On\+Inspector\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 104 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                                                \{}
+\DoxyCodeLine{106             \textcolor{keywordflow}{if} (serializedObject.isEditingMultipleObjects) \{}
+\DoxyCodeLine{107                 DrawDefaultInspector();}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             serializedObject.Update();}
+\DoxyCodeLine{112             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}} ?? (AtlasAsset)target;}
+\DoxyCodeLine{113             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{114             EditorGUILayout.PropertyField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlasFile}});}
+\DoxyCodeLine{115             EditorGUILayout.PropertyField(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{116             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{117                 serializedObject.ApplyModifiedProperties();}
+\DoxyCodeLine{118                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+\DoxyCodeLine{119                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}{GetAtlas}}();}
+\DoxyCodeLine{120             \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}.arraySize == 0) \{}
+\DoxyCodeLine{123                 EditorGUILayout.HelpBox(\textcolor{stringliteral}{"No materials"}, MessageType.Error);}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{125             \}}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}.arraySize; i++) \{}
+\DoxyCodeLine{128                 SerializedProperty prop = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}{materials}}.GetArrayElementAtIndex(i);}
+\DoxyCodeLine{129                 var material = (Material)prop.objectReferenceValue;}
+\DoxyCodeLine{130                 if (material == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{131                     EditorGUILayout.HelpBox(\textcolor{stringliteral}{"Materials cannot be null."}, MessageType.Error);}
+\DoxyCodeLine{132                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{133                 \}}
+\DoxyCodeLine{134             \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136             EditorGUILayout.Space();}
+\DoxyCodeLine{137             \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.LargeCenteredButton(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Set Mipmap Bias to "} + SpineEditorUtilities.DEFAULT\_MIPMAPBIAS))) \{}
+\DoxyCodeLine{138                 \textcolor{keywordflow}{foreach} (var m \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}) \{}
+\DoxyCodeLine{139                     var texture = m.mainTexture;}
+\DoxyCodeLine{140                     texture.mipMapBias = SpineEditorUtilities.DEFAULT\_MIPMAPBIAS;}
+\DoxyCodeLine{141                 \}}
+\DoxyCodeLine{142                 Debug.Log(\textcolor{stringliteral}{"Texture mipmap bias set to "} + SpineEditorUtilities.DEFAULT\_MIPMAPBIAS);}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145             EditorGUILayout.Space();}
+\DoxyCodeLine{146             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlasFile}}.objectReferenceValue != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{147                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.LargeCenteredButton(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_aa489f57b29074b3a0d5a32b5a267b871}{SpriteSlicesLabel}})) \{}
+\DoxyCodeLine{148                     var atlas = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}{GetAtlas}}();}
+\DoxyCodeLine{149                     \textcolor{keywordflow}{foreach} (var m \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}})}
+\DoxyCodeLine{150                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a464ca6fe4d3117a960731251555e9468}{UpdateSpriteSlices}}(m.mainTexture, atlas);}
+\DoxyCodeLine{151                 \}}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             EditorGUILayout.Space();}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156 \textcolor{preprocessor}{            \#if REGION\_BAKING\_MESH}}
+\DoxyCodeLine{157             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlasFile}}.objectReferenceValue != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{158                 \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas = asset.GetAtlas();}
+\DoxyCodeLine{159                 FieldInfo field = typeof(\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}).GetField(\textcolor{stringliteral}{"regions"}, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.NonPublic);}
+\DoxyCodeLine{160                 List<AtlasRegion> regions = (List<AtlasRegion>)field.GetValue(atlas);}
+\DoxyCodeLine{161                 EditorGUILayout.LabelField(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Region Baking"}, SpineEditorUtilities.Icons.unityIcon));}
+\DoxyCodeLine{162                 EditorGUI.indentLevel++;}
+\DoxyCodeLine{163                 \mbox{\hyperlink{class_spine_1_1_atlas_page}{AtlasPage}} lastPage = \textcolor{keyword}{null};}
+\DoxyCodeLine{164                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{165                     \textcolor{keywordflow}{if} (lastPage != regions[i].page) \{}
+\DoxyCodeLine{166                         \textcolor{keywordflow}{if} (lastPage != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{167                             EditorGUILayout.Separator();}
+\DoxyCodeLine{168                             EditorGUILayout.Separator();}
+\DoxyCodeLine{169                         \}}
+\DoxyCodeLine{170                         lastPage = regions[i].page;}
+\DoxyCodeLine{171                         Material mat = ((Material)lastPage.\mbox{\hyperlink{class_spine_1_1_atlas_page_ae67598e160f3391267afbdb38d7982c4}{rendererObject}});}
+\DoxyCodeLine{172                         \textcolor{keywordflow}{if} (mat != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{173                             GUILayout.BeginHorizontal();}
+\DoxyCodeLine{174                             \{}
+\DoxyCodeLine{175                                 EditorGUI.BeginDisabledGroup(\textcolor{keyword}{true});}
+\DoxyCodeLine{176                                 EditorGUILayout.ObjectField(mat, typeof(Material), \textcolor{keyword}{false}, GUILayout.Width(250));}
+\DoxyCodeLine{177                                 EditorGUI.EndDisabledGroup();}
+\DoxyCodeLine{178                             \}}
+\DoxyCodeLine{179                             GUILayout.EndHorizontal();}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{181                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{182                             EditorGUILayout.LabelField(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Page missing material!"}, SpineEditorUtilities.Icons.warning));}
+\DoxyCodeLine{183                         \}}
+\DoxyCodeLine{184                     \}}
+\DoxyCodeLine{185                     GUILayout.BeginHorizontal();}
+\DoxyCodeLine{186                     \{}
+\DoxyCodeLine{187                         \textcolor{comment}{//EditorGUILayout.ToggleLeft(baked[i] ? "" : regions[i].name, baked[i]);}}
+\DoxyCodeLine{188                         \textcolor{keywordtype}{bool} result = baked[i] ? EditorGUILayout.ToggleLeft(\textcolor{stringliteral}{""}, baked[i], GUILayout.Width(24)) : EditorGUILayout.ToggleLeft(\textcolor{stringliteral}{"    "} + regions[i].name, baked[i]);}
+\DoxyCodeLine{189                         \textcolor{keywordflow}{if}(baked[i])\{}
+\DoxyCodeLine{190                             EditorGUILayout.ObjectField(bakedObjects[i], typeof(GameObject), \textcolor{keyword}{false}, GUILayout.Width(250));}
+\DoxyCodeLine{191                         \}}
+\DoxyCodeLine{192                         \textcolor{keywordflow}{if} (result \&\& !baked[i]) \{}
+\DoxyCodeLine{193                             \textcolor{comment}{//bake}}
+\DoxyCodeLine{194                             baked[i] = \textcolor{keyword}{true};}
+\DoxyCodeLine{195                             bakedObjects[i] = SpineEditorUtilities.BakeRegion(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}, regions[i]);}
+\DoxyCodeLine{196                             EditorGUIUtility.PingObject(bakedObjects[i]);}
+\DoxyCodeLine{197                         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!result \&\& baked[i]) \{}
+\DoxyCodeLine{198                             \textcolor{comment}{//unbake}}
+\DoxyCodeLine{199                             \textcolor{keywordtype}{bool} unbakeResult = EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Delete Baked Region"}, \textcolor{stringliteral}{"Do you want to delete the prefab for "} + regions[i].name, \textcolor{stringliteral}{"Yes"}, \textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{200                             \textcolor{keywordflow}{switch} (unbakeResult) \{}
+\DoxyCodeLine{201                             \textcolor{keywordflow}{case} \textcolor{keyword}{true}:}
+\DoxyCodeLine{202                                 \textcolor{comment}{//delete}}
+\DoxyCodeLine{203                                 \textcolor{keywordtype}{string} atlasAssetPath = AssetDatabase.GetAssetPath(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}});}
+\DoxyCodeLine{204                                 \textcolor{keywordtype}{string} atlasAssetDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(atlasAssetPath);}
+\DoxyCodeLine{205                                 \textcolor{keywordtype}{string} bakedDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(atlasAssetDirPath, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.name);}
+\DoxyCodeLine{206                                 \textcolor{keywordtype}{string} bakedPrefabPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(bakedDirPath, SpineEditorUtilities.GetPathSafeRegionName(regions[i]) + \textcolor{stringliteral}{".prefab"}).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{207                                 AssetDatabase.DeleteAsset(bakedPrefabPath);}
+\DoxyCodeLine{208                                 baked[i] = \textcolor{keyword}{false};}
+\DoxyCodeLine{209                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{210                             \textcolor{keywordflow}{case} \textcolor{keyword}{false}:}
+\DoxyCodeLine{211                                 \textcolor{comment}{//do nothing}}
+\DoxyCodeLine{212                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{213                             \}}
+\DoxyCodeLine{214                         \}}
+\DoxyCodeLine{215                     \}}
+\DoxyCodeLine{216                     GUILayout.EndHorizontal();}
+\DoxyCodeLine{217                 \}}
+\DoxyCodeLine{218                 EditorGUI.indentLevel-\/-\/;}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220 \textcolor{preprocessor}{                \#if BAKE\_ALL\_BUTTON}}
+\DoxyCodeLine{221                 \textcolor{comment}{// Check state}}
+\DoxyCodeLine{222                 \textcolor{keywordtype}{bool} allBaked = \textcolor{keyword}{true};}
+\DoxyCodeLine{223                 \textcolor{keywordtype}{bool} allUnbaked = \textcolor{keyword}{true};}
+\DoxyCodeLine{224                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{225                     allBaked \&= baked[i];}
+\DoxyCodeLine{226                     allUnbaked \&= !baked[i];}
+\DoxyCodeLine{227                 \}}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229                 \textcolor{keywordflow}{if} (!allBaked \&\& GUILayout.Button(\textcolor{stringliteral}{"Bake All"})) \{}
+\DoxyCodeLine{230                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{231                         \textcolor{keywordflow}{if} (!baked[i]) \{}
+\DoxyCodeLine{232                             baked[i] = \textcolor{keyword}{true};}
+\DoxyCodeLine{233                             bakedObjects[i] = SpineEditorUtilities.BakeRegion(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}, regions[i]);}
+\DoxyCodeLine{234                         \}}
+\DoxyCodeLine{235                     \}}
+\DoxyCodeLine{236 }
+\DoxyCodeLine{237                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (!allUnbaked \&\& GUILayout.Button(\textcolor{stringliteral}{"Unbake All"})) \{}
+\DoxyCodeLine{238                     \textcolor{keywordtype}{bool} unbakeResult = EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Delete All Baked Regions"}, \textcolor{stringliteral}{"Are you sure you want to unbake all region prefabs? This cannot be undone."}, \textcolor{stringliteral}{"Yes"}, \textcolor{stringliteral}{"Cancel"});}
+\DoxyCodeLine{239                     \textcolor{keywordflow}{switch} (unbakeResult) \{}
+\DoxyCodeLine{240                     \textcolor{keywordflow}{case} \textcolor{keyword}{true}:}
+\DoxyCodeLine{241                         \textcolor{comment}{//delete}}
+\DoxyCodeLine{242                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{243                             \textcolor{keywordflow}{if} (baked[i]) \{}
+\DoxyCodeLine{244                                 \textcolor{keywordtype}{string} atlasAssetPath = AssetDatabase.GetAssetPath(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}});}
+\DoxyCodeLine{245                                 \textcolor{keywordtype}{string} atlasAssetDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(atlasAssetPath);}
+\DoxyCodeLine{246                                 \textcolor{keywordtype}{string} bakedDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(atlasAssetDirPath, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.name);}
+\DoxyCodeLine{247                                 \textcolor{keywordtype}{string} bakedPrefabPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(bakedDirPath, SpineEditorUtilities.GetPathSafeRegionName(regions[i]) + \textcolor{stringliteral}{".prefab"}).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{248                                 AssetDatabase.DeleteAsset(bakedPrefabPath);}
+\DoxyCodeLine{249                                 baked[i] = \textcolor{keyword}{false};}
+\DoxyCodeLine{250                             \}}
+\DoxyCodeLine{251                         \}}
+\DoxyCodeLine{252                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{253                     \textcolor{keywordflow}{case} \textcolor{keyword}{false}:}
+\DoxyCodeLine{254                         \textcolor{comment}{//do nothing}}
+\DoxyCodeLine{255                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{256                     \}}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258                 \}}
+\DoxyCodeLine{259 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{260                 }
+\DoxyCodeLine{261             \}}
+\DoxyCodeLine{262 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{263             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}{atlasFile}}.objectReferenceValue != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{264                 EditorGUILayout.LabelField(\textcolor{stringliteral}{"Atlas Regions"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{265                 \textcolor{keywordtype}{int} baseIndent = EditorGUI.indentLevel;}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267                 var regions = AtlasAssetInspector.GetRegions(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}{GetAtlas}}());}
+\DoxyCodeLine{268                 \mbox{\hyperlink{class_spine_1_1_atlas_page}{AtlasPage}} lastPage = \textcolor{keyword}{null};}
+\DoxyCodeLine{269                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{270                     \textcolor{keywordflow}{if} (lastPage != regions[i].page) \{}
+\DoxyCodeLine{271                         \textcolor{keywordflow}{if} (lastPage != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{272                             EditorGUILayout.Separator();}
+\DoxyCodeLine{273                             EditorGUILayout.Separator();}
+\DoxyCodeLine{274                         \}}
+\DoxyCodeLine{275                         lastPage = regions[i].page;}
+\DoxyCodeLine{276                         Material mat = ((Material)lastPage.\mbox{\hyperlink{class_spine_1_1_atlas_page_ae67598e160f3391267afbdb38d7982c4}{rendererObject}});}
+\DoxyCodeLine{277                         \textcolor{keywordflow}{if} (mat != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{278                             EditorGUI.indentLevel = baseIndent;}
+\DoxyCodeLine{279                             \textcolor{keyword}{using} (\textcolor{keyword}{new} GUILayout.HorizontalScope())}
+\DoxyCodeLine{280                             \textcolor{keyword}{using} (\textcolor{keyword}{new} EditorGUI.DisabledGroupScope(\textcolor{keyword}{true}))}
+\DoxyCodeLine{281                                 EditorGUILayout.ObjectField(mat, typeof(Material), \textcolor{keyword}{false}, GUILayout.Width(250));}
+\DoxyCodeLine{282                             EditorGUI.indentLevel = baseIndent + 1;}
+\DoxyCodeLine{283                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{284                             EditorGUILayout.HelpBox(\textcolor{stringliteral}{"Page missing material!"}, MessageType.Warning);}
+\DoxyCodeLine{285                         \}}
+\DoxyCodeLine{286                     \}}
+\DoxyCodeLine{287 }
+\DoxyCodeLine{288                     EditorGUILayout.LabelField(\textcolor{keyword}{new} GUIContent(regions[i].name, SpineEditorUtilities.Icons.image));}
+\DoxyCodeLine{289                 \}}
+\DoxyCodeLine{290                 EditorGUI.indentLevel = baseIndent;}
+\DoxyCodeLine{291             \}}
+\DoxyCodeLine{292 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294             \textcolor{keywordflow}{if} (serializedObject.ApplyModifiedProperties() || \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.UndoRedoPerformed(\mbox{\hyperlink{class_spine_1_1_event}{Event}}.current))}
+\DoxyCodeLine{295                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}{atlasAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a464ca6fe4d3117a960731251555e9468}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a464ca6fe4d3117a960731251555e9468}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!UpdateSpriteSlices@{UpdateSpriteSlices}}
+\index{UpdateSpriteSlices@{UpdateSpriteSlices}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{UpdateSpriteSlices()}{UpdateSpriteSlices()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+Update\+Sprite\+Slices (\begin{DoxyParamCaption}\item[{Texture}]{texture,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}}]{atlas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 297 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{298                                                                              \{}
+\DoxyCodeLine{299             \textcolor{keywordtype}{string} texturePath = AssetDatabase.GetAssetPath(texture.GetInstanceID());}
+\DoxyCodeLine{300             var t = (TextureImporter)TextureImporter.GetAtPath(texturePath);}
+\DoxyCodeLine{301             t.spriteImportMode = SpriteImportMode.Multiple;}
+\DoxyCodeLine{302             var spriteSheet = t.spritesheet;}
+\DoxyCodeLine{303             var sprites = \textcolor{keyword}{new} List<SpriteMetaData>(spriteSheet);}
+\DoxyCodeLine{304 }
+\DoxyCodeLine{305             var regions = AtlasAssetInspector.GetRegions(atlas);}
+\DoxyCodeLine{306             \textcolor{keywordtype}{char}[] FilenameDelimiter = \{\textcolor{charliteral}{'.'}\};}
+\DoxyCodeLine{307             \textcolor{keywordtype}{int} updatedCount = 0;}
+\DoxyCodeLine{308             \textcolor{keywordtype}{int} addedCount = 0;}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310             \textcolor{keywordflow}{foreach} (var r \textcolor{keywordflow}{in} regions) \{}
+\DoxyCodeLine{311                 \textcolor{keywordtype}{string} pageName = r.page.name.Split(FilenameDelimiter, StringSplitOptions.RemoveEmptyEntries)[0];}
+\DoxyCodeLine{312                 \textcolor{keywordtype}{string} textureName = texture.name;}
+\DoxyCodeLine{313                 \textcolor{keywordtype}{bool} pageMatch = \textcolor{keywordtype}{string}.Equals(pageName, textureName, StringComparison.Ordinal);}
+\DoxyCodeLine{314 }
+\DoxyCodeLine{315 \textcolor{comment}{//              if (pageMatch) \{}}
+\DoxyCodeLine{316 \textcolor{comment}{//                  int pw = r.page.width;}}
+\DoxyCodeLine{317 \textcolor{comment}{//                  int ph = r.page.height;}}
+\DoxyCodeLine{318 \textcolor{comment}{//                  bool mismatchSize = pw != texture.width || pw > t.maxTextureSize || ph != texture.height || ph > t.maxTextureSize;}}
+\DoxyCodeLine{319 \textcolor{comment}{//                  if (mismatchSize)}}
+\DoxyCodeLine{320 \textcolor{comment}{//                      Debug.LogWarningFormat("Size mismatch found.\(\backslash\)nExpected atlas size is \{0\}x\{1\}. Texture Import Max Size of texture '\{2\}'(\{4\}x\{5\}) is currently set to \{3\}.", pw, ph, texture.name, t.maxTextureSize, texture.width, texture.height);}}
+\DoxyCodeLine{321 \textcolor{comment}{//              \}}}
+\DoxyCodeLine{322 }
+\DoxyCodeLine{323                 \textcolor{keywordtype}{int} spriteIndex = pageMatch ? sprites.FindIndex(}
+\DoxyCodeLine{324                     (s) => \textcolor{keywordtype}{string}.Equals(s.name, r.name, StringComparison.Ordinal)}
+\DoxyCodeLine{325                 ) : -\/1;}
+\DoxyCodeLine{326                 \textcolor{keywordtype}{bool} spriteNameMatchExists = spriteIndex >= 0;}
+\DoxyCodeLine{327 }
+\DoxyCodeLine{328                 \textcolor{keywordflow}{if} (pageMatch) \{}
+\DoxyCodeLine{329                     Rect spriteRect = \textcolor{keyword}{new} Rect();}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331                     \textcolor{keywordflow}{if} (r.rotate) \{}
+\DoxyCodeLine{332                         spriteRect.width = r.height;}
+\DoxyCodeLine{333                         spriteRect.height = r.width;}
+\DoxyCodeLine{334                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{335                         spriteRect.width = r.width;}
+\DoxyCodeLine{336                         spriteRect.height = r.height;}
+\DoxyCodeLine{337                     \}}
+\DoxyCodeLine{338                     spriteRect.x = r.x;}
+\DoxyCodeLine{339                     spriteRect.y = r.page.height -\/ spriteRect.height -\/ r.y;}
+\DoxyCodeLine{340 }
+\DoxyCodeLine{341                     \textcolor{keywordflow}{if} (spriteNameMatchExists) \{}
+\DoxyCodeLine{342                         var s = sprites[spriteIndex];}
+\DoxyCodeLine{343                         s.rect = spriteRect;}
+\DoxyCodeLine{344                         sprites[spriteIndex] = s;}
+\DoxyCodeLine{345                         updatedCount++;}
+\DoxyCodeLine{346                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{347                         sprites.Add(\textcolor{keyword}{new} SpriteMetaData \{}
+\DoxyCodeLine{348                             name = r.name,}
+\DoxyCodeLine{349                             pivot = \textcolor{keyword}{new} Vector2(0.5f, 0.5f),}
+\DoxyCodeLine{350                             rect = spriteRect}
+\DoxyCodeLine{351                         \});}
+\DoxyCodeLine{352                         addedCount++;}
+\DoxyCodeLine{353                     \}}
+\DoxyCodeLine{354                 \}}
+\DoxyCodeLine{355 }
+\DoxyCodeLine{356             \}}
+\DoxyCodeLine{357 }
+\DoxyCodeLine{358             t.spritesheet = sprites.ToArray();}
+\DoxyCodeLine{359             EditorUtility.SetDirty(t);}
+\DoxyCodeLine{360             AssetDatabase.ImportAsset(texturePath, ImportAssetOptions.ForceUpdate);}
+\DoxyCodeLine{361             EditorGUIUtility.PingObject(texture);}
+\DoxyCodeLine{362             Debug.Log(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Applied sprite slices to \{2\}. \{0\} added. \{1\} updated."}, addedCount, updatedCount, texture.name));}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a94d614320cc4eace0bbd0d1f2eda6d73}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!atlasAsset@{atlasAsset}}
+\index{atlasAsset@{atlasAsset}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{atlasAsset}{atlasAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+atlas\+Asset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_ac1e6094645e5d332506ecaa349a77368}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!atlasFile@{atlasFile}}
+\index{atlasFile@{atlasFile}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{atlasFile}{atlasFile}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+atlas\+File\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a96e87ef353756fcfcdecdfb889e60465}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!materials@{materials}}
+\index{materials@{materials}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{materials}{materials}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+materials\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!spriteSlicesLabel@{spriteSlicesLabel}}
+\index{spriteSlicesLabel@{spriteSlicesLabel}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{spriteSlicesLabel}{spriteSlicesLabel}}
+{\footnotesize\ttfamily G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+sprite\+Slices\+Label\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_aa489f57b29074b3a0d5a32b5a267b871}\label{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_aa489f57b29074b3a0d5a32b5a267b871}} 
+\index{Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}!SpriteSlicesLabel@{SpriteSlicesLabel}}
+\index{SpriteSlicesLabel@{SpriteSlicesLabel}!Spine.Unity.Editor.AtlasAssetInspector@{Spine.Unity.Editor.AtlasAssetInspector}}
+\doxysubsubsection{\texorpdfstring{SpriteSlicesLabel}{SpriteSlicesLabel}}
+{\footnotesize\ttfamily G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Atlas\+Asset\+Inspector.\+Sprite\+Slices\+Label\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Atlas\+Asset\+Inspector.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                      \{}
+\DoxyCodeLine{51             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{52                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}{spriteSlicesLabel}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{53                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}{spriteSlicesLabel}} = \textcolor{keyword}{new} GUIContent(}
+\DoxyCodeLine{54                         \textcolor{stringliteral}{"Apply Regions as Texture Sprite Slices"},}
+\DoxyCodeLine{55                         SpineEditorUtilities.Icons.unity,}
+\DoxyCodeLine{56                         \textcolor{stringliteral}{"Adds Sprite slices to atlas texture(s). "} +}
+\DoxyCodeLine{57                         \textcolor{stringliteral}{"Updates existing slices if ones with matching names exist. \(\backslash\)n\(\backslash\)n"} +}
+\DoxyCodeLine{58                         \textcolor{stringliteral}{"If your atlas was exported with Premultiply Alpha, "} +}
+\DoxyCodeLine{59                         \textcolor{stringliteral}{"your SpriteRenderer should use the generated Spine \_Material asset (or any Material with a PMA shader) instead of Sprites-\/Default."});}
+\DoxyCodeLine{60                 \}}
+\DoxyCodeLine{61                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_a833b6696f107e72dee6e11a6456e4576}{spriteSlicesLabel}}; }
+\DoxyCodeLine{62             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_atlas_asset_inspector_8cs}{Atlas\+Asset\+Inspector.\+cs}}\end{DoxyCompactItemize}

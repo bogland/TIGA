@@ -1,0 +1,40 @@
+digraph "SharpJson.Lexer.SkipWhiteSpaces"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SharpJson.Lexer.SkipWhite\lSpaces",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SharpJson.Lexer.GetNumber\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a23df576a4afdb21efd22e38fb9e780e2",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="SharpJson.Lexer.ParseDouble\lNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a17df5147901bf78b35e4768ae98a03da",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="SharpJson.JsonDecoder.Parse\lValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad67cc8fc02cea01cd101c09631fb3d05",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="SharpJson.JsonDecoder.Decode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#a6300221209a5b9cccd906817263a2e3c",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SharpJson.JsonDecoder.Parse\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#a8ea9277fbcda21fc40d79634cbb96c89",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="SharpJson.JsonDecoder.Parse\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad6d5d2ed661ee7fd724784616ebfff7b",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="SharpJson.Lexer.ParseFloat\lNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#aea207308302033e727e342c8deb0fe5b",tooltip=" "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="SharpJson.Lexer.LookAhead",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a220de50f8092ba08305379cf8bb38363",tooltip=" "];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="SharpJson.Lexer.NextToken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a2dafe2e9f3aa19f29e262a07ce597530",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="SharpJson.Lexer.ParseString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a6b4182a915ee2fd3cfb2ed415dd9b644",tooltip=" "];
+  Node11 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

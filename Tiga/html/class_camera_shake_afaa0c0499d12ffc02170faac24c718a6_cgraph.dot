@@ -1,0 +1,12 @@
+digraph "CameraShake.Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="CameraShake.Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="CameraShake.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camera_shake.html#a012da2e98148bb0e020f2954b6b923bd",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="CameraShake.ShakeCoroutine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camera_shake.html#a9f14107621005775a816ed091c351f13",tooltip=" "];
+}

@@ -1,0 +1,14 @@
+digraph "Spine.PathConstraintData"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.PathConstraintData\n|+ Name\l+ Order\l+ Bones\l+ Target\l+ PositionMode\l+ SpacingMode\l+ RotateMode\l+ OffsetRotation\l+ Position\l+ Spacing\l+ RotateMix\l+ TranslateMix\l~ name\l~ order\l~ positionMode\l~ spacingMode\l~ rotateMode\l~ offsetRotation\l~ position\l- spacing\l- rotateMix\l- translateMix\l|+ PathConstraintData()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~target" ,arrowhead="odiamond"];
+  Node2 [label="{Spine.SlotData\n|+ Index\l+ Name\l+ BoneData\l+ R\l+ G\l+ B\l+ A\l+ R2\l+ G2\l+ B2\l+ HasSecondColor\l+ AttachmentName\l+ BlendMode\l~ index\l~ name\l~ r\l~ r2\l~ hasSecondColor\l~ attachmentName\l~ blendMode\l- g\l- b\l- a\l- g2\l- b2\l|+ SlotData()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_slot_data.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" ~boneData" ,arrowhead="odiamond"];
+  Node3 [label="{Spine.BoneData\n|+ Index\l+ Name\l+ Parent\l+ Length\l+ X\l+ Y\l+ Rotation\l+ ScaleX\l+ ScaleY\l+ ShearX\l+ ShearY\l+ TransformMode\l~ index\l~ name\l~ length\l~ x\l~ transformMode\l- y\l- rotation\l- scaleX\l- scaleY\l- shearX\l- shearY\l|+ BoneData()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone_data.html",tooltip=" "];
+  Node3 -> Node3 [color="grey25",fontsize="10",style="solid",label=" ~parent" ,arrowhead="odiamond"];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~bones" ,arrowhead="odiamond"];
+  Node4 [label="{Spine.ExposedList\<\l Spine.BoneData \>\n|+ Items\l+ Count\l+ Capacity\l- version\l- DefaultCapacity\l- EmptyArray\l|+ ExposedList()\l+ ExposedList()\l+ ExposedList()\l+ Add()\l+ GrowIfNeeded()\l+ Resize()\l+ EnsureCapacity()\l+ AddRange()\l+ BinarySearch()\l+ BinarySearch()\l그리고 42개 더...\l~ ExposedList()\l- CheckRange()\l- AddCollection()\l- AddEnumerable()\l- FindAllList()\l- GetIndex()\l- GetLastIndex()\l- GetEnumerator()\l- GetEnumerator()\l- Shift()\l- CheckIndex()\l- CheckCollection()\l- InsertCollection()\l- InsertEnumeration()\l- CheckMatch()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html",tooltip=" "];
+}

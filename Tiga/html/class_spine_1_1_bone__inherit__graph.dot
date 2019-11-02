@@ -1,0 +1,9 @@
+digraph "Spine.Bone"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Bone\n|+ yDown\l+ Data\l+ Skeleton\l+ Parent\l+ Children\l+ X\l+ Y\l+ Rotation\l+ ScaleX\l+ ScaleY\l+ ShearX\l그리고 20개 더...\l~ data\l~ skeleton\l~ parent\l~ children\l~ x\l~ ax\l~ appliedValid\l~ a\l~ c\l~ sorted\l- y\l- rotation\l- scaleX\l- scaleY\l- shearX\l- shearY\l- ay\l- arotation\l- ascaleX\l- ascaleY\l그리고 6개 더...\l|+ Bone()\l+ Update()\l+ UpdateWorldTransform()\l+ UpdateWorldTransform()\l+ SetToSetupPose()\l+ WorldToLocal()\l+ LocalToWorld()\l+ WorldToLocalRotation()\l+ LocalToWorldRotation()\l+ RotateWorld()\l+ ToString()\l~ UpdateAppliedTransform()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Stores a bone's current pose."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{IUpdatable\n||+ Update()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_i_updatable.html",tooltip=" "];
+}

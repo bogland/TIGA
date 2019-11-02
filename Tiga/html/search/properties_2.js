@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['c_4860',['C',['../class_spine_1_1_bone.html#a0f8f536da6e17eeda7cdc25051f29a5c',1,'Spine::Bone']]],
+  ['capacity_4861',['Capacity',['../class_spine_1_1_exposed_list.html#aa0f6bf083e9160fe11c8a4fac78e0787',1,'Spine::ExposedList']]],
+  ['children_4862',['Children',['../class_spine_1_1_bone.html#a1b8a66d5894a29a97b2073226c38ccd5',1,'Spine::Bone']]],
+  ['clippedtriangles_4863',['ClippedTriangles',['../class_spine_1_1_skeleton_clipping.html#af454bc5b089c4c8467710bc00027008f',1,'Spine::SkeletonClipping']]],
+  ['clippeduvs_4864',['ClippedUVs',['../class_spine_1_1_skeleton_clipping.html#ae8222ffe289cb076a9a63c319cb5a4ea',1,'Spine::SkeletonClipping']]],
+  ['clippedvertices_4865',['ClippedVertices',['../class_spine_1_1_skeleton_clipping.html#af3488612ff14737245a830dc8cfabce4',1,'Spine::SkeletonClipping']]],
+  ['closed_4866',['Closed',['../class_spine_1_1_path_attachment.html#a6568b62d827f9eb2a1ed9e975d9ba07b',1,'Spine::PathAttachment']]],
+  ['constantspeed_4867',['ConstantSpeed',['../class_spine_1_1_path_attachment.html#a47f22109e90e1270d87d34a78b787b03',1,'Spine::PathAttachment']]],
+  ['count_4868',['Count',['../class_spine_1_1_pool.html#a0a8a3896deb3dc402b5a67f769dc5cac',1,'Spine.Pool.Count()'],['../class_spine_1_1_polygon.html#a73a4f5583627b47782233ebb59c0178e',1,'Spine.Polygon.Count()']]],
+  ['current_4869',['Current',['../struct_spine_1_1_exposed_list_1_1_enumerator.html#a425c3152e492bd14faf4e74a4e35a7d6',1,'Spine.ExposedList.Enumerator.Current()'],['../struct_spine_1_1_exposed_list_1_1_enumerator.html#aeffff53e54276e9801d2b30f4cf2d394',1,'Spine.ExposedList.Enumerator.Current()'],['../class_spine_1_1_unity_1_1_wait_for_spine_animation_complete.html#a7acc088cfd659b5e442721de95b203bd',1,'Spine.Unity.WaitForSpineAnimationComplete.Current()'],['../class_spine_1_1_unity_1_1_wait_for_spine_event.html#a39994befb8e0f6ac943d443b70327da3',1,'Spine.Unity.WaitForSpineEvent.Current()'],['../class_spine_1_1_unity_1_1_wait_for_spine_track_entry_end.html#a9b2d8c66edb2e7ed7d2da807380ec1e5',1,'Spine.Unity.WaitForSpineTrackEntryEnd.Current()']]],
+  ['currentattachment_4870',['CurrentAttachment',['../class_spine_1_1_unity_1_1_bounding_box_follower.html#ae2b6ad2b1238e4150aa5bc2f80fcb573',1,'Spine::Unity::BoundingBoxFollower']]],
+  ['currentattachmentname_4871',['CurrentAttachmentName',['../class_spine_1_1_unity_1_1_bounding_box_follower.html#ad0f416722ba149fdcf8961fa09e0edbe',1,'Spine::Unity::BoundingBoxFollower']]],
+  ['currentcollider_4872',['CurrentCollider',['../class_spine_1_1_unity_1_1_bounding_box_follower.html#a00d55a2c5126479a513f97368121c102',1,'Spine::Unity::BoundingBoxFollower']]],
+  ['currentskeletonanimation_4873',['CurrentSkeletonAnimation',['../class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a1ac85e7732da282d1196aea8d46b1690',1,'Spine::Unity::SkeletonAnimationMulti']]],
+  ['custommaterialoverride_4874',['CustomMaterialOverride',['../class_spine_1_1_unity_1_1_skeleton_renderer.html#af0521d4394bc0102e16f0e5831b2f5e9',1,'Spine::Unity::SkeletonRenderer']]],
+  ['customslotmaterials_4875',['CustomSlotMaterials',['../class_spine_1_1_unity_1_1_skeleton_renderer.html#aa34a19b83a418a138bc220462c172621',1,'Spine::Unity::SkeletonRenderer']]]
+];

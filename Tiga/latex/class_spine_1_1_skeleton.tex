@@ -1,0 +1,1443 @@
+\hypertarget{class_spine_1_1_skeleton}{}\doxysection{Spine.\+Skeleton 클래스 참조}
+\label{class_spine_1_1_skeleton}\index{Spine.Skeleton@{Spine.Skeleton}}
+
+
+Spine.\+Skeleton에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_a6e270142906600de808d1f06277c027a}{Skeleton}} (\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} data)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_ad747a544ba5de279e479eb5733199db1}{Update\+Cache}} ()
+\begin{DoxyCompactList}\small\item\em Caches information about bones and constraints. Must be called if bones, constraints or weighted path attachments are added or removed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{Update\+World\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Updates the world transform for each bone and applies constraints. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}{Set\+To\+Setup\+Pose}} ()
+\begin{DoxyCompactList}\small\item\em Sets the bones, constraints, and slots to their setup pose values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_acdcb41164c617375a198124234134312}{Set\+Bones\+To\+Setup\+Pose}} ()
+\begin{DoxyCompactList}\small\item\em Sets the bones and constraints to their setup pose values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}{Set\+Slots\+To\+Setup\+Pose}} ()
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{Find\+Bone}} (string bone\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_spine_1_1_skeleton_a7f1110895f44d43df5a9ba65e46f5a0f}{Find\+Bone\+Index}} (string bone\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+-\/1 if the bone was not found.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}{Find\+Slot}} (string slot\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}{Find\+Slot\+Index}} (string slot\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+-\/1 if the bone was not found.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_af80bbbc3b2b5d588152eba7e83430dc8}{Set\+Skin}} (string skin\+Name)
+\begin{DoxyCompactList}\small\item\em Sets a skin by name (see Set\+Skin). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a1c9eb9cbfcc387526acef6f83d1edfae}{Set\+Skin}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} new\+Skin)
+\item 
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_skeleton_a49a6dfe7d4e66ba8d142541022f17a82}{Get\+Attachment}} (string slot\+Name, string attachment\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_skeleton_acb9d085b8c537828a1e3e0c0bdce52bd}{Get\+Attachment}} (int slot\+Index, string attachment\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a37c49ddd794a12ea5cda13ef8dc5ff46}{Set\+Attachment}} (string slot\+Name, string attachment\+Name)
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyParams}{매개변수}
+{\em attachment\+Name} & May be null.\\
+\hline
+\end{DoxyParams}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}} \mbox{\hyperlink{class_spine_1_1_skeleton_a8fbf9f59c4d2209ac0015e6220b059d1}{Find\+Ik\+Constraint}} (string constraint\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}} \mbox{\hyperlink{class_spine_1_1_skeleton_a33d14540429ad370c8a0fdd878a2cd09}{Find\+Transform\+Constraint}} (string constraint\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}} \mbox{\hyperlink{class_spine_1_1_skeleton_a7cd9e65dd7b7575d3eb00b725ae57aa8}{Find\+Path\+Constraint}} (string constraint\+Name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_af8830164174fb0fc3b1f2c140ba5884b}{Update}} (float delta)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a03c5a7b9fbdbc320445a19d3a4b71aae}{Get\+Bounds}} (out float x, out float \mbox{\hyperlink{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}{y}}, out float width, out float height, ref float\mbox{[}$\,$\mbox{]} vertex\+Buffer)
+\begin{DoxyCompactList}\small\item\em Returns the axis aligned bounding box (A\+A\+BB) of the region and mesh attachments for the current pose. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{interface_spine_1_1_i_updatable}{I\+Updatable}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_a2e2a2015c0ec4504f2f24528dd3d6e9e}{Update\+Cache\+List}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_a6a451d2b789c6b916a978bd0f27a7c22}{Draw\+Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}{Ik\+Constraints}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_ab55c5668b8473f8df274ac017a16bb4f}{Path\+Constraints}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}} $>$ \mbox{\hyperlink{class_spine_1_1_skeleton_ae0407b2eb25cb28c9eebaf87ef83e505}{Transform\+Constraints}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Skin}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_af578a6b9bb98d3e98932b6af13c83449}{R}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a31d8641e8cb91459660c198ab6fe749e}{G}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_ace8fc26143f054610a745adbf54f7729}{B}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a70241a31a0ebce8ad2a577523d6389e7}{A}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_acf7de15bbd875858c27156727dda9a7b}{Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_aa6929dedee376680ea44420a32977548}{X}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_ad076b350b843c874fb5cff64f826d9de}{Y}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}{FlipX}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_aa052c002863a96c27ad268bd8eb2c9e1}{FlipY}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}? \mbox{\hyperlink{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}{Root\+Bone}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a1644810ba43658dce0c096f3326ec860}{Sort\+Ik\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}} constraint)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_ac5608577f4652613316b27e28ad6dc21}{Sort\+Path\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}} constraint)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a97cabd3a39a4270145af1455c8f07022}{Sort\+Transform\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}} constraint)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{Sort\+Path\+Constraint\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, int slot\+Index, \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} slot\+Bone)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_adecbd9f319fd1e0ed942d3094e5f928e}{Sort\+Path\+Constraint\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment, \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} slot\+Bone)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{Sort\+Bone}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}{Sort\+Reset}} (\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$ bones)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a7619893420e72ee31792a8dc18257340}{g}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a80cf1bd4df66cb164e2701db9f0ddbff}{b}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a961d3e8213e6b853911576acbfda3225}{a}} = 1
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_skeleton_a822b9b8fcd7317f2bcce7aa217d989c7}{flipY}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}{y}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a6e270142906600de808d1f06277c027a}\label{class_spine_1_1_skeleton_a6e270142906600de808d1f06277c027a}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Skeleton@{Skeleton}}
+\index{Skeleton@{Skeleton}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Skeleton()}{Skeleton()}}
+{\footnotesize\ttfamily Spine.\+Skeleton.\+Skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Skeleton.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                             \{}
+\DoxyCodeLine{75             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"data"}, \textcolor{stringliteral}{"data cannot be null."});}
+\DoxyCodeLine{76             this.data = data;}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             bones = \textcolor{keyword}{new} ExposedList<Bone>(data.bones.Count);}
+\DoxyCodeLine{79             \textcolor{keywordflow}{foreach} (BoneData boneData \textcolor{keywordflow}{in} data.bones) \{}
+\DoxyCodeLine{80                 Bone bone;}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (boneData.parent == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{82                     bone = \textcolor{keyword}{new} Bone(boneData, \textcolor{keyword}{this}, \textcolor{keyword}{null});              }
+\DoxyCodeLine{83                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{84                     Bone parent = bones.Items[boneData.parent.index];}
+\DoxyCodeLine{85                     bone = \textcolor{keyword}{new} Bone(boneData, \textcolor{keyword}{this}, parent);}
+\DoxyCodeLine{86                     parent.children.Add(bone);}
+\DoxyCodeLine{87                 \}}
+\DoxyCodeLine{88                 bones.Add(bone);}
+\DoxyCodeLine{89             \}}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             slots = \textcolor{keyword}{new} ExposedList<Slot>(data.slots.Count);}
+\DoxyCodeLine{92             drawOrder = \textcolor{keyword}{new} ExposedList<Slot>(data.slots.Count);}
+\DoxyCodeLine{93             \textcolor{keywordflow}{foreach} (SlotData slotData \textcolor{keywordflow}{in} data.slots) \{}
+\DoxyCodeLine{94                 Bone bone = bones.Items[slotData.boneData.index];}
+\DoxyCodeLine{95                 Slot slot = \textcolor{keyword}{new} Slot(slotData, bone);}
+\DoxyCodeLine{96                 slots.Add(slot);}
+\DoxyCodeLine{97                 drawOrder.Add(slot);}
+\DoxyCodeLine{98             \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             ikConstraints = \textcolor{keyword}{new} ExposedList<IkConstraint>(data.ikConstraints.Count);}
+\DoxyCodeLine{101             \textcolor{keywordflow}{foreach} (IkConstraintData ikConstraintData \textcolor{keywordflow}{in} data.ikConstraints)}
+\DoxyCodeLine{102                 ikConstraints.Add(\textcolor{keyword}{new} IkConstraint(ikConstraintData, \textcolor{keyword}{this}));}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             transformConstraints = \textcolor{keyword}{new} ExposedList<TransformConstraint>(data.transformConstraints.Count);}
+\DoxyCodeLine{105             \textcolor{keywordflow}{foreach} (TransformConstraintData transformConstraintData \textcolor{keywordflow}{in} data.transformConstraints)}
+\DoxyCodeLine{106                 transformConstraints.Add(\textcolor{keyword}{new} TransformConstraint(transformConstraintData, \textcolor{keyword}{this}));}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             pathConstraints = \textcolor{keyword}{new} ExposedList<PathConstraint> (data.pathConstraints.Count);}
+\DoxyCodeLine{109             \textcolor{keywordflow}{foreach} (PathConstraintData pathConstraintData \textcolor{keywordflow}{in} data.pathConstraints)}
+\DoxyCodeLine{110                 pathConstraints.Add(\textcolor{keyword}{new} PathConstraint(pathConstraintData, \textcolor{keyword}{this}));}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112             \mbox{\hyperlink{class_spine_1_1_skeleton_ad747a544ba5de279e479eb5733199db1}{UpdateCache}}();}
+\DoxyCodeLine{113             \mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}\label{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindBone@{FindBone}}
+\index{FindBone@{FindBone}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindBone()}{FindBone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Skeleton.\+Find\+Bone (\begin{DoxyParamCaption}\item[{string}]{bone\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 341 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{342                                                \{}
+\DoxyCodeLine{343             \textcolor{keywordflow}{if} (boneName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"boneName"}, \textcolor{stringliteral}{"boneName cannot be null."});}
+\DoxyCodeLine{344             var bones = this.bones;}
+\DoxyCodeLine{345             var bonesItems = bones.Items;}
+\DoxyCodeLine{346             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++) \{}
+\DoxyCodeLine{347                 Bone bone = bonesItems[i];}
+\DoxyCodeLine{348                 \textcolor{keywordflow}{if} (bone.data.name == boneName) \textcolor{keywordflow}{return} bone;}
+\DoxyCodeLine{349             \}}
+\DoxyCodeLine{350             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a7f1110895f44d43df5a9ba65e46f5a0f}\label{class_spine_1_1_skeleton_a7f1110895f44d43df5a9ba65e46f5a0f}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindBoneIndex@{FindBoneIndex}}
+\index{FindBoneIndex@{FindBoneIndex}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindBoneIndex()}{FindBoneIndex()}}
+{\footnotesize\ttfamily int Spine.\+Skeleton.\+Find\+Bone\+Index (\begin{DoxyParamCaption}\item[{string}]{bone\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+-\/1 if the bone was not found.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 353 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{354                                                    \{}
+\DoxyCodeLine{355             \textcolor{keywordflow}{if} (boneName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"boneName"}, \textcolor{stringliteral}{"boneName cannot be null."});}
+\DoxyCodeLine{356             var bones = this.bones;}
+\DoxyCodeLine{357             var bonesItems = bones.Items;}
+\DoxyCodeLine{358             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++)}
+\DoxyCodeLine{359                 \textcolor{keywordflow}{if} (bonesItems[i].data.name == boneName) \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{360             \textcolor{keywordflow}{return} -\/1;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a8fbf9f59c4d2209ac0015e6220b059d1}\label{class_spine_1_1_skeleton_a8fbf9f59c4d2209ac0015e6220b059d1}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindIkConstraint@{FindIkConstraint}}
+\index{FindIkConstraint@{FindIkConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindIkConstraint()}{FindIkConstraint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}} Spine.\+Skeleton.\+Find\+Ik\+Constraint (\begin{DoxyParamCaption}\item[{string}]{constraint\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 454 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{455                                                                      \{}
+\DoxyCodeLine{456             \textcolor{keywordflow}{if} (constraintName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"constraintName"}, \textcolor{stringliteral}{"constraintName cannot be null."});}
+\DoxyCodeLine{457             ExposedList<IkConstraint> ikConstraints = this.ikConstraints;}
+\DoxyCodeLine{458             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = ikConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{459                 IkConstraint ikConstraint = ikConstraints.Items[i];}
+\DoxyCodeLine{460                 \textcolor{keywordflow}{if} (ikConstraint.data.name == constraintName) \textcolor{keywordflow}{return} ikConstraint;}
+\DoxyCodeLine{461             \}}
+\DoxyCodeLine{462             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a7cd9e65dd7b7575d3eb00b725ae57aa8}\label{class_spine_1_1_skeleton_a7cd9e65dd7b7575d3eb00b725ae57aa8}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindPathConstraint@{FindPathConstraint}}
+\index{FindPathConstraint@{FindPathConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindPathConstraint()}{FindPathConstraint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}} Spine.\+Skeleton.\+Find\+Path\+Constraint (\begin{DoxyParamCaption}\item[{string}]{constraint\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 476 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{477                                                                          \{}
+\DoxyCodeLine{478             \textcolor{keywordflow}{if} (constraintName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"constraintName"}, \textcolor{stringliteral}{"constraintName cannot be null."});}
+\DoxyCodeLine{479             ExposedList<PathConstraint> pathConstraints = this.pathConstraints;}
+\DoxyCodeLine{480             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pathConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{481                 PathConstraint constraint = pathConstraints.Items[i];}
+\DoxyCodeLine{482                 \textcolor{keywordflow}{if} (constraint.data.name.Equals(constraintName)) \textcolor{keywordflow}{return} constraint;}
+\DoxyCodeLine{483             \}}
+\DoxyCodeLine{484             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}\label{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindSlot@{FindSlot}}
+\index{FindSlot@{FindSlot}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindSlot()}{FindSlot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Skeleton.\+Find\+Slot (\begin{DoxyParamCaption}\item[{string}]{slot\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 363 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{364                                                \{}
+\DoxyCodeLine{365             \textcolor{keywordflow}{if} (slotName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"slotName"}, \textcolor{stringliteral}{"slotName cannot be null."});}
+\DoxyCodeLine{366             var slots = this.slots;}
+\DoxyCodeLine{367             var slotsItems = slots.Items;}
+\DoxyCodeLine{368             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++) \{}
+\DoxyCodeLine{369                 Slot slot = slotsItems[i];}
+\DoxyCodeLine{370                 \textcolor{keywordflow}{if} (slot.data.name == slotName) \textcolor{keywordflow}{return} slot;}
+\DoxyCodeLine{371             \}}
+\DoxyCodeLine{372             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}\label{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindSlotIndex@{FindSlotIndex}}
+\index{FindSlotIndex@{FindSlotIndex}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindSlotIndex()}{FindSlotIndex()}}
+{\footnotesize\ttfamily int Spine.\+Skeleton.\+Find\+Slot\+Index (\begin{DoxyParamCaption}\item[{string}]{slot\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+-\/1 if the bone was not found.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 375 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{376                                                    \{}
+\DoxyCodeLine{377             \textcolor{keywordflow}{if} (slotName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"slotName"}, \textcolor{stringliteral}{"slotName cannot be null."});}
+\DoxyCodeLine{378             var slots = this.slots;}
+\DoxyCodeLine{379             var slotsItems = slots.Items;}
+\DoxyCodeLine{380             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++)}
+\DoxyCodeLine{381                 \textcolor{keywordflow}{if} (slotsItems[i].data.name.Equals(slotName)) \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{382             \textcolor{keywordflow}{return} -\/1;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a33d14540429ad370c8a0fdd878a2cd09}\label{class_spine_1_1_skeleton_a33d14540429ad370c8a0fdd878a2cd09}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FindTransformConstraint@{FindTransformConstraint}}
+\index{FindTransformConstraint@{FindTransformConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FindTransformConstraint()}{FindTransformConstraint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}} Spine.\+Skeleton.\+Find\+Transform\+Constraint (\begin{DoxyParamCaption}\item[{string}]{constraint\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 465 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{466                                                                                    \{}
+\DoxyCodeLine{467             \textcolor{keywordflow}{if} (constraintName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"constraintName"}, \textcolor{stringliteral}{"constraintName cannot be null."});}
+\DoxyCodeLine{468             ExposedList<TransformConstraint> transformConstraints = this.transformConstraints;}
+\DoxyCodeLine{469             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = transformConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{470                 TransformConstraint transformConstraint = transformConstraints.Items[i];}
+\DoxyCodeLine{471                 \textcolor{keywordflow}{if} (transformConstraint.data.name == constraintName) \textcolor{keywordflow}{return} transformConstraint;}
+\DoxyCodeLine{472             \}}
+\DoxyCodeLine{473             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_acb9d085b8c537828a1e3e0c0bdce52bd}\label{class_spine_1_1_skeleton_acb9d085b8c537828a1e3e0c0bdce52bd}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!GetAttachment@{GetAttachment}}
+\index{GetAttachment@{GetAttachment}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{GetAttachment()}{GetAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Skeleton.\+Get\+Attachment (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{string}]{attachment\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 425 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{426                                                                                \{}
+\DoxyCodeLine{427             \textcolor{keywordflow}{if} (attachmentName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"attachmentName"}, \textcolor{stringliteral}{"attachmentName cannot be null."});}
+\DoxyCodeLine{428             \textcolor{keywordflow}{if} (skin != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{429                 Attachment attachment = skin.\mbox{\hyperlink{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}{GetAttachment}}(slotIndex, attachmentName);}
+\DoxyCodeLine{430                 \textcolor{keywordflow}{if} (attachment != \textcolor{keyword}{null}) \textcolor{keywordflow}{return} attachment;}
+\DoxyCodeLine{431             \}}
+\DoxyCodeLine{432             \textcolor{keywordflow}{return} data.defaultSkin != \textcolor{keyword}{null} ? data.defaultSkin.\mbox{\hyperlink{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}{GetAttachment}}(slotIndex, attachmentName) : \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a49a6dfe7d4e66ba8d142541022f17a82}\label{class_spine_1_1_skeleton_a49a6dfe7d4e66ba8d142541022f17a82}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!GetAttachment@{GetAttachment}}
+\index{GetAttachment@{GetAttachment}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{GetAttachment()}{GetAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Skeleton.\+Get\+Attachment (\begin{DoxyParamCaption}\item[{string}]{slot\+Name,  }\item[{string}]{attachment\+Name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null.
+\end{DoxyReturn}
+
+
+
+
+Skeleton.\+cs 파일의 420 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{421                                                                                  \{}
+\DoxyCodeLine{422             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_a49a6dfe7d4e66ba8d142541022f17a82}{GetAttachment}}(data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_ab83e3ab9fbf2c1a3f2d800bffc482985}{FindSlotIndex}}(slotName), attachmentName);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a03c5a7b9fbdbc320445a19d3a4b71aae}\label{class_spine_1_1_skeleton_a03c5a7b9fbdbc320445a19d3a4b71aae}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!GetBounds@{GetBounds}}
+\index{GetBounds@{GetBounds}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{GetBounds()}{GetBounds()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Get\+Bounds (\begin{DoxyParamCaption}\item[{out float}]{x,  }\item[{out float}]{y,  }\item[{out float}]{width,  }\item[{out float}]{height,  }\item[{ref float\mbox{[}$\,$\mbox{]}}]{vertex\+Buffer }\end{DoxyParamCaption})}
+
+
+
+Returns the axis aligned bounding box (A\+A\+BB) of the region and mesh attachments for the current pose. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em x} & The horizontal distance between the skeleton origin and the left side of the A\+A\+BB.\\
+\hline
+{\em y} & The vertical distance between the skeleton origin and the bottom side of the A\+A\+BB.\\
+\hline
+{\em width} & The width of the A\+A\+BB\\
+\hline
+{\em height} & The height of the A\+A\+BB.\\
+\hline
+{\em vertex\+Buffer} & Reference to hold a float\mbox{[}\mbox{]}. May be a null reference. This method will assign it a new float\mbox{[}\mbox{]} with the appropriate size as needed.\\
+\hline
+\end{DoxyParams}
+
+
+Skeleton.\+cs 파일의 496 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{497                                                                                                                       \{}
+\DoxyCodeLine{498             \textcolor{keywordtype}{float}[] temp = vertexBuffer;}
+\DoxyCodeLine{499             temp = temp ?? \textcolor{keyword}{new} \textcolor{keywordtype}{float}[8];}
+\DoxyCodeLine{500             var drawOrderItems = this.drawOrder.Items;}
+\DoxyCodeLine{501             \textcolor{keywordtype}{float} minX = \textcolor{keywordtype}{int}.MaxValue, minY = \textcolor{keywordtype}{int}.MaxValue, maxX = \textcolor{keywordtype}{int}.MinValue, maxY = \textcolor{keywordtype}{int}.MinValue;}
+\DoxyCodeLine{502             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = this.drawOrder.Count; i < n; i++) \{}
+\DoxyCodeLine{503                 Slot slot = drawOrderItems[i];}
+\DoxyCodeLine{504                 \textcolor{keywordtype}{int} verticesLength = 0;}
+\DoxyCodeLine{505                 \textcolor{keywordtype}{float}[] vertices = \textcolor{keyword}{null};}
+\DoxyCodeLine{506                 Attachment attachment = slot.attachment;}
+\DoxyCodeLine{507                 var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{508                 \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{509                     verticesLength = 8;}
+\DoxyCodeLine{510                     vertices = temp;}
+\DoxyCodeLine{511                     \textcolor{keywordflow}{if} (vertices.Length < 8) vertices = temp = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[8];}
+\DoxyCodeLine{512                     regionAttachment.ComputeWorldVertices(slot.bone, temp, 0);}
+\DoxyCodeLine{513                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{514                     var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{515                     \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{516                         MeshAttachment mesh = meshAttachment;}
+\DoxyCodeLine{517                         verticesLength = mesh.WorldVerticesLength;}
+\DoxyCodeLine{518                         vertices = temp;}
+\DoxyCodeLine{519                         \textcolor{keywordflow}{if} (vertices.Length < verticesLength) vertices = temp = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[verticesLength];}
+\DoxyCodeLine{520                         mesh.ComputeWorldVertices(slot, 0, verticesLength, temp, 0);}
+\DoxyCodeLine{521                     \}}
+\DoxyCodeLine{522                 \}}
+\DoxyCodeLine{523 }
+\DoxyCodeLine{524                 \textcolor{keywordflow}{if} (vertices != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{525                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < verticesLength; ii += 2) \{}
+\DoxyCodeLine{526                         \textcolor{keywordtype}{float} vx = vertices[ii], vy = vertices[ii + 1];}
+\DoxyCodeLine{527                         minX = Math.Min(minX, vx);}
+\DoxyCodeLine{528                         minY = Math.Min(minY, vy);}
+\DoxyCodeLine{529                         maxX = Math.Max(maxX, vx);}
+\DoxyCodeLine{530                         maxY = Math.Max(maxY, vy);}
+\DoxyCodeLine{531                     \}}
+\DoxyCodeLine{532                 \}}
+\DoxyCodeLine{533             \}}
+\DoxyCodeLine{534             x = minX;}
+\DoxyCodeLine{535             \mbox{\hyperlink{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}{y}} = minY;}
+\DoxyCodeLine{536             width = maxX -\/ minX;}
+\DoxyCodeLine{537             height = maxY -\/ minY;}
+\DoxyCodeLine{538             vertexBuffer = temp;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a37c49ddd794a12ea5cda13ef8dc5ff46}\label{class_spine_1_1_skeleton_a37c49ddd794a12ea5cda13ef8dc5ff46}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetAttachment@{SetAttachment}}
+\index{SetAttachment@{SetAttachment}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetAttachment()}{SetAttachment()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+Attachment (\begin{DoxyParamCaption}\item[{string}]{slot\+Name,  }\item[{string}]{attachment\+Name }\end{DoxyParamCaption})}
+
+
+
+
+\begin{DoxyParams}{매개변수}
+{\em attachment\+Name} & May be null.\\
+\hline
+\end{DoxyParams}
+
+
+
+
+Skeleton.\+cs 파일의 435 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{436                                                                            \{}
+\DoxyCodeLine{437             \textcolor{keywordflow}{if} (slotName == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"slotName"}, \textcolor{stringliteral}{"slotName cannot be null."});}
+\DoxyCodeLine{438             ExposedList<Slot> slots = this.slots;}
+\DoxyCodeLine{439             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++) \{}
+\DoxyCodeLine{440                 Slot slot = slots.Items[i];}
+\DoxyCodeLine{441                 \textcolor{keywordflow}{if} (slot.data.name == slotName) \{}
+\DoxyCodeLine{442                     Attachment attachment = \textcolor{keyword}{null};}
+\DoxyCodeLine{443                     \textcolor{keywordflow}{if} (attachmentName != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{444                         attachment = \mbox{\hyperlink{class_spine_1_1_skeleton_a49a6dfe7d4e66ba8d142541022f17a82}{GetAttachment}}(i, attachmentName);}
+\DoxyCodeLine{445                         \textcolor{keywordflow}{if} (attachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Attachment not found: "} + attachmentName + \textcolor{stringliteral}{", for slot: "} + slotName);}
+\DoxyCodeLine{446                     \}}
+\DoxyCodeLine{447                     slot.Attachment = attachment;}
+\DoxyCodeLine{448                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{449                 \}}
+\DoxyCodeLine{450             \}}
+\DoxyCodeLine{451             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Slot not found: "} + slotName);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_skeleton_acdcb41164c617375a198124234134312}\label{class_spine_1_1_skeleton_acdcb41164c617375a198124234134312}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetBonesToSetupPose@{SetBonesToSetupPose}}
+\index{SetBonesToSetupPose@{SetBonesToSetupPose}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetBonesToSetupPose()}{SetBonesToSetupPose()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+Bones\+To\+Setup\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the bones and constraints to their setup pose values. 
+
+
+
+Skeleton.\+cs 파일의 296 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{297                                            \{}
+\DoxyCodeLine{298             var bonesItems = this.bones.Items;}
+\DoxyCodeLine{299             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++)}
+\DoxyCodeLine{300                 bonesItems[i].SetToSetupPose();}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302             var ikConstraintsItems = this.ikConstraints.Items;}
+\DoxyCodeLine{303             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = ikConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{304                 IkConstraint constraint = ikConstraintsItems[i];}
+\DoxyCodeLine{305                 constraint.bendDirection = constraint.data.bendDirection;}
+\DoxyCodeLine{306                 constraint.mix = constraint.data.mix;}
+\DoxyCodeLine{307             \}}
+\DoxyCodeLine{308 }
+\DoxyCodeLine{309             var transformConstraintsItems = this.transformConstraints.Items;}
+\DoxyCodeLine{310             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = transformConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{311                 TransformConstraint constraint = transformConstraintsItems[i];}
+\DoxyCodeLine{312                 TransformConstraintData constraintData = constraint.data;}
+\DoxyCodeLine{313                 constraint.rotateMix = constraintData.rotateMix;}
+\DoxyCodeLine{314                 constraint.translateMix = constraintData.translateMix;}
+\DoxyCodeLine{315                 constraint.scaleMix = constraintData.scaleMix;}
+\DoxyCodeLine{316                 constraint.shearMix = constraintData.shearMix;}
+\DoxyCodeLine{317             \}}
+\DoxyCodeLine{318 }
+\DoxyCodeLine{319             var pathConstraintItems = this.pathConstraints.Items;}
+\DoxyCodeLine{320             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pathConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{321                 PathConstraint constraint = pathConstraintItems[i];}
+\DoxyCodeLine{322                 PathConstraintData constraintData = constraint.data;}
+\DoxyCodeLine{323                 constraint.position = constraintData.position;}
+\DoxyCodeLine{324                 constraint.spacing = constraintData.spacing;}
+\DoxyCodeLine{325                 constraint.rotateMix = constraintData.rotateMix;}
+\DoxyCodeLine{326                 constraint.translateMix = constraintData.translateMix;}
+\DoxyCodeLine{327             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a1c9eb9cbfcc387526acef6f83d1edfae}\label{class_spine_1_1_skeleton_a1c9eb9cbfcc387526acef6f83d1edfae}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetSkin@{SetSkin}}
+\index{SetSkin@{SetSkin}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetSkin()}{SetSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+Skin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{new\+Skin }\end{DoxyParamCaption})}
+
+
+
+
+
+Attachments from the new skin are attached if the corresponding attachment from the old skin was attached. If there was no old skin, each slot\textquotesingle{}s setup mode attachment is attached from the new skin.
+
+After changing the skin, the visible attachments can be reset to those attached in the setup pose by calling \mbox{\hyperlink{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}{Skeleton.\+Set\+Slots\+To\+Setup\+Pose()}}. Also, often \mbox{\hyperlink{class_spine_1_1_animation_state_ab6fb06ec97a6b663e0b27244e326cad3}{Animation\+State.\+Apply(\+Skeleton)}} is called before the next time the skeleton is rendered to allow any attachment keys in the current animation(s) to hide or show attachments from the new skin.
+
+
+\begin{DoxyParams}{매개변수}
+{\em new\+Skin} & May be null.\\
+\hline
+\end{DoxyParams}
+
+
+Skeleton.\+cs 파일의 400 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{401                                            \{}
+\DoxyCodeLine{402             \textcolor{keywordflow}{if} (newSkin != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{403                 \textcolor{keywordflow}{if} (skin != \textcolor{keyword}{null})}
+\DoxyCodeLine{404                     newSkin.AttachAll(\textcolor{keyword}{this}, skin);}
+\DoxyCodeLine{405                 \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{406                     ExposedList<Slot> slots = this.slots;}
+\DoxyCodeLine{407                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++) \{}
+\DoxyCodeLine{408                         Slot slot = slots.Items[i];}
+\DoxyCodeLine{409                         \textcolor{keywordtype}{string} name = slot.data.attachmentName;}
+\DoxyCodeLine{410                         \textcolor{keywordflow}{if} (name != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{411                             Attachment attachment = newSkin.GetAttachment(i, name);}
+\DoxyCodeLine{412                             \textcolor{keywordflow}{if} (attachment != \textcolor{keyword}{null}) slot.Attachment = attachment;}
+\DoxyCodeLine{413                         \}}
+\DoxyCodeLine{414                     \}}
+\DoxyCodeLine{415                 \}}
+\DoxyCodeLine{416             \}}
+\DoxyCodeLine{417             skin = newSkin;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_af80bbbc3b2b5d588152eba7e83430dc8}\label{class_spine_1_1_skeleton_af80bbbc3b2b5d588152eba7e83430dc8}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetSkin@{SetSkin}}
+\index{SetSkin@{SetSkin}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetSkin()}{SetSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+Skin (\begin{DoxyParamCaption}\item[{string}]{skin\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets a skin by name (see Set\+Skin). 
+
+
+
+Skeleton.\+cs 파일의 385 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{386                                               \{}
+\DoxyCodeLine{387             \mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Skin}} foundSkin = data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a6f87af52a59ff01da994c5ae68397369}{FindSkin}}(skinName);}
+\DoxyCodeLine{388             \textcolor{keywordflow}{if} (foundSkin == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"Skin not found: "} + skinName, \textcolor{stringliteral}{"skinName"});}
+\DoxyCodeLine{389             \mbox{\hyperlink{class_spine_1_1_skeleton_af80bbbc3b2b5d588152eba7e83430dc8}{SetSkin}}(foundSkin);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}\label{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetSlotsToSetupPose@{SetSlotsToSetupPose}}
+\index{SetSlotsToSetupPose@{SetSlotsToSetupPose}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetSlotsToSetupPose()}{SetSlotsToSetupPose()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+Slots\+To\+Setup\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton.\+cs 파일의 329 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{330                                            \{}
+\DoxyCodeLine{331             var slots = this.slots;}
+\DoxyCodeLine{332             var slotsItems = slots.Items;}
+\DoxyCodeLine{333             drawOrder.Clear();}
+\DoxyCodeLine{334             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++)}
+\DoxyCodeLine{335                 drawOrder.Add(slotsItems[i]);}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = slots.Count; i < n; i++)}
+\DoxyCodeLine{338                 slotsItems[i].SetToSetupPose();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}\label{class_spine_1_1_skeleton_a1633fed9631208f0f1da9a29c75eb90a}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SetToSetupPose@{SetToSetupPose}}
+\index{SetToSetupPose@{SetToSetupPose}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SetToSetupPose()}{SetToSetupPose()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Set\+To\+Setup\+Pose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the bones, constraints, and slots to their setup pose values. 
+
+
+
+Skeleton.\+cs 파일의 290 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{291                                       \{}
+\DoxyCodeLine{292             \mbox{\hyperlink{class_spine_1_1_skeleton_acdcb41164c617375a198124234134312}{SetBonesToSetupPose}}();}
+\DoxyCodeLine{293             \mbox{\hyperlink{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}{SetSlotsToSetupPose}}();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}\label{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortBone@{SortBone}}
+\index{SortBone@{SortBone}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortBone()}{SortBone()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Bone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 252 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{253                                           \{}
+\DoxyCodeLine{254             \textcolor{keywordflow}{if} (bone.sorted) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{255             Bone parent = bone.parent;}
+\DoxyCodeLine{256             \textcolor{keywordflow}{if} (parent != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(parent);}
+\DoxyCodeLine{257             bone.sorted = \textcolor{keyword}{true};}
+\DoxyCodeLine{258             updateCache.Add(bone);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a1644810ba43658dce0c096f3326ec860}\label{class_spine_1_1_skeleton_a1644810ba43658dce0c096f3326ec860}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortIkConstraint@{SortIkConstraint}}
+\index{SortIkConstraint@{SortIkConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortIkConstraint()}{SortIkConstraint()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Ik\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}}}]{constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 161 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                                                 \{}
+\DoxyCodeLine{163             Bone target = constraint.target;}
+\DoxyCodeLine{164             \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(target);}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166             var constrained = constraint.bones;}
+\DoxyCodeLine{167             Bone parent = constrained.Items[0];}
+\DoxyCodeLine{168             \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(parent);}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170             \textcolor{keywordflow}{if} (constrained.Count > 1) \{}
+\DoxyCodeLine{171                 Bone child = constrained.Items[constrained.Count -\/ 1];}
+\DoxyCodeLine{172                 \textcolor{keywordflow}{if} (!updateCache.Contains(child))}
+\DoxyCodeLine{173                     updateCacheReset.Add(child);}
+\DoxyCodeLine{174             \}}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176             updateCache.Add(constraint);}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178             \mbox{\hyperlink{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}{SortReset}}(parent.children);}
+\DoxyCodeLine{179             constrained.Items[constrained.Count -\/ 1].sorted = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ac5608577f4652613316b27e28ad6dc21}\label{class_spine_1_1_skeleton_ac5608577f4652613316b27e28ad6dc21}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortPathConstraint@{SortPathConstraint}}
+\index{SortPathConstraint@{SortPathConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortPathConstraint()}{SortPathConstraint()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Path\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}}}]{constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 181 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{182                                                                     \{}
+\DoxyCodeLine{183             Slot slot = constraint.target;}
+\DoxyCodeLine{184             \textcolor{keywordtype}{int} slotIndex = slot.data.index;}
+\DoxyCodeLine{185             Bone slotBone = slot.bone;}
+\DoxyCodeLine{186             \textcolor{keywordflow}{if} (skin != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{SortPathConstraintAttachment}}(skin, slotIndex, slotBone);}
+\DoxyCodeLine{187             \textcolor{keywordflow}{if} (data.defaultSkin != \textcolor{keyword}{null} \&\& data.defaultSkin != skin)}
+\DoxyCodeLine{188                 \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{SortPathConstraintAttachment}}(data.defaultSkin, slotIndex, slotBone);}
+\DoxyCodeLine{189             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0, nn = data.skins.Count; ii < nn; ii++)}
+\DoxyCodeLine{190                 \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{SortPathConstraintAttachment}}(data.skins.Items[ii], slotIndex, slotBone);}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192             Attachment attachment = slot.attachment;}
+\DoxyCodeLine{193             \textcolor{keywordflow}{if} (attachment is PathAttachment) \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{SortPathConstraintAttachment}}(attachment, slotBone);}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195             var constrained = constraint.bones;}
+\DoxyCodeLine{196             \textcolor{keywordtype}{int} boneCount = constrained.Count;}
+\DoxyCodeLine{197             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{198                 \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(constrained.Items[i]);}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200             updateCache.Add(constraint);}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{203                 \mbox{\hyperlink{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}{SortReset}}(constrained.Items[i].children);}
+\DoxyCodeLine{204             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{205                 constrained.Items[i].sorted = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_skeleton_adecbd9f319fd1e0ed942d3094e5f928e}\label{class_spine_1_1_skeleton_adecbd9f319fd1e0ed942d3094e5f928e}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortPathConstraintAttachment@{SortPathConstraintAttachment}}
+\index{SortPathConstraintAttachment@{SortPathConstraintAttachment}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortPathConstraintAttachment()}{SortPathConstraintAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Path\+Constraint\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{slot\+Bone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 236 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{237                                                                                          \{}
+\DoxyCodeLine{238             \textcolor{keywordflow}{if} (!(attachment is PathAttachment)) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{239             \textcolor{keywordtype}{int}[] pathBones = ((PathAttachment)attachment).bones;}
+\DoxyCodeLine{240             \textcolor{keywordflow}{if} (pathBones == \textcolor{keyword}{null})}
+\DoxyCodeLine{241                 \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(slotBone);}
+\DoxyCodeLine{242             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{243                 var bones = this.bones;}
+\DoxyCodeLine{244                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pathBones.Length; i < n;) \{}
+\DoxyCodeLine{245                     \textcolor{keywordtype}{int} nn = pathBones[i++];}
+\DoxyCodeLine{246                     nn += i;}
+\DoxyCodeLine{247                     \textcolor{keywordflow}{while} (i < nn)}
+\DoxyCodeLine{248                         \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(bones.Items[pathBones[i++]]);}
+\DoxyCodeLine{249                 \}}
+\DoxyCodeLine{250             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}\label{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortPathConstraintAttachment@{SortPathConstraintAttachment}}
+\index{SortPathConstraintAttachment@{SortPathConstraintAttachment}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortPathConstraintAttachment()}{SortPathConstraintAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Path\+Constraint\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{int}]{slot\+Index,  }\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{slot\+Bone }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 231 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{232                                                                                             \{}
+\DoxyCodeLine{233             \textcolor{keywordflow}{foreach} (var entry \textcolor{keywordflow}{in} skin.\mbox{\hyperlink{class_spine_1_1_skin_a3dd9c1779f9ebabd27c71953cb5235fa}{Attachments}})}
+\DoxyCodeLine{234                 \textcolor{keywordflow}{if} (entry.Key.slotIndex == slotIndex) \mbox{\hyperlink{class_spine_1_1_skeleton_a366a20890acdc7073e0480c54ebb8d4a}{SortPathConstraintAttachment}}(entry.Value, slotBone);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}\label{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortReset@{SortReset}}
+\index{SortReset@{SortReset}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortReset()}{SortReset()}}
+{\footnotesize\ttfamily static void Spine.\+Skeleton.\+Sort\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$}]{bones }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 260 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{261                                                                 \{}
+\DoxyCodeLine{262             var bonesItems = bones.Items;}
+\DoxyCodeLine{263             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++) \{}
+\DoxyCodeLine{264                 Bone bone = bonesItems[i];}
+\DoxyCodeLine{265                 \textcolor{keywordflow}{if} (bone.sorted) \mbox{\hyperlink{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}{SortReset}}(bone.children);}
+\DoxyCodeLine{266                 bone.sorted = \textcolor{keyword}{false};}
+\DoxyCodeLine{267             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a97cabd3a39a4270145af1455c8f07022}\label{class_spine_1_1_skeleton_a97cabd3a39a4270145af1455c8f07022}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!SortTransformConstraint@{SortTransformConstraint}}
+\index{SortTransformConstraint@{SortTransformConstraint}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{SortTransformConstraint()}{SortTransformConstraint()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Sort\+Transform\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}}}]{constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 207 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{208                                                                               \{}
+\DoxyCodeLine{209             \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(constraint.target);}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211             var constrained = constraint.bones;}
+\DoxyCodeLine{212             \textcolor{keywordtype}{int} boneCount = constrained.Count;}
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (constraint.data.local) \{}
+\DoxyCodeLine{214                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++) \{}
+\DoxyCodeLine{215                     Bone child = constrained.Items[i];}
+\DoxyCodeLine{216                     \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(child.parent);}
+\DoxyCodeLine{217                     \textcolor{keywordflow}{if} (!updateCache.Contains(child)) updateCacheReset.Add(child);}
+\DoxyCodeLine{218                 \}}
+\DoxyCodeLine{219             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{220                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{221                     \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(constrained.Items[i]);}
+\DoxyCodeLine{222             \}}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224             updateCache.Add(constraint);}
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{227                 \mbox{\hyperlink{class_spine_1_1_skeleton_a45738656ecb339511e9904ff3039e861}{SortReset}}(constrained.Items[i].children);}
+\DoxyCodeLine{228             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < boneCount; i++)}
+\DoxyCodeLine{229                 constrained.Items[i].sorted = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 21
+\mbox{\Hypertarget{class_spine_1_1_skeleton_af8830164174fb0fc3b1f2c140ba5884b}\label{class_spine_1_1_skeleton_af8830164174fb0fc3b1f2c140ba5884b}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Update@{Update}}
+\index{Update@{Update}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Skeleton.\+cs 파일의 486 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{487                                          \{}
+\DoxyCodeLine{488             time += delta;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 22
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ad747a544ba5de279e479eb5733199db1}\label{class_spine_1_1_skeleton_ad747a544ba5de279e479eb5733199db1}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!UpdateCache@{UpdateCache}}
+\index{UpdateCache@{UpdateCache}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{UpdateCache()}{UpdateCache()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Update\+Cache (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Caches information about bones and constraints. Must be called if bones, constraints or weighted path attachments are added or removed. 
+
+
+
+Skeleton.\+cs 파일의 117 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                    \{}
+\DoxyCodeLine{119             ExposedList<IUpdatable> updateCache = this.updateCache;}
+\DoxyCodeLine{120             updateCache.Clear();}
+\DoxyCodeLine{121             this.updateCacheReset.Clear();}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{123             ExposedList<Bone> bones = this.bones;}
+\DoxyCodeLine{124             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++)}
+\DoxyCodeLine{125                 bones.Items[i].sorted = \textcolor{keyword}{false};}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127             ExposedList<IkConstraint> ikConstraints = this.ikConstraints;}
+\DoxyCodeLine{128             var transformConstraints = this.transformConstraints;}
+\DoxyCodeLine{129             var pathConstraints = this.pathConstraints;}
+\DoxyCodeLine{130             \textcolor{keywordtype}{int} ikCount = \mbox{\hyperlink{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}{IkConstraints}}.Count, transformCount = transformConstraints.Count, pathCount = pathConstraints.Count;}
+\DoxyCodeLine{131             \textcolor{keywordtype}{int} constraintCount = ikCount + transformCount + pathCount;}
+\DoxyCodeLine{132             \textcolor{comment}{//outer:}}
+\DoxyCodeLine{133             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < constraintCount; i++) \{}
+\DoxyCodeLine{134                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < ikCount; ii++) \{}
+\DoxyCodeLine{135                     IkConstraint constraint = ikConstraints.Items[ii];}
+\DoxyCodeLine{136                     \textcolor{keywordflow}{if} (constraint.data.order == i) \{}
+\DoxyCodeLine{137                         \mbox{\hyperlink{class_spine_1_1_skeleton_a1644810ba43658dce0c096f3326ec860}{SortIkConstraint}}(constraint);}
+\DoxyCodeLine{138                         \textcolor{keywordflow}{goto} continue\_outer; \textcolor{comment}{//continue outer;}}
+\DoxyCodeLine{139                     \}}
+\DoxyCodeLine{140                 \}}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < transformCount; ii++) \{}
+\DoxyCodeLine{142                     TransformConstraint constraint = transformConstraints.Items[ii];}
+\DoxyCodeLine{143                     \textcolor{keywordflow}{if} (constraint.data.order == i) \{}
+\DoxyCodeLine{144                         \mbox{\hyperlink{class_spine_1_1_skeleton_a97cabd3a39a4270145af1455c8f07022}{SortTransformConstraint}}(constraint);}
+\DoxyCodeLine{145                         \textcolor{keywordflow}{goto} continue\_outer; \textcolor{comment}{//continue outer;}}
+\DoxyCodeLine{146                     \}}
+\DoxyCodeLine{147                 \}}
+\DoxyCodeLine{148                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0; ii < pathCount; ii++) \{}
+\DoxyCodeLine{149                     PathConstraint constraint = pathConstraints.Items[ii];}
+\DoxyCodeLine{150                     \textcolor{keywordflow}{if} (constraint.data.order == i) \{}
+\DoxyCodeLine{151                         \mbox{\hyperlink{class_spine_1_1_skeleton_ac5608577f4652613316b27e28ad6dc21}{SortPathConstraint}}(constraint);}
+\DoxyCodeLine{152                         \textcolor{keywordflow}{goto} continue\_outer; \textcolor{comment}{//continue outer;}}
+\DoxyCodeLine{153                     \}}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155                 continue\_outer: \{\}}
+\DoxyCodeLine{156             \}}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = bones.Count; i < n; i++)}
+\DoxyCodeLine{159                 \mbox{\hyperlink{class_spine_1_1_skeleton_a2503b8fb7b8cbd09613c2cecc26872c9}{SortBone}}(bones.Items[i]);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}\label{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!UpdateWorldTransform@{UpdateWorldTransform}}
+\index{UpdateWorldTransform@{UpdateWorldTransform}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{UpdateWorldTransform()}{UpdateWorldTransform()}}
+{\footnotesize\ttfamily void Spine.\+Skeleton.\+Update\+World\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the world transform for each bone and applies constraints. 
+
+
+
+Skeleton.\+cs 파일의 270 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{271                                             \{}
+\DoxyCodeLine{272             var updateCacheReset = this.updateCacheReset;}
+\DoxyCodeLine{273             var updateCacheResetItems = updateCacheReset.Items;}
+\DoxyCodeLine{274             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = updateCacheReset.Count; i < n; i++) \{}
+\DoxyCodeLine{275                 Bone bone = updateCacheResetItems[i];}
+\DoxyCodeLine{276                 bone.ax = bone.x;}
+\DoxyCodeLine{277                 bone.ay = bone.y;}
+\DoxyCodeLine{278                 bone.arotation = bone.rotation;}
+\DoxyCodeLine{279                 bone.ascaleX = bone.scaleX;}
+\DoxyCodeLine{280                 bone.ascaleY = bone.scaleY;}
+\DoxyCodeLine{281                 bone.ashearX = bone.shearX;}
+\DoxyCodeLine{282                 bone.ashearY = bone.shearY;}
+\DoxyCodeLine{283                 bone.appliedValid = \textcolor{keyword}{true};}
+\DoxyCodeLine{284             \}}
+\DoxyCodeLine{285             var updateItems = this.updateCache.Items;}
+\DoxyCodeLine{286             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = updateCache.Count; i < n; i++)}
+\DoxyCodeLine{287                 updateItems[i].Update();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 23
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a961d3e8213e6b853911576acbfda3225}\label{class_spine_1_1_skeleton_a961d3e8213e6b853911576acbfda3225}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!a@{a}}
+\index{a@{a}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+a = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a80cf1bd4df66cb164e2701db9f0ddbff}\label{class_spine_1_1_skeleton_a80cf1bd4df66cb164e2701db9f0ddbff}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!b@{b}}
+\index{b@{b}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+b = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a822b9b8fcd7317f2bcce7aa217d989c7}\label{class_spine_1_1_skeleton_a822b9b8fcd7317f2bcce7aa217d989c7}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!flipY@{flipY}}
+\index{flipY@{flipY}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{flipY}{flipY}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton.\+flipY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a7619893420e72ee31792a8dc18257340}\label{class_spine_1_1_skeleton_a7619893420e72ee31792a8dc18257340}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!g@{g}}
+\index{g@{g}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+g = 1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}\label{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!y@{y}}
+\index{y@{y}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+y\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a70241a31a0ebce8ad2a577523d6389e7}\label{class_spine_1_1_skeleton_a70241a31a0ebce8ad2a577523d6389e7}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!A@{A}}
+\index{A@{A}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+A\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_a80cf1bd4df66cb164e2701db9f0ddbff}{b}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_a80cf1bd4df66cb164e2701db9f0ddbff}{b}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ace8fc26143f054610a745adbf54f7729}\label{class_spine_1_1_skeleton_ace8fc26143f054610a745adbf54f7729}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!B@{B}}
+\index{B@{B}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+B\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_a7619893420e72ee31792a8dc18257340}{g}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_a7619893420e72ee31792a8dc18257340}{g}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}\label{class_spine_1_1_skeleton_a430871be49c04e3d2ed24e44801e52ed}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}$>$ Spine.\+Skeleton.\+Bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}\label{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Data@{Data}}
+\index{Data@{Data}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} Spine.\+Skeleton.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a6a451d2b789c6b916a978bd0f27a7c22}\label{class_spine_1_1_skeleton_a6a451d2b789c6b916a978bd0f27a7c22}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!DrawOrder@{DrawOrder}}
+\index{DrawOrder@{DrawOrder}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{DrawOrder}{DrawOrder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}$>$ Spine.\+Skeleton.\+Draw\+Order\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} slots; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}\label{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FlipX@{FlipX}}
+\index{FlipX@{FlipX}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FlipX}{FlipX}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton.\+FlipX\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}{y}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_a3934216edb6a224b696fba269c76af2d}{y}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aa052c002863a96c27ad268bd8eb2c9e1}\label{class_spine_1_1_skeleton_aa052c002863a96c27ad268bd8eb2c9e1}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!FlipY@{FlipY}}
+\index{FlipY@{FlipY}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{FlipY}{FlipY}}
+{\footnotesize\ttfamily bool Spine.\+Skeleton.\+FlipY\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} flipX; \} \textcolor{keyword}{set} \{ flipX = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a31d8641e8cb91459660c198ab6fe749e}\label{class_spine_1_1_skeleton_a31d8641e8cb91459660c198ab6fe749e}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!G@{G}}
+\index{G@{G}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+G\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} r; \} \textcolor{keyword}{set} \{ r = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}\label{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!IkConstraints@{IkConstraints}}
+\index{IkConstraints@{IkConstraints}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{IkConstraints}{IkConstraints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}}$>$ Spine.\+Skeleton.\+Ik\+Constraints\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} drawOrder; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ab55c5668b8473f8df274ac017a16bb4f}\label{class_spine_1_1_skeleton_ab55c5668b8473f8df274ac017a16bb4f}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!PathConstraints@{PathConstraints}}
+\index{PathConstraints@{PathConstraints}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{PathConstraints}{PathConstraints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_path_constraint}{Path\+Constraint}}$>$ Spine.\+Skeleton.\+Path\+Constraints\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} ikConstraints; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_af578a6b9bb98d3e98932b6af13c83449}\label{class_spine_1_1_skeleton_af578a6b9bb98d3e98932b6af13c83449}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!R@{R}}
+\index{R@{R}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+R\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} skin; \} \textcolor{keyword}{set} \{ skin = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}\label{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!RootBone@{RootBone}}
+\index{RootBone@{RootBone}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{RootBone}{RootBone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}}? Spine.\+Skeleton.\+Root\+Bone\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                              \{}
+\DoxyCodeLine{71             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones.Count == 0 ? null : bones.Items[0]; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}\label{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Skin@{Skin}}
+\index{Skin@{Skin}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Skin}{Skin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Skeleton.\+Skin\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} transformConstraints; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}\label{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Slots@{Slots}}
+\index{Slots@{Slots}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Slots}{Slots}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}$>$ Spine.\+Skeleton.\+Slots\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} updateCache; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_acf7de15bbd875858c27156727dda9a7b}\label{class_spine_1_1_skeleton_acf7de15bbd875858c27156727dda9a7b}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Time@{Time}}
+\index{Time@{Time}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+Time\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_skeleton_a961d3e8213e6b853911576acbfda3225}{a}}; \} \textcolor{keyword}{set} \{ \mbox{\hyperlink{class_spine_1_1_skeleton_a961d3e8213e6b853911576acbfda3225}{a}} = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ae0407b2eb25cb28c9eebaf87ef83e505}\label{class_spine_1_1_skeleton_ae0407b2eb25cb28c9eebaf87ef83e505}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!TransformConstraints@{TransformConstraints}}
+\index{TransformConstraints@{TransformConstraints}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{TransformConstraints}{TransformConstraints}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_transform_constraint}{Transform\+Constraint}}$>$ Spine.\+Skeleton.\+Transform\+Constraints\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} pathConstraints; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_a2e2a2015c0ec4504f2f24528dd3d6e9e}\label{class_spine_1_1_skeleton_a2e2a2015c0ec4504f2f24528dd3d6e9e}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!UpdateCacheList@{UpdateCacheList}}
+\index{UpdateCacheList@{UpdateCacheList}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{UpdateCacheList}{UpdateCacheList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{interface_spine_1_1_i_updatable}{I\+Updatable}}$>$ Spine.\+Skeleton.\+Update\+Cache\+List\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_aa6929dedee376680ea44420a32977548}\label{class_spine_1_1_skeleton_aa6929dedee376680ea44420a32977548}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!X@{X}}
+\index{X@{X}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+X\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} time; \} \textcolor{keyword}{set} \{ time = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_skeleton_ad076b350b843c874fb5cff64f826d9de}\label{class_spine_1_1_skeleton_ad076b350b843c874fb5cff64f826d9de}} 
+\index{Spine.Skeleton@{Spine.Skeleton}!Y@{Y}}
+\index{Y@{Y}!Spine.Skeleton@{Spine.Skeleton}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily float Spine.\+Skeleton.\+Y\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Skeleton.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} x; \} \textcolor{keyword}{set} \{ x = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_skeleton_8cs}{Skeleton.\+cs}}\end{DoxyCompactItemize}

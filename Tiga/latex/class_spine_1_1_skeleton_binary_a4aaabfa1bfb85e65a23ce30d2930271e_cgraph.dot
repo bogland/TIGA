@@ -1,0 +1,53 @@
+digraph "Spine.SkeletonBinary.ReadAttachment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.SkeletonBinary.Read\lAttachment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.AttachmentLoader.New\lBoundingBoxAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#a06b5733cb67b13536797601adc6db6b4",tooltip="<return>May be null to not load any attachment.</return>"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.AttachmentLoader.New\lClippingAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#a27f4d730a36f1ca83e756ae6825ed474",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.AttachmentLoader.New\lMeshAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#af5979e352d0a75f981f966290377cc05",tooltip="<return>May be null to not load any attachment.</return>"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.AttachmentLoader.New\lPathAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#a6b5e631c0773ecedecc3121e84db109d",tooltip="May be null to not load any attachment"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.AttachmentLoader.New\lPointAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#a76d650e21df14366dc3f9a0a6c0a92ba",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.AttachmentLoader.New\lRegionAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html#acd15c9fd5f434324a0f30872a35b828c",tooltip="<return>May be null to not load any attachment.</return>"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.SkeletonBinary.Read\lBoolean",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#aa097cce8808ec9c783f44246af6b4eb6",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.SkeletonBinary.Read\lFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#abceb97a66237f069899e4eae6b88cfe5",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.SkeletonBinary.Read\lFloatArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a6e6d2f9876b598297015b234a00036eb",tooltip=" "];
+  Node10 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.SkeletonBinary.ReadInt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a028e200aec5d5c3618b18cbf450bd6bf",tooltip=" "];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.SkeletonBinary.Read\lShortArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#acd013b7564facd3d911588ff63f6fbe5",tooltip=" "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.SkeletonBinary.Read\lVarint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a416307e9af6f3b22570f7b51e2673271",tooltip=" "];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.SkeletonBinary.Read\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a169fee956d5676cb3dd5d59c2d38ef42",tooltip=" "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.SkeletonBinary.Read\lFully",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a3c31f5d3d2c410d11407e234e370e533",tooltip=" "];
+  Node14 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.SkeletonBinary.Read\lVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a2f46d3ebfe25735cb97fa6be05f09dc4",tooltip=" "];
+  Node16 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.RegionAttachment.Update\lOffset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_region_attachment.html#aaa7a5c3106159f8e8dbd9da13a64ac29",tooltip=" "];
+  Node17 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Spine.MathUtils.CosDeg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a86984dbed809bd6ec2f9295b5ad96db3",tooltip="Returns the cosine in radians from a lookup table."];
+  Node17 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Spine.MathUtils.SinDeg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a9c43b99917f17838ece89205052a2820",tooltip="Returns the sine in radians from a lookup table."];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="Spine.MeshAttachment.UpdateUVs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_mesh_attachment.html#ab9404a5f052a7cfe6d7e4e3bce0ce929",tooltip=" "];
+}

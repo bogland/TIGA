@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Examples.SpineboyFootplanter.Foot"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Examples.Spineboy\lFootplanter.Foot\n|+ worldPos\l+ displacementFromCenter\l+ distanceFromCenter\l+ lerp\l+ worldPosPrev\l+ worldPosNext\l+ IsStepInProgress\l+ IsPrettyMuchDoneStepping\l|+ UpdateDistance()\l+ StartNewStep()\l+ UpdateStepProgress()\l+ GetNewDisplacement()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

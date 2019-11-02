@@ -1,0 +1,128 @@
+\hypertarget{class_c_s_v_reader}{}\doxysection{C\+S\+V\+Reader 클래스 참조}
+\label{class_c_s_v_reader}\index{CSVReader@{CSVReader}}
+
+
+C\+S\+V\+Reader에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Dictionary$<$ string, object $>$ $>$ \mbox{\hyperlink{class_c_s_v_reader_af4e118f696afdaf0b9bdbb1c21dbe0cf}{Read}} (string file)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_c_s_v_reader_aeb1bba5e7ee738659876c7186ff1cbbb}{S\+P\+L\+I\+T\+\_\+\+RE}} = @\char`\"{},(?=(?\+:\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{}\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{})$\ast$(?!\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{}))\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_c_s_v_reader_adcbbb07d2e00e2ec73e8926b870fc39b}{L\+I\+N\+E\+\_\+\+S\+P\+L\+I\+T\+\_\+\+RE}} = @\char`\"{}\textbackslash{}r\textbackslash{}n$\vert$\textbackslash{}n\textbackslash{}r$\vert$\textbackslash{}n$\vert$\textbackslash{}r\char`\"{}
+\item 
+static char\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_c_s_v_reader_a9bc977464d69b67398b9da014d080bad}{T\+R\+I\+M\+\_\+\+C\+H\+A\+RS}} = \{ \textquotesingle{}\textbackslash{}\char`\"{}\textquotesingle{} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+C\+S\+V\+Reader.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_s_v_reader_af4e118f696afdaf0b9bdbb1c21dbe0cf}\label{class_c_s_v_reader_af4e118f696afdaf0b9bdbb1c21dbe0cf}} 
+\index{CSVReader@{CSVReader}!Read@{Read}}
+\index{Read@{Read}!CSVReader@{CSVReader}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily static List$<$Dictionary$<$string, object$>$ $>$ C\+S\+V\+Reader.\+Read (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+C\+S\+V\+Reader.\+cs 파일의 14 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15     \{}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17         var list = \textcolor{keyword}{new} List<Dictionary<string, object>>();}
+\DoxyCodeLine{18         \textcolor{comment}{//TextAsset data = Resources.Load (file) as TextAsset;}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20         \textcolor{keywordtype}{string} source;}
+\DoxyCodeLine{21         StreamReader sr = \textcolor{keyword}{new} StreamReader(Application.dataPath + \textcolor{stringliteral}{"/GameResources/Dialogue/"} + file);}
+\DoxyCodeLine{22         source = sr.ReadToEnd();}
+\DoxyCodeLine{23         sr.Close();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25         \textcolor{comment}{//var lines = Regex.Split(data.text, LINE\_SPLIT\_RE);}}
+\DoxyCodeLine{26         var lines = Regex.Split(source, \mbox{\hyperlink{class_c_s_v_reader_adcbbb07d2e00e2ec73e8926b870fc39b}{LINE\_SPLIT\_RE}});}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \textcolor{keywordflow}{if} (lines.Length <= 1) \textcolor{keywordflow}{return} list;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         var header = Regex.Split(lines[0], \mbox{\hyperlink{class_c_s_v_reader_aeb1bba5e7ee738659876c7186ff1cbbb}{SPLIT\_RE}});}
+\DoxyCodeLine{31         \textcolor{keywordflow}{for} (var i = 1; i < lines.Length; i++)}
+\DoxyCodeLine{32         \{}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34             var values = Regex.Split(lines[i], \mbox{\hyperlink{class_c_s_v_reader_aeb1bba5e7ee738659876c7186ff1cbbb}{SPLIT\_RE}});}
+\DoxyCodeLine{35             \textcolor{keywordflow}{if} (values.Length == 0 || values[0] == \textcolor{stringliteral}{""}) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37             var entry = \textcolor{keyword}{new} Dictionary<string, object>();}
+\DoxyCodeLine{38             \textcolor{keywordflow}{for} (var j = 0; j < header.Length \&\& j < values.Length; j++)}
+\DoxyCodeLine{39             \{}
+\DoxyCodeLine{40                 \textcolor{keywordtype}{string} value = values[j];}
+\DoxyCodeLine{41                 value = value.TrimStart(\mbox{\hyperlink{class_c_s_v_reader_a9bc977464d69b67398b9da014d080bad}{TRIM\_CHARS}}).TrimEnd(\mbox{\hyperlink{class_c_s_v_reader_a9bc977464d69b67398b9da014d080bad}{TRIM\_CHARS}}).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{42                 \textcolor{keywordtype}{object} finalvalue = value;}
+\DoxyCodeLine{43                 \textcolor{keywordtype}{int} n;}
+\DoxyCodeLine{44                 \textcolor{keywordtype}{float} f;}
+\DoxyCodeLine{45                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{int}.TryParse(value, out n))}
+\DoxyCodeLine{46                 \{}
+\DoxyCodeLine{47                     finalvalue = n;}
+\DoxyCodeLine{48                 \}}
+\DoxyCodeLine{49                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keywordtype}{float}.TryParse(value, out f))}
+\DoxyCodeLine{50                 \{}
+\DoxyCodeLine{51                     finalvalue = f;}
+\DoxyCodeLine{52                 \}}
+\DoxyCodeLine{53                 entry[header[j]] = finalvalue;}
+\DoxyCodeLine{54             \}}
+\DoxyCodeLine{55             list.Add(entry);}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57         \textcolor{keywordflow}{return} list;}
+\DoxyCodeLine{58     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_s_v_reader_adcbbb07d2e00e2ec73e8926b870fc39b}\label{class_c_s_v_reader_adcbbb07d2e00e2ec73e8926b870fc39b}} 
+\index{CSVReader@{CSVReader}!LINE\_SPLIT\_RE@{LINE\_SPLIT\_RE}}
+\index{LINE\_SPLIT\_RE@{LINE\_SPLIT\_RE}!CSVReader@{CSVReader}}
+\doxysubsubsection{\texorpdfstring{LINE\_SPLIT\_RE}{LINE\_SPLIT\_RE}}
+{\footnotesize\ttfamily string C\+S\+V\+Reader.\+L\+I\+N\+E\+\_\+\+S\+P\+L\+I\+T\+\_\+\+RE = @\char`\"{}\textbackslash{}r\textbackslash{}n$\vert$\textbackslash{}n\textbackslash{}r$\vert$\textbackslash{}n$\vert$\textbackslash{}r\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+C\+S\+V\+Reader.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_reader_aeb1bba5e7ee738659876c7186ff1cbbb}\label{class_c_s_v_reader_aeb1bba5e7ee738659876c7186ff1cbbb}} 
+\index{CSVReader@{CSVReader}!SPLIT\_RE@{SPLIT\_RE}}
+\index{SPLIT\_RE@{SPLIT\_RE}!CSVReader@{CSVReader}}
+\doxysubsubsection{\texorpdfstring{SPLIT\_RE}{SPLIT\_RE}}
+{\footnotesize\ttfamily string C\+S\+V\+Reader.\+S\+P\+L\+I\+T\+\_\+\+RE = @\char`\"{},(?=(?\+:\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{}\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{})$\ast$(?!\mbox{[}$^\wedge$\char`\"{}\char`\"{}\mbox{]}$\ast$\char`\"{}\char`\"{}))\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+C\+S\+V\+Reader.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_reader_a9bc977464d69b67398b9da014d080bad}\label{class_c_s_v_reader_a9bc977464d69b67398b9da014d080bad}} 
+\index{CSVReader@{CSVReader}!TRIM\_CHARS@{TRIM\_CHARS}}
+\index{TRIM\_CHARS@{TRIM\_CHARS}!CSVReader@{CSVReader}}
+\doxysubsubsection{\texorpdfstring{TRIM\_CHARS}{TRIM\_CHARS}}
+{\footnotesize\ttfamily char \mbox{[}$\,$\mbox{]} C\+S\+V\+Reader.\+T\+R\+I\+M\+\_\+\+C\+H\+A\+RS = \{ \textquotesingle{}\textbackslash{}\char`\"{}\textquotesingle{} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+C\+S\+V\+Reader.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Story/\+Dialog/\mbox{\hyperlink{_c_s_v_reader_8cs}{C\+S\+V\+Reader.\+cs}}\end{DoxyCompactItemize}

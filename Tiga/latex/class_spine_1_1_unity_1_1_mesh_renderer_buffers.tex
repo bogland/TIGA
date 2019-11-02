@@ -1,0 +1,217 @@
+\hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers}{}\doxysection{Spine.\+Unity.\+Mesh\+Renderer\+Buffers 클래스 참조}
+\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers}\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+
+
+Spine.\+Unity.\+Mesh\+Renderer\+Buffers에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Mesh\+Renderer\+Buffers에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_1_1_smart_mesh}{Smart\+Mesh}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a11451ece54983c867abd359c3df84c3e}{Initialize}} ()
+\item 
+Material\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a42a5e7c8af0a564e952fbad3472d108d}{Get\+Updated\+Shared\+Materials\+Array}} ()
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ad60996089f179ea505ee9bede6a75992}{Materials\+Changed\+In\+Last\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a62481e4aa36a0a2c9fea68887c40e9b9}{Update\+Shared\+Materials}} (\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$ instructions)
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_1_1_smart_mesh}{Smart\+Mesh}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a679bf0988f9c467f74ec081b7b955c16}{Get\+Next\+Mesh}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ace709a76e5075e29bfe7d1f8945190d5}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a76bcf260bd53201d4ec870534536c132}{Dispose}} ()
+\begin{DoxyCompactList}\small\item\em summary$>$This is a Mesh that also stores the instructions \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} generated for it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_double_buffered}{Double\+Buffered}}$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_1_1_smart_mesh}{Smart\+Mesh}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{double\+Buffered\+Mesh}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Mesh.\+cs 파일의 1318 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ace709a76e5075e29bfe7d1f8945190d5}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ace709a76e5075e29bfe7d1f8945190d5}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1372 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1373                              \{}
+\DoxyCodeLine{1374             sharedMaterials = \textcolor{keyword}{new} Material[0];}
+\DoxyCodeLine{1375             submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a76bcf260bd53201d4ec870534536c132}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a76bcf260bd53201d4ec870534536c132}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+summary$>$This is a Mesh that also stores the instructions \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} generated for it. 
+
+
+
+Spine\+Mesh.\+cs 파일의 1377 번째 라인에서 정의되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a679bf0988f9c467f74ec081b7b955c16}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a679bf0988f9c467f74ec081b7b955c16}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!GetNextMesh@{GetNextMesh}}
+\index{GetNextMesh@{GetNextMesh}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{GetNextMesh()}{GetNextMesh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_1_1_smart_mesh}{Smart\+Mesh}} Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Get\+Next\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1368 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1369                                         \{}
+\DoxyCodeLine{1370             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{doubleBufferedMesh}}.GetNext();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a42a5e7c8af0a564e952fbad3472d108d}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a42a5e7c8af0a564e952fbad3472d108d}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!GetUpdatedSharedMaterialsArray@{GetUpdatedSharedMaterialsArray}}
+\index{GetUpdatedSharedMaterialsArray@{GetUpdatedSharedMaterialsArray}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{GetUpdatedSharedMaterialsArray()}{GetUpdatedSharedMaterialsArray()}}
+{\footnotesize\ttfamily Material \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Get\+Updated\+Shared\+Materials\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1333 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1334                                                             \{}
+\DoxyCodeLine{1335             \textcolor{keywordflow}{if} (submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} == sharedMaterials.Length)}
+\DoxyCodeLine{1336                 submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a09719a283830dc9deeab2ded7ddd36df}{CopyTo}}(sharedMaterials);}
+\DoxyCodeLine{1337             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1338                 sharedMaterials = submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a111258b0871f19789855adc3a90a2ffd}{ToArray}}();}
+\DoxyCodeLine{1339 }
+\DoxyCodeLine{1340             \textcolor{keywordflow}{return} sharedMaterials;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a11451ece54983c867abd359c3df84c3e}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a11451ece54983c867abd359c3df84c3e}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1323 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1324                                   \{}
+\DoxyCodeLine{1325             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{doubleBufferedMesh}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1326                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{doubleBufferedMesh}}.GetNext().Clear();}
+\DoxyCodeLine{1327                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{doubleBufferedMesh}}.GetNext().Clear();}
+\DoxyCodeLine{1328                 submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}();}
+\DoxyCodeLine{1329             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1330                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}{doubleBufferedMesh}} = \textcolor{keyword}{new} DoubleBuffered<SmartMesh>();}
+\DoxyCodeLine{1331             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ad60996089f179ea505ee9bede6a75992}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_ad60996089f179ea505ee9bede6a75992}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!MaterialsChangedInLastUpdate@{MaterialsChangedInLastUpdate}}
+\index{MaterialsChangedInLastUpdate@{MaterialsChangedInLastUpdate}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{MaterialsChangedInLastUpdate()}{MaterialsChangedInLastUpdate()}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Materials\+Changed\+In\+Last\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1342 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1343                                                     \{}
+\DoxyCodeLine{1344             \textcolor{keywordtype}{int} newSubmeshMaterials = submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{1345             var sharedMaterials = this.sharedMaterials;}
+\DoxyCodeLine{1346             \textcolor{keywordflow}{if} (newSubmeshMaterials != sharedMaterials.Length) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1347 }
+\DoxyCodeLine{1348             var submeshMaterialsItems = submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1349             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < newSubmeshMaterials; i++)}
+\DoxyCodeLine{1350                 \textcolor{keywordflow}{if} (!Material.ReferenceEquals(submeshMaterialsItems[i], sharedMaterials[i])) \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{//if (submeshMaterialsItems[i].GetInstanceID() != sharedMaterials[i].GetInstanceID()) return true;}}
+\DoxyCodeLine{1351 }
+\DoxyCodeLine{1352             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a62481e4aa36a0a2c9fea68887c40e9b9}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a62481e4aa36a0a2c9fea68887c40e9b9}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!UpdateSharedMaterials@{UpdateSharedMaterials}}
+\index{UpdateSharedMaterials@{UpdateSharedMaterials}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{UpdateSharedMaterials()}{UpdateSharedMaterials()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+Update\+Shared\+Materials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$}]{instructions }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1354 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1355                                                                                          \{}
+\DoxyCodeLine{1356             \textcolor{keywordtype}{int} newSize = instructions.Count;}
+\DoxyCodeLine{1357             \{ \textcolor{comment}{//submeshMaterials.Resize(instructions.Count);}}
+\DoxyCodeLine{1358                 \textcolor{keywordflow}{if} (newSize > submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length)}
+\DoxyCodeLine{1359                     Array.Resize(ref submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newSize);}
+\DoxyCodeLine{1360                 submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = newSize;}
+\DoxyCodeLine{1361             \}}
+\DoxyCodeLine{1362 }
+\DoxyCodeLine{1363             var submeshMaterialsItems = submeshMaterials.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1364             var instructionsItems = instructions.Items;}
+\DoxyCodeLine{1365             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < newSize; i++)}
+\DoxyCodeLine{1366                 submeshMaterialsItems[i] = instructionsItems[i].material;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}\label{class_spine_1_1_unity_1_1_mesh_renderer_buffers_a75b4a6da7cb84904c85f39f2c00c2f09}} 
+\index{Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}!doubleBufferedMesh@{doubleBufferedMesh}}
+\index{doubleBufferedMesh@{doubleBufferedMesh}!Spine.Unity.MeshRendererBuffers@{Spine.Unity.MeshRendererBuffers}}
+\doxysubsubsection{\texorpdfstring{doubleBufferedMesh}{doubleBufferedMesh}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_double_buffered}{Double\+Buffered}}$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_renderer_buffers_1_1_smart_mesh}{Smart\+Mesh}}$>$ Spine.\+Unity.\+Mesh\+Renderer\+Buffers.\+double\+Buffered\+Mesh\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1319 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Mesh Generation/\mbox{\hyperlink{_spine_mesh_8cs}{Spine\+Mesh.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,709 @@
+\hypertarget{class_spine_1_1_two_color_timeline}{}\doxysection{Spine.\+Two\+Color\+Timeline 클래스 참조}
+\label{class_spine_1_1_two_color_timeline}\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+
+
+Spine.\+Two\+Color\+Timeline에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Two\+Color\+Timeline에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_two_color_timeline_a46530e6793be6075de545087d6f0735f}{Two\+Color\+Timeline}} (int frame\+Count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a2e52208d038817ae335b012799407f65}{Set\+Frame}} (int frame\+Index, float time, float r, float g, float b, float a, float r2, float g2, float b2)
+\begin{DoxyCompactList}\small\item\em Sets the time and value of the specified keyframe. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a2c9f21db43b0cf974e420b40bfd5619e}{Apply}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, float last\+Time, float time, \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$ fired\+Events, float alpha, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}} pose, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}} direction)
+\begin{DoxyCompactList}\small\item\em Sets the value(s) for the specified time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}{Set\+Linear}} (int frame\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}{Set\+Stepped}} (int frame\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}{Set\+Curve}} (int frame\+Index, float cx1, float cy1, float cx2, float cy2)
+\begin{DoxyCompactList}\small\item\em Sets the control handle positions for an interpolation bezier curve used to transition from this keyframe to the next. cx1 and cx2 are from 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of the difference between the keyframe\textquotesingle{}s values. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}{Get\+Curve\+Percent}} (int frame\+Index, float percent)
+\item 
+float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}{Get\+Curve\+Type}} (int frame\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{E\+N\+T\+R\+I\+ES}} = 8
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a179387088872c84f892a3cb73e8a160c}{P\+R\+E\+V\+\_\+\+T\+I\+ME}} = -\/8
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a551ca269d2d8d1c46bbad05818b93fc3}{P\+R\+E\+V\+\_\+\+R2}} = -\/3
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ab4effeb05b688eaac40184b14dae473a}{R}} = 1
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{L\+I\+N\+E\+AR}} = 0
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{B\+E\+Z\+I\+E\+R\+\_\+\+S\+I\+ZE}} = 10 $\ast$ 2 -\/ 1
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a1121cef4e04aef0de489214fa9f5ea22}{Slot\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a1b8b16b2e528f5a37a4621830c1e4f95}{Frames}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a9f4e3e39cd3c53132e61b0f53f57cc36}{Property\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}{Frame\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a2dc096eb835213f0c058d01b69cfc85c}{P\+R\+E\+V\+\_\+R}} = -\/7
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_acd19fbb74d5909fdbc023b36f18bf08c}{P\+R\+E\+V\+\_\+G}} = -\/6
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a6946790926ef13ff45dea571be6ef1f0}{P\+R\+E\+V\+\_\+B}} = -\/5
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a5403ff95d672d4086136102fd110f95b}{P\+R\+E\+V\+\_\+A}} = -\/4
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a3de3a7a3b1f3fb2ed8912bbddc6ab8c7}{P\+R\+E\+V\+\_\+\+G2}} = -\/2
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a62bd23b5257bee4b2e7288ddfb92c3db}{P\+R\+E\+V\+\_\+\+B2}} = -\/1
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a49fa4f524462b24e53e82d736f79c531}{G}} = 2
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ae673378908af49a5a8130dfb4d0981fd}{B}} = 3
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a26fd6f4174f6887c81f9eeb4b1a35931}{A}} = 4
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a4a42abc75aa0025d4982ca436b21e16b}{R2}} = 5
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a1c3d2c3dc6b6a88605ddacbe4096ef04}{G2}} = 6
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a8f2d2f25f81c97d55e018e24661c1c49}{B2}} = 7
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{S\+T\+E\+P\+P\+ED}} = 1
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}{B\+E\+Z\+I\+ER}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation.\+cs 파일의 603 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a46530e6793be6075de545087d6f0735f}\label{class_spine_1_1_two_color_timeline_a46530e6793be6075de545087d6f0735f}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!TwoColorTimeline@{TwoColorTimeline}}
+\index{TwoColorTimeline@{TwoColorTimeline}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{TwoColorTimeline()}{TwoColorTimeline()}}
+{\footnotesize\ttfamily Spine.\+Two\+Color\+Timeline.\+Two\+Color\+Timeline (\begin{DoxyParamCaption}\item[{int}]{frame\+Count }\end{DoxyParamCaption})}
+
+
+
+Animation.\+cs 파일의 627 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{628                                                  :}
+\DoxyCodeLine{629             base(frameCount) \{}
+\DoxyCodeLine{630             frames = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[frameCount * \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{ENTRIES}}];}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a2c9f21db43b0cf974e420b40bfd5619e}\label{class_spine_1_1_two_color_timeline_a2c9f21db43b0cf974e420b40bfd5619e}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily override void Spine.\+Two\+Color\+Timeline.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{float}]{last\+Time,  }\item[{float}]{time,  }\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$}]{events,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}}}]{pose,  }\item[{\mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}}}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the value(s) for the specified time. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em skeleton} & The skeleton the timeline is being applied to. This provides access to the bones, slots, and other skeleton components the timeline may change.\\
+\hline
+{\em last\+Time} & last\+Time The time this timeline was last applied. Timelines such as \mbox{\hyperlink{class_spine_1_1_event_timeline}{Event\+Timeline}} trigger only at specific times rather than every frame. In that case, the timeline triggers everything between last\+Time (exclusive) and 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{time}
+\end{DoxyCode}
+ (inclusive).\\
+\hline
+{\em time} & The time within the animation. Most timelines find the key before and the key after this time so they can interpolate between the keys.\\
+\hline
+{\em events} & If any events are fired, they are added to this list. Can be null to ignore firing events or if the timeline does not fire events. May be null.\\
+\hline
+{\em alpha} & alpha 0 applies the current or setup pose value (depending on pose parameter). 1 applies the timeline value. Between 0 and 1 applies a value between the current or setup pose and the timeline value. By adjusting alpha over time, an animation can be mixed in or out. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{alpha}
+\end{DoxyCode}
+ can also be useful to apply animations on top of each other (layered).\\
+\hline
+{\em pose} & Controls how mixing is applied when alpha is than 1.\\
+\hline
+{\em direction} & Indicates whether the timeline is mixing in or out. Used by timelines which perform instant transitions such as \mbox{\hyperlink{class_spine_1_1_draw_order_timeline}{Draw\+Order\+Timeline}} and \mbox{\hyperlink{class_spine_1_1_attachment_timeline}{Attachment\+Timeline}}.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_spine_1_1_curve_timeline_a930a8d1b0adedfa2d505096491aac5aa}{Spine.\+Curve\+Timeline}}를 구현.
+
+
+
+Animation.\+cs 파일의 645 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{646                                                                                                                                                                       \{}
+\DoxyCodeLine{647             Slot slot = skeleton.slots.Items[slotIndex];}
+\DoxyCodeLine{648             \textcolor{keywordtype}{float}[] frames = this.frames;}
+\DoxyCodeLine{649             \textcolor{keywordflow}{if} (time < frames[0]) \{ \textcolor{comment}{// Time is before first frame.}}
+\DoxyCodeLine{650                 var slotData = slot.data;}
+\DoxyCodeLine{651                 \textcolor{keywordflow}{switch} (pose) \{}
+\DoxyCodeLine{652                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup:}
+\DoxyCodeLine{653                     \textcolor{comment}{//  slot.color.set(slot.data.color);}}
+\DoxyCodeLine{654                     \textcolor{comment}{//  slot.darkColor.set(slot.data.darkColor);}}
+\DoxyCodeLine{655                     slot.r = slotData.r;}
+\DoxyCodeLine{656                     slot.g = slotData.g;}
+\DoxyCodeLine{657                     slot.b = slotData.b;}
+\DoxyCodeLine{658                     slot.a = slotData.a;}
+\DoxyCodeLine{659                     slot.r2 = slotData.r2;}
+\DoxyCodeLine{660                     slot.g2 = slotData.g2;}
+\DoxyCodeLine{661                     slot.b2 = slotData.b2;}
+\DoxyCodeLine{662                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{663                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current:}
+\DoxyCodeLine{664                     slot.r += (slot.r -\/ slotData.r) * alpha;}
+\DoxyCodeLine{665                     slot.g += (slot.g -\/ slotData.g) * alpha;}
+\DoxyCodeLine{666                     slot.b += (slot.b -\/ slotData.b) * alpha;}
+\DoxyCodeLine{667                     slot.a += (slot.a -\/ slotData.a) * alpha;}
+\DoxyCodeLine{668                     slot.r2 += (slot.r2 -\/ slotData.r2) * alpha;}
+\DoxyCodeLine{669                     slot.g2 += (slot.g2 -\/ slotData.g2) * alpha;}
+\DoxyCodeLine{670                     slot.b2 += (slot.b2 -\/ slotData.b2) * alpha;}
+\DoxyCodeLine{671                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{672                 \}}
+\DoxyCodeLine{673                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{674             \}}
+\DoxyCodeLine{675 }
+\DoxyCodeLine{676             \textcolor{keywordtype}{float} r, g, b, a, r2, g2, b2;}
+\DoxyCodeLine{677             \textcolor{keywordflow}{if} (time >= frames[frames.Length -\/ \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{ENTRIES}}]) \{ \textcolor{comment}{// Time is after last frame.}}
+\DoxyCodeLine{678                 \textcolor{keywordtype}{int} i = frames.Length;}
+\DoxyCodeLine{679                 r = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a2dc096eb835213f0c058d01b69cfc85c}{PREV\_R}}];}
+\DoxyCodeLine{680                 g = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_acd19fbb74d5909fdbc023b36f18bf08c}{PREV\_G}}];}
+\DoxyCodeLine{681                 b = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a6946790926ef13ff45dea571be6ef1f0}{PREV\_B}}];}
+\DoxyCodeLine{682                 a = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a5403ff95d672d4086136102fd110f95b}{PREV\_A}}];}
+\DoxyCodeLine{683                 r2 = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a551ca269d2d8d1c46bbad05818b93fc3}{PREV\_R2}}];}
+\DoxyCodeLine{684                 g2 = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a3de3a7a3b1f3fb2ed8912bbddc6ab8c7}{PREV\_G2}}];}
+\DoxyCodeLine{685                 b2 = frames[i + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a62bd23b5257bee4b2e7288ddfb92c3db}{PREV\_B2}}];}
+\DoxyCodeLine{686             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{687                 \textcolor{comment}{// Interpolate between the previous frame and the current frame.}}
+\DoxyCodeLine{688                 \textcolor{keywordtype}{int} frame = \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}}.BinarySearch(frames, time, \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{ENTRIES}});}
+\DoxyCodeLine{689                 r = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a2dc096eb835213f0c058d01b69cfc85c}{PREV\_R}}];}
+\DoxyCodeLine{690                 g = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_acd19fbb74d5909fdbc023b36f18bf08c}{PREV\_G}}];}
+\DoxyCodeLine{691                 b = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a6946790926ef13ff45dea571be6ef1f0}{PREV\_B}}];}
+\DoxyCodeLine{692                 a = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a5403ff95d672d4086136102fd110f95b}{PREV\_A}}];}
+\DoxyCodeLine{693                 r2 = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a551ca269d2d8d1c46bbad05818b93fc3}{PREV\_R2}}];}
+\DoxyCodeLine{694                 g2 = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a3de3a7a3b1f3fb2ed8912bbddc6ab8c7}{PREV\_G2}}];}
+\DoxyCodeLine{695                 b2 = frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a62bd23b5257bee4b2e7288ddfb92c3db}{PREV\_B2}}];}
+\DoxyCodeLine{696                 \textcolor{keywordtype}{float} frameTime = frames[frame];}
+\DoxyCodeLine{697                 \textcolor{keywordtype}{float} percent = \mbox{\hyperlink{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}{GetCurvePercent}}(frame / \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{ENTRIES}} -\/ 1,}
+\DoxyCodeLine{698                     1 -\/ (time -\/ frameTime) / (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a179387088872c84f892a3cb73e8a160c}{PREV\_TIME}}] -\/ frameTime));}
+\DoxyCodeLine{699 }
+\DoxyCodeLine{700                 r += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ab4effeb05b688eaac40184b14dae473a}{R}}] -\/ r) * percent;}
+\DoxyCodeLine{701                 g += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a49fa4f524462b24e53e82d736f79c531}{G}}] -\/ g) * percent;}
+\DoxyCodeLine{702                 b += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ae673378908af49a5a8130dfb4d0981fd}{B}}] -\/ b) * percent;}
+\DoxyCodeLine{703                 a += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a26fd6f4174f6887c81f9eeb4b1a35931}{A}}] -\/ a) * percent;}
+\DoxyCodeLine{704                 r2 += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a4a42abc75aa0025d4982ca436b21e16b}{R2}}] -\/ r2) * percent;}
+\DoxyCodeLine{705                 g2 += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a1c3d2c3dc6b6a88605ddacbe4096ef04}{G2}}] -\/ g2) * percent;}
+\DoxyCodeLine{706                 b2 += (frames[frame + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a8f2d2f25f81c97d55e018e24661c1c49}{B2}}] -\/ b2) * percent;}
+\DoxyCodeLine{707             \}}
+\DoxyCodeLine{708             \textcolor{keywordflow}{if} (alpha == 1) \{}
+\DoxyCodeLine{709                 slot.r = r;}
+\DoxyCodeLine{710                 slot.g = g;}
+\DoxyCodeLine{711                 slot.b = b;}
+\DoxyCodeLine{712                 slot.a = a;}
+\DoxyCodeLine{713                 slot.r2 = r2;}
+\DoxyCodeLine{714                 slot.g2 = g2;}
+\DoxyCodeLine{715                 slot.b2 = b2;}
+\DoxyCodeLine{716             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{717                 \textcolor{keywordtype}{float} br, bg, bb, ba, br2, bg2, bb2;}
+\DoxyCodeLine{718                 \textcolor{keywordflow}{if} (pose == \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup) \{}
+\DoxyCodeLine{719                     br = slot.data.r;}
+\DoxyCodeLine{720                     bg = slot.data.g;}
+\DoxyCodeLine{721                     bb = slot.data.b;}
+\DoxyCodeLine{722                     ba = slot.data.a;}
+\DoxyCodeLine{723                     br2 = slot.data.r2;}
+\DoxyCodeLine{724                     bg2 = slot.data.g2;}
+\DoxyCodeLine{725                     bb2 = slot.data.b2;}
+\DoxyCodeLine{726                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{727                     br = slot.r;}
+\DoxyCodeLine{728                     bg = slot.g;}
+\DoxyCodeLine{729                     bb = slot.b;}
+\DoxyCodeLine{730                     ba = slot.a;}
+\DoxyCodeLine{731                     br2 = slot.r2;}
+\DoxyCodeLine{732                     bg2 = slot.g2;}
+\DoxyCodeLine{733                     bb2 = slot.b2;}
+\DoxyCodeLine{734                 \}}
+\DoxyCodeLine{735                 slot.r = br + ((r -\/ br) * alpha);}
+\DoxyCodeLine{736                 slot.g = bg + ((g -\/ bg) * alpha);}
+\DoxyCodeLine{737                 slot.b = bb + ((b -\/ bb) * alpha);}
+\DoxyCodeLine{738                 slot.a = ba + ((a -\/ ba) * alpha);}
+\DoxyCodeLine{739                 slot.r2 = br2 + ((r2 -\/ br2) * alpha);}
+\DoxyCodeLine{740                 slot.g2 = bg2 + ((g2 -\/ bg2) * alpha);}
+\DoxyCodeLine{741                 slot.b2 = bb2 + ((b2 -\/ bb2) * alpha);}
+\DoxyCodeLine{742             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}\label{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!GetCurvePercent@{GetCurvePercent}}
+\index{GetCurvePercent@{GetCurvePercent}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{GetCurvePercent()}{GetCurvePercent()}}
+{\footnotesize\ttfamily float Spine.\+Curve\+Timeline.\+Get\+Curve\+Percent (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 202 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203                                                                      \{}
+\DoxyCodeLine{204             percent = MathUtils.Clamp (percent, 0, 1);}
+\DoxyCodeLine{205             \textcolor{keywordtype}{float}[] curves = this.curves;}
+\DoxyCodeLine{206             \textcolor{keywordtype}{int} i = frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}};}
+\DoxyCodeLine{207             \textcolor{keywordtype}{float} type = curves[i];}
+\DoxyCodeLine{208             \textcolor{keywordflow}{if} (type == \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{LINEAR}}) \textcolor{keywordflow}{return} percent;}
+\DoxyCodeLine{209             \textcolor{keywordflow}{if} (type == \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{STEPPED}}) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{210             i++;}
+\DoxyCodeLine{211             \textcolor{keywordtype}{float} x = 0;}
+\DoxyCodeLine{212             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} start = i, n = i + \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} -\/ 1; i < n; i += 2) \{}
+\DoxyCodeLine{213                 x = curves[i];}
+\DoxyCodeLine{214                 \textcolor{keywordflow}{if} (x >= percent) \{}
+\DoxyCodeLine{215                     \textcolor{keywordtype}{float} prevX, prevY;}
+\DoxyCodeLine{216                     \textcolor{keywordflow}{if} (i == start) \{}
+\DoxyCodeLine{217                         prevX = 0;}
+\DoxyCodeLine{218                         prevY = 0;}
+\DoxyCodeLine{219                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{220                         prevX = curves[i -\/ 2];}
+\DoxyCodeLine{221                         prevY = curves[i -\/ 1];}
+\DoxyCodeLine{222                     \}}
+\DoxyCodeLine{223                     \textcolor{keywordflow}{return} prevY + (curves[i + 1] -\/ prevY) * (percent -\/ prevX) / (x -\/ prevX);}
+\DoxyCodeLine{224                 \}}
+\DoxyCodeLine{225             \}}
+\DoxyCodeLine{226             \textcolor{keywordtype}{float} y = curves[i -\/ 1];}
+\DoxyCodeLine{227             \textcolor{keywordflow}{return} y + (1 -\/ y) * (percent -\/ x) / (1 -\/ x); \textcolor{comment}{// Last point is 1,1.}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}\label{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!GetCurveType@{GetCurveType}}
+\index{GetCurveType@{GetCurveType}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{GetCurveType()}{GetCurveType()}}
+{\footnotesize\ttfamily float Spine.\+Curve\+Timeline.\+Get\+Curve\+Type (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 228 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{229                                                    \{}
+\DoxyCodeLine{230             \textcolor{keywordflow}{return} curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}\label{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!SetCurve@{SetCurve}}
+\index{SetCurve@{SetCurve}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{SetCurve()}{SetCurve()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Curve (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{cx1,  }\item[{float}]{cy1,  }\item[{float}]{cx2,  }\item[{float}]{cy2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Sets the control handle positions for an interpolation bezier curve used to transition from this keyframe to the next. cx1 and cx2 are from 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of the difference between the keyframe\textquotesingle{}s values. 
+
+
+
+Animation.\+cs 파일의 179 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                                                           \{}
+\DoxyCodeLine{181             \textcolor{keywordtype}{float} tmpx = (-\/cx1 * 2 + cx2) * 0.03f, tmpy = (-\/cy1 * 2 + cy2) * 0.03f;}
+\DoxyCodeLine{182             \textcolor{keywordtype}{float} dddfx = ((cx1 -\/ cx2) * 3 + 1) * 0.006f, dddfy = ((cy1 -\/ cy2) * 3 + 1) * 0.006f;}
+\DoxyCodeLine{183             \textcolor{keywordtype}{float} ddfx = tmpx * 2 + dddfx, ddfy = tmpy * 2 + dddfy;}
+\DoxyCodeLine{184             \textcolor{keywordtype}{float} dfx = cx1 * 0.3f + tmpx + dddfx * 0.16666667f, dfy = cy1 * 0.3f + tmpy + dddfy * 0.16666667f;}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186             \textcolor{keywordtype}{int} i = frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}};}
+\DoxyCodeLine{187             \textcolor{keywordtype}{float}[] curves = this.curves;}
+\DoxyCodeLine{188             curves[i++] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}{BEZIER}};}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \textcolor{keywordtype}{float} x = dfx, y = dfy;}
+\DoxyCodeLine{191             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} n = i + \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} -\/ 1; i < n; i += 2) \{}
+\DoxyCodeLine{192                 curves[i] = x;}
+\DoxyCodeLine{193                 curves[i + 1] = y;}
+\DoxyCodeLine{194                 dfx += ddfx;}
+\DoxyCodeLine{195                 dfy += ddfy;}
+\DoxyCodeLine{196                 ddfx += dddfx;}
+\DoxyCodeLine{197                 ddfy += dddfy;}
+\DoxyCodeLine{198                 x += dfx;}
+\DoxyCodeLine{199                 y += dfy;}
+\DoxyCodeLine{200             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a2e52208d038817ae335b012799407f65}\label{class_spine_1_1_two_color_timeline_a2e52208d038817ae335b012799407f65}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!SetFrame@{SetFrame}}
+\index{SetFrame@{SetFrame}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{SetFrame()}{SetFrame()}}
+{\footnotesize\ttfamily void Spine.\+Two\+Color\+Timeline.\+Set\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{time,  }\item[{float}]{r,  }\item[{float}]{g,  }\item[{float}]{b,  }\item[{float}]{a,  }\item[{float}]{r2,  }\item[{float}]{g2,  }\item[{float}]{b2 }\end{DoxyParamCaption})}
+
+
+
+Sets the time and value of the specified keyframe. 
+
+
+
+Animation.\+cs 파일의 633 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{634                                                                                                                             \{}
+\DoxyCodeLine{635             frameIndex *= \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}{ENTRIES}};}
+\DoxyCodeLine{636             frames[frameIndex] = time;}
+\DoxyCodeLine{637             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ab4effeb05b688eaac40184b14dae473a}{R}}] = r;}
+\DoxyCodeLine{638             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a49fa4f524462b24e53e82d736f79c531}{G}}] = g;}
+\DoxyCodeLine{639             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_ae673378908af49a5a8130dfb4d0981fd}{B}}] = b;}
+\DoxyCodeLine{640             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a26fd6f4174f6887c81f9eeb4b1a35931}{A}}] = a;}
+\DoxyCodeLine{641             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a4a42abc75aa0025d4982ca436b21e16b}{R2}}] = r2;}
+\DoxyCodeLine{642             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a1c3d2c3dc6b6a88605ddacbe4096ef04}{G2}}] = g2;}
+\DoxyCodeLine{643             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_two_color_timeline_a8f2d2f25f81c97d55e018e24661c1c49}{B2}}] = b2;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}\label{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!SetLinear@{SetLinear}}
+\index{SetLinear@{SetLinear}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{SetLinear()}{SetLinear()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Linear (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 168 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                                \{}
+\DoxyCodeLine{170             curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{LINEAR}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}\label{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!SetStepped@{SetStepped}}
+\index{SetStepped@{SetStepped}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{SetStepped()}{SetStepped()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Stepped (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 172 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                                 \{}
+\DoxyCodeLine{174             curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{STEPPED}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a26fd6f4174f6887c81f9eeb4b1a35931}\label{class_spine_1_1_two_color_timeline_a26fd6f4174f6887c81f9eeb4b1a35931}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!A@{A}}
+\index{A@{A}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+A = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_ae673378908af49a5a8130dfb4d0981fd}\label{class_spine_1_1_two_color_timeline_ae673378908af49a5a8130dfb4d0981fd}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!B@{B}}
+\index{B@{B}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{B}{B}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+B = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a8f2d2f25f81c97d55e018e24661c1c49}\label{class_spine_1_1_two_color_timeline_a8f2d2f25f81c97d55e018e24661c1c49}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!B2@{B2}}
+\index{B2@{B2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{B2}{B2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+B2 = 7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}\label{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!BEZIER@{BEZIER}}
+\index{BEZIER@{BEZIER}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{BEZIER}{BEZIER}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+B\+E\+Z\+I\+ER = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}\label{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!BEZIER\_SIZE@{BEZIER\_SIZE}}
+\index{BEZIER\_SIZE@{BEZIER\_SIZE}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{BEZIER\_SIZE}{BEZIER\_SIZE}}
+{\footnotesize\ttfamily const int Spine.\+Curve\+Timeline.\+B\+E\+Z\+I\+E\+R\+\_\+\+S\+I\+ZE = 10 $\ast$ 2 -\/ 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 154 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}\label{class_spine_1_1_two_color_timeline_a04dfe382aea9d2244547230884cac3bb}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!ENTRIES@{ENTRIES}}
+\index{ENTRIES@{ENTRIES}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{ENTRIES}{ENTRIES}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+E\+N\+T\+R\+I\+ES = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Animation.\+cs 파일의 604 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a49fa4f524462b24e53e82d736f79c531}\label{class_spine_1_1_two_color_timeline_a49fa4f524462b24e53e82d736f79c531}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!G@{G}}
+\index{G@{G}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{G}{G}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+G = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a1c3d2c3dc6b6a88605ddacbe4096ef04}\label{class_spine_1_1_two_color_timeline_a1c3d2c3dc6b6a88605ddacbe4096ef04}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!G2@{G2}}
+\index{G2@{G2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{G2}{G2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+G2 = 6\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}\label{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!LINEAR@{LINEAR}}
+\index{LINEAR@{LINEAR}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{LINEAR}{LINEAR}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+L\+I\+N\+E\+AR = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a5403ff95d672d4086136102fd110f95b}\label{class_spine_1_1_two_color_timeline_a5403ff95d672d4086136102fd110f95b}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_A@{PREV\_A}}
+\index{PREV\_A@{PREV\_A}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_A}{PREV\_A}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+A = -\/4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 605 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a6946790926ef13ff45dea571be6ef1f0}\label{class_spine_1_1_two_color_timeline_a6946790926ef13ff45dea571be6ef1f0}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_B@{PREV\_B}}
+\index{PREV\_B@{PREV\_B}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_B}{PREV\_B}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+B = -\/5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 605 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a62bd23b5257bee4b2e7288ddfb92c3db}\label{class_spine_1_1_two_color_timeline_a62bd23b5257bee4b2e7288ddfb92c3db}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_B2@{PREV\_B2}}
+\index{PREV\_B2@{PREV\_B2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_B2}{PREV\_B2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+\+B2 = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 606 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_acd19fbb74d5909fdbc023b36f18bf08c}\label{class_spine_1_1_two_color_timeline_acd19fbb74d5909fdbc023b36f18bf08c}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_G@{PREV\_G}}
+\index{PREV\_G@{PREV\_G}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_G}{PREV\_G}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+G = -\/6\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 605 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a3de3a7a3b1f3fb2ed8912bbddc6ab8c7}\label{class_spine_1_1_two_color_timeline_a3de3a7a3b1f3fb2ed8912bbddc6ab8c7}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_G2@{PREV\_G2}}
+\index{PREV\_G2@{PREV\_G2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_G2}{PREV\_G2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+\+G2 = -\/2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 606 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a2dc096eb835213f0c058d01b69cfc85c}\label{class_spine_1_1_two_color_timeline_a2dc096eb835213f0c058d01b69cfc85c}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_R@{PREV\_R}}
+\index{PREV\_R@{PREV\_R}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_R}{PREV\_R}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+R = -\/7\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 605 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a551ca269d2d8d1c46bbad05818b93fc3}\label{class_spine_1_1_two_color_timeline_a551ca269d2d8d1c46bbad05818b93fc3}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_R2@{PREV\_R2}}
+\index{PREV\_R2@{PREV\_R2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_R2}{PREV\_R2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+\+R2 = -\/3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Animation.\+cs 파일의 606 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a179387088872c84f892a3cb73e8a160c}\label{class_spine_1_1_two_color_timeline_a179387088872c84f892a3cb73e8a160c}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PREV\_TIME@{PREV\_TIME}}
+\index{PREV\_TIME@{PREV\_TIME}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_TIME}{PREV\_TIME}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+P\+R\+E\+V\+\_\+\+T\+I\+ME = -\/8\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Animation.\+cs 파일의 605 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_ab4effeb05b688eaac40184b14dae473a}\label{class_spine_1_1_two_color_timeline_ab4effeb05b688eaac40184b14dae473a}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!R@{R}}
+\index{R@{R}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+R = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a4a42abc75aa0025d4982ca436b21e16b}\label{class_spine_1_1_two_color_timeline_a4a42abc75aa0025d4982ca436b21e16b}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!R2@{R2}}
+\index{R2@{R2}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{R2}{R2}}
+{\footnotesize\ttfamily const int Spine.\+Two\+Color\+Timeline.\+R2 = 5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 607 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}\label{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!STEPPED@{STEPPED}}
+\index{STEPPED@{STEPPED}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{STEPPED}{STEPPED}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+S\+T\+E\+P\+P\+ED = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}\label{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!FrameCount@{FrameCount}}
+\index{FrameCount@{FrameCount}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{FrameCount}{FrameCount}}
+{\footnotesize\ttfamily int Spine.\+Curve\+Timeline.\+Frame\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 157 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} curves.Length / \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} + 1; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a1b8b16b2e528f5a37a4621830c1e4f95}\label{class_spine_1_1_two_color_timeline_a1b8b16b2e528f5a37a4621830c1e4f95}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!Frames@{Frames}}
+\index{Frames@{Frames}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{Frames}{Frames}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Two\+Color\+Timeline.\+Frames\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation.\+cs 파일의 621 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{622 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} frames; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a9f4e3e39cd3c53132e61b0f53f57cc36}\label{class_spine_1_1_two_color_timeline_a9f4e3e39cd3c53132e61b0f53f57cc36}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!PropertyId@{PropertyId}}
+\index{PropertyId@{PropertyId}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{PropertyId}{PropertyId}}
+{\footnotesize\ttfamily override int Spine.\+Two\+Color\+Timeline.\+Property\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation.\+cs 파일의 623 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{624                                        \{}
+\DoxyCodeLine{625             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})TimelineType.TwoColor << 24) + slotIndex; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_two_color_timeline_a1121cef4e04aef0de489214fa9f5ea22}\label{class_spine_1_1_two_color_timeline_a1121cef4e04aef0de489214fa9f5ea22}} 
+\index{Spine.TwoColorTimeline@{Spine.TwoColorTimeline}!SlotIndex@{SlotIndex}}
+\index{SlotIndex@{SlotIndex}!Spine.TwoColorTimeline@{Spine.TwoColorTimeline}}
+\doxysubsubsection{\texorpdfstring{SlotIndex}{SlotIndex}}
+{\footnotesize\ttfamily int Spine.\+Two\+Color\+Timeline.\+Slot\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 612 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{613                              \{}
+\DoxyCodeLine{614             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} slotIndex; \}}
+\DoxyCodeLine{615             \textcolor{keyword}{set} \{}
+\DoxyCodeLine{616                 \textcolor{keywordflow}{if} (value < 0)}
+\DoxyCodeLine{617                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index must be >= 0."});}
+\DoxyCodeLine{618                 slotIndex = value;}
+\DoxyCodeLine{619             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_8cs}{Animation.\+cs}}\end{DoxyCompactItemize}

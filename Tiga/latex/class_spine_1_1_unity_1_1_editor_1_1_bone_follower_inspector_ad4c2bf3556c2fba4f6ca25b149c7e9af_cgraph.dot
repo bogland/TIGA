@@ -1,0 +1,24 @@
+digraph "Spine.Unity.Editor.BoneFollowerInspector.OnInspectorGUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.BoneFollower\lInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.BoneFollower.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bone_follower.html#a626afb6b9214f44e7de8768f348f10a8",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Skeleton.FindBone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666",tooltip="May be null."];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.BoneFollower.\lHandleRebuildRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bone_follower.html#a1bcc44a28a29b73f476086b13d8534c6",tooltip=" "];
+  Node4 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.BoneFollower.\lLateUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bone_follower.html#aaafbb15b734a21dc7fbecbfd93961d28",tooltip=" "];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.BoneFollower.\lSetBone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bone_follower.html#aaeb298e836b51bc2850864f44d0bf9e6",tooltip="Sets the target bone by its bone name. Returns false if no bone was found. To set the bone by referen..."];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.SkeletonRenderer.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_renderer.html#a51f0f25d67884c18239202881a188797",tooltip="Initialize this component. Attempts to load the SkeletonData and creates the internal Skeleton object..."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+}

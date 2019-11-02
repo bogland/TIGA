@@ -1,0 +1,13 @@
+digraph "Spine.Unity.Modules.SpineEventUnityHandler"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Spine\lEventUnityHandler\n|+ events\l|- Start()\l- OnDestroy()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{MonoBehaviour\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -skeletonComponent" ,arrowhead="odiamond"];
+  Node3 [label="{Spine.Unity.ISkeletonComponent\n|+ SkeletonDataAsset\l+ Skeleton\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_unity_1_1_i_skeleton_component.html",tooltip="A Spine-Unity Component that manages a Spine.Skeleton instance, instantiated from a SkeletonDataAsset..."];
+  Node4 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -animationStateComponent" ,arrowhead="odiamond"];
+  Node4 [label="{Spine.Unity.IAnimationState\lComponent\n|+ AnimationState\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_unity_1_1_i_animation_state_component.html",tooltip="A Spine-Unity Component that uses a Spine.AnimationState to animate its skeleton."];
+}

@@ -1,0 +1,161 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus}{}\doxysection{Spine.\+Unity.\+Editor.\+Menus 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_menus}\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+
+
+Spine.\+Unity.\+Editor.\+Menus에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_a9ea43e10abeb281f71da20da9a66bc2c}{Create\+Atlas}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_acbb8618b0019f7216c89e923841ffc66}{Create\+Skeleton\+Data}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_a260bc6c30214313875d9fab76efb7c19}{Create\+Skeleton\+Renderer\+Game\+Object}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_ae30be3c60aafd275ae2ccfa44fd7fc42}{Create\+Skeleton\+Animation\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_a4dc693245443aba56d794f5bdbfb308f}{Create\+Asset$<$ T $>$}} (String name)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_menus_a0bcada2a8f9e980d5f4c60afe2b611de}{Create\+Spine\+Game\+Object$<$ T $>$}} (string name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Menus.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_a4dc693245443aba56d794f5bdbfb308f}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_a4dc693245443aba56d794f5bdbfb308f}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateAsset$<$ T $>$@{CreateAsset$<$ T $>$}}
+\index{CreateAsset$<$ T $>$@{CreateAsset$<$ T $>$}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateAsset$<$ T $>$()}{CreateAsset< T >()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Asset$<$ T $>$ (\begin{DoxyParamCaption}\item[{String}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{Desc}
+\item[타입 한정자들]\begin{description}
+\item[{\em T} : {\em Scriptable\+Object}]\end{description}
+\end{Desc}
+
+
+Menus.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                          : ScriptableObject \{}
+\DoxyCodeLine{49             var dir = \textcolor{stringliteral}{"Assets/"};}
+\DoxyCodeLine{50             var selected = Selection.activeObject;}
+\DoxyCodeLine{51             \textcolor{keywordflow}{if} (selected != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{52                 var assetDir = AssetDatabase.GetAssetPath(selected.GetInstanceID());}
+\DoxyCodeLine{53                 \textcolor{keywordflow}{if} (assetDir.Length > 0 \&\& Directory.Exists(assetDir))}
+\DoxyCodeLine{54                     dir = assetDir + \textcolor{stringliteral}{"/"};}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56             ScriptableObject asset = ScriptableObject.CreateInstance<T>();}
+\DoxyCodeLine{57             AssetDatabase.CreateAsset(asset, dir + name + \textcolor{stringliteral}{".asset"});}
+\DoxyCodeLine{58             AssetDatabase.SaveAssets();}
+\DoxyCodeLine{59             EditorUtility.FocusProjectWindow();}
+\DoxyCodeLine{60             Selection.activeObject = asset;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_a9ea43e10abeb281f71da20da9a66bc2c}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_a9ea43e10abeb281f71da20da9a66bc2c}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateAtlas@{CreateAtlas}}
+\index{CreateAtlas@{CreateAtlas}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateAtlas()}{CreateAtlas()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Atlas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menus.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                           \{}
+\DoxyCodeLine{40             CreateAsset<AtlasAsset>(\textcolor{stringliteral}{"New Atlas"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_ae30be3c60aafd275ae2ccfa44fd7fc42}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_ae30be3c60aafd275ae2ccfa44fd7fc42}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateSkeletonAnimationGameObject@{CreateSkeletonAnimationGameObject}}
+\index{CreateSkeletonAnimationGameObject@{CreateSkeletonAnimationGameObject}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateSkeletonAnimationGameObject()}{CreateSkeletonAnimationGameObject()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Skeleton\+Animation\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menus.\+cs 파일의 68 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69                                                                 \{}
+\DoxyCodeLine{70             CreateSpineGameObject<SkeletonAnimation>(\textcolor{stringliteral}{"New SkeletonAnimation"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_acbb8618b0019f7216c89e923841ffc66}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_acbb8618b0019f7216c89e923841ffc66}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateSkeletonData@{CreateSkeletonData}}
+\index{CreateSkeletonData@{CreateSkeletonData}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateSkeletonData()}{CreateSkeletonData()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Skeleton\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menus.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                                  \{}
+\DoxyCodeLine{45             CreateAsset<SkeletonDataAsset>(\textcolor{stringliteral}{"New SkeletonData"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_a260bc6c30214313875d9fab76efb7c19}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_a260bc6c30214313875d9fab76efb7c19}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateSkeletonRendererGameObject@{CreateSkeletonRendererGameObject}}
+\index{CreateSkeletonRendererGameObject@{CreateSkeletonRendererGameObject}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateSkeletonRendererGameObject()}{CreateSkeletonRendererGameObject()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Skeleton\+Renderer\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menus.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                                \{}
+\DoxyCodeLine{65             CreateSpineGameObject<SkeletonRenderer>(\textcolor{stringliteral}{"New SkeletonRenderer"});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_menus_a0bcada2a8f9e980d5f4c60afe2b611de}\label{class_spine_1_1_unity_1_1_editor_1_1_menus_a0bcada2a8f9e980d5f4c60afe2b611de}} 
+\index{Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}!CreateSpineGameObject$<$ T $>$@{CreateSpineGameObject$<$ T $>$}}
+\index{CreateSpineGameObject$<$ T $>$@{CreateSpineGameObject$<$ T $>$}!Spine.Unity.Editor.Menus@{Spine.Unity.Editor.Menus}}
+\doxysubsubsection{\texorpdfstring{CreateSpineGameObject$<$ T $>$()}{CreateSpineGameObject< T >()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Menus.\+Create\+Spine\+Game\+Object$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\begin{Desc}
+\item[타입 한정자들]\begin{description}
+\item[{\em T} : {\em Mono\+Behaviour}]\end{description}
+\end{Desc}
+
+
+Menus.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                                    : MonoBehaviour \{}
+\DoxyCodeLine{74             var parentGameObject = Selection.activeObject as GameObject;}
+\DoxyCodeLine{75             var parentTransform = parentGameObject == \textcolor{keyword}{null} ? null : parentGameObject.transform;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             var gameObject = \textcolor{keyword}{new} GameObject(name, typeof(T));}
+\DoxyCodeLine{78             gameObject.transform.SetParent(parentTransform, \textcolor{keyword}{false});}
+\DoxyCodeLine{79             EditorUtility.FocusProjectWindow();}
+\DoxyCodeLine{80             Selection.activeObject = gameObject;}
+\DoxyCodeLine{81             EditorGUIUtility.PingObject(Selection.activeObject);}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_menus_8cs}{Menus.\+cs}}\end{DoxyCompactItemize}

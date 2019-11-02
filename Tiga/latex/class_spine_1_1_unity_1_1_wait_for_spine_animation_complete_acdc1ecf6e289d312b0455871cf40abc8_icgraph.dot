@@ -1,0 +1,12 @@
+digraph "Spine.Unity.WaitForSpineAnimationComplete.HandleComplete"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.WaitForSpine\lAnimationComplete.HandleComplete",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.WaitForSpine\lAnimationComplete.SafeSubscribe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_wait_for_spine_animation_complete.html#ae51ae44930139960f1fa71078fa3e3b4",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.WaitForSpine\lAnimationComplete.WaitForSpine\lAnimationComplete",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_wait_for_spine_animation_complete.html#ac26ffa9207a8521df6678062c86a97d5",tooltip=" "];
+}

@@ -1,0 +1,12 @@
+digraph "Spine.TransformConstraintData"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.TransformConstraintData\n|+ Name\l+ Order\l+ Bones\l+ Target\l+ RotateMix\l+ TranslateMix\l+ ScaleMix\l+ ShearMix\l+ OffsetRotation\l+ OffsetX\l그리고 6개 더...\l~ name\l~ order\l~ rotateMix\l~ offsetRotation\l~ relative\l- translateMix\l- scaleMix\l- shearMix\l- offsetX\l- offsetY\l- offsetScaleX\l- offsetScaleY\l- offsetShearY\l- local\l|+ TransformConstraintData()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~target" ,arrowhead="odiamond"];
+  Node2 [label="{Spine.BoneData\n|+ Index\l+ Name\l+ Parent\l+ Length\l+ X\l+ Y\l+ Rotation\l+ ScaleX\l+ ScaleY\l+ ShearX\l+ ShearY\l+ TransformMode\l~ index\l~ name\l~ length\l~ x\l~ transformMode\l- y\l- rotation\l- scaleX\l- scaleY\l- shearX\l- shearY\l|+ BoneData()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone_data.html",tooltip=" "];
+  Node2 -> Node2 [color="grey25",fontsize="10",style="solid",label=" ~parent" ,arrowhead="odiamond"];
+  Node3 -> Node1 [color="grey25",fontsize="10",style="solid",label=" ~bones" ,arrowhead="odiamond"];
+  Node3 [label="{Spine.ExposedList\<\l Spine.BoneData \>\n|+ Items\l+ Count\l+ Capacity\l- version\l- DefaultCapacity\l- EmptyArray\l|+ ExposedList()\l+ ExposedList()\l+ ExposedList()\l+ Add()\l+ GrowIfNeeded()\l+ Resize()\l+ EnsureCapacity()\l+ AddRange()\l+ BinarySearch()\l+ BinarySearch()\l그리고 42개 더...\l~ ExposedList()\l- CheckRange()\l- AddCollection()\l- AddEnumerable()\l- FindAllList()\l- GetIndex()\l- GetLastIndex()\l- GetEnumerator()\l- GetEnumerator()\l- Shift()\l- CheckIndex()\l- CheckCollection()\l- InsertCollection()\l- InsertEnumeration()\l- CheckMatch()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html",tooltip=" "];
+}

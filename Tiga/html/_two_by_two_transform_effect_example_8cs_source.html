@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Sample Components/Sample VertexEffects/TwoByTwoTransformEffectExample.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_two_by_two_transform_effect_example_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">TwoByTwoTransformEffectExample.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_two_by_two_transform_effect_example_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// This is a sample component for C# vertex effects for Spine rendering components.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Using shaders and materials to control vertex properties is still more performant</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// than using this API, but in cases where your vertex effect logic cannot be</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">   40</a></span>&#160;    <span class="comment">// expressed as shader code, these vertex effects can be useful.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">TwoByTwoTransformEffectExample</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ad52246ab929a0975700e80531e7a32c7">   42</a></span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ac45d2f4e0edec25620d159b9b2e91acc">   43</a></span>&#160;        <span class="keyword">public</span> Vector2 <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ad52246ab929a0975700e80531e7a32c7">xAxis</a> = <span class="keyword">new</span> Vector2(1, 0);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">public</span> Vector2 <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ac45d2f4e0edec25620d159b9b2e91acc">yAxis</a> = <span class="keyword">new</span> Vector2(0, 1);</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">   45</a></span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html">SkeletonRenderer</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ab6674cf587344c15616fb1f3b5e91b14">   47</a></span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ab6674cf587344c15616fb1f3b5e91b14">OnEnable</a> () {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a> = GetComponent&lt;SkeletonRenderer&gt;();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="comment">// Use the OnPostProcessVertices callback to modify the vertices at the correct time.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a96da7e8b0403d155291f70f360165b19">OnPostProcessVertices</a> -= <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">ProcessVertices</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a96da7e8b0403d155291f70f360165b19">OnPostProcessVertices</a> += <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">ProcessVertices</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            Debug.Log(<span class="stringliteral">&quot;2x2 Transform Effect Enabled.&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">   58</a></span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">ProcessVertices</a> (<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html">MeshGeneratorBuffers</a> buffers) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (!this.enabled)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">int</span> vertexCount = buffers.<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html#aa67aca214c17a5f383c79226e3081366">vertexCount</a>; <span class="comment">// For efficiency, limit your effect to the actual mesh vertex count using vertexCount</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="comment">// Modify vertex positions by accessing Vector3[] vertexBuffer</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            var vertices = buffers.<a class="code" href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html#ab64c38731004ef4c60939c64c069be58">vertexBuffer</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            Vector3 transformedPos = <span class="keywordflow">default</span>(Vector3);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; vertexCount; i++) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                Vector3 originalPos = vertices[i];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                transformedPos.x = (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ad52246ab929a0975700e80531e7a32c7">xAxis</a>.x * originalPos.x) + (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ac45d2f4e0edec25620d159b9b2e91acc">yAxis</a>.x * originalPos.y);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                transformedPos.y = (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ad52246ab929a0975700e80531e7a32c7">xAxis</a>.y * originalPos.x) + (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ac45d2f4e0edec25620d159b9b2e91acc">yAxis</a>.y * originalPos.y);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                vertices[i] = transformedPos;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#aeaf4d85120d89c977193edff5bb28571">   76</a></span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#aeaf4d85120d89c977193edff5bb28571">OnDisable</a> () {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a> == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">skeletonRenderer</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a96da7e8b0403d155291f70f360165b19">OnPostProcessVertices</a> -= <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">ProcessVertices</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            Debug.Log(<span class="stringliteral">&quot;2x2 Transform Effect Disabled.&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#if UNITY_EDITOR</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;[UnityEditor.CustomEditor(typeof(<a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Examples</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">TwoByTwoTransformEffectExample</a>))]</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">public</span> <span class="keyword">class </span>TwoByTwoTransformEffectExampleEditor : UnityEditor.<a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a1db71a29746b653acfa12aae3b62095c">Editor</a> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Examples</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">TwoByTwoTransformEffectExample</a> Target { <span class="keyword">get</span> { <span class="keywordflow">return</span> target as <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Examples</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">TwoByTwoTransformEffectExample</a>; } }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> OnSceneGUI () {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        var transform = Target.transform;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        LocalVectorHandle(ref Target.xAxis, transform, Color.red);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        LocalVectorHandle(ref Target.yAxis, transform, Color.green);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> LocalVectorHandle (ref Vector2 v, Transform transform, Color color) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Color originalColor = UnityEditor.Handles.color;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        UnityEditor.Handles.color = color;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        UnityEditor.Handles.DrawLine(transform.position, transform.TransformPoint(v));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        v = transform.InverseTransformPoint(UnityEditor.Handles.FreeMoveHandle(transform.TransformPoint(v), Quaternion.identity, 0.3f, Vector3.zero, UnityEditor.Handles.CubeHandleCap));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        UnityEditor.Handles.color = originalColor;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_spine_1_1_unity_1_1_mesh_generator_buffers_html"><div class="ttname"><a href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html">Spine.Unity.MeshGeneratorBuffers</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00087">SpineMesh.cs:87</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html">Spine.Unity.Examples.TwoByTwoTransformEffectExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00040">TwoByTwoTransformEffectExample.cs:40</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_a3d01db7639e347a0dcab380c1af1dde8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a3d01db7639e347a0dcab380c1af1dde8">Spine.Unity.Examples.TwoByTwoTransformEffectExample.ProcessVertices</a></div><div class="ttdeci">void ProcessVertices(MeshGeneratorBuffers buffers)</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00058">TwoByTwoTransformEffectExample.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_a947f4851d7c9fb91a141f35626d0aee0"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#a947f4851d7c9fb91a141f35626d0aee0">Spine.Unity.Examples.TwoByTwoTransformEffectExample.skeletonRenderer</a></div><div class="ttdeci">SkeletonRenderer skeletonRenderer</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00045">TwoByTwoTransformEffectExample.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_ad52246ab929a0975700e80531e7a32c7"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ad52246ab929a0975700e80531e7a32c7">Spine.Unity.Examples.TwoByTwoTransformEffectExample.xAxis</a></div><div class="ttdeci">Vector2 xAxis</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00042">TwoByTwoTransformEffectExample.cs:42</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_unity_1_1_mesh_generator_buffers_html_ab64c38731004ef4c60939c64c069be58"><div class="ttname"><a href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html#ab64c38731004ef4c60939c64c069be58">Spine.Unity.MeshGeneratorBuffers.vertexBuffer</a></div><div class="ttdeci">Vector3[] vertexBuffer</div><div class="ttdoc">Vertex positions. To be used for UnityEngine.Mesh.vertices.</div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00092">SpineMesh.cs:92</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html">Spine.Unity.SkeletonRenderer</a></div><div class="ttdoc">Renders a skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00040">SkeletonRenderer.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_ac45d2f4e0edec25620d159b9b2e91acc"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ac45d2f4e0edec25620d159b9b2e91acc">Spine.Unity.Examples.TwoByTwoTransformEffectExample.yAxis</a></div><div class="ttdeci">Vector2 yAxis</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00043">TwoByTwoTransformEffectExample.cs:43</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_a96da7e8b0403d155291f70f360165b19"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#a96da7e8b0403d155291f70f360165b19">Spine.Unity.SkeletonRenderer.OnPostProcessVertices</a></div><div class="ttdeci">Spine.Unity.MeshGeneratorDelegate OnPostProcessVertices</div><div class="ttdoc">Occurs after the vertex data is populated every frame, before the vertices are pushed into the mesh.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00046">SkeletonRenderer.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_aeaf4d85120d89c977193edff5bb28571"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#aeaf4d85120d89c977193edff5bb28571">Spine.Unity.Examples.TwoByTwoTransformEffectExample.OnDisable</a></div><div class="ttdeci">void OnDisable()</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00076">TwoByTwoTransformEffectExample.cs:76</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example_html_ab6674cf587344c15616fb1f3b5e91b14"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_two_by_two_transform_effect_example.html#ab6674cf587344c15616fb1f3b5e91b14">Spine.Unity.Examples.TwoByTwoTransformEffectExample.OnEnable</a></div><div class="ttdeci">void OnEnable()</div><div class="ttdef"><b>Definition:</b> <a href="_two_by_two_transform_effect_example_8cs_source.html#l00047">TwoByTwoTransformEffectExample.cs:47</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_editor_html_a1db71a29746b653acfa12aae3b62095c"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_editor.html#a1db71a29746b653acfa12aae3b62095c">Spine.Unity.Editor.Editor</a></div><div class="ttdeci">UnityEditor.Editor Editor</div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_editor_8cs_source.html#l00038">AnimationReferenceAssetEditor.cs:38</a></div></div>
+<div class="ttc" id="astruct_spine_1_1_unity_1_1_mesh_generator_buffers_html_aa67aca214c17a5f383c79226e3081366"><div class="ttname"><a href="struct_spine_1_1_unity_1_1_mesh_generator_buffers.html#aa67aca214c17a5f383c79226e3081366">Spine.Unity.MeshGeneratorBuffers.vertexCount</a></div><div class="ttdeci">int vertexCount</div><div class="ttdoc">The vertex count that will actually be used for the mesh. The Lengths of the buffer arrays may be lar...</div><div class="ttdef"><b>Definition:</b> <a href="_spine_mesh_8cs_source.html#l00089">SpineMesh.cs:89</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_8d355f1d624c50c9e3eb2033d942fcf0.html">Sample Components</a></li><li class="navelem"><a class="el" href="dir_5db4240aff3b210ebf3f59ce4f4f7e48.html">Sample VertexEffects</a></li><li class="navelem"><a class="el" href="_two_by_two_transform_effect_example_8cs.html">TwoByTwoTransformEffectExample.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Sample Components/CombinedSkin.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_combined_skin_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CombinedSkin.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_combined_skin_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules.html">Modules</a>.<a class="code" href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">AttachmentTools</a>; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html">    7</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html">CombinedSkin</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_skin.html">SpineSkin</a>]</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a1e943efea9745e2c892f687a0e1b136e">    9</a></span>&#160;        <span class="keyword">public</span> List&lt;string&gt; <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a1e943efea9745e2c892f687a0e1b136e">skinsToCombine</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">   11</a></span>&#160;        <a class="code" href="class_spine_1_1_skin.html">Skin</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a3539baea107da24fc66207f644b29b68">   13</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a3539baea107da24fc66207f644b29b68">Start</a> () {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            var skeletonComponent = GetComponent&lt;ISkeletonComponent&gt;();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (skeletonComponent == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            var skeleton = skeletonComponent.Skeleton;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordflow">if</span> (skeleton == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a> ?? <span class="keyword">new</span> <a class="code" href="class_spine_1_1_skin.html">Skin</a>(<span class="stringliteral">&quot;combined&quot;</span>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a>.Clear();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">foreach</span> (var skinName <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a1e943efea9745e2c892f687a0e1b136e">skinsToCombine</a>) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                var skin = skeleton.Data.FindSkin(skinName);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordflow">if</span> (skin != <span class="keyword">null</span>) <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a>.Append(skin);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            skeleton.SetSkin(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">combinedSkin</a>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            skeleton.SetToSetupPose();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            var animationStateComponent = skeletonComponent as <a class="code" href="interface_spine_1_1_unity_1_1_i_animation_state_component.html">IAnimationStateComponent</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (animationStateComponent != <span class="keyword">null</span>) animationStateComponent.<a class="code" href="interface_spine_1_1_unity_1_1_i_animation_state_component.html#a26624556d0ef520205b8a7e722a8241f">AnimationState</a>.Apply(skeleton);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules_1_1_attachment_tools.html">Spine.Unity.Modules.AttachmentTools</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_unity_1_1_i_animation_state_component_html_a26624556d0ef520205b8a7e722a8241f"><div class="ttname"><a href="interface_spine_1_1_unity_1_1_i_animation_state_component.html#a26624556d0ef520205b8a7e722a8241f">Spine.Unity.IAnimationStateComponent.AnimationState</a></div><div class="ttdeci">AnimationState AnimationState</div><div class="ttdoc">Gets the Spine.AnimationState of the animated Spine Component. This is equivalent to SkeletonAnimatio...</div><div class="ttdef"><b>Definition:</b> <a href="_i_skeleton_animation_8cs_source.html#l00089">ISkeletonAnimation.cs:89</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_unity_1_1_i_animation_state_component_html"><div class="ttname"><a href="interface_spine_1_1_unity_1_1_i_animation_state_component.html">Spine.Unity.IAnimationStateComponent</a></div><div class="ttdoc">A Spine-Unity Component that uses a Spine.AnimationState to animate its skeleton.</div><div class="ttdef"><b>Definition:</b> <a href="_i_skeleton_animation_8cs_source.html#l00087">ISkeletonAnimation.cs:87</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_combined_skin_html_a1e943efea9745e2c892f687a0e1b136e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a1e943efea9745e2c892f687a0e1b136e">Spine.Unity.Examples.CombinedSkin.skinsToCombine</a></div><div class="ttdeci">List&lt; string &gt; skinsToCombine</div><div class="ttdef"><b>Definition:</b> <a href="_combined_skin_8cs_source.html#l00009">CombinedSkin.cs:9</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_combined_skin_html_a3539baea107da24fc66207f644b29b68"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#a3539baea107da24fc66207f644b29b68">Spine.Unity.Examples.CombinedSkin.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_combined_skin_8cs_source.html#l00013">CombinedSkin.cs:13</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_combined_skin_html_aa811c5d4ea56bfefdb0bf03c8e938533"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html#aa811c5d4ea56bfefdb0bf03c8e938533">Spine.Unity.Examples.CombinedSkin.combinedSkin</a></div><div class="ttdeci">Skin combinedSkin</div><div class="ttdef"><b>Definition:</b> <a href="_combined_skin_8cs_source.html#l00011">CombinedSkin.cs:11</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_skin_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_skin.html">Spine.Unity.SpineSkin</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00144">SpineAttributes.cs:144</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_modules_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_modules.html">Spine.Unity.Modules</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_tools_8cs_source.html#l00033">AttachmentTools.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_combined_skin_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_combined_skin.html">Spine.Unity.Examples.CombinedSkin</a></div><div class="ttdef"><b>Definition:</b> <a href="_combined_skin_8cs_source.html#l00007">CombinedSkin.cs:7</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_8d355f1d624c50c9e3eb2033d942fcf0.html">Sample Components</a></li><li class="navelem"><a class="el" href="_combined_skin_8cs.html">CombinedSkin.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

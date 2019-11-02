@@ -1,0 +1,453 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions}{}\doxysection{Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions}\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+
+
+Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a7e08d873bc9866c3e77dcbd3eb3735d1}{Get\+Region}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment)
+\begin{DoxyCompactList}\small\item\em Tries to get the region (image) of a renderable attachment. If the attachment is not renderable, it returns null. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab650fa688d7de6b3baa62a39269d155f}{Get\+Region}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment)
+\begin{DoxyCompactList}\small\item\em Gets the region (image) of a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_afdb9d48dcb61a2bcd3eecd7204048ff9}{Get\+Region}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} mesh\+Attachment)
+\begin{DoxyCompactList}\small\item\em Gets the region (image) of a \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_aa554499405a1f845977c2689d6c983da}{Set\+Region}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool update\+Offset=true)
+\begin{DoxyCompactList}\small\item\em Tries to set the region (image) of a renderable attachment. If the attachment is not renderable, nothing is applied. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a9189aa6ce1ba71184bdea931348f684d}{Set\+Region}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} attachment, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool update\+Offset=true)
+\begin{DoxyCompactList}\small\item\em Sets the region (image) of a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_abd054e6cf1a89d234a3bc48fd41eb28b}{Set\+Region}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} attachment, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool update\+U\+Vs=true)
+\begin{DoxyCompactList}\small\item\em Sets the region (image) of a \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a09650bee6f2296789ba19cdf323b5068}{To\+Region\+Attachment}} (this Sprite sprite, Material material, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} based on a sprite. This method creates a real, usable \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. That \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} uses a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} with the Material provided./// \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a932daada582d6f3b74a7294debcc4c42}{To\+Region\+Attachment}} (this Sprite sprite, \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} page, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} based on a sprite. This method creates a real, usable \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. That \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} uses the \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} provided./// \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ac5103d2f6c70e5da549290a55aa5325c}{To\+Region\+Attachment\+P\+M\+A\+Clone}} (this Sprite sprite, Shader shader, Texture\+Format texture\+Format=Atlas\+Utilities.\+Spine\+Texture\+Format, bool mipmaps=Atlas\+Utilities.\+Use\+Mip\+Maps, Material material\+Property\+Source=null, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate texture of the Sprite\textquotesingle{}s texture data. Returns a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} that uses it. Use this if you plan to use a premultiply alpha shader such as \char`\"{}\+Spine/\+Skeleton\char`\"{} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a3e8e08ec4a89a940cddb0c649affd674}{To\+Region\+Attachment\+P\+M\+A\+Clone}} (this Sprite sprite, Material material\+Property\+Source, Texture\+Format texture\+Format=Atlas\+Utilities.\+Spine\+Texture\+Format, bool mipmaps=Atlas\+Utilities.\+Use\+Mip\+Maps, float rotation=0f)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a4da7c720f19f8dc7f4fa905a6d8158b9}{To\+Region\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, string attachment\+Name, float scale=0.\+01f, float rotation=0f)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} from a given \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a978d4334d0feabdaa872898a54577110}{Set\+Scale}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment, Vector2 scale)
+\begin{DoxyCompactList}\small\item\em Sets the scale. Call region\+Attachment.\+Update\+Offset to apply the change. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a29e4494c9f52fce8445f611fc0eb51e9}{Set\+Scale}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment, float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the scale. Call region\+Attachment.\+Update\+Offset to apply the change. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab329f943984cfe7368706fa1113901a2}{Set\+Position\+Offset}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment, Vector2 offset)
+\begin{DoxyCompactList}\small\item\em Sets the position offset. Call region\+Attachment.\+Update\+Offset to apply the change. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a2024f8d321d1f3f327bea227b30f3e48}{Set\+Position\+Offset}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment, float x, float y)
+\begin{DoxyCompactList}\small\item\em Sets the position offset. Call region\+Attachment.\+Update\+Offset to apply the change. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a25b252a359f397994ba78a6dab49f266}{Set\+Rotation}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment, float rotation)
+\begin{DoxyCompactList}\small\item\em Sets the rotation. Call region\+Attachment.\+Update\+Offset to apply the change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Attachment\+Tools.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a7e08d873bc9866c3e77dcbd3eb3735d1}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a7e08d873bc9866c3e77dcbd3eb3735d1}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!GetRegion@{GetRegion}}
+\index{GetRegion@{GetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{GetRegion()}{GetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Get\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tries to get the region (image) of a renderable attachment. If the attachment is not renderable, it returns null. 
+
+
+
+Attachment\+Tools.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                                                          \{}
+\DoxyCodeLine{40             var renderableAttachment = attachment as IHasRendererObject;}
+\DoxyCodeLine{41             \textcolor{keywordflow}{if} (renderableAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{42                 \textcolor{keywordflow}{return} renderableAttachment.RendererObject as AtlasRegion;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_afdb9d48dcb61a2bcd3eecd7204048ff9}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_afdb9d48dcb61a2bcd3eecd7204048ff9}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!GetRegion@{GetRegion}}
+\index{GetRegion@{GetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{GetRegion()}{GetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Get\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{mesh\+Attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the region (image) of a \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} 
+
+
+
+Attachment\+Tools.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                                                                  \{}
+\DoxyCodeLine{54             \textcolor{keywordflow}{return} meshAttachment.RendererObject as AtlasRegion;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab650fa688d7de6b3baa62a39269d155f}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab650fa688d7de6b3baa62a39269d155f}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!GetRegion@{GetRegion}}
+\index{GetRegion@{GetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{GetRegion()}{GetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Get\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the region (image) of a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} 
+
+
+
+Attachment\+Tools.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                                                      \{}
+\DoxyCodeLine{49             \textcolor{keywordflow}{return} regionAttachment.RendererObject as AtlasRegion;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a2024f8d321d1f3f327bea227b30f3e48}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a2024f8d321d1f3f327bea227b30f3e48}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetPositionOffset@{SetPositionOffset}}
+\index{SetPositionOffset@{SetPositionOffset}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetPositionOffset()}{SetPositionOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Position\+Offset (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the position offset. Call region\+Attachment.\+Update\+Offset to apply the change. 
+
+
+
+Attachment\+Tools.\+cs 파일의 195 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196                                                                                                         \{}
+\DoxyCodeLine{197             regionAttachment.x = x;}
+\DoxyCodeLine{198             regionAttachment.y = y;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab329f943984cfe7368706fa1113901a2}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ab329f943984cfe7368706fa1113901a2}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetPositionOffset@{SetPositionOffset}}
+\index{SetPositionOffset@{SetPositionOffset}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetPositionOffset()}{SetPositionOffset()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Position\+Offset (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment,  }\item[{Vector2}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the position offset. Call region\+Attachment.\+Update\+Offset to apply the change. 
+
+
+
+Attachment\+Tools.\+cs 파일의 189 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{190                                                                                                       \{}
+\DoxyCodeLine{191             regionAttachment.x = offset.x;}
+\DoxyCodeLine{192             regionAttachment.y = offset.y;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_aa554499405a1f845977c2689d6c983da}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_aa554499405a1f845977c2689d6c983da}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetRegion@{SetRegion}}
+\index{SetRegion@{SetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetRegion()}{SetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{update\+Offset = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Tries to set the region (image) of a renderable attachment. If the attachment is not renderable, nothing is applied. 
+
+
+
+Attachment\+Tools.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                                                                                                 \{}
+\DoxyCodeLine{61             var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{63                 regionAttachment.SetRegion(region, updateOffset);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65             var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{67                 meshAttachment.SetRegion(region, updateOffset);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_abd054e6cf1a89d234a3bc48fd41eb28b}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_abd054e6cf1a89d234a3bc48fd41eb28b}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetRegion@{SetRegion}}
+\index{SetRegion@{SetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetRegion()}{SetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{update\+U\+Vs = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the region (image) of a \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} 
+
+
+
+Attachment\+Tools.\+cs 파일의 87 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{88                                                                                                                  \{}
+\DoxyCodeLine{89             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"region"}); }
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             \textcolor{comment}{// (AtlasAttachmentLoader.cs)}}
+\DoxyCodeLine{92             attachment.RendererObject = region;}
+\DoxyCodeLine{93             attachment.RegionU = region.u;}
+\DoxyCodeLine{94             attachment.RegionV = region.v;}
+\DoxyCodeLine{95             attachment.RegionU2 = region.u2;}
+\DoxyCodeLine{96             attachment.RegionV2 = region.v2;}
+\DoxyCodeLine{97             attachment.RegionRotate = region.rotate;}
+\DoxyCodeLine{98             attachment.regionOffsetX = region.offsetX;}
+\DoxyCodeLine{99             attachment.regionOffsetY = region.offsetY;}
+\DoxyCodeLine{100             attachment.regionWidth = region.width;}
+\DoxyCodeLine{101             attachment.regionHeight = region.height;}
+\DoxyCodeLine{102             attachment.regionOriginalWidth = region.originalWidth;}
+\DoxyCodeLine{103             attachment.regionOriginalHeight = region.originalHeight;}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             \textcolor{keywordflow}{if} (updateUVs) attachment.UpdateUVs();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a9189aa6ce1ba71184bdea931348f684d}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a9189aa6ce1ba71184bdea931348f684d}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetRegion@{SetRegion}}
+\index{SetRegion@{SetRegion}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetRegion()}{SetRegion()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Region (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{update\+Offset = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the region (image) of a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} 
+
+
+
+Attachment\+Tools.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71                                                                                                                       \{}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"region"}); }
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74             \textcolor{comment}{// (AtlasAttachmentLoader.cs)}}
+\DoxyCodeLine{75             attachment.RendererObject = region;}
+\DoxyCodeLine{76             attachment.SetUVs(region.u, region.v, region.u2, region.v2, region.rotate);}
+\DoxyCodeLine{77             attachment.regionOffsetX = region.offsetX;}
+\DoxyCodeLine{78             attachment.regionOffsetY = region.offsetY;}
+\DoxyCodeLine{79             attachment.regionWidth = region.width;}
+\DoxyCodeLine{80             attachment.regionHeight = region.height;}
+\DoxyCodeLine{81             attachment.regionOriginalWidth = region.originalWidth;}
+\DoxyCodeLine{82             attachment.regionOriginalHeight = region.originalHeight;}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             \textcolor{keywordflow}{if} (updateOffset) attachment.UpdateOffset();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a25b252a359f397994ba78a6dab49f266}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a25b252a359f397994ba78a6dab49f266}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Rotation (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment,  }\item[{float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the rotation. Call region\+Attachment.\+Update\+Offset to apply the change. 
+
+
+
+Attachment\+Tools.\+cs 파일의 201 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                                                                                 \{}
+\DoxyCodeLine{203             regionAttachment.rotation = rotation;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a29e4494c9f52fce8445f611fc0eb51e9}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a29e4494c9f52fce8445f611fc0eb51e9}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Scale (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the scale. Call region\+Attachment.\+Update\+Offset to apply the change. 
+
+
+
+Attachment\+Tools.\+cs 파일의 183 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184                                                                                                \{}
+\DoxyCodeLine{185             regionAttachment.scaleX = x;}
+\DoxyCodeLine{186             regionAttachment.scaleY = y;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a978d4334d0feabdaa872898a54577110}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a978d4334d0feabdaa872898a54577110}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+Set\+Scale (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment,  }\item[{Vector2}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets the scale. Call region\+Attachment.\+Update\+Offset to apply the change. 
+
+
+
+Attachment\+Tools.\+cs 파일의 177 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{178                                                                                             \{}
+\DoxyCodeLine{179             regionAttachment.scaleX = scale.x;}
+\DoxyCodeLine{180             regionAttachment.scaleY = scale.y;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a4da7c720f19f8dc7f4fa905a6d8158b9}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a4da7c720f19f8dc7f4fa905a6d8158b9}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!ToRegionAttachment@{ToRegionAttachment}}
+\index{ToRegionAttachment@{ToRegionAttachment}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{ToRegionAttachment()}{ToRegionAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+To\+Region\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{string}]{attachment\+Name,  }\item[{float}]{scale = {\ttfamily 0.01f},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a new \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} from a given \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. 
+
+
+
+Attachment\+Tools.\+cs 파일의 141 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{142                                                                                                                                                      \{}
+\DoxyCodeLine{143             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(attachmentName)) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentException(\textcolor{stringliteral}{"attachmentName can't be null or empty."}, \textcolor{stringliteral}{"attachmentName"});}
+\DoxyCodeLine{144             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"region"});}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146             \textcolor{comment}{// (AtlasAttachmentLoader.cs)}}
+\DoxyCodeLine{147             var attachment = \textcolor{keyword}{new} RegionAttachment(attachmentName);}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149             attachment.RendererObject = region;}
+\DoxyCodeLine{150             attachment.SetUVs(region.u, region.v, region.u2, region.v2, region.rotate);}
+\DoxyCodeLine{151             attachment.regionOffsetX = region.offsetX;}
+\DoxyCodeLine{152             attachment.regionOffsetY = region.offsetY;}
+\DoxyCodeLine{153             attachment.regionWidth = region.width;}
+\DoxyCodeLine{154             attachment.regionHeight = region.height;}
+\DoxyCodeLine{155             attachment.regionOriginalWidth = region.originalWidth;}
+\DoxyCodeLine{156             attachment.regionOriginalHeight = region.originalHeight;}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158             attachment.Path = region.name;}
+\DoxyCodeLine{159             attachment.scaleX = 1;}
+\DoxyCodeLine{160             attachment.scaleY = 1;}
+\DoxyCodeLine{161             attachment.rotation = rotation;}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163             attachment.r = 1;}
+\DoxyCodeLine{164             attachment.g = 1;}
+\DoxyCodeLine{165             attachment.b = 1;}
+\DoxyCodeLine{166             attachment.a = 1;}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \textcolor{comment}{// pass OriginalWidth and OriginalHeight because UpdateOffset uses it in its calculation.}}
+\DoxyCodeLine{169             attachment.width = attachment.regionOriginalWidth * scale;}
+\DoxyCodeLine{170             attachment.height = attachment.regionOriginalHeight * scale;}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172             attachment.SetColor(Color.white);}
+\DoxyCodeLine{173             attachment.UpdateOffset();}
+\DoxyCodeLine{174             \textcolor{keywordflow}{return} attachment;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a932daada582d6f3b74a7294debcc4c42}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a932daada582d6f3b74a7294debcc4c42}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!ToRegionAttachment@{ToRegionAttachment}}
+\index{ToRegionAttachment@{ToRegionAttachment}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{ToRegionAttachment()}{ToRegionAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+To\+Region\+Attachment (\begin{DoxyParamCaption}\item[{this Sprite}]{sprite,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}}]{page,  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} based on a sprite. This method creates a real, usable \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. That \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} uses the \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} provided./// 
+
+
+
+Attachment\+Tools.\+cs 파일의 117 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{118                                                                                                                     \{}
+\DoxyCodeLine{119             \textcolor{keywordflow}{if} (sprite == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"sprite"});}
+\DoxyCodeLine{120             \textcolor{keywordflow}{if} (page == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"page"});}
+\DoxyCodeLine{121             var region = sprite.ToAtlasRegion(page);}
+\DoxyCodeLine{122             var unitsPerPixel = 1f / sprite.pixelsPerUnit;}
+\DoxyCodeLine{123             \textcolor{keywordflow}{return} region.ToRegionAttachment(sprite.name, unitsPerPixel, rotation);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a09650bee6f2296789ba19cdf323b5068}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a09650bee6f2296789ba19cdf323b5068}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!ToRegionAttachment@{ToRegionAttachment}}
+\index{ToRegionAttachment@{ToRegionAttachment}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{ToRegionAttachment()}{ToRegionAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+To\+Region\+Attachment (\begin{DoxyParamCaption}\item[{this Sprite}]{sprite,  }\item[{Material}]{material,  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} based on a sprite. This method creates a real, usable \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}. That \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} uses a new \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} with the Material provided./// 
+
+
+
+Attachment\+Tools.\+cs 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112                                                                                                                        \{}
+\DoxyCodeLine{113             \textcolor{keywordflow}{return} sprite.ToRegionAttachment(material.ToSpineAtlasPage(), rotation);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a3e8e08ec4a89a940cddb0c649affd674}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_a3e8e08ec4a89a940cddb0c649affd674}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!ToRegionAttachmentPMAClone@{ToRegionAttachmentPMAClone}}
+\index{ToRegionAttachmentPMAClone@{ToRegionAttachmentPMAClone}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{ToRegionAttachmentPMAClone()}{ToRegionAttachmentPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+To\+Region\+Attachment\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Sprite}]{sprite,  }\item[{Material}]{material\+Property\+Source,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily AtlasUtilities.SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily AtlasUtilities.UseMipMaps},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 135 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136                                                                                                                                                                                                                                                         \{}
+\DoxyCodeLine{137             \textcolor{keywordflow}{return} sprite.ToRegionAttachmentPMAClone(materialPropertySource.shader, textureFormat, mipmaps, materialPropertySource, rotation);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ac5103d2f6c70e5da549290a55aa5325c}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_region_extensions_ac5103d2f6c70e5da549290a55aa5325c}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}!ToRegionAttachmentPMAClone@{ToRegionAttachmentPMAClone}}
+\index{ToRegionAttachmentPMAClone@{ToRegionAttachmentPMAClone}!Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions}}
+\doxysubsubsection{\texorpdfstring{ToRegionAttachmentPMAClone()}{ToRegionAttachmentPMAClone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Region\+Extensions.\+To\+Region\+Attachment\+P\+M\+A\+Clone (\begin{DoxyParamCaption}\item[{this Sprite}]{sprite,  }\item[{Shader}]{shader,  }\item[{Texture\+Format}]{texture\+Format = {\ttfamily AtlasUtilities.SpineTextureFormat},  }\item[{bool}]{mipmaps = {\ttfamily AtlasUtilities.UseMipMaps},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null},  }\item[{float}]{rotation = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a \mbox{\hyperlink{class_spine_1_1_atlas_region}{Spine.\+Atlas\+Region}} that uses a premultiplied alpha duplicate texture of the Sprite\textquotesingle{}s texture data. Returns a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} that uses it. Use this if you plan to use a premultiply alpha shader such as \char`\"{}\+Spine/\+Skeleton\char`\"{} 
+
+
+
+Attachment\+Tools.\+cs 파일의 127 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128                                                                                                                                                                                                                                                                               \{}
+\DoxyCodeLine{129             \textcolor{keywordflow}{if} (sprite == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"sprite"});}
+\DoxyCodeLine{130             \textcolor{keywordflow}{if} (shader == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"shader"});}
+\DoxyCodeLine{131             var region = sprite.ToAtlasRegionPMAClone(shader, textureFormat, mipmaps, materialPropertySource);}
+\DoxyCodeLine{132             var unitsPerPixel = 1f / sprite.pixelsPerUnit;}
+\DoxyCodeLine{133             \textcolor{keywordflow}{return} region.ToRegionAttachment(sprite.name, unitsPerPixel, rotation);}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Attachment\+Tools/\mbox{\hyperlink{_attachment_tools_8cs}{Attachment\+Tools.\+cs}}\end{DoxyCompactItemize}

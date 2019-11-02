@@ -1,0 +1,33 @@
+digraph "Spine.Unity.Examples.DataAssetsFromExportsExample.Start"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Data\lAssetsFromExportsExample.Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Examples.Data\lAssetsFromExportsExample.Create\lRuntimeAssetsAndGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#a58816c24ac149c1a22d998a5c444aa38",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.AtlasAsset.Create\lRuntimeInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_atlas_asset.html#ab10ec39778cb41ce637494206afc925e",tooltip="Creates a runtime AtlasAsset"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.SkeletonData\lAsset.CreateRuntimeInstance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a7e7c2b66ef726e11e5a9536b03d5884a",tooltip="Creates a runtime SkeletonDataAsset."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.SkeletonData\lAsset.GetSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.SkeletonData\lAsset.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a0609f106c8b6f209cdcc696dc7ef5361",tooltip=" "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.SkeletonData\lAsset.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a36c686acb39535dbb13d1a55692b0f04",tooltip=" "];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.SkeletonAnimation.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a6c87e552fabe217a7292a78f9d6919dc",tooltip="Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects a..."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.SkeletonAnimation.\lNewSkeletonAnimationGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e",tooltip="Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it."];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Skeleton.SetSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#af80bbbc3b2b5d588152eba7e83430dc8",tooltip="Sets a skin by name (see SetSkin)."];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.Skeleton.SetSlotsTo\lSetupPose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#a8018f6075e7578e9bccf1cd81c92f904",tooltip=" "];
+  Node11 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.ExposedList.Add",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#af1b402437b46a187ebc58bc9f200689b",tooltip=" "];
+  Node11 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+}

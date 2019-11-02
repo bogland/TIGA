@@ -1,0 +1,512 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor}{}\doxysection{Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor}\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+
+
+Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a7fc61d9b65e5fed582405b49718b2f7b}{On\+Inspector\+G\+UI}} ()
+\item 
+override bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a6514cf3f1d02edcb0afa094bfcedcbe4}{Has\+Preview\+G\+UI}} ()
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a57a64f08f2b766050abadfea35a281e3}{On\+Interactive\+Preview\+G\+UI}} (Rect r, G\+U\+I\+Style background)
+\item 
+override G\+U\+I\+Content \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ad18722f0f9ec4a83a1cd81b51c2b846a}{Get\+Preview\+Title}} ()
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3d6e2084cb2f8a9ca7aab6fe4da7b762}{On\+Preview\+Settings}} ()
+\item 
+override Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acfec9d5216afe015402a19eae14c0a78}{Render\+Static\+Preview}} (string asset\+Path, Unity\+Engine.\+Object\mbox{[}$\,$\mbox{]} sub\+Assets, int width, int height)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a568d60e5f89cf1ac193380aa00ea16fa}{This\+Animation\+Reference\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{This\+Skeleton\+Data\+Asset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a32843292b43defc4150bfe152e34e33d}{This\+Animation\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a93f7019dde94010f85421288d951e6}{Target\+Asset\+G\+U\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a98aba219fcd51708d0c2bca903c9dd22}{Last\+Skin\+Key}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a109fd369b25250796c6bde75f40fb6}{Last\+Skin\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ae4db32c461ae55cf9b48561b0961f71e}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ac98f2ce1c7995a965577defcab851fc0}{On\+Destroy}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1a3eced0e797b90938ec68be0f0e4c52}{Handle\+On\+Enable\+Preview}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_afd20568440c6ff56767ac45802669ef9}{Handle\+On\+Skin\+Changed}} (string skin\+Name)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4915d883cf5374a9cfad1cee87bcd523}{Handle\+On\+Destroy\+Preview}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly Skeleton\+Inspector\+Preview \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}} = new Skeleton\+Inspector\+Preview()
+\item 
+Field\+Info \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ade9a5eeef7e8813045e043b8440bc8d2}{skeleton\+Data\+Asset\+Field}} = typeof(\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}}).Get\+Field(\char`\"{}skeleton\+Data\+Asset\char`\"{}, Binding\+Flags.\+Non\+Public $\vert$ Binding\+Flags.\+Instance)
+\item 
+Field\+Info \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a303c2517221816796f27dfcbf7ef3dd7}{name\+Field}} = typeof(\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}}).Get\+Field(\char`\"{}animation\+Name\char`\"{}, Binding\+Flags.\+Non\+Public $\vert$ Binding\+Flags.\+Instance)
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}{change\+Next\+Frame}} = false
+\item 
+Serialized\+Property \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animation\+Name\+Property}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a23c6d24b9273c149600b4fd4c0f30b2c}{last\+Skeleton\+Data\+Asset}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3dbeb0f14c3cd6b4042ae5e45ac16f59}{Inspector\+Help\+Text}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ad18722f0f9ec4a83a1cd81b51c2b846a}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ad18722f0f9ec4a83a1cd81b51c2b846a}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!GetPreviewTitle@{GetPreviewTitle}}
+\index{GetPreviewTitle@{GetPreviewTitle}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{GetPreviewTitle()}{GetPreviewTitle()}}
+{\footnotesize\ttfamily override G\+U\+I\+Content Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Get\+Preview\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 159 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Preview"}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4915d883cf5374a9cfad1cee87bcd523}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4915d883cf5374a9cfad1cee87bcd523}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!HandleOnDestroyPreview@{HandleOnDestroyPreview}}
+\index{HandleOnDestroyPreview@{HandleOnDestroyPreview}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{HandleOnDestroyPreview()}{HandleOnDestroyPreview()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Handle\+On\+Destroy\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 144 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145                                        \{}
+\DoxyCodeLine{146             EditorApplication.update -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.HandleEditorUpdate;}
+\DoxyCodeLine{147             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.OnDestroy();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1a3eced0e797b90938ec68be0f0e4c52}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1a3eced0e797b90938ec68be0f0e4c52}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!HandleOnEnablePreview@{HandleOnEnablePreview}}
+\index{HandleOnEnablePreview@{HandleOnEnablePreview}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{HandleOnEnablePreview()}{HandleOnEnablePreview()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Handle\+On\+Enable\+Preview (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 130 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{131                                       \{}
+\DoxyCodeLine{132             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.Initialize(this.Repaint, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a109fd369b25250796c6bde75f40fb6}{LastSkinName}});}
+\DoxyCodeLine{133             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.PlayPauseAnimation(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a32843292b43defc4150bfe152e34e33d}{ThisAnimationName}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{134             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.OnSkinChanged -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_afd20568440c6ff56767ac45802669ef9}{HandleOnSkinChanged}};}
+\DoxyCodeLine{135             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.OnSkinChanged += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_afd20568440c6ff56767ac45802669ef9}{HandleOnSkinChanged}};}
+\DoxyCodeLine{136             EditorApplication.update -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.HandleEditorUpdate;}
+\DoxyCodeLine{137             EditorApplication.update += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.HandleEditorUpdate;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_afd20568440c6ff56767ac45802669ef9}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_afd20568440c6ff56767ac45802669ef9}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!HandleOnSkinChanged@{HandleOnSkinChanged}}
+\index{HandleOnSkinChanged@{HandleOnSkinChanged}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{HandleOnSkinChanged()}{HandleOnSkinChanged()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Handle\+On\+Skin\+Changed (\begin{DoxyParamCaption}\item[{string}]{skin\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 139 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{140                                                            \{}
+\DoxyCodeLine{141             EditorPrefs.SetString(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a98aba219fcd51708d0c2bca903c9dd22}{LastSkinKey}}, skinName);}
+\DoxyCodeLine{142             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.PlayPauseAnimation(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a32843292b43defc4150bfe152e34e33d}{ThisAnimationName}}, \textcolor{keyword}{true});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a6514cf3f1d02edcb0afa094bfcedcbe4}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a6514cf3f1d02edcb0afa094bfcedcbe4}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!HasPreviewGUI@{HasPreviewGUI}}
+\index{HasPreviewGUI@{HasPreviewGUI}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{HasPreviewGUI()}{HasPreviewGUI()}}
+{\footnotesize\ttfamily override bool Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Has\+Preview\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 149 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150                                               \{}
+\DoxyCodeLine{151             \textcolor{keywordflow}{if} (serializedObject.isEditingMultipleObjects) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{152             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{true}) != \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ac98f2ce1c7995a965577defcab851fc0}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ac98f2ce1c7995a965577defcab851fc0}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1a3eced0e797b90938ec68be0f0e4c52}{HandleOnEnablePreview}}(); \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ae4db32c461ae55cf9b48561b0961f71e}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ae4db32c461ae55cf9b48561b0961f71e}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60 \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1a3eced0e797b90938ec68be0f0e4c52}{HandleOnEnablePreview}}(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a7fc61d9b65e5fed582405b49718b2f7b}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a7fc61d9b65e5fed582405b49718b2f7b}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!OnInspectorGUI@{OnInspectorGUI}}
+\index{OnInspectorGUI@{OnInspectorGUI}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{OnInspectorGUI()}{OnInspectorGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+On\+Inspector\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                                \{}
+\DoxyCodeLine{64             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}} ?? serializedObject.FindProperty(\textcolor{stringliteral}{"animationName"});}
+\DoxyCodeLine{65             \textcolor{keywordtype}{string} animationName = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}}.stringValue;}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}} animation = \textcolor{keyword}{null};}
+\DoxyCodeLine{68             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{69                 var skeletonData = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{70                 \textcolor{keywordflow}{if} (skeletonData != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{71                     animation = skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(animationName);}
+\DoxyCodeLine{72                 \}}
+\DoxyCodeLine{73             \} }
+\DoxyCodeLine{74             \textcolor{keywordtype}{bool} animationNotFound = (animation == \textcolor{keyword}{null});}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}{changeNextFrame}}) \{}
+\DoxyCodeLine{77                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}{changeNextFrame}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{78                 }
+\DoxyCodeLine{79                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}} != \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a23c6d24b9273c149600b4fd4c0f30b2c}{lastSkeletonDataAsset}}) \{}
+\DoxyCodeLine{80                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.Clear();}
+\DoxyCodeLine{81                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.Initialize(Repaint, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a109fd369b25250796c6bde75f40fb6}{LastSkinName}});}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83                     \textcolor{keywordflow}{if} (animationNotFound) \{}
+\DoxyCodeLine{84                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}}.stringValue = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{85                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.ClearAnimationSetupPose();}
+\DoxyCodeLine{86                     \}}
+\DoxyCodeLine{87                 \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.ClearAnimationSetupPose();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91                 \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}}.stringValue))}
+\DoxyCodeLine{92                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.PlayPauseAnimation(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}}.stringValue, \textcolor{keyword}{true});}
+\DoxyCodeLine{93             \}}
+\DoxyCodeLine{94             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a23c6d24b9273c149600b4fd4c0f30b2c}{lastSkeletonDataAsset}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{comment}{//EditorGUILayout.HelpBox(AnimationReferenceAssetEditor.InspectorHelpText, MessageType.Info, true);}}
+\DoxyCodeLine{97             EditorGUILayout.Space();}
+\DoxyCodeLine{98             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{99             DrawDefaultInspector();}
+\DoxyCodeLine{100             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{101                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}{changeNextFrame}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{102             \}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             \textcolor{comment}{// Draw extra info below default inspector.}}
+\DoxyCodeLine{105             EditorGUILayout.Space();}
+\DoxyCodeLine{106             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{107                 EditorGUILayout.HelpBox(\textcolor{stringliteral}{"SkeletonDataAsset is missing."}, MessageType.Error);}
+\DoxyCodeLine{108             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(animationName)) \{}
+\DoxyCodeLine{109                 EditorGUILayout.HelpBox(\textcolor{stringliteral}{"No animation selected."}, MessageType.Warning);}
+\DoxyCodeLine{110             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (animationNotFound) \{}
+\DoxyCodeLine{111                 EditorGUILayout.HelpBox(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Animation named \{0\} was not found for this Skeleton."}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}{animationNameProperty}}.stringValue), MessageType.Warning);}
+\DoxyCodeLine{112             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{113                 \textcolor{keyword}{using} (\textcolor{keyword}{new} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.BoxScope()) \{}
+\DoxyCodeLine{114                     \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.Equals(SpineEditorUtilities.GetPathSafeName(animationName), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a568d60e5f89cf1ac193380aa00ea16fa}{ThisAnimationReferenceAsset}}.name, System.StringComparison.OrdinalIgnoreCase))}
+\DoxyCodeLine{115                         EditorGUILayout.HelpBox(\textcolor{stringliteral}{"Animation name value does not match this asset's name. Inspectors using this asset may be misleading."}, MessageType.None);}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117                     EditorGUILayout.LabelField(\mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(animationName, SpineEditorUtilities.Icons.animation));}
+\DoxyCodeLine{118                     \textcolor{keywordflow}{if} (animation != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{119                         EditorGUILayout.LabelField(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Timelines: \{0\}"}, animation.Timelines.Count));}
+\DoxyCodeLine{120                         EditorGUILayout.LabelField(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Duration: \{0\} sec"}, animation.Duration));}
+\DoxyCodeLine{121                     \}}
+\DoxyCodeLine{122                 \}}
+\DoxyCodeLine{123             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a57a64f08f2b766050abadfea35a281e3}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a57a64f08f2b766050abadfea35a281e3}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!OnInteractivePreviewGUI@{OnInteractivePreviewGUI}}
+\index{OnInteractivePreviewGUI@{OnInteractivePreviewGUI}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{OnInteractivePreviewGUI()}{OnInteractivePreviewGUI()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+On\+Interactive\+Preview\+G\+UI (\begin{DoxyParamCaption}\item[{Rect}]{r,  }\item[{G\+U\+I\+Style}]{background }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 154 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155                                                                                    \{}
+\DoxyCodeLine{156             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.Initialize(this.Repaint, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}});}
+\DoxyCodeLine{157             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.HandleInteractivePreviewGUI(r, background);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3d6e2084cb2f8a9ca7aab6fe4da7b762}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3d6e2084cb2f8a9ca7aab6fe4da7b762}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!OnPreviewSettings@{OnPreviewSettings}}
+\index{OnPreviewSettings@{OnPreviewSettings}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{OnPreviewSettings()}{OnPreviewSettings()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+On\+Preview\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 160 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{160 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_spine_sprite_shader_g_u_i_8cs_a3acbe68ddc0d60d9ebf94c98daea5efc}{SpineInspectorUtility}}.TempContent(\textcolor{stringliteral}{"Preview"}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acfec9d5216afe015402a19eae14c0a78}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acfec9d5216afe015402a19eae14c0a78}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!RenderStaticPreview@{RenderStaticPreview}}
+\index{RenderStaticPreview@{RenderStaticPreview}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{RenderStaticPreview()}{RenderStaticPreview()}}
+{\footnotesize\ttfamily override Texture2D Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Render\+Static\+Preview (\begin{DoxyParamCaption}\item[{string}]{asset\+Path,  }\item[{Unity\+Engine.\+Object\mbox{[}$\,$\mbox{]}}]{sub\+Assets,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 161 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{161 \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}{preview}}.HandleDrawSettings(); \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a1da02209b2905b56b79f9db32c604f93}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!animationNameProperty@{animationNameProperty}}
+\index{animationNameProperty@{animationNameProperty}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{animationNameProperty}{animationNameProperty}}
+{\footnotesize\ttfamily Serialized\+Property Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+animation\+Name\+Property\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a10b2919d16eebedf1794c575da0352a2}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!changeNextFrame@{changeNextFrame}}
+\index{changeNextFrame@{changeNextFrame}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{changeNextFrame}{changeNextFrame}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+change\+Next\+Frame = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3dbeb0f14c3cd6b4042ae5e45ac16f59}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a3dbeb0f14c3cd6b4042ae5e45ac16f59}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!InspectorHelpText@{InspectorHelpText}}
+\index{InspectorHelpText@{InspectorHelpText}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{InspectorHelpText}{InspectorHelpText}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Inspector\+Help\+Text\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries 초기값\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{stringliteral}{"This is a Spine-\/Unity Animation Reference Asset. It serializes a reference to a SkeletonDataAsset and an animationName. It does not contain actual animation data. At runtime, it stores a reference to a Spine.Animation.\(\backslash\)n\(\backslash\)n"} +}
+\DoxyCodeLine{                \textcolor{stringliteral}{"You can use this in your AnimationState calls instead of a string animation name or a Spine.Animation reference. Use its implicit conversion into Spine.Animation or its .Animation property.\(\backslash\)n\(\backslash\)n"} +}
+\DoxyCodeLine{                \textcolor{stringliteral}{"Use AnimationReferenceAssets as an alternative to storing strings or finding animations and caching per component. This only does the lookup by string once, and allows you to store and manage animations via asset references."}}
+
+\end{DoxyCode}
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a23c6d24b9273c149600b4fd4c0f30b2c}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a23c6d24b9273c149600b4fd4c0f30b2c}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!lastSkeletonDataAsset@{lastSkeletonDataAsset}}
+\index{lastSkeletonDataAsset@{lastSkeletonDataAsset}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{lastSkeletonDataAsset}{lastSkeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+last\+Skeleton\+Data\+Asset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a303c2517221816796f27dfcbf7ef3dd7}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a303c2517221816796f27dfcbf7ef3dd7}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!nameField@{nameField}}
+\index{nameField@{nameField}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{nameField}{nameField}}
+{\footnotesize\ttfamily Field\+Info Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+name\+Field = typeof(\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}}).Get\+Field(\char`\"{}animation\+Name\char`\"{}, Binding\+Flags.\+Non\+Public $\vert$ Binding\+Flags.\+Instance)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a21881dba31ca07be0f3c07a4d8ceaec4}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!preview@{preview}}
+\index{preview@{preview}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{preview}{preview}}
+{\footnotesize\ttfamily readonly Skeleton\+Inspector\+Preview Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+preview = new Skeleton\+Inspector\+Preview()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ade9a5eeef7e8813045e043b8440bc8d2}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ade9a5eeef7e8813045e043b8440bc8d2}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!skeletonDataAssetField@{skeletonDataAssetField}}
+\index{skeletonDataAssetField@{skeletonDataAssetField}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{skeletonDataAssetField}{skeletonDataAssetField}}
+{\footnotesize\ttfamily Field\+Info Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+skeleton\+Data\+Asset\+Field = typeof(\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}}).Get\+Field(\char`\"{}skeleton\+Data\+Asset\char`\"{}, Binding\+Flags.\+Non\+Public $\vert$ Binding\+Flags.\+Instance)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a98aba219fcd51708d0c2bca903c9dd22}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a98aba219fcd51708d0c2bca903c9dd22}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!LastSkinKey@{LastSkinKey}}
+\index{LastSkinKey@{LastSkinKey}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{LastSkinKey}{LastSkinKey}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Last\+Skin\+Key\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 127 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}})); \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a109fd369b25250796c6bde75f40fb6}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a109fd369b25250796c6bde75f40fb6}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!LastSkinName@{LastSkinName}}
+\index{LastSkinName@{LastSkinName}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{LastSkinName}{LastSkinName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Last\+Skin\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 128 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a93f7019dde94010f85421288d951e6}{TargetAssetGUID}} + \textcolor{stringliteral}{"\_lastSkin"}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a93f7019dde94010f85421288d951e6}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a4a93f7019dde94010f85421288d951e6}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!TargetAssetGUID@{TargetAssetGUID}}
+\index{TargetAssetGUID@{TargetAssetGUID}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{TargetAssetGUID}{TargetAssetGUID}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+Target\+Asset\+G\+U\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 126 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{127 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}{ThisSkeletonDataAsset}})); \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a32843292b43defc4150bfe152e34e33d}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a32843292b43defc4150bfe152e34e33d}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!ThisAnimationName@{ThisAnimationName}}
+\index{ThisAnimationName@{ThisAnimationName}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{ThisAnimationName}{ThisAnimationName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+This\+Animation\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_ade9a5eeef7e8813045e043b8440bc8d2}{skeletonDataAssetField}}.GetValue(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a568d60e5f89cf1ac193380aa00ea16fa}{ThisAnimationReferenceAsset}}) as SkeletonDataAsset; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a568d60e5f89cf1ac193380aa00ea16fa}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_a568d60e5f89cf1ac193380aa00ea16fa}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!ThisAnimationReferenceAsset@{ThisAnimationReferenceAsset}}
+\index{ThisAnimationReferenceAsset@{ThisAnimationReferenceAsset}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{ThisAnimationReferenceAsset}{ThisAnimationReferenceAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+This\+Animation\+Reference\+Asset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target as AnimationReferenceAsset; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}\label{class_spine_1_1_unity_1_1_editor_1_1_animation_reference_asset_editor_acbee9f7d17b11062ec232b34c5246c61}} 
+\index{Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}!ThisSkeletonDataAsset@{ThisSkeletonDataAsset}}
+\index{ThisSkeletonDataAsset@{ThisSkeletonDataAsset}!Spine.Unity.Editor.AnimationReferenceAssetEditor@{Spine.Unity.Editor.AnimationReferenceAssetEditor}}
+\doxysubsubsection{\texorpdfstring{ThisSkeletonDataAsset}{ThisSkeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Editor.\+Animation\+Reference\+Asset\+Editor.\+This\+Skeleton\+Data\+Asset\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Animation\+Reference\+Asset\+Editor.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target as AnimationReferenceAsset; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_animation_reference_asset_editor_8cs}{Animation\+Reference\+Asset\+Editor.\+cs}}\end{DoxyCompactItemize}

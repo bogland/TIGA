@@ -1,0 +1,309 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities}{}\doxysection{Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities}\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+
+
+Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a4009e4411ec97e143593508e601913e6}{Unshare\+Skin}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, bool include\+Default\+Skin, bool unshare\+Attachments, \mbox{\hyperlink{namespace_spine_1_1_unity_af8b1ef8c88ab61e80cadb65a72f955b4}{Animation\+State}} state=null)
+\begin{DoxyCompactList}\small\item\em Convenience method for duplicating a skeleton\textquotesingle{}s current active skin so changes to it will not affect other skeleton instances. . \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a2266319a3444c233db411f2553421259}{Get\+Cloned\+Skin}} (this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, string new\+Skin\+Name, bool include\+Default\+Skin=false, bool clone\+Attachments=false, bool clone\+Meshes\+As\+Linked=true)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a96f1fe52686924847ccb6178d7a1f3a5}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} original)
+\begin{DoxyCompactList}\small\item\em Gets a shallow copy of the skin. The cloned skin\textquotesingle{}s attachments are shared with the original skin. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_acb96f6cf823ad5e77a475737990a40f6}{Set\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string slot\+Name, string key\+Name, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\begin{DoxyCompactList}\small\item\em Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a0ee5f5d1528e0e2b26882c08b3aca5d4}{Get\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string slot\+Name, string key\+Name, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\begin{DoxyCompactList}\small\item\em Gets an attachment from the skin for the specified slot index and name. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a951792eaccaad08eb4e98250aebfe8d2}{Set\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, int slot\+Index, string key\+Name, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment)
+\begin{DoxyCompactList}\small\item\em Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a09c0e007d79c5b5c15d86a50aac856af}{Remove\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string slot\+Name, string key\+Name, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\begin{DoxyCompactList}\small\item\em Removes the attachment. Returns true if the element is successfully found and removed; otherwise, false. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a1b169a7675cbc189acafb68d6b4c8e4d}{Remove\+Attachment}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, int slot\+Index, string key\+Name)
+\begin{DoxyCompactList}\small\item\em Removes the attachment. Returns true if the element is successfully found and removed; otherwise, false. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a5d9384fc4938147feed5d8c0e57dfc04}{Clear}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a373ec4789217b1c80ef6ca027af7b6f3}{Append}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} destination, \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} source)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a43c5220aba78d5168a72c0d256ac5f70}{Copy\+To}} (this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} source, \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} destination, bool overwrite, bool clone\+Attachments, bool clone\+Meshes\+As\+Linked=true)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Attachment\+Tools.\+cs 파일의 756 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a373ec4789217b1c80ef6ca027af7b6f3}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a373ec4789217b1c80ef6ca027af7b6f3}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!Append@{Append}}
+\index{Append@{Append}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Append (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{destination,  }\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{source }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 841 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{842                                                                        \{}
+\DoxyCodeLine{843             source.CopyTo(destination, \textcolor{keyword}{true}, \textcolor{keyword}{false});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a5d9384fc4938147feed5d8c0e57dfc04}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a5d9384fc4938147feed5d8c0e57dfc04}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Clear (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 837 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{838                                                   \{}
+\DoxyCodeLine{839             skin.Attachments.Clear();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a43c5220aba78d5168a72c0d256ac5f70}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a43c5220aba78d5168a72c0d256ac5f70}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Copy\+To (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{source,  }\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{destination,  }\item[{bool}]{overwrite,  }\item[{bool}]{clone\+Attachments,  }\item[{bool}]{clone\+Meshes\+As\+Linked = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 845 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{846                                                                                                                                                \{}
+\DoxyCodeLine{847             var sourceAttachments = source.Attachments;}
+\DoxyCodeLine{848             var destinationAttachments = destination.Attachments;}
+\DoxyCodeLine{849 }
+\DoxyCodeLine{850             \textcolor{keywordflow}{if} (cloneAttachments) \{}
+\DoxyCodeLine{851                 \textcolor{keywordflow}{if} (overwrite) \{}
+\DoxyCodeLine{852                     \textcolor{keywordflow}{foreach} (var e \textcolor{keywordflow}{in} sourceAttachments)}
+\DoxyCodeLine{853                         destinationAttachments[e.Key] = e.Value.GetClone(cloneMeshesAsLinked);}
+\DoxyCodeLine{854                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{855                     \textcolor{keywordflow}{foreach} (var e \textcolor{keywordflow}{in} sourceAttachments) \{}
+\DoxyCodeLine{856                         \textcolor{keywordflow}{if} (destinationAttachments.ContainsKey(e.Key)) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{857                         destinationAttachments.Add(e.Key, e.Value.GetClone(cloneMeshesAsLinked));}
+\DoxyCodeLine{858                     \}}
+\DoxyCodeLine{859                 \}}
+\DoxyCodeLine{860             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{861                 \textcolor{keywordflow}{if} (overwrite) \{}
+\DoxyCodeLine{862                     \textcolor{keywordflow}{foreach} (var e \textcolor{keywordflow}{in} sourceAttachments)}
+\DoxyCodeLine{863                         destinationAttachments[e.Key] = e.Value;}
+\DoxyCodeLine{864                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{865                     \textcolor{keywordflow}{foreach} (var e \textcolor{keywordflow}{in} sourceAttachments) \{}
+\DoxyCodeLine{866                         \textcolor{keywordflow}{if} (destinationAttachments.ContainsKey(e.Key)) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{867                         destinationAttachments.Add(e.Key, e.Value);}
+\DoxyCodeLine{868                     \}}
+\DoxyCodeLine{869                 \}}
+\DoxyCodeLine{870             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a0ee5f5d1528e0e2b26882c08b3aca5d4}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a0ee5f5d1528e0e2b26882c08b3aca5d4}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!GetAttachment@{GetAttachment}}
+\index{GetAttachment@{GetAttachment}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{GetAttachment()}{GetAttachment()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Get\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{slot\+Name,  }\item[{string}]{key\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets an attachment from the skin for the specified slot index and name. 
+
+
+
+Attachment\+Tools.\+cs 파일의 812 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{813                                                                                                                     \{}
+\DoxyCodeLine{814             \textcolor{keywordtype}{int} slotIndex = skeleton.FindSlotIndex(slotName);}
+\DoxyCodeLine{815             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{816             \textcolor{keywordflow}{if} (slotIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentException(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Slot '\{0\}' does not exist in skeleton."}, slotName), \textcolor{stringliteral}{"slotName"});}
+\DoxyCodeLine{817             \textcolor{keywordflow}{return} skin.GetAttachment(slotIndex, keyName);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a96f1fe52686924847ccb6178d7a1f3a5}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a96f1fe52686924847ccb6178d7a1f3a5}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a shallow copy of the skin. The cloned skin\textquotesingle{}s attachments are shared with the original skin. 
+
+
+
+Attachment\+Tools.\+cs 파일의 793 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{794                                                          \{}
+\DoxyCodeLine{795             var newSkin = \textcolor{keyword}{new} Skin(original.name + \textcolor{stringliteral}{" clone"});}
+\DoxyCodeLine{796             var newSkinAttachments = newSkin.Attachments;}
+\DoxyCodeLine{797 }
+\DoxyCodeLine{798             \textcolor{keywordflow}{foreach} (var a \textcolor{keywordflow}{in} original.Attachments)}
+\DoxyCodeLine{799                 newSkinAttachments[a.Key] = a.Value;}
+\DoxyCodeLine{800 }
+\DoxyCodeLine{801             \textcolor{keywordflow}{return} newSkin;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a2266319a3444c233db411f2553421259}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a2266319a3444c233db411f2553421259}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!GetClonedSkin@{GetClonedSkin}}
+\index{GetClonedSkin@{GetClonedSkin}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{GetClonedSkin()}{GetClonedSkin()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Get\+Cloned\+Skin (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{string}]{new\+Skin\+Name,  }\item[{bool}]{include\+Default\+Skin = {\ttfamily false},  }\item[{bool}]{clone\+Attachments = {\ttfamily false},  }\item[{bool}]{clone\+Meshes\+As\+Linked = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 776 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{777                                                                                                                                                                                        \{}
+\DoxyCodeLine{778             var newSkin = \textcolor{keyword}{new} Skin(newSkinName); \textcolor{comment}{// may have null name. Harmless.}}
+\DoxyCodeLine{779             var defaultSkin = skeleton.data.DefaultSkin;}
+\DoxyCodeLine{780             var activeSkin = skeleton.skin;}
+\DoxyCodeLine{781 }
+\DoxyCodeLine{782             \textcolor{keywordflow}{if} (includeDefaultSkin)}
+\DoxyCodeLine{783                 defaultSkin.CopyTo(newSkin, \textcolor{keyword}{true}, cloneAttachments, cloneMeshesAsLinked);}
+\DoxyCodeLine{784 }
+\DoxyCodeLine{785             \textcolor{keywordflow}{if} (activeSkin != \textcolor{keyword}{null})}
+\DoxyCodeLine{786                 activeSkin.CopyTo(newSkin, \textcolor{keyword}{true}, cloneAttachments, cloneMeshesAsLinked);}
+\DoxyCodeLine{787 }
+\DoxyCodeLine{788             \textcolor{keywordflow}{return} newSkin;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a1b169a7675cbc189acafb68d6b4c8e4d}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a1b169a7675cbc189acafb68d6b4c8e4d}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!RemoveAttachment@{RemoveAttachment}}
+\index{RemoveAttachment@{RemoveAttachment}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{RemoveAttachment()}{RemoveAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Remove\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{int}]{slot\+Index,  }\item[{string}]{key\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the attachment. Returns true if the element is successfully found and removed; otherwise, false. 
+
+
+
+Attachment\+Tools.\+cs 파일의 833 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{834                                                                                             \{}
+\DoxyCodeLine{835             \textcolor{keywordflow}{return} skin.Attachments.Remove(\textcolor{keyword}{new} Skin.AttachmentKeyTuple(slotIndex, keyName));}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a09c0e007d79c5b5c15d86a50aac856af}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a09c0e007d79c5b5c15d86a50aac856af}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!RemoveAttachment@{RemoveAttachment}}
+\index{RemoveAttachment@{RemoveAttachment}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{RemoveAttachment()}{RemoveAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Remove\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{slot\+Name,  }\item[{string}]{key\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes the attachment. Returns true if the element is successfully found and removed; otherwise, false. 
+
+
+
+Attachment\+Tools.\+cs 파일의 825 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{826                                                                                                                  \{}
+\DoxyCodeLine{827             \textcolor{keywordtype}{int} slotIndex = skeleton.FindSlotIndex(slotName);}
+\DoxyCodeLine{828             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{829             \textcolor{keywordflow}{if} (slotIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentException(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Slot '\{0\}' does not exist in skeleton."}, slotName), \textcolor{stringliteral}{"slotName"});}
+\DoxyCodeLine{830             \textcolor{keywordflow}{return} skin.RemoveAttachment(slotIndex, keyName);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a951792eaccaad08eb4e98250aebfe8d2}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a951792eaccaad08eb4e98250aebfe8d2}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!SetAttachment@{SetAttachment}}
+\index{SetAttachment@{SetAttachment}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{SetAttachment()}{SetAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Set\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{int}]{slot\+Index,  }\item[{string}]{key\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. 
+
+
+
+Attachment\+Tools.\+cs 파일의 820 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{821                                                                                                                 \{}
+\DoxyCodeLine{822             skin.AddAttachment(slotIndex, keyName, attachment);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_acb96f6cf823ad5e77a475737990a40f6}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_acb96f6cf823ad5e77a475737990a40f6}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!SetAttachment@{SetAttachment}}
+\index{SetAttachment@{SetAttachment}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{SetAttachment()}{SetAttachment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Set\+Attachment (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{slot\+Name,  }\item[{string}]{key\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds an attachment to the skin for the specified slot index and name. If the name already exists for the slot, the previous value is replaced. 
+
+
+
+Attachment\+Tools.\+cs 파일의 804 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{805                                                                                                                                      \{}
+\DoxyCodeLine{806             \textcolor{keywordtype}{int} slotIndex = skeleton.FindSlotIndex(slotName);}
+\DoxyCodeLine{807             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{808             \textcolor{keywordflow}{if} (slotIndex == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentException(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Slot '\{0\}' does not exist in skeleton."}, slotName), \textcolor{stringliteral}{"slotName"});}
+\DoxyCodeLine{809             skin.AddAttachment(slotIndex, keyName, attachment);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a4009e4411ec97e143593508e601913e6}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_skin_utilities_a4009e4411ec97e143593508e601913e6}} 
+\index{Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}!UnshareSkin@{UnshareSkin}}
+\index{UnshareSkin@{UnshareSkin}!Spine.Unity.Modules.AttachmentTools.SkinUtilities@{Spine.Unity.Modules.AttachmentTools.SkinUtilities}}
+\doxysubsubsection{\texorpdfstring{UnshareSkin()}{UnshareSkin()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Skin\+Utilities.\+Unshare\+Skin (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{bool}]{include\+Default\+Skin,  }\item[{bool}]{unshare\+Attachments,  }\item[{\mbox{\hyperlink{namespace_spine_1_1_unity_af8b1ef8c88ab61e80cadb65a72f955b4}{Animation\+State}}}]{state = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convenience method for duplicating a skeleton\textquotesingle{}s current active skin so changes to it will not affect other skeleton instances. . 
+
+
+
+Attachment\+Tools.\+cs 파일의 761 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{762                                                                                                                                                \{}
+\DoxyCodeLine{763             \textcolor{comment}{// 1. Copy the current skin and set the skeleton's skin to the new one.}}
+\DoxyCodeLine{764             var newSkin = skeleton.GetClonedSkin(\textcolor{stringliteral}{"cloned skin"}, includeDefaultSkin, unshareAttachments, \textcolor{keyword}{true});}
+\DoxyCodeLine{765             skeleton.SetSkin(newSkin);}
+\DoxyCodeLine{766 }
+\DoxyCodeLine{767             \textcolor{comment}{// 2. Apply correct attachments: skeleton.SetToSetupPose + animationState.Apply}}
+\DoxyCodeLine{768             \textcolor{keywordflow}{if} (state != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{769                 skeleton.SetToSetupPose();}
+\DoxyCodeLine{770                 state.Apply(skeleton);}
+\DoxyCodeLine{771             \}}
+\DoxyCodeLine{772 }
+\DoxyCodeLine{773             \textcolor{comment}{// 3. Return unshared skin.}}
+\DoxyCodeLine{774             \textcolor{keywordflow}{return} newSkin;}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Attachment\+Tools/\mbox{\hyperlink{_attachment_tools_8cs}{Attachment\+Tools.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input}{}\doxysection{Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input}\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a4b852b894acd7ce7ce97e4edf8108d60}{horizontal\+Axis}} = \char`\"{}Horizontal\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_aa7de0af816eae5d414418b96aa1683a5}{attack\+Button}} = \char`\"{}Fire1\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a0a4899f70105ca198779193d3e16129b}{jump\+Button}} = \char`\"{}Jump\char`\"{}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_model}{Spineboy\+Beginner\+Model}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a9010b799f1b5c8880d375cc16d8e2b3b}{On\+Validate}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a771b23524be63c0bc92987207af264e8}{Update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a9010b799f1b5c8880d375cc16d8e2b3b}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a9010b799f1b5c8880d375cc16d8e2b3b}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!OnValidate@{OnValidate}}
+\index{OnValidate@{OnValidate}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{OnValidate()}{OnValidate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+On\+Validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                            \{}
+\DoxyCodeLine{44             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{45                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}} = GetComponent<SpineboyBeginnerModel>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a771b23524be63c0bc92987207af264e8}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a771b23524be63c0bc92987207af264e8}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                        \{}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52             \textcolor{keywordtype}{float} currentHorizontal = Input.GetAxisRaw(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a4b852b894acd7ce7ce97e4edf8108d60}{horizontalAxis}});}
+\DoxyCodeLine{53             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_model_a192ee367b5ccff7d9c02bbf451b605ea}{TryMove}}(currentHorizontal);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55             \textcolor{keywordflow}{if} (Input.GetButton(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_aa7de0af816eae5d414418b96aa1683a5}{attackButton}}))}
+\DoxyCodeLine{56                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_model_a8b8a5b45d4aa5bd5c01f47573337c682}{TryShoot}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58             \textcolor{keywordflow}{if} (Input.GetButtonDown(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a0a4899f70105ca198779193d3e16129b}{jumpButton}}))}
+\DoxyCodeLine{59                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}{model}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_model_ada76fe78783f56154e4664618fdaa64b}{TryJump}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_aa7de0af816eae5d414418b96aa1683a5}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_aa7de0af816eae5d414418b96aa1683a5}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!attackButton@{attackButton}}
+\index{attackButton@{attackButton}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{attackButton}{attackButton}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+attack\+Button = \char`\"{}Fire1\char`\"{}}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a4b852b894acd7ce7ce97e4edf8108d60}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a4b852b894acd7ce7ce97e4edf8108d60}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!horizontalAxis@{horizontalAxis}}
+\index{horizontalAxis@{horizontalAxis}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{horizontalAxis}{horizontalAxis}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+horizontal\+Axis = \char`\"{}Horizontal\char`\"{}}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a0a4899f70105ca198779193d3e16129b}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_a0a4899f70105ca198779193d3e16129b}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!jumpButton@{jumpButton}}
+\index{jumpButton@{jumpButton}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{jumpButton}{jumpButton}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+jump\+Button = \char`\"{}Jump\char`\"{}}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_input_ab3d3f7e2419064dd97e8e9169c4fc7db}} 
+\index{Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}!model@{model}}
+\index{model@{model}!Spine.Unity.Examples.SpineboyBeginnerInput@{Spine.Unity.Examples.SpineboyBeginnerInput}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_model}{Spineboy\+Beginner\+Model}} Spine.\+Unity.\+Examples.\+Spineboy\+Beginner\+Input.\+model}
+
+
+
+Spineboy\+Beginner\+Input.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Getting Started Scripts/\mbox{\hyperlink{_spineboy_beginner_input_8cs}{Spineboy\+Beginner\+Input.\+cs}}\end{DoxyCompactItemize}

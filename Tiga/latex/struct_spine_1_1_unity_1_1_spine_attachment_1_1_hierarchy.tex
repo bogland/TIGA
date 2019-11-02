@@ -1,0 +1,106 @@
+\hypertarget{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy}{}\doxysection{Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy 구조체 참조}
+\label{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy}\index{Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}}
+
+
+A struct that represents 3 strings that help identify and locate an attachment in a skeleton.  
+
+
+
+
+Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_af0fce8ba6c9e0080bffda12e5371c124}{Hierarchy}} (string full\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_ab6a87da5fa6852bc3e0c4e289fce47b8}{skin}}
+\item 
+string \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a9f0116682de38a4ecae930e1a483bda1}{slot}}
+\item 
+string \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}{name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+A struct that represents 3 strings that help identify and locate an attachment in a skeleton. 
+
+
+
+Spine\+Attributes.\+cs 파일의 228 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_af0fce8ba6c9e0080bffda12e5371c124}\label{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_af0fce8ba6c9e0080bffda12e5371c124}} 
+\index{Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}!Hierarchy@{Hierarchy}}
+\index{Hierarchy@{Hierarchy}!Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}}
+\doxysubsubsection{\texorpdfstring{Hierarchy()}{Hierarchy()}}
+{\footnotesize\ttfamily Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy.\+Hierarchy (\begin{DoxyParamCaption}\item[{string}]{full\+Path }\end{DoxyParamCaption})}
+
+
+
+Spine\+Attributes.\+cs 파일의 233 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{234                                                \{}
+\DoxyCodeLine{235                 \textcolor{keywordtype}{string}[] chunks = fullPath.Split(\textcolor{keyword}{new} \textcolor{keywordtype}{char}[]\{\textcolor{charliteral}{'/'}\}, System.StringSplitOptions.RemoveEmptyEntries);}
+\DoxyCodeLine{236                 \textcolor{keywordflow}{if} (chunks.Length == 0) \{}
+\DoxyCodeLine{237                     \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_ab6a87da5fa6852bc3e0c4e289fce47b8}{skin}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{238                     \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a9f0116682de38a4ecae930e1a483bda1}{slot}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{239                     \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}{name}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{240                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{241                 \}}
+\DoxyCodeLine{242                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (chunks.Length < 2) \{}
+\DoxyCodeLine{243                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.Exception(\textcolor{stringliteral}{"Cannot generate Attachment Hierarchy from string! Not enough components! ["} + fullPath + \textcolor{stringliteral}{"]"});}
+\DoxyCodeLine{244                 \}}
+\DoxyCodeLine{245                 \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_ab6a87da5fa6852bc3e0c4e289fce47b8}{skin}} = chunks[0];}
+\DoxyCodeLine{246                 \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a9f0116682de38a4ecae930e1a483bda1}{slot}} = chunks[1];}
+\DoxyCodeLine{247                 \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}{name}} = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{248                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 2; i < chunks.Length; i++) \{}
+\DoxyCodeLine{249                     \mbox{\hyperlink{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}{name}} += chunks[i];}
+\DoxyCodeLine{250                 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}\label{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a6c88c076cbe51fd7ca5816e0e9b025f2}} 
+\index{Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}!name@{name}}
+\index{name@{name}!Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy.\+name}
+
+
+
+Spine\+Attributes.\+cs 파일의 231 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_ab6a87da5fa6852bc3e0c4e289fce47b8}\label{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_ab6a87da5fa6852bc3e0c4e289fce47b8}} 
+\index{Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}!skin@{skin}}
+\index{skin@{skin}!Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}}
+\doxysubsubsection{\texorpdfstring{skin}{skin}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy.\+skin}
+
+
+
+Spine\+Attributes.\+cs 파일의 229 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a9f0116682de38a4ecae930e1a483bda1}\label{struct_spine_1_1_unity_1_1_spine_attachment_1_1_hierarchy_a9f0116682de38a4ecae930e1a483bda1}} 
+\index{Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}!slot@{slot}}
+\index{slot@{slot}!Spine.Unity.SpineAttachment.Hierarchy@{Spine.Unity.SpineAttachment.Hierarchy}}
+\doxysubsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Spine\+Attachment.\+Hierarchy.\+slot}
+
+
+
+Spine\+Attributes.\+cs 파일의 230 번째 라인에서 정의되었습니다.
+
+
+
+이 구조체에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\mbox{\hyperlink{_spine_attributes_8cs}{Spine\+Attributes.\+cs}}\end{DoxyCompactItemize}

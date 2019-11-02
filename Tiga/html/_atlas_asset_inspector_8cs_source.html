@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-unity/Editor/AtlasAssetInspector.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_atlas_asset_inspector_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AtlasAssetInspector.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_atlas_asset_inspector_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//#define BAKE_ALL_BUTTON</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//#define REGION_BAKING_MESH</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> System.Reflection;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using</span> UnityEditor;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespace_spine_1_1_unity_1_1_editor.html#a1d77fd0f2c3570d8f4ebdc48b2afacaf">   41</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_editor.html">Spine.Unity.Editor</a> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">using</span> <a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a1d77fd0f2c3570d8f4ebdc48b2afacaf">Event</a> = UnityEngine.<a class="code" href="namespace_event.html">Event</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html">   44</a></span>&#160;    [CustomEditor(typeof(<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a>)), CanEditMultipleObjects]</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">   45</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html">AtlasAssetInspector</a> : UnityEditor.<a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a1db71a29746b653acfa12aae3b62095c">Editor</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">   46</a></span>&#160;        SerializedProperty <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">   48</a></span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#aa489f57b29074b3a0d5a32b5a267b871">   49</a></span>&#160;        GUIContent <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">spriteSlicesLabel</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        GUIContent <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#aa489f57b29074b3a0d5a32b5a267b871">SpriteSlicesLabel</a> {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keyword">get</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">spriteSlicesLabel</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">spriteSlicesLabel</a> = <span class="keyword">new</span> GUIContent(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                        <span class="stringliteral">&quot;Apply Regions as Texture Sprite Slices&quot;</span>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html">Icons</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a5293a6d43d5f444221c0e6b60ae3a476">unity</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                        <span class="stringliteral">&quot;Adds Sprite slices to atlas texture(s). &quot;</span> +</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                        <span class="stringliteral">&quot;Updates existing slices if ones with matching names exist. \n\n&quot;</span> +</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                        <span class="stringliteral">&quot;If your atlas was exported with Premultiply Alpha, &quot;</span> +</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        <span class="stringliteral">&quot;your SpriteRenderer should use the generated Spine _Material asset (or any Material with a PMA shader) instead of Sprites-Default.&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">spriteSlicesLabel</a>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94129c68e12225633696d3a937bfa5b7">   64</a></span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">static</span> List&lt;AtlasRegion&gt; <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94129c68e12225633696d3a937bfa5b7">GetRegions</a> (<a class="code" href="class_spine_1_1_atlas.html">Atlas</a> atlas) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            FieldInfo regionsField = typeof(<a class="code" href="class_spine_1_1_atlas.html">Atlas</a>).GetField(<span class="stringliteral">&quot;regions&quot;</span>, BindingFlags.Instance | BindingFlags.NonPublic);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> (List&lt;AtlasRegion&gt;)regionsField.GetValue(atlas);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a8752760477c2ef60e81dafcfa26eaa5c">   69</a></span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a8752760477c2ef60e81dafcfa26eaa5c">OnEnable</a> () {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a50138b04862241cbc785ba1e1b9b014f">ConfirmInitialization</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a> = serializedObject.FindProperty(<span class="stringliteral">&quot;atlasFile&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a> = serializedObject.FindProperty(<span class="stringliteral">&quot;materials&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>.isExpanded = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a> = (<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a>)target;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">            #if REGION_BAKING_MESH</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            UpdateBakedList();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">            #endif</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">        #if REGION_BAKING_MESH</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">private</span> List&lt;bool&gt; baked;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">private</span> List&lt;GameObject&gt; bakedObjects;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">void</span> UpdateBakedList () {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a> asset = (<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a>)target;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            baked = <span class="keyword">new</span> List&lt;bool&gt;();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            bakedObjects = <span class="keyword">new</span> List&lt;GameObject&gt;();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>.objectReferenceValue != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                List&lt;AtlasRegion&gt; regions = this.Regions;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordtype">string</span> atlasAssetPath = AssetDatabase.GetAssetPath(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="keywordtype">string</span> atlasAssetDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.GetDirectoryName(atlasAssetPath);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordtype">string</span> bakedDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(atlasAssetDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.name);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                    <a class="code" href="class_spine_1_1_atlas_region.html">AtlasRegion</a> region = regions[i];</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    <span class="keywordtype">string</span> bakedPrefabPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(bakedDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.GetPathSafeRegionName(region) + <span class="stringliteral">&quot;.prefab&quot;</span>).Replace(<span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath(bakedPrefabPath, typeof(GameObject));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                    baked.Add(prefab != <span class="keyword">null</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                    bakedObjects.Add(prefab);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">        #endif</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#af6ddd653797bc2c7455e585776e4fe53">  104</a></span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keyword">override</span> <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#af6ddd653797bc2c7455e585776e4fe53">OnInspectorGUI</a> () {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span> (serializedObject.isEditingMultipleObjects) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                DrawDefaultInspector();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            serializedObject.Update();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a> = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a> ?? (<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html">AtlasAsset</a>)target;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            EditorGUI.BeginChangeCheck();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            EditorGUILayout.PropertyField(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            EditorGUILayout.PropertyField(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">if</span> (EditorGUI.EndChangeCheck()) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                serializedObject.ApplyModifiedProperties();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a894985e7d0b0120e7df773ad9c3b3d5d">Clear</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a111c9de65f185cd47e09d0275468e824">GetAtlas</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>.arraySize == 0) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                EditorGUILayout.HelpBox(<span class="stringliteral">&quot;No materials&quot;</span>, MessageType.Error);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>.arraySize; i++) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                SerializedProperty prop = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">materials</a>.GetArrayElementAtIndex(i);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                var material = (Material)prop.objectReferenceValue;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                if (material == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                    EditorGUILayout.HelpBox(<span class="stringliteral">&quot;Materials cannot be null.&quot;</span>, MessageType.Error);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            EditorGUILayout.Space();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html">SpineInspectorUtility</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#ab0e8f41c9e384ffb71babec60e822f81">LargeCenteredButton</a>(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html">SpineInspectorUtility</a>.TempContent(<span class="stringliteral">&quot;Set Mipmap Bias to &quot;</span> + <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.DEFAULT_MIPMAPBIAS))) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="keywordflow">foreach</span> (var m <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a12cd6c6e8293c9fbe6ec05ab768e4c78">materials</a>) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    var texture = m.mainTexture;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    texture.mipMapBias = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.DEFAULT_MIPMAPBIAS;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                Debug.Log(<span class="stringliteral">&quot;Texture mipmap bias set to &quot;</span> + <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.DEFAULT_MIPMAPBIAS);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            EditorGUILayout.Space();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>.objectReferenceValue != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html">SpineInspectorUtility</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#ab0e8f41c9e384ffb71babec60e822f81">LargeCenteredButton</a>(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#aa489f57b29074b3a0d5a32b5a267b871">SpriteSlicesLabel</a>)) {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                    var atlas = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a111c9de65f185cd47e09d0275468e824">GetAtlas</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                    <span class="keywordflow">foreach</span> (var m <span class="keywordflow">in</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a12cd6c6e8293c9fbe6ec05ab768e4c78">materials</a>)</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                        <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a464ca6fe4d3117a960731251555e9468">UpdateSpriteSlices</a>(m.mainTexture, atlas);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            EditorGUILayout.Space();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">            #if REGION_BAKING_MESH</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>.objectReferenceValue != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <a class="code" href="class_spine_1_1_atlas.html">Atlas</a> atlas = asset.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a111c9de65f185cd47e09d0275468e824">GetAtlas</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                FieldInfo field = typeof(<a class="code" href="class_spine_1_1_atlas.html">Atlas</a>).GetField(<span class="stringliteral">&quot;regions&quot;</span>, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.NonPublic);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                List&lt;AtlasRegion&gt; regions = (List&lt;AtlasRegion&gt;)field.GetValue(atlas);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                EditorGUILayout.LabelField(<span class="keyword">new</span> GUIContent(<span class="stringliteral">&quot;Region Baking&quot;</span>, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html">Icons</a>.unityIcon));</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                EditorGUI.indentLevel++;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <a class="code" href="class_spine_1_1_atlas_page.html">AtlasPage</a> lastPage = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                    <span class="keywordflow">if</span> (lastPage != regions[i].page) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                        <span class="keywordflow">if</span> (lastPage != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                            EditorGUILayout.Separator();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                            EditorGUILayout.Separator();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                        }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        lastPage = regions[i].page;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        Material mat = ((Material)lastPage.<a class="code" href="class_spine_1_1_atlas_page.html#ae67598e160f3391267afbdb38d7982c4">rendererObject</a>);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                        <span class="keywordflow">if</span> (mat != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                            GUILayout.BeginHorizontal();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                            {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                EditorGUI.BeginDisabledGroup(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                EditorGUILayout.ObjectField(mat, typeof(Material), <span class="keyword">false</span>, GUILayout.Width(250));</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                EditorGUI.EndDisabledGroup();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                            }</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                            GUILayout.EndHorizontal();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            EditorGUILayout.LabelField(<span class="keyword">new</span> GUIContent(<span class="stringliteral">&quot;Page missing material!&quot;</span>, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html">Icons</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a04618af65f6d60707e51486811c531e9">warning</a>));</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    GUILayout.BeginHorizontal();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        <span class="comment">//EditorGUILayout.ToggleLeft(baked[i] ? &quot;&quot; : regions[i].name, baked[i]);</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                        <span class="keywordtype">bool</span> result = baked[i] ? EditorGUILayout.ToggleLeft(<span class="stringliteral">&quot;&quot;</span>, baked[i], GUILayout.Width(24)) : EditorGUILayout.ToggleLeft(<span class="stringliteral">&quot;    &quot;</span> + regions[i].name, baked[i]);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        <span class="keywordflow">if</span>(baked[i]){</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                            EditorGUILayout.ObjectField(bakedObjects[i], typeof(GameObject), <span class="keyword">false</span>, GUILayout.Width(250));</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                        }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                        <span class="keywordflow">if</span> (result &amp;&amp; !baked[i]) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                            <span class="comment">//bake</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                            baked[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                            bakedObjects[i] = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#aad274a878ec783a0d09ddca9c33bf57a">BakeRegion</a>(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>, regions[i]);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            EditorGUIUtility.PingObject(bakedObjects[i]);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!result &amp;&amp; baked[i]) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                            <span class="comment">//unbake</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                            <span class="keywordtype">bool</span> unbakeResult = EditorUtility.DisplayDialog(<span class="stringliteral">&quot;Delete Baked Region&quot;</span>, <span class="stringliteral">&quot;Do you want to delete the prefab for &quot;</span> + regions[i].name, <span class="stringliteral">&quot;Yes&quot;</span>, <span class="stringliteral">&quot;Cancel&quot;</span>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                            <span class="keywordflow">switch</span> (unbakeResult) {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                            <span class="keywordflow">case</span> <span class="keyword">true</span>:</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                                <span class="comment">//delete</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                <span class="keywordtype">string</span> atlasAssetPath = AssetDatabase.GetAssetPath(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                <span class="keywordtype">string</span> atlasAssetDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.GetDirectoryName(atlasAssetPath);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                <span class="keywordtype">string</span> bakedDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(atlasAssetDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.name);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                <span class="keywordtype">string</span> bakedPrefabPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(bakedDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.GetPathSafeRegionName(regions[i]) + <span class="stringliteral">&quot;.prefab&quot;</span>).Replace(<span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                AssetDatabase.DeleteAsset(bakedPrefabPath);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                baked[i] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                            <span class="keywordflow">case</span> <span class="keyword">false</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                <span class="comment">//do nothing</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                            }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                    GUILayout.EndHorizontal();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                EditorGUI.indentLevel--;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">                #if BAKE_ALL_BUTTON</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                <span class="comment">// Check state</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordtype">bool</span> allBaked = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                <span class="keywordtype">bool</span> allUnbaked = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                    allBaked &amp;= baked[i];</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                    allUnbaked &amp;= !baked[i];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="keywordflow">if</span> (!allBaked &amp;&amp; GUILayout.Button(<span class="stringliteral">&quot;Bake All&quot;</span>)) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        <span class="keywordflow">if</span> (!baked[i]) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                            baked[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                            bakedObjects[i] = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#aad274a878ec783a0d09ddca9c33bf57a">BakeRegion</a>(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>, regions[i]);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                    }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!allUnbaked &amp;&amp; GUILayout.Button(<span class="stringliteral">&quot;Unbake All&quot;</span>)) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                    <span class="keywordtype">bool</span> unbakeResult = EditorUtility.DisplayDialog(<span class="stringliteral">&quot;Delete All Baked Regions&quot;</span>, <span class="stringliteral">&quot;Are you sure you want to unbake all region prefabs? This cannot be undone.&quot;</span>, <span class="stringliteral">&quot;Yes&quot;</span>, <span class="stringliteral">&quot;Cancel&quot;</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                    <span class="keywordflow">switch</span> (unbakeResult) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                    <span class="keywordflow">case</span> <span class="keyword">true</span>:</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                        <span class="comment">//delete</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                            <span class="keywordflow">if</span> (baked[i]) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                <span class="keywordtype">string</span> atlasAssetPath = AssetDatabase.GetAssetPath(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                <span class="keywordtype">string</span> atlasAssetDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.GetDirectoryName(atlasAssetPath);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                <span class="keywordtype">string</span> bakedDirPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(atlasAssetDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.name);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                <span class="keywordtype">string</span> bakedPrefabPath = <a class="code" href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Path</a>.Combine(bakedDirPath, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.GetPathSafeRegionName(regions[i]) + <span class="stringliteral">&quot;.prefab&quot;</span>).Replace(<span class="stringliteral">&quot;\\&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                AssetDatabase.DeleteAsset(bakedPrefabPath);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                baked[i] = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                            }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                    <span class="keywordflow">case</span> <span class="keyword">false</span>:</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                        <span class="comment">//do nothing</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">                #endif</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">            #else</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">atlasFile</a>.objectReferenceValue != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                EditorGUILayout.LabelField(<span class="stringliteral">&quot;Atlas Regions&quot;</span>, EditorStyles.boldLabel);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keywordtype">int</span> baseIndent = EditorGUI.indentLevel;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                var regions = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html">AtlasAssetInspector</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94129c68e12225633696d3a937bfa5b7">GetRegions</a>(<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a111c9de65f185cd47e09d0275468e824">GetAtlas</a>());</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <a class="code" href="class_spine_1_1_atlas_page.html">AtlasPage</a> lastPage = <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; regions.Count; i++) {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                    <span class="keywordflow">if</span> (lastPage != regions[i].page) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                        <span class="keywordflow">if</span> (lastPage != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                            EditorGUILayout.Separator();</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                            EditorGUILayout.Separator();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                        }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                        lastPage = regions[i].page;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                        Material mat = ((Material)lastPage.<a class="code" href="class_spine_1_1_atlas_page.html#ae67598e160f3391267afbdb38d7982c4">rendererObject</a>);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        <span class="keywordflow">if</span> (mat != <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                            EditorGUI.indentLevel = baseIndent;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                            <span class="keyword">using</span> (<span class="keyword">new</span> GUILayout.HorizontalScope())</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                            <span class="keyword">using</span> (<span class="keyword">new</span> EditorGUI.DisabledGroupScope(<span class="keyword">true</span>))</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                EditorGUILayout.ObjectField(mat, typeof(Material), <span class="keyword">false</span>, GUILayout.Width(250));</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                            EditorGUI.indentLevel = baseIndent + 1;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                            EditorGUILayout.HelpBox(<span class="stringliteral">&quot;Page missing material!&quot;</span>, MessageType.Warning);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                    }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                    EditorGUILayout.LabelField(<span class="keyword">new</span> GUIContent(regions[i].name, <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">SpineEditorUtilities</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html">Icons</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a30f068d1e0ec0e745cc373389d471710">image</a>));</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                EditorGUI.indentLevel = baseIndent;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor">            #endif</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            <span class="keywordflow">if</span> (serializedObject.ApplyModifiedProperties() || <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html">SpineInspectorUtility</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#aa86821a029786515e2ebf23316839bec">UndoRedoPerformed</a>(<a class="code" href="namespace_spine_1_1_unity_1_1_editor.html#a1d77fd0f2c3570d8f4ebdc48b2afacaf">Event</a>.current))</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">atlasAsset</a>.<a class="code" href="class_spine_1_1_unity_1_1_atlas_asset.html#a894985e7d0b0120e7df773ad9c3b3d5d">Clear</a>();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a464ca6fe4d3117a960731251555e9468">  297</a></span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keyword">static</span> <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a464ca6fe4d3117a960731251555e9468">UpdateSpriteSlices</a> (Texture texture, <a class="code" href="class_spine_1_1_atlas.html">Atlas</a> atlas) {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="keywordtype">string</span> texturePath = AssetDatabase.GetAssetPath(texture.GetInstanceID());</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            var t = (TextureImporter)TextureImporter.GetAtPath(texturePath);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            t.spriteImportMode = SpriteImportMode.Multiple;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            var spriteSheet = t.spritesheet;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            var sprites = <span class="keyword">new</span> List&lt;SpriteMetaData&gt;(spriteSheet);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            var regions = <a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html">AtlasAssetInspector</a>.<a class="code" href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94129c68e12225633696d3a937bfa5b7">GetRegions</a>(atlas);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <span class="keywordtype">char</span>[] FilenameDelimiter = {<span class="charliteral">&#39;.&#39;</span>};</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordtype">int</span> updatedCount = 0;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordtype">int</span> addedCount = 0;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <span class="keywordflow">foreach</span> (var r <span class="keywordflow">in</span> regions) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                <span class="keywordtype">string</span> pageName = r.page.name.Split(FilenameDelimiter, StringSplitOptions.RemoveEmptyEntries)[0];</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                <span class="keywordtype">string</span> textureName = texture.name;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordtype">bool</span> pageMatch = <span class="keywordtype">string</span>.Equals(pageName, textureName, StringComparison.Ordinal);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">//              if (pageMatch) {</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">//                  int pw = r.page.width;</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">//                  int ph = r.page.height;</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">//                  bool mismatchSize = pw != texture.width || pw &gt; t.maxTextureSize || ph != texture.height || ph &gt; t.maxTextureSize;</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">//                  if (mismatchSize)</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">//                      Debug.LogWarningFormat(&quot;Size mismatch found.\nExpected atlas size is {0}x{1}. Texture Import Max Size of texture &#39;{2}&#39;({4}x{5}) is currently set to {3}.&quot;, pw, ph, texture.name, t.maxTextureSize, texture.width, texture.height);</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">//              }</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <span class="keywordtype">int</span> spriteIndex = pageMatch ? sprites.FindIndex(</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                    (s) =&gt; <span class="keywordtype">string</span>.Equals(s.name, r.name, StringComparison.Ordinal)</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                ) : -1;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <span class="keywordtype">bool</span> spriteNameMatchExists = spriteIndex &gt;= 0;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                <span class="keywordflow">if</span> (pageMatch) {</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                    Rect spriteRect = <span class="keyword">new</span> Rect();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                    <span class="keywordflow">if</span> (r.rotate) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                        spriteRect.width = r.height;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                        spriteRect.height = r.width;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                        spriteRect.width = r.width;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                        spriteRect.height = r.height;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                    spriteRect.x = r.x;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                    spriteRect.y = r.page.height - spriteRect.height - r.y;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                    <span class="keywordflow">if</span> (spriteNameMatchExists) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                        var s = sprites[spriteIndex];</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                        s.rect = spriteRect;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                        sprites[spriteIndex] = s;</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                        updatedCount++;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                        sprites.Add(<span class="keyword">new</span> SpriteMetaData {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                            name = r.name,</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                            pivot = <span class="keyword">new</span> Vector2(0.5f, 0.5f),</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                            rect = spriteRect</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                        });</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                        addedCount++;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                    }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            t.spritesheet = sprites.ToArray();</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            EditorUtility.SetDirty(t);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            AssetDatabase.ImportAsset(texturePath, ImportAssetOptions.ForceUpdate);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            EditorGUIUtility.PingObject(texture);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            Debug.Log(<span class="keywordtype">string</span>.<a class="code" href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Format</a>(<span class="stringliteral">&quot;Applied sprite slices to {2}. {0} added. {1} updated.&quot;</span>, addedCount, updatedCount, texture.name));</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_html_aad274a878ec783a0d09ddca9c33bf57a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#aad274a878ec783a0d09ddca9c33bf57a">Spine.Unity.Editor.SpineEditorUtilities.BakeRegion</a></div><div class="ttdeci">static GameObject BakeRegion(AtlasAsset atlasAsset, AtlasRegion region, bool autoSave=true)</div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l01153">SpineEditorUtilities.cs:1153</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a96e87ef353756fcfcdecdfb889e60465"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a96e87ef353756fcfcdecdfb889e60465">Spine.Unity.Editor.AtlasAssetInspector.materials</a></div><div class="ttdeci">SerializedProperty materials</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00045">AtlasAssetInspector.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_html"><div class="ttname"><a href="class_spine_1_1_atlas.html">Spine.Atlas</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00045">Atlas.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons_html_a04618af65f6d60707e51486811c531e9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a04618af65f6d60707e51486811c531e9">Spine.Unity.Editor.SpineEditorUtilities.Icons.warning</a></div><div class="ttdeci">static Texture2D warning</div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00079">SpineEditorUtilities.cs:79</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_html_a50138b04862241cbc785ba1e1b9b014f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a50138b04862241cbc785ba1e1b9b014f">Spine.Unity.Editor.SpineEditorUtilities.ConfirmInitialization</a></div><div class="ttdeci">static void ConfirmInitialization()</div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00246">SpineEditorUtilities.cs:246</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_editor_html_a1d77fd0f2c3570d8f4ebdc48b2afacaf"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_editor.html#a1d77fd0f2c3570d8f4ebdc48b2afacaf">Spine.Unity.Editor.Event</a></div><div class="ttdeci">UnityEngine.Event Event</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00041">AtlasAssetInspector.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html">Spine.Unity.Editor.SpineEditorUtilities.Icons</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00051">SpineEditorUtilities.cs:51</a></div></div>
+<div class="ttc" id="anamespace_event_html"><div class="ttname"><a href="namespace_event.html">Event</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_editor_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_editor.html">Spine.Unity.Editor</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_editor_8cs_source.html#l00037">AnimationReferenceAssetEditor.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a8752760477c2ef60e81dafcfa26eaa5c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a8752760477c2ef60e81dafcfa26eaa5c">Spine.Unity.Editor.AtlasAssetInspector.OnEnable</a></div><div class="ttdeci">void OnEnable()</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00069">AtlasAssetInspector.cs:69</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_page_html"><div class="ttname"><a href="class_spine_1_1_atlas_page.html">Spine.AtlasPage</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00282">Atlas.cs:282</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_html_ab0e8f41c9e384ffb71babec60e822f81"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#ab0e8f41c9e384ffb71babec60e822f81">Spine.Unity.Editor.SpineInspectorUtility.LargeCenteredButton</a></div><div class="ttdeci">static bool LargeCenteredButton(string label, bool sideSpace=true, float maxWidth=CenterButtonMaxWidth)</div><div class="ttdef"><b>Definition:</b> <a href="_spine_inspector_utility_8cs_source.html#l00231">SpineInspectorUtility.cs:231</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_page_html_ae67598e160f3391267afbdb38d7982c4"><div class="ttname"><a href="class_spine_1_1_atlas_page.html#ae67598e160f3391267afbdb38d7982c4">Spine.AtlasPage.rendererObject</a></div><div class="ttdeci">Object rendererObject</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00289">Atlas.cs:289</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_af6ddd653797bc2c7455e585776e4fe53"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#af6ddd653797bc2c7455e585776e4fe53">Spine.Unity.Editor.AtlasAssetInspector.OnInspectorGUI</a></div><div class="ttdeci">override void OnInspectorGUI()</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00104">AtlasAssetInspector.cs:104</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html_a111c9de65f185cd47e09d0275468e824"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html#a111c9de65f185cd47e09d0275468e824">Spine.Unity.AtlasAsset.GetAtlas</a></div><div class="ttdeci">virtual Atlas GetAtlas()</div><div class="ttdoc">The atlas or null if it could not be loaded.</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00121">AtlasAsset.cs:121</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html_a12cd6c6e8293c9fbe6ec05ab768e4c78"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html#a12cd6c6e8293c9fbe6ec05ab768e4c78">Spine.Unity.AtlasAsset.materials</a></div><div class="ttdeci">Material[] materials</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00040">AtlasAsset.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html">Spine.Unity.Editor.SpineInspectorUtility</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_inspector_utility_8cs_source.html#l00036">SpineInspectorUtility.cs:36</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a94d614320cc4eace0bbd0d1f2eda6d73"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94d614320cc4eace0bbd0d1f2eda6d73">Spine.Unity.Editor.AtlasAssetInspector.atlasAsset</a></div><div class="ttdeci">AtlasAsset atlasAsset</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00046">AtlasAssetInspector.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility_html_aa86821a029786515e2ebf23316839bec"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#aa86821a029786515e2ebf23316839bec">Spine.Unity.Editor.SpineInspectorUtility.UndoRedoPerformed</a></div><div class="ttdeci">static bool UndoRedoPerformed(UnityEngine.Event current)</div><div class="ttdef"><b>Definition:</b> <a href="_spine_inspector_utility_8cs_source.html#l00107">SpineInspectorUtility.cs:107</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_ac1e6094645e5d332506ecaa349a77368"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#ac1e6094645e5d332506ecaa349a77368">Spine.Unity.Editor.AtlasAssetInspector.atlasFile</a></div><div class="ttdeci">SerializedProperty atlasFile</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00045">AtlasAssetInspector.cs:45</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b"><div class="ttname"><a href="namespace_spine.html#a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b">Spine.AttachmentType.Path</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html">Spine.Unity.Editor.SpineEditorUtilities</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00049">SpineEditorUtilities.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html_a894985e7d0b0120e7df773ad9c3b3d5d"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html#a894985e7d0b0120e7df773ad9c3b3d5d">Spine.Unity.AtlasAsset.Clear</a></div><div class="ttdeci">virtual void Clear()</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00116">AtlasAsset.cs:116</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_aa489f57b29074b3a0d5a32b5a267b871"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#aa489f57b29074b3a0d5a32b5a267b871">Spine.Unity.Editor.AtlasAssetInspector.SpriteSlicesLabel</a></div><div class="ttdeci">GUIContent SpriteSlicesLabel</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00049">AtlasAssetInspector.cs:49</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons_html_a5293a6d43d5f444221c0e6b60ae3a476"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a5293a6d43d5f444221c0e6b60ae3a476">Spine.Unity.Editor.SpineEditorUtilities.Icons.unity</a></div><div class="ttdeci">static Texture2D unity</div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00085">SpineEditorUtilities.cs:85</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_editor_html_a1db71a29746b653acfa12aae3b62095c"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_editor.html#a1db71a29746b653acfa12aae3b62095c">Spine.Unity.Editor.Editor</a></div><div class="ttdeci">UnityEditor.Editor Editor</div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_editor_8cs_source.html#l00038">AnimationReferenceAssetEditor.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html">Spine.Unity.Editor.AtlasAssetInspector</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00044">AtlasAssetInspector.cs:44</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a66fcb0ab63b2b301097360f7cb4f1cd3"><div class="ttname"><a href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Spine.Format</a></div><div class="ttdeci">Format</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00256">Atlas.cs:256</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_atlas_asset_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_atlas_asset.html">Spine.Unity.AtlasAsset</a></div><div class="ttdoc">Loads and stores a Spine atlas and list of materials.</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_8cs_source.html#l00038">AtlasAsset.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a833b6696f107e72dee6e11a6456e4576"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a833b6696f107e72dee6e11a6456e4576">Spine.Unity.Editor.AtlasAssetInspector.spriteSlicesLabel</a></div><div class="ttdeci">GUIContent spriteSlicesLabel</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00048">AtlasAssetInspector.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons_html_a30f068d1e0ec0e745cc373389d471710"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a30f068d1e0ec0e745cc373389d471710">Spine.Unity.Editor.SpineEditorUtilities.Icons.image</a></div><div class="ttdeci">static Texture2D image</div><div class="ttdef"><b>Definition:</b> <a href="_spine_editor_utilities_8cs_source.html#l00060">SpineEditorUtilities.cs:60</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a464ca6fe4d3117a960731251555e9468"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a464ca6fe4d3117a960731251555e9468">Spine.Unity.Editor.AtlasAssetInspector.UpdateSpriteSlices</a></div><div class="ttdeci">static void UpdateSpriteSlices(Texture texture, Atlas atlas)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00297">AtlasAssetInspector.cs:297</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html"><div class="ttname"><a href="class_spine_1_1_atlas_region.html">Spine.AtlasRegion</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00293">Atlas.cs:293</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector_html_a94129c68e12225633696d3a937bfa5b7"><div class="ttname"><a href="class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html#a94129c68e12225633696d3a937bfa5b7">Spine.Unity.Editor.AtlasAssetInspector.GetRegions</a></div><div class="ttdeci">static List&lt; AtlasRegion &gt; GetRegions(Atlas atlas)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_asset_inspector_8cs_source.html#l00064">AtlasAssetInspector.cs:64</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_951c4f09499d9c65937740bb62fad379.html">spine-unity</a></li><li class="navelem"><a class="el" href="dir_f2dc9b0d7404bd28ede62cbfefda2157.html">Editor</a></li><li class="navelem"><a class="el" href="_atlas_asset_inspector_8cs.html">AtlasAssetInspector.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

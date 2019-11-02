@@ -1,0 +1,9 @@
+digraph "SpineSpriteShaderGUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SpineSpriteShaderGUI\n|- _materialEditor\l- _mainTexture\l- _color\l- _pixelSnap\l- _writeToDepth\l- _depthAlphaCutoff\l- _shadowAlphaCutoff\l- _renderQueue\l- _culling\l- _customRenderQueue\l그리고 19개 더...\l- kShaderVertexLit\l- kShaderPixelLit\l- kShaderUnlit\l- kSolidQueue\l- kAlphaTestQueue\l- kTransparentQueue\l- _albedoText\l- _altAlbedoText\l- _metallicMapText\l- _smoothnessText\l그리고 40개 더...\l|+ OnGUI()\l+ AssignNewShaderToMaterial()\l# FindProperties()\l# ShaderPropertiesGUI()\l# RenderModes()\l# RenderTextureProperties()\l# RenderDepthProperties()\l# RenderNormalsProperties()\l# RenderShadowsProperties()\l# RenderSphericalHarmonics\lProperties()\l# RenderFogProperties()\l# RenderColorProperties()\l# RenderSpecularProperties()\l# RenderEmissionProperties()\l# RenderRimLightingProperties()\l- RenderMeshInfoBox()\l- SetInt()\l- SetDefaultSpriteKeywords()\l- BoldToggleField()\l- SetRenderType()\l- SetMaterialKeywords()\l- MaterialChanged()\l- SetKeyword()\l- SetKeyword()\l- IsKeywordEnabled()\l- GetMaterialLightMode()\l- GetMaterialBlendMode()\l- SetBlendMode()\l- GetMaterialNormalsMode()\l- SetNormalsMode()\l- SetNormalsMode()\l- GetMaterialFixedNormalsBackface\lRenderingOn()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{ShaderGUI\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

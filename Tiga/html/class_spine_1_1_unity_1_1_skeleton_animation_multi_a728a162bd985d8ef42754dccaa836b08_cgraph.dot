@@ -1,0 +1,22 @@
+digraph "Spine.Unity.SkeletonAnimationMulti.Awake"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.SkeletonAnimation\lMulti.Awake",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.SkeletonAnimation\lMulti.Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a53c1470b8fef85409cdf283449236000",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.SkeletonAnimation\lMulti.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a57d100d51f77a9fed1a026efc7c2fc34",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.SkeletonAnimation.\lNewSkeletonAnimationGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e",tooltip="Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it."];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.Unity.SkeletonAnimation\lMulti.SetActiveSkeleton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation_multi.html#aab2cbd6f05064cb37bda1496ec64666c",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.Unity.SkeletonAnimation\lMulti.SetAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation_multi.html#ad003ed4f608538ab2be0ef583e2ac953",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.Unity.SkeletonAnimation\lMulti.FindAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation_multi.html#a09b72afa90140d9071f84e40de7a7a8c",tooltip=" "];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.Unity.SkeletonRenderer.\lSetMeshSettings",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_renderer.html#ae742f05394283ec3675d3e130587bae2",tooltip="Applies MeshGenerator settings to the SkeletonRenderer and its internal MeshGenerator."];
+}

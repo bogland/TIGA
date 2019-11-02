@@ -1,0 +1,18 @@
+digraph "SharpJson.Lexer.ParseDoubleNumber"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="SharpJson.Lexer.ParseDouble\lNumber",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SharpJson.JsonDecoder.Parse\lValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad67cc8fc02cea01cd101c09631fb3d05",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SharpJson.JsonDecoder.Decode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#a6300221209a5b9cccd906817263a2e3c",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SharpJson.JsonDecoder.Parse\lArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#a8ea9277fbcda21fc40d79634cbb96c89",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SharpJson.JsonDecoder.Parse\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad6d5d2ed661ee7fd724784616ebfff7b",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

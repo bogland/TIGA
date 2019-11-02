@@ -1,0 +1,9 @@
+digraph "Spine.TrackEntry"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.TrackEntry\n|+ TrackIndex\l+ Animation\l+ Loop\l+ Delay\l+ TrackTime\l+ TrackEnd\l+ AnimationStart\l+ AnimationEnd\l+ AnimationLast\l+ AnimationTime\l그리고 10개 더...\l~ animation\l~ next\l~ trackIndex\l~ loop\l~ eventThreshold\l~ animationStart\l~ delay\l~ alpha\l~ timelineData\l~ timelineDipMix\l~ timelinesRotation\l- mixingFrom\l- attachmentThreshold\l- drawOrderThreshold\l- animationEnd\l- animationLast\l- nextAnimationLast\l- trackTime\l- trackLast\l- nextTrackLast\l- trackEnd\l그리고 9개 더...\l|+ Reset()\l+ ResetRotationDirections()\l+ ToString()\l~ SetTimelineData()\l~ OnStart()\l~ OnInterrupt()\l~ OnEnd()\l~ OnDispose()\l~ OnComplete()\l~ OnEvent()\l- HasTimeline()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="State for the playback of an animation."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Pool\< TrackEntry \>IPoolable\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

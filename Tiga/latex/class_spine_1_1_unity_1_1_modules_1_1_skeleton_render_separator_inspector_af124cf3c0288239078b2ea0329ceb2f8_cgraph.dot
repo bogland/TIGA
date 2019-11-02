@@ -1,0 +1,10 @@
+digraph "Spine.Unity.Modules.SkeletonRenderSeparatorInspector.AddPartsRenderer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Modules.Skeleton\lRenderSeparatorInspector.AddParts\lRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Modules.Skeleton\lPartsRenderer.NewPartsRendererGame\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_parts_renderer.html#a0069e3691e00b1b0758ffaba0bc8fc0d",tooltip=" "];
+}

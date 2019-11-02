@@ -1,0 +1,9 @@
+digraph "Spine.Unity.WaitForSpineEvent"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.WaitForSpine\lEvent\n|+ WillUnsubscribeAfterFiring\l+ Current\l- m_TargetEvent\l- m_EventName\l- m_AnimationState\l- m_WasFired\l- m_unsubscribeAfterFiring\l|+ WaitForSpineEvent()\l+ WaitForSpineEvent()\l+ WaitForSpineEvent()\l+ WaitForSpineEvent()\l+ NowWaitFor()\l+ NowWaitFor()\l- Subscribe()\l- SubscribeByName()\l- HandleAnimationStateEvent\lByName()\l- HandleAnimationStateEvent()\l- Clear()\l- MoveNext()\l- Reset()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Use this as a condition-blocking yield instruction for Unity Coroutines. The routine will pause until..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{IEnumerator\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

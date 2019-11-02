@@ -1,0 +1,31 @@
+digraph "Spine.TransformConstraint.Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.TransformConstraint.\lUpdate",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.TransformConstraint.\lApplyAbsoluteLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint.html#a1b7a1fbc22ddc91b961b8d188ac3f9e3",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Bone.UpdateWorldTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone.html#a7cb46c9bf47dc1c82334464ddad0f4f3",tooltip="Computes the world transform using the parent bone and this bone's local transform."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.TransformConstraint.\lApplyAbsoluteWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint.html#abf5166c6e4980f9dd325b58490cae98f",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.MathUtils.Atan2",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3e98f9d30d651fcde8320c2bdaa41f74",tooltip="Returns atan2 in radians, faster but less accurate than Math.Atan2. Average error of 0...."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.MathUtils.Cos",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a5a54380abac57117f618e55d51c8ffd3",tooltip="Returns the cosine in radians from a lookup table."];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Bone.LocalToWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone.html#a42e6bcd5d837faec67110fe71087be3a",tooltip=" "];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.MathUtils.Sin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a28ddf17f11f78969b5dc2d7588071d7b",tooltip="Returns the sine in radians from a lookup table."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.TransformConstraint.\lApplyRelativeLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint.html#a454117a6966c2668bcc06e571195b4f3",tooltip=" "];
+  Node9 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.TransformConstraint.\lApplyRelativeWorld",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint.html#a7f3667042018db294f8053cbb24a94d8",tooltip=" "];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+}

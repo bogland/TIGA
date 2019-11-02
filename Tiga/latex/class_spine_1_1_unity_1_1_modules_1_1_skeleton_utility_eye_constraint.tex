@@ -1,0 +1,248 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint}\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_acacec5946b6b10e3ece02e58ccb5df19}{Do\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Transform\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a5a03b82eae521f93fa1e4690c0c24369}{radius}} = 0.\+5f
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a3e778ba238e59f6fd58b759ea13ae515}{target}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9fa02c582ba4d197b19692ca2d4b3d67}{target\+Position}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a8d54df8f8905a91d519453ac333b5a40}{speed}} = 10
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a4d83bfbf61676043db16aba7fcb8356b}{On\+Enable}} ()
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a846b67308e7d3fc8d884985a0cf029ba}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}{util\+Bone}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility}{Skeleton\+Utility}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}{skeleton\+Utility}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}{origins}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a503244ceaf2cd8fdd99a8a6d5d64fb4b}{center\+Point}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_acacec5946b6b10e3ece02e58ccb5df19}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_acacec5946b6b10e3ece02e58ccb5df19}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!DoUpdate@{DoUpdate}}
+\index{DoUpdate@{DoUpdate}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{DoUpdate()}{DoUpdate()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+Do\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_abb68c2a55bd78177f42c3a40391568df}{Spine.\+Unity.\+Skeleton\+Utility\+Constraint}}를 구현.
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67                                          \{}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{69             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a3e778ba238e59f6fd58b759ea13ae515}{target}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{70                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9fa02c582ba4d197b19692ca2d4b3d67}{targetPosition}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a3e778ba238e59f6fd58b759ea13ae515}{target}}.position;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72             Vector3 goal = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9fa02c582ba4d197b19692ca2d4b3d67}{targetPosition}};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74             Vector3 center = transform.TransformPoint(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a503244ceaf2cd8fdd99a8a6d5d64fb4b}{centerPoint}});}
+\DoxyCodeLine{75             Vector3 dir = goal -\/ center;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (dir.magnitude > 1)}
+\DoxyCodeLine{78                 dir.Normalize();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}.Length; i++) \{}
+\DoxyCodeLine{81                 center = transform.TransformPoint(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}{origins}}[i]);}
+\DoxyCodeLine{82                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}[i].position = Vector3.MoveTowards(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}[i].position, center + (dir * \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a5a03b82eae521f93fa1e4690c0c24369}{radius}}), \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a8d54df8f8905a91d519453ac333b5a40}{speed}} * Time.deltaTime);}
+\DoxyCodeLine{83             \}}
+\DoxyCodeLine{84 }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a846b67308e7d3fc8d884985a0cf029ba}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a846b67308e7d3fc8d884985a0cf029ba}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a2d891f95785e69c4dd445c0f817b3256}{Spine.\+Unity.\+Skeleton\+Utility\+Constraint}}(으)로부터 재구현되었습니다.
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                              \{}
+\DoxyCodeLine{61             \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{62                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             base.OnDisable();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a4d83bfbf61676043db16aba7fcb8356b}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a4d83bfbf61676043db16aba7fcb8356b}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a958130db07f6b614b37156a38837df07}{Spine.\+Unity.\+Skeleton\+Utility\+Constraint}}(으)로부터 재구현되었습니다.
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                                             \{}
+\DoxyCodeLine{45             \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{46                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48             base.OnEnable();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50             Bounds centerBounds = \textcolor{keyword}{new} Bounds(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}[0].localPosition, Vector3.zero);}
+\DoxyCodeLine{51             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}{origins}} = \textcolor{keyword}{new} Vector3[\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}.Length];}
+\DoxyCodeLine{52             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}.Length; i++) \{}
+\DoxyCodeLine{53                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}{origins}}[i] = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}{eyes}}[i].localPosition;}
+\DoxyCodeLine{54                 centerBounds.Encapsulate(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}{origins}}[i]);}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a503244ceaf2cd8fdd99a8a6d5d64fb4b}{centerPoint}} = centerBounds.center;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a503244ceaf2cd8fdd99a8a6d5d64fb4b}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a503244ceaf2cd8fdd99a8a6d5d64fb4b}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!centerPoint@{centerPoint}}
+\index{centerPoint@{centerPoint}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{centerPoint}{centerPoint}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+center\+Point\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a0eda800a66b716bb7fadcc23f8733796}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!eyes@{eyes}}
+\index{eyes@{eyes}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{eyes}{eyes}}
+{\footnotesize\ttfamily Transform \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+eyes}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9407f6593dac901c02c51c2acb6fbcc9}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!origins@{origins}}
+\index{origins@{origins}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{origins}{origins}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+origins\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a5a03b82eae521f93fa1e4690c0c24369}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a5a03b82eae521f93fa1e4690c0c24369}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!radius@{radius}}
+\index{radius@{radius}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+radius = 0.\+5f}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}\label{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!skeletonUtility@{skeletonUtility}}
+\index{skeletonUtility@{skeletonUtility}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{skeletonUtility}{skeletonUtility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility}{Skeleton\+Utility}} Spine.\+Unity.\+Skeleton\+Utility\+Constraint.\+skeleton\+Utility\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Skeleton\+Utility\+Constraint.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a8d54df8f8905a91d519453ac333b5a40}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a8d54df8f8905a91d519453ac333b5a40}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!speed@{speed}}
+\index{speed@{speed}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+speed = 10}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a3e778ba238e59f6fd58b759ea13ae515}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a3e778ba238e59f6fd58b759ea13ae515}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!target@{target}}
+\index{target@{target}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+target}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9fa02c582ba4d197b19692ca2d4b3d67}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a9fa02c582ba4d197b19692ca2d4b3d67}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!targetPosition@{targetPosition}}
+\index{targetPosition@{targetPosition}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{targetPosition}{targetPosition}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint.\+target\+Position}
+
+
+
+Skeleton\+Utility\+Eye\+Constraint.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}\label{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}} 
+\index{Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}!utilBone@{utilBone}}
+\index{utilBone@{utilBone}!Spine.Unity.Modules.SkeletonUtilityEyeConstraint@{Spine.Unity.Modules.SkeletonUtilityEyeConstraint}}
+\doxysubsubsection{\texorpdfstring{utilBone}{utilBone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} Spine.\+Unity.\+Skeleton\+Utility\+Constraint.\+util\+Bone\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Skeleton\+Utility\+Constraint.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Skeleton\+Utility Modules/\mbox{\hyperlink{_skeleton_utility_eye_constraint_8cs}{Skeleton\+Utility\+Eye\+Constraint.\+cs}}\end{DoxyCompactItemize}

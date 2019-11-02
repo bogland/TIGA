@@ -1,0 +1,71 @@
+\hypertarget{class_tiga_1_1_data_1_1_json_1_1_json}{}\doxysection{Tiga.\+Data.\+Json.\+Json$<$ T $>$ 클래스 템플릿 참조}
+\label{class_tiga_1_1_data_1_1_json_1_1_json}\index{Tiga.Data.Json.Json$<$ T $>$@{Tiga.Data.Json.Json$<$ T $>$}}
+
+
+Tiga.\+Data.\+Json.\+Json$<$ T $>$에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_ad9fdf0a0504072d278ab8ea2969f29c5}{Write}} (string path, T object\+Data)
+\item 
+static T \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json_ad38113126f13c40e726f92b55e94eef5}{Read}} (string path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+json.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_ad38113126f13c40e726f92b55e94eef5}\label{class_tiga_1_1_data_1_1_json_1_1_json_ad38113126f13c40e726f92b55e94eef5}} 
+\index{Tiga.Data.Json.Json$<$ T $>$@{Tiga.Data.Json.Json$<$ T $>$}!Read@{Read}}
+\index{Read@{Read}!Tiga.Data.Json.Json$<$ T $>$@{Tiga.Data.Json.Json$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily static T \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json}{Tiga.\+Data.\+Json.\+Json}}$<$ T $>$.Read (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19         \{}
+\DoxyCodeLine{20             T objectData;}
+\DoxyCodeLine{21             \textcolor{keywordtype}{string} jsonData = File.ReadAllText(path);}
+\DoxyCodeLine{22             objectData = LitJson.JsonMapper.ToObject<T>(jsonData);}
+\DoxyCodeLine{23             \textcolor{keywordflow}{return} objectData;}
+\DoxyCodeLine{24         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_tiga_1_1_data_1_1_json_1_1_json_ad9fdf0a0504072d278ab8ea2969f29c5}\label{class_tiga_1_1_data_1_1_json_1_1_json_ad9fdf0a0504072d278ab8ea2969f29c5}} 
+\index{Tiga.Data.Json.Json$<$ T $>$@{Tiga.Data.Json.Json$<$ T $>$}!Write@{Write}}
+\index{Write@{Write}!Tiga.Data.Json.Json$<$ T $>$@{Tiga.Data.Json.Json$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily static void \mbox{\hyperlink{class_tiga_1_1_data_1_1_json_1_1_json}{Tiga.\+Data.\+Json.\+Json}}$<$ T $>$.Write (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{T}]{object\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+json.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13         \{}
+\DoxyCodeLine{14             path = Application.dataPath + \textcolor{stringliteral}{"/"} + path;}
+\DoxyCodeLine{15             JsonData jsonData = JsonMapper.ToJson(objectData);}
+\DoxyCodeLine{16             File.WriteAllText(path, jsonData.ToString());}
+\DoxyCodeLine{17         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Data/\+Json/\mbox{\hyperlink{_data_2_json_2json_8cs}{json.\+cs}}\end{DoxyCompactItemize}

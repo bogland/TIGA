@@ -1,0 +1,9 @@
+digraph "Spine.SkeletonJson"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.SkeletonJson\n|+ Scale\l- linkedMeshes\l|+ SkeletonJson()\l+ SkeletonJson()\l+ ReadSkeletonData()\l+ ReadSkeletonData()\l- ReadAttachment()\l- ReadVertices()\l- ReadAnimation()\l- ReadCurve()\l- GetFloatArray()\l- GetIntArray()\l- GetFloat()\l- GetInt()\l- GetBoolean()\l- GetString()\l- ToColor()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" -attachmentLoader" ,arrowhead="odiamond"];
+  Node2 [label="{Spine.AttachmentLoader\n||+ NewRegionAttachment()\l+ NewMeshAttachment()\l+ NewBoundingBoxAttachment()\l+ NewPathAttachment()\l+ NewPointAttachment()\l+ NewClippingAttachment()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_attachment_loader.html",tooltip=" "];
+}

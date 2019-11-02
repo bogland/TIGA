@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Editor.SpineInspectorUtility"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Editor.Spine\lInspectorUtility\n|+ EmDash\l+ GrayMiniLabel\l+ SpineButtonStyle\l+ SortingLayerFieldMethod\l- tempContent\l- grayMiniLabel\l- CenterButtonMaxWidth\l- CenterButtonHeight\l- spineButtonStyle\l- SortingLayerLabel\l- OrderInLayerLabel\l- m_SortingLayerFieldMethod\l|+ Pluralize()\l+ PluralThenS()\l+ PropertyFieldWideLabel()\l+ PropertyFieldFitLabel()\l+ ToggleLeftLayout()\l+ ToggleLeft()\l+ UndoRedoPerformed()\l+ UnityIcon\< T \>()\l+ UnityIcon()\l+ FindBaseOrSiblingProperty()\l그리고 6개 더...\l~ TempContent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

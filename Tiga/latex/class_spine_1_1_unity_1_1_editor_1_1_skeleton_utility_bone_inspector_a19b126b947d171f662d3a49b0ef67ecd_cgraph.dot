@@ -1,0 +1,57 @@
+digraph "Spine.Unity.Editor.SkeletonUtilityBoneInspector.OnInspectorGUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.SkeletonUtility.\lAddBoundingBoxAsComponent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a2fc833730b8296436bf5db3cdcbcf7dd",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.SkeletonUtility.\lSetColliderPointsLocal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a1caa5e8b981d3a6cd292f1ddedd1eef5",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.SkeletonUtility.\lAddBoundingBoxGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#abec5211fa4152d9c58d962cd15664929",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.SkeletonData.FindSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369",tooltip="May be null."];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Skeleton.FindSlot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#aeeaf7abe56f807e6e57f3a2514e607ab",tooltip="May be null."];
+  Node4 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Skeleton.FindSlotIndex",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#ab89442a0b2114e2f9f3da38efcef210d",tooltip="-1 if the bone was not found."];
+  Node4 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Skin.GetAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skin.html#a8e1b079b629865148f809487fbda7938",tooltip="Returns the attachment for the specified slot index and name, or null."];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.BoneSelector\lContextMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a06dc7286a358c3391e4089a55b53cbdc",tooltip=" "];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.CreateHingeChain",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a0745fb240585de5d68a21b3d8d3030b4",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.AttachRigidbody",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a99d4cb0c32e9303b3815d2d665846826",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.SpawnChild\lBoneSelected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a500c94658e3589779e47f7cdc35cbc13",tooltip=" "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector.AttachIcon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html#a4e3f664cbf504540ae61bb849bfd3b25",tooltip=" "];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.Unity.SkeletonUtility.\lSpawnBone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a66d2098df30148e5c5e592f1de9bc414",tooltip=" "];
+  Node14 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.Unity.SkeletonUtility\lBone.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility_bone.html#a14a1a7281090d09bc769a940d4f693c4",tooltip=" "];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.Unity.SkeletonUtility\lBone.DoUpdate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility_bone.html#a727d80d5937dbf167f0fc4b92f7c83bc",tooltip=" "];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.Unity.SkeletonUtility\lBone.BoneTransformModeIncompatible",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility_bone.html#aaa8e1c680bad0662f74fa8a047c9db57",tooltip=" "];
+  Node16 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Spine.Unity.SkeletonUtility\lBone.HandleOnReset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility_bone.html#a8807d55e246a6e212449c510c16a397c",tooltip=" "];
+  Node18 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Spine.Unity.SkeletonUtility.\lSpawnBoneRecursively",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#af1451cab18afafebe62cace739cf4186",tooltip=" "];
+  Node19 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid"];
+  Node20 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.SpawnOverride",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a03229f9b0e29583adf4d52c3b586a84b",tooltip=" "];
+  Node20 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node20 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node21 [color="midnightblue",fontsize="10",style="solid"];
+  Node21 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.TargetBone\lSelected",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a8dceb885fc4671176c5d64f091cdc76b",tooltip=" "];
+  Node21 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid"];
+  Node22 [label="Spine.Skeleton.UpdateWorld\lTransform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#a108d4c6208e6c9a1ed4ca6bd50da1aa2",tooltip="Updates the world transform for each bone and applies constraints."];
+}

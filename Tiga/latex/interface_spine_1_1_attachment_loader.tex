@@ -1,0 +1,134 @@
+\hypertarget{interface_spine_1_1_attachment_loader}{}\doxysection{Spine.\+Attachment\+Loader 인터페이스 참조}
+\label{interface_spine_1_1_attachment_loader}\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+
+
+Spine.\+Attachment\+Loader에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Attachment\+Loader에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_acd15c9fd5f434324a0f30872a35b828c}{New\+Region\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name, string path)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_af5979e352d0a75f981f966290377cc05}{New\+Mesh\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name, string path)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_a06b5733cb67b13536797601adc6db6b4}{New\+Bounding\+Box\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_a6b5e631c0773ecedecc3121e84db109d}{New\+Path\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null to not load any attachment
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_a76d650e21df14366dc3f9a0a6c0a92ba}{New\+Point\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\item 
+\mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} \mbox{\hyperlink{interface_spine_1_1_attachment_loader_a27f4d730a36f1ca83e756ae6825ed474}{New\+Clipping\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Attachment\+Loader.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_a06b5733cb67b13536797601adc6db6b4}\label{interface_spine_1_1_attachment_loader_a06b5733cb67b13536797601adc6db6b4}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewBoundingBoxAttachment@{NewBoundingBoxAttachment}}
+\index{NewBoundingBoxAttachment@{NewBoundingBoxAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewBoundingBoxAttachment()}{NewBoundingBoxAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Bounding\+Box\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_aa4e28e7984df13f142d0ebb00cb0744b}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_af4e3beb65efaed84e684d78050afde70}{Spine.\+Atlas\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_a66120d5126cb2c6549ac087a3ae5bc0f}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_a27f4d730a36f1ca83e756ae6825ed474}\label{interface_spine_1_1_attachment_loader_a27f4d730a36f1ca83e756ae6825ed474}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewClippingAttachment@{NewClippingAttachment}}
+\index{NewClippingAttachment@{NewClippingAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewClippingAttachment()}{NewClippingAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Clipping\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_a25688d9bf3dc352492479df937b7c65f}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a85d6fe3abaa381c7d977edd3e63552b8}{Spine.\+Atlas\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_ab9018b721b25981cd2d76034084abf5e}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_af5979e352d0a75f981f966290377cc05}\label{interface_spine_1_1_attachment_loader_af5979e352d0a75f981f966290377cc05}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewMeshAttachment@{NewMeshAttachment}}
+\index{NewMeshAttachment@{NewMeshAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewMeshAttachment()}{NewMeshAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Mesh\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name,  }\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_a109890ce3e0391d27ae30abd81e5301b}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a4ed43e8f40497ea896466b0d9f565894}{Spine.\+Atlas\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_aca887825274a919e815f6e72787b70ee}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_a6b5e631c0773ecedecc3121e84db109d}\label{interface_spine_1_1_attachment_loader_a6b5e631c0773ecedecc3121e84db109d}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewPathAttachment@{NewPathAttachment}}
+\index{NewPathAttachment@{NewPathAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewPathAttachment()}{NewPathAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Path\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null to not load any attachment
+\end{DoxyReturn}
+
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_a7d16465307925a56284fe4add42b4165}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aad18a939954b56f7d16d24f0ca46b103}{Spine.\+Atlas\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_abb5c84148066c119aa96e263b9f8e9a9}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_a76d650e21df14366dc3f9a0a6c0a92ba}\label{interface_spine_1_1_attachment_loader_a76d650e21df14366dc3f9a0a6c0a92ba}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewPointAttachment@{NewPointAttachment}}
+\index{NewPointAttachment@{NewPointAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewPointAttachment()}{NewPointAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Point\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_a0e72d80e550801a41ef210d491c1cd71}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a671c5c29c8eff42a90506fc593011abc}{Spine.\+Atlas\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_a58456cd26082ef8c5a4f4be2969bddf9}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{interface_spine_1_1_attachment_loader_acd15c9fd5f434324a0f30872a35b828c}\label{interface_spine_1_1_attachment_loader_acd15c9fd5f434324a0f30872a35b828c}} 
+\index{Spine.AttachmentLoader@{Spine.AttachmentLoader}!NewRegionAttachment@{NewRegionAttachment}}
+\index{NewRegionAttachment@{NewRegionAttachment}!Spine.AttachmentLoader@{Spine.AttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewRegionAttachment()}{NewRegionAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Attachment\+Loader.\+New\+Region\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name,  }\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader_aeb1914b5489cdab577801a7410c8b713}{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Requirement\+Loader}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_regionless_attachment_loader_a82c0907fa9b478e53945445cddb90d16}{Spine.\+Unity.\+Regionless\+Attachment\+Loader}}, \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a82d9f2833ec43a445c76ad765d8c1031}{Spine.\+Atlas\+Attachment\+Loader}}에서 구현되었습니다.
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+이 인터페이스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\+Attachments/\mbox{\hyperlink{_attachment_loader_8cs}{Attachment\+Loader.\+cs}}\end{DoxyCompactItemize}

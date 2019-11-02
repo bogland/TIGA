@@ -1,0 +1,16 @@
+digraph "Spine.Unity.Examples.HandleEventWithAudioExample.Start"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Handle\lEventWithAudioExample.Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.SkeletonData.FindEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6e0a2691d3795a1222ff9158042e2a59",tooltip="May be null."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Examples.Handle\lEventWithAudioExample.HandleAnimation\lStateEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example.html#a59beabee2e220c1f23b930aad6ac1e88",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Examples.Handle\lEventWithAudioExample.Play",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example.html#abb63caaab92b3e4b9df926b1418507e6",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.SkeletonAnimation.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a6c87e552fabe217a7292a78f9d6919dc",tooltip="Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects a..."];
+}

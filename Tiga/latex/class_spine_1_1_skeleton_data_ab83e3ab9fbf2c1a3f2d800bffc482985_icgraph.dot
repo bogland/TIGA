@@ -1,0 +1,20 @@
+digraph "Spine.SkeletonData.FindSlotIndex"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.SkeletonData.FindSlot\lIndex",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="-1 if the slot was not found."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Modules.Sprite\lAttachmentExtensions.AddUnitySprite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_sprite_attachment_extensions.html#af569bff9d30d61cfdd8a0835bd95cd02",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Examples.Equip\lSystemExample.Equip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a080aa2407b434f94d29f346ef72b8fdd",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Examples.Equip\lButtonExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a1f732916a8097f5d92785d24c237735f",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.SkeletonExtensions.\lFindNamesForSlot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_extensions.html#a2018cc91668746eb1fafec2937dd89b7",tooltip="Spine.Skin.FindNamesForSlot(int,List)"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.SkeletonJson.ReadAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#a5a511206252f8a690d6f82b91f24b57b",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.SkeletonJson.ReadSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_json.html#ae7e26ebf33823ab41245076dee691647",tooltip=" "];
+}

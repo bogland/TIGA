@@ -1,0 +1,52 @@
+digraph "Spine.SkeletonBinary.ReadAnimation"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.SkeletonBinary.Read\lAnimation",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Skin.GetAttachment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skin.html#a8e1b079b629865148f809487fbda7938",tooltip="Returns the attachment for the specified slot index and name, or null."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.SkeletonBinary.Read\lCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#ad108de830c6c9dda023c1ee8ae57be67",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.SkeletonBinary.Read\lFloat",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#abceb97a66237f069899e4eae6b88cfe5",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.CurveTimeline.SetCurve",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#a17799c5d17120175dd78b9cb77a2e569",tooltip="Sets the control handle positions for an interpolation bezier curve used to transition from this keyf..."];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.CurveTimeline.SetStepped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#ac9f50bb59d3a6a81aebf2ce6331eed76",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.SkeletonBinary.ReadInt",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a028e200aec5d5c3618b18cbf450bd6bf",tooltip=" "];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.SkeletonBinary.Read\lSByte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#aa519eb2d8a835b1e3586d2c7009ab69c",tooltip=" "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.SkeletonBinary.Read\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a169fee956d5676cb3dd5d59c2d38ef42",tooltip=" "];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Spine.SkeletonBinary.Read\lFully",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a3c31f5d3d2c410d11407e234e370e533",tooltip=" "];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Spine.SkeletonBinary.Read\lVarint",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_binary.html#a416307e9af6f3b22570f7b51e2673271",tooltip=" "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Spine.RotateTimeline.Set\lFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_rotate_timeline.html#a22498ac9b29001375d3feaf10dfcee3e",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Spine.TranslateTimeline.\lSetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_translate_timeline.html#a3f7844b15ce15705fbe363cc96c8e28d",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Spine.ColorTimeline.SetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_color_timeline.html#afcc8966dbad4ed2288d9d50a75097d43",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Spine.TwoColorTimeline.Set\lFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_two_color_timeline.html#a2e52208d038817ae335b012799407f65",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Spine.AttachmentTimeline.\lSetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_attachment_timeline.html#addfa5214225557a55607cc6c1a67f1ec",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Spine.DeformTimeline.Set\lFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_deform_timeline.html#a14f5a2b82ed8cb095ce9074f20c97e50",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Spine.DrawOrderTimeline.\lSetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_draw_order_timeline.html#a129490bb46fe396dd8adddbce56fb056",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Spine.IkConstraintTimeline.\lSetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_ik_constraint_timeline.html#aaed59ed804d181115397cbff98d6f49f",tooltip="Sets the time, mix and bend direction of the specified keyframe."];
+  Node1 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Spine.TransformConstraint\lTimeline.SetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint_timeline.html#a3b53b9e1307a6ef101f3d86b37db30b0",tooltip=" "];
+  Node1 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Spine.PathConstraintPosition\lTimeline.SetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_position_timeline.html#a60e5d27ae197826711c688036a3c7362",tooltip="Sets the time and value of the specified keyframe."];
+  Node1 -> Node22 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Spine.PathConstraintMixTimeline.\lSetFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_mix_timeline.html#a9d9391c74b58c06f236d744bef2071b6",tooltip="Sets the time and mixes of the specified keyframe."];
+}

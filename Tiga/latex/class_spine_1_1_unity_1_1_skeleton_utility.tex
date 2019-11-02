@@ -1,0 +1,874 @@
+\hypertarget{class_spine_1_1_unity_1_1_skeleton_utility}{}\doxysection{Spine.\+Unity.\+Skeleton\+Utility 클래스 참조}
+\label{class_spine_1_1_unity_1_1_skeleton_utility}\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+
+
+Spine.\+Unity.\+Skeleton\+Utility에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Skeleton\+Utility에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aed637e666a14547c7555f31b31862b8e}{Skeleton\+Utility\+Delegate}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6015995b1895b4214334358fdc55768c}{Register\+Bone}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} bone)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac8458e1ad60e67409c855038cce5aef0}{Unregister\+Bone}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} bone)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a407c00a3caaf1edc8331beb155c8c01e}{Register\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}} constraint)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac55f7be5cc43dcbeebf80284140b5cd9}{Unregister\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}} constraint)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{Collect\+Bones}} ()
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac086f4278f6d2562ce55de4cb55f8292}{Get\+Bone\+Root}} ()
+\item 
+Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a0f885c2a30cd961443484ca28ec77701}{Spawn\+Root}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}} mode, bool pos, bool rot, bool sca)
+\item 
+Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aca7429047790d57b9da23180484224c7}{Spawn\+Hierarchy}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}} mode, bool pos, bool rot, bool sca)
+\item 
+Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_af1451cab18afafebe62cace739cf4186}{Spawn\+Bone\+Recursively}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, Transform parent, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}} mode, bool pos, bool rot, bool sca)
+\item 
+Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a66d2098df30148e5c5e592f1de9bc414}{Spawn\+Bone}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, Transform parent, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}} mode, bool pos, bool rot, bool sca)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static Polygon\+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_abec5211fa4152d9c58d962cd15664929}{Add\+Bounding\+Box\+Game\+Object}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, string skin\+Name, string slot\+Name, string attachment\+Name, Transform parent, bool is\+Trigger=true)
+\item 
+static Polygon\+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a5c94711b857858bdbf94d4274a5a2b9c}{Add\+Bounding\+Box\+Game\+Object}} (string name, \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} box, \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot, Transform parent, bool is\+Trigger=true)
+\item 
+static Polygon\+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a2fc833730b8296436bf5db3cdcbcf7dd}{Add\+Bounding\+Box\+As\+Component}} (\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} box, \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot, Game\+Object game\+Object, bool is\+Trigger=true, bool is\+Kinematic=true, float gravity\+Scale=0f)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1caa5e8b981d3a6cd292f1ddedd1eef5}{Set\+Collider\+Points\+Local}} (Polygon\+Collider2D collider, \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} slot, \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} box)
+\item 
+static Bounds \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aed27598167513f9671caf80a7feb92d9}{Get\+Bounding\+Box\+Bounds}} (\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} bounding\+Box, float depth=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{bone\+Root}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeleton\+Renderer}}
+\item 
+\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeleton\+Animation}}
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utility\+Bones}} = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utility\+Constraints}} = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a47588d0826aaf085a6ef69e962a2d627}{has\+Transform\+Bones}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}{has\+Utility\+Constraints}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}{need\+To\+Reprocess\+Bones}}
+\end{DoxyCompactItemize}
+\doxysubsection*{이벤트}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aed637e666a14547c7555f31b31862b8e}{Skeleton\+Utility\+Delegate}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a78f9937363cf48275262c487cd4279d5}{On\+Reset}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aa5b48ed8d544873a382a97594d1de620}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aa78b163706d319ad90dc479f8aaeef8f}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a5a0b0a15d3643eac13d5eac42bac0536}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ab6d579cc0b750cdb5cda3b229bee548e}{On\+Disable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}{Handle\+Renderer\+Reset}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} r)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}{Update\+Local}} (\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} anim)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}{Update\+World}} (\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} anim)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}{Update\+Complete}} (\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} anim)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}{Update\+All\+Bones}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_a3d0968347ecaceb93692a4d658d5b2cf}{Skeleton\+Utility\+Bone.\+Update\+Phase}} phase)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Utility.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a2fc833730b8296436bf5db3cdcbcf7dd}\label{class_spine_1_1_unity_1_1_skeleton_utility_a2fc833730b8296436bf5db3cdcbcf7dd}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!AddBoundingBoxAsComponent@{AddBoundingBoxAsComponent}}
+\index{AddBoundingBoxAsComponent@{AddBoundingBoxAsComponent}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{AddBoundingBoxAsComponent()}{AddBoundingBoxAsComponent()}}
+{\footnotesize\ttfamily static Polygon\+Collider2D Spine.\+Unity.\+Skeleton\+Utility.\+Add\+Bounding\+Box\+As\+Component (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{box,  }\item[{\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot,  }\item[{Game\+Object}]{game\+Object,  }\item[{bool}]{is\+Trigger = {\ttfamily true},  }\item[{bool}]{is\+Kinematic = {\ttfamily true},  }\item[{float}]{gravity\+Scale = {\ttfamily 0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 75 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                                                                                                                                                                                          \{}
+\DoxyCodeLine{77             \textcolor{keywordflow}{if} (box == \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (slot.bone != slot.\mbox{\hyperlink{class_spine_1_1_slot_a60be6be5435fd073a1a31d90e9948231}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}{RootBone}}) \{}
+\DoxyCodeLine{80                 var rb = gameObject.GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{if} (rb == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{82                     rb = gameObject.AddComponent<Rigidbody2D>();}
+\DoxyCodeLine{83                     rb.isKinematic = isKinematic;}
+\DoxyCodeLine{84                     rb.gravityScale = gravityScale;}
+\DoxyCodeLine{85                 \}}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             var collider = gameObject.AddComponent<PolygonCollider2D>();}
+\DoxyCodeLine{89             collider.isTrigger = isTrigger;}
+\DoxyCodeLine{90             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1caa5e8b981d3a6cd292f1ddedd1eef5}{SetColliderPointsLocal}}(collider, slot, box);}
+\DoxyCodeLine{91             \textcolor{keywordflow}{return} collider;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_abec5211fa4152d9c58d962cd15664929}\label{class_spine_1_1_unity_1_1_skeleton_utility_abec5211fa4152d9c58d962cd15664929}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!AddBoundingBoxGameObject@{AddBoundingBoxGameObject}}
+\index{AddBoundingBoxGameObject@{AddBoundingBoxGameObject}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{AddBoundingBoxGameObject()}{AddBoundingBoxGameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Polygon\+Collider2D Spine.\+Unity.\+Skeleton\+Utility.\+Add\+Bounding\+Box\+Game\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{string}]{skin\+Name,  }\item[{string}]{slot\+Name,  }\item[{string}]{attachment\+Name,  }\item[{Transform}]{parent,  }\item[{bool}]{is\+Trigger = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                                                                                                                                                        \{}
+\DoxyCodeLine{44             \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin = \textcolor{keywordtype}{string}.IsNullOrEmpty(skinName) ? skeleton.data.defaultSkin : skeleton.data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a6f87af52a59ff01da994c5ae68397369}{FindSkin}}(skinName);}
+\DoxyCodeLine{45             \textcolor{keywordflow}{if} (skin == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{46                 Debug.LogError(\textcolor{stringliteral}{"Skin "} + skinName + \textcolor{stringliteral}{" not found!"});}
+\DoxyCodeLine{47                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{48             \}}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50             var attachment = skin.\mbox{\hyperlink{class_spine_1_1_skin_a8e1b079b629865148f809487fbda7938}{GetAttachment}}(skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_ab89442a0b2114e2f9f3da38efcef210d}{FindSlotIndex}}(slotName), attachmentName);}
+\DoxyCodeLine{51             \textcolor{keywordflow}{if} (attachment == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{52                 Debug.LogFormat(\textcolor{stringliteral}{"Attachment in slot '\{0\}' named '\{1\}' not found in skin '\{2\}'."}, slotName, attachmentName, skin.name);}
+\DoxyCodeLine{53                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{54             \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56             var box = attachment as \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{BoundingBoxAttachment}};}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (box != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{58                 var slot = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aeeaf7abe56f807e6e57f3a2514e607ab}{FindSlot}}(slotName);}
+\DoxyCodeLine{59                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_abec5211fa4152d9c58d962cd15664929}{AddBoundingBoxGameObject}}(box.Name, box, slot, parent, isTrigger);}
+\DoxyCodeLine{60             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{61                 Debug.LogFormat(\textcolor{stringliteral}{"Attachment '\{0\}' was not a Bounding Box."}, attachmentName);}
+\DoxyCodeLine{62                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{63             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a5c94711b857858bdbf94d4274a5a2b9c}\label{class_spine_1_1_unity_1_1_skeleton_utility_a5c94711b857858bdbf94d4274a5a2b9c}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!AddBoundingBoxGameObject@{AddBoundingBoxGameObject}}
+\index{AddBoundingBoxGameObject@{AddBoundingBoxGameObject}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{AddBoundingBoxGameObject()}{AddBoundingBoxGameObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static Polygon\+Collider2D Spine.\+Unity.\+Skeleton\+Utility.\+Add\+Bounding\+Box\+Game\+Object (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{box,  }\item[{\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot,  }\item[{Transform}]{parent,  }\item[{bool}]{is\+Trigger = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                                                                                                                                               \{}
+\DoxyCodeLine{67             var go = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"[BoundingBox]"} + (\textcolor{keywordtype}{string}.IsNullOrEmpty(name) ? box.\mbox{\hyperlink{class_spine_1_1_attachment_a63a616e3fcbfe9641abf8bd282e64ce8}{Name}} : name));}
+\DoxyCodeLine{68             var got = go.transform;}
+\DoxyCodeLine{69             got.parent = parent;}
+\DoxyCodeLine{70             got.localPosition = Vector3.zero;}
+\DoxyCodeLine{71             got.localRotation = Quaternion.identity;}
+\DoxyCodeLine{72             got.localScale = Vector3.one;}
+\DoxyCodeLine{73             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a2fc833730b8296436bf5db3cdcbcf7dd}{AddBoundingBoxAsComponent}}(box, slot, go, isTrigger);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}\label{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!CollectBones@{CollectBones}}
+\index{CollectBones@{CollectBones}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{CollectBones()}{CollectBones()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Collect\+Bones (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 218 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{219                                     \{}
+\DoxyCodeLine{220             var skeleton = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{221             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{224                 var constraintTargets = \textcolor{keyword}{new} List<System.Object>();}
+\DoxyCodeLine{225                 var ikConstraints = skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}{IkConstraints}};}
+\DoxyCodeLine{226                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = ikConstraints.Count; i < n; i++)}
+\DoxyCodeLine{227                     constraintTargets.Add(ikConstraints.Items[i].target);}
+\DoxyCodeLine{228 }
+\DoxyCodeLine{229                 var transformConstraints = skeleton.TransformConstraints;}
+\DoxyCodeLine{230                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = transformConstraints.Count; i < n; i++)}
+\DoxyCodeLine{231                     constraintTargets.Add(transformConstraints.Items[i].target);}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233                 var \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}};}
+\DoxyCodeLine{234                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Count; i < n; i++) \{}
+\DoxyCodeLine{235                     var b = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}[i];}
+\DoxyCodeLine{236                     \textcolor{keywordflow}{if} (b.bone == \textcolor{keyword}{null}) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{237                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a47588d0826aaf085a6ef69e962a2d627}{hasTransformBones}} |= (b.mode == SkeletonUtilityBone.Mode.Override);}
+\DoxyCodeLine{238                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}{hasUtilityConstraints}} |= constraintTargets.Contains(b.bone);}
+\DoxyCodeLine{239                 \}}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}{hasUtilityConstraints}} |= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Count > 0;}
+\DoxyCodeLine{242 }
+\DoxyCodeLine{243                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{244                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ae1c662ef2143a2f3d3529f1f7b6f66d6}{UpdateWorld}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}{UpdateWorld}};}
+\DoxyCodeLine{245                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_a472ff143c8710c7bb3ead257f4e78b9d}{UpdateComplete}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}{UpdateComplete}};}
+\DoxyCodeLine{246 }
+\DoxyCodeLine{247                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a47588d0826aaf085a6ef69e962a2d627}{hasTransformBones}} || \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}{hasUtilityConstraints}})}
+\DoxyCodeLine{248                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ae1c662ef2143a2f3d3529f1f7b6f66d6}{UpdateWorld}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}{UpdateWorld}};}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}{hasUtilityConstraints}})}
+\DoxyCodeLine{251                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_a472ff143c8710c7bb3ead257f4e78b9d}{UpdateComplete}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}{UpdateComplete}};}
+\DoxyCodeLine{252                 \}}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}{needToReprocessBones}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{255             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{256                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Clear();}
+\DoxyCodeLine{257                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Clear();}
+\DoxyCodeLine{258             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ac086f4278f6d2562ce55de4cb55f8292}\label{class_spine_1_1_unity_1_1_skeleton_utility_ac086f4278f6d2562ce55de4cb55f8292}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!GetBoneRoot@{GetBoneRoot}}
+\index{GetBoneRoot@{GetBoneRoot}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{GetBoneRoot()}{GetBoneRoot()}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Skeleton\+Utility.\+Get\+Bone\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 292 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{293                                         \{}
+\DoxyCodeLine{294             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{295                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}};}
+\DoxyCodeLine{296 }
+\DoxyCodeLine{297             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}} = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"SkeletonUtility-\/Root"}).transform;}
+\DoxyCodeLine{298             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}.parent = transform;}
+\DoxyCodeLine{299             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}.localPosition = Vector3.zero;}
+\DoxyCodeLine{300             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}.localRotation = Quaternion.identity;}
+\DoxyCodeLine{301             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}.localScale = Vector3.one;}
+\DoxyCodeLine{302 }
+\DoxyCodeLine{303             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aed27598167513f9671caf80a7feb92d9}\label{class_spine_1_1_unity_1_1_skeleton_utility_aed27598167513f9671caf80a7feb92d9}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!GetBoundingBoxBounds@{GetBoundingBoxBounds}}
+\index{GetBoundingBoxBounds@{GetBoundingBoxBounds}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{GetBoundingBoxBounds()}{GetBoundingBoxBounds()}}
+{\footnotesize\ttfamily static Bounds Spine.\+Unity.\+Skeleton\+Utility.\+Get\+Bounding\+Box\+Bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{bounding\+Box,  }\item[{float}]{depth = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 100 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                                                                                        \{}
+\DoxyCodeLine{102             \textcolor{keywordtype}{float}[] floats = boundingBox.\mbox{\hyperlink{class_spine_1_1_vertex_attachment_a1eb0b1000871b10626c168cd52c25447}{Vertices}};}
+\DoxyCodeLine{103             \textcolor{keywordtype}{int} floatCount = floats.Length;}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             Bounds bounds = \textcolor{keyword}{new} Bounds();}
+\DoxyCodeLine{106             bounds.center = \textcolor{keyword}{new} Vector3(floats[0], floats[1], 0);}
+\DoxyCodeLine{107             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 2; i < floatCount; i += 2)}
+\DoxyCodeLine{108                 bounds.Encapsulate(\textcolor{keyword}{new} Vector3(floats[i], floats[i + 1], 0));}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110             Vector3 size = bounds.size;}
+\DoxyCodeLine{111             size.z = depth;}
+\DoxyCodeLine{112             bounds.size = size;}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114             \textcolor{keywordflow}{return} bounds;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}\label{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!HandleRendererReset@{HandleRendererReset}}
+\index{HandleRendererReset@{HandleRendererReset}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{HandleRendererReset()}{HandleRendererReset()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Handle\+Renderer\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 185 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{186                                                       \{}
+\DoxyCodeLine{187             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a78f9937363cf48275262c487cd4279d5}{OnReset}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{188                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a78f9937363cf48275262c487cd4279d5}{OnReset}}();}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ab6d579cc0b750cdb5cda3b229bee548e}\label{class_spine_1_1_unity_1_1_skeleton_utility_ab6d579cc0b750cdb5cda3b229bee548e}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 175 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{176                           \{}
+\DoxyCodeLine{177             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}{HandleRendererReset}};}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{180                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ac864241e26a9dd5c4c056eb9f7ceaca3}{UpdateLocal}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}{UpdateLocal}};}
+\DoxyCodeLine{181                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ae1c662ef2143a2f3d3529f1f7b6f66d6}{UpdateWorld}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}{UpdateWorld}};}
+\DoxyCodeLine{182                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_a472ff143c8710c7bb3ead257f4e78b9d}{UpdateComplete}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}{UpdateComplete}};}
+\DoxyCodeLine{183             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aa78b163706d319ad90dc479f8aaeef8f}\label{class_spine_1_1_unity_1_1_skeleton_utility_aa78b163706d319ad90dc479f8aaeef8f}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 148 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149                          \{}
+\DoxyCodeLine{150             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{151                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}} = GetComponent<SkeletonRenderer>();}
+\DoxyCodeLine{152             \}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{155                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} = GetComponent<SkeletonAnimation>();}
+\DoxyCodeLine{156                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{157                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} = GetComponent<SkeletonAnimator>();}
+\DoxyCodeLine{158             \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}{HandleRendererReset}};}
+\DoxyCodeLine{161             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3e082cff6cee7236a52c1d2e180858e6}{HandleRendererReset}};}
+\DoxyCodeLine{162 }
+\DoxyCodeLine{163             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{164                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ac864241e26a9dd5c4c056eb9f7ceaca3}{UpdateLocal}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}{UpdateLocal}};}
+\DoxyCodeLine{165                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}{skeletonAnimation}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ac864241e26a9dd5c4c056eb9f7ceaca3}{UpdateLocal}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}{UpdateLocal}};}
+\DoxyCodeLine{166             \}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a6015995b1895b4214334358fdc55768c}\label{class_spine_1_1_unity_1_1_skeleton_utility_a6015995b1895b4214334358fdc55768c}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!RegisterBone@{RegisterBone}}
+\index{RegisterBone@{RegisterBone}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{RegisterBone()}{RegisterBone()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Register\+Bone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}}}]{bone }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 192 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{193                                                             \{}
+\DoxyCodeLine{194             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Contains(bone))}
+\DoxyCodeLine{195                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{196             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{197                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Add(bone);}
+\DoxyCodeLine{198                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}{needToReprocessBones}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{199             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a407c00a3caaf1edc8331beb155c8c01e}\label{class_spine_1_1_unity_1_1_skeleton_utility_a407c00a3caaf1edc8331beb155c8c01e}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!RegisterConstraint@{RegisterConstraint}}
+\index{RegisterConstraint@{RegisterConstraint}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{RegisterConstraint()}{RegisterConstraint()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Register\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}}}]{constraint }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 205 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206                                                                               \{}
+\DoxyCodeLine{207             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Contains(constraint))}
+\DoxyCodeLine{208                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{209             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{210                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Add(constraint);}
+\DoxyCodeLine{211                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}{needToReprocessBones}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{212             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a1caa5e8b981d3a6cd292f1ddedd1eef5}\label{class_spine_1_1_unity_1_1_skeleton_utility_a1caa5e8b981d3a6cd292f1ddedd1eef5}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SetColliderPointsLocal@{SetColliderPointsLocal}}
+\index{SetColliderPointsLocal@{SetColliderPointsLocal}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SetColliderPointsLocal()}{SetColliderPointsLocal()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Skeleton\+Utility.\+Set\+Collider\+Points\+Local (\begin{DoxyParamCaption}\item[{Polygon\+Collider2D}]{collider,  }\item[{\mbox{\hyperlink{class_spine_1_1_slot}{Slot}}}]{slot,  }\item[{\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 93 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94                                                                                                                      \{}
+\DoxyCodeLine{95             \textcolor{keywordflow}{if} (box == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if} (box.IsWeighted()) Debug.LogWarning(\textcolor{stringliteral}{"UnityEngine.PolygonCollider2D does not support weighted or animated points. Collider points will not be animated and may have incorrect orientation. If you want to use it as a collider, please remove weights and animations from the bounding box in Spine editor."});}
+\DoxyCodeLine{97             var verts = box.GetLocalVertices(slot, \textcolor{keyword}{null});}
+\DoxyCodeLine{98             collider.SetPath(0, verts);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aed637e666a14547c7555f31b31862b8e}\label{class_spine_1_1_unity_1_1_skeleton_utility_aed637e666a14547c7555f31b31862b8e}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SkeletonUtilityDelegate@{SkeletonUtilityDelegate}}
+\index{SkeletonUtilityDelegate@{SkeletonUtilityDelegate}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SkeletonUtilityDelegate()}{SkeletonUtilityDelegate()}}
+{\footnotesize\ttfamily delegate void Spine.\+Unity.\+Skeleton\+Utility.\+Skeleton\+Utility\+Delegate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a66d2098df30148e5c5e592f1de9bc414}\label{class_spine_1_1_unity_1_1_skeleton_utility_a66d2098df30148e5c5e592f1de9bc414}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SpawnBone@{SpawnBone}}
+\index{SpawnBone@{SpawnBone}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SpawnBone()}{SpawnBone()}}
+{\footnotesize\ttfamily Game\+Object Spine.\+Unity.\+Skeleton\+Utility.\+Spawn\+Bone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{Transform}]{parent,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}}}]{mode,  }\item[{bool}]{pos,  }\item[{bool}]{rot,  }\item[{bool}]{sca }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 334 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{335                                                                                                                                \{}
+\DoxyCodeLine{336             GameObject go = \textcolor{keyword}{new} GameObject(bone.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}});}
+\DoxyCodeLine{337             go.transform.parent = parent;}
+\DoxyCodeLine{338 }
+\DoxyCodeLine{339             SkeletonUtilityBone b = go.AddComponent<SkeletonUtilityBone>();}
+\DoxyCodeLine{340             b.skeletonUtility = \textcolor{keyword}{this};}
+\DoxyCodeLine{341             b.position = pos;}
+\DoxyCodeLine{342             b.rotation = rot;}
+\DoxyCodeLine{343             b.scale = sca;}
+\DoxyCodeLine{344             b.mode = mode;}
+\DoxyCodeLine{345             b.zPosition = \textcolor{keyword}{true};}
+\DoxyCodeLine{346             b.Reset();}
+\DoxyCodeLine{347             b.bone = bone;}
+\DoxyCodeLine{348             b.boneName = bone.\mbox{\hyperlink{class_spine_1_1_bone_a3c4ec0f40027d9604f8d46a68af8052c}{Data}}.\mbox{\hyperlink{class_spine_1_1_bone_data_a4333ca2630ac562a9561650ec128d864}{Name}};}
+\DoxyCodeLine{349             b.valid = \textcolor{keyword}{true};}
+\DoxyCodeLine{350 }
+\DoxyCodeLine{351             \textcolor{keywordflow}{if} (mode == SkeletonUtilityBone.Mode.Override) \{}
+\DoxyCodeLine{352                 \textcolor{keywordflow}{if} (rot)}
+\DoxyCodeLine{353                     go.transform.localRotation = Quaternion.Euler(0, 0, b.bone.AppliedRotation);}
+\DoxyCodeLine{354 }
+\DoxyCodeLine{355                 \textcolor{keywordflow}{if} (pos)}
+\DoxyCodeLine{356                     go.transform.localPosition = \textcolor{keyword}{new} Vector3(b.bone.X, b.bone.Y, 0);}
+\DoxyCodeLine{357 }
+\DoxyCodeLine{358                 go.transform.localScale = \textcolor{keyword}{new} Vector3(b.bone.scaleX, b.bone.scaleY, 0);}
+\DoxyCodeLine{359             \}}
+\DoxyCodeLine{360 }
+\DoxyCodeLine{361             \textcolor{keywordflow}{return} go;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_af1451cab18afafebe62cace739cf4186}\label{class_spine_1_1_unity_1_1_skeleton_utility_af1451cab18afafebe62cace739cf4186}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SpawnBoneRecursively@{SpawnBoneRecursively}}
+\index{SpawnBoneRecursively@{SpawnBoneRecursively}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SpawnBoneRecursively()}{SpawnBoneRecursively()}}
+{\footnotesize\ttfamily Game\+Object Spine.\+Unity.\+Skeleton\+Utility.\+Spawn\+Bone\+Recursively (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{Transform}]{parent,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}}}]{mode,  }\item[{bool}]{pos,  }\item[{bool}]{rot,  }\item[{bool}]{sca }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 322 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{323                                                                                                                                           \{}
+\DoxyCodeLine{324             GameObject go = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a66d2098df30148e5c5e592f1de9bc414}{SpawnBone}}(bone, parent, mode, pos, rot, sca);}
+\DoxyCodeLine{325 }
+\DoxyCodeLine{326             \mbox{\hyperlink{class_spine_1_1_exposed_list}{ExposedList<Bone>}} childrenBones = bone.\mbox{\hyperlink{class_spine_1_1_bone_a1b8a66d5894a29a97b2073226c38ccd5}{Children}};}
+\DoxyCodeLine{327             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = childrenBones.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i < n; i++) \{}
+\DoxyCodeLine{328                 \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} child = childrenBones.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i];}
+\DoxyCodeLine{329                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_af1451cab18afafebe62cace739cf4186}{SpawnBoneRecursively}}(child, go.transform, mode, pos, rot, sca);}
+\DoxyCodeLine{330             \}}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332             \textcolor{keywordflow}{return} go;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 21
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aca7429047790d57b9da23180484224c7}\label{class_spine_1_1_unity_1_1_skeleton_utility_aca7429047790d57b9da23180484224c7}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SpawnHierarchy@{SpawnHierarchy}}
+\index{SpawnHierarchy@{SpawnHierarchy}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SpawnHierarchy()}{SpawnHierarchy()}}
+{\footnotesize\ttfamily Game\+Object Spine.\+Unity.\+Skeleton\+Utility.\+Spawn\+Hierarchy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}}}]{mode,  }\item[{bool}]{pos,  }\item[{bool}]{rot,  }\item[{bool}]{sca }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 314 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{315                                                                                                        \{}
+\DoxyCodeLine{316             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac086f4278f6d2562ce55de4cb55f8292}{GetBoneRoot}}();}
+\DoxyCodeLine{317             \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{318             GameObject go = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_af1451cab18afafebe62cace739cf4186}{SpawnBoneRecursively}}(skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}{RootBone}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}, mode, pos, rot, sca);}
+\DoxyCodeLine{319             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+\DoxyCodeLine{320             \textcolor{keywordflow}{return} go;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 22
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 23
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a0f885c2a30cd961443484ca28ec77701}\label{class_spine_1_1_unity_1_1_skeleton_utility_a0f885c2a30cd961443484ca28ec77701}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!SpawnRoot@{SpawnRoot}}
+\index{SpawnRoot@{SpawnRoot}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{SpawnRoot()}{SpawnRoot()}}
+{\footnotesize\ttfamily Game\+Object Spine.\+Unity.\+Skeleton\+Utility.\+Spawn\+Root (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_aec3397f6106156b665b8b44648ccb47b}{Skeleton\+Utility\+Bone.\+Mode}}}]{mode,  }\item[{bool}]{pos,  }\item[{bool}]{rot,  }\item[{bool}]{sca }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 305 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{306                                                                                                   \{}
+\DoxyCodeLine{307             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac086f4278f6d2562ce55de4cb55f8292}{GetBoneRoot}}();}
+\DoxyCodeLine{308             \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{309 }
+\DoxyCodeLine{310             GameObject go = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a66d2098df30148e5c5e592f1de9bc414}{SpawnBone}}(skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}{RootBone}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}, mode, pos, rot, sca);}
+\DoxyCodeLine{311             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+\DoxyCodeLine{312             \textcolor{keywordflow}{return} go;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 24
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 25
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a5a0b0a15d3643eac13d5eac42bac0536}\label{class_spine_1_1_unity_1_1_skeleton_utility_a5a0b0a15d3643eac13d5eac42bac0536}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 170 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{171                       \{}
+\DoxyCodeLine{172             \textcolor{comment}{//recollect because order of operations failure when switching between game mode and edit mode...}}
+\DoxyCodeLine{173             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 26
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ac8458e1ad60e67409c855038cce5aef0}\label{class_spine_1_1_unity_1_1_skeleton_utility_ac8458e1ad60e67409c855038cce5aef0}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UnregisterBone@{UnregisterBone}}
+\index{UnregisterBone@{UnregisterBone}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UnregisterBone()}{UnregisterBone()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Unregister\+Bone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}}}]{bone }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 201 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                                               \{}
+\DoxyCodeLine{203             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Remove(bone);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 27
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ac55f7be5cc43dcbeebf80284140b5cd9}\label{class_spine_1_1_unity_1_1_skeleton_utility_ac55f7be5cc43dcbeebf80284140b5cd9}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UnregisterConstraint@{UnregisterConstraint}}
+\index{UnregisterConstraint@{UnregisterConstraint}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UnregisterConstraint()}{UnregisterConstraint()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Unregister\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}}}]{constraint }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Utility.\+cs 파일의 214 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215                                                                                 \{}
+\DoxyCodeLine{216             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Remove(constraint);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 28
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aa5b48ed8d544873a382a97594d1de620}\label{class_spine_1_1_unity_1_1_skeleton_utility_aa5b48ed8d544873a382a97594d1de620}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 121 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                        \{}
+\DoxyCodeLine{123             var skeleton = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{124             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}} != \textcolor{keyword}{null} \&\& skeleton != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{125                 Vector3 flipScale = Vector3.one;}
+\DoxyCodeLine{126                 \textcolor{keywordflow}{if} (skeleton.FlipX)}
+\DoxyCodeLine{127                     flipScale.x = -\/1;}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129                 \textcolor{keywordflow}{if} (skeleton.FlipY)}
+\DoxyCodeLine{130                     flipScale.y = -\/1;}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{132                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}}.localScale = flipScale;}
+\DoxyCodeLine{133             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}\label{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UpdateAllBones@{UpdateAllBones}}
+\index{UpdateAllBones@{UpdateAllBones}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UpdateAllBones()}{UpdateAllBones()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Update\+All\+Bones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_a3d0968347ecaceb93692a4d658d5b2cf}{Skeleton\+Utility\+Bone.\+Update\+Phase}}}]{phase }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 282 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{283                                                                     \{}
+\DoxyCodeLine{284             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}{boneRoot}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{285                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+\DoxyCodeLine{286 }
+\DoxyCodeLine{287             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}};}
+\DoxyCodeLine{288             \textcolor{keywordflow}{if} (utilityBones == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{289             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Count; i < n; i++)}
+\DoxyCodeLine{290                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}[i].DoUpdate(phase);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 29
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 30
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}\label{class_spine_1_1_unity_1_1_skeleton_utility_a594711858f18430e3a4bb903cb50b7f9}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UpdateComplete@{UpdateComplete}}
+\index{UpdateComplete@{UpdateComplete}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UpdateComplete()}{UpdateComplete()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Update\+Complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}}}]{anim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 278 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{279                                                       \{}
+\DoxyCodeLine{280             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}{UpdateAllBones}}(SkeletonUtilityBone.UpdatePhase.Complete);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 31
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 32
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}\label{class_spine_1_1_unity_1_1_skeleton_utility_a3456ddafc7f626b07ec0226e00c787b9}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UpdateLocal@{UpdateLocal}}
+\index{UpdateLocal@{UpdateLocal}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UpdateLocal()}{UpdateLocal()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Update\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}}}]{anim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 260 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{261                                                    \{}
+\DoxyCodeLine{262             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}{needToReprocessBones}})}
+\DoxyCodeLine{263                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ae32bbea21478c73e94adea6af43e0a52}{CollectBones}}();}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{265             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}};}
+\DoxyCodeLine{266             \textcolor{keywordflow}{if} (utilityBones == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{267             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}.Count; i < n; i++)}
+\DoxyCodeLine{268                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}{utilityBones}}[i].transformLerpComplete = \textcolor{keyword}{false};}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}{UpdateAllBones}}(SkeletonUtilityBone.UpdatePhase.Local);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 33
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 34
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}\label{class_spine_1_1_unity_1_1_skeleton_utility_a118b3e9fc284b8b231e7a66f0ce2fe44}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!UpdateWorld@{UpdateWorld}}
+\index{UpdateWorld@{UpdateWorld}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{UpdateWorld()}{UpdateWorld()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Utility.\+Update\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}}}]{anim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 272 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273                                                    \{}
+\DoxyCodeLine{274             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a4494dc034768c27c176aa285f53de883}{UpdateAllBones}}(SkeletonUtilityBone.UpdatePhase.World);}
+\DoxyCodeLine{275             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}.Count; i < n; i++)}
+\DoxyCodeLine{276                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}{utilityConstraints}}[i].DoUpdate();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 35
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 36
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}\label{class_spine_1_1_unity_1_1_skeleton_utility_a1d7d57df30015e6bf3c9432b4842e152}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!boneRoot@{boneRoot}}
+\index{boneRoot@{boneRoot}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{boneRoot}{boneRoot}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Skeleton\+Utility.\+bone\+Root}
+
+
+
+Skeleton\+Utility.\+cs 파일의 119 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a47588d0826aaf085a6ef69e962a2d627}\label{class_spine_1_1_unity_1_1_skeleton_utility_a47588d0826aaf085a6ef69e962a2d627}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!hasTransformBones@{hasTransformBones}}
+\index{hasTransformBones@{hasTransformBones}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{hasTransformBones}{hasTransformBones}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Skeleton\+Utility.\+has\+Transform\+Bones\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 144 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}\label{class_spine_1_1_unity_1_1_skeleton_utility_aac41214da80f32fb4d3aa65e29398951}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!hasUtilityConstraints@{hasUtilityConstraints}}
+\index{hasUtilityConstraints@{hasUtilityConstraints}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{hasUtilityConstraints}{hasUtilityConstraints}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Skeleton\+Utility.\+has\+Utility\+Constraints\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 145 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}\label{class_spine_1_1_unity_1_1_skeleton_utility_a6d7056244429e1bcc2da229a0f76ba5f}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!needToReprocessBones@{needToReprocessBones}}
+\index{needToReprocessBones@{needToReprocessBones}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{needToReprocessBones}{needToReprocessBones}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Skeleton\+Utility.\+need\+To\+Reprocess\+Bones\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Skeleton\+Utility.\+cs 파일의 146 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}\label{class_spine_1_1_unity_1_1_skeleton_utility_a6e2c494c1cdbf629483ff40c68fdf8f6}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} Spine.\+Unity.\+Skeleton\+Utility.\+skeleton\+Animation}
+
+
+
+Skeleton\+Utility.\+cs 파일의 138 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}\label{class_spine_1_1_unity_1_1_skeleton_utility_ada180352ffc8a7358dc433e4271ca40e}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Skeleton\+Utility.\+skeleton\+Renderer}
+
+
+
+Skeleton\+Utility.\+cs 파일의 136 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}\label{class_spine_1_1_unity_1_1_skeleton_utility_a4d6b3988b6597fe9a8681b631b55d072}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!utilityBones@{utilityBones}}
+\index{utilityBones@{utilityBones}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{utilityBones}{utilityBones}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}}$>$ Spine.\+Unity.\+Skeleton\+Utility.\+utility\+Bones = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}}$>$()}
+
+
+
+Skeleton\+Utility.\+cs 파일의 140 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}\label{class_spine_1_1_unity_1_1_skeleton_utility_a845a24be69d154e1a0a8e218db729ac5}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!utilityConstraints@{utilityConstraints}}
+\index{utilityConstraints@{utilityConstraints}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{utilityConstraints}{utilityConstraints}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}}$>$ Spine.\+Unity.\+Skeleton\+Utility.\+utility\+Constraints = new List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint}{Skeleton\+Utility\+Constraint}}$>$()}
+
+
+
+Skeleton\+Utility.\+cs 파일의 142 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{이벤트 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_a78f9937363cf48275262c487cd4279d5}\label{class_spine_1_1_unity_1_1_skeleton_utility_a78f9937363cf48275262c487cd4279d5}} 
+\index{Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}!OnReset@{OnReset}}
+\index{OnReset@{OnReset}!Spine.Unity.SkeletonUtility@{Spine.Unity.SkeletonUtility}}
+\doxysubsubsection{\texorpdfstring{OnReset}{OnReset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_aed637e666a14547c7555f31b31862b8e}{Skeleton\+Utility\+Delegate}} Spine.\+Unity.\+Skeleton\+Utility.\+On\+Reset}
+
+
+
+Skeleton\+Utility.\+cs 파일의 118 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Skeleton\+Utility/\mbox{\hyperlink{_skeleton_utility_8cs}{Skeleton\+Utility.\+cs}}\end{DoxyCompactItemize}

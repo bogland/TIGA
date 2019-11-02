@@ -1,0 +1,28 @@
+var class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost =
+[
+    [ "Ghosting", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#aa05489af6e32faa203bcd4384140a773", null ],
+    [ "HexToColor", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#aa0bdaed7aaa20c809514645b2a851185", null ],
+    [ "OnDestroy", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a8f5b52b55669a3bd2ed4e34f41ec26e3", null ],
+    [ "OnEvent", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a2a601f7f4cf97467ebb02daf7217f08b", null ],
+    [ "Start", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#ac33e78e3ea777bdb1497765cd0dd2ab3", null ],
+    [ "Update", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a8466d249acef365ff2a8c24f4b28af49", null ],
+    [ "additive", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#ad4d678bdefef4ad816c50a8bd6a815af", null ],
+    [ "color", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#ab45c8f21242b95717bf049e916a5a8c7", null ],
+    [ "fadeSpeed", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#ac53201f68298856851f07a49007983d8", null ],
+    [ "GhostHideFlags", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a1fb043fcd3a1dfee4142e062d1d16e58", null ],
+    [ "ghostingEnabled", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a93679f2ae6fd10918e44b450d3f5ee08", null ],
+    [ "GhostingShaderName", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a744984c588832230261cda4c8eafae1d", null ],
+    [ "ghostShader", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a1d31c47b57d7cde73e2fac4f48f65e02", null ],
+    [ "materialTable", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a3ea72898f9aa12f36a2b60c538562da7", null ],
+    [ "maximumGhosts", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#aab98bb41c9dc9bf5f7e008e0345aabb4", null ],
+    [ "meshFilter", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#ab883f17622d52c9d2c4c54a408ff2b31", null ],
+    [ "meshRenderer", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a4007373d142712ff3078c250e57b4505", null ],
+    [ "nextSpawnTime", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a604d5ae6480944f67038068fcc98bf10", null ],
+    [ "pool", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a42248a122a00ab74b4c4bace9ae17cc9", null ],
+    [ "poolIndex", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a941bbe9d50cb27bd5e06331dec288fed", null ],
+    [ "skeletonRenderer", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a7fe817cf0223f04724145e5266c929a2", null ],
+    [ "sortWithDistanceOnly", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#aa70c04a9e490f3195d8e587f56a0cf95", null ],
+    [ "spawnRate", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#adeedf2cef5f3920c43e625e62839d7fd", null ],
+    [ "textureFade", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a6fea07ffa1d98481d795ff66616c5df4", null ],
+    [ "zOffset", "class_spine_1_1_unity_1_1_modules_1_1_skeleton_ghost.html#a5d28224ab593bab2b6ea8fd2c3581e85", null ]
+];

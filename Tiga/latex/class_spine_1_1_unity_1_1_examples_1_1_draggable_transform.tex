@@ -1,0 +1,131 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform}{}\doxysection{Spine.\+Unity.\+Examples.\+Draggable\+Transform 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform}\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+
+
+Spine.\+Unity.\+Examples.\+Draggable\+Transform에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Draggable\+Transform에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a84474e18298a5a6765d1a92488404357}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ac0eaa2f86f1fb7fa6b6f3044cd6e4609}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a79f6c324d64c0422ff58b0da135a461f}{On\+Mouse\+Drag}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a92656c624d3f1c27006636841554e805}{mouse\+Previous\+World}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ab6c269cc59aabbbef95060edb56ee589}{mouse\+Delta\+World}}
+\item 
+Camera \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}{main\+Camera}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Draggable\+Transform.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a79f6c324d64c0422ff58b0da135a461f}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a79f6c324d64c0422ff58b0da135a461f}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!OnMouseDrag@{OnMouseDrag}}
+\index{OnMouseDrag@{OnMouseDrag}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{OnMouseDrag()}{OnMouseDrag()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+On\+Mouse\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 23 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                             \{}
+\DoxyCodeLine{24             transform.Translate(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ab6c269cc59aabbbef95060edb56ee589}{mouseDeltaWorld}});}
+\DoxyCodeLine{25         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a84474e18298a5a6765d1a92488404357}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a84474e18298a5a6765d1a92488404357}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{11                       \{}
+\DoxyCodeLine{12             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}{mainCamera}} = Camera.main;}
+\DoxyCodeLine{13         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ac0eaa2f86f1fb7fa6b6f3044cd6e4609}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ac0eaa2f86f1fb7fa6b6f3044cd6e4609}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                        \{}
+\DoxyCodeLine{16             Vector2 mouseCurrent = Input.mousePosition;}
+\DoxyCodeLine{17             Vector2 mouseCurrentWorld = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}{mainCamera}}.ScreenToWorldPoint(\textcolor{keyword}{new} Vector3(mouseCurrent.x, mouseCurrent.y, -\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}{mainCamera}}.transform.position.z));}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ab6c269cc59aabbbef95060edb56ee589}{mouseDeltaWorld}} = mouseCurrentWorld -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a92656c624d3f1c27006636841554e805}{mousePreviousWorld}};}
+\DoxyCodeLine{20             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a92656c624d3f1c27006636841554e805}{mousePreviousWorld}} = mouseCurrentWorld;}
+\DoxyCodeLine{21         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a19a1c65d49a6a864edc4175cab8c802f}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!mainCamera@{mainCamera}}
+\index{mainCamera@{mainCamera}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{mainCamera}{mainCamera}}
+{\footnotesize\ttfamily Camera Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+main\+Camera\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ab6c269cc59aabbbef95060edb56ee589}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_ab6c269cc59aabbbef95060edb56ee589}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!mouseDeltaWorld@{mouseDeltaWorld}}
+\index{mouseDeltaWorld@{mouseDeltaWorld}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{mouseDeltaWorld}{mouseDeltaWorld}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+mouse\+Delta\+World\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a92656c624d3f1c27006636841554e805}\label{class_spine_1_1_unity_1_1_examples_1_1_draggable_transform_a92656c624d3f1c27006636841554e805}} 
+\index{Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}!mousePreviousWorld@{mousePreviousWorld}}
+\index{mousePreviousWorld@{mousePreviousWorld}!Spine.Unity.Examples.DraggableTransform@{Spine.Unity.Examples.DraggableTransform}}
+\doxysubsubsection{\texorpdfstring{mousePreviousWorld}{mousePreviousWorld}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Draggable\+Transform.\+mouse\+Previous\+World\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draggable\+Transform.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_draggable_transform_8cs}{Draggable\+Transform.\+cs}}\end{DoxyCompactItemize}

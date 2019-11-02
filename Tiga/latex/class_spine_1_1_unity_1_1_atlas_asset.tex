@@ -1,0 +1,411 @@
+\hypertarget{class_spine_1_1_unity_1_1_atlas_asset}{}\doxysection{Spine.\+Unity.\+Atlas\+Asset 클래스 참조}
+\label{class_spine_1_1_unity_1_1_atlas_asset}\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+
+
+Loads and stores a \mbox{\hyperlink{namespace_spine}{Spine}} atlas and list of materials.  
+
+
+
+
+Spine.\+Unity.\+Atlas\+Asset에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Atlas\+Asset에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}} ()
+\item 
+virtual \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}{Get\+Atlas}} ()
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+The atlas or null if it could not be loaded.
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+Mesh \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a061e197ef5933f66bc4b492b4661c6d4}{Generate\+Mesh}} (string name, Mesh mesh, out Material material, float scale=0.\+01f)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{Create\+Runtime\+Instance}} (Text\+Asset atlas\+Text, Material\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}, bool initialize)
+\begin{DoxyCompactList}\small\item\em Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a1d1e32745219d6057d0b71aee3f56f8d}{Create\+Runtime\+Instance}} (Text\+Asset atlas\+Text, Texture2D\mbox{[}$\,$\mbox{]} textures, Material material\+Property\+Source, bool initialize)
+\begin{DoxyCompactList}\small\item\em Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}. Only providing the textures is slower because it has to search for atlas page matches. \begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance(\+Text\+Asset, Material\mbox{[}$\,$\mbox{]}, bool)}}
+
+
+\end{DoxySeeAlso}
+\end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a9f7e2e50fefc09fa2bb6010a5a4a9464}{Create\+Runtime\+Instance}} (Text\+Asset atlas\+Text, Texture2D\mbox{[}$\,$\mbox{]} textures, Shader shader, bool initialize)
+\begin{DoxyCompactList}\small\item\em Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}. Only providing the textures is slower because it has to search for atlas page matches. \begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance(\+Text\+Asset, Material\mbox{[}$\,$\mbox{]}, bool)}}
+
+
+\end{DoxySeeAlso}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Text\+Asset \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a41084147ed730ae96c719308a9e227b0}{atlas\+File}}
+\item 
+Material\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a1e38afd686a65ec1f5c6e19d15c46478}{Is\+Loaded}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ac71a2cebdeda12be08c3528bf21841a6}{Reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Loads and stores a \mbox{\hyperlink{namespace_spine}{Spine}} atlas and list of materials. 
+
+
+
+Atlas\+Asset.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}\label{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily virtual void Spine.\+Unity.\+Atlas\+Asset.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Atlas\+Asset.\+cs 파일의 116 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117                                      \{}
+\DoxyCodeLine{118             \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}} = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}\label{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!CreateRuntimeInstance@{CreateRuntimeInstance}}
+\index{CreateRuntimeInstance@{CreateRuntimeInstance}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{CreateRuntimeInstance()}{CreateRuntimeInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance (\begin{DoxyParamCaption}\item[{Text\+Asset}]{atlas\+Text,  }\item[{Material\mbox{[}$\,$\mbox{]}}]{materials,  }\item[{bool}]{initialize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} 
+
+
+
+Atlas\+Asset.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                                                                                                                     \{}
+\DoxyCodeLine{50             AtlasAsset atlasAsset = ScriptableObject.CreateInstance<AtlasAsset>();}
+\DoxyCodeLine{51             atlasAsset.Reset();}
+\DoxyCodeLine{52             atlasAsset.atlasFile = atlasText;}
+\DoxyCodeLine{53             atlasAsset.materials = \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55             \textcolor{keywordflow}{if} (initialize)}
+\DoxyCodeLine{56                 atlasAsset.GetAtlas();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58             \textcolor{keywordflow}{return} atlasAsset;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a1d1e32745219d6057d0b71aee3f56f8d}\label{class_spine_1_1_unity_1_1_atlas_asset_a1d1e32745219d6057d0b71aee3f56f8d}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!CreateRuntimeInstance@{CreateRuntimeInstance}}
+\index{CreateRuntimeInstance@{CreateRuntimeInstance}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{CreateRuntimeInstance()}{CreateRuntimeInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance (\begin{DoxyParamCaption}\item[{Text\+Asset}]{atlas\+Text,  }\item[{Texture2D\mbox{[}$\,$\mbox{]}}]{textures,  }\item[{Material}]{material\+Property\+Source,  }\item[{bool}]{initialize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}. Only providing the textures is slower because it has to search for atlas page matches. \begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance(\+Text\+Asset, Material\mbox{[}$\,$\mbox{]}, bool)}}
+
+
+\end{DoxySeeAlso}
+
+
+
+
+Atlas\+Asset.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                                                                                                                                      \{}
+\DoxyCodeLine{64             \textcolor{comment}{// Get atlas page names.}}
+\DoxyCodeLine{65             \textcolor{keywordtype}{string} atlasString = atlasText.text;}
+\DoxyCodeLine{66             atlasString = atlasString.Replace(\textcolor{stringliteral}{"\(\backslash\)r"}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{67             \textcolor{keywordtype}{string}[] atlasLines = atlasString.Split(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{68             var pages = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{69             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < atlasLines.Length -\/ 1; i++) \{}
+\DoxyCodeLine{70                 \textcolor{keywordflow}{if} (atlasLines[i].Trim().Length == 0)}
+\DoxyCodeLine{71                     pages.Add(atlasLines[i + 1].Trim().Replace(\textcolor{stringliteral}{".png"}, \textcolor{stringliteral}{""}));}
+\DoxyCodeLine{72             \}}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74             \textcolor{comment}{// Populate Materials[] by matching texture names with page names.}}
+\DoxyCodeLine{75             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}} = \textcolor{keyword}{new} Material[pages.Count];}
+\DoxyCodeLine{76             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pages.Count; i < n; i++) \{}
+\DoxyCodeLine{77                 Material mat = \textcolor{keyword}{null};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79                 \textcolor{comment}{// Search for a match.}}
+\DoxyCodeLine{80                 \textcolor{keywordtype}{string} pageName = pages[i];}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0, m = textures.Length; j < m; j++) \{}
+\DoxyCodeLine{82                     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.Equals(pageName, textures[j].name, System.StringComparison.OrdinalIgnoreCase)) \{}
+\DoxyCodeLine{83                         \textcolor{comment}{// Match found.}}
+\DoxyCodeLine{84                         mat = \textcolor{keyword}{new} Material(materialPropertySource);}
+\DoxyCodeLine{85                         mat.mainTexture = textures[j];}
+\DoxyCodeLine{86                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{87                     \}}
+\DoxyCodeLine{88                 \}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90                 \textcolor{keywordflow}{if} (mat != \textcolor{keyword}{null})}
+\DoxyCodeLine{91                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}[i] = mat;}
+\DoxyCodeLine{92                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{93                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"Could not find matching atlas page in the texture array."});}
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{comment}{// Create AtlasAsset normally}}
+\DoxyCodeLine{97             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{CreateRuntimeInstance}}(atlasText, \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}, initialize);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a9f7e2e50fefc09fa2bb6010a5a4a9464}\label{class_spine_1_1_unity_1_1_atlas_asset_a9f7e2e50fefc09fa2bb6010a5a4a9464}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!CreateRuntimeInstance@{CreateRuntimeInstance}}
+\index{CreateRuntimeInstance@{CreateRuntimeInstance}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{CreateRuntimeInstance()}{CreateRuntimeInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance (\begin{DoxyParamCaption}\item[{Text\+Asset}]{atlas\+Text,  }\item[{Texture2D\mbox{[}$\,$\mbox{]}}]{textures,  }\item[{Shader}]{shader,  }\item[{bool}]{initialize }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a runtime \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}. Only providing the textures is slower because it has to search for atlas page matches. \begin{DoxySeeAlso}{참고}
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{Spine.\+Unity.\+Atlas\+Asset.\+Create\+Runtime\+Instance(\+Text\+Asset, Material\mbox{[}$\,$\mbox{]}, bool)}}
+
+
+\end{DoxySeeAlso}
+
+
+
+
+Atlas\+Asset.\+cs 파일의 101 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{102                                                                                                                                    \{}
+\DoxyCodeLine{103             \textcolor{keywordflow}{if} (shader == \textcolor{keyword}{null})}
+\DoxyCodeLine{104                 shader = Shader.Find(\textcolor{stringliteral}{"Spine/Skeleton"});}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106             Material materialProperySource = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{107             var oa = \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_ab10ec39778cb41ce637494206afc925e}{CreateRuntimeInstance}}(atlasText, textures, materialProperySource, initialize);}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109             \textcolor{keywordflow}{return} oa;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a061e197ef5933f66bc4b492b4661c6d4}\label{class_spine_1_1_unity_1_1_atlas_asset_a061e197ef5933f66bc4b492b4661c6d4}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!GenerateMesh@{GenerateMesh}}
+\index{GenerateMesh@{GenerateMesh}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{GenerateMesh()}{GenerateMesh()}}
+{\footnotesize\ttfamily Mesh Spine.\+Unity.\+Atlas\+Asset.\+Generate\+Mesh (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{Mesh}]{mesh,  }\item[{out Material}]{material,  }\item[{float}]{scale = {\ttfamily 0.01f} }\end{DoxyParamCaption})}
+
+
+
+Atlas\+Asset.\+cs 파일의 146 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                                                                                                       \{}
+\DoxyCodeLine{148             \mbox{\hyperlink{class_spine_1_1_atlas_region}{AtlasRegion}} region = \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}}.\mbox{\hyperlink{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}{FindRegion}}(name);}
+\DoxyCodeLine{149             material = \textcolor{keyword}{null};}
+\DoxyCodeLine{150             \textcolor{keywordflow}{if} (region != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{151                 \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{152                     mesh = \textcolor{keyword}{new} \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}}();}
+\DoxyCodeLine{153                     mesh.name = name;}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156                 Vector3[] verts = \textcolor{keyword}{new} Vector3[4];}
+\DoxyCodeLine{157                 Vector2[] uvs = \textcolor{keyword}{new} Vector2[4];}
+\DoxyCodeLine{158                 Color[] colors = \{ Color.white, Color.white, Color.white, Color.white \};}
+\DoxyCodeLine{159                 \textcolor{keywordtype}{int}[] triangles = \{ 0, 1, 2, 2, 3, 0 \};}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161                 \textcolor{keywordtype}{float} left, right, top, bottom;}
+\DoxyCodeLine{162                 left = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_a782daa1060bd89e53eb12de1b3a44e60}{width}} / -\/2f;}
+\DoxyCodeLine{163                 right = left * -\/1f;}
+\DoxyCodeLine{164                 top = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_ab922ef74b06b4ae3e6f502409bb65375}{height}} / 2f;}
+\DoxyCodeLine{165                 bottom = top * -\/1;}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167                 verts[0] = \textcolor{keyword}{new} Vector3(left, bottom, 0) * scale;}
+\DoxyCodeLine{168                 verts[1] = \textcolor{keyword}{new} Vector3(left, top, 0) * scale;}
+\DoxyCodeLine{169                 verts[2] = \textcolor{keyword}{new} Vector3(right, top, 0) * scale;}
+\DoxyCodeLine{170                 verts[3] = \textcolor{keyword}{new} Vector3(right, bottom, 0) * scale;}
+\DoxyCodeLine{171                 \textcolor{keywordtype}{float} u, v, u2, v2;}
+\DoxyCodeLine{172                 u = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_ab3b0d2114e73301a2f89f7ae5c0ea732}{u}};}
+\DoxyCodeLine{173                 v = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_a39791ae99023b203b7101e3cc6af2ee2}{v}};}
+\DoxyCodeLine{174                 u2 = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_a675017626eeb7ac990ce67c7d59a0db9}{u2}};}
+\DoxyCodeLine{175                 v2 = region.\mbox{\hyperlink{class_spine_1_1_atlas_region_afd955d7bff6d40a70fbe4948795b68bb}{v2}};}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177                 \textcolor{keywordflow}{if} (!region.\mbox{\hyperlink{class_spine_1_1_atlas_region_ad8e5dd7daf5c30607df23337645ea1c3}{rotate}}) \{}
+\DoxyCodeLine{178                     uvs[0] = \textcolor{keyword}{new} Vector2(u, v2);}
+\DoxyCodeLine{179                     uvs[1] = \textcolor{keyword}{new} Vector2(u, v);}
+\DoxyCodeLine{180                     uvs[2] = \textcolor{keyword}{new} Vector2(u2, v);}
+\DoxyCodeLine{181                     uvs[3] = \textcolor{keyword}{new} Vector2(u2, v2);}
+\DoxyCodeLine{182                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{183                     uvs[0] = \textcolor{keyword}{new} Vector2(u2, v2);}
+\DoxyCodeLine{184                     uvs[1] = \textcolor{keyword}{new} Vector2(u, v2);}
+\DoxyCodeLine{185                     uvs[2] = \textcolor{keyword}{new} Vector2(u, v);}
+\DoxyCodeLine{186                     uvs[3] = \textcolor{keyword}{new} Vector2(u2, v);}
+\DoxyCodeLine{187                 \}}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189                 mesh.triangles = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[0];}
+\DoxyCodeLine{190                 mesh.vertices = verts;}
+\DoxyCodeLine{191                 mesh.uv = uvs;}
+\DoxyCodeLine{192                 mesh.colors = colors;}
+\DoxyCodeLine{193                 mesh.triangles = triangles;}
+\DoxyCodeLine{194                 mesh.RecalculateNormals();}
+\DoxyCodeLine{195                 mesh.RecalculateBounds();}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197                 material = (Material)region.\mbox{\hyperlink{class_spine_1_1_atlas_region_ab8560489ae63a7a0f1df6ac7feec0c11}{page}}.\mbox{\hyperlink{class_spine_1_1_atlas_page_ae67598e160f3391267afbdb38d7982c4}{rendererObject}};}
+\DoxyCodeLine{198             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{199                 mesh = \textcolor{keyword}{null};}
+\DoxyCodeLine{200             \}}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202             \textcolor{keywordflow}{return} mesh;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}\label{class_spine_1_1_unity_1_1_atlas_asset_a111c9de65f185cd47e09d0275468e824}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!GetAtlas@{GetAtlas}}
+\index{GetAtlas@{GetAtlas}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{GetAtlas()}{GetAtlas()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} Spine.\+Unity.\+Atlas\+Asset.\+Get\+Atlas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\begin{DoxyReturn}{반환값}
+The atlas or null if it could not be loaded.
+\end{DoxyReturn}
+
+
+
+
+Atlas\+Asset.\+cs 파일의 121 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                                          \{}
+\DoxyCodeLine{123             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a41084147ed730ae96c719308a9e227b0}{atlasFile}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{124                 Debug.LogError(\textcolor{stringliteral}{"Atlas file not set for atlas asset: "} + name, \textcolor{keyword}{this});}
+\DoxyCodeLine{125                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+\DoxyCodeLine{126                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{127             \}}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}} == \textcolor{keyword}{null} || \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}.Length == 0) \{}
+\DoxyCodeLine{130                 Debug.LogError(\textcolor{stringliteral}{"Materials not set for atlas asset: "} + name, \textcolor{keyword}{this});}
+\DoxyCodeLine{131                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}} != \textcolor{keyword}{null}) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}};}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{138                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}} = \textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}(\textcolor{keyword}{new} StringReader(\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a41084147ed730ae96c719308a9e227b0}{atlasFile}}.text), \textcolor{stringliteral}{""}, \textcolor{keyword}{new} MaterialsTextureLoader(\textcolor{keyword}{this}));}
+\DoxyCodeLine{139                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}}.\mbox{\hyperlink{class_spine_1_1_atlas_a32ed28fdf0fdc105d33d69436462bc63}{FlipV}}();}
+\DoxyCodeLine{140                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}};}
+\DoxyCodeLine{141             \} \textcolor{keywordflow}{catch} (Exception ex) \{}
+\DoxyCodeLine{142                 Debug.LogError(\textcolor{stringliteral}{"Error reading atlas file for atlas asset: "} + name + \textcolor{stringliteral}{"\(\backslash\)n"} + ex.Message + \textcolor{stringliteral}{"\(\backslash\)n"} + ex.StackTrace, \textcolor{keyword}{this});}
+\DoxyCodeLine{143                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{144             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_ac71a2cebdeda12be08c3528bf21841a6}\label{class_spine_1_1_unity_1_1_atlas_asset_ac71a2cebdeda12be08c3528bf21841a6}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!Reset@{Reset}}
+\index{Reset@{Reset}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Atlas\+Asset.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Asset.\+cs 파일의 112 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{113                       \{}
+\DoxyCodeLine{114             \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}\label{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!atlas@{atlas}}
+\index{atlas@{atlas}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{atlas}{atlas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} Spine.\+Unity.\+Atlas\+Asset.\+atlas\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Atlas\+Asset.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a41084147ed730ae96c719308a9e227b0}\label{class_spine_1_1_unity_1_1_atlas_asset_a41084147ed730ae96c719308a9e227b0}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!atlasFile@{atlasFile}}
+\index{atlasFile@{atlasFile}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{atlasFile}{atlasFile}}
+{\footnotesize\ttfamily Text\+Asset Spine.\+Unity.\+Atlas\+Asset.\+atlas\+File}
+
+
+
+Atlas\+Asset.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}\label{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!materials@{materials}}
+\index{materials@{materials}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{materials}{materials}}
+{\footnotesize\ttfamily Material \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Atlas\+Asset.\+materials}
+
+
+
+Atlas\+Asset.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_atlas_asset_a1e38afd686a65ec1f5c6e19d15c46478}\label{class_spine_1_1_unity_1_1_atlas_asset_a1e38afd686a65ec1f5c6e19d15c46478}} 
+\index{Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}!IsLoaded@{IsLoaded}}
+\index{IsLoaded@{IsLoaded}!Spine.Unity.AtlasAsset@{Spine.Unity.AtlasAsset}}
+\doxysubsubsection{\texorpdfstring{IsLoaded}{IsLoaded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Atlas\+Asset.\+Is\+Loaded\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Atlas\+Asset.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a24ebfc11a2647977f0d5f0cba5ac71b9}{atlas}} != \textcolor{keyword}{null}; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Asset Types/\mbox{\hyperlink{_atlas_asset_8cs}{Atlas\+Asset.\+cs}}\end{DoxyCompactItemize}

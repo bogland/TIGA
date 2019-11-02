@@ -1,0 +1,16 @@
+digraph "Tiga.Util.Scene.LoadScene.MainMenuManager.Start"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Tiga.Util.Scene.LoadScene.\lMainMenuManager.Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Tiga.Util.Scene.LoadScene.\lMainMenuManager.MyMethod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_main_menu_manager.html#a3c0a6ef91406ea528fb83f63f2393673",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Tiga.Util.Scene.LoadScene.\lGameManager.NewStage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tiga_1_1_util_1_1_scene_1_1_load_scene_1_1_game_manager.html#af4d6b210528b5368b9fafa47d5328c35",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Tiga.Util.Scene.SceneLoader.\lLoadScene",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tiga_1_1_util_1_1_scene_1_1_scene_loader.html#a13aaa96ae81da15381a51e4982491bb4",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Tiga.Util.Scene.SceneLoader.\lIsSceneExist",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_tiga_1_1_util_1_1_scene_1_1_scene_loader.html#a24b0e067a2119033adbf8c04a2bfb70e",tooltip=" "];
+}

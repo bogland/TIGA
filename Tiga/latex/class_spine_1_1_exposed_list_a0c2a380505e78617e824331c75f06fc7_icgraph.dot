@@ -1,0 +1,19 @@
+digraph "Spine.ExposedList.Resize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.ExposedList.Resize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.AnimationState.Apply\lMixingFrom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_animation_state.html#a065eabb3d095d6b6299fc736a87c2640",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.PathConstraint.Compute\lWorldPositions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a0a486ebfb77dc0339a9cd45bd12ad9d2",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.PathConstraint.Update",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html#a1b84dbe4fd8e07faa1e9f1e4f61948f7",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.MeshGenerator.\lEnsureVertexCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_mesh_generator.html#a7eab2e56b3fd22c50bb71b3e2f07925c",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.SkeletonRenderer.\lEnsureMeshGeneratorCapacity",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_renderer.html#a0d6a55b5e192a4adc4a733a61f696201",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

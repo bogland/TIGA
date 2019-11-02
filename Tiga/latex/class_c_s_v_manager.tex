@@ -1,0 +1,251 @@
+\hypertarget{class_c_s_v_manager}{}\doxysection{C\+S\+V\+Manager 클래스 참조}
+\label{class_c_s_v_manager}\index{CSVManager@{CSVManager}}
+
+
+C\+S\+V\+Manager에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+C\+S\+V\+Manager에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_s_v_manager_a5eb58c12db7f1bcde11b9e20f8e291e8}{Adapt\+Dialogue\+UI}} (\mbox{\hyperlink{struct_dialogue}{Dialogue}} dialogue)
+\item 
+List$<$ \mbox{\hyperlink{struct_dialogue}{Dialogue}} $>$ \mbox{\hyperlink{class_c_s_v_manager_adc526a541cab092ca718cbaf45eca843}{Load\+Dialogue}} (string \mbox{\hyperlink{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}{scene\+Name}}, string id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Image \mbox{\hyperlink{class_c_s_v_manager_a9be48c023a0c04522562677955115700}{thumb\+Img}}
+\item 
+Text \mbox{\hyperlink{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}{character\+Name}}
+\item 
+Text \mbox{\hyperlink{class_c_s_v_manager_a687baa6f3dcddc027413563f6b64d97d}{dialogue\+Text}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_s_v_manager_afc0a22f12058ee9e0dd44063156cc52e}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_c_s_v_manager_ac3bf900701c7b8e3f3bd8b3bdb78a378}{Start}} ()
+\item 
+Sprite \mbox{\hyperlink{class_c_s_v_manager_a52d75485a2c426d17ac91179ec092bbb}{Load\+Character\+Image}} (string \mbox{\hyperlink{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}{character\+Name}})
+\begin{DoxyCompactList}\small\item\em 캐릭터 이름을 입력시 지정 경로상에서 캐릭터 이미지를 불러옴 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Dictionary$<$ string, object $>$ $>$ \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}
+\item 
+string \mbox{\hyperlink{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}{scene\+Name}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+C\+S\+V\+Manager.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_c_s_v_manager_a5eb58c12db7f1bcde11b9e20f8e291e8}\label{class_c_s_v_manager_a5eb58c12db7f1bcde11b9e20f8e291e8}} 
+\index{CSVManager@{CSVManager}!AdaptDialogueUI@{AdaptDialogueUI}}
+\index{AdaptDialogueUI@{AdaptDialogueUI}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{AdaptDialogueUI()}{AdaptDialogueUI()}}
+{\footnotesize\ttfamily void C\+S\+V\+Manager.\+Adapt\+Dialogue\+UI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_dialogue}{Dialogue}}}]{dialogue }\end{DoxyParamCaption})}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         }
+\DoxyCodeLine{42         \textcolor{comment}{//thumbImg.GetComponent<RawImage>().texture = LoadCharacterImage(dialogue.character);}}
+\DoxyCodeLine{43         \mbox{\hyperlink{class_c_s_v_manager_a9be48c023a0c04522562677955115700}{thumbImg}}.sprite = \mbox{\hyperlink{class_c_s_v_manager_a52d75485a2c426d17ac91179ec092bbb}{LoadCharacterImage}}(dialogue.\mbox{\hyperlink{struct_dialogue_ab4bbbde9c09af6315066660b166897f4}{character}});}
+\DoxyCodeLine{44         \mbox{\hyperlink{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}{characterName}}.text = dialogue.\mbox{\hyperlink{struct_dialogue_ab4bbbde9c09af6315066660b166897f4}{character}};}
+\DoxyCodeLine{45         \mbox{\hyperlink{class_c_s_v_manager_a687baa6f3dcddc027413563f6b64d97d}{dialogueText}}.text = dialogue.\mbox{\hyperlink{struct_dialogue_a7c4bc9a30ed56d00ba304e4bdd0f5d85}{dialogueText}};}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_c_s_v_manager_afc0a22f12058ee9e0dd44063156cc52e}\label{class_c_s_v_manager_afc0a22f12058ee9e0dd44063156cc52e}} 
+\index{CSVManager@{CSVManager}!Awake@{Awake}}
+\index{Awake@{Awake}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void C\+S\+V\+Manager.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22     \{}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}} = \mbox{\hyperlink{class_c_s_v_reader}{CSVReader}}.\mbox{\hyperlink{class_c_s_v_reader_af4e118f696afdaf0b9bdbb1c21dbe0cf}{Read}}(\textcolor{stringliteral}{"dialog.txt"});}
+\DoxyCodeLine{24  }
+\DoxyCodeLine{25     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_c_s_v_manager_a52d75485a2c426d17ac91179ec092bbb}\label{class_c_s_v_manager_a52d75485a2c426d17ac91179ec092bbb}} 
+\index{CSVManager@{CSVManager}!LoadCharacterImage@{LoadCharacterImage}}
+\index{LoadCharacterImage@{LoadCharacterImage}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{LoadCharacterImage()}{LoadCharacterImage()}}
+{\footnotesize\ttfamily Sprite C\+S\+V\+Manager.\+Load\+Character\+Image (\begin{DoxyParamCaption}\item[{string}]{character\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+캐릭터 이름을 입력시 지정 경로상에서 캐릭터 이미지를 불러옴 
+
+
+\begin{DoxyParams}{매개변수}
+{\em character\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{반환값}
+
+\end{DoxyReturn}
+
+
+C\+S\+V\+Manager.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70     \{}
+\DoxyCodeLine{71         Texture2D texture = \textcolor{keyword}{new} Texture2D(0, 0);}
+\DoxyCodeLine{72         \textcolor{keywordtype}{byte}[] byteTexture = System.IO.File.ReadAllBytes(Application.dataPath + \textcolor{stringliteral}{"/GameResources/Image/Character/"} + \mbox{\hyperlink{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}{characterName}} + \textcolor{stringliteral}{".jpg"});}
+\DoxyCodeLine{73         \textcolor{keywordflow}{if} (byteTexture.Length > 0)}
+\DoxyCodeLine{74         \{}
+\DoxyCodeLine{75             texture.LoadImage(byteTexture);}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         Sprite sprite = Sprite.Create(texture, \textcolor{keyword}{new} Rect(0, 0, texture.width, texture.height), \textcolor{keyword}{new} Vector2(0, 0), 1);}
+\DoxyCodeLine{78         \textcolor{keywordflow}{return} sprite;}
+\DoxyCodeLine{79     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_c_s_v_manager_adc526a541cab092ca718cbaf45eca843}\label{class_c_s_v_manager_adc526a541cab092ca718cbaf45eca843}} 
+\index{CSVManager@{CSVManager}!LoadDialogue@{LoadDialogue}}
+\index{LoadDialogue@{LoadDialogue}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{LoadDialogue()}{LoadDialogue()}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{struct_dialogue}{Dialogue}}$>$ C\+S\+V\+Manager.\+Load\+Dialogue (\begin{DoxyParamCaption}\item[{string}]{scene\+Name,  }\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         List<Dialogue> dialogueList = \textcolor{keyword}{new} List<Dialogue>();}
+\DoxyCodeLine{51         \textcolor{keywordflow}{for} (var i = 0; i < \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}.Count; i++)}
+\DoxyCodeLine{52         \{}
+\DoxyCodeLine{53             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}[i][\textcolor{stringliteral}{"Scene"}].ToString() == \mbox{\hyperlink{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}{sceneName}} \&\& \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}[i][\textcolor{stringliteral}{"ID"}].ToString() == \textcolor{keywordtype}{id})}
+\DoxyCodeLine{54             \{}
+\DoxyCodeLine{55                 \mbox{\hyperlink{struct_dialogue}{Dialogue}} dialog = \textcolor{keyword}{new} \mbox{\hyperlink{struct_dialogue}{Dialogue}}();}
+\DoxyCodeLine{56                 dialog.\mbox{\hyperlink{struct_dialogue_ab4bbbde9c09af6315066660b166897f4}{character}} = \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}[i][\textcolor{stringliteral}{"Image"}].ToString();}
+\DoxyCodeLine{57                 dialog.\mbox{\hyperlink{struct_dialogue_a7c4bc9a30ed56d00ba304e4bdd0f5d85}{dialogueText}} = \mbox{\hyperlink{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}{data}}[i][\textcolor{stringliteral}{"Dialogue"}].ToString();}
+\DoxyCodeLine{58                 dialogueList.Add(dialog);}
+\DoxyCodeLine{59             \}}
+\DoxyCodeLine{60         \}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} dialogueList;}
+\DoxyCodeLine{62     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_c_s_v_manager_ac3bf900701c7b8e3f3bd8b3bdb78a378}\label{class_c_s_v_manager_ac3bf900701c7b8e3f3bd8b3bdb78a378}} 
+\index{CSVManager@{CSVManager}!Start@{Start}}
+\index{Start@{Start}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void C\+S\+V\+Manager.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27     \{}
+\DoxyCodeLine{28         \textcolor{keywordtype}{string} \mbox{\hyperlink{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}{sceneName}} = \textcolor{stringliteral}{"S1"};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{string} dialogID = \textcolor{stringliteral}{"DLG001"};}
+\DoxyCodeLine{30         List<Dialogue> dialogueList = \textcolor{keyword}{new} List<Dialogue>();}
+\DoxyCodeLine{31         dialogueList = \mbox{\hyperlink{class_c_s_v_manager_adc526a541cab092ca718cbaf45eca843}{LoadDialogue}}(\mbox{\hyperlink{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}{sceneName}}, dialogID);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         \textcolor{keywordflow}{foreach} (var i \textcolor{keywordflow}{in} dialogueList)}
+\DoxyCodeLine{34         \{}
+\DoxyCodeLine{35             Debug.Log(\$\textcolor{stringliteral}{"\{i.character\} : \{i.dialogueText\}"});}
+\DoxyCodeLine{36             \mbox{\hyperlink{class_c_s_v_manager_a5eb58c12db7f1bcde11b9e20f8e291e8}{AdaptDialogueUI}}(i);}
+\DoxyCodeLine{37         \}}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}\label{class_c_s_v_manager_a63d11ba066c028320c893cb1d4ab4e3d}} 
+\index{CSVManager@{CSVManager}!characterName@{characterName}}
+\index{characterName@{characterName}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{characterName}{characterName}}
+{\footnotesize\ttfamily Text C\+S\+V\+Manager.\+character\+Name}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 16 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}\label{class_c_s_v_manager_a21423d7205db81794b7c29a6c1e0f7da}} 
+\index{CSVManager@{CSVManager}!data@{data}}
+\index{data@{data}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily List$<$Dictionary$<$string, object$>$ $>$ C\+S\+V\+Manager.\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_manager_a687baa6f3dcddc027413563f6b64d97d}\label{class_c_s_v_manager_a687baa6f3dcddc027413563f6b64d97d}} 
+\index{CSVManager@{CSVManager}!dialogueText@{dialogueText}}
+\index{dialogueText@{dialogueText}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{dialogueText}{dialogueText}}
+{\footnotesize\ttfamily Text C\+S\+V\+Manager.\+dialogue\+Text}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}\label{class_c_s_v_manager_a00863b0c257443fc92c09283caa4e3f9}} 
+\index{CSVManager@{CSVManager}!sceneName@{sceneName}}
+\index{sceneName@{sceneName}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{sceneName}{sceneName}}
+{\footnotesize\ttfamily string C\+S\+V\+Manager.\+scene\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_c_s_v_manager_a9be48c023a0c04522562677955115700}\label{class_c_s_v_manager_a9be48c023a0c04522562677955115700}} 
+\index{CSVManager@{CSVManager}!thumbImg@{thumbImg}}
+\index{thumbImg@{thumbImg}!CSVManager@{CSVManager}}
+\doxysubsubsection{\texorpdfstring{thumbImg}{thumbImg}}
+{\footnotesize\ttfamily Image C\+S\+V\+Manager.\+thumb\+Img}
+
+
+
+C\+S\+V\+Manager.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Story/\+Dialog/\mbox{\hyperlink{_c_s_v_manager_8cs}{C\+S\+V\+Manager.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,437 @@
+\hypertarget{class_spine_1_1_atlas}{}\doxysection{Spine.\+Atlas 클래스 참조}
+\label{class_spine_1_1_atlas}\index{Spine.Atlas@{Spine.Atlas}}
+
+
+Spine.\+Atlas에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Atlas에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} $>$ \mbox{\hyperlink{class_spine_1_1_atlas_a961850f5b7cd6d932aae58ade40afe8a}{Get\+Enumerator}} ()
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_abceeec354f761f2cf527497233b60889}{Atlas}} (string path, \mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}} \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{texture\+Loader}})
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_a51d91251a22a3866c6b9e875994d0da8}{Atlas}} (Text\+Reader reader, string dir, \mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}} \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{texture\+Loader}})
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_a95ece5ac369c2c29a5017986e16421cb}{Atlas}} (List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} $>$ \mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}}, List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} $>$ \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}})
+\item 
+void \mbox{\hyperlink{class_spine_1_1_atlas_a32ed28fdf0fdc105d33d69436462bc63}{FlipV}} ()
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}{Find\+Region}} (string name)
+\begin{DoxyCompactList}\small\item\em Returns the first region found with the specified name. This method uses string comparison to find the region, so the result should be cached rather than calling this method multiple times. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_atlas_af5763f3b1255c6b7aedb77664c6c665a}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Collections.\+I\+Enumerator System.\+Collections.\+I\+Enumerable. \mbox{\hyperlink{class_spine_1_1_atlas_abf82a0b361daab1f51379acb0426bb25}{Get\+Enumerator}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_atlas_af9833f90de8b3b2f225e27d27590abce}{Load}} (Text\+Reader reader, string images\+Dir, \mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}} \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{texture\+Loader}})
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}{Read\+Value}} (Text\+Reader reader)
+\item 
+static int \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{Read\+Tuple}} (Text\+Reader reader, string\mbox{[}$\,$\mbox{]} tuple)
+\begin{DoxyCompactList}\small\item\em Returns the number of tuple values read (1, 2 or 4). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} $>$ \mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}} = new List$<$\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}$>$()
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} $>$ \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}} = new List$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}$>$()
+\item 
+\mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}} \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{texture\+Loader}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Atlas.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_abceeec354f761f2cf527497233b60889}\label{class_spine_1_1_atlas_abceeec354f761f2cf527497233b60889}} 
+\index{Spine.Atlas@{Spine.Atlas}!Atlas@{Atlas}}
+\index{Atlas@{Atlas}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{Atlas()}{Atlas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Spine.\+Atlas.\+Atlas (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{\mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}}}]{texture\+Loader }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 79 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                                                 \{}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{preprocessor}{            \#if WINDOWS\_PHONE}}
+\DoxyCodeLine{83             Stream stream = Microsoft.Xna.Framework.TitleContainer.OpenStream(path);}
+\DoxyCodeLine{84             \textcolor{keyword}{using} (StreamReader reader = \textcolor{keyword}{new} StreamReader(stream)) \{}
+\DoxyCodeLine{85 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{86             \textcolor{keyword}{using} (StreamReader reader = \textcolor{keyword}{new} StreamReader(path)) \{}
+\DoxyCodeLine{87 \textcolor{preprocessor}{            \#endif // WINDOWS\_PHONE}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{90                     \mbox{\hyperlink{class_spine_1_1_atlas_af9833f90de8b3b2f225e27d27590abce}{Load}}(reader, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(path), \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}});}
+\DoxyCodeLine{91                 \} \textcolor{keywordflow}{catch} (Exception ex) \{}
+\DoxyCodeLine{92                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Error reading atlas file: "} + path, ex);}
+\DoxyCodeLine{93                 \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_atlas_a51d91251a22a3866c6b9e875994d0da8}\label{class_spine_1_1_atlas_a51d91251a22a3866c6b9e875994d0da8}} 
+\index{Spine.Atlas@{Spine.Atlas}!Atlas@{Atlas}}
+\index{Atlas@{Atlas}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{Atlas()}{Atlas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Spine.\+Atlas.\+Atlas (\begin{DoxyParamCaption}\item[{Text\+Reader}]{reader,  }\item[{string}]{dir,  }\item[{\mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}}}]{texture\+Loader }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 100 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101                                                                                   \{}
+\DoxyCodeLine{102             \mbox{\hyperlink{class_spine_1_1_atlas_af9833f90de8b3b2f225e27d27590abce}{Load}}(reader, dir, \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_atlas_a95ece5ac369c2c29a5017986e16421cb}\label{class_spine_1_1_atlas_a95ece5ac369c2c29a5017986e16421cb}} 
+\index{Spine.Atlas@{Spine.Atlas}!Atlas@{Atlas}}
+\index{Atlas@{Atlas}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{Atlas()}{Atlas()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Spine.\+Atlas.\+Atlas (\begin{DoxyParamCaption}\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}} $>$}]{pages,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} $>$}]{regions }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 104 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                                                                         \{}
+\DoxyCodeLine{106             this.\mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}} = \mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}};}
+\DoxyCodeLine{107             this.\mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}} = \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}};}
+\DoxyCodeLine{108             this.\mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}} = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_af5763f3b1255c6b7aedb77664c6c665a}\label{class_spine_1_1_atlas_af5763f3b1255c6b7aedb77664c6c665a}} 
+\index{Spine.Atlas@{Spine.Atlas}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Spine.\+Atlas.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 249 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{250                                \{}
+\DoxyCodeLine{251             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{252             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}}.Count; i < n; i++)}
+\DoxyCodeLine{253                 \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}}.\mbox{\hyperlink{interface_spine_1_1_texture_loader_a49076d7375d721c7cbc2549f76fead1a}{Unload}}(\mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}}[i].rendererObject);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}\label{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}} 
+\index{Spine.Atlas@{Spine.Atlas}!FindRegion@{FindRegion}}
+\index{FindRegion@{FindRegion}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{FindRegion()}{FindRegion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Atlas.\+Find\+Region (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns the first region found with the specified name. This method uses string comparison to find the region, so the result should be cached rather than calling this method multiple times. 
+
+\begin{DoxyReturn}{반환값}
+The region, or null.
+\end{DoxyReturn}
+
+
+Atlas.\+cs 파일의 243 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{244                                                     \{}
+\DoxyCodeLine{245             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}.Count; i < n; i++)}
+\DoxyCodeLine{246                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}[i].name == name) \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}[i];}
+\DoxyCodeLine{247             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_atlas_a32ed28fdf0fdc105d33d69436462bc63}\label{class_spine_1_1_atlas_a32ed28fdf0fdc105d33d69436462bc63}} 
+\index{Spine.Atlas@{Spine.Atlas}!FlipV@{FlipV}}
+\index{FlipV@{FlipV}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{FlipV()}{FlipV()}}
+{\footnotesize\ttfamily void Spine.\+Atlas.\+FlipV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 232 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{233                              \{}
+\DoxyCodeLine{234             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}.Count; i < n; i++) \{}
+\DoxyCodeLine{235                 AtlasRegion region = \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}[i];}
+\DoxyCodeLine{236                 region.v = 1 -\/ region.v;}
+\DoxyCodeLine{237                 region.v2 = 1 -\/ region.v2;}
+\DoxyCodeLine{238             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_a961850f5b7cd6d932aae58ade40afe8a}\label{class_spine_1_1_atlas_a961850f5b7cd6d932aae58ade40afe8a}} 
+\index{Spine.Atlas@{Spine.Atlas}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+Enumerator$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}$>$ Spine.\+Atlas.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Atlas.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52                                                          \{}
+\DoxyCodeLine{53             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}.GetEnumerator();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_abf82a0b361daab1f51379acb0426bb25}\label{class_spine_1_1_atlas_abf82a0b361daab1f51379acb0426bb25}} 
+\index{Spine.Atlas@{Spine.Atlas}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily System.\+Collections.\+I\+Enumerator System.\+Collections.\+I\+Enumerable. Spine.\+Atlas.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                                                        \{}
+\DoxyCodeLine{57             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}.GetEnumerator();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_af9833f90de8b3b2f225e27d27590abce}\label{class_spine_1_1_atlas_af9833f90de8b3b2f225e27d27590abce}} 
+\index{Spine.Atlas@{Spine.Atlas}!Load@{Load}}
+\index{Load@{Load}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Spine.\+Atlas.\+Load (\begin{DoxyParamCaption}\item[{Text\+Reader}]{reader,  }\item[{string}]{images\+Dir,  }\item[{\mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}}}]{texture\+Loader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 110 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111                                                                                              \{}
+\DoxyCodeLine{112             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"textureLoader"}, \textcolor{stringliteral}{"textureLoader cannot be null."});}
+\DoxyCodeLine{113             this.\mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}} = \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115             \textcolor{keywordtype}{string}[] tuple = \textcolor{keyword}{new} \textcolor{keywordtype}{string}[4];}
+\DoxyCodeLine{116             AtlasPage page = \textcolor{keyword}{null};}
+\DoxyCodeLine{117             \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{118                 \textcolor{keywordtype}{string} line = reader.ReadLine();}
+\DoxyCodeLine{119                 \textcolor{keywordflow}{if} (line == \textcolor{keyword}{null}) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{120                 \textcolor{keywordflow}{if} (line.Trim().Length == 0)}
+\DoxyCodeLine{121                     page = \textcolor{keyword}{null};}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (page == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{123                     page = \textcolor{keyword}{new} AtlasPage();}
+\DoxyCodeLine{124                     page.name = line;}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple) == 2) \{ \textcolor{comment}{// size is only optional for an atlas packed with an old TexturePacker.}}
+\DoxyCodeLine{127                         page.width = \textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{128                         page.height = \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{129                         \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{130                     \}}
+\DoxyCodeLine{131                     page.format = (\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}), tuple[0], \textcolor{keyword}{false});}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133                     \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{134                     page.minFilter = (\mbox{\hyperlink{namespace_spine_ac8c3dde7bd3ec2ef5618c454285f59a2}{TextureFilter}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_ac8c3dde7bd3ec2ef5618c454285f59a2}{TextureFilter}}), tuple[0], \textcolor{keyword}{false});}
+\DoxyCodeLine{135                     page.magFilter = (\mbox{\hyperlink{namespace_spine_ac8c3dde7bd3ec2ef5618c454285f59a2}{TextureFilter}})Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_ac8c3dde7bd3ec2ef5618c454285f59a2}{TextureFilter}}), tuple[1], \textcolor{keyword}{false});}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137                     \textcolor{keywordtype}{string} direction = \mbox{\hyperlink{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}{ReadValue}}(reader);}
+\DoxyCodeLine{138                     page.uWrap = \mbox{\hyperlink{namespace_spine_a873457d5d7da91a04be94cf7469adc56}{TextureWrap}}.ClampToEdge;}
+\DoxyCodeLine{139                     page.vWrap = \mbox{\hyperlink{namespace_spine_a873457d5d7da91a04be94cf7469adc56}{TextureWrap}}.ClampToEdge;}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{if} (direction == \textcolor{stringliteral}{"x"})}
+\DoxyCodeLine{141                         page.uWrap = \mbox{\hyperlink{namespace_spine_a873457d5d7da91a04be94cf7469adc56}{TextureWrap}}.Repeat;}
+\DoxyCodeLine{142                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (direction == \textcolor{stringliteral}{"y"})}
+\DoxyCodeLine{143                         page.vWrap = \mbox{\hyperlink{namespace_spine_a873457d5d7da91a04be94cf7469adc56}{TextureWrap}}.Repeat;}
+\DoxyCodeLine{144                     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (direction == \textcolor{stringliteral}{"xy"})}
+\DoxyCodeLine{145                         page.uWrap = page.vWrap = \mbox{\hyperlink{namespace_spine_a873457d5d7da91a04be94cf7469adc56}{TextureWrap}}.Repeat;}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147                     \mbox{\hyperlink{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}{textureLoader}}.\mbox{\hyperlink{interface_spine_1_1_texture_loader_af9247fcdf3ed29726d9ffdf8e8575aed}{Load}}(page, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(imagesDir, line));}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149                     \mbox{\hyperlink{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}{pages}}.Add(page);}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{152                     AtlasRegion region = \textcolor{keyword}{new} AtlasRegion();}
+\DoxyCodeLine{153                     region.name = line;}
+\DoxyCodeLine{154                     region.page = page;}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156                     region.rotate = Boolean.Parse(\mbox{\hyperlink{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}{ReadValue}}(reader));}
+\DoxyCodeLine{157 }
+\DoxyCodeLine{158                     \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{159                     \textcolor{keywordtype}{int} x = \textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{160                     \textcolor{keywordtype}{int} y = \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162                     \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{163                     \textcolor{keywordtype}{int} width = \textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{164                     \textcolor{keywordtype}{int} height = \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166                     region.u = x / (float)page.width;}
+\DoxyCodeLine{167                     region.v = y / (\textcolor{keywordtype}{float})page.height;}
+\DoxyCodeLine{168                     \textcolor{keywordflow}{if} (region.rotate) \{}
+\DoxyCodeLine{169                         region.u2 = (x + height) / (\textcolor{keywordtype}{float})page.width;}
+\DoxyCodeLine{170                         region.v2 = (y + width) / (\textcolor{keywordtype}{float})page.height;}
+\DoxyCodeLine{171                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{172                         region.u2 = (x + width) / (\textcolor{keywordtype}{float})page.width;}
+\DoxyCodeLine{173                         region.v2 = (y + height) / (\textcolor{keywordtype}{float})page.height;}
+\DoxyCodeLine{174                     \}}
+\DoxyCodeLine{175                     region.x = x;}
+\DoxyCodeLine{176                     region.y = y;}
+\DoxyCodeLine{177                     region.width = Math.Abs(width);}
+\DoxyCodeLine{178                     region.height = Math.Abs(height);}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple) == 4) \{ \textcolor{comment}{// split is optional}}
+\DoxyCodeLine{181                         region.splits = \textcolor{keyword}{new} [] \{\textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{182                                                 \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{183                                                 \textcolor{keywordtype}{int}.Parse(tuple[2], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{184                                                 \textcolor{keywordtype}{int}.Parse(tuple[3], CultureInfo.InvariantCulture)\};}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple) == 4) \{ \textcolor{comment}{// pad is optional, but only present with splits}}
+\DoxyCodeLine{187                             region.pads = \textcolor{keyword}{new} [] \{\textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{188                                                 \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{189                                                 \textcolor{keywordtype}{int}.Parse(tuple[2], CultureInfo.InvariantCulture),}
+\DoxyCodeLine{190                                                 \textcolor{keywordtype}{int}.Parse(tuple[3], CultureInfo.InvariantCulture)\};}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192                             \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{193                         \}}
+\DoxyCodeLine{194                     \}}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196                     region.originalWidth = \textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{197                     region.originalHeight = \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199                     \mbox{\hyperlink{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}{ReadTuple}}(reader, tuple);}
+\DoxyCodeLine{200                     region.offsetX = \textcolor{keywordtype}{int}.Parse(tuple[0], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{201                     region.offsetY = \textcolor{keywordtype}{int}.Parse(tuple[1], CultureInfo.InvariantCulture);}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203                     region.index = \textcolor{keywordtype}{int}.Parse(\mbox{\hyperlink{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}{ReadValue}}(reader), CultureInfo.InvariantCulture);}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205                     \mbox{\hyperlink{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}{regions}}.Add(region);}
+\DoxyCodeLine{206                 \}}
+\DoxyCodeLine{207             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}\label{class_spine_1_1_atlas_afdc42097fe20453cb07156b8d234c7b7}} 
+\index{Spine.Atlas@{Spine.Atlas}!ReadTuple@{ReadTuple}}
+\index{ReadTuple@{ReadTuple}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{ReadTuple()}{ReadTuple()}}
+{\footnotesize\ttfamily static int Spine.\+Atlas.\+Read\+Tuple (\begin{DoxyParamCaption}\item[{Text\+Reader}]{reader,  }\item[{string\mbox{[}$\,$\mbox{]}}]{tuple }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Returns the number of tuple values read (1, 2 or 4). 
+
+
+
+Atlas.\+cs 파일의 217 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{218                                                                  \{}
+\DoxyCodeLine{219             \textcolor{keywordtype}{string} line = reader.ReadLine();}
+\DoxyCodeLine{220             \textcolor{keywordtype}{int} colon = line.IndexOf(\textcolor{charliteral}{':'});}
+\DoxyCodeLine{221             \textcolor{keywordflow}{if} (colon == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Invalid line: "} + line);}
+\DoxyCodeLine{222             \textcolor{keywordtype}{int} i = 0, lastMatch = colon + 1;}
+\DoxyCodeLine{223             \textcolor{keywordflow}{for} (; i < 3; i++) \{}
+\DoxyCodeLine{224                 \textcolor{keywordtype}{int} comma = line.IndexOf(\textcolor{charliteral}{','}, lastMatch);}
+\DoxyCodeLine{225                 \textcolor{keywordflow}{if} (comma == -\/1) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{226                 tuple[i] = line.Substring(lastMatch, comma -\/ lastMatch).Trim();}
+\DoxyCodeLine{227                 lastMatch = comma + 1;}
+\DoxyCodeLine{228             \}}
+\DoxyCodeLine{229             tuple[i] = line.Substring(lastMatch).Trim();}
+\DoxyCodeLine{230             \textcolor{keywordflow}{return} i + 1;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}\label{class_spine_1_1_atlas_a2c4453ff8a674d6f5c1a30aef5f69cf5}} 
+\index{Spine.Atlas@{Spine.Atlas}!ReadValue@{ReadValue}}
+\index{ReadValue@{ReadValue}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{ReadValue()}{ReadValue()}}
+{\footnotesize\ttfamily static string Spine.\+Atlas.\+Read\+Value (\begin{DoxyParamCaption}\item[{Text\+Reader}]{reader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 209 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                                                     \{}
+\DoxyCodeLine{211             \textcolor{keywordtype}{string} line = reader.ReadLine();}
+\DoxyCodeLine{212             \textcolor{keywordtype}{int} colon = line.IndexOf(\textcolor{charliteral}{':'});}
+\DoxyCodeLine{213             \textcolor{keywordflow}{if} (colon == -\/1) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} Exception(\textcolor{stringliteral}{"Invalid line: "} + line);}
+\DoxyCodeLine{214             \textcolor{keywordflow}{return} line.Substring(colon + 1).Trim();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}\label{class_spine_1_1_atlas_ad11ed109ed5b6956b79594b6e132481d}} 
+\index{Spine.Atlas@{Spine.Atlas}!pages@{pages}}
+\index{pages@{pages}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{pages}{pages}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}$>$ Spine.\+Atlas.\+pages = new List$<$\mbox{\hyperlink{class_spine_1_1_atlas_page}{Atlas\+Page}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}\label{class_spine_1_1_atlas_ae8671ce17309d642c3bf6a850e97665c}} 
+\index{Spine.Atlas@{Spine.Atlas}!regions@{regions}}
+\index{regions@{regions}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{regions}{regions}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}$>$ Spine.\+Atlas.\+regions = new List$<$\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}\label{class_spine_1_1_atlas_a812140a8f89c7827b9a4ddb2d443af5c}} 
+\index{Spine.Atlas@{Spine.Atlas}!textureLoader@{textureLoader}}
+\index{textureLoader@{textureLoader}!Spine.Atlas@{Spine.Atlas}}
+\doxysubsubsection{\texorpdfstring{textureLoader}{textureLoader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_texture_loader}{Texture\+Loader}} Spine.\+Atlas.\+texture\+Loader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_atlas_8cs}{Atlas.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,14 @@
+digraph "Spine.Unity.Editor.BoundingBoxFollowerInspector.OnInspectorGUI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Bounding\lBoxFollowerInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Bounding\lBoxFollowerInspector.AddBounding\lBoxFollowerChild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_bounding_box_follower_inspector.html#a061a368f11913085a0a958359919a7f0",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.BoundingBoxFollower.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bounding_box_follower.html#a6ba3bb70a58ca9977e1d0dfb512286fb",tooltip="Initialize and instantiate the BoundingBoxFollower colliders. This is method checks if the BoundingBo..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Editor.Spine\lInspectorUtility.LargeCentered\lButton",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#ab0e8f41c9e384ffb71babec60e822f81",tooltip=" "];
+}

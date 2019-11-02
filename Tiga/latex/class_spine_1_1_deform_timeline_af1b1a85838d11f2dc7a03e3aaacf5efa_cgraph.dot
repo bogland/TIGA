@@ -1,0 +1,16 @@
+digraph "Spine.DeformTimeline.Apply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.DeformTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Sets the value(s) for the specified time."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.VertexAttachment.Apply\lDeform",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_vertex_attachment.html#a8e63b13f5fcaabd9d3b455d5798fb3d2",tooltip="Returns true if a deform originally applied to the specified attachment should be applied to this att..."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.ExposedList.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html#ab2453ae483ae98e5e68ea616320c8f5b",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.CurveTimeline.GetCurve\lPercent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#aecaa64a855f59f759923bd2edc0f71a5",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.MathUtils.Clamp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_math_utils.html#a3b8ef063e95d6adf57582ded0defd8e7",tooltip=" "];
+}

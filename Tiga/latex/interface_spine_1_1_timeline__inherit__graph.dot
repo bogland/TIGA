@@ -1,0 +1,39 @@
+digraph "Spine.Timeline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Timeline\n|+ PropertyId\l|+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{Spine.AttachmentTimeline\n|+ SlotIndex\l+ Frames\l+ AttachmentNames\l+ FrameCount\l+ PropertyId\l~ slotIndex\l~ frames\l~ attachmentNames\l|+ AttachmentTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_attachment_timeline.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node3 [label="{Spine.CurveTimeline\n|+ FrameCount\l+ PropertyId\l~ curves\l# LINEAR\l# BEZIER_SIZE\l- STEPPED\l- BEZIER\l|+ CurveTimeline()\l+ Apply()\l+ SetLinear()\l+ SetStepped()\l+ SetCurve()\l+ GetCurvePercent()\l+ GetCurveType()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html",tooltip="Base class for frames that use an interpolation bezier curve."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node4 [label="{Spine.ColorTimeline\n|+ ENTRIES\l+ SlotIndex\l+ Frames\l+ PropertyId\l~ slotIndex\l~ frames\l# PREV_TIME\l# R\l- PREV_R\l- PREV_G\l- PREV_B\l- PREV_A\l- G\l- B\l- A\l|+ ColorTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_color_timeline.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node5 [label="{Spine.DeformTimeline\n|+ SlotIndex\l+ Frames\l+ Vertices\l+ Attachment\l+ PropertyId\l~ slotIndex\l~ frames\l~ frameVertices\l~ attachment\l|+ DeformTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_deform_timeline.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node6 [label="{Spine.IkConstraintTimeline\n|+ ENTRIES\l+ IkConstraintIndex\l+ Frames\l+ PropertyId\l~ ikConstraintIndex\l~ frames\l- PREV_TIME\l- PREV_MIX\l- PREV_BEND_DIRECTION\l- MIX\l- BEND_DIRECTION\l|+ IkConstraintTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_ik_constraint_timeline.html",tooltip=" "];
+  Node3 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node7 [label="{Spine.PathConstraintMixTimeline\n|+ ENTRIES\l+ PathConstraintIndex\l+ Frames\l+ PropertyId\l~ pathConstraintIndex\l~ frames\l- PREV_TIME\l- PREV_ROTATE\l- PREV_TRANSLATE\l- ROTATE\l- TRANSLATE\l|+ PathConstraintMixTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_mix_timeline.html",tooltip=" "];
+  Node3 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node8 [label="{Spine.PathConstraintPosition\lTimeline\n|+ ENTRIES\l+ PropertyId\l+ PathConstraintIndex\l+ Frames\l~ pathConstraintIndex\l~ frames\l# PREV_TIME\l# VALUE\l- PREV_VALUE\l|+ PathConstraintPositionTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_position_timeline.html",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node9 [label="{Spine.PathConstraintSpacing\lTimeline\n|+ PropertyId\l|+ PathConstraintSpacingTimeline()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_spacing_timeline.html",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node10 [label="{Spine.RotateTimeline\n|+ ENTRIES\l+ BoneIndex\l+ Frames\l+ PropertyId\l~ boneIndex\l~ frames\l~ PREV_TIME\l~ ROTATION\l- PREV_ROTATION\l|+ RotateTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_rotate_timeline.html",tooltip=" "];
+  Node3 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node11 [label="{Spine.TransformConstraint\lTimeline\n|+ ENTRIES\l+ TransformConstraintIndex\l+ Frames\l+ PropertyId\l~ transformConstraintIndex\l~ frames\l- PREV_TIME\l- PREV_ROTATE\l- PREV_TRANSLATE\l- PREV_SCALE\l- PREV_SHEAR\l- ROTATE\l- TRANSLATE\l- SCALE\l- SHEAR\l|+ TransformConstraintTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint_timeline.html",tooltip=" "];
+  Node3 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node12 [label="{Spine.TranslateTimeline\n|+ ENTRIES\l+ BoneIndex\l+ Frames\l+ PropertyId\l~ boneIndex\l~ frames\l# PREV_TIME\l# X\l- PREV_X\l- PREV_Y\l- Y\l|+ TranslateTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_translate_timeline.html",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node13 [label="{Spine.ScaleTimeline\n|+ PropertyId\l|+ ScaleTimeline()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_scale_timeline.html",tooltip=" "];
+  Node12 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node14 [label="{Spine.ShearTimeline\n|+ PropertyId\l|+ ShearTimeline()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_shear_timeline.html",tooltip=" "];
+  Node3 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node15 [label="{Spine.TwoColorTimeline\n|+ ENTRIES\l+ SlotIndex\l+ Frames\l+ PropertyId\l~ slotIndex\l~ frames\l# PREV_TIME\l# PREV_R2\l# R\l- PREV_R\l- PREV_G\l- PREV_B\l- PREV_A\l- PREV_G2\l- PREV_B2\l- G\l- B\l- A\l- R2\l- G2\l- B2\l|+ TwoColorTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_two_color_timeline.html",tooltip=" "];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node16 [label="{Spine.DrawOrderTimeline\n|+ Frames\l+ DrawOrders\l+ FrameCount\l+ PropertyId\l~ frames\l- drawOrders\l|+ DrawOrderTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_draw_order_timeline.html",tooltip=" "];
+  Node1 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node17 [label="{Spine.EventTimeline\n|+ Frames\l+ Events\l+ FrameCount\l+ PropertyId\l~ frames\l- events\l|+ EventTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_event_timeline.html",tooltip=" "];
+}

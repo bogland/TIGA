@@ -1,0 +1,597 @@
+\hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower}{}\doxysection{Spine.\+Unity.\+Bounding\+Box\+Follower 클래스 참조}
+\label{class_spine_1_1_unity_1_1_bounding_box_follower}\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+
+
+Spine.\+Unity.\+Bounding\+Box\+Follower에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Bounding\+Box\+Follower에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}{Initialize}} (bool overwrite=false)
+\begin{DoxyCompactList}\small\item\em Initialize and instantiate the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower}{Bounding\+Box\+Follower}} colliders. This is method checks if the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower}{Bounding\+Box\+Follower}} has already been initialized for the skeleton instance and slot\+Name and prevents overwriting unless it detects a new setup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_acebcbf9547a396cb352fbb817ce877b9}{Clear\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeleton\+Renderer}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slot\+Name}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ad0c9319e9070729af8c048f7b646c09a}{is\+Trigger}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae056aa05c958b0b83e18c630081bc91f}{clear\+State\+On\+Disable}} = true
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, Polygon\+Collider2D $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{collider\+Table}} = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, Polygon\+Collider2D$>$()
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, string $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}{name\+Table}} = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, string$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_acdb4b2f8503979506efb3bb83401f803}{Slot}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae2b6ad2b1238e4150aa5bc2f80fcb573}{Current\+Attachment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ad0f416722ba149fdcf8961fa09e0edbe}{Current\+Attachment\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Polygon\+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a00d55a2c5126479a513f97368121c102}{Current\+Collider}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a01898a037bbea62115fb91a06eb758d9}{Is\+Trigger}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a27854cba22d41abdcdfeaad0fd856906}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a05037132962c61237135b8e3a0f795ec}{On\+Enable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae307eacbad44cee26ff0f55f0e83082e}{Handle\+Rebuild}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} sr)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_accd0c907e05c9dc30dc83e34f4de3283}{Add\+Skin}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, int slot\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a093858f530eea9fd70c061f1e5315454}{On\+Disable}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a1daba850f551c15132e9263e2070d36f}{Dispose\+Colliders}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a00ccc1449d5afd0dd4c77c69332a584e}{Late\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a3be7e071eea072b1b1fee0a5478fb380}{Match\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment)
+\begin{DoxyCompactList}\small\item\em Sets the current collider to match attachment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_slot}{Slot}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{current\+Attachment}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{current\+Attachment\+Name}}
+\item 
+Polygon\+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{current\+Collider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Bounding\+Box\+Follower.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_accd0c907e05c9dc30dc83e34f4de3283}\label{class_spine_1_1_unity_1_1_bounding_box_follower_accd0c907e05c9dc30dc83e34f4de3283}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!AddSkin@{AddSkin}}
+\index{AddSkin@{AddSkin}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{AddSkin()}{AddSkin()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Add\+Skin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{int}]{slot\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 132 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{133                                                 \{}
+\DoxyCodeLine{134             \textcolor{keywordflow}{if} (skin == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{135             var attachmentNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{136             skin.FindNamesForSlot(slotIndex, attachmentNames);}
+\DoxyCodeLine{137 }
+\DoxyCodeLine{138             \textcolor{keywordflow}{foreach} (var skinKey \textcolor{keywordflow}{in} attachmentNames) \{}
+\DoxyCodeLine{139                 var attachment = skin.GetAttachment(slotIndex, skinKey);}
+\DoxyCodeLine{140                 var boundingBoxAttachment = attachment as BoundingBoxAttachment;}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142                 \textcolor{keywordflow}{if} (BoundingBoxFollower.DebugMessages \&\& attachment != \textcolor{keyword}{null} \&\& boundingBoxAttachment == \textcolor{keyword}{null})}
+\DoxyCodeLine{143                     Debug.Log(\textcolor{stringliteral}{"BoundingBoxFollower tried to follow a slot that contains non-\/boundingbox attachments: "} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}});}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145                 \textcolor{keywordflow}{if} (boundingBoxAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{146                     \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.ContainsKey(boundingBoxAttachment)) \{}
+\DoxyCodeLine{147                         var bbCollider = SkeletonUtility.AddBoundingBoxAsComponent(boundingBoxAttachment, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}, gameObject, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ad0c9319e9070729af8c048f7b646c09a}{isTrigger}});}
+\DoxyCodeLine{148                         bbCollider.enabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{149                         bbCollider.hideFlags = HideFlags.NotEditable;}
+\DoxyCodeLine{150                         bbCollider.isTrigger = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a01898a037bbea62115fb91a06eb758d9}{IsTrigger}};}
+\DoxyCodeLine{151                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.Add(boundingBoxAttachment, bbCollider);}
+\DoxyCodeLine{152                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}{nameTable}}.Add(boundingBoxAttachment, skinKey);}
+\DoxyCodeLine{153                     \}}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_acebcbf9547a396cb352fbb817ce877b9}\label{class_spine_1_1_unity_1_1_bounding_box_follower_acebcbf9547a396cb352fbb817ce877b9}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!ClearState@{ClearState}}
+\index{ClearState@{ClearState}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{ClearState()}{ClearState()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Clear\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 162 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163                                   \{}
+\DoxyCodeLine{164             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{165                 \textcolor{keywordflow}{foreach} (var col \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.Values)}
+\DoxyCodeLine{166                     col.enabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{169             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{170             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a1daba850f551c15132e9263e2070d36f}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a1daba850f551c15132e9263e2070d36f}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!DisposeColliders@{DisposeColliders}}
+\index{DisposeColliders@{DisposeColliders}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{DisposeColliders()}{DisposeColliders()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Dispose\+Colliders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 172 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                  \{}
+\DoxyCodeLine{174             var colliders = GetComponents<PolygonCollider2D>();}
+\DoxyCodeLine{175             \textcolor{keywordflow}{if} (colliders.Length == 0) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177             \textcolor{keywordflow}{if} (Application.isEditor) \{}
+\DoxyCodeLine{178                 \textcolor{keywordflow}{if} (Application.isPlaying) \{}
+\DoxyCodeLine{179                     \textcolor{keywordflow}{foreach} (var c \textcolor{keywordflow}{in} colliders) \{}
+\DoxyCodeLine{180                         \textcolor{keywordflow}{if} (c != \textcolor{keyword}{null})}
+\DoxyCodeLine{181                             Destroy(c);}
+\DoxyCodeLine{182                     \}}
+\DoxyCodeLine{183                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{184                     \textcolor{keywordflow}{foreach} (var c \textcolor{keywordflow}{in} colliders)}
+\DoxyCodeLine{185                         \textcolor{keywordflow}{if} (c != \textcolor{keyword}{null}) }
+\DoxyCodeLine{186                             DestroyImmediate(c);}
+\DoxyCodeLine{187                 \}}
+\DoxyCodeLine{188             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{189                 \textcolor{keywordflow}{foreach} (PolygonCollider2D c \textcolor{keywordflow}{in} colliders)}
+\DoxyCodeLine{190                     \textcolor{keywordflow}{if} (c != \textcolor{keyword}{null})}
+\DoxyCodeLine{191                         Destroy(c);}
+\DoxyCodeLine{192             \}}
+\DoxyCodeLine{193 }
+\DoxyCodeLine{194             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{195             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{196             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{197             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{198             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.Clear();}
+\DoxyCodeLine{199             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}{nameTable}}.Clear();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ae307eacbad44cee26ff0f55f0e83082e}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ae307eacbad44cee26ff0f55f0e83082e}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!HandleRebuild@{HandleRebuild}}
+\index{HandleRebuild@{HandleRebuild}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{HandleRebuild()}{HandleRebuild()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Handle\+Rebuild (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{sr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75                                                  \{}
+\DoxyCodeLine{76             \textcolor{comment}{//if (BoundingBoxFollower.DebugMessages) Debug.Log("Skeleton was rebuilt. Repopulating BoundingBoxFollower.");}}
+\DoxyCodeLine{77             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Initialize (\begin{DoxyParamCaption}\item[{bool}]{overwrite = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Initialize and instantiate the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower}{Bounding\+Box\+Follower}} colliders. This is method checks if the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower}{Bounding\+Box\+Follower}} has already been initialized for the skeleton instance and slot\+Name and prevents overwriting unless it detects a new setup. 
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 81 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82                                                         \{}
+\DoxyCodeLine{83             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{84                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a51f0f25d67884c18239202881a188797}{Initialize}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{87             }
+\DoxyCodeLine{88             \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}}))}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             \textcolor{comment}{// Don't reinitialize if the setup did not change.}}
+\DoxyCodeLine{92             \textcolor{keywordflow}{if} (!overwrite}
+\DoxyCodeLine{93                 \&\&}
+\DoxyCodeLine{94                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.Count > 0 \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}} != \textcolor{keyword}{null}            \textcolor{comment}{// Slot is set and colliders already populated.}}
+\DoxyCodeLine{95                 \&\&}
+\DoxyCodeLine{96                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}} == \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}.\mbox{\hyperlink{class_spine_1_1_slot_a60be6be5435fd073a1a31d90e9948231}{Skeleton}}      \textcolor{comment}{// Skeleton object did not change.}}
+\DoxyCodeLine{97                 \&\&}
+\DoxyCodeLine{98                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}} == \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}.data.name                      \textcolor{comment}{// Slot object did not change.}}
+\DoxyCodeLine{99             ) }
+\DoxyCodeLine{100                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a1daba850f551c15132e9263e2070d36f}{DisposeColliders}}();}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             var skeleton = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}};}
+\DoxyCodeLine{105             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}} = skeleton.FindSlot(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}});}
+\DoxyCodeLine{106             \textcolor{keywordtype}{int} slotIndex = skeleton.FindSlotIndex(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}});}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{if} (BoundingBoxFollower.DebugMessages)}
+\DoxyCodeLine{110                     Debug.LogWarning(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Slot '\{0\}' not found for BoundingBoxFollower on '\{1\}'. (Previous colliders were disposed.)"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}}, this.gameObject.name));}
+\DoxyCodeLine{111                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{112             \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114             \textcolor{keywordflow}{if} (this.gameObject.activeInHierarchy) \{}
+\DoxyCodeLine{115                 \textcolor{keywordflow}{foreach} (var skin \textcolor{keywordflow}{in} skeleton.Data.Skins)}
+\DoxyCodeLine{116                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_accd0c907e05c9dc30dc83e34f4de3283}{AddSkin}}(skin, slotIndex);}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118                 \textcolor{keywordflow}{if} (skeleton.skin != \textcolor{keyword}{null})}
+\DoxyCodeLine{119                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_accd0c907e05c9dc30dc83e34f4de3283}{AddSkin}}(skeleton.skin, slotIndex);}
+\DoxyCodeLine{120             \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122             \textcolor{keywordflow}{if} (BoundingBoxFollower.DebugMessages) \{}
+\DoxyCodeLine{123                 \textcolor{keywordtype}{bool} valid = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.Count != 0;}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{if} (!valid) \{}
+\DoxyCodeLine{125                     \textcolor{keywordflow}{if} (this.gameObject.activeInHierarchy)}
+\DoxyCodeLine{126                         Debug.LogWarning(\textcolor{stringliteral}{"Bounding Box Follower not valid! Slot ["} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}{slotName}} + \textcolor{stringliteral}{"] does not contain any Bounding Box Attachments!"});}
+\DoxyCodeLine{127                     \textcolor{keywordflow}{else} }
+\DoxyCodeLine{128                         Debug.LogWarning(\textcolor{stringliteral}{"Bounding Box Follower tried to rebuild as a prefab."});}
+\DoxyCodeLine{129                 \}}
+\DoxyCodeLine{130             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a00ccc1449d5afd0dd4c77c69332a584e}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a00ccc1449d5afd0dd4c77c69332a584e}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 201 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                            \{}
+\DoxyCodeLine{203             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}} != \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}})}
+\DoxyCodeLine{204                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a3be7e071eea072b1b1fee0a5478fb380}{MatchAttachment}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}.\mbox{\hyperlink{class_spine_1_1_slot_a2e3bd07a4034cef3a3b438f217f2f435}{Attachment}});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a3be7e071eea072b1b1fee0a5478fb380}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a3be7e071eea072b1b1fee0a5478fb380}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!MatchAttachment@{MatchAttachment}}
+\index{MatchAttachment@{MatchAttachment}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{MatchAttachment()}{MatchAttachment()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Match\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the current collider to match attachment. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em attachment} & If the attachment is not a bounding box, it will be treated as null.\\
+\hline
+\end{DoxyParams}
+
+
+Bounding\+Box\+Follower.\+cs 파일의 208 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{209                                                      \{}
+\DoxyCodeLine{210             var bbAttachment = attachment as BoundingBoxAttachment;}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212             \textcolor{keywordflow}{if} (BoundingBoxFollower.DebugMessages \&\& attachment != \textcolor{keyword}{null} \&\& bbAttachment == \textcolor{keyword}{null})}
+\DoxyCodeLine{213                 Debug.LogWarning(\textcolor{stringliteral}{"BoundingBoxFollower tried to match a non-\/boundingbox attachment. It will treat it as null."});}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{216                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}}.enabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{217 }
+\DoxyCodeLine{218             \textcolor{keywordflow}{if} (bbAttachment == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{219                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{220                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{221                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{222             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{223                 PolygonCollider2D foundCollider;}
+\DoxyCodeLine{224                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}{colliderTable}}.TryGetValue(bbAttachment, out foundCollider);}
+\DoxyCodeLine{225                 \textcolor{keywordflow}{if} (foundCollider != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{226                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} = foundCollider;}
+\DoxyCodeLine{227                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}}.enabled = \textcolor{keyword}{true};}
+\DoxyCodeLine{228                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}} = bbAttachment;}
+\DoxyCodeLine{229                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}{nameTable}}[bbAttachment];}
+\DoxyCodeLine{230                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{231                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{232                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}} = bbAttachment;}
+\DoxyCodeLine{233                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{234                     \textcolor{keywordflow}{if} (BoundingBoxFollower.DebugMessages) Debug.LogFormat(\textcolor{stringliteral}{"Collider for BoundingBoxAttachment named '\{0\}' was not initialized. It is possibly from a new skin. currentAttachmentName will be null. You may need to call BoundingBoxFollower.Initialize(overwrite: true);"}, bbAttachment.Name);}
+\DoxyCodeLine{235                 \}}
+\DoxyCodeLine{236             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a093858f530eea9fd70c061f1e5315454}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a093858f530eea9fd70c061f1e5315454}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 157 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158                           \{}
+\DoxyCodeLine{159             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae056aa05c958b0b83e18c630081bc91f}{clearStateOnDisable}})}
+\DoxyCodeLine{160                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_acebcbf9547a396cb352fbb817ce877b9}{ClearState}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a05037132962c61237135b8e3a0f795ec}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a05037132962c61237135b8e3a0f795ec}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                          \{}
+\DoxyCodeLine{67             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{68                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae307eacbad44cee26ff0f55f0e83082e}{HandleRebuild}};}
+\DoxyCodeLine{69                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae307eacbad44cee26ff0f55f0e83082e}{HandleRebuild}};}
+\DoxyCodeLine{70             \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a27854cba22d41abdcdfeaad0fd856906}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a27854cba22d41abdcdfeaad0fd856906}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bounding\+Box\+Follower.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                       \{}
+\DoxyCodeLine{63             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a6ba3bb70a58ca9977e1d0dfb512286fb}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ae056aa05c958b0b83e18c630081bc91f}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ae056aa05c958b0b83e18c630081bc91f}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!clearStateOnDisable@{clearStateOnDisable}}
+\index{clearStateOnDisable@{clearStateOnDisable}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{clearStateOnDisable}{clearStateOnDisable}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bounding\+Box\+Follower.\+clear\+State\+On\+Disable = true}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ae73e0c036c630039b6762bd1421023ce}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!colliderTable@{colliderTable}}
+\index{colliderTable@{colliderTable}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{colliderTable}{colliderTable}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, Polygon\+Collider2D$>$ Spine.\+Unity.\+Bounding\+Box\+Follower.\+collider\+Table = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, Polygon\+Collider2D$>$()}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}\label{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!currentAttachment@{currentAttachment}}
+\index{currentAttachment@{currentAttachment}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{currentAttachment}{currentAttachment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Unity.\+Bounding\+Box\+Follower.\+current\+Attachment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!currentAttachmentName@{currentAttachmentName}}
+\index{currentAttachmentName@{currentAttachmentName}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{currentAttachmentName}{currentAttachmentName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Bounding\+Box\+Follower.\+current\+Attachment\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!currentCollider@{currentCollider}}
+\index{currentCollider@{currentCollider}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{currentCollider}{currentCollider}}
+{\footnotesize\ttfamily Polygon\+Collider2D Spine.\+Unity.\+Bounding\+Box\+Follower.\+current\+Collider\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ad0c9319e9070729af8c048f7b646c09a}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ad0c9319e9070729af8c048f7b646c09a}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!isTrigger@{isTrigger}}
+\index{isTrigger@{isTrigger}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{isTrigger}{isTrigger}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bounding\+Box\+Follower.\+is\+Trigger}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a77ea3def0d625b16ba8e41f087059660}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!nameTable@{nameTable}}
+\index{nameTable@{nameTable}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{nameTable}{nameTable}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, string$>$ Spine.\+Unity.\+Bounding\+Box\+Follower.\+name\+Table = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}, string$>$()}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}\label{class_spine_1_1_unity_1_1_bounding_box_follower_aa6e8d3792432bf4b667535bf87ad9040}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Bounding\+Box\+Follower.\+skeleton\+Renderer}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!slot@{slot}}
+\index{slot@{slot}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{slot}{slot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Unity.\+Bounding\+Box\+Follower.\+slot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a95f9ded4cd4fab9a0b2a2c7423ea330a}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!slotName@{slotName}}
+\index{slotName@{slotName}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{slotName}{slotName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Bounding\+Box\+Follower.\+slot\+Name}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ae2b6ad2b1238e4150aa5bc2f80fcb573}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ae2b6ad2b1238e4150aa5bc2f80fcb573}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!CurrentAttachment@{CurrentAttachment}}
+\index{CurrentAttachment@{CurrentAttachment}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{CurrentAttachment}{CurrentAttachment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Unity.\+Bounding\+Box\+Follower.\+Current\+Attachment\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_ad0f416722ba149fdcf8961fa09e0edbe}\label{class_spine_1_1_unity_1_1_bounding_box_follower_ad0f416722ba149fdcf8961fa09e0edbe}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!CurrentAttachmentName@{CurrentAttachmentName}}
+\index{CurrentAttachmentName@{CurrentAttachmentName}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{CurrentAttachmentName}{CurrentAttachmentName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Bounding\+Box\+Follower.\+Current\+Attachment\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_aecc3d92f5c5c3e20f73bbef229434080}{currentAttachment}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a00d55a2c5126479a513f97368121c102}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a00d55a2c5126479a513f97368121c102}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!CurrentCollider@{CurrentCollider}}
+\index{CurrentCollider@{CurrentCollider}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{CurrentCollider}{CurrentCollider}}
+{\footnotesize\ttfamily Polygon\+Collider2D Spine.\+Unity.\+Bounding\+Box\+Follower.\+Current\+Collider\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a937f06cd0ccee7a48bd3924241a35139}{currentAttachmentName}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_a01898a037bbea62115fb91a06eb758d9}\label{class_spine_1_1_unity_1_1_bounding_box_follower_a01898a037bbea62115fb91a06eb758d9}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!IsTrigger@{IsTrigger}}
+\index{IsTrigger@{IsTrigger}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{IsTrigger}{IsTrigger}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bounding\+Box\+Follower.\+Is\+Trigger\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_ae0711c0b2b0c5149525ca25eb5a25078}{currentCollider}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bounding_box_follower_acdb4b2f8503979506efb3bb83401f803}\label{class_spine_1_1_unity_1_1_bounding_box_follower_acdb4b2f8503979506efb3bb83401f803}} 
+\index{Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}!Slot@{Slot}}
+\index{Slot@{Slot}!Spine.Unity.BoundingBoxFollower@{Spine.Unity.BoundingBoxFollower}}
+\doxysubsubsection{\texorpdfstring{Slot}{Slot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} Spine.\+Unity.\+Bounding\+Box\+Follower.\+Slot\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Bounding\+Box\+Follower.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bounding_box_follower_a129ef487b1564aa4043a011109809785}{slot}}; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Bounding\+Box\+Follower/\mbox{\hyperlink{_bounding_box_follower_8cs}{Bounding\+Box\+Follower.\+cs}}\end{DoxyCompactItemize}

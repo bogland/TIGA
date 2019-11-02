@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Attachment\lTools.AttachmentCloneExtensions\n||+ GetClone()\l+ GetClone()\l+ GetClone()\l+ GetClone()\l+ GetClone()\l+ GetLinkedClone()\l+ GetClone()\l+ GetClone()\l+ GetLinkedMesh()\l+ GetLinkedMesh()\l+ GetLinkedMesh()\l+ GetRemappedClone()\l+ GetRemappedClone()\l- CloneVertexAttachment()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

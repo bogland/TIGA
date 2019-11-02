@@ -1,0 +1,259 @@
+\hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{}\doxysection{Spine.\+Unity.\+Skeleton\+Renderer\+Instruction 클래스 참조}
+\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+
+
+Spine.\+Unity.\+Skeleton\+Renderer\+Instruction에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_abe026d6be1737795d804bfbface0713c}{Clear}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_ab5db7e4ffb78b325df5a78e04a31d79c}{Dispose}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a52d5117b1aa89aa089b4c47091e41223}{Set\+With\+Subset}} (\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$ instructions, int start\+Submesh, int end\+Submesh)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a928ab7ca9a7859575b5279f9bd7b7198}{Set}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} other)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a6ea986f462eac2cac4e50e8206b69c81}{Geometry\+Not\+Equal}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} a, \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} b)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a4a5718a0dbd402b2bf4a9fa51a7bb8c6}{immutable\+Triangles}}
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submesh\+Instructions}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Mesh.\+cs 파일의 1410 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_abe026d6be1737795d804bfbface0713c}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_abe026d6be1737795d804bfbface0713c}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1420 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1421                              \{}
+\DoxyCodeLine{1422 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1423             this.attachments.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{1424             rawVertexCount = -\/1;}
+\DoxyCodeLine{1425             hasActiveClipping = \textcolor{keyword}{false};}
+\DoxyCodeLine{1426 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1427             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}}.Clear(\textcolor{keyword}{false});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_ab5db7e4ffb78b325df5a78e04a31d79c}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_ab5db7e4ffb78b325df5a78e04a31d79c}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1429 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1430                                \{}
+\DoxyCodeLine{1431             attachments.Clear(\textcolor{keyword}{true});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a6ea986f462eac2cac4e50e8206b69c81}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a6ea986f462eac2cac4e50e8206b69c81}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!GeometryNotEqual@{GeometryNotEqual}}
+\index{GeometryNotEqual@{GeometryNotEqual}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{GeometryNotEqual()}{GeometryNotEqual()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+Geometry\+Not\+Equal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{a,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1489 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1490                                                                                                            \{}
+\DoxyCodeLine{1491 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1492 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{1493             \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{1494             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1495 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1496 }
+\DoxyCodeLine{1497             \textcolor{keywordflow}{if} (a.hasActiveClipping || b.hasActiveClipping) \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{// Triangles are unpredictable when clipping is active.}}
+\DoxyCodeLine{1498 }
+\DoxyCodeLine{1499             \textcolor{comment}{// Everything below assumes the raw vertex and triangle counts were used. (ie, no clipping was done)}}
+\DoxyCodeLine{1500             \textcolor{keywordflow}{if} (a.rawVertexCount != b.rawVertexCount) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1501 }
+\DoxyCodeLine{1502             \textcolor{keywordflow}{if} (a.immutableTriangles != b.immutableTriangles) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1503 }
+\DoxyCodeLine{1504             \textcolor{keywordtype}{int} attachmentCountB = b.attachments.Count;}
+\DoxyCodeLine{1505             \textcolor{keywordflow}{if} (a.attachments.Count != attachmentCountB) \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{// Bounds check for the looped storedAttachments count below.}}
+\DoxyCodeLine{1506 }
+\DoxyCodeLine{1507             \textcolor{comment}{// Submesh count changed}}
+\DoxyCodeLine{1508             \textcolor{keywordtype}{int} submeshCountA = a.submeshInstructions.Count;}
+\DoxyCodeLine{1509             \textcolor{keywordtype}{int} submeshCountB = b.submeshInstructions.Count;}
+\DoxyCodeLine{1510             \textcolor{keywordflow}{if} (submeshCountA != submeshCountB) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1511 }
+\DoxyCodeLine{1512             \textcolor{comment}{// Submesh Instruction mismatch}}
+\DoxyCodeLine{1513             var submeshInstructionsItemsA = a.submeshInstructions.Items;}
+\DoxyCodeLine{1514             var submeshInstructionsItemsB = b.submeshInstructions.Items;}
+\DoxyCodeLine{1515 }
+\DoxyCodeLine{1516             var attachmentsA = a.attachments.Items;}
+\DoxyCodeLine{1517             var attachmentsB = b.attachments.Items;     }
+\DoxyCodeLine{1518             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < attachmentCountB; i++)}
+\DoxyCodeLine{1519                 \textcolor{keywordflow}{if} (!System.Object.ReferenceEquals(attachmentsA[i], attachmentsB[i])) \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1520 }
+\DoxyCodeLine{1521             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < submeshCountB; i++) \{}
+\DoxyCodeLine{1522                 var submeshA = submeshInstructionsItemsA[i];}
+\DoxyCodeLine{1523                 var submeshB = submeshInstructionsItemsB[i];}
+\DoxyCodeLine{1524 }
+\DoxyCodeLine{1525                 \textcolor{keywordflow}{if} (!(}
+\DoxyCodeLine{1526                     submeshA.rawVertexCount == submeshB.rawVertexCount \&\&}
+\DoxyCodeLine{1527                     submeshA.startSlot == submeshB.startSlot \&\&}
+\DoxyCodeLine{1528                     submeshA.endSlot == submeshB.endSlot}
+\DoxyCodeLine{1529                     \&\& submeshA.rawTriangleCount == submeshB.rawTriangleCount \&\&}
+\DoxyCodeLine{1530                     submeshA.rawFirstVertexIndex == submeshB.rawFirstVertexIndex}
+\DoxyCodeLine{1531                 ))}
+\DoxyCodeLine{1532                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};            }
+\DoxyCodeLine{1533             \}}
+\DoxyCodeLine{1534 }
+\DoxyCodeLine{1535             \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{1536 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{1537             \textcolor{comment}{// In normal immutable triangle use, immutableTriangles will be initially false, forcing the smartmesh to update the first time but never again after that, unless there was an immutableTriangles flag mismatch..}}
+\DoxyCodeLine{1538             \textcolor{keywordflow}{if} (a.immutableTriangles || b.immutableTriangles)}
+\DoxyCodeLine{1539                 \textcolor{keywordflow}{return} (a.immutableTriangles != b.immutableTriangles);}
+\DoxyCodeLine{1540 }
+\DoxyCodeLine{1541             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{1542 \textcolor{preprocessor}{            \#endif}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a928ab7ca9a7859575b5279f9bd7b7198}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a928ab7ca9a7859575b5279f9bd7b7198}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!Set@{Set}}
+\index{Set@{Set}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{Set()}{Set()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1471 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1472                                                             \{}
+\DoxyCodeLine{1473             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a4a5718a0dbd402b2bf4a9fa51a7bb8c6}{immutableTriangles}} = other.immutableTriangles;}
+\DoxyCodeLine{1474 }
+\DoxyCodeLine{1475 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1476             this.hasActiveClipping = other.hasActiveClipping;}
+\DoxyCodeLine{1477             this.rawVertexCount = other.rawVertexCount;}
+\DoxyCodeLine{1478             this.attachments.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{1479             this.attachments.GrowIfNeeded(other.attachments.Capacity);}
+\DoxyCodeLine{1480             this.attachments.Count = other.attachments.Count;}
+\DoxyCodeLine{1481             other.attachments.CopyTo(this.attachments.Items);}
+\DoxyCodeLine{1482 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1483 }
+\DoxyCodeLine{1484             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}}.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{1485             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}}.GrowIfNeeded(other.submeshInstructions.Capacity);}
+\DoxyCodeLine{1486             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}}.Count = other.submeshInstructions.Count;}
+\DoxyCodeLine{1487             other.submeshInstructions.CopyTo(this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}}.Items);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a52d5117b1aa89aa089b4c47091e41223}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a52d5117b1aa89aa089b4c47091e41223}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!SetWithSubset@{SetWithSubset}}
+\index{SetWithSubset@{SetWithSubset}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{SetWithSubset()}{SetWithSubset()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+Set\+With\+Subset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$}]{instructions,  }\item[{int}]{start\+Submesh,  }\item[{int}]{end\+Submesh }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1433 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1434                                                                                                                    \{}
+\DoxyCodeLine{1435 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1436             \textcolor{keywordtype}{int} runningVertexCount = 0;}
+\DoxyCodeLine{1437 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{1438 }
+\DoxyCodeLine{1439             var submeshes = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}{submeshInstructions}};}
+\DoxyCodeLine{1440             submeshes.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{1441             \textcolor{keywordtype}{int} submeshCount = endSubmesh -\/ startSubmesh;}
+\DoxyCodeLine{1442             submeshes.Resize(submeshCount);}
+\DoxyCodeLine{1443             var submeshesItems = submeshes.Items;}
+\DoxyCodeLine{1444             var instructionsItems = instructions.Items;}
+\DoxyCodeLine{1445             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < submeshCount; i++) \{}
+\DoxyCodeLine{1446                 var instruction = instructionsItems[startSubmesh + i];}
+\DoxyCodeLine{1447                 submeshesItems[i] = instruction;}
+\DoxyCodeLine{1448 \textcolor{preprocessor}{                \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1449                 this.hasActiveClipping |= instruction.hasClipping;}
+\DoxyCodeLine{1450                 submeshesItems[i].rawFirstVertexIndex = runningVertexCount; \textcolor{comment}{// Ensure current instructions have correct cached values.}}
+\DoxyCodeLine{1451                 runningVertexCount += instruction.rawVertexCount; \textcolor{comment}{// vertexCount will also be used for the rest of this method.}}
+\DoxyCodeLine{1452 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{1453             \}}
+\DoxyCodeLine{1454 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{1455             this.rawVertexCount = runningVertexCount;}
+\DoxyCodeLine{1456 }
+\DoxyCodeLine{1457             \textcolor{comment}{// assumption: instructions are contiguous. start and end are valid within instructions.}}
+\DoxyCodeLine{1458 }
+\DoxyCodeLine{1459             \textcolor{keywordtype}{int} startSlot = instructionsItems[startSubmesh].startSlot;}
+\DoxyCodeLine{1460             \textcolor{keywordtype}{int} endSlot = instructionsItems[endSubmesh -\/ 1].endSlot;}
+\DoxyCodeLine{1461             attachments.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{1462             \textcolor{keywordtype}{int} attachmentCount = endSlot -\/ startSlot;}
+\DoxyCodeLine{1463             attachments.Resize(attachmentCount);}
+\DoxyCodeLine{1464             var attachmentsItems = attachments.Items;}
+\DoxyCodeLine{1465 }
+\DoxyCodeLine{1466             var drawOrder = instructionsItems[0].skeleton.drawOrder.Items;}
+\DoxyCodeLine{1467             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < attachmentCount; i++)}
+\DoxyCodeLine{1468             attachmentsItems[i] = drawOrder[startSlot + i].attachment;}
+\DoxyCodeLine{1469 \textcolor{preprocessor}{            \#endif}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a4a5718a0dbd402b2bf4a9fa51a7bb8c6}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a4a5718a0dbd402b2bf4a9fa51a7bb8c6}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!immutableTriangles@{immutableTriangles}}
+\index{immutableTriangles@{immutableTriangles}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{immutableTriangles}{immutableTriangles}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+immutable\+Triangles}
+
+
+
+Spine\+Mesh.\+cs 파일의 1411 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}\label{class_spine_1_1_unity_1_1_skeleton_renderer_instruction_a0de6fb5a0fb410135cf581566ccbde05}} 
+\index{Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}!submeshInstructions@{submeshInstructions}}
+\index{submeshInstructions@{submeshInstructions}!Spine.Unity.SkeletonRendererInstruction@{Spine.Unity.SkeletonRendererInstruction}}
+\doxysubsubsection{\texorpdfstring{submeshInstructions}{submeshInstructions}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}}$>$ Spine.\+Unity.\+Skeleton\+Renderer\+Instruction.\+submesh\+Instructions = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}}$>$()}
+
+
+
+Spine\+Mesh.\+cs 파일의 1412 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Mesh Generation/\mbox{\hyperlink{_spine_mesh_8cs}{Spine\+Mesh.\+cs}}\end{DoxyCompactItemize}

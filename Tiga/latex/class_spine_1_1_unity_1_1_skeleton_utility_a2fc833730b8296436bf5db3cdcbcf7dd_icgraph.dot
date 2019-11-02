@@ -1,0 +1,16 @@
+digraph "Spine.Unity.SkeletonUtility.AddBoundingBoxAsComponent"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.SkeletonUtility.\lAddBoundingBoxAsComponent",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.SkeletonUtility.\lAddBoundingBoxGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_utility.html#a5c94711b857858bdbf94d4274a5a2b9c",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.BoundingBoxFollower.\lAddSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_bounding_box_follower.html#accd0c907e05c9dc30dc83e34f4de3283",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Modules.Skeleton\lRagdoll2D.AttachBoundingBoxRagdoll\lColliders",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d.html#a623edb8f3c4c3a78092c97613d1d2c14",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector.OnInspectorGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html#a19b126b947d171f662d3a49b0ef67ecd",tooltip=" "];
+}

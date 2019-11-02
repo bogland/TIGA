@@ -1,0 +1,324 @@
+\hypertarget{class_text_ro_shake}{}\doxysection{Text\+Ro\+Shake 클래스 참조}
+\label{class_text_ro_shake}\index{TextRoShake@{TextRoShake}}
+
+
+Text\+Ro\+Shake에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Text\+Ro\+Shake에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_text_ro_shake_a07026b3b71850fe29aeb8551bbef0cf9}{Show\+Dialog}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}{m\+\_\+count}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_text_ro_shake_acf63ac5f94723b8e62acfc9fc6f81465}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_text_ro_shake_a2f0eb0cee0b641b9ed7ae79ef9cc901f}{On\+Off}} (bool \+\_\+flag)
+\item 
+void \mbox{\hyperlink{class_text_ro_shake_a42624dcd8ebbcd6e5bf0541bc990703d}{Next\+Dialog}} ()
+\item 
+void \mbox{\hyperlink{class_text_ro_shake_a728b9ae264f7139466602732a17369ff}{Update}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_text_ro_shake_a75c3344684fda98ff2206987719b43bd}{Shake\+Coroutine}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_text_ro_shake_a3bde2854ed6b26de190f0bb0392edc55}{Reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Text \mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\+\_\+txt\+Dialog}}
+\item 
+bool \mbox{\hyperlink{class_text_ro_shake_a79dddf04c1a4dcd649f04179acd5febd}{is\+Dialog}} = false
+\item 
+\mbox{\hyperlink{class_dialog_box}{Dialog\+Box}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_text_ro_shake_a5df647bdd49132e4873df46f98b8706c}{m\+\_\+\+Dialog\+Box}}
+\item 
+float \mbox{\hyperlink{class_text_ro_shake_acc910ceefa2481eba1ef49592ad80220}{m\+\_\+force}} = 0f
+\item 
+Vector3 \mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\+\_\+\+Ro\+Dir}} = Vector3.\+zero
+\item 
+Quaternion \mbox{\hyperlink{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}{m\+\_\+\+Origin\+Rot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Text\+Ro\+Shake.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_text_ro_shake_a42624dcd8ebbcd6e5bf0541bc990703d}\label{class_text_ro_shake_a42624dcd8ebbcd6e5bf0541bc990703d}} 
+\index{TextRoShake@{TextRoShake}!NextDialog@{NextDialog}}
+\index{NextDialog@{NextDialog}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{NextDialog()}{NextDialog()}}
+{\footnotesize\ttfamily void Text\+Ro\+Shake.\+Next\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.text = \mbox{\hyperlink{class_text_ro_shake_a5df647bdd49132e4873df46f98b8706c}{m\_DialogBox}}[\mbox{\hyperlink{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}{m\_count}}].\mbox{\hyperlink{class_dialog_box_a4c74f5f5f699b120dff6391756c34296}{m\_TxtDialog}};}
+\DoxyCodeLine{54         \mbox{\hyperlink{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}{m\_count}}++;}
+\DoxyCodeLine{55     \}\textcolor{comment}{//private void NextDialog()}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_text_ro_shake_a2f0eb0cee0b641b9ed7ae79ef9cc901f}\label{class_text_ro_shake_a2f0eb0cee0b641b9ed7ae79ef9cc901f}} 
+\index{TextRoShake@{TextRoShake}!OnOff@{OnOff}}
+\index{OnOff@{OnOff}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{OnOff()}{OnOff()}}
+{\footnotesize\ttfamily void Text\+Ro\+Shake.\+On\+Off (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.gameObject.SetActive(\_flag);}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \mbox{\hyperlink{class_text_ro_shake_a79dddf04c1a4dcd649f04179acd5febd}{isDialog}} = \_flag;}
+\DoxyCodeLine{49     \}\textcolor{comment}{//private void OnOff(bool \_flag)}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_text_ro_shake_a3bde2854ed6b26de190f0bb0392edc55}\label{class_text_ro_shake_a3bde2854ed6b26de190f0bb0392edc55}} 
+\index{TextRoShake@{TextRoShake}!Reset@{Reset}}
+\index{Reset@{Reset}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily I\+Enumerator Text\+Ro\+Shake.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 111 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113         \textcolor{keywordflow}{while} (Quaternion.Angle(\mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation, \mbox{\hyperlink{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}{m\_OriginRot}}) > 0f)}
+\DoxyCodeLine{114         \{}
+\DoxyCodeLine{115             transform.rotation = Quaternion.RotateTowards(\mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation, \mbox{\hyperlink{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}{m\_OriginRot}}, \mbox{\hyperlink{class_text_ro_shake_acc910ceefa2481eba1ef49592ad80220}{m\_force}} * Time.deltaTime);}
+\DoxyCodeLine{116             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{117         \}}
+\DoxyCodeLine{118     \}\textcolor{comment}{//IEnumerator Reset()}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_text_ro_shake_a75c3344684fda98ff2206987719b43bd}\label{class_text_ro_shake_a75c3344684fda98ff2206987719b43bd}} 
+\index{TextRoShake@{TextRoShake}!ShakeCoroutine@{ShakeCoroutine}}
+\index{ShakeCoroutine@{ShakeCoroutine}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{ShakeCoroutine()}{ShakeCoroutine()}}
+{\footnotesize\ttfamily I\+Enumerator Text\+Ro\+Shake.\+Shake\+Coroutine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 82 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         Vector3 a\_originEuler = transform.eulerAngles; \textcolor{comment}{// 현재 오일러값을 임시 변수에 담는다 }}
+\DoxyCodeLine{85         \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             \textcolor{keywordtype}{float} a\_rotX = Random.Range(-\/\mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.x, \mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.x);}
+\DoxyCodeLine{88             \textcolor{keywordtype}{float} a\_rotY = Random.Range(-\/\mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.y, \mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.y);}
+\DoxyCodeLine{89             \textcolor{keywordtype}{float} a\_rotZ = Random.Range(-\/\mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.z, \mbox{\hyperlink{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}{m\_RoDir}}.z);}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{91             \textcolor{comment}{//흔들림 값 = 초기값 + 랜덤값 }}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             Vector3 a\_RandomRot = a\_originEuler + \textcolor{keyword}{new} Vector3(a\_rotX, a\_rotY, a\_rotZ);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             \textcolor{comment}{//흔들림값을 쿼터니온으로 변환 }}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97             Quaternion a\_rot = Quaternion.Euler(a\_RandomRot);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99             \textcolor{comment}{//카메라를 목표 값 쿼터니온 값으로 회전시킨다 }}
+\DoxyCodeLine{100             \textcolor{comment}{//}}
+\DoxyCodeLine{101             \textcolor{keywordflow}{while} (Quaternion.Angle(\mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation, a\_rot) > 0.1f)}
+\DoxyCodeLine{102             \{}
+\DoxyCodeLine{103                 \textcolor{comment}{// Quaternion.Slerp 이랑 똑같은기능 Quaternion.RotateTowards}}
+\DoxyCodeLine{104                 \mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation = Quaternion.RotateTowards(\mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation, a\_rot, \mbox{\hyperlink{class_text_ro_shake_acc910ceefa2481eba1ef49592ad80220}{m\_force}} * Time.deltaTime);}
+\DoxyCodeLine{105                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109     \}\textcolor{comment}{//    IEnumerator ShakeCoroutine()}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_text_ro_shake_a07026b3b71850fe29aeb8551bbef0cf9}\label{class_text_ro_shake_a07026b3b71850fe29aeb8551bbef0cf9}} 
+\index{TextRoShake@{TextRoShake}!ShowDialog@{ShowDialog}}
+\index{ShowDialog@{ShowDialog}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{ShowDialog()}{ShowDialog()}}
+{\footnotesize\ttfamily void Text\+Ro\+Shake.\+Show\+Dialog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37         \mbox{\hyperlink{class_text_ro_shake_a2f0eb0cee0b641b9ed7ae79ef9cc901f}{OnOff}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{38         \mbox{\hyperlink{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}{m\_count}} = 0;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40         \textcolor{comment}{//isDialog = true;}}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_text_ro_shake_a42624dcd8ebbcd6e5bf0541bc990703d}{NextDialog}}();}
+\DoxyCodeLine{42     \}\textcolor{comment}{//    public void ShowDialog()}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_text_ro_shake_acf63ac5f94723b8e62acfc9fc6f81465}\label{class_text_ro_shake_acf63ac5f94723b8e62acfc9fc6f81465}} 
+\index{TextRoShake@{TextRoShake}!Start@{Start}}
+\index{Start@{Start}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Text\+Ro\+Shake.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 29 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30     \{}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}{m\_OriginRot}} = \mbox{\hyperlink{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}{m\_txtDialog}}.transform.rotation;}
+\DoxyCodeLine{32     \}\textcolor{comment}{//void Start()}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_text_ro_shake_a728b9ae264f7139466602732a17369ff}\label{class_text_ro_shake_a728b9ae264f7139466602732a17369ff}} 
+\index{TextRoShake@{TextRoShake}!Update@{Update}}
+\index{Update@{Update}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Text\+Ro\+Shake.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59     \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{if} (Input.GetKeyDown(KeyCode.A))}
+\DoxyCodeLine{61         \{}
+\DoxyCodeLine{62             StartCoroutine(\mbox{\hyperlink{class_text_ro_shake_a75c3344684fda98ff2206987719b43bd}{ShakeCoroutine}}());}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (Input.GetKeyDown(KeyCode.B))}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66             StopAllCoroutines();}
+\DoxyCodeLine{67             StartCoroutine(\mbox{\hyperlink{class_text_ro_shake_a3bde2854ed6b26de190f0bb0392edc55}{Reset}}());}
+\DoxyCodeLine{68         \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_text_ro_shake_a79dddf04c1a4dcd649f04179acd5febd}{isDialog}})}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (Input.GetKeyDown(KeyCode.Space))}
+\DoxyCodeLine{73             \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}{m\_count}} < \mbox{\hyperlink{class_text_ro_shake_a5df647bdd49132e4873df46f98b8706c}{m\_DialogBox}}.Length)}
+\DoxyCodeLine{75                     \mbox{\hyperlink{class_text_ro_shake_a42624dcd8ebbcd6e5bf0541bc990703d}{NextDialog}}();}
+\DoxyCodeLine{76                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{77                     \mbox{\hyperlink{class_text_ro_shake_a2f0eb0cee0b641b9ed7ae79ef9cc901f}{OnOff}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79         \}\textcolor{comment}{//   if (isDialog)}}
+\DoxyCodeLine{80     \}\textcolor{comment}{//void Update()}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_text_ro_shake_a79dddf04c1a4dcd649f04179acd5febd}\label{class_text_ro_shake_a79dddf04c1a4dcd649f04179acd5febd}} 
+\index{TextRoShake@{TextRoShake}!isDialog@{isDialog}}
+\index{isDialog@{isDialog}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{isDialog}{isDialog}}
+{\footnotesize\ttfamily bool Text\+Ro\+Shake.\+is\+Dialog = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}\label{class_text_ro_shake_a78160623378bd4185bd05a6a87baffb9}} 
+\index{TextRoShake@{TextRoShake}!m\_count@{m\_count}}
+\index{m\_count@{m\_count}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_count}{m\_count}}
+{\footnotesize\ttfamily int Text\+Ro\+Shake.\+m\+\_\+count = 0}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_a5df647bdd49132e4873df46f98b8706c}\label{class_text_ro_shake_a5df647bdd49132e4873df46f98b8706c}} 
+\index{TextRoShake@{TextRoShake}!m\_DialogBox@{m\_DialogBox}}
+\index{m\_DialogBox@{m\_DialogBox}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_DialogBox}{m\_DialogBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dialog_box}{Dialog\+Box}} \mbox{[}$\,$\mbox{]} Text\+Ro\+Shake.\+m\+\_\+\+Dialog\+Box\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_acc910ceefa2481eba1ef49592ad80220}\label{class_text_ro_shake_acc910ceefa2481eba1ef49592ad80220}} 
+\index{TextRoShake@{TextRoShake}!m\_force@{m\_force}}
+\index{m\_force@{m\_force}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_force}{m\_force}}
+{\footnotesize\ttfamily float Text\+Ro\+Shake.\+m\+\_\+force = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 23 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}\label{class_text_ro_shake_a3e7204cb2855104588a82bd18722eb9b}} 
+\index{TextRoShake@{TextRoShake}!m\_OriginRot@{m\_OriginRot}}
+\index{m\_OriginRot@{m\_OriginRot}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_OriginRot}{m\_OriginRot}}
+{\footnotesize\ttfamily Quaternion Text\+Ro\+Shake.\+m\+\_\+\+Origin\+Rot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 27 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}\label{class_text_ro_shake_ad39ee1cc7d1ec89883435cc6192b9ed3}} 
+\index{TextRoShake@{TextRoShake}!m\_RoDir@{m\_RoDir}}
+\index{m\_RoDir@{m\_RoDir}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_RoDir}{m\_RoDir}}
+{\footnotesize\ttfamily Vector3 Text\+Ro\+Shake.\+m\+\_\+\+Ro\+Dir = Vector3.\+zero\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 25 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}\label{class_text_ro_shake_aac2bf3851f4f9edafffcba7902dcba18}} 
+\index{TextRoShake@{TextRoShake}!m\_txtDialog@{m\_txtDialog}}
+\index{m\_txtDialog@{m\_txtDialog}!TextRoShake@{TextRoShake}}
+\doxysubsubsection{\texorpdfstring{m\_txtDialog}{m\_txtDialog}}
+{\footnotesize\ttfamily Text Text\+Ro\+Shake.\+m\+\_\+txt\+Dialog\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Text\+Ro\+Shake.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Effect/\+Text/\mbox{\hyperlink{_text_ro_shake_8cs}{Text\+Ro\+Shake.\+cs}}\end{DoxyCompactItemize}

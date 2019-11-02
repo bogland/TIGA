@@ -1,0 +1,202 @@
+\hypertarget{class_hurt_flash_effect}{}\doxysection{Hurt\+Flash\+Effect 클래스 참조}
+\label{class_hurt_flash_effect}\index{HurtFlashEffect@{HurtFlashEffect}}
+
+
+Hurt\+Flash\+Effect에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Hurt\+Flash\+Effect에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_hurt_flash_effect_aa9012b8f9d452642994fc694e1d5d589}{Flash}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}{flash\+Count}} = \mbox{\hyperlink{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}{Default\+Flash\+Count}}
+\item 
+Color \mbox{\hyperlink{class_hurt_flash_effect_a6ea4edc95cb351ed15db78fb238cff2b}{flash\+Color}} = Color.\+white
+\item 
+float \mbox{\hyperlink{class_hurt_flash_effect_a79ee9aa953a443ae0b834d3f099adf7a}{interval}} = 1f/60f
+\item 
+string \mbox{\hyperlink{class_hurt_flash_effect_ab69522d0aa50736e2cc76d0fa0127d13}{fill\+Phase\+Property}} = \char`\"{}\+\_\+\+Fill\+Phase\char`\"{}
+\item 
+string \mbox{\hyperlink{class_hurt_flash_effect_a0f300a769e0363909ea6639779611fe2}{fill\+Color\+Property}} = \char`\"{}\+\_\+\+Fill\+Color\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_hurt_flash_effect_aeebdaf5f6bc71427a863b57246b1e983}{Flash\+Routine}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Material\+Property\+Block \mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}}
+\item 
+Mesh\+Renderer \mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{mesh\+Renderer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}{Default\+Flash\+Count}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 5 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_hurt_flash_effect_aa9012b8f9d452642994fc694e1d5d589}\label{class_hurt_flash_effect_aa9012b8f9d452642994fc694e1d5d589}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!Flash@{Flash}}
+\index{Flash@{Flash}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{Flash()}{Flash()}}
+{\footnotesize\ttfamily void Hurt\+Flash\+Effect.\+Flash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{19                          \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}} == \textcolor{keyword}{null}) \mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}} = \textcolor{keyword}{new} MaterialPropertyBlock();}
+\DoxyCodeLine{21         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{meshRenderer}} == \textcolor{keyword}{null}) \mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{meshRenderer}} = GetComponent<MeshRenderer>();}
+\DoxyCodeLine{22         \mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{meshRenderer}}.GetPropertyBlock(\mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}});}
+\DoxyCodeLine{23         }
+\DoxyCodeLine{24         StartCoroutine(\mbox{\hyperlink{class_hurt_flash_effect_aeebdaf5f6bc71427a863b57246b1e983}{FlashRoutine}}());}
+\DoxyCodeLine{25     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_hurt_flash_effect_aeebdaf5f6bc71427a863b57246b1e983}\label{class_hurt_flash_effect_aeebdaf5f6bc71427a863b57246b1e983}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!FlashRoutine@{FlashRoutine}}
+\index{FlashRoutine@{FlashRoutine}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{FlashRoutine()}{FlashRoutine()}}
+{\footnotesize\ttfamily I\+Enumerator Hurt\+Flash\+Effect.\+Flash\+Routine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 27 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27                                 \{}
+\DoxyCodeLine{28         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}{flashCount}} < 0) \mbox{\hyperlink{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}{flashCount}} = \mbox{\hyperlink{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}{DefaultFlashCount}};}
+\DoxyCodeLine{29         \textcolor{keywordtype}{int} fillPhase = Shader.PropertyToID(\mbox{\hyperlink{class_hurt_flash_effect_ab69522d0aa50736e2cc76d0fa0127d13}{fillPhaseProperty}});}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} fillColor = Shader.PropertyToID(\mbox{\hyperlink{class_hurt_flash_effect_a0f300a769e0363909ea6639779611fe2}{fillColorProperty}});}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         var wait = \textcolor{keyword}{new} WaitForSeconds(\mbox{\hyperlink{class_hurt_flash_effect_a79ee9aa953a443ae0b834d3f099adf7a}{interval}});}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}{flashCount}}; i++) \{}
+\DoxyCodeLine{35             \mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}}.SetColor(fillColor, \mbox{\hyperlink{class_hurt_flash_effect_a6ea4edc95cb351ed15db78fb238cff2b}{flashColor}});}
+\DoxyCodeLine{36             \mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}}.SetFloat(fillPhase, 1f);}
+\DoxyCodeLine{37             \mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{meshRenderer}}.SetPropertyBlock(\mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}});}
+\DoxyCodeLine{38             yield \textcolor{keywordflow}{return} wait;}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40             \mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}}.SetFloat(fillPhase, 0f);}
+\DoxyCodeLine{41             \mbox{\hyperlink{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}{meshRenderer}}.SetPropertyBlock(\mbox{\hyperlink{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}{mpb}});}
+\DoxyCodeLine{42             yield \textcolor{keywordflow}{return} wait;}
+\DoxyCodeLine{43         \}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}\label{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!DefaultFlashCount@{DefaultFlashCount}}
+\index{DefaultFlashCount@{DefaultFlashCount}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{DefaultFlashCount}{DefaultFlashCount}}
+{\footnotesize\ttfamily const int Hurt\+Flash\+Effect.\+Default\+Flash\+Count = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 7 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_a0f300a769e0363909ea6639779611fe2}\label{class_hurt_flash_effect_a0f300a769e0363909ea6639779611fe2}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!fillColorProperty@{fillColorProperty}}
+\index{fillColorProperty@{fillColorProperty}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{fillColorProperty}{fillColorProperty}}
+{\footnotesize\ttfamily string Hurt\+Flash\+Effect.\+fill\+Color\+Property = \char`\"{}\+\_\+\+Fill\+Color\char`\"{}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 14 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_ab69522d0aa50736e2cc76d0fa0127d13}\label{class_hurt_flash_effect_ab69522d0aa50736e2cc76d0fa0127d13}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!fillPhaseProperty@{fillPhaseProperty}}
+\index{fillPhaseProperty@{fillPhaseProperty}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{fillPhaseProperty}{fillPhaseProperty}}
+{\footnotesize\ttfamily string Hurt\+Flash\+Effect.\+fill\+Phase\+Property = \char`\"{}\+\_\+\+Fill\+Phase\char`\"{}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_a6ea4edc95cb351ed15db78fb238cff2b}\label{class_hurt_flash_effect_a6ea4edc95cb351ed15db78fb238cff2b}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!flashColor@{flashColor}}
+\index{flashColor@{flashColor}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{flashColor}{flashColor}}
+{\footnotesize\ttfamily Color Hurt\+Flash\+Effect.\+flash\+Color = Color.\+white}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}\label{class_hurt_flash_effect_add95866a522fb863c53763e103e8e745}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!flashCount@{flashCount}}
+\index{flashCount@{flashCount}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{flashCount}{flashCount}}
+{\footnotesize\ttfamily int Hurt\+Flash\+Effect.\+flash\+Count = \mbox{\hyperlink{class_hurt_flash_effect_aaa86ecd9a8f8afc2945378321c621eda}{Default\+Flash\+Count}}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_a79ee9aa953a443ae0b834d3f099adf7a}\label{class_hurt_flash_effect_a79ee9aa953a443ae0b834d3f099adf7a}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!interval@{interval}}
+\index{interval@{interval}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{interval}{interval}}
+{\footnotesize\ttfamily float Hurt\+Flash\+Effect.\+interval = 1f/60f}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 12 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}\label{class_hurt_flash_effect_ac5b0fef8dc14f14f6009f5653ecaa880}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!meshRenderer@{meshRenderer}}
+\index{meshRenderer@{meshRenderer}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{meshRenderer}{meshRenderer}}
+{\footnotesize\ttfamily Mesh\+Renderer Hurt\+Flash\+Effect.\+mesh\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 17 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}\label{class_hurt_flash_effect_a4599f877c7f38f402bd18c2f5989908f}} 
+\index{HurtFlashEffect@{HurtFlashEffect}!mpb@{mpb}}
+\index{mpb@{mpb}!HurtFlashEffect@{HurtFlashEffect}}
+\doxysubsubsection{\texorpdfstring{mpb}{mpb}}
+{\footnotesize\ttfamily Material\+Property\+Block Hurt\+Flash\+Effect.\+mpb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Hurt\+Flash\+Effect.\+cs 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_hurt_flash_effect_8cs}{Hurt\+Flash\+Effect.\+cs}}\end{DoxyCompactItemize}

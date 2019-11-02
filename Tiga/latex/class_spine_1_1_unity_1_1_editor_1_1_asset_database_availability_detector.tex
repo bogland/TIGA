@@ -1,0 +1,83 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector}{}\doxysection{Spine.\+Unity.\+Editor.\+Asset\+Database\+Availability\+Detector 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector}\index{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}}
+
+
+Spine.\+Unity.\+Editor.\+Asset\+Database\+Availability\+Detector에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_aef932335c55e90656b58eb16538edd95}{Is\+Asset\+Database\+Available}} (bool force\+Check=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_a1ce355e20d2fa58d5af29be6ac96a829}{M\+A\+R\+K\+E\+R\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+N\+A\+ME}} = \char`\"{}Spine\+Asset\+Database\+Marker\char`\"{}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}{\+\_\+is\+Marker\+Loaded}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Asset\+Database\+Availability\+Detector.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_aef932335c55e90656b58eb16538edd95}\label{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_aef932335c55e90656b58eb16538edd95}} 
+\index{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}!IsAssetDatabaseAvailable@{IsAssetDatabaseAvailable}}
+\index{IsAssetDatabaseAvailable@{IsAssetDatabaseAvailable}!Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}}
+\doxysubsubsection{\texorpdfstring{IsAssetDatabaseAvailable()}{IsAssetDatabaseAvailable()}}
+{\footnotesize\ttfamily static bool Spine.\+Unity.\+Editor.\+Asset\+Database\+Availability\+Detector.\+Is\+Asset\+Database\+Available (\begin{DoxyParamCaption}\item[{bool}]{force\+Check = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Asset\+Database\+Availability\+Detector.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                                                                               \{}
+\DoxyCodeLine{39             \textcolor{keywordflow}{if} (!forceCheck \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}{\_isMarkerLoaded}})}
+\DoxyCodeLine{40                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42             TextAsset markerTextAsset = Resources.Load<TextAsset>(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_a1ce355e20d2fa58d5af29be6ac96a829}{MARKER\_RESOURCE\_NAME}});}
+\DoxyCodeLine{43             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}{\_isMarkerLoaded}} = markerTextAsset != \textcolor{keyword}{null};}
+\DoxyCodeLine{44             \textcolor{keywordflow}{if} (markerTextAsset != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{45                 Resources.UnloadAsset(markerTextAsset);}
+\DoxyCodeLine{46             \}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}{\_isMarkerLoaded}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}\label{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_af751994506b2821f92a379bbad596e3e}} 
+\index{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}!\_isMarkerLoaded@{\_isMarkerLoaded}}
+\index{\_isMarkerLoaded@{\_isMarkerLoaded}!Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}}
+\doxysubsubsection{\texorpdfstring{\_isMarkerLoaded}{\_isMarkerLoaded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Asset\+Database\+Availability\+Detector.\+\_\+is\+Marker\+Loaded\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Asset\+Database\+Availability\+Detector.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_a1ce355e20d2fa58d5af29be6ac96a829}\label{class_spine_1_1_unity_1_1_editor_1_1_asset_database_availability_detector_a1ce355e20d2fa58d5af29be6ac96a829}} 
+\index{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}!MARKER\_RESOURCE\_NAME@{MARKER\_RESOURCE\_NAME}}
+\index{MARKER\_RESOURCE\_NAME@{MARKER\_RESOURCE\_NAME}!Spine.Unity.Editor.AssetDatabaseAvailabilityDetector@{Spine.Unity.Editor.AssetDatabaseAvailabilityDetector}}
+\doxysubsubsection{\texorpdfstring{MARKER\_RESOURCE\_NAME}{MARKER\_RESOURCE\_NAME}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Asset\+Database\+Availability\+Detector.\+M\+A\+R\+K\+E\+R\+\_\+\+R\+E\+S\+O\+U\+R\+C\+E\+\_\+\+N\+A\+ME = \char`\"{}Spine\+Asset\+Database\+Marker\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Asset\+Database\+Availability\+Detector.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_asset_database_availability_detector_8cs}{Asset\+Database\+Availability\+Detector.\+cs}}\end{DoxyCompactItemize}

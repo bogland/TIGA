@@ -1,0 +1,1680 @@
+\hypertarget{class_spine_1_1_exposed_list}{}\doxysection{Spine.\+Exposed\+List$<$ T $>$ 클래스 템플릿 참조}
+\label{class_spine_1_1_exposed_list}\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+
+
+Spine.\+Exposed\+List$<$ T $>$에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Exposed\+List$<$ T $>$에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_exposed_list_1_1_enumerator}{Enumerator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list_ab8ce31918999084ca865fd6d34667c90}{Exposed\+List}} ()
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list_acc9e09f3678262e54c7548f4653a8958}{Exposed\+List}} (I\+Enumerable$<$ T $>$ collection)
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list_aa7679e0791e16b8a4ba683fe19849b3a}{Exposed\+List}} (int capacity)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_af1b402437b46a187ebc58bc9f200689b}{Add}} (T item)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{Grow\+If\+Needed}} (int new\+Count)
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ T $>$ \mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}} (int new\+Size)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a9cffda35760c2d23e0b7a4746552fdce}{Ensure\+Capacity}} (int min)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_aeefbb3b3b5ec829aecf399028387c9e6}{Add\+Range}} (I\+Enumerable$<$ T $>$ collection)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_ae0712e48f41ca512b2094ed329a4496b}{Binary\+Search}} (T item)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_ac59bf122a7a3b991c39e67c584a18da5}{Binary\+Search}} (T item, I\+Comparer$<$ T $>$ comparer)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a73f8ee5dd8011fc3fd15f5977843621c}{Binary\+Search}} (int index, int count, T item, I\+Comparer$<$ T $>$ comparer)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}} (bool clear\+Array=true)
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_exposed_list_ae7866e3ef12e42d84e011ac6a3491393}{Contains}} (T item)
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ T\+Output $>$ \mbox{\hyperlink{class_spine_1_1_exposed_list_a19d8c446e96f3726b85978d0d9e12f59}{Convert\+All$<$ T\+Output $>$}} (Converter$<$ T, T\+Output $>$ converter)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a09719a283830dc9deeab2ded7ddd36df}{Copy\+To}} (T\mbox{[}$\,$\mbox{]} array)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_aca834385d4d2b0025eb805f15b28b68e}{Copy\+To}} (T\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a0093a15204c75008e4c6624a19f050e2}{Copy\+To}} (int index, T\mbox{[}$\,$\mbox{]} array, int array\+Index, int count)
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_exposed_list_a53f42e41c1b8dfcb7681e9fdcd483bf2}{Exists}} (Predicate$<$ T $>$ match)
+\item 
+T \mbox{\hyperlink{class_spine_1_1_exposed_list_a2da722e4f7d53a8c43aceccaebd10675}{Find}} (Predicate$<$ T $>$ match)
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ T $>$ \mbox{\hyperlink{class_spine_1_1_exposed_list_ad9652830dd8fc7223ef6e87a7ed58eeb}{Find\+All}} (Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a376d3e5cf4e4c440e2264989cdcc0ec5}{Find\+Index}} (Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_ae12ae7ee91a6c90399b6c4d33960cbf7}{Find\+Index}} (int start\+Index, Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a01436217087c72efbfee79a6c78b2ee7}{Find\+Index}} (int start\+Index, int count, Predicate$<$ T $>$ match)
+\item 
+T \mbox{\hyperlink{class_spine_1_1_exposed_list_a6c9c8ec456dea8ec2734b0fa02c5d39d}{Find\+Last}} (Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a45a8b7796c2b97938541e98ba815bd49}{Find\+Last\+Index}} (Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a197defd758414dc64ca4b0e03860e9c1}{Find\+Last\+Index}} (int start\+Index, Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a933dfe7318a0de15d746dcffa3befb27}{Find\+Last\+Index}} (int start\+Index, int count, Predicate$<$ T $>$ match)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a893d74c074b7f6d51b4a4ea0223fe5ca}{For\+Each}} (Action$<$ T $>$ action)
+\item 
+\mbox{\hyperlink{struct_spine_1_1_exposed_list_1_1_enumerator}{Enumerator}} \mbox{\hyperlink{class_spine_1_1_exposed_list_ac1882ffafcca56d4aaa8280b7d7ede1d}{Get\+Enumerator}} ()
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ T $>$ \mbox{\hyperlink{class_spine_1_1_exposed_list_a6d454a322ac5e8effacdafd2df5953c5}{Get\+Range}} (int index, int count)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a3b14aa1db471e34ec90c3bbc217b981d}{Index\+Of}} (T item)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a913f13d11c03dea675f874b5fcc8a987}{Index\+Of}} (T item, int index)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a8065694bff265fead3b66e51b1ed3e76}{Index\+Of}} (T item, int index, int count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a38e85d623e6387121f3e2fac8402eb37}{Insert}} (int index, T item)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ab7a243c73d46b0d27b5fa7ea5d2c4b49}{Insert\+Range}} (int index, I\+Enumerable$<$ T $>$ collection)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_ad156e66313b12cfb7d98b0590a93ad2c}{Last\+Index\+Of}} (T item)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_ad0df9287241566151ce0a67781ce07c0}{Last\+Index\+Of}} (T item, int index)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_abc2a83e7ded4838f192f28c4edbc4387}{Last\+Index\+Of}} (T item, int index, int count)
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_exposed_list_abee076bc9af132ccf026cdd5f9c40bc4}{Remove}} (T item)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a15c2f4b4d7445dc42e39f7c3069e51a2}{Remove\+All}} (Predicate$<$ T $>$ match)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ae8b96a0a493569d60e8b64442e2feebc}{Remove\+At}} (int index)
+\item 
+T \mbox{\hyperlink{class_spine_1_1_exposed_list_af3079ff080061ca708f81ae9eb9aa6d3}{Pop}} ()
+\begin{DoxyCompactList}\small\item\em Pops the last item of the list. If the list is empty, Pop throws an Invalid\+Operation\+Exception. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a658e4bdedbd184e0e0bcb69b83e5ee37}{Remove\+Range}} (int index, int count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_aa83d498daef8ad14e38c868992fed04d}{Reverse}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a9a76940fe003550484b115855802d65a}{Reverse}} (int index, int count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ac8e50d93fd3b927564c8ae5ddae226cd}{Sort}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a192aa72418f77e1dc3c24953db3ad867}{Sort}} (I\+Comparer$<$ T $>$ comparer)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a35554031d69f4b8918cfcf735f292171}{Sort}} (Comparison$<$ T $>$ comparison)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ab5292956d277cc892754a9619c3ff180}{Sort}} (int index, int count, I\+Comparer$<$ T $>$ comparer)
+\item 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list_a111258b0871f19789855adc3a90a2ffd}{To\+Array}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{Trim\+Excess}} ()
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c8ecc90451eeea71c9ca0bfd9477af1}{True\+For\+All}} (Predicate$<$ T $>$ match)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}{Capacity}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{Check\+Range}} (int index, int count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a130c8e6a4fd43c84983bbae0f27d8b20}{Add\+Collection}} (I\+Collection$<$ T $>$ collection)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ab23a86643e4bda34fa66d304af66430b}{Add\+Enumerable}} (I\+Enumerable$<$ T $>$ enumerable)
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ T $>$ \mbox{\hyperlink{class_spine_1_1_exposed_list_a10f5dc6f1620a19c5bcfd293e75a94a5}{Find\+All\+List}} (Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{Get\+Index}} (int start\+Index, int count, Predicate$<$ T $>$ match)
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}{Get\+Last\+Index}} (int start\+Index, int count, Predicate$<$ T $>$ match)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}} (int start, int delta)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{Check\+Index}} (int index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}{Check\+Collection}} (I\+Enumerable$<$ T $>$ collection)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_abede0534c406c1859cf287a64a2dbdc0}{Insert\+Collection}} (int index, I\+Collection$<$ T $>$ collection)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_exposed_list_a93d5ea68528ab73fa6ef53ef9ea46077}{Insert\+Enumeration}} (int index, I\+Enumerable$<$ T $>$ enumerable)
+\item 
+I\+Enumerator$<$ T $>$ I\+Enumerable$<$ T $>$. \mbox{\hyperlink{class_spine_1_1_exposed_list_a8fb2bcfa9bd238d28652c144dfa2940e}{Get\+Enumerator}} ()
+\item 
+I\+Enumerator I\+Enumerable. \mbox{\hyperlink{class_spine_1_1_exposed_list_ac55a09d8f13b546f8e471518794aea9a}{Get\+Enumerator}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{Check\+Match}} (Predicate$<$ T $>$ match)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_exposed_list_a0e081be1cb1bd17d0dbf52c1db34d1a4}{Default\+Capacity}} = 4
+\item 
+static readonly T\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list_a959e7ce3ab0432d2c09813f99ad8b07d}{Empty\+Array}} = new T\mbox{[}0\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Exposed\+List.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ab8ce31918999084ca865fd6d34667c90}\label{class_spine_1_1_exposed_list_ab8ce31918999084ca865fd6d34667c90}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ExposedList@{ExposedList}}
+\index{ExposedList@{ExposedList}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ExposedList()}{ExposedList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                               \{}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}} = \mbox{\hyperlink{class_spine_1_1_exposed_list_a959e7ce3ab0432d2c09813f99ad8b07d}{EmptyArray}};}
+\DoxyCodeLine{49         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_acc9e09f3678262e54c7548f4653a8958}\label{class_spine_1_1_exposed_list_acc9e09f3678262e54c7548f4653a8958}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ExposedList@{ExposedList}}
+\index{ExposedList@{ExposedList}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ExposedList()}{ExposedList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}} (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ T $>$}]{collection }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                        \{}
+\DoxyCodeLine{52             \mbox{\hyperlink{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}{CheckCollection}}(collection);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54             \textcolor{comment}{// initialize to needed size (if determinable)}}
+\DoxyCodeLine{55             ICollection<T> c = collection as ICollection<T>;}
+\DoxyCodeLine{56             \textcolor{keywordflow}{if} (c == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{57                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}} = \mbox{\hyperlink{class_spine_1_1_exposed_list_a959e7ce3ab0432d2c09813f99ad8b07d}{EmptyArray}};}
+\DoxyCodeLine{58                 \mbox{\hyperlink{class_spine_1_1_exposed_list_ab23a86643e4bda34fa66d304af66430b}{AddEnumerable}}(collection);}
+\DoxyCodeLine{59             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{60                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}} = \textcolor{keyword}{new} T[c.Count];}
+\DoxyCodeLine{61                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a130c8e6a4fd43c84983bbae0f27d8b20}{AddCollection}}(c);}
+\DoxyCodeLine{62             \}}
+\DoxyCodeLine{63         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aa7679e0791e16b8a4ba683fe19849b3a}\label{class_spine_1_1_exposed_list_aa7679e0791e16b8a4ba683fe19849b3a}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ExposedList@{ExposedList}}
+\index{ExposedList@{ExposedList}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ExposedList()}{ExposedList()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}} (\begin{DoxyParamCaption}\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                           \{}
+\DoxyCodeLine{66             \textcolor{keywordflow}{if} (capacity < 0)}
+\DoxyCodeLine{67                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"capacity"});}
+\DoxyCodeLine{68             \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}} = \textcolor{keyword}{new} T[capacity];}
+\DoxyCodeLine{69         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_af1b402437b46a187ebc58bc9f200689b}\label{class_spine_1_1_exposed_list_af1b402437b46a187ebc58bc9f200689b}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Add@{Add}}
+\index{Add@{Add}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Add (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                  \{}
+\DoxyCodeLine{77             \textcolor{comment}{// If we check to see if we need to grow before trying to grow}}
+\DoxyCodeLine{78             \textcolor{comment}{// we can speed things up by 25\%}}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} == \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length)}
+\DoxyCodeLine{80                 \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{GrowIfNeeded}}(1);}
+\DoxyCodeLine{81             \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}++] = item;}
+\DoxyCodeLine{82             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{83         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a130c8e6a4fd43c84983bbae0f27d8b20}\label{class_spine_1_1_exposed_list_a130c8e6a4fd43c84983bbae0f27d8b20}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!AddCollection@{AddCollection}}
+\index{AddCollection@{AddCollection}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddCollection()}{AddCollection()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Add\+Collection (\begin{DoxyParamCaption}\item[{I\+Collection$<$ T $>$}]{collection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 128 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128                                                                \{}
+\DoxyCodeLine{129             \textcolor{keywordtype}{int} collectionCount = collection.Count;}
+\DoxyCodeLine{130             \textcolor{keywordflow}{if} (collectionCount == 0)}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{132 }
+\DoxyCodeLine{133             \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{GrowIfNeeded}}(collectionCount);}
+\DoxyCodeLine{134             collection.CopyTo(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{135             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} += collectionCount;}
+\DoxyCodeLine{136         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ab23a86643e4bda34fa66d304af66430b}\label{class_spine_1_1_exposed_list_ab23a86643e4bda34fa66d304af66430b}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!AddEnumerable@{AddEnumerable}}
+\index{AddEnumerable@{AddEnumerable}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddEnumerable()}{AddEnumerable()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Add\+Enumerable (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ T $>$}]{enumerable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 138 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{138                                                                \{}
+\DoxyCodeLine{139             \textcolor{keywordflow}{foreach} (T t \textcolor{keywordflow}{in} enumerable) \{}
+\DoxyCodeLine{140                 \mbox{\hyperlink{class_spine_1_1_exposed_list_af1b402437b46a187ebc58bc9f200689b}{Add}}(t);}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aeefbb3b3b5ec829aecf399028387c9e6}\label{class_spine_1_1_exposed_list_aeefbb3b3b5ec829aecf399028387c9e6}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!AddRange@{AddRange}}
+\index{AddRange@{AddRange}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{AddRange()}{AddRange()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Add\+Range (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ T $>$}]{collection }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 144 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144                                                          \{}
+\DoxyCodeLine{145             \mbox{\hyperlink{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}{CheckCollection}}(collection);}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147             ICollection<T> c = collection as ICollection<T>;}
+\DoxyCodeLine{148             \textcolor{keywordflow}{if} (c != \textcolor{keyword}{null})}
+\DoxyCodeLine{149                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a130c8e6a4fd43c84983bbae0f27d8b20}{AddCollection}}(c);}
+\DoxyCodeLine{150             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{151                 \mbox{\hyperlink{class_spine_1_1_exposed_list_ab23a86643e4bda34fa66d304af66430b}{AddEnumerable}}(collection);}
+\DoxyCodeLine{152             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{153         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a73f8ee5dd8011fc3fd15f5977843621c}\label{class_spine_1_1_exposed_list_a73f8ee5dd8011fc3fd15f5977843621c}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Binary\+Search (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count,  }\item[{T}]{item,  }\item[{I\+Comparer$<$ T $>$}]{comparer }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 163 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163                                                                                       \{}
+\DoxyCodeLine{164             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{165             \textcolor{keywordflow}{return} Array.BinarySearch<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, count, item, comparer);}
+\DoxyCodeLine{166         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ae0712e48f41ca512b2094ed329a4496b}\label{class_spine_1_1_exposed_list_ae0712e48f41ca512b2094ed329a4496b}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Binary\+Search (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 155 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155                                          \{}
+\DoxyCodeLine{156             \textcolor{keywordflow}{return} Array.BinarySearch<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, item);}
+\DoxyCodeLine{157         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ac59bf122a7a3b991c39e67c584a18da5}\label{class_spine_1_1_exposed_list_ac59bf122a7a3b991c39e67c584a18da5}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!BinarySearch@{BinarySearch}}
+\index{BinarySearch@{BinarySearch}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BinarySearch()}{BinarySearch()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Binary\+Search (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{I\+Comparer$<$ T $>$}]{comparer }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 159 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159                                                                 \{}
+\DoxyCodeLine{160             \textcolor{keywordflow}{return} Array.BinarySearch<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, item, comparer);}
+\DoxyCodeLine{161         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}\label{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CheckCollection@{CheckCollection}}
+\index{CheckCollection@{CheckCollection}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CheckCollection()}{CheckCollection()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Check\+Collection (\begin{DoxyParamCaption}\item[{I\+Enumerable$<$ T $>$}]{collection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 361 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{361                                                                  \{}
+\DoxyCodeLine{362             \textcolor{keywordflow}{if} (collection == \textcolor{keyword}{null})}
+\DoxyCodeLine{363                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"collection"});}
+\DoxyCodeLine{364         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}\label{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CheckIndex@{CheckIndex}}
+\index{CheckIndex@{CheckIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CheckIndex()}{CheckIndex()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Check\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 347 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{347                                             \{}
+\DoxyCodeLine{348             \textcolor{keywordflow}{if} (index < 0 || (uint)index > (uint)\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{349                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index"});}
+\DoxyCodeLine{350         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}\label{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CheckMatch@{CheckMatch}}
+\index{CheckMatch@{CheckMatch}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CheckMatch()}{CheckMatch()}}
+{\footnotesize\ttfamily static void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Check\+Match (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 217 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{217                                                             \{}
+\DoxyCodeLine{218             \textcolor{keywordflow}{if} (match == \textcolor{keyword}{null})}
+\DoxyCodeLine{219                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"match"});}
+\DoxyCodeLine{220         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}\label{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CheckRange@{CheckRange}}
+\index{CheckRange@{CheckRange}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CheckRange()}{CheckRange()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Check\+Range (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 117 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117                                                        \{}
+\DoxyCodeLine{118             \textcolor{keywordflow}{if} (index < 0)}
+\DoxyCodeLine{119                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index"});}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (count < 0)}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"count"});}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             \textcolor{keywordflow}{if} ((uint)index + (uint)count > (uint)\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{stringliteral}{"index and count exceed length of list"});}
+\DoxyCodeLine{126         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}\label{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Clear@{Clear}}
+\index{Clear@{Clear}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Clear (\begin{DoxyParamCaption}\item[{bool}]{clear\+Array = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 168 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168                                                    \{}
+\DoxyCodeLine{169             \textcolor{keywordflow}{if} (clearArray)}
+\DoxyCodeLine{170                 Array.Clear(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length);}
+\DoxyCodeLine{171 }
+\DoxyCodeLine{172             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = 0;}
+\DoxyCodeLine{173             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{174         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ae7866e3ef12e42d84e011ac6a3491393}\label{class_spine_1_1_exposed_list_ae7866e3ef12e42d84e011ac6a3491393}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Contains@{Contains}}
+\index{Contains@{Contains}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Contains (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 176 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{176                                       \{}
+\DoxyCodeLine{177             \textcolor{keywordflow}{return} Array.IndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}) != -\/1;}
+\DoxyCodeLine{178         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a19d8c446e96f3726b85978d0d9e12f59}\label{class_spine_1_1_exposed_list_a19d8c446e96f3726b85978d0d9e12f59}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ConvertAll$<$ TOutput $>$@{ConvertAll$<$ TOutput $>$}}
+\index{ConvertAll$<$ TOutput $>$@{ConvertAll$<$ TOutput $>$}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ConvertAll$<$ TOutput $>$()}{ConvertAll< TOutput >()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$T\+Output$>$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Convert\+All$<$ T\+Output $>$ (\begin{DoxyParamCaption}\item[{Converter$<$ T, T\+Output $>$}]{converter }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 180 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                                                           \{}
+\DoxyCodeLine{181             \textcolor{keywordflow}{if} (converter == \textcolor{keyword}{null})}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"converter"});}
+\DoxyCodeLine{183             ExposedList<TOutput> u = \textcolor{keyword}{new} ExposedList<TOutput>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{184             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i++)}
+\DoxyCodeLine{185                 u.Items[i] = converter(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]);}
+\DoxyCodeLine{186 }
+\DoxyCodeLine{187             u.Count = \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{188             \textcolor{keywordflow}{return} u;}
+\DoxyCodeLine{189         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a0093a15204c75008e4c6624a19f050e2}\label{class_spine_1_1_exposed_list_a0093a15204c75008e4c6624a19f050e2}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{array\+Index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 199 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{199                                                                              \{}
+\DoxyCodeLine{200             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{201             Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, array, arrayIndex, count);}
+\DoxyCodeLine{202         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a09719a283830dc9deeab2ded7ddd36df}\label{class_spine_1_1_exposed_list_a09719a283830dc9deeab2ded7ddd36df}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 191 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{191                                        \{}
+\DoxyCodeLine{192             Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, array, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{193         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aca834385d4d2b0025eb805f15b28b68e}\label{class_spine_1_1_exposed_list_aca834385d4d2b0025eb805f15b28b68e}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Copy\+To (\begin{DoxyParamCaption}\item[{T\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{array\+Index }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 195 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195                                                        \{}
+\DoxyCodeLine{196             Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, array, arrayIndex, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{197         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a9cffda35760c2d23e0b7a4746552fdce}\label{class_spine_1_1_exposed_list_a9cffda35760c2d23e0b7a4746552fdce}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!EnsureCapacity@{EnsureCapacity}}
+\index{EnsureCapacity@{EnsureCapacity}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EnsureCapacity()}{EnsureCapacity()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Ensure\+Capacity (\begin{DoxyParamCaption}\item[{int}]{min }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 108 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{108                                              \{}
+\DoxyCodeLine{109             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length < min) \{}
+\DoxyCodeLine{110                 \textcolor{keywordtype}{int} newCapacity = \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length == 0 ? \mbox{\hyperlink{class_spine_1_1_exposed_list_a0e081be1cb1bd17d0dbf52c1db34d1a4}{DefaultCapacity}} : \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length * 2;}
+\DoxyCodeLine{111                 \textcolor{comment}{//if ((uint)newCapacity > Array.MaxArrayLength) newCapacity = Array.MaxArrayLength;}}
+\DoxyCodeLine{112                 \textcolor{keywordflow}{if} (newCapacity < min) newCapacity = min;}
+\DoxyCodeLine{113                 \mbox{\hyperlink{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}{Capacity}} = newCapacity;}
+\DoxyCodeLine{114             \}}
+\DoxyCodeLine{115         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a53f42e41c1b8dfcb7681e9fdcd483bf2}\label{class_spine_1_1_exposed_list_a53f42e41c1b8dfcb7681e9fdcd483bf2}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Exists@{Exists}}
+\index{Exists@{Exists}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Exists()}{Exists()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Exists (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 206 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206                                                 \{}
+\DoxyCodeLine{207             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{208             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{GetIndex}}(0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, match) != -\/1;}
+\DoxyCodeLine{209         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a2da722e4f7d53a8c43aceccaebd10675}\label{class_spine_1_1_exposed_list_a2da722e4f7d53a8c43aceccaebd10675}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Find@{Find}}
+\index{Find@{Find}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Find()}{Find()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 211 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{211                                            \{}
+\DoxyCodeLine{212             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{213             \textcolor{keywordtype}{int} i = \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{GetIndex}}(0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, match);}
+\DoxyCodeLine{214             \textcolor{keywordflow}{return} (i != -\/1) ? \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i] : \textcolor{keywordflow}{default}(T);}
+\DoxyCodeLine{215         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ad9652830dd8fc7223ef6e87a7ed58eeb}\label{class_spine_1_1_exposed_list_ad9652830dd8fc7223ef6e87a7ed58eeb}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindAll@{FindAll}}
+\index{FindAll@{FindAll}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindAll()}{FindAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$T$>$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+All (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 222 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{222                                                            \{}
+\DoxyCodeLine{223             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{224             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_a10f5dc6f1620a19c5bcfd293e75a94a5}{FindAllList}}(match);}
+\DoxyCodeLine{225         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a10f5dc6f1620a19c5bcfd293e75a94a5}\label{class_spine_1_1_exposed_list_a10f5dc6f1620a19c5bcfd293e75a94a5}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindAllList@{FindAllList}}
+\index{FindAllList@{FindAllList}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindAllList()}{FindAllList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$T$>$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+All\+List (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 227 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{227                                                                 \{}
+\DoxyCodeLine{228             ExposedList<T> results = \textcolor{keyword}{new} ExposedList<T>();}
+\DoxyCodeLine{229             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i++)}
+\DoxyCodeLine{230                 \textcolor{keywordflow}{if} (match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]))}
+\DoxyCodeLine{231                     results.Add(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]);}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233             \textcolor{keywordflow}{return} results;}
+\DoxyCodeLine{234         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a01436217087c72efbfee79a6c78b2ee7}\label{class_spine_1_1_exposed_list_a01436217087c72efbfee79a6c78b2ee7}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindIndex@{FindIndex}}
+\index{FindIndex@{FindIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindIndex()}{FindIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{int}]{count,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 247 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247                                                                              \{}
+\DoxyCodeLine{248             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{249             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(startIndex, count);}
+\DoxyCodeLine{250             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{GetIndex}}(startIndex, count, match);}
+\DoxyCodeLine{251         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ae12ae7ee91a6c90399b6c4d33960cbf7}\label{class_spine_1_1_exposed_list_ae12ae7ee91a6c90399b6c4d33960cbf7}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindIndex@{FindIndex}}
+\index{FindIndex@{FindIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindIndex()}{FindIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 241 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{241                                                                   \{}
+\DoxyCodeLine{242             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{243             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(startIndex);}
+\DoxyCodeLine{244             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{GetIndex}}(startIndex, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} -\/ startIndex, match);}
+\DoxyCodeLine{245         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a376d3e5cf4e4c440e2264989cdcc0ec5}\label{class_spine_1_1_exposed_list_a376d3e5cf4e4c440e2264989cdcc0ec5}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindIndex@{FindIndex}}
+\index{FindIndex@{FindIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindIndex()}{FindIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Index (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 236 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{236                                                   \{}
+\DoxyCodeLine{237             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{238             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}{GetIndex}}(0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, match);}
+\DoxyCodeLine{239         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a6c9c8ec456dea8ec2734b0fa02c5d39d}\label{class_spine_1_1_exposed_list_a6c9c8ec456dea8ec2734b0fa02c5d39d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindLast@{FindLast}}
+\index{FindLast@{FindLast}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindLast()}{FindLast()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Last (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 262 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{262                                                \{}
+\DoxyCodeLine{263             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{264             \textcolor{keywordtype}{int} i = \mbox{\hyperlink{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}{GetLastIndex}}(0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, match);}
+\DoxyCodeLine{265             \textcolor{keywordflow}{return} i == -\/1 ? \textcolor{keywordflow}{default}(T) : \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i];}
+\DoxyCodeLine{266         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a933dfe7318a0de15d746dcffa3befb27}\label{class_spine_1_1_exposed_list_a933dfe7318a0de15d746dcffa3befb27}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindLastIndex@{FindLastIndex}}
+\index{FindLastIndex@{FindLastIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindLastIndex()}{FindLastIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Last\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{int}]{count,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 279 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{279                                                                                  \{}
+\DoxyCodeLine{280             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{281             \textcolor{keywordtype}{int} start = startIndex -\/ count + 1;}
+\DoxyCodeLine{282             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(start, count);}
+\DoxyCodeLine{283             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}{GetLastIndex}}(start, count, match);}
+\DoxyCodeLine{284         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a197defd758414dc64ca4b0e03860e9c1}\label{class_spine_1_1_exposed_list_a197defd758414dc64ca4b0e03860e9c1}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindLastIndex@{FindLastIndex}}
+\index{FindLastIndex@{FindLastIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindLastIndex()}{FindLastIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Last\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 273 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{273                                                                       \{}
+\DoxyCodeLine{274             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{275             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(startIndex);}
+\DoxyCodeLine{276             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}{GetLastIndex}}(0, startIndex + 1, match);}
+\DoxyCodeLine{277         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a45a8b7796c2b97938541e98ba815bd49}\label{class_spine_1_1_exposed_list_a45a8b7796c2b97938541e98ba815bd49}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!FindLastIndex@{FindLastIndex}}
+\index{FindLastIndex@{FindLastIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{FindLastIndex()}{FindLastIndex()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Find\+Last\+Index (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 268 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{268                                                       \{}
+\DoxyCodeLine{269             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{270             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}{GetLastIndex}}(0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, match);}
+\DoxyCodeLine{271         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a893d74c074b7f6d51b4a4ea0223fe5ca}\label{class_spine_1_1_exposed_list_a893d74c074b7f6d51b4a4ea0223fe5ca}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ForEach@{ForEach}}
+\index{ForEach@{ForEach}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ForEach()}{ForEach()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.For\+Each (\begin{DoxyParamCaption}\item[{Action$<$ T $>$}]{action }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 294 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{294                                                \{}
+\DoxyCodeLine{295             \textcolor{keywordflow}{if} (action == \textcolor{keyword}{null})}
+\DoxyCodeLine{296                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"action"});}
+\DoxyCodeLine{297             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i++)}
+\DoxyCodeLine{298                 action(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]);}
+\DoxyCodeLine{299         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ac1882ffafcca56d4aaa8280b7d7ede1d}\label{class_spine_1_1_exposed_list_ac1882ffafcca56d4aaa8280b7d7ede1d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_spine_1_1_exposed_list_1_1_enumerator}{Enumerator}} \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 301 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{301                                            \{}
+\DoxyCodeLine{302             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Enumerator(\textcolor{keyword}{this});}
+\DoxyCodeLine{303         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a8fb2bcfa9bd238d28652c144dfa2940e}\label{class_spine_1_1_exposed_list_a8fb2bcfa9bd238d28652c144dfa2940e}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily I\+Enumerator$<$T$>$ I\+Enumerable$<$T$>$. \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 554 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{554                                                        \{}
+\DoxyCodeLine{555             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_ac1882ffafcca56d4aaa8280b7d7ede1d}{GetEnumerator}}();}
+\DoxyCodeLine{556         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ac55a09d8f13b546f8e471518794aea9a}\label{class_spine_1_1_exposed_list_ac55a09d8f13b546f8e471518794aea9a}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily I\+Enumerator I\+Enumerable. \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 558 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{558                                                  \{}
+\DoxyCodeLine{559             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_ac1882ffafcca56d4aaa8280b7d7ede1d}{GetEnumerator}}();}
+\DoxyCodeLine{560         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}\label{class_spine_1_1_exposed_list_aa7fde8dcc360952a78b6fa94d232de17}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{int}]{count,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 253 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{253                                                                              \{}
+\DoxyCodeLine{254             \textcolor{keywordtype}{int} end = startIndex + count;}
+\DoxyCodeLine{255             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = startIndex; i < end; i++)}
+\DoxyCodeLine{256                 \textcolor{keywordflow}{if} (match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]))}
+\DoxyCodeLine{257                     \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{258 }
+\DoxyCodeLine{259             \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{260         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}\label{class_spine_1_1_exposed_list_a5e4e013d8cdcfbede2922aeb77b013bf}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetLastIndex@{GetLastIndex}}
+\index{GetLastIndex@{GetLastIndex}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetLastIndex()}{GetLastIndex()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Last\+Index (\begin{DoxyParamCaption}\item[{int}]{start\+Index,  }\item[{int}]{count,  }\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 286 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{286                                                                                  \{}
+\DoxyCodeLine{287             \textcolor{comment}{// unlike FindLastIndex, takes regular params for search range}}
+\DoxyCodeLine{288             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = startIndex + count; i != startIndex; )}
+\DoxyCodeLine{289                 \textcolor{keywordflow}{if} (match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[-\/-\/i]))}
+\DoxyCodeLine{290                     \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{291             \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{292         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a6d454a322ac5e8effacdafd2df5953c5}\label{class_spine_1_1_exposed_list_a6d454a322ac5e8effacdafd2df5953c5}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$T$>$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Get\+Range (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 305 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{305                                                               \{}
+\DoxyCodeLine{306             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{307             T[] tmpArray = \textcolor{keyword}{new} T[count];}
+\DoxyCodeLine{308             Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, tmpArray, 0, count);}
+\DoxyCodeLine{309             \textcolor{keywordflow}{return} \textcolor{keyword}{new} ExposedList<T>(tmpArray, count);}
+\DoxyCodeLine{310         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}\label{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!GrowIfNeeded@{GrowIfNeeded}}
+\index{GrowIfNeeded@{GrowIfNeeded}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GrowIfNeeded()}{GrowIfNeeded()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Grow\+If\+Needed (\begin{DoxyParamCaption}\item[{int}]{new\+Count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 85 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                 \{}
+\DoxyCodeLine{86             \textcolor{keywordtype}{int} minimumSize = \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} + newCount;}
+\DoxyCodeLine{87             \textcolor{keywordflow}{if} (minimumSize > \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length)}
+\DoxyCodeLine{88                 \mbox{\hyperlink{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}{Capacity}} = Math.Max(Math.Max(\mbox{\hyperlink{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}{Capacity}} * 2, \mbox{\hyperlink{class_spine_1_1_exposed_list_a0e081be1cb1bd17d0dbf52c1db34d1a4}{DefaultCapacity}}), minimumSize);}
+\DoxyCodeLine{89         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a3b14aa1db471e34ec90c3bbc217b981d}\label{class_spine_1_1_exposed_list_a3b14aa1db471e34ec90c3bbc217b981d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!IndexOf@{IndexOf}}
+\index{IndexOf@{IndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IndexOf()}{IndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 312 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{312                                     \{}
+\DoxyCodeLine{313             \textcolor{keywordflow}{return} Array.IndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{314         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a913f13d11c03dea675f874b5fcc8a987}\label{class_spine_1_1_exposed_list_a913f13d11c03dea675f874b5fcc8a987}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!IndexOf@{IndexOf}}
+\index{IndexOf@{IndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IndexOf()}{IndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 316 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{316                                                \{}
+\DoxyCodeLine{317             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(index);}
+\DoxyCodeLine{318             \textcolor{keywordflow}{return} Array.IndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, index, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} -\/ index);}
+\DoxyCodeLine{319         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a8065694bff265fead3b66e51b1ed3e76}\label{class_spine_1_1_exposed_list_a8065694bff265fead3b66e51b1ed3e76}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!IndexOf@{IndexOf}}
+\index{IndexOf@{IndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IndexOf()}{IndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 321 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{321                                                           \{}
+\DoxyCodeLine{322             \textcolor{keywordflow}{if} (index < 0)}
+\DoxyCodeLine{323                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index"});}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325             \textcolor{keywordflow}{if} (count < 0)}
+\DoxyCodeLine{326                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"count"});}
+\DoxyCodeLine{327 }
+\DoxyCodeLine{328             \textcolor{keywordflow}{if} ((uint)index + (uint)count > (uint)\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{329                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index and count exceed length of list"});}
+\DoxyCodeLine{330 }
+\DoxyCodeLine{331             \textcolor{keywordflow}{return} Array.IndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, index, count);}
+\DoxyCodeLine{332         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a38e85d623e6387121f3e2fac8402eb37}\label{class_spine_1_1_exposed_list_a38e85d623e6387121f3e2fac8402eb37}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Insert (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 352 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{352                                                \{}
+\DoxyCodeLine{353             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(index);}
+\DoxyCodeLine{354             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} == \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length)}
+\DoxyCodeLine{355                 \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{GrowIfNeeded}}(1);}
+\DoxyCodeLine{356             \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}}(index, 1);}
+\DoxyCodeLine{357             \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[index] = item;}
+\DoxyCodeLine{358             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{359         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_abede0534c406c1859cf287a64a2dbdc0}\label{class_spine_1_1_exposed_list_abede0534c406c1859cf287a64a2dbdc0}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!InsertCollection@{InsertCollection}}
+\index{InsertCollection@{InsertCollection}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertCollection()}{InsertCollection()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Insert\+Collection (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{I\+Collection$<$ T $>$}]{collection }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 385 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{385                                                                              \{}
+\DoxyCodeLine{386             \textcolor{keywordtype}{int} collectionCount = collection.Count;}
+\DoxyCodeLine{387             \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{GrowIfNeeded}}(collectionCount);}
+\DoxyCodeLine{388 }
+\DoxyCodeLine{389             \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}}(index, collectionCount);}
+\DoxyCodeLine{390             collection.CopyTo(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index);}
+\DoxyCodeLine{391         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a93d5ea68528ab73fa6ef53ef9ea46077}\label{class_spine_1_1_exposed_list_a93d5ea68528ab73fa6ef53ef9ea46077}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!InsertEnumeration@{InsertEnumeration}}
+\index{InsertEnumeration@{InsertEnumeration}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertEnumeration()}{InsertEnumeration()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Insert\+Enumeration (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{I\+Enumerable$<$ T $>$}]{enumerable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 393 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{393                                                                               \{}
+\DoxyCodeLine{394             \textcolor{keywordflow}{foreach} (T t \textcolor{keywordflow}{in} enumerable)}
+\DoxyCodeLine{395                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a38e85d623e6387121f3e2fac8402eb37}{Insert}}(index++, t);}
+\DoxyCodeLine{396         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ab7a243c73d46b0d27b5fa7ea5d2c4b49}\label{class_spine_1_1_exposed_list_ab7a243c73d46b0d27b5fa7ea5d2c4b49}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!InsertRange@{InsertRange}}
+\index{InsertRange@{InsertRange}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{InsertRange()}{InsertRange()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Insert\+Range (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{I\+Enumerable$<$ T $>$}]{collection }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 366 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{366                                                                        \{}
+\DoxyCodeLine{367             \mbox{\hyperlink{class_spine_1_1_exposed_list_aa9d1aaab5b947d25e2505fb8d46b00b2}{CheckCollection}}(collection);}
+\DoxyCodeLine{368             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(index);}
+\DoxyCodeLine{369             \textcolor{keywordflow}{if} (collection == \textcolor{keyword}{this}) \{}
+\DoxyCodeLine{370                 T[] buffer = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}];}
+\DoxyCodeLine{371                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a09719a283830dc9deeab2ded7ddd36df}{CopyTo}}(buffer, 0);}
+\DoxyCodeLine{372                 \mbox{\hyperlink{class_spine_1_1_exposed_list_af37e1f1511c521e02fd7cb4cc7d6486d}{GrowIfNeeded}}(\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{373                 \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}}(index, buffer.Length);}
+\DoxyCodeLine{374                 Array.Copy(buffer, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, buffer.Length);}
+\DoxyCodeLine{375             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{376                 ICollection<T> c = collection as ICollection<T>;}
+\DoxyCodeLine{377                 \textcolor{keywordflow}{if} (c != \textcolor{keyword}{null})}
+\DoxyCodeLine{378                     \mbox{\hyperlink{class_spine_1_1_exposed_list_abede0534c406c1859cf287a64a2dbdc0}{InsertCollection}}(index, c);}
+\DoxyCodeLine{379                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{380                     \mbox{\hyperlink{class_spine_1_1_exposed_list_a93d5ea68528ab73fa6ef53ef9ea46077}{InsertEnumeration}}(index, collection);}
+\DoxyCodeLine{381             \}}
+\DoxyCodeLine{382             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{383         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ad156e66313b12cfb7d98b0590a93ad2c}\label{class_spine_1_1_exposed_list_ad156e66313b12cfb7d98b0590a93ad2c}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!LastIndexOf@{LastIndexOf}}
+\index{LastIndexOf@{LastIndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LastIndexOf()}{LastIndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Last\+Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 398 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{398                                         \{}
+\DoxyCodeLine{399             \textcolor{keywordflow}{return} Array.LastIndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} -\/ 1, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{400         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ad0df9287241566151ce0a67781ce07c0}\label{class_spine_1_1_exposed_list_ad0df9287241566151ce0a67781ce07c0}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!LastIndexOf@{LastIndexOf}}
+\index{LastIndexOf@{LastIndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LastIndexOf()}{LastIndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Last\+Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 402 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{402                                                    \{}
+\DoxyCodeLine{403             \mbox{\hyperlink{class_spine_1_1_exposed_list_afe50c7a9c36b0ebc08af0f43413b5818}{CheckIndex}}(index);}
+\DoxyCodeLine{404             \textcolor{keywordflow}{return} Array.LastIndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, index, index + 1);}
+\DoxyCodeLine{405         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_abc2a83e7ded4838f192f28c4edbc4387}\label{class_spine_1_1_exposed_list_abc2a83e7ded4838f192f28c4edbc4387}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!LastIndexOf@{LastIndexOf}}
+\index{LastIndexOf@{LastIndexOf}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LastIndexOf()}{LastIndexOf()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Last\+Index\+Of (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 407 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{407                                                               \{}
+\DoxyCodeLine{408             \textcolor{keywordflow}{if} (index < 0)}
+\DoxyCodeLine{409                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index"}, index, \textcolor{stringliteral}{"index is negative"});}
+\DoxyCodeLine{410 }
+\DoxyCodeLine{411             \textcolor{keywordflow}{if} (count < 0)}
+\DoxyCodeLine{412                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"count"}, count, \textcolor{stringliteral}{"count is negative"});}
+\DoxyCodeLine{413 }
+\DoxyCodeLine{414             \textcolor{keywordflow}{if} (index -\/ count + 1 < 0)}
+\DoxyCodeLine{415                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"count"}, count, \textcolor{stringliteral}{"count is too large"});}
+\DoxyCodeLine{416 }
+\DoxyCodeLine{417             \textcolor{keywordflow}{return} Array.LastIndexOf<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, item, index, count);}
+\DoxyCodeLine{418         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_af3079ff080061ca708f81ae9eb9aa6d3}\label{class_spine_1_1_exposed_list_af3079ff080061ca708f81ae9eb9aa6d3}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Pop@{Pop}}
+\index{Pop@{Pop}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Pop()}{Pop()}}
+{\footnotesize\ttfamily T \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pops the last item of the list. If the list is empty, Pop throws an Invalid\+Operation\+Exception. 
+
+
+
+Exposed\+List.\+cs 파일의 466 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{466                         \{}
+\DoxyCodeLine{467             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} == 0)}
+\DoxyCodeLine{468                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} InvalidOperationException(\textcolor{stringliteral}{"List is empty. Nothing to pop."});}
+\DoxyCodeLine{469             }
+\DoxyCodeLine{470             \textcolor{keywordtype}{int} i = \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} -\/ 1;}
+\DoxyCodeLine{471             T item = \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i];}
+\DoxyCodeLine{472             \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i] = \textcolor{keywordflow}{default}(T);}
+\DoxyCodeLine{473             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}-\/-\/;}
+\DoxyCodeLine{474             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{475             \textcolor{keywordflow}{return} item;}
+\DoxyCodeLine{476         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_abee076bc9af132ccf026cdd5f9c40bc4}\label{class_spine_1_1_exposed_list_abee076bc9af132ccf026cdd5f9c40bc4}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Remove@{Remove}}
+\index{Remove@{Remove}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Remove (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 420 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{420                                     \{}
+\DoxyCodeLine{421             \textcolor{keywordtype}{int} loc = \mbox{\hyperlink{class_spine_1_1_exposed_list_a3b14aa1db471e34ec90c3bbc217b981d}{IndexOf}}(item);}
+\DoxyCodeLine{422             \textcolor{keywordflow}{if} (loc != -\/1)}
+\DoxyCodeLine{423                 \mbox{\hyperlink{class_spine_1_1_exposed_list_ae8b96a0a493569d60e8b64442e2feebc}{RemoveAt}}(loc);}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{425             \textcolor{keywordflow}{return} loc != -\/1;}
+\DoxyCodeLine{426         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a15c2f4b4d7445dc42e39f7c3069e51a2}\label{class_spine_1_1_exposed_list_a15c2f4b4d7445dc42e39f7c3069e51a2}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!RemoveAll@{RemoveAll}}
+\index{RemoveAll@{RemoveAll}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAll()}{RemoveAll()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Remove\+All (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 428 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{428                                                   \{}
+\DoxyCodeLine{429             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{430             \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{431             \textcolor{keywordtype}{int} j = 0;}
+\DoxyCodeLine{432 }
+\DoxyCodeLine{433             \textcolor{comment}{// Find the first item to remove}}
+\DoxyCodeLine{434             \textcolor{keywordflow}{for} (i = 0; i < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i++)}
+\DoxyCodeLine{435                 \textcolor{keywordflow}{if} (match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]))}
+\DoxyCodeLine{436                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{437 }
+\DoxyCodeLine{438             \textcolor{keywordflow}{if} (i == \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{439                 \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{440 }
+\DoxyCodeLine{441             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{442 }
+\DoxyCodeLine{443             \textcolor{comment}{// Remove any additional items}}
+\DoxyCodeLine{444             \textcolor{keywordflow}{for} (j = i + 1; j < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; j++) \{}
+\DoxyCodeLine{445                 \textcolor{keywordflow}{if} (!match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[j]))}
+\DoxyCodeLine{446                     \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i++] = \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[j];}
+\DoxyCodeLine{447             \}}
+\DoxyCodeLine{448             \textcolor{keywordflow}{if} (j -\/ i > 0)}
+\DoxyCodeLine{449                 Array.Clear(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, i, j -\/ i);}
+\DoxyCodeLine{450 }
+\DoxyCodeLine{451             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = i;}
+\DoxyCodeLine{452             \textcolor{keywordflow}{return} (j -\/ i);}
+\DoxyCodeLine{453         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ae8b96a0a493569d60e8b64442e2feebc}\label{class_spine_1_1_exposed_list_ae8b96a0a493569d60e8b64442e2feebc}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!RemoveAt@{RemoveAt}}
+\index{RemoveAt@{RemoveAt}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveAt()}{RemoveAt()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Remove\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 455 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{455                                          \{}
+\DoxyCodeLine{456             \textcolor{keywordflow}{if} (index < 0 || (uint)index >= (uint)\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{457                 \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException(\textcolor{stringliteral}{"index"});}
+\DoxyCodeLine{458             \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}}(index, -\/1);}
+\DoxyCodeLine{459             Array.Clear(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, 1);}
+\DoxyCodeLine{460             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{461         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 21
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a658e4bdedbd184e0e0bcb69b83e5ee37}\label{class_spine_1_1_exposed_list_a658e4bdedbd184e0e0bcb69b83e5ee37}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!RemoveRange@{RemoveRange}}
+\index{RemoveRange@{RemoveRange}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveRange()}{RemoveRange()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Remove\+Range (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 478 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{478                                                        \{}
+\DoxyCodeLine{479             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{480             \textcolor{keywordflow}{if} (count > 0) \{}
+\DoxyCodeLine{481                 \mbox{\hyperlink{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}{Shift}}(index, -\/count);}
+\DoxyCodeLine{482                 Array.Clear(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, count);}
+\DoxyCodeLine{483                 \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{484             \}}
+\DoxyCodeLine{485         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}\label{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Resize@{Resize}}
+\index{Resize@{Resize}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Resize()}{Resize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$T$>$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Resize (\begin{DoxyParamCaption}\item[{int}]{new\+Size }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 91 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                    \{}
+\DoxyCodeLine{92             \textcolor{keywordtype}{int} itemsLength = \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length;}
+\DoxyCodeLine{93             var oldItems = \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{94             \textcolor{keywordflow}{if} (newSize > itemsLength) \{}
+\DoxyCodeLine{95                 Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newSize);}
+\DoxyCodeLine{96 \textcolor{comment}{//              var newItems = new T[newSize];}}
+\DoxyCodeLine{97 \textcolor{comment}{//              Array.Copy(oldItems, newItems, Count);}}
+\DoxyCodeLine{98 \textcolor{comment}{//              Items = newItems;}}
+\DoxyCodeLine{99             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (newSize < itemsLength) \{}
+\DoxyCodeLine{100                 \textcolor{comment}{// Allow nulling of T reference type to allow GC.}}
+\DoxyCodeLine{101                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = newSize; i < itemsLength; i++)}
+\DoxyCodeLine{102                     oldItems[i] = \textcolor{keywordflow}{default}(T);}
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = newSize;}
+\DoxyCodeLine{105             \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+\DoxyCodeLine{106         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 22
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aa83d498daef8ad14e38c868992fed04d}\label{class_spine_1_1_exposed_list_aa83d498daef8ad14e38c868992fed04d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Reverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 487 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{487                                \{}
+\DoxyCodeLine{488             Array.Reverse(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{489             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{490         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a9a76940fe003550484b115855802d65a}\label{class_spine_1_1_exposed_list_a9a76940fe003550484b115855802d65a}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Reverse@{Reverse}}
+\index{Reverse@{Reverse}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Reverse()}{Reverse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Reverse (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 492 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{492                                                    \{}
+\DoxyCodeLine{493             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{494             Array.Reverse(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, count);}
+\DoxyCodeLine{495             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{496         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}\label{class_spine_1_1_exposed_list_ac0eb9a0def900653c0c6ba62475a2289}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Shift@{Shift}}
+\index{Shift@{Shift}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Shift()}{Shift()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Shift (\begin{DoxyParamCaption}\item[{int}]{start,  }\item[{int}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 334 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334                                                   \{}
+\DoxyCodeLine{335             \textcolor{keywordflow}{if} (delta < 0)}
+\DoxyCodeLine{336                 start -\/= delta;}
+\DoxyCodeLine{337 }
+\DoxyCodeLine{338             \textcolor{keywordflow}{if} (start < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{339                 Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, start, \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, start + delta, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} -\/ start);}
+\DoxyCodeLine{340 }
+\DoxyCodeLine{341             \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} += delta;}
+\DoxyCodeLine{342 }
+\DoxyCodeLine{343             \textcolor{keywordflow}{if} (delta < 0)}
+\DoxyCodeLine{344                 Array.Clear(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, -\/delta);}
+\DoxyCodeLine{345         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 23
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ac8e50d93fd3b927564c8ae5ddae226cd}\label{class_spine_1_1_exposed_list_ac8e50d93fd3b927564c8ae5ddae226cd}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Sort@{Sort}}
+\index{Sort@{Sort}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 498 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{498                             \{}
+\DoxyCodeLine{499             Array.Sort<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, Comparer<T>.Default);}
+\DoxyCodeLine{500             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{501         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a35554031d69f4b8918cfcf735f292171}\label{class_spine_1_1_exposed_list_a35554031d69f4b8918cfcf735f292171}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Sort@{Sort}}
+\index{Sort@{Sort}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Sort (\begin{DoxyParamCaption}\item[{Comparison$<$ T $>$}]{comparison }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 508 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{508                                                     \{}
+\DoxyCodeLine{509             Array.Sort<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, comparison);}
+\DoxyCodeLine{510             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{511         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a192aa72418f77e1dc3c24953db3ad867}\label{class_spine_1_1_exposed_list_a192aa72418f77e1dc3c24953db3ad867}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Sort@{Sort}}
+\index{Sort@{Sort}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Sort (\begin{DoxyParamCaption}\item[{I\+Comparer$<$ T $>$}]{comparer }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 503 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{503                                                  \{}
+\DoxyCodeLine{504             Array.Sort<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, 0, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}, comparer);}
+\DoxyCodeLine{505             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{506         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_ab5292956d277cc892754a9619c3ff180}\label{class_spine_1_1_exposed_list_ab5292956d277cc892754a9619c3ff180}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Sort@{Sort}}
+\index{Sort@{Sort}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Sort()}{Sort()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Sort (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{count,  }\item[{I\+Comparer$<$ T $>$}]{comparer }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 513 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{513                                                                        \{}
+\DoxyCodeLine{514             \mbox{\hyperlink{class_spine_1_1_exposed_list_a5d52b861aa86551ff03aab3b755c7a1c}{CheckRange}}(index, count);}
+\DoxyCodeLine{515             Array.Sort<T>(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, index, count, comparer);}
+\DoxyCodeLine{516             \mbox{\hyperlink{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}{version}}++;}
+\DoxyCodeLine{517         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a111258b0871f19789855adc3a90a2ffd}\label{class_spine_1_1_exposed_list_a111258b0871f19789855adc3a90a2ffd}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!ToArray@{ToArray}}
+\index{ToArray@{ToArray}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ToArray()}{ToArray()}}
+{\footnotesize\ttfamily T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.To\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 519 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{519                               \{}
+\DoxyCodeLine{520             T[] t = \textcolor{keyword}{new} T[\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}];}
+\DoxyCodeLine{521             Array.Copy(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, t, \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}});}
+\DoxyCodeLine{522 }
+\DoxyCodeLine{523             \textcolor{keywordflow}{return} t;}
+\DoxyCodeLine{524         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 24
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}\label{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!TrimExcess@{TrimExcess}}
+\index{TrimExcess@{TrimExcess}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TrimExcess()}{TrimExcess()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Trim\+Excess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 526 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{526                                   \{}
+\DoxyCodeLine{527             \mbox{\hyperlink{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}{Capacity}} = \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{528         \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 25
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a8c8ecc90451eeea71c9ca0bfd9477af1}\label{class_spine_1_1_exposed_list_a8c8ecc90451eeea71c9ca0bfd9477af1}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!TrueForAll@{TrueForAll}}
+\index{TrueForAll@{TrueForAll}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{TrueForAll()}{TrueForAll()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.True\+For\+All (\begin{DoxyParamCaption}\item[{Predicate$<$ T $>$}]{match }\end{DoxyParamCaption})}
+
+
+
+Exposed\+List.\+cs 파일의 530 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{530                                                     \{}
+\DoxyCodeLine{531             \mbox{\hyperlink{class_spine_1_1_exposed_list_ace5ef4e58c7ca329e1cdf0f725395cec}{CheckMatch}}(match);}
+\DoxyCodeLine{532 }
+\DoxyCodeLine{533             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i++)}
+\DoxyCodeLine{534                 \textcolor{keywordflow}{if} (!match(\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}[i]))}
+\DoxyCodeLine{535                     \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{536 }
+\DoxyCodeLine{537             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{538         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}\label{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Count@{Count}}
+\index{Count@{Count}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Count}
+
+
+
+Exposed\+List.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a0e081be1cb1bd17d0dbf52c1db34d1a4}\label{class_spine_1_1_exposed_list_a0e081be1cb1bd17d0dbf52c1db34d1a4}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!DefaultCapacity@{DefaultCapacity}}
+\index{DefaultCapacity@{DefaultCapacity}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{DefaultCapacity}{DefaultCapacity}}
+{\footnotesize\ttfamily const int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Default\+Capacity = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a959e7ce3ab0432d2c09813f99ad8b07d}\label{class_spine_1_1_exposed_list_a959e7ce3ab0432d2c09813f99ad8b07d}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!EmptyArray@{EmptyArray}}
+\index{EmptyArray@{EmptyArray}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{EmptyArray}{EmptyArray}}
+{\footnotesize\ttfamily readonly T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Empty\+Array = new T\mbox{[}0\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}\label{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Items@{Items}}
+\index{Items@{Items}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Items}{Items}}
+{\footnotesize\ttfamily T \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Items}
+
+
+
+Exposed\+List.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}\label{class_spine_1_1_exposed_list_a26c3162902f17c6d27752e3659389694}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!version@{version}}
+\index{version@{version}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.version\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Exposed\+List.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}\label{class_spine_1_1_exposed_list_aa0f6bf083e9160fe11c8a4fac78e0787}} 
+\index{Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}!Capacity@{Capacity}}
+\index{Capacity@{Capacity}!Spine.ExposedList$<$ T $>$@{Spine.ExposedList$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Capacity}{Capacity}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{class_spine_1_1_exposed_list}{Spine.\+Exposed\+List}}$<$ T $>$.Capacity\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Exposed\+List.\+cs 파일의 540 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{540                             \{}
+\DoxyCodeLine{541             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{542                 \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length;}
+\DoxyCodeLine{543             \}}
+\DoxyCodeLine{544             \textcolor{keyword}{set} \{}
+\DoxyCodeLine{545                 \textcolor{keywordflow}{if} ((uint)value < (uint)\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}})}
+\DoxyCodeLine{546                     \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentOutOfRangeException();}
+\DoxyCodeLine{547 }
+\DoxyCodeLine{548                 Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, value);}
+\DoxyCodeLine{549             \}}
+\DoxyCodeLine{550         \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_exposed_list_8cs}{Exposed\+List.\+cs}}\end{DoxyCompactItemize}

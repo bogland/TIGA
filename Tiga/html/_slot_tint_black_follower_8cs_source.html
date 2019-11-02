@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Sample Components/SlotTintBlackFollower.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_slot_tint_black_follower_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SlotTintBlackFollower.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_slot_tint_black_follower_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using</span> <a class="code" href="namespace_spine.html">Spine</a>.<a class="code" href="namespace_spine_1_1_unity.html">Unity</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span>SlotTintBlackFollower : MonoBehaviour {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">        #region Inspector</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_slot.html">SpineSlot</a>]</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac36764c41deda9135042ddc083d53e49">   45</a></span>&#160;        [SerializeField]</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac36764c41deda9135042ddc083d53e49">slotName</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a0ce9586e97a432027a7a96ca479f2ed5">   48</a></span>&#160;        [SerializeField]</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a0ce9586e97a432027a7a96ca479f2ed5">colorPropertyName</a> = <span class="stringliteral">&quot;_Color&quot;</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a3fe954696ec0e66ba4eb672b41960eb8">   50</a></span>&#160;        [SerializeField]</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">protected</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a3fe954696ec0e66ba4eb672b41960eb8">blackPropertyName</a> = <span class="stringliteral">&quot;_Black&quot;</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">        #endregion</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a7ea7bcbda12fdfeb001f0f599ace3800">   53</a></span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">   54</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_slot.html">Slot</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a7ea7bcbda12fdfeb001f0f599ace3800">slot</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">   55</a></span>&#160;        MeshRenderer <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">mr</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a4d438c04313a33592cb6c82d23bc9c8c">   56</a></span>&#160;        MaterialPropertyBlock <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a4d438c04313a33592cb6c82d23bc9c8c">colorPropertyId</a>, <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a632c22d54ecaae231e288d88763d73df">blackPropertyId</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aa255d19266b82e83ed89e7ad84fffdd0">   58</a></span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aa255d19266b82e83ed89e7ad84fffdd0">Start</a> () {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac0cdba46deb80449ed227e44e47a2905">Initialize</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac0cdba46deb80449ed227e44e47a2905">   62</a></span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac0cdba46deb80449ed227e44e47a2905">Initialize</a> (<span class="keywordtype">bool</span> overwrite) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (overwrite || <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a> == <span class="keyword">null</span>) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a> = <span class="keyword">new</span> MaterialPropertyBlock();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">mr</a> = GetComponent&lt;MeshRenderer&gt;();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a7ea7bcbda12fdfeb001f0f599ace3800">slot</a> = GetComponent&lt;ISkeletonComponent&gt;().<a class="code" href="class_spine_1_1_slot.html#a60be6be5435fd073a1a31d90e9948231">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#aeeaf7abe56f807e6e57f3a2514e607ab">FindSlot</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac36764c41deda9135042ddc083d53e49">slotName</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a4d438c04313a33592cb6c82d23bc9c8c">colorPropertyId</a> = Shader.PropertyToID(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a0ce9586e97a432027a7a96ca479f2ed5">colorPropertyName</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a632c22d54ecaae231e288d88763d73df">blackPropertyId</a> = Shader.PropertyToID(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a3fe954696ec0e66ba4eb672b41960eb8">blackPropertyName</a>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aab99de7dbc6906f2035e68e6bdde3dee">   73</a></span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aab99de7dbc6906f2035e68e6bdde3dee">Update</a> () {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="class_spine_1_1_slot.html">Slot</a> s = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a7ea7bcbda12fdfeb001f0f599ace3800">slot</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (s == <span class="keyword">null</span>) <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a4d438c04313a33592cb6c82d23bc9c8c">colorPropertyId</a>, s.GetColor());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>.SetColor(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a632c22d54ecaae231e288d88763d73df">blackPropertyId</a>, s.GetColorTintBlack());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">mr</a>.SetPropertyBlock(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a38211a507f574bf254be7d0de099dc88">   83</a></span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a38211a507f574bf254be7d0de099dc88">OnDisable</a> () {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>.Clear();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">mr</a>.SetPropertyBlock(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">mb</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_ac36764c41deda9135042ddc083d53e49"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac36764c41deda9135042ddc083d53e49">Spine.Unity.Examples.SlotTintBlackFollower.slotName</a></div><div class="ttdeci">string slotName</div><div class="ttdoc">Serialized name of the slot loaded at runtime. Change the slot field instead of this if you want to c...</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00045">SlotTintBlackFollower.cs:45</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_html"><div class="ttname"><a href="namespace_spine_1_1_unity.html">Spine.Unity</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_reference_asset_8cs_source.html#l00034">AnimationReferenceAsset.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_aeeaf7abe56f807e6e57f3a2514e607ab"><div class="ttname"><a href="class_spine_1_1_skeleton.html#aeeaf7abe56f807e6e57f3a2514e607ab">Spine.Skeleton.FindSlot</a></div><div class="ttdeci">Slot FindSlot(string slotName)</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00363">Skeleton.cs:363</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_ac0cdba46deb80449ed227e44e47a2905"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#ac0cdba46deb80449ed227e44e47a2905">Spine.Unity.Examples.SlotTintBlackFollower.Initialize</a></div><div class="ttdeci">void Initialize(bool overwrite)</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00062">SlotTintBlackFollower.cs:62</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html"><div class="ttname"><a href="class_spine_1_1_slot.html">Spine.Slot</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00033">Slot.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a84d9f7f69ebf003894da69422a46f2e9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a84d9f7f69ebf003894da69422a46f2e9">Spine.Unity.Examples.SlotTintBlackFollower.mr</a></div><div class="ttdeci">MeshRenderer mr</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00054">SlotTintBlackFollower.cs:54</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_html_a60be6be5435fd073a1a31d90e9948231"><div class="ttname"><a href="class_spine_1_1_slot.html#a60be6be5435fd073a1a31d90e9948231">Spine.Slot.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_slot_8cs_source.html#l00045">Slot.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a38211a507f574bf254be7d0de099dc88"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a38211a507f574bf254be7d0de099dc88">Spine.Unity.Examples.SlotTintBlackFollower.OnDisable</a></div><div class="ttdeci">void OnDisable()</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00083">SlotTintBlackFollower.cs:83</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a7ea7bcbda12fdfeb001f0f599ace3800"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a7ea7bcbda12fdfeb001f0f599ace3800">Spine.Unity.Examples.SlotTintBlackFollower.slot</a></div><div class="ttdeci">Slot slot</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00053">SlotTintBlackFollower.cs:53</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_slot_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_slot.html">Spine.Unity.SpineSlot</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00046">SpineAttributes.cs:46</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_aa255d19266b82e83ed89e7ad84fffdd0"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aa255d19266b82e83ed89e7ad84fffdd0">Spine.Unity.Examples.SlotTintBlackFollower.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00058">SlotTintBlackFollower.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a0ce9586e97a432027a7a96ca479f2ed5"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a0ce9586e97a432027a7a96ca479f2ed5">Spine.Unity.Examples.SlotTintBlackFollower.colorPropertyName</a></div><div class="ttdeci">string colorPropertyName</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00048">SlotTintBlackFollower.cs:48</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a464560999c8250e7e9476961e2d32d94"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a464560999c8250e7e9476961e2d32d94">Spine.Unity.Examples.SlotTintBlackFollower.mb</a></div><div class="ttdeci">MaterialPropertyBlock mb</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00055">SlotTintBlackFollower.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_aab99de7dbc6906f2035e68e6bdde3dee"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#aab99de7dbc6906f2035e68e6bdde3dee">Spine.Unity.Examples.SlotTintBlackFollower.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00073">SlotTintBlackFollower.cs:73</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a632c22d54ecaae231e288d88763d73df"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a632c22d54ecaae231e288d88763d73df">Spine.Unity.Examples.SlotTintBlackFollower.blackPropertyId</a></div><div class="ttdeci">int blackPropertyId</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00056">SlotTintBlackFollower.cs:56</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a4d438c04313a33592cb6c82d23bc9c8c"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a4d438c04313a33592cb6c82d23bc9c8c">Spine.Unity.Examples.SlotTintBlackFollower.colorPropertyId</a></div><div class="ttdeci">int colorPropertyId</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00056">SlotTintBlackFollower.cs:56</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower_html_a3fe954696ec0e66ba4eb672b41960eb8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_slot_tint_black_follower.html#a3fe954696ec0e66ba4eb672b41960eb8">Spine.Unity.Examples.SlotTintBlackFollower.blackPropertyName</a></div><div class="ttdeci">string blackPropertyName</div><div class="ttdef"><b>Definition:</b> <a href="_slot_tint_black_follower_8cs_source.html#l00050">SlotTintBlackFollower.cs:50</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_8d355f1d624c50c9e3eb2033d942fcf0.html">Sample Components</a></li><li class="navelem"><a class="el" href="_slot_tint_black_follower_8cs.html">SlotTintBlackFollower.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

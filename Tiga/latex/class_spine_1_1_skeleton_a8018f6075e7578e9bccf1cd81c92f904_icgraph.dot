@@ -1,0 +1,28 @@
+digraph "Spine.Skeleton.SetSlotsToSetupPose"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Skeleton.SetSlotsTo\lSetupPose",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Skeleton\lDebugWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_debug_window.html#a08a29a81c42d9af499d83e27132a247a",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Examples.Goblins.\lOnMouseDown",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_goblins.html#a28c588c581497bd4708e824113ece6ca",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Refresh\lSkeletonAttachments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a38246583ed686e403a6ceade16220b3b",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Equip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a1c3c4caaaf3eae2862aa46f453bfab02",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.Examples.Equip\lSystemExample.Equip",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a080aa2407b434f94d29f346ef72b8fdd",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.Examples.Equip\lButtonExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a1f732916a8097f5d92785d24c237735f",tooltip=" "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.OptimizeSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#aba3992e78803aa05cff5a96bc0cec14d",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.Examples.Equip\lSystemExample.Done",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a4d5cbb2d2f7425c1aee560c9aa2bde1b",tooltip=" "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Unity.Examples.Equips\lVisualsComponentExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example.html#a85d8fceb815d7692e0e2cdb3d4859ee0",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.Unity.Examples.Data\lAssetsFromExportsExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ae073836d2a0983f784abc976f8f03531",tooltip=" "];
+}

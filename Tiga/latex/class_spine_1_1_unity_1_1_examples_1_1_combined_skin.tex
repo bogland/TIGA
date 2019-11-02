@@ -1,0 +1,95 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_combined_skin}{}\doxysection{Spine.\+Unity.\+Examples.\+Combined\+Skin 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_combined_skin}\index{Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}}
+
+
+Spine.\+Unity.\+Examples.\+Combined\+Skin에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Combined\+Skin에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a1e943efea9745e2c892f687a0e1b136e}{skins\+To\+Combine}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a3539baea107da24fc66207f644b29b68}{Start}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combined\+Skin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Combined\+Skin.\+cs 파일의 7 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a3539baea107da24fc66207f644b29b68}\label{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a3539baea107da24fc66207f644b29b68}} 
+\index{Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Combined\+Skin.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Combined\+Skin.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                       \{}
+\DoxyCodeLine{14             var skeletonComponent = GetComponent<ISkeletonComponent>();}
+\DoxyCodeLine{15             \textcolor{keywordflow}{if} (skeletonComponent == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{16             var skeleton = skeletonComponent.Skeleton;}
+\DoxyCodeLine{17             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combinedSkin}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combinedSkin}} ?? \textcolor{keyword}{new} Skin(\textcolor{stringliteral}{"combined"});}
+\DoxyCodeLine{20             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combinedSkin}}.Clear();}
+\DoxyCodeLine{21             \textcolor{keywordflow}{foreach} (var skinName \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a1e943efea9745e2c892f687a0e1b136e}{skinsToCombine}}) \{}
+\DoxyCodeLine{22                 var skin = skeleton.Data.FindSkin(skinName);}
+\DoxyCodeLine{23                 \textcolor{keywordflow}{if} (skin != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combinedSkin}}.Append(skin);}
+\DoxyCodeLine{24             \}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26             skeleton.SetSkin(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}{combinedSkin}});}
+\DoxyCodeLine{27             skeleton.SetToSetupPose();}
+\DoxyCodeLine{28             var animationStateComponent = skeletonComponent as IAnimationStateComponent;}
+\DoxyCodeLine{29             \textcolor{keywordflow}{if} (animationStateComponent != \textcolor{keyword}{null}) animationStateComponent.AnimationState.Apply(skeleton);}
+\DoxyCodeLine{30         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}\label{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_aa811c5d4ea56bfefdb0bf03c8e938533}} 
+\index{Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}!combinedSkin@{combinedSkin}}
+\index{combinedSkin@{combinedSkin}!Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}}
+\doxysubsubsection{\texorpdfstring{combinedSkin}{combinedSkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} Spine.\+Unity.\+Examples.\+Combined\+Skin.\+combined\+Skin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Combined\+Skin.\+cs 파일의 11 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a1e943efea9745e2c892f687a0e1b136e}\label{class_spine_1_1_unity_1_1_examples_1_1_combined_skin_a1e943efea9745e2c892f687a0e1b136e}} 
+\index{Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}!skinsToCombine@{skinsToCombine}}
+\index{skinsToCombine@{skinsToCombine}!Spine.Unity.Examples.CombinedSkin@{Spine.Unity.Examples.CombinedSkin}}
+\doxysubsubsection{\texorpdfstring{skinsToCombine}{skinsToCombine}}
+{\footnotesize\ttfamily List$<$string$>$ Spine.\+Unity.\+Examples.\+Combined\+Skin.\+skins\+To\+Combine}
+
+
+
+Combined\+Skin.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Sample Components/\mbox{\hyperlink{_combined_skin_8cs}{Combined\+Skin.\+cs}}\end{DoxyCompactItemize}

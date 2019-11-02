@@ -1,0 +1,230 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example}\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+
+
+Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abb63caaab92b3e4b9df926b1418507e6}{Play}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeleton\+Animation}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a9565d26498c6ce94572348ec962534d1}{event\+Name}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audio\+Source}}
+\item 
+Audio\+Clip \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1f873a9126e1c5348d4cf6169d0f2c06}{audio\+Clip}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_ac423abd7e077141dcdefe9b89daa44a9}{base\+Pitch}} = 1f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8801ef7ef69c845d9b40c9555ab3425e}{random\+Pitch\+Offset}} = 0.\+1f
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1772585793d1eaf257a039d5b3449ebc}{log\+Debug\+Message}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_aba74006a7d6c4ea62a33619d4abf34ef}{On\+Validate}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abae2883855259a2fb313187a6eef3a85}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a59beabee2e220c1f23b930aad6ac1e88}{Handle\+Animation\+State\+Event}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} track\+Entry, \mbox{\hyperlink{class_spine_1_1_event}{Event}} e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_event_data}{Spine.\+Event\+Data}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a51e2420773e7e2f033161a019e069bd1}{event\+Data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a59beabee2e220c1f23b930aad6ac1e88}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a59beabee2e220c1f23b930aad6ac1e88}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!HandleAnimationStateEvent@{HandleAnimationStateEvent}}
+\index{HandleAnimationStateEvent@{HandleAnimationStateEvent}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{HandleAnimationStateEvent()}{HandleAnimationStateEvent()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+Handle\+Animation\+State\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}}}]{track\+Entry,  }\item[{\mbox{\hyperlink{class_spine_1_1_event}{Event}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                                                                 \{}
+\DoxyCodeLine{69             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1772585793d1eaf257a039d5b3449ebc}{logDebugMessage}}) Debug.Log(\textcolor{stringliteral}{"Event fired! "} + e.Data.Name);}
+\DoxyCodeLine{70             \textcolor{comment}{//bool eventMatch = string.Equals(e.Data.Name, eventName, System.StringComparison.Ordinal); // Testing recommendation: String compare.}}
+\DoxyCodeLine{71             \textcolor{keywordtype}{bool} eventMatch = (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a51e2420773e7e2f033161a019e069bd1}{eventData}} == e.Data); \textcolor{comment}{// Performance recommendation: Match cached reference instead of string.}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (eventMatch) \{}
+\DoxyCodeLine{73                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abb63caaab92b3e4b9df926b1418507e6}{Play}}();}
+\DoxyCodeLine{74             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_aba74006a7d6c4ea62a33619d4abf34ef}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_aba74006a7d6c4ea62a33619d4abf34ef}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!OnValidate@{OnValidate}}
+\index{OnValidate@{OnValidate}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{OnValidate()}{OnValidate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+On\+Validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                            \{}
+\DoxyCodeLine{54             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}} == \textcolor{keyword}{null}) GetComponent<SkeletonAnimation>();}
+\DoxyCodeLine{55             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audioSource}} == \textcolor{keyword}{null}) GetComponent<AudioSource>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abb63caaab92b3e4b9df926b1418507e6}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abb63caaab92b3e4b9df926b1418507e6}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!Play@{Play}}
+\index{Play@{Play}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                             \{}
+\DoxyCodeLine{78             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audioSource}}.pitch = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_ac423abd7e077141dcdefe9b89daa44a9}{basePitch}} + Random.Range(-\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8801ef7ef69c845d9b40c9555ab3425e}{randomPitchOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8801ef7ef69c845d9b40c9555ab3425e}{randomPitchOffset}});}
+\DoxyCodeLine{79             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audioSource}}.clip = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1f873a9126e1c5348d4cf6169d0f2c06}{audioClip}};}
+\DoxyCodeLine{80             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audioSource}}.Play();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abae2883855259a2fb313187a6eef3a85}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abae2883855259a2fb313187a6eef3a85}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                       \{}
+\DoxyCodeLine{59             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}{audioSource}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{60             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{61             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_a6c87e552fabe217a7292a78f9d6919dc}{Initialize}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_ad8e7b44a7dd205acbdf2e3d9159ae23f}{valid}}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a51e2420773e7e2f033161a019e069bd1}{eventData}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a6e0a2691d3795a1222ff9158042e2a59}{FindEvent}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a9565d26498c6ce94572348ec962534d1}{eventName}});}
+\DoxyCodeLine{65             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.Event += \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a59beabee2e220c1f23b930aad6ac1e88}{HandleAnimationStateEvent}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1f873a9126e1c5348d4cf6169d0f2c06}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1f873a9126e1c5348d4cf6169d0f2c06}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!audioClip@{audioClip}}
+\index{audioClip@{audioClip}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{audioClip}{audioClip}}
+{\footnotesize\ttfamily Audio\+Clip Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+audio\+Clip}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8b43b662d124ecb51c4b7042662eea03}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily Audio\+Source Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+audio\+Source}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_ac423abd7e077141dcdefe9b89daa44a9}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_ac423abd7e077141dcdefe9b89daa44a9}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!basePitch@{basePitch}}
+\index{basePitch@{basePitch}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{basePitch}{basePitch}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+base\+Pitch = 1f}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a51e2420773e7e2f033161a019e069bd1}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a51e2420773e7e2f033161a019e069bd1}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!eventData@{eventData}}
+\index{eventData@{eventData}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{eventData}{eventData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_event_data}{Spine.\+Event\+Data}} Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+event\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a9565d26498c6ce94572348ec962534d1}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a9565d26498c6ce94572348ec962534d1}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!eventName@{eventName}}
+\index{eventName@{eventName}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{eventName}{eventName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+event\+Name}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1772585793d1eaf257a039d5b3449ebc}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a1772585793d1eaf257a039d5b3449ebc}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!logDebugMessage@{logDebugMessage}}
+\index{logDebugMessage@{logDebugMessage}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{logDebugMessage}{logDebugMessage}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+log\+Debug\+Message = false}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8801ef7ef69c845d9b40c9555ab3425e}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a8801ef7ef69c845d9b40c9555ab3425e}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!randomPitchOffset@{randomPitchOffset}}
+\index{randomPitchOffset@{randomPitchOffset}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{randomPitchOffset}{randomPitchOffset}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+random\+Pitch\+Offset = 0.\+1f}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}\label{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_a61e6d7167944c7c46ffd6e4c7b7ad995}} 
+\index{Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.HandleEventWithAudioExample@{Spine.Unity.Examples.HandleEventWithAudioExample}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Handle\+Event\+With\+Audio\+Example.\+skeleton\+Animation}
+
+
+
+Handle\+Event\+With\+Audio\+Example.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_handle_event_with_audio_example_8cs}{Handle\+Event\+With\+Audio\+Example.\+cs}}\end{DoxyCompactItemize}

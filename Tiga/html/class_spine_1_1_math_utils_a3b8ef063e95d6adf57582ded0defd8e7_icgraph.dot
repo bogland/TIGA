@@ -1,0 +1,53 @@
+digraph "Spine.MathUtils.Clamp"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.MathUtils.Clamp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.CurveTimeline.GetCurve\lPercent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html#aecaa64a855f59f759923bd2edc0f71a5",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.RotateTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_rotate_timeline.html#a3b3e4cf2156400da2452f7d1c5ab3bdd",tooltip="Sets the value(s) for the specified time."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.AnimationState.Apply\lRotateTimeline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_animation_state.html#a4ffb7ea36fba0e39fe8f9899b2b89401",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.AnimationState.Apply\lMixingFrom",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_animation_state.html#a065eabb3d095d6b6299fc736a87c2640",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Spine.Unity.Editor.Skeleton\lBaker.ParseRotateTimeline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#ae89dccf2c6c58d3e8195f926eab51ff1",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Spine.Unity.Editor.Skeleton\lBaker.ExtractAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#aa02465ccf8934b9b6c1a9a5c887e2853",tooltip=" "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Spine.Unity.Editor.Skeleton\lBaker.BakeToPrefab",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#a5854a66f32f7c58d0d35abe10e570cbb",tooltip=" "];
+  Node8 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Spine.Unity.Editor.Skeleton\lBakingWindow.OnGUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baking_window.html#a7e83d787166c9dc42cc9e9ced4f74ae3",tooltip=" "];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Spine.TranslateTimeline.\lApply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_translate_timeline.html#ada403df06beb4eb65b6729d6f7a8d04e",tooltip="Sets the value(s) for the specified time."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="Spine.Unity.Editor.Skeleton\lBaker.ParseTranslateTimeline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#ab0ec452bbe81c401a9317ee74f7d7c38",tooltip=" "];
+  Node11 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Spine.ScaleTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_scale_timeline.html#a78e166dde2c0f8013d2c512d417f66a3",tooltip="Sets the value(s) for the specified time."];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Spine.Unity.Editor.Skeleton\lBaker.ParseScaleTimeline",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_baker.html#a62f853b247f14401671c80a31176d83c",tooltip=" "];
+  Node13 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Spine.ShearTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_shear_timeline.html#a4bafff328be48465ed7c1430e4b309ae",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Spine.ColorTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_color_timeline.html#affede28c1d16c21d9e73dcc6a5356fab",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Spine.TwoColorTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_two_color_timeline.html#a2c9f21db43b0cf974e420b40bfd5619e",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="Spine.DeformTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_deform_timeline.html#af1b1a85838d11f2dc7a03e3aaacf5efa",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Spine.IkConstraintTimeline.\lApply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_ik_constraint_timeline.html#ae89b8622fef2958df8aba7cebea2c917",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="Spine.TransformConstraint\lTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint_timeline.html#a44ecc143cb3e695254094fbce404d33f",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="Spine.PathConstraintPosition\lTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_position_timeline.html#af4a43c440772b83124ee83602b6aa220",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="Spine.PathConstraintSpacing\lTimeline.Apply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_spacing_timeline.html#ac0cfc36196b223998a5d3d98bbd94832",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Spine.PathConstraintMixTimeline.\lApply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint_mix_timeline.html#a1ce1eae36a7a93cc61052b008997354b",tooltip="Sets the value(s) for the specified time."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,266 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot}{}\doxysection{Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot}\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+
+
+Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ac29ecc079ea89902fdc1709f648ea118}{Update\+Distance}} (float center\+Of\+GravityX)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a3795f3b9dea469767f7a025dd1684342}{Start\+New\+Step}} (float new\+Distance, float center\+Of\+GravityX, float tentativeY, float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a54a67390423849c4620bb8bd918fa499}{foot\+Ray\+Raise}}, Raycast\+Hit2D\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_ac35bad68791caf3215072882cfb3cc3a}{hits}}, Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a019cd013d39b630a573bcc182cd678c2}{foot\+Size}})
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a59783e68ef43ed49eaf8210e1da50969}{Update\+Step\+Progress}} (float delta\+Time, float step\+Speed, float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_af3dfc34b3a8b7591492e5648ca8727a7}{shuffle\+Distance}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}} forward\+Movement, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}} backward\+Movement)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2231471ca136884f565c62fc169b26e7}{Get\+New\+Displacement}} (float other\+Leg\+Displacement\+From\+Center, float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a4b375441114845bbd8536e459ab18a48}{comfy\+Distance}}, float minimum\+Foot\+DistanceX, float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_ae5e24dad95c0418d9e2e8b4075fd413d}{max\+New\+Step\+Displacement}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}} forward\+Movement, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}} backward\+Movement)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{world\+Pos}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a64cf50acdbbd5fb2ac4e3290be1d242b}{displacement\+From\+Center}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_aca89ee02604e471f8cf0bad91a55d02b}{distance\+From\+Center}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}{world\+Pos\+Prev}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}{world\+Pos\+Next}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a8cd4190b410239625c467ace7f625d44}{Is\+Step\+In\+Progress}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a388889d3fbd0d5955dba1fde7902b569}{Is\+Pretty\+Much\+Done\+Stepping}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spineboy\+Footplanter.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2231471ca136884f565c62fc169b26e7}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2231471ca136884f565c62fc169b26e7}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!GetNewDisplacement@{GetNewDisplacement}}
+\index{GetNewDisplacement@{GetNewDisplacement}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{GetNewDisplacement()}{GetNewDisplacement()}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Get\+New\+Displacement (\begin{DoxyParamCaption}\item[{float}]{other\+Leg\+Displacement\+From\+Center,  }\item[{float}]{comfy\+Distance,  }\item[{float}]{minimum\+Foot\+DistanceX,  }\item[{float}]{max\+New\+Step\+Displacement,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}}}]{forward\+Movement,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}}}]{backward\+Movement }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 100 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                                                                                                                                                                                                                       \{}
+\DoxyCodeLine{101                 var movement = Mathf.Sign(otherLegDisplacementFromCenter) < 0 ? forwardMovement : backwardMovement;}
+\DoxyCodeLine{102                 \textcolor{keywordtype}{float} randomCompensate = Random.Range(movement.minDistanceCompensate, movement.maxDistanceCompensate);}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104                 \textcolor{keywordtype}{float} newDisplacement = (otherLegDisplacementFromCenter * randomCompensate);}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{if} (Mathf.Abs(newDisplacement) > \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_ae5e24dad95c0418d9e2e8b4075fd413d}{maxNewStepDisplacement}} || Mathf.Abs(otherLegDisplacementFromCenter) < minimumFootDistanceX)}
+\DoxyCodeLine{106                     newDisplacement = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a4b375441114845bbd8536e459ab18a48}{comfyDistance}} * Mathf.Sign(newDisplacement) * randomCompensate;}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108                 \textcolor{keywordflow}{return} newDisplacement;}
+\DoxyCodeLine{109             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a3795f3b9dea469767f7a025dd1684342}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a3795f3b9dea469767f7a025dd1684342}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!StartNewStep@{StartNewStep}}
+\index{StartNewStep@{StartNewStep}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{StartNewStep()}{StartNewStep()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Start\+New\+Step (\begin{DoxyParamCaption}\item[{float}]{new\+Distance,  }\item[{float}]{center\+Of\+GravityX,  }\item[{float}]{tentativeY,  }\item[{float}]{foot\+Ray\+Raise,  }\item[{Raycast\+Hit2D\mbox{[}$\,$\mbox{]}}]{hits,  }\item[{Vector2}]{foot\+Size }\end{DoxyParamCaption})}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63                                                                                                                                                               \{}
+\DoxyCodeLine{64                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} = 0f;}
+\DoxyCodeLine{65                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}{worldPosPrev}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{worldPos}};}
+\DoxyCodeLine{66                 \textcolor{keywordtype}{float} newX = centerOfGravityX -\/ newDistance;}
+\DoxyCodeLine{67                 Vector2 origin = \textcolor{keyword}{new} Vector2(newX, tentativeY + \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a54a67390423849c4620bb8bd918fa499}{footRayRaise}});}
+\DoxyCodeLine{68                 \textcolor{comment}{//int hitCount = Physics2D.BoxCastNonAlloc(origin, footSize, 0f, Vector2.down, hits);}}
+\DoxyCodeLine{69                 \textcolor{keywordtype}{int} hitCount = Physics2D.BoxCast(origin, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_a019cd013d39b630a573bcc182cd678c2}{footSize}}, 0f, Vector2.down, \textcolor{keyword}{new} ContactFilter2D \{ useTriggers = false \}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_ac35bad68791caf3215072882cfb3cc3a}{hits}});}
+\DoxyCodeLine{70                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}{worldPosNext}} = hitCount > 0 ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_ac35bad68791caf3215072882cfb3cc3a}{hits}}[0].point : \textcolor{keyword}{new} Vector2(newX, tentativeY);}
+\DoxyCodeLine{71             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ac29ecc079ea89902fdc1709f648ea118}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ac29ecc079ea89902fdc1709f648ea118}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!UpdateDistance@{UpdateDistance}}
+\index{UpdateDistance@{UpdateDistance}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{UpdateDistance()}{UpdateDistance()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Update\+Distance (\begin{DoxyParamCaption}\item[{float}]{center\+Of\+GravityX }\end{DoxyParamCaption})}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                 \{}
+\DoxyCodeLine{59                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a64cf50acdbbd5fb2ac4e3290be1d242b}{displacementFromCenter}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{worldPos}}.x -\/ centerOfGravityX;}
+\DoxyCodeLine{60                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_aca89ee02604e471f8cf0bad91a55d02b}{distanceFromCenter}} = Mathf.Abs(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a64cf50acdbbd5fb2ac4e3290be1d242b}{displacementFromCenter}});}
+\DoxyCodeLine{61             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a59783e68ef43ed49eaf8210e1da50969}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a59783e68ef43ed49eaf8210e1da50969}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!UpdateStepProgress@{UpdateStepProgress}}
+\index{UpdateStepProgress@{UpdateStepProgress}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{UpdateStepProgress()}{UpdateStepProgress()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Update\+Step\+Progress (\begin{DoxyParamCaption}\item[{float}]{delta\+Time,  }\item[{float}]{step\+Speed,  }\item[{float}]{shuffle\+Distance,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}}}]{forward\+Movement,  }\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_movement}{Foot\+Movement}}}]{backward\+Movement }\end{DoxyParamCaption})}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                                                                                                                                                   \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{if} (!this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a8cd4190b410239625c467ace7f625d44}{IsStepInProgress}})}
+\DoxyCodeLine{75                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} += deltaTime * stepSpeed;}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79                 \textcolor{keywordtype}{float} strideSignedSize = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}{worldPosNext}}.x -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}{worldPosPrev}}.x;}
+\DoxyCodeLine{80                 \textcolor{keywordtype}{float} strideSign = Mathf.Sign(strideSignedSize);}
+\DoxyCodeLine{81                 \textcolor{keywordtype}{float} strideSize = (Mathf.Abs(strideSignedSize));}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83                 var movement = strideSign > 0 ? forwardMovement : backwardMovement;}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{worldPos}}.x = Mathf.Lerp(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}{worldPosPrev}}.x, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}{worldPosNext}}.x, movement.xMoveCurve.Evaluate(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}}));}
+\DoxyCodeLine{86                 \textcolor{keywordtype}{float} groundLevel = Mathf.Lerp(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}{worldPosPrev}}.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}{worldPosNext}}.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}});}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88                 \textcolor{keywordflow}{if} (strideSize > \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_af3dfc34b3a8b7591492e5648ca8727a7}{shuffleDistance}}) \{}
+\DoxyCodeLine{89                     \textcolor{keywordtype}{float} strideSizeFootRaise = Mathf.Clamp((strideSize * 0.5f), 1f, 2f);}
+\DoxyCodeLine{90                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{worldPos}}.y = groundLevel + (movement.raiseCurve.Evaluate(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}}) * movement.maxRaise * strideSizeFootRaise);}
+\DoxyCodeLine{91                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{92                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} += Time.deltaTime;}
+\DoxyCodeLine{93                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}{worldPos}}.y = groundLevel;}
+\DoxyCodeLine{94                 \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} > 1f)}
+\DoxyCodeLine{97                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} = 1f;}
+\DoxyCodeLine{98             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a64cf50acdbbd5fb2ac4e3290be1d242b}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a64cf50acdbbd5fb2ac4e3290be1d242b}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!displacementFromCenter@{displacementFromCenter}}
+\index{displacementFromCenter@{displacementFromCenter}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{displacementFromCenter}{displacementFromCenter}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+displacement\+From\+Center}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_aca89ee02604e471f8cf0bad91a55d02b}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_aca89ee02604e471f8cf0bad91a55d02b}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!distanceFromCenter@{distanceFromCenter}}
+\index{distanceFromCenter@{distanceFromCenter}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{distanceFromCenter}{distanceFromCenter}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+distance\+From\+Center}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!lerp@{lerp}}
+\index{lerp@{lerp}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{lerp}{lerp}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+lerp}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad52e6a129a25b96e297b6b592267d31e}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!worldPos@{worldPos}}
+\index{worldPos@{worldPos}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{worldPos}{worldPos}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+world\+Pos}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a6ba3ff7bf3c5ca1d7a64e075744fe5d9}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!worldPosNext@{worldPosNext}}
+\index{worldPosNext@{worldPosNext}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{worldPosNext}{worldPosNext}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+world\+Pos\+Next}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_ad38868e146ddbbc90b9dc3ea83280530}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!worldPosPrev@{worldPosPrev}}
+\index{worldPosPrev@{worldPosPrev}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{worldPosPrev}{worldPosPrev}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+world\+Pos\+Prev}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a388889d3fbd0d5955dba1fde7902b569}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a388889d3fbd0d5955dba1fde7902b569}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!IsPrettyMuchDoneStepping@{IsPrettyMuchDoneStepping}}
+\index{IsPrettyMuchDoneStepping@{IsPrettyMuchDoneStepping}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{IsPrettyMuchDoneStepping}{IsPrettyMuchDoneStepping}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Is\+Pretty\+Much\+Done\+Stepping\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} > 0.7f; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a8cd4190b410239625c467ace7f625d44}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a8cd4190b410239625c467ace7f625d44}} 
+\index{Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}!IsStepInProgress@{IsStepInProgress}}
+\index{IsStepInProgress@{IsStepInProgress}!Spine.Unity.Examples.SpineboyFootplanter.Foot@{Spine.Unity.Examples.SpineboyFootplanter.Foot}}
+\doxysubsubsection{\texorpdfstring{IsStepInProgress}{IsStepInProgress}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Examples.\+Spineboy\+Footplanter.\+Foot.\+Is\+Step\+In\+Progress\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spineboy\+Footplanter.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_footplanter_1_1_foot_a2e79376c7f388dd8f01a71e9155ddf0e}{lerp}} < 1f; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spineboy_footplanter_8cs}{Spineboy\+Footplanter.\+cs}}\end{DoxyCompactItemize}

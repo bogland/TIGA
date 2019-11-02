@@ -1,0 +1,203 @@
+\hypertarget{class_spine_1_1_ik_constraint_data}{}\doxysection{Spine.\+Ik\+Constraint\+Data 클래스 참조}
+\label{class_spine_1_1_ik_constraint_data}\index{Spine.IkConstraintData@{Spine.IkConstraintData}}
+
+
+Stores the setup pose for an \mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}}.  
+
+
+
+
+Spine.\+Ik\+Constraint\+Data에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_ik_constraint_data_ab729cf553aa7b9557df24cbbb52bd438}{Ik\+Constraint\+Data}} (string name)
+\item 
+override string \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_aed6f01b6330c164e6029754ffcc17de4}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_aec3edcc34fbc8aef7b5b2dd1d76bc5b8}{Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The IK constraint\textquotesingle{}s name, which is unique within the skeleton. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_a782e357e16b69d211bfcdef27e381729}{Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} $>$ \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_a9c70e1c461bc1699dc7e66e86707d54b}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The bones that are constrained by this IK Constraint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_a18da05e4ffd82a3b231f3b8fca46e8c7}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The bone that is the IK target. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_a4205e132826ab1e8e5e460d4d6558946}{Bend\+Direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Controls the bend direction of the IK bones, either 1 or -\/1. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_ik_constraint_data_af429d25c9a81a72e9d015b81018de49a}{Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Stores the setup pose for an \mbox{\hyperlink{class_spine_1_1_ik_constraint}{Ik\+Constraint}}. 
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_ab729cf553aa7b9557df24cbbb52bd438}\label{class_spine_1_1_ik_constraint_data_ab729cf553aa7b9557df24cbbb52bd438}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!IkConstraintData@{IkConstraintData}}
+\index{IkConstraintData@{IkConstraintData}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{IkConstraintData()}{IkConstraintData()}}
+{\footnotesize\ttfamily Spine.\+Ik\+Constraint\+Data.\+Ik\+Constraint\+Data (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                               \{}
+\DoxyCodeLine{74             \textcolor{keywordflow}{if} (name == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"name"}, \textcolor{stringliteral}{"name cannot be null."});}
+\DoxyCodeLine{75             this.name = name;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_aed6f01b6330c164e6029754ffcc17de4}\label{class_spine_1_1_ik_constraint_data_aed6f01b6330c164e6029754ffcc17de4}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Ik\+Constraint\+Data.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78                                            \{}
+\DoxyCodeLine{79             \textcolor{keywordflow}{return} name;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_a4205e132826ab1e8e5e460d4d6558946}\label{class_spine_1_1_ik_constraint_data_a4205e132826ab1e8e5e460d4d6558946}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!BendDirection@{BendDirection}}
+\index{BendDirection@{BendDirection}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{BendDirection}{BendDirection}}
+{\footnotesize\ttfamily int Spine.\+Ik\+Constraint\+Data.\+Bend\+Direction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Controls the bend direction of the IK bones, either 1 or -\/1. 
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                                  \{}
+\DoxyCodeLine{67             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bendDirection; \}}
+\DoxyCodeLine{68             \textcolor{keyword}{set} \{ bendDirection = value; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_a9c70e1c461bc1699dc7e66e86707d54b}\label{class_spine_1_1_ik_constraint_data_a9c70e1c461bc1699dc7e66e86707d54b}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}}$>$ Spine.\+Ik\+Constraint\+Data.\+Bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The bones that are constrained by this IK Constraint. 
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                     \{}
+\DoxyCodeLine{56             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_af429d25c9a81a72e9d015b81018de49a}\label{class_spine_1_1_ik_constraint_data_af429d25c9a81a72e9d015b81018de49a}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!Mix@{Mix}}
+\index{Mix@{Mix}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{Mix}{Mix}}
+{\footnotesize\ttfamily float Spine.\+Ik\+Constraint\+Data.\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} mix; \} \textcolor{keyword}{set} \{ mix = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_aec3edcc34fbc8aef7b5b2dd1d76bc5b8}\label{class_spine_1_1_ik_constraint_data_aec3edcc34fbc8aef7b5b2dd1d76bc5b8}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!Name@{Name}}
+\index{Name@{Name}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily string Spine.\+Ik\+Constraint\+Data.\+Name\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The IK constraint\textquotesingle{}s name, which is unique within the skeleton. 
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                            \{}
+\DoxyCodeLine{46             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} name; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_a782e357e16b69d211bfcdef27e381729}\label{class_spine_1_1_ik_constraint_data_a782e357e16b69d211bfcdef27e381729}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!Order@{Order}}
+\index{Order@{Order}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily int Spine.\+Ik\+Constraint\+Data.\+Order\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                          \{}
+\DoxyCodeLine{50             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} order; \}}
+\DoxyCodeLine{51             \textcolor{keyword}{set} \{ order = value; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_data_a18da05e4ffd82a3b231f3b8fca46e8c7}\label{class_spine_1_1_ik_constraint_data_a18da05e4ffd82a3b231f3b8fca46e8c7}} 
+\index{Spine.IkConstraintData@{Spine.IkConstraintData}!Target@{Target}}
+\index{Target@{Target}!Spine.IkConstraintData@{Spine.IkConstraintData}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone_data}{Bone\+Data}} Spine.\+Ik\+Constraint\+Data.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The bone that is the IK target. 
+
+
+
+Ik\+Constraint\+Data.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60                                \{}
+\DoxyCodeLine{61             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target; \}}
+\DoxyCodeLine{62             \textcolor{keyword}{set} \{ target = value; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_ik_constraint_data_8cs}{Ik\+Constraint\+Data.\+cs}}\end{DoxyCompactItemize}

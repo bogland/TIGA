@@ -1,0 +1,426 @@
+\hypertarget{class_spine_1_1_ik_constraint}{}\doxysection{Spine.\+Ik\+Constraint 클래스 참조}
+\label{class_spine_1_1_ik_constraint}\index{Spine.IkConstraint@{Spine.IkConstraint}}
+
+
+Spine.\+Ik\+Constraint에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Ik\+Constraint에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_ik_constraint_a798033292134e6c7da7d1f8aa4625476}{Ik\+Constraint}} (\mbox{\hyperlink{class_spine_1_1_ik_constraint_data}{Ik\+Constraint\+Data}} data, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_ik_constraint_accd24501bad447f35f2107d97aff1b1e}{Apply}} ()
+\begin{DoxyCompactList}\small\item\em Applies the constraint to the constrained bones. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_ik_constraint_a4cb6adb62c4276a485cf73bd084953b1}{Update}} ()
+\item 
+override string \mbox{\hyperlink{class_spine_1_1_ik_constraint_ad47467a0cc383a862565d4d4970b5e91}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_ik_constraint_ae1b3e8d7b7cd23f1bc3a4073fdd0acdd}{Apply}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} bone, float targetX, float targetY, float alpha)
+\begin{DoxyCompactList}\small\item\em Adjusts the bone rotation so the tip is as close to the target position as possible. The target is specified in the world coordinate system. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_ik_constraint_a02582f011f47cef9af130cc0a0fb6d35}{Apply}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} parent, \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} child, float targetX, float targetY, int bend\+Dir, float alpha)
+\begin{DoxyCompactList}\small\item\em Adjusts the parent and child bone rotations so the tip of the child is as close to the target position as possible. The target is specified in the world coordinate system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_ik_constraint_data}{Ik\+Constraint\+Data}} \mbox{\hyperlink{class_spine_1_1_ik_constraint_a7640855cda04f79aa1b4966a329d550a}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_ik_constraint_a18b6bd9e95f4300a2b17174269103333}{Order}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} $>$ \mbox{\hyperlink{class_spine_1_1_ik_constraint_a5e2ac0834351698df61b21155f51c949}{Bones}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_ik_constraint_ad1a580213fc5cfa4dbd9d452f0bd5067}{Target}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_ik_constraint_a692813c7fbad094d14b5e43045856886}{Bend\+Direction}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_ik_constraint_a23bc63bb003cf787f7101eee7859a84d}{Mix}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Ik\+Constraint.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a798033292134e6c7da7d1f8aa4625476}\label{class_spine_1_1_ik_constraint_a798033292134e6c7da7d1f8aa4625476}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!IkConstraint@{IkConstraint}}
+\index{IkConstraint@{IkConstraint}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{IkConstraint()}{IkConstraint()}}
+{\footnotesize\ttfamily Spine.\+Ik\+Constraint.\+Ik\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_ik_constraint_data}{Ik\+Constraint\+Data}}}]{data,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton }\end{DoxyParamCaption})}
+
+
+
+Ik\+Constraint.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                                        \{}
+\DoxyCodeLine{49             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"data"}, \textcolor{stringliteral}{"data cannot be null."});}
+\DoxyCodeLine{50             \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"skeleton"}, \textcolor{stringliteral}{"skeleton cannot be null."});}
+\DoxyCodeLine{51             this.data = data;}
+\DoxyCodeLine{52             mix = data.mix;}
+\DoxyCodeLine{53             bendDirection = data.bendDirection;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55             bones = \textcolor{keyword}{new} ExposedList<Bone>(data.bones.Count);}
+\DoxyCodeLine{56             \textcolor{keywordflow}{foreach} (BoneData boneData \textcolor{keywordflow}{in} data.bones)}
+\DoxyCodeLine{57                 bones.Add(skeleton.FindBone(boneData.name));}
+\DoxyCodeLine{58             target = skeleton.FindBone(data.target.name);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_accd24501bad447f35f2107d97aff1b1e}\label{class_spine_1_1_ik_constraint_accd24501bad447f35f2107d97aff1b1e}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Spine.\+Ik\+Constraint.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Applies the constraint to the constrained bones. 
+
+
+
+Ik\+Constraint.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                              \{}
+\DoxyCodeLine{63             \mbox{\hyperlink{class_spine_1_1_ik_constraint_a4cb6adb62c4276a485cf73bd084953b1}{Update}}();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_ae1b3e8d7b7cd23f1bc3a4073fdd0acdd}\label{class_spine_1_1_ik_constraint_ae1b3e8d7b7cd23f1bc3a4073fdd0acdd}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static void Spine.\+Ik\+Constraint.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{bone,  }\item[{float}]{targetX,  }\item[{float}]{targetY,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adjusts the bone rotation so the tip is as close to the target position as possible. The target is specified in the world coordinate system. 
+
+
+
+Ik\+Constraint.\+cs 파일의 84 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                                                         \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{if} (!bone.appliedValid) bone.UpdateAppliedTransform();}
+\DoxyCodeLine{87             Bone p = bone.parent;}
+\DoxyCodeLine{88             \textcolor{keywordtype}{float} \textcolor{keywordtype}{id} = 1 / (p.a * p.d -\/ p.b * p.c);}
+\DoxyCodeLine{89             \textcolor{keywordtype}{float} x = targetX -\/ p.worldX, y = targetY -\/ p.worldY;}
+\DoxyCodeLine{90             \textcolor{keywordtype}{float} tx = (x * p.d -\/ y * p.b) * \textcolor{keywordtype}{id} -\/ bone.ax, ty = (y * p.a -\/ x * p.c) * \textcolor{keywordtype}{id} -\/ bone.ay;}
+\DoxyCodeLine{91             \textcolor{keywordtype}{float} rotationIK = (float)Math.Atan2(ty, tx) * MathUtils.RadDeg -\/ bone.ashearX -\/ bone.arotation;}
+\DoxyCodeLine{92             \textcolor{keywordflow}{if} (bone.ascaleX < 0) rotationIK += 180;}
+\DoxyCodeLine{93             \textcolor{keywordflow}{if} (rotationIK > 180)}
+\DoxyCodeLine{94                 rotationIK -\/= 360;}
+\DoxyCodeLine{95             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (rotationIK < -\/180) rotationIK += 360;}
+\DoxyCodeLine{96             bone.UpdateWorldTransform(bone.ax, bone.ay, bone.arotation + rotationIK * alpha, bone.ascaleX, bone.ascaleY, bone.ashearX,}
+\DoxyCodeLine{97                 bone.ashearY);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a02582f011f47cef9af130cc0a0fb6d35}\label{class_spine_1_1_ik_constraint_a02582f011f47cef9af130cc0a0fb6d35}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void Spine.\+Ik\+Constraint.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{parent,  }\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{child,  }\item[{float}]{targetX,  }\item[{float}]{targetY,  }\item[{int}]{bend\+Dir,  }\item[{float}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adjusts the parent and child bone rotations so the tip of the child is as close to the target position as possible. The target is specified in the world coordinate system. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em child} & A direct descendant of the parent bone.\\
+\hline
+\end{DoxyParams}
+
+
+Ik\+Constraint.\+cs 파일의 102 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                                                                                                    \{}
+\DoxyCodeLine{104             \textcolor{keywordflow}{if} (alpha == 0) \{}
+\DoxyCodeLine{105                 child.UpdateWorldTransform ();}
+\DoxyCodeLine{106                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108             \textcolor{comment}{//float px = parent.x, py = parent.y, psx = parent.scaleX, psy = parent.scaleY, csx = child.scaleX;}}
+\DoxyCodeLine{109             \textcolor{keywordflow}{if} (!parent.appliedValid) parent.UpdateAppliedTransform();}
+\DoxyCodeLine{110             \textcolor{keywordflow}{if} (!child.appliedValid) child.UpdateAppliedTransform();}
+\DoxyCodeLine{111             \textcolor{keywordtype}{float} px = parent.ax, py = parent.ay, psx = parent.ascaleX, psy = parent.ascaleY, csx = child.ascaleX;}
+\DoxyCodeLine{112             \textcolor{keywordtype}{int} os1, os2, s2;}
+\DoxyCodeLine{113             \textcolor{keywordflow}{if} (psx < 0) \{}
+\DoxyCodeLine{114                 psx = -\/psx;}
+\DoxyCodeLine{115                 os1 = 180;}
+\DoxyCodeLine{116                 s2 = -\/1;}
+\DoxyCodeLine{117             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{118                 os1 = 0;}
+\DoxyCodeLine{119                 s2 = 1;}
+\DoxyCodeLine{120             \}}
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (psy < 0) \{}
+\DoxyCodeLine{122                 psy = -\/psy;}
+\DoxyCodeLine{123                 s2 = -\/s2;}
+\DoxyCodeLine{124             \}}
+\DoxyCodeLine{125             \textcolor{keywordflow}{if} (csx < 0) \{}
+\DoxyCodeLine{126                 csx = -\/csx;}
+\DoxyCodeLine{127                 os2 = 180;}
+\DoxyCodeLine{128             \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{129                 os2 = 0;}
+\DoxyCodeLine{130             \textcolor{keywordtype}{float} cx = child.ax, cy, cwx, cwy, a = parent.a, b = parent.b, c = parent.c, d = parent.d;}
+\DoxyCodeLine{131             \textcolor{keywordtype}{bool} u = Math.Abs(psx -\/ psy) <= 0.0001f;}
+\DoxyCodeLine{132             \textcolor{keywordflow}{if} (!u) \{}
+\DoxyCodeLine{133                 cy = 0;}
+\DoxyCodeLine{134                 cwx = a * cx + parent.worldX;}
+\DoxyCodeLine{135                 cwy = c * cx + parent.worldY;}
+\DoxyCodeLine{136             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{137                 cy = child.ay;}
+\DoxyCodeLine{138                 cwx = a * cx + b * cy + parent.worldX;}
+\DoxyCodeLine{139                 cwy = c * cx + d * cy + parent.worldY;}
+\DoxyCodeLine{140             \}}
+\DoxyCodeLine{141             Bone pp = parent.parent;}
+\DoxyCodeLine{142             a = pp.a;}
+\DoxyCodeLine{143             b = pp.b;}
+\DoxyCodeLine{144             c = pp.c;}
+\DoxyCodeLine{145             d = pp.d;}
+\DoxyCodeLine{146             \textcolor{keywordtype}{float} \textcolor{keywordtype}{id} = 1 / (a * d -\/ b * c), x = targetX -\/ pp.worldX, y = targetY -\/ pp.worldY;}
+\DoxyCodeLine{147             \textcolor{keywordtype}{float} tx = (x * d -\/ y * b) * \textcolor{keywordtype}{id} -\/ px, ty = (y * a -\/ x * c) * \textcolor{keywordtype}{id} -\/ py;}
+\DoxyCodeLine{148             x = cwx -\/ pp.worldX;}
+\DoxyCodeLine{149             y = cwy -\/ pp.worldY;}
+\DoxyCodeLine{150             \textcolor{keywordtype}{float} dx = (x * d -\/ y * b) * \textcolor{keywordtype}{id} -\/ px, dy = (y * a -\/ x * c) * \textcolor{keywordtype}{id} -\/ py;}
+\DoxyCodeLine{151             \textcolor{keywordtype}{float} l1 = (float)Math.Sqrt(dx * dx + dy * dy), l2 = child.data.length * csx, a1, a2;}
+\DoxyCodeLine{152             \textcolor{keywordflow}{if} (u) \{}
+\DoxyCodeLine{153                 l2 *= psx;}
+\DoxyCodeLine{154                 \textcolor{keywordtype}{float} cos = (tx * tx + ty * ty -\/ l1 * l1 -\/ l2 * l2) / (2 * l1 * l2);}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{if} (cos < -\/1)}
+\DoxyCodeLine{156                     cos = -\/1;}
+\DoxyCodeLine{157                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (cos > 1) cos = 1;}
+\DoxyCodeLine{158                 a2 = (float)Math.Acos(cos) * bendDir;}
+\DoxyCodeLine{159                 a = l1 + l2 * cos;}
+\DoxyCodeLine{160                 b = l2 * (float)Math.Sin(a2);}
+\DoxyCodeLine{161                 a1 = (float)Math.Atan2(ty * a -\/ tx * b, tx * a + ty * b);}
+\DoxyCodeLine{162             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{163                 a = psx * l2;}
+\DoxyCodeLine{164                 b = psy * l2;}
+\DoxyCodeLine{165                 \textcolor{keywordtype}{float} aa = a * a, bb = b * b, dd = tx * tx + ty * ty, ta = (float)Math.Atan2(ty, tx);}
+\DoxyCodeLine{166                 c = bb * l1 * l1 + aa * dd -\/ aa * bb;}
+\DoxyCodeLine{167                 \textcolor{keywordtype}{float} c1 = -\/2 * bb * l1, c2 = bb -\/ aa;}
+\DoxyCodeLine{168                 d = c1 * c1 -\/ 4 * c2 * c;}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{if} (d >= 0) \{}
+\DoxyCodeLine{170                     \textcolor{keywordtype}{float} q = (float)Math.Sqrt(d);}
+\DoxyCodeLine{171                     \textcolor{keywordflow}{if} (c1 < 0) q = -\/q;}
+\DoxyCodeLine{172                     q = -\/(c1 + q) / 2;}
+\DoxyCodeLine{173                     \textcolor{keywordtype}{float} r0 = q / c2, r1 = c / q;}
+\DoxyCodeLine{174                     \textcolor{keywordtype}{float} r = Math.Abs(r0) < Math.Abs(r1) ? r0 : r1;}
+\DoxyCodeLine{175                     \textcolor{keywordflow}{if} (r * r <= dd) \{}
+\DoxyCodeLine{176                         y = (float)Math.Sqrt(dd -\/ r * r) * bendDir;}
+\DoxyCodeLine{177                         a1 = ta -\/ (float)Math.Atan2(y, r);}
+\DoxyCodeLine{178                         a2 = (float)Math.Atan2(y / psy, (r -\/ l1) / psx);}
+\DoxyCodeLine{179                         \textcolor{keywordflow}{goto} break\_outer; \textcolor{comment}{// break outer;}}
+\DoxyCodeLine{180                     \}}
+\DoxyCodeLine{181                 \}}
+\DoxyCodeLine{182                 \textcolor{keywordtype}{float} minAngle = MathUtils.PI, minX = l1 -\/ a, minDist = minX * minX, minY = 0;}
+\DoxyCodeLine{183                 \textcolor{keywordtype}{float} maxAngle = 0, maxX = l1 + a, maxDist = maxX * maxX, maxY = 0;}
+\DoxyCodeLine{184                 c = -\/a * l1 / (aa -\/ bb);}
+\DoxyCodeLine{185                 \textcolor{keywordflow}{if} (c >= -\/1 \&\& c <= 1) \{}
+\DoxyCodeLine{186                     c = (float)Math.Acos(c);}
+\DoxyCodeLine{187                     x = a * (float)Math.Cos(c) + l1;}
+\DoxyCodeLine{188                     y = b * (float)Math.Sin(c);}
+\DoxyCodeLine{189                     d = x * x + y * y;}
+\DoxyCodeLine{190                     \textcolor{keywordflow}{if} (d < minDist) \{}
+\DoxyCodeLine{191                         minAngle = c;}
+\DoxyCodeLine{192                         minDist = d;}
+\DoxyCodeLine{193                         minX = x;}
+\DoxyCodeLine{194                         minY = y;}
+\DoxyCodeLine{195                     \}}
+\DoxyCodeLine{196                     \textcolor{keywordflow}{if} (d > maxDist) \{}
+\DoxyCodeLine{197                         maxAngle = c;}
+\DoxyCodeLine{198                         maxDist = d;}
+\DoxyCodeLine{199                         maxX = x;}
+\DoxyCodeLine{200                         maxY = y;}
+\DoxyCodeLine{201                     \}}
+\DoxyCodeLine{202                 \}}
+\DoxyCodeLine{203                 \textcolor{keywordflow}{if} (dd <= (minDist + maxDist) / 2) \{}
+\DoxyCodeLine{204                     a1 = ta -\/ (float)Math.Atan2(minY * bendDir, minX);}
+\DoxyCodeLine{205                     a2 = minAngle * bendDir;}
+\DoxyCodeLine{206                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{207                     a1 = ta -\/ (float)Math.Atan2(maxY * bendDir, maxX);}
+\DoxyCodeLine{208                     a2 = maxAngle * bendDir;}
+\DoxyCodeLine{209                 \}}
+\DoxyCodeLine{210             \}}
+\DoxyCodeLine{211             break\_outer:}
+\DoxyCodeLine{212             \textcolor{keywordtype}{float} os = (float)Math.Atan2(cy, cx) * s2;}
+\DoxyCodeLine{213             \textcolor{keywordtype}{float} rotation = parent.arotation;}
+\DoxyCodeLine{214             a1 = (a1 -\/ os) * MathUtils.RadDeg + os1 -\/ rotation;}
+\DoxyCodeLine{215             if (a1 > 180)}
+\DoxyCodeLine{216                 a1 -\/= 360;}
+\DoxyCodeLine{217             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a1 < -\/180) a1 += 360;}
+\DoxyCodeLine{218             parent.UpdateWorldTransform(px, py, rotation + a1 * alpha, parent.scaleX, parent.ascaleY, 0, 0);}
+\DoxyCodeLine{219             rotation = child.arotation;}
+\DoxyCodeLine{220             a2 = ((a2 + os) * MathUtils.RadDeg -\/ child.ashearX) * s2 + os2 -\/ rotation;}
+\DoxyCodeLine{221             \textcolor{keywordflow}{if} (a2 > 180)}
+\DoxyCodeLine{222                 a2 -\/= 360;}
+\DoxyCodeLine{223             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (a2 < -\/180) a2 += 360;}
+\DoxyCodeLine{224             child.UpdateWorldTransform(cx, cy, rotation + a2 * alpha, child.ascaleX, child.ascaleY, child.ashearX, child.ashearY);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_ad47467a0cc383a862565d4d4970b5e91}\label{class_spine_1_1_ik_constraint_ad47467a0cc383a862565d4d4970b5e91}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Ik\+Constraint.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ik\+Constraint.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79                                            \{}
+\DoxyCodeLine{80             \textcolor{keywordflow}{return} data.name;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a4cb6adb62c4276a485cf73bd084953b1}\label{class_spine_1_1_ik_constraint_a4cb6adb62c4276a485cf73bd084953b1}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Update@{Update}}
+\index{Update@{Update}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Ik\+Constraint.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_i_updatable_af75ae5ed7483a4734dc1ee40b825ab77}{Spine.\+I\+Updatable}}를 구현.
+
+
+
+Ik\+Constraint.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                               \{}
+\DoxyCodeLine{67             Bone target = this.target;}
+\DoxyCodeLine{68             ExposedList<Bone> bones = this.bones;}
+\DoxyCodeLine{69             \textcolor{keywordflow}{switch} (bones.Count) \{}
+\DoxyCodeLine{70             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{71                 \mbox{\hyperlink{class_spine_1_1_ik_constraint_accd24501bad447f35f2107d97aff1b1e}{Apply}}(bones.Items[0], target.worldX, target.worldY, mix);}
+\DoxyCodeLine{72                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{73             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{74                 \mbox{\hyperlink{class_spine_1_1_ik_constraint_accd24501bad447f35f2107d97aff1b1e}{Apply}}(bones.Items[0], bones.Items[1], target.worldX, target.worldY, bendDirection, mix);}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{76             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a692813c7fbad094d14b5e43045856886}\label{class_spine_1_1_ik_constraint_a692813c7fbad094d14b5e43045856886}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!BendDirection@{BendDirection}}
+\index{BendDirection@{BendDirection}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{BendDirection}{BendDirection}}
+{\footnotesize\ttfamily int Spine.\+Ik\+Constraint.\+Bend\+Direction\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} target; \} \textcolor{keyword}{set} \{ target = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a5e2ac0834351698df61b21155f51c949}\label{class_spine_1_1_ik_constraint_a5e2ac0834351698df61b21155f51c949}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Bones@{Bones}}
+\index{Bones@{Bones}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Bones}{Bones}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}$>$ Spine.\+Ik\+Constraint.\+Bones\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data.order; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a7640855cda04f79aa1b4966a329d550a}\label{class_spine_1_1_ik_constraint_a7640855cda04f79aa1b4966a329d550a}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Data@{Data}}
+\index{Data@{Data}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_ik_constraint_data}{Ik\+Constraint\+Data}} Spine.\+Ik\+Constraint.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a23bc63bb003cf787f7101eee7859a84d}\label{class_spine_1_1_ik_constraint_a23bc63bb003cf787f7101eee7859a84d}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Mix@{Mix}}
+\index{Mix@{Mix}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Mix}{Mix}}
+{\footnotesize\ttfamily float Spine.\+Ik\+Constraint.\+Mix\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bendDirection; \} \textcolor{keyword}{set} \{ bendDirection = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_a18b6bd9e95f4300a2b17174269103333}\label{class_spine_1_1_ik_constraint_a18b6bd9e95f4300a2b17174269103333}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Order@{Order}}
+\index{Order@{Order}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Order}{Order}}
+{\footnotesize\ttfamily int Spine.\+Ik\+Constraint.\+Order\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_ik_constraint_ad1a580213fc5cfa4dbd9d452f0bd5067}\label{class_spine_1_1_ik_constraint_ad1a580213fc5cfa4dbd9d452f0bd5067}} 
+\index{Spine.IkConstraint@{Spine.IkConstraint}!Target@{Target}}
+\index{Target@{Target}!Spine.IkConstraint@{Spine.IkConstraint}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Ik\+Constraint.\+Target\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Ik\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} bones; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_ik_constraint_8cs}{Ik\+Constraint.\+cs}}\end{DoxyCompactItemize}

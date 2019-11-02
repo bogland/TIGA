@@ -1,0 +1,16 @@
+digraph "Spine.Unity.Examples.SpineboyBeginnerView.Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Spineboy\lBeginnerView.Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Examples.Spineboy\lBeginnerView.PlayNewStableAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_view.html#af33562e0ebd809cc82dc8518db128194",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Examples.Spineboy\lBeginnerView.PlayFootstepSound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_view.html#af8296a124ed62edf27f27e7ef429e57a",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Unity.Examples.Spineboy\lBeginnerView.GetRandomPitch",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_view.html#a5fea9086579f48cf19901f13c785fc57",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Spine.Unity.Examples.Spineboy\lBeginnerView.Turn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spineboy_beginner_view.html#ac186f02b8f74929adf9661c1bc82d1c4",tooltip=" "];
+}

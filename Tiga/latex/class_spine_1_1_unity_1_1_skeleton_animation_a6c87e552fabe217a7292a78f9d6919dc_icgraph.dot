@@ -1,0 +1,18 @@
+digraph "Spine.Unity.SkeletonAnimation.Initialize"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.SkeletonAnimation.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects a..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Examples.Spawn\lFromSkeletonDataExample.DoExtraStuff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example.html#a428979122a4cabd6f5fec3600b8a15d3",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Examples.Spawn\lFromSkeletonDataExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example.html#a68d0fcf01a97b1981bdc8235fe0f9f60",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Editor.Spine\lEditorUtilities.InstantiateSkeleton\lAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a9a009a70bc23b76080dfcdec1f9600cf",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Examples.Data\lAssetsFromExportsExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_data_assets_from_exports_example.html#ae073836d2a0983f784abc976f8f03531",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.Examples.Handle\lEventWithAudioExample.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example.html#abae2883855259a2fb313187a6eef3a85",tooltip=" "];
+}

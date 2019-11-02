@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Modules.AttachmentTools.AttachmentRegionExtensions"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Modules.Attachment\lTools.AttachmentRegionExtensions\n||+ GetRegion()\l+ GetRegion()\l+ GetRegion()\l+ SetRegion()\l+ SetRegion()\l+ SetRegion()\l+ ToRegionAttachment()\l+ ToRegionAttachment()\l+ ToRegionAttachmentPMAClone()\l+ ToRegionAttachmentPMAClone()\l그리고 6개 더...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

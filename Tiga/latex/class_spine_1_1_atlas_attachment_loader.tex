@@ -1,0 +1,289 @@
+\hypertarget{class_spine_1_1_atlas_attachment_loader}{}\doxysection{Spine.\+Atlas\+Attachment\+Loader 클래스 참조}
+\label{class_spine_1_1_atlas_attachment_loader}\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+
+
+An \mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}} that configures attachments using texture regions from an \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}. See \href{http://esotericsoftware.com/spine-loading-skeleton-data\#JSON-and-binary-data}{\texttt{ Loading Skeleton Data}} in the \mbox{\hyperlink{namespace_spine}{Spine}} Runtimes Guide.  
+
+
+
+
+Spine.\+Atlas\+Attachment\+Loader에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Atlas\+Attachment\+Loader에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a3fd62c2c238a6a6bb6ec2f74fa65f109}{Atlas\+Attachment\+Loader}} (params \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlas\+Array}})
+\item 
+\mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a82d9f2833ec43a445c76ad765d8c1031}{New\+Region\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name, string path)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a4ed43e8f40497ea896466b0d9f565894}{New\+Mesh\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name, string path)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_af4e3beb65efaed84e684d78050afde70}{New\+Bounding\+Box\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\begin{DoxyCompactList}\small\item\em $<$return$>$May be null to not load any attachment.$<$/return$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aad18a939954b56f7d16d24f0ca46b103}{New\+Path\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyReturn}{반환값}
+May be null to not load any attachment
+\end{DoxyReturn}
+\end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a671c5c29c8eff42a90506fc593011abc}{New\+Point\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\item 
+\mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a85d6fe3abaa381c7d977edd3e63552b8}{New\+Clipping\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin, string name)
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a9205ec9a85e865b634a1233ebb409faa}{Find\+Region}} (string name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlas\+Array}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+An \mbox{\hyperlink{interface_spine_1_1_attachment_loader}{Attachment\+Loader}} that configures attachments using texture regions from an \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}. See \href{http://esotericsoftware.com/spine-loading-skeleton-data\#JSON-and-binary-data}{\texttt{ Loading Skeleton Data}} in the \mbox{\hyperlink{namespace_spine}{Spine}} Runtimes Guide. 
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a3fd62c2c238a6a6bb6ec2f74fa65f109}\label{class_spine_1_1_atlas_attachment_loader_a3fd62c2c238a6a6bb6ec2f74fa65f109}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!AtlasAttachmentLoader@{AtlasAttachmentLoader}}
+\index{AtlasAttachmentLoader@{AtlasAttachmentLoader}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{AtlasAttachmentLoader()}{AtlasAttachmentLoader()}}
+{\footnotesize\ttfamily Spine.\+Atlas\+Attachment\+Loader.\+Atlas\+Attachment\+Loader (\begin{DoxyParamCaption}\item[{params \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}\mbox{[}$\,$\mbox{]}}]{atlas\+Array }\end{DoxyParamCaption})}
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                                  \{}
+\DoxyCodeLine{43             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlasArray}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"atlas array cannot be null."});}
+\DoxyCodeLine{44             this.\mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlasArray}} = \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlasArray}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a9205ec9a85e865b634a1233ebb409faa}\label{class_spine_1_1_atlas_attachment_loader_a9205ec9a85e865b634a1233ebb409faa}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!FindRegion@{FindRegion}}
+\index{FindRegion@{FindRegion}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{FindRegion()}{FindRegion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} Spine.\+Atlas\+Attachment\+Loader.\+Find\+Region (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 96 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{97                                                     \{}
+\DoxyCodeLine{98             AtlasRegion region;}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlasArray}}.Length; i++) \{}
+\DoxyCodeLine{101                 region = \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}{atlasArray}}[i].\mbox{\hyperlink{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}{FindRegion}}(name);}
+\DoxyCodeLine{102                 \textcolor{keywordflow}{if} (region != \textcolor{keyword}{null})}
+\DoxyCodeLine{103                     \textcolor{keywordflow}{return} region;}
+\DoxyCodeLine{104             \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_af4e3beb65efaed84e684d78050afde70}\label{class_spine_1_1_atlas_attachment_loader_af4e3beb65efaed84e684d78050afde70}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewBoundingBoxAttachment@{NewBoundingBoxAttachment}}
+\index{NewBoundingBoxAttachment@{NewBoundingBoxAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewBoundingBoxAttachment()}{NewBoundingBoxAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Bounding\+Box\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a06b5733cb67b13536797601adc6db6b4}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 80 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81                                                                                        \{}
+\DoxyCodeLine{82             \textcolor{keywordflow}{return} \textcolor{keyword}{new} BoundingBoxAttachment(name);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a85d6fe3abaa381c7d977edd3e63552b8}\label{class_spine_1_1_atlas_attachment_loader_a85d6fe3abaa381c7d977edd3e63552b8}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewClippingAttachment@{NewClippingAttachment}}
+\index{NewClippingAttachment@{NewClippingAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewClippingAttachment()}{NewClippingAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Clipping\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a27f4d730a36f1ca83e756ae6825ed474}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 92 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{93                                                                                 \{}
+\DoxyCodeLine{94             \textcolor{keywordflow}{return} \textcolor{keyword}{new} ClippingAttachment(name);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a4ed43e8f40497ea896466b0d9f565894}\label{class_spine_1_1_atlas_attachment_loader_a4ed43e8f40497ea896466b0d9f565894}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewMeshAttachment@{NewMeshAttachment}}
+\index{NewMeshAttachment@{NewMeshAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewMeshAttachment()}{NewMeshAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Mesh\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name,  }\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_af5979e352d0a75f981f966290377cc05}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62                                                                                       \{}
+\DoxyCodeLine{63             AtlasRegion region = \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a9205ec9a85e865b634a1233ebb409faa}{FindRegion}}(path);}
+\DoxyCodeLine{64             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Region not found in atlas: \{0\} (region attachment: \{1\})"}, path, name));}
+\DoxyCodeLine{65             MeshAttachment attachment = \textcolor{keyword}{new} MeshAttachment(name);}
+\DoxyCodeLine{66             attachment.RendererObject = region;}
+\DoxyCodeLine{67             attachment.RegionU = region.u;}
+\DoxyCodeLine{68             attachment.RegionV = region.v;}
+\DoxyCodeLine{69             attachment.RegionU2 = region.u2;}
+\DoxyCodeLine{70             attachment.RegionV2 = region.v2;}
+\DoxyCodeLine{71             attachment.RegionRotate = region.rotate;}
+\DoxyCodeLine{72             attachment.regionOffsetX = region.offsetX;}
+\DoxyCodeLine{73             attachment.regionOffsetY = region.offsetY;}
+\DoxyCodeLine{74             attachment.regionWidth = region.width;}
+\DoxyCodeLine{75             attachment.regionHeight = region.height;}
+\DoxyCodeLine{76             attachment.regionOriginalWidth = region.originalWidth;}
+\DoxyCodeLine{77             attachment.regionOriginalHeight = region.originalHeight;}
+\DoxyCodeLine{78             \textcolor{keywordflow}{return} attachment;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_aad18a939954b56f7d16d24f0ca46b103}\label{class_spine_1_1_atlas_attachment_loader_aad18a939954b56f7d16d24f0ca46b103}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewPathAttachment@{NewPathAttachment}}
+\index{NewPathAttachment@{NewPathAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewPathAttachment()}{NewPathAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Path\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\begin{DoxyReturn}{반환값}
+May be null to not load any attachment
+\end{DoxyReturn}
+
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a6b5e631c0773ecedecc3121e84db109d}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 84 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                                          \{}
+\DoxyCodeLine{86             \textcolor{keywordflow}{return} \textcolor{keyword}{new} PathAttachment(name);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a671c5c29c8eff42a90506fc593011abc}\label{class_spine_1_1_atlas_attachment_loader_a671c5c29c8eff42a90506fc593011abc}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewPointAttachment@{NewPointAttachment}}
+\index{NewPointAttachment@{NewPointAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewPointAttachment()}{NewPointAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Point\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_a76d650e21df14366dc3f9a0a6c0a92ba}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 88 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                                                            \{}
+\DoxyCodeLine{90             \textcolor{keywordflow}{return} \textcolor{keyword}{new} PointAttachment(name);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_a82d9f2833ec43a445c76ad765d8c1031}\label{class_spine_1_1_atlas_attachment_loader_a82d9f2833ec43a445c76ad765d8c1031}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!NewRegionAttachment@{NewRegionAttachment}}
+\index{NewRegionAttachment@{NewRegionAttachment}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{NewRegionAttachment()}{NewRegionAttachment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Atlas\+Attachment\+Loader.\+New\+Region\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin,  }\item[{string}]{name,  }\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+$<$return$>$May be null to not load any attachment.$<$/return$>$ 
+
+
+
+\mbox{\hyperlink{interface_spine_1_1_attachment_loader_acd15c9fd5f434324a0f30872a35b828c}{Spine.\+Attachment\+Loader}}를 구현.
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                                                                           \{}
+\DoxyCodeLine{48             AtlasRegion region = \mbox{\hyperlink{class_spine_1_1_atlas_attachment_loader_a9205ec9a85e865b634a1233ebb409faa}{FindRegion}}(path);}
+\DoxyCodeLine{49             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentException(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Region not found in atlas: \{0\} (region attachment: \{1\})"}, path, name));}
+\DoxyCodeLine{50             RegionAttachment attachment = \textcolor{keyword}{new} RegionAttachment(name);}
+\DoxyCodeLine{51             attachment.RendererObject = region;}
+\DoxyCodeLine{52             attachment.SetUVs(region.u, region.v, region.u2, region.v2, region.rotate);}
+\DoxyCodeLine{53             attachment.regionOffsetX = region.offsetX;}
+\DoxyCodeLine{54             attachment.regionOffsetY = region.offsetY;}
+\DoxyCodeLine{55             attachment.regionWidth = region.width;}
+\DoxyCodeLine{56             attachment.regionHeight = region.height;}
+\DoxyCodeLine{57             attachment.regionOriginalWidth = region.originalWidth;}
+\DoxyCodeLine{58             attachment.regionOriginalHeight = region.originalHeight;}
+\DoxyCodeLine{59             \textcolor{keywordflow}{return} attachment;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}\label{class_spine_1_1_atlas_attachment_loader_aee11e867c829a42c393dc1ac506e7def}} 
+\index{Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}!atlasArray@{atlasArray}}
+\index{atlasArray@{atlasArray}!Spine.AtlasAttachmentLoader@{Spine.AtlasAttachmentLoader}}
+\doxysubsubsection{\texorpdfstring{atlasArray}{atlasArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} \mbox{[}$\,$\mbox{]} Spine.\+Atlas\+Attachment\+Loader.\+atlas\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Atlas\+Attachment\+Loader.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\+Attachments/\mbox{\hyperlink{_atlas_attachment_loader_8cs}{Atlas\+Attachment\+Loader.\+cs}}\end{DoxyCompactItemize}

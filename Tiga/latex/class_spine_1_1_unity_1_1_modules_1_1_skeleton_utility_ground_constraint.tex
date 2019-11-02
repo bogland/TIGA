@@ -1,0 +1,357 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint}\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeccce20ad4453548b6f54cc27ad60eb3}{Do\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}{ground\+Mask}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a450e5bd678276e1a02fbfb9b7c020d1c}{use2D}} = false
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}{use\+Radius}} = false
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{cast\+Radius}} = 0.\+1f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{cast\+Distance}} = 5f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a64b905f313d3a81cdbe32ad00f630f71}{cast\+Offset}} = 0
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{ground\+Offset}} = 0
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}{adjust\+Speed}} = 5
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a503bd1c0350114a7f7eecbc603d2edb3}{On\+Enable}} ()
+\item 
+virtual void \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a2d891f95785e69c4dd445c0f817b3256}{On\+Disable}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}{util\+Bone}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility}{Skeleton\+Utility}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}{skeleton\+Utility}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aa6cf02f3e4b747a58c5364512fad3bac}{On\+Draw\+Gizmos}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{ray\+Origin}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{ray\+Dir}} = new Vector3(0, -\/1, 0)
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{last\+HitY}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeccce20ad4453548b6f54cc27ad60eb3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeccce20ad4453548b6f54cc27ad60eb3}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!DoUpdate@{DoUpdate}}
+\index{DoUpdate@{DoUpdate}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{DoUpdate()}{DoUpdate()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+Do\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_abb68c2a55bd78177f42c3a40391568df}{Spine.\+Unity.\+Skeleton\+Utility\+Constraint}}를 구현.
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                          \{}
+\DoxyCodeLine{65             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}} = transform.position + \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a64b905f313d3a81cdbe32ad00f630f71}{castOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}}, 0);}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = \textcolor{keywordtype}{float}.MinValue;}
+\DoxyCodeLine{68             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a450e5bd678276e1a02fbfb9b7c020d1c}{use2D}}) \{}
+\DoxyCodeLine{69                 RaycastHit2D hit;}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}{useRadius}})}
+\DoxyCodeLine{72                     hit = Physics2D.CircleCast(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}{groundMask}});}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{74                     hit = Physics2D.Raycast(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}{groundMask}});}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76                 \textcolor{keywordflow}{if} (hit.collider != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{77                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = hit.point.y + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}};}
+\DoxyCodeLine{78                     \textcolor{keywordflow}{if} (Application.isPlaying)}
+\DoxyCodeLine{79                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = Mathf.MoveTowards(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}{adjustSpeed}} * Time.deltaTime);}
+\DoxyCodeLine{80                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{81                     \textcolor{keywordflow}{if} (Application.isPlaying)}
+\DoxyCodeLine{82                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = Mathf.MoveTowards(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}}, transform.position.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}{adjustSpeed}} * Time.deltaTime);}
+\DoxyCodeLine{83                 \}}
+\DoxyCodeLine{84             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{85                 RaycastHit hit;}
+\DoxyCodeLine{86                 \textcolor{keywordtype}{bool} validHit = \textcolor{keyword}{false};}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}{useRadius}})}
+\DoxyCodeLine{89                     validHit = Physics.SphereCast(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}}, out hit, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}{groundMask}});}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{91                     validHit = Physics.Raycast(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}}, out hit, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}} + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}{groundMask}});}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93                 \textcolor{keywordflow}{if} (validHit) \{}
+\DoxyCodeLine{94                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = hit.point.y + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}};}
+\DoxyCodeLine{95                     \textcolor{keywordflow}{if} (Application.isPlaying)}
+\DoxyCodeLine{96                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = Mathf.MoveTowards(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}{adjustSpeed}} * Time.deltaTime);}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{99                     \textcolor{keywordflow}{if} (Application.isPlaying)}
+\DoxyCodeLine{100                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}} = Mathf.MoveTowards(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}}, transform.position.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}{adjustSpeed}} * Time.deltaTime);}
+\DoxyCodeLine{101                 \}}
+\DoxyCodeLine{102             \}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             Vector3 v = transform.position;}
+\DoxyCodeLine{105             v.y = Mathf.Clamp(v.y, Mathf.Min(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}}), \textcolor{keywordtype}{float}.MaxValue);}
+\DoxyCodeLine{106             transform.position = v;}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}{utilBone}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_a413991844de4becbf2f8351bb05b99b2}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a449250768b89e6b5cda2a158207b219e}{X}} = transform.localPosition.x;}
+\DoxyCodeLine{109             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}{utilBone}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone_a413991844de4becbf2f8351bb05b99b2}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a4a7a8d0b99b6f3d2e042189bc1620b2a}{Y}} = transform.localPosition.y;}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a2d891f95785e69c4dd445c0f817b3256}\label{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a2d891f95785e69c4dd445c0f817b3256}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!OnDisable@{OnDisable}}
+\index{OnDisable@{OnDisable}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{OnDisable()}{OnDisable()}}
+{\footnotesize\ttfamily virtual void Spine.\+Unity.\+Skeleton\+Utility\+Constraint.\+On\+Disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}, {\ttfamily [inherited]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_eye_constraint_a846b67308e7d3fc8d884985a0cf029ba}{Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Eye\+Constraint}}에서 재구현되었습니다.
+
+
+
+Skeleton\+Utility\+Constraint.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                             \{}
+\DoxyCodeLine{49             \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}{skeletonUtility}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_ac55f7be5cc43dcbeebf80284140b5cd9}{UnregisterConstraint}}(\textcolor{keyword}{this});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aa6cf02f3e4b747a58c5364512fad3bac}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aa6cf02f3e4b747a58c5364512fad3bac}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!OnDrawGizmos@{OnDrawGizmos}}
+\index{OnDrawGizmos@{OnDrawGizmos}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{OnDrawGizmos()}{OnDrawGizmos()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+On\+Draw\+Gizmos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 113 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114                              \{}
+\DoxyCodeLine{115             Vector3 hitEnd = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}} + (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}} * Mathf.Min(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}.y -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}{hitY}}));}
+\DoxyCodeLine{116             Vector3 clearEnd = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}} + (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}{rayDir}} * \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}{castDistance}});}
+\DoxyCodeLine{117             Gizmos.DrawLine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}{rayOrigin}}, hitEnd);}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}{useRadius}}) \{}
+\DoxyCodeLine{120                 Gizmos.DrawLine(\textcolor{keyword}{new} Vector3(hitEnd.x -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, hitEnd.y -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, hitEnd.z), \textcolor{keyword}{new} Vector3(hitEnd.x + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, hitEnd.y -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}{groundOffset}}, hitEnd.z));}
+\DoxyCodeLine{121                 Gizmos.DrawLine(\textcolor{keyword}{new} Vector3(clearEnd.x -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, clearEnd.y, clearEnd.z), \textcolor{keyword}{new} Vector3(clearEnd.x + \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}{castRadius}}, clearEnd.y, clearEnd.z));}
+\DoxyCodeLine{122             \}}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             Gizmos.color = Color.red;}
+\DoxyCodeLine{125             Gizmos.DrawLine(hitEnd, clearEnd);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a503bd1c0350114a7f7eecbc603d2edb3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a503bd1c0350114a7f7eecbc603d2edb3}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!OnEnable@{OnEnable}}
+\index{OnEnable@{OnEnable}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{OnEnable()}{OnEnable()}}
+{\footnotesize\ttfamily override void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+On\+Enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a958130db07f6b614b37156a38837df07}{Spine.\+Unity.\+Skeleton\+Utility\+Constraint}}(으)로부터 재구현되었습니다.
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                                             \{}
+\DoxyCodeLine{60             base.OnEnable();}
+\DoxyCodeLine{61             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}{lastHitY}} = transform.position.y;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad32dbb9ea77e942fa59bcb83d4959166}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!adjustSpeed@{adjustSpeed}}
+\index{adjustSpeed@{adjustSpeed}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{adjustSpeed}{adjustSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+adjust\+Speed = 5}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a9745d9683b9781ae81d64c7baa5a5dd5}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!castDistance@{castDistance}}
+\index{castDistance@{castDistance}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{castDistance}{castDistance}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+cast\+Distance = 5f}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a64b905f313d3a81cdbe32ad00f630f71}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a64b905f313d3a81cdbe32ad00f630f71}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!castOffset@{castOffset}}
+\index{castOffset@{castOffset}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{castOffset}{castOffset}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+cast\+Offset = 0}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a2137e1404d6b199cad12720747379d2d}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!castRadius@{castRadius}}
+\index{castRadius@{castRadius}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{castRadius}{castRadius}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+cast\+Radius = 0.\+1f}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aeb649b6d3dd4508824df6fd3efbe1b0a}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!groundMask@{groundMask}}
+\index{groundMask@{groundMask}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{groundMask}{groundMask}}
+{\footnotesize\ttfamily Layer\+Mask Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+ground\+Mask}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a5f9f677f5912719ea78eb776afb95db4}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!groundOffset@{groundOffset}}
+\index{groundOffset@{groundOffset}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{groundOffset}{groundOffset}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+ground\+Offset = 0}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_ad85dbe09d1bc108b5ee20001d01306d9}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!hitY@{hitY}}
+\index{hitY@{hitY}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{hitY}{hitY}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+hitY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a0f08acc74121114da36c86f35ca836fa}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!lastHitY@{lastHitY}}
+\index{lastHitY@{lastHitY}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{lastHitY}{lastHitY}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+last\+HitY\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a83dddcfe95c9aa42a6c3647fa9e19b52}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!rayDir@{rayDir}}
+\index{rayDir@{rayDir}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{rayDir}{rayDir}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+ray\+Dir = new Vector3(0, -\/1, 0)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_af1509a460c691af122555e28defca475}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!rayOrigin@{rayOrigin}}
+\index{rayOrigin@{rayOrigin}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{rayOrigin}{rayOrigin}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+ray\+Origin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}\label{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a985c4f183ba341e46fc005d24bc025ea}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!skeletonUtility@{skeletonUtility}}
+\index{skeletonUtility@{skeletonUtility}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{skeletonUtility}{skeletonUtility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility}{Skeleton\+Utility}} Spine.\+Unity.\+Skeleton\+Utility\+Constraint.\+skeleton\+Utility\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Skeleton\+Utility\+Constraint.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a450e5bd678276e1a02fbfb9b7c020d1c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_a450e5bd678276e1a02fbfb9b7c020d1c}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!use2D@{use2D}}
+\index{use2D@{use2D}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{use2D}{use2D}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+use2D = false}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_ground_constraint_aae05c49a7f086068f30a25b3796261be}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!useRadius@{useRadius}}
+\index{useRadius@{useRadius}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{useRadius}{useRadius}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Ground\+Constraint.\+use\+Radius = false}
+
+
+
+Skeleton\+Utility\+Ground\+Constraint.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}\label{class_spine_1_1_unity_1_1_skeleton_utility_constraint_a718b16ede3cf4240d4a34a8a8e9becc8}} 
+\index{Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}!utilBone@{utilBone}}
+\index{utilBone@{utilBone}!Spine.Unity.Modules.SkeletonUtilityGroundConstraint@{Spine.Unity.Modules.SkeletonUtilityGroundConstraint}}
+\doxysubsubsection{\texorpdfstring{utilBone}{utilBone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_utility_bone}{Skeleton\+Utility\+Bone}} Spine.\+Unity.\+Skeleton\+Utility\+Constraint.\+util\+Bone\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Skeleton\+Utility\+Constraint.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Skeleton\+Utility Modules/\mbox{\hyperlink{_skeleton_utility_ground_constraint_8cs}{Skeleton\+Utility\+Ground\+Constraint.\+cs}}\end{DoxyCompactItemize}

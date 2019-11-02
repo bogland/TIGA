@@ -1,0 +1,244 @@
+\hypertarget{class_spine_1_1_attachment_timeline}{}\doxysection{Spine.\+Attachment\+Timeline 클래스 참조}
+\label{class_spine_1_1_attachment_timeline}\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+
+
+Spine.\+Attachment\+Timeline에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Attachment\+Timeline에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_attachment_timeline_ae615b26c93bd31435611a0d82ba98aa5}{Attachment\+Timeline}} (int frame\+Count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_attachment_timeline_addfa5214225557a55607cc6c1a67f1ec}{Set\+Frame}} (int frame\+Index, float time, String attachment\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the time and value of the specified keyframe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_attachment_timeline_a9038deb9919d0fb060e5aebe49ab61a5}{Apply}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, float last\+Time, float time, \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$ fired\+Events, float alpha, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}} pose, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}} direction)
+\begin{DoxyCompactList}\small\item\em Sets the value(s) for the specified time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}{Slot\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_attachment_timeline_aa27dd8e4f7583055b3c034d1ae2067ee}{Frames}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_attachment_timeline_ae4ad501415152c13b70dc20742cfed67}{Attachment\+Names}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_attachment_timeline_ab0d78637e19b2f5ab2b8eb16453b7bd1}{Frame\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_attachment_timeline_a7cc1dd9250f94e54082ce1d3f1da0924}{Property\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation.\+cs 파일의 746 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_ae615b26c93bd31435611a0d82ba98aa5}\label{class_spine_1_1_attachment_timeline_ae615b26c93bd31435611a0d82ba98aa5}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!AttachmentTimeline@{AttachmentTimeline}}
+\index{AttachmentTimeline@{AttachmentTimeline}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{AttachmentTimeline()}{AttachmentTimeline()}}
+{\footnotesize\ttfamily Spine.\+Attachment\+Timeline.\+Attachment\+Timeline (\begin{DoxyParamCaption}\item[{int}]{frame\+Count }\end{DoxyParamCaption})}
+
+
+
+Animation.\+cs 파일의 760 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{761                                                    \{}
+\DoxyCodeLine{762             frames = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[frameCount];}
+\DoxyCodeLine{763             attachmentNames = \textcolor{keyword}{new} String[frameCount];}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_a9038deb9919d0fb060e5aebe49ab61a5}\label{class_spine_1_1_attachment_timeline_a9038deb9919d0fb060e5aebe49ab61a5}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Attachment\+Timeline.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{float}]{last\+Time,  }\item[{float}]{time,  }\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$}]{events,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}}}]{pose,  }\item[{\mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}}}]{direction }\end{DoxyParamCaption})}
+
+
+
+Sets the value(s) for the specified time. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em skeleton} & The skeleton the timeline is being applied to. This provides access to the bones, slots, and other skeleton components the timeline may change.\\
+\hline
+{\em last\+Time} & last\+Time The time this timeline was last applied. Timelines such as \mbox{\hyperlink{class_spine_1_1_event_timeline}{Event\+Timeline}} trigger only at specific times rather than every frame. In that case, the timeline triggers everything between last\+Time (exclusive) and 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{time}
+\end{DoxyCode}
+ (inclusive).\\
+\hline
+{\em time} & The time within the animation. Most timelines find the key before and the key after this time so they can interpolate between the keys.\\
+\hline
+{\em events} & If any events are fired, they are added to this list. Can be null to ignore firing events or if the timeline does not fire events. May be null.\\
+\hline
+{\em alpha} & alpha 0 applies the current or setup pose value (depending on pose parameter). 1 applies the timeline value. Between 0 and 1 applies a value between the current or setup pose and the timeline value. By adjusting alpha over time, an animation can be mixed in or out. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{alpha}
+\end{DoxyCode}
+ can also be useful to apply animations on top of each other (layered).\\
+\hline
+{\em pose} & Controls how mixing is applied when alpha is than 1.\\
+\hline
+{\em direction} & Indicates whether the timeline is mixing in or out. Used by timelines which perform instant transitions such as \mbox{\hyperlink{class_spine_1_1_draw_order_timeline}{Draw\+Order\+Timeline}} and \mbox{\hyperlink{class_spine_1_1_attachment_timeline}{Attachment\+Timeline}}.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{interface_spine_1_1_timeline_a2c4d7ccfc54b8c186d76bea95f9939de}{Spine.\+Timeline}}를 구현.
+
+
+
+Animation.\+cs 파일의 771 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{772                                                                                                                                                              \{}
+\DoxyCodeLine{773             \textcolor{keywordtype}{string} attachmentName;}
+\DoxyCodeLine{774             Slot slot = skeleton.slots.Items[slotIndex];}
+\DoxyCodeLine{775             \textcolor{keywordflow}{if} (direction == \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.Out \&\& pose == \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup) \{}
+\DoxyCodeLine{776                 attachmentName = slot.data.attachmentName;}
+\DoxyCodeLine{777                 slot.Attachment = attachmentName == \textcolor{keyword}{null} ? null : skeleton.GetAttachment(slotIndex, attachmentName);}
+\DoxyCodeLine{778                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{779             \}}
+\DoxyCodeLine{780 }
+\DoxyCodeLine{781             \textcolor{keywordtype}{float}[] frames = this.frames;}
+\DoxyCodeLine{782             \textcolor{keywordflow}{if} (time < frames[0]) \{ \textcolor{comment}{// Time is before first frame.}}
+\DoxyCodeLine{783                 \textcolor{keywordflow}{if} (pose == \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup) \{}
+\DoxyCodeLine{784                     attachmentName = slot.data.attachmentName;}
+\DoxyCodeLine{785                     slot.Attachment = attachmentName == \textcolor{keyword}{null} ? null : skeleton.GetAttachment(slotIndex, attachmentName);}
+\DoxyCodeLine{786                 \}}
+\DoxyCodeLine{787                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{788             \}}
+\DoxyCodeLine{789 }
+\DoxyCodeLine{790             \textcolor{keywordtype}{int} frameIndex;}
+\DoxyCodeLine{791             \textcolor{keywordflow}{if} (time >= frames[frames.Length -\/ 1]) \textcolor{comment}{// Time is after last frame.}}
+\DoxyCodeLine{792                 frameIndex = frames.Length -\/ 1;}
+\DoxyCodeLine{793             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{794                 frameIndex = \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}}.BinarySearch(frames, time, 1) -\/ 1;}
+\DoxyCodeLine{795 }
+\DoxyCodeLine{796             attachmentName = attachmentNames[frameIndex];}
+\DoxyCodeLine{797             slot.Attachment = attachmentName == \textcolor{keyword}{null} ? null : skeleton.GetAttachment(slotIndex, attachmentName);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_addfa5214225557a55607cc6c1a67f1ec}\label{class_spine_1_1_attachment_timeline_addfa5214225557a55607cc6c1a67f1ec}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!SetFrame@{SetFrame}}
+\index{SetFrame@{SetFrame}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{SetFrame()}{SetFrame()}}
+{\footnotesize\ttfamily void Spine.\+Attachment\+Timeline.\+Set\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{time,  }\item[{String}]{attachment\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets the time and value of the specified keyframe. 
+
+
+
+Animation.\+cs 파일의 766 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{767                                                                                  \{}
+\DoxyCodeLine{768             frames[frameIndex] = time;}
+\DoxyCodeLine{769             attachmentNames[frameIndex] = attachmentName;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_ae4ad501415152c13b70dc20742cfed67}\label{class_spine_1_1_attachment_timeline_ae4ad501415152c13b70dc20742cfed67}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!AttachmentNames@{AttachmentNames}}
+\index{AttachmentNames@{AttachmentNames}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{AttachmentNames}{AttachmentNames}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Spine.\+Attachment\+Timeline.\+Attachment\+Names\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 753 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{753 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} frames; \} \textcolor{keyword}{set} \{ frames = value; \} \} \textcolor{comment}{// time, ...}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_ab0d78637e19b2f5ab2b8eb16453b7bd1}\label{class_spine_1_1_attachment_timeline_ab0d78637e19b2f5ab2b8eb16453b7bd1}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!FrameCount@{FrameCount}}
+\index{FrameCount@{FrameCount}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{FrameCount}{FrameCount}}
+{\footnotesize\ttfamily int Spine.\+Attachment\+Timeline.\+Frame\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation.\+cs 파일의 754 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{754 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} attachmentNames; \} \textcolor{keyword}{set} \{ attachmentNames = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_aa27dd8e4f7583055b3c034d1ae2067ee}\label{class_spine_1_1_attachment_timeline_aa27dd8e4f7583055b3c034d1ae2067ee}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!Frames@{Frames}}
+\index{Frames@{Frames}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{Frames}{Frames}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Attachment\+Timeline.\+Frames\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 752 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{752 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} slotIndex; \} \textcolor{keyword}{set} \{ slotIndex = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_a7cc1dd9250f94e54082ce1d3f1da0924}\label{class_spine_1_1_attachment_timeline_a7cc1dd9250f94e54082ce1d3f1da0924}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!PropertyId@{PropertyId}}
+\index{PropertyId@{PropertyId}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{PropertyId}{PropertyId}}
+{\footnotesize\ttfamily int Spine.\+Attachment\+Timeline.\+Property\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation.\+cs 파일의 756 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{757                               \{}
+\DoxyCodeLine{758             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})TimelineType.Attachment << 24) + slotIndex; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}\label{class_spine_1_1_attachment_timeline_a0e71d78d9d27c2730254abbed50006ea}} 
+\index{Spine.AttachmentTimeline@{Spine.AttachmentTimeline}!SlotIndex@{SlotIndex}}
+\index{SlotIndex@{SlotIndex}!Spine.AttachmentTimeline@{Spine.AttachmentTimeline}}
+\doxysubsubsection{\texorpdfstring{SlotIndex}{SlotIndex}}
+{\footnotesize\ttfamily int Spine.\+Attachment\+Timeline.\+Slot\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 751 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{752 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} slotIndex; \} \textcolor{keyword}{set} \{ slotIndex = value; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_8cs}{Animation.\+cs}}\end{DoxyCompactItemize}

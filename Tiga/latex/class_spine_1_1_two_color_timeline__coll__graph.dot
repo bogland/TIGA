@@ -1,0 +1,11 @@
+digraph "Spine.TwoColorTimeline"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.TwoColorTimeline\n|+ ENTRIES\l+ SlotIndex\l+ Frames\l+ PropertyId\l~ slotIndex\l~ frames\l# PREV_TIME\l# PREV_R2\l# R\l- PREV_R\l- PREV_G\l- PREV_B\l- PREV_A\l- PREV_G2\l- PREV_B2\l- G\l- B\l- A\l- R2\l- G2\l- B2\l|+ TwoColorTimeline()\l+ SetFrame()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node2 [label="{CurveTimeline\n|+ FrameCount\l+ PropertyId\l~ curves\l# LINEAR\l# BEZIER_SIZE\l- STEPPED\l- BEZIER\l|+ CurveTimeline()\l+ Apply()\l+ SetLinear()\l+ SetStepped()\l+ SetCurve()\l+ GetCurvePercent()\l+ GetCurveType()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_curve_timeline.html",tooltip="Base class for frames that use an interpolation bezier curve."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal"];
+  Node3 [label="{Timeline\n|+ PropertyId\l|+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_timeline.html",tooltip=" "];
+}

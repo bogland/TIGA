@@ -1,0 +1,34 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node286 [label="Editor",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node286 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Spine.Unity.Editor.Atlas\lAssetInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_atlas_asset_inspector.html",tooltip=" "];
+  Node286 -> Node288 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node288 [label="Spine.Unity.Editor.Bounding\lBoxFollowerInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_bounding_box_follower_inspector.html",tooltip=" "];
+  Node286 -> Node289 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node289 [label="Spine.Unity.Editor.Skeleton\lDataAssetInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_data_asset_inspector.html",tooltip=" "];
+  Node286 -> Node290 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node290 [label="Spine.Unity.Editor.Skeleton\lGraphicInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_graphic_inspector.html",tooltip=" "];
+  Node286 -> Node291 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node291 [label="Spine.Unity.Editor.Skeleton\lRendererCustomMaterialsInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_custom_materials_inspector.html",tooltip=" "];
+  Node286 -> Node292 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node292 [label="Spine.Unity.Editor.Skeleton\lRendererInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_renderer_inspector.html",tooltip=" "];
+  Node292 -> Node293 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node293 [label="Spine.Unity.Editor.Skeleton\lAnimationInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_animation_inspector.html",tooltip=" "];
+  Node292 -> Node294 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node294 [label="Spine.Unity.Editor.Skeleton\lAnimatorInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_animator_inspector.html",tooltip=" "];
+  Node286 -> Node295 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node295 [label="Spine.Unity.Editor.Skeleton\lUtilityBoneInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_bone_inspector.html",tooltip=" "];
+  Node286 -> Node296 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node296 [label="Spine.Unity.Editor.Skeleton\lUtilityInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_skeleton_utility_inspector.html",tooltip=" "];
+  Node286 -> Node297 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node297 [label="Spine.Unity.Modules.Skeleton\lRagdollInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector.html",tooltip=" "];
+  Node286 -> Node298 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node298 [label="Spine.Unity.Modules.Skeleton\lRenderPartInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_part_inspector.html",tooltip=" "];
+  Node286 -> Node299 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node299 [label="Spine.Unity.Modules.Skeleton\lRenderSeparatorInspector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_render_separator_inspector.html",tooltip=" "];
+}

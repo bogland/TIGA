@@ -1,0 +1,23 @@
+digraph "Spine.Unity.Examples.SpawnFromSkeletonDataExample.Start"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Spawn\lFromSkeletonDataExample.Start",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Examples.Spawn\lFromSkeletonDataExample.DoExtraStuff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example.html#a428979122a4cabd6f5fec3600b8a15d3",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.SkeletonAnimation.\lInitialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a6c87e552fabe217a7292a78f9d6919dc",tooltip="Initialize this component. Attempts to load the SkeletonData and creates the internal Spine objects a..."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.SkeletonData.FindAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a16a1061325d5653eb3632fe5bf12d4ef",tooltip="May be null."];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.SkeletonData\lAsset.GetSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.SkeletonData\lAsset.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a0609f106c8b6f209cdcc696dc7ef5361",tooltip=" "];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.SkeletonData\lAsset.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a36c686acb39535dbb13d1a55692b0f04",tooltip=" "];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.SkeletonAnimation.\lNewSkeletonAnimationGameObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_animation.html#a5392d5e12e3752d56126da781aa8027e",tooltip="Instantiates a new UnityEngine.GameObject and adds a prepared SkeletonAnimation component to it."];
+}

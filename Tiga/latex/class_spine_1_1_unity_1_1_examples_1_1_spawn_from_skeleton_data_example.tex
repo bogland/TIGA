@@ -1,0 +1,131 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example}\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+
+
+Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}{skeleton\+Data\+Asset}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_aa8fe1f82bbbec3a45f1f357fd7b01788}{count}} = 20
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a151673c357a29110bab81eebd459d528}{starting\+Animation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a68d0fcf01a97b1981bdc8235fe0f9f60}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a428979122a4cabd6f5fec3600b8a15d3}{Do\+Extra\+Stuff}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} sa, \mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}} spine\+Animation)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a428979122a4cabd6f5fec3600b8a15d3}\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a428979122a4cabd6f5fec3600b8a15d3}} 
+\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}!DoExtraStuff@{DoExtraStuff}}
+\index{DoExtraStuff@{DoExtraStuff}!Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+\doxysubsubsection{\texorpdfstring{DoExtraStuff()}{DoExtraStuff()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example.\+Do\+Extra\+Stuff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}}}]{sa,  }\item[{\mbox{\hyperlink{class_spine_1_1_animation}{Spine.\+Animation}}}]{spine\+Animation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 30 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30                                                                                  \{}
+\DoxyCodeLine{31             sa.transform.localPosition = Random.insideUnitCircle * 6f;}
+\DoxyCodeLine{32             sa.transform.SetParent(this.transform, \textcolor{keyword}{false});}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34             \textcolor{keywordflow}{if} (spineAnimation != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{35                 sa.Initialize(\textcolor{keyword}{false});}
+\DoxyCodeLine{36                 sa.AnimationState.SetAnimation(0, spineAnimation, \textcolor{keyword}{true});}
+\DoxyCodeLine{37             \}}
+\DoxyCodeLine{38         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a68d0fcf01a97b1981bdc8235fe0f9f60}\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a68d0fcf01a97b1981bdc8235fe0f9f60}} 
+\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                              \{}
+\DoxyCodeLine{16             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}{skeletonDataAsset}} == \textcolor{keyword}{null}) yield \textcolor{keywordflow}{break};}
+\DoxyCodeLine{17             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}{skeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{false}); \textcolor{comment}{// Preload SkeletonDataAsset.}}
+\DoxyCodeLine{18             yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1f); \textcolor{comment}{// Pretend stuff is happening.}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20             var spineAnimation = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}{skeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a2b0df38bd74c1b464ed8543f72c7fd4e}{GetSkeletonData}}(\textcolor{keyword}{false}).\mbox{\hyperlink{class_spine_1_1_skeleton_data_a16a1061325d5653eb3632fe5bf12d4ef}{FindAnimation}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a151673c357a29110bab81eebd459d528}{startingAnimation}});}
+\DoxyCodeLine{21             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_aa8fe1f82bbbec3a45f1f357fd7b01788}{count}}; i++) \{}
+\DoxyCodeLine{22                 var sa = SkeletonAnimation.NewSkeletonAnimationGameObject(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}{skeletonDataAsset}}); \textcolor{comment}{// Spawn a new SkeletonAnimation GameObject.}}
+\DoxyCodeLine{23                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a428979122a4cabd6f5fec3600b8a15d3}{DoExtraStuff}}(sa, spineAnimation); \textcolor{comment}{// optional stuff for fun.}}
+\DoxyCodeLine{24                 sa.gameObject.name = i.ToString();}
+\DoxyCodeLine{25                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1f/8f);}
+\DoxyCodeLine{26             \}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_aa8fe1f82bbbec3a45f1f357fd7b01788}\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_aa8fe1f82bbbec3a45f1f357fd7b01788}} 
+\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}!count@{count}}
+\index{count@{count}!Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example.\+count = 20}
+
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_af88e1a425f437552683e38e38b51063f}} 
+\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}!skeletonDataAsset@{skeletonDataAsset}}
+\index{skeletonDataAsset@{skeletonDataAsset}!Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+\doxysubsubsection{\texorpdfstring{skeletonDataAsset}{skeletonDataAsset}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example.\+skeleton\+Data\+Asset}
+
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a151673c357a29110bab81eebd459d528}\label{class_spine_1_1_unity_1_1_examples_1_1_spawn_from_skeleton_data_example_a151673c357a29110bab81eebd459d528}} 
+\index{Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}!startingAnimation@{startingAnimation}}
+\index{startingAnimation@{startingAnimation}!Spine.Unity.Examples.SpawnFromSkeletonDataExample@{Spine.Unity.Examples.SpawnFromSkeletonDataExample}}
+\doxysubsubsection{\texorpdfstring{startingAnimation}{startingAnimation}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Spawn\+From\+Skeleton\+Data\+Example.\+starting\+Animation}
+
+
+
+Spawn\+From\+Skeleton\+Data\+Example.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spawn_from_skeleton_data_example_8cs}{Spawn\+From\+Skeleton\+Data\+Example.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera}{}\doxysection{Spine.\+Unity.\+Examples.\+Constrained\+Camera 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera}\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+
+
+Spine.\+Unity.\+Examples.\+Constrained\+Camera에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Constrained\+Camera에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9b54aa7101a892a2e1437c5b9d3905f4}{target}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_aa482c7860eccb2a58f9c92af770f9c2d}{offset}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}{min}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}{max}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a97d685b67ecc18d6dabf78ed993a3e59}{smoothing}} = 5f
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a2ae836a9c0cf12c4aa6f8447516d7525}{Late\+Update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Constrained\+Camera.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a2ae836a9c0cf12c4aa6f8447516d7525}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a2ae836a9c0cf12c4aa6f8447516d7525}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Constrained\+Camera.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                            \{}
+\DoxyCodeLine{45             Vector3 goalPoint = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9b54aa7101a892a2e1437c5b9d3905f4}{target}}.position + \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_aa482c7860eccb2a58f9c92af770f9c2d}{offset}};}
+\DoxyCodeLine{46             goalPoint.x = Mathf.Clamp(goalPoint.x, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}{min}}.x, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}{max}}.x);}
+\DoxyCodeLine{47             goalPoint.y = Mathf.Clamp(goalPoint.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}{min}}.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}{max}}.y);}
+\DoxyCodeLine{48             goalPoint.z = Mathf.Clamp(goalPoint.z, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}{min}}.z, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}{max}}.z);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50             transform.position = Vector3.Lerp(transform.position, goalPoint, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a97d685b67ecc18d6dabf78ed993a3e59}{smoothing}} * Time.deltaTime);}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a8fba558fb0101d3e852382181f69219d}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!max@{max}}
+\index{max@{max}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+max}
+
+
+
+Constrained\+Camera.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9e5c83caf78b2231602270174b9a9d5a}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!min@{min}}
+\index{min@{min}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+min}
+
+
+
+Constrained\+Camera.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_aa482c7860eccb2a58f9c92af770f9c2d}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_aa482c7860eccb2a58f9c92af770f9c2d}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!offset@{offset}}
+\index{offset@{offset}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+offset}
+
+
+
+Constrained\+Camera.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a97d685b67ecc18d6dabf78ed993a3e59}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a97d685b67ecc18d6dabf78ed993a3e59}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!smoothing@{smoothing}}
+\index{smoothing@{smoothing}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{smoothing}{smoothing}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+smoothing = 5f}
+
+
+
+Constrained\+Camera.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9b54aa7101a892a2e1437c5b9d3905f4}\label{class_spine_1_1_unity_1_1_examples_1_1_constrained_camera_a9b54aa7101a892a2e1437c5b9d3905f4}} 
+\index{Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}!target@{target}}
+\index{target@{target}!Spine.Unity.Examples.ConstrainedCamera@{Spine.Unity.Examples.ConstrainedCamera}}
+\doxysubsubsection{\texorpdfstring{target}{target}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Examples.\+Constrained\+Camera.\+target}
+
+
+
+Constrained\+Camera.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Getting Started Scripts/\mbox{\hyperlink{_constrained_camera_8cs}{Constrained\+Camera.\+cs}}\end{DoxyCompactItemize}

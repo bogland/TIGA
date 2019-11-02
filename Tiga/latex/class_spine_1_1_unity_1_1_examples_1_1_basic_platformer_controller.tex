@@ -1,0 +1,574 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller}{}\doxysection{Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller}\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+
+
+Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a78fd244d780599364c198516727d9f03}{X\+Axis}} = \char`\"{}Horizontal\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0de1ef550805428d44e4b7e58fc444e0}{Y\+Axis}} = \char`\"{}Vertical\char`\"{}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_abc80715eb8fc0b13029afd8f56ee9c4a}{Jump\+Button}} = \char`\"{}Jump\char`\"{}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ad2e257615bc82b0a85c1c61c2d79032d}{walk\+Speed}} = 1.\+5f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab912ceb84a2ef0a929fa61e0fb3a1d5d}{run\+Speed}} = 7f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a67aff93687950ea0219adbdac55966b3}{gravity\+Scale}} = 6.\+6f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a768a370f9bc841d46d970ad0c2f4318e}{jump\+Speed}} = 25
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a85218f45fab2b2e5224a183c6bd91497}{minimum\+Jump\+Duration}} = 0.\+5f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_adb9ac8dac1212d22a6db8579c41dba9b}{jump\+Interrupt\+Factor}} = 0.\+5f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1edc895cb2ee86ab406d572442444557}{force\+Crouch\+Velocity}} = 25
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af5b651c0bf184073543de54393d6802f}{force\+Crouch\+Duration}} = 0.\+5f
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}{skeleton\+Animation}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example}{Transition\+Dictionary\+Example}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0168595493fbef5adbcdeccf5ae92706}{transitions}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a2ea05877ab371284c45be030316e6336}{walk}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af07dffdeee84230bdfbe7e3967e0c4a8}{run}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a6d84603aff9369119622f312f43e726e}{idle}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa6cc25ff882d8d5f620d5991170fb519}{jump}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a7b34a03d795071a31e9ad4451f9247c7}{fall}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1687fbd3093c434e78e8024392f45069}{crouch}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a26013ba18e34f53ff21570aa373b2e13}{run\+From\+Fall}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae8bd3201fe4c2ccd5e93447ebe4a7505}{jump\+Audio\+Source}}
+\item 
+Audio\+Source \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ac88f9924066b1ad2e12c1dbd13e09441}{hardfall\+Audio\+Source}}
+\item 
+Particle\+System \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a63e11e5d8d9eff0dffb447e022127c95}{land\+Particles}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example}{Handle\+Event\+With\+Audio\+Example}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4a630e88a1d0a70b83879803330e6c53}{footstep\+Handler}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a031583bb6e965a0fde0d1f1e284f7ae8}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aadf38ab19c2b433bdfd3f4f9e6293dd4}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Character\+Controller \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}{controller}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}} = default(Vector2)
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}} = default(Vector3)
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4c565d15eae275253e85eb973585139d}{minimum\+Jump\+End\+Time}} = 0
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa07457180676d71b8ef9bb7a8dec2a36}{force\+Crouch\+End\+Time}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}{was\+Grounded}} = false
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{target\+Animation}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}{previous\+Target\+Animation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a031583bb6e965a0fde0d1f1e284f7ae8}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a031583bb6e965a0fde0d1f1e284f7ae8}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 84 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                       \{}
+\DoxyCodeLine{86             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}{controller}} = GetComponent<CharacterController>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aadf38ab19c2b433bdfd3f4f9e6293dd4}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aadf38ab19c2b433bdfd3f4f9e6293dd4}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 88 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                        \{}
+\DoxyCodeLine{90             \textcolor{keywordtype}{float} dt = Time.deltaTime;}
+\DoxyCodeLine{91             \textcolor{keywordtype}{bool} isGrounded = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}{controller}}.isGrounded;}
+\DoxyCodeLine{92             \textcolor{keywordtype}{bool} landed = !\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}{wasGrounded}} \&\& isGrounded;}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             \textcolor{comment}{// Dummy input.}}
+\DoxyCodeLine{95             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x = Input.GetAxis(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a78fd244d780599364c198516727d9f03}{XAxis}});}
+\DoxyCodeLine{96             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.y = Input.GetAxis(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0de1ef550805428d44e4b7e58fc444e0}{YAxis}});}
+\DoxyCodeLine{97             \textcolor{keywordtype}{bool} inputJumpStop = Input.GetButtonUp(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_abc80715eb8fc0b13029afd8f56ee9c4a}{JumpButton}});}
+\DoxyCodeLine{98             \textcolor{keywordtype}{bool} inputJumpStart = Input.GetButtonDown(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_abc80715eb8fc0b13029afd8f56ee9c4a}{JumpButton}});            }
+\DoxyCodeLine{99             \textcolor{keywordtype}{bool} doCrouch = (isGrounded \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.y < -\/0.5f) || (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa07457180676d71b8ef9bb7a8dec2a36}{forceCrouchEndTime}} > Time.time);}
+\DoxyCodeLine{100             \textcolor{keywordtype}{bool} doJumpInterrupt = \textcolor{keyword}{false};}
+\DoxyCodeLine{101             \textcolor{keywordtype}{bool} doJump = \textcolor{keyword}{false};}
+\DoxyCodeLine{102             \textcolor{keywordtype}{bool} hardLand = \textcolor{keyword}{false};}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             \textcolor{keywordflow}{if} (landed) \{}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{if} (-\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y > \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1edc895cb2ee86ab406d572442444557}{forceCrouchVelocity}}) \{}
+\DoxyCodeLine{106                     hardLand = \textcolor{keyword}{true};}
+\DoxyCodeLine{107                     doCrouch = \textcolor{keyword}{true};}
+\DoxyCodeLine{108                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa07457180676d71b8ef9bb7a8dec2a36}{forceCrouchEndTime}} = Time.time + \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af5b651c0bf184073543de54393d6802f}{forceCrouchDuration}};}
+\DoxyCodeLine{109                 \}}
+\DoxyCodeLine{110             \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112             \textcolor{keywordflow}{if} (!doCrouch) \{}
+\DoxyCodeLine{113                 \textcolor{keywordflow}{if} (isGrounded) \{}
+\DoxyCodeLine{114                     \textcolor{keywordflow}{if} (inputJumpStart) \{}
+\DoxyCodeLine{115                         doJump = \textcolor{keyword}{true};}
+\DoxyCodeLine{116                     \}}
+\DoxyCodeLine{117                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{118                     doJumpInterrupt = inputJumpStop \&\& Time.time < \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4c565d15eae275253e85eb973585139d}{minimumJumpEndTime}};}
+\DoxyCodeLine{119                 \}}
+\DoxyCodeLine{120             \}}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122             \textcolor{comment}{// Dummy physics and controller using UnityEngine.CharacterController.}}
+\DoxyCodeLine{123             Vector3 gravityDeltaVelocity = Physics.gravity * \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a67aff93687950ea0219adbdac55966b3}{gravityScale}} * dt;}
+\DoxyCodeLine{124             }
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \textcolor{keywordflow}{if} (doJump) \{}
+\DoxyCodeLine{127                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a768a370f9bc841d46d970ad0c2f4318e}{jumpSpeed}};}
+\DoxyCodeLine{128                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4c565d15eae275253e85eb973585139d}{minimumJumpEndTime}} = Time.time + \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a85218f45fab2b2e5224a183c6bd91497}{minimumJumpDuration}};}
+\DoxyCodeLine{129             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (doJumpInterrupt) \{}
+\DoxyCodeLine{130                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y > 0)}
+\DoxyCodeLine{131                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y *= \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_adb9ac8dac1212d22a6db8579c41dba9b}{jumpInterruptFactor}};}
+\DoxyCodeLine{132             \}}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.x = 0;}
+\DoxyCodeLine{135             \textcolor{keywordflow}{if} (!doCrouch) \{}
+\DoxyCodeLine{136                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x != 0) \{}
+\DoxyCodeLine{137                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.x = Mathf.Abs(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x) > 0.6f ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab912ceb84a2ef0a929fa61e0fb3a1d5d}{runSpeed}} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ad2e257615bc82b0a85c1c61c2d79032d}{walkSpeed}};}
+\DoxyCodeLine{138                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.x *= Mathf.Sign(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x);}
+\DoxyCodeLine{139                 \}}
+\DoxyCodeLine{140             \}}
+\DoxyCodeLine{141             }
+\DoxyCodeLine{142             }
+\DoxyCodeLine{143             \textcolor{keywordflow}{if} (!isGrounded) \{}
+\DoxyCodeLine{144                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}{wasGrounded}}) \{}
+\DoxyCodeLine{145                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y < 0)}
+\DoxyCodeLine{146                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y = 0;}
+\DoxyCodeLine{147                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{148                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}} += gravityDeltaVelocity;}
+\DoxyCodeLine{149                 \}}
+\DoxyCodeLine{150             \}}
+\DoxyCodeLine{151             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}{controller}}.Move(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}} * dt);}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153             \textcolor{comment}{// Animation}}
+\DoxyCodeLine{154             \textcolor{comment}{// Determine target animation.}}
+\DoxyCodeLine{155             \textcolor{keywordflow}{if} (isGrounded) \{}
+\DoxyCodeLine{156                 \textcolor{keywordflow}{if} (doCrouch) \{}
+\DoxyCodeLine{157                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1687fbd3093c434e78e8024392f45069}{crouch}};}
+\DoxyCodeLine{158                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{159                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x == 0)}
+\DoxyCodeLine{160                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a6d84603aff9369119622f312f43e726e}{idle}};}
+\DoxyCodeLine{161                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{162                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}} = Mathf.Abs(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x) > 0.6f ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af07dffdeee84230bdfbe7e3967e0c4a8}{run}} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a2ea05877ab371284c45be030316e6336}{walk}};}
+\DoxyCodeLine{163                 \}}
+\DoxyCodeLine{164             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{165                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y > 0 ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa6cc25ff882d8d5f620d5991170fb519}{jump}} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a7b34a03d795071a31e9ad4451f9247c7}{fall}};}
+\DoxyCodeLine{166             \}}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \textcolor{comment}{// Handle change in target animation.}}
+\DoxyCodeLine{169             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}{previousTargetAnimation}} != \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}}) \{}
+\DoxyCodeLine{170                 \mbox{\hyperlink{namespace_spine_1_1_unity_a591594f94698c26db56f9db5ff861e48}{Animation}} transition = \textcolor{keyword}{null};}
+\DoxyCodeLine{171                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0168595493fbef5adbcdeccf5ae92706}{transitions}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}{previousTargetAnimation}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{172                     transition = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0168595493fbef5adbcdeccf5ae92706}{transitions}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example_aa248ac7b2a6bb9f86a1022e070a80dba}{GetTransition}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}{previousTargetAnimation}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}});}
+\DoxyCodeLine{173                 \}}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175                 \textcolor{keywordflow}{if} (transition != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{176                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.SetAnimation(0, transition, \textcolor{keyword}{false}).MixDuration = 0.05f;}
+\DoxyCodeLine{177                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.AddAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}}, \textcolor{keyword}{true}, 0f);}
+\DoxyCodeLine{178                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{179                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.SetAnimation(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}}, \textcolor{keyword}{true});}
+\DoxyCodeLine{180                 \}}
+\DoxyCodeLine{181             \}}
+\DoxyCodeLine{182             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}{previousTargetAnimation}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}{targetAnimation}};}
+\DoxyCodeLine{183 }
+\DoxyCodeLine{184             \textcolor{comment}{// Face intended direction.}}
+\DoxyCodeLine{185             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x != 0)}
+\DoxyCodeLine{186                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aad73be010941cf66a116d6cf45e6510c}{FlipX}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}{input}}.x < 0;}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189             \textcolor{comment}{// Effects}}
+\DoxyCodeLine{190             \textcolor{keywordflow}{if} (doJump) \{}
+\DoxyCodeLine{191                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae8bd3201fe4c2ccd5e93447ebe4a7505}{jumpAudioSource}}.Stop();}
+\DoxyCodeLine{192                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae8bd3201fe4c2ccd5e93447ebe4a7505}{jumpAudioSource}}.Play();}
+\DoxyCodeLine{193             \}}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195             \textcolor{keywordflow}{if} (landed) \{}
+\DoxyCodeLine{196                 \textcolor{keywordflow}{if} (hardLand) \{}
+\DoxyCodeLine{197                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ac88f9924066b1ad2e12c1dbd13e09441}{hardfallAudioSource}}.Play();}
+\DoxyCodeLine{198                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{199                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4a630e88a1d0a70b83879803330e6c53}{footstepHandler}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example_abb63caaab92b3e4b9df926b1418507e6}{Play}}();}
+\DoxyCodeLine{200                 \}}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a63e11e5d8d9eff0dffb447e022127c95}{landParticles}}.Emit((\textcolor{keywordtype}{int})(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}{velocity}}.y / -\/9f) + 2);}
+\DoxyCodeLine{203             \}}
+\DoxyCodeLine{204 }
+\DoxyCodeLine{205             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}{wasGrounded}} = isGrounded;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a95afd9248f3081827982364d700da4af}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!controller@{controller}}
+\index{controller@{controller}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily Character\+Controller Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+controller\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1687fbd3093c434e78e8024392f45069}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1687fbd3093c434e78e8024392f45069}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!crouch@{crouch}}
+\index{crouch@{crouch}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{crouch}{crouch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+crouch}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a7b34a03d795071a31e9ad4451f9247c7}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a7b34a03d795071a31e9ad4451f9247c7}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!fall@{fall}}
+\index{fall@{fall}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{fall}{fall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+fall}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4a630e88a1d0a70b83879803330e6c53}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4a630e88a1d0a70b83879803330e6c53}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!footstepHandler@{footstepHandler}}
+\index{footstepHandler@{footstepHandler}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{footstepHandler}{footstepHandler}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_handle_event_with_audio_example}{Handle\+Event\+With\+Audio\+Example}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+footstep\+Handler}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af5b651c0bf184073543de54393d6802f}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af5b651c0bf184073543de54393d6802f}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!forceCrouchDuration@{forceCrouchDuration}}
+\index{forceCrouchDuration@{forceCrouchDuration}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{forceCrouchDuration}{forceCrouchDuration}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+force\+Crouch\+Duration = 0.\+5f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa07457180676d71b8ef9bb7a8dec2a36}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa07457180676d71b8ef9bb7a8dec2a36}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!forceCrouchEndTime@{forceCrouchEndTime}}
+\index{forceCrouchEndTime@{forceCrouchEndTime}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{forceCrouchEndTime}{forceCrouchEndTime}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+force\+Crouch\+End\+Time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1edc895cb2ee86ab406d572442444557}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a1edc895cb2ee86ab406d572442444557}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!forceCrouchVelocity@{forceCrouchVelocity}}
+\index{forceCrouchVelocity@{forceCrouchVelocity}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{forceCrouchVelocity}{forceCrouchVelocity}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+force\+Crouch\+Velocity = 25}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a67aff93687950ea0219adbdac55966b3}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a67aff93687950ea0219adbdac55966b3}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!gravityScale@{gravityScale}}
+\index{gravityScale@{gravityScale}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{gravityScale}{gravityScale}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+gravity\+Scale = 6.\+6f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ac88f9924066b1ad2e12c1dbd13e09441}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ac88f9924066b1ad2e12c1dbd13e09441}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!hardfallAudioSource@{hardfallAudioSource}}
+\index{hardfallAudioSource@{hardfallAudioSource}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{hardfallAudioSource}{hardfallAudioSource}}
+{\footnotesize\ttfamily Audio\+Source Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+hardfall\+Audio\+Source}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a6d84603aff9369119622f312f43e726e}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a6d84603aff9369119622f312f43e726e}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!idle@{idle}}
+\index{idle@{idle}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{idle}{idle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+idle}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 62 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae02c8ca098c7d7cbc13eb52ade5f8094}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!input@{input}}
+\index{input@{input}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+input = default(Vector2)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 75 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa6cc25ff882d8d5f620d5991170fb519}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_aa6cc25ff882d8d5f620d5991170fb519}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!jump@{jump}}
+\index{jump@{jump}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{jump}{jump}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+jump}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae8bd3201fe4c2ccd5e93447ebe4a7505}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ae8bd3201fe4c2ccd5e93447ebe4a7505}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!jumpAudioSource@{jumpAudioSource}}
+\index{jumpAudioSource@{jumpAudioSource}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{jumpAudioSource}{jumpAudioSource}}
+{\footnotesize\ttfamily Audio\+Source Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+jump\+Audio\+Source}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_abc80715eb8fc0b13029afd8f56ee9c4a}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_abc80715eb8fc0b13029afd8f56ee9c4a}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!JumpButton@{JumpButton}}
+\index{JumpButton@{JumpButton}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{JumpButton}{JumpButton}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+Jump\+Button = \char`\"{}Jump\char`\"{}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_adb9ac8dac1212d22a6db8579c41dba9b}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_adb9ac8dac1212d22a6db8579c41dba9b}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!jumpInterruptFactor@{jumpInterruptFactor}}
+\index{jumpInterruptFactor@{jumpInterruptFactor}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{jumpInterruptFactor}{jumpInterruptFactor}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+jump\+Interrupt\+Factor = 0.\+5f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a768a370f9bc841d46d970ad0c2f4318e}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a768a370f9bc841d46d970ad0c2f4318e}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!jumpSpeed@{jumpSpeed}}
+\index{jumpSpeed@{jumpSpeed}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{jumpSpeed}{jumpSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+jump\+Speed = 25}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a63e11e5d8d9eff0dffb447e022127c95}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a63e11e5d8d9eff0dffb447e022127c95}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!landParticles@{landParticles}}
+\index{landParticles@{landParticles}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{landParticles}{landParticles}}
+{\footnotesize\ttfamily Particle\+System Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+land\+Particles}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a85218f45fab2b2e5224a183c6bd91497}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a85218f45fab2b2e5224a183c6bd91497}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!minimumJumpDuration@{minimumJumpDuration}}
+\index{minimumJumpDuration@{minimumJumpDuration}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{minimumJumpDuration}{minimumJumpDuration}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+minimum\+Jump\+Duration = 0.\+5f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4c565d15eae275253e85eb973585139d}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a4c565d15eae275253e85eb973585139d}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!minimumJumpEndTime@{minimumJumpEndTime}}
+\index{minimumJumpEndTime@{minimumJumpEndTime}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{minimumJumpEndTime}{minimumJumpEndTime}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+minimum\+Jump\+End\+Time = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a110d09df6a2df958a87c2c2d14ea7845}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!previousTargetAnimation@{previousTargetAnimation}}
+\index{previousTargetAnimation@{previousTargetAnimation}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{previousTargetAnimation}{previousTargetAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+previous\+Target\+Animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 82 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af07dffdeee84230bdfbe7e3967e0c4a8}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_af07dffdeee84230bdfbe7e3967e0c4a8}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!run@{run}}
+\index{run@{run}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{run}{run}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+run}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a26013ba18e34f53ff21570aa373b2e13}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a26013ba18e34f53ff21570aa373b2e13}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!runFromFall@{runFromFall}}
+\index{runFromFall@{runFromFall}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{runFromFall}{runFromFall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+run\+From\+Fall}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab912ceb84a2ef0a929fa61e0fb3a1d5d}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab912ceb84a2ef0a929fa61e0fb3a1d5d}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!runSpeed@{runSpeed}}
+\index{runSpeed@{runSpeed}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{runSpeed}{runSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+run\+Speed = 7f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ab94bac2b783499dc08eb327169042e75}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+skeleton\+Animation}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ababab6541498d71121284b7d32d43d0a}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!targetAnimation@{targetAnimation}}
+\index{targetAnimation@{targetAnimation}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{targetAnimation}{targetAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+target\+Animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 81 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0168595493fbef5adbcdeccf5ae92706}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0168595493fbef5adbcdeccf5ae92706}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!transitions@{transitions}}
+\index{transitions@{transitions}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{transitions}{transitions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_transition_dictionary_example}{Transition\+Dictionary\+Example}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+transitions}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a31e6d43917f7359d034a0b71a48c6ef2}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!velocity@{velocity}}
+\index{velocity@{velocity}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+velocity = default(Vector3)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a2ea05877ab371284c45be030316e6336}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a2ea05877ab371284c45be030316e6336}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!walk@{walk}}
+\index{walk@{walk}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{walk}{walk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+walk}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ad2e257615bc82b0a85c1c61c2d79032d}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_ad2e257615bc82b0a85c1c61c2d79032d}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!walkSpeed@{walkSpeed}}
+\index{walkSpeed@{walkSpeed}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{walkSpeed}{walkSpeed}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+walk\+Speed = 1.\+5f}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a13f964c1236bec0e21fbe5fd1073982b}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!wasGrounded@{wasGrounded}}
+\index{wasGrounded@{wasGrounded}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{wasGrounded}{wasGrounded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+was\+Grounded = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 79 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a78fd244d780599364c198516727d9f03}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a78fd244d780599364c198516727d9f03}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!XAxis@{XAxis}}
+\index{XAxis@{XAxis}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{XAxis}{XAxis}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+X\+Axis = \char`\"{}Horizontal\char`\"{}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0de1ef550805428d44e4b7e58fc444e0}\label{class_spine_1_1_unity_1_1_examples_1_1_basic_platformer_controller_a0de1ef550805428d44e4b7e58fc444e0}} 
+\index{Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}!YAxis@{YAxis}}
+\index{YAxis@{YAxis}!Spine.Unity.Examples.BasicPlatformerController@{Spine.Unity.Examples.BasicPlatformerController}}
+\doxysubsubsection{\texorpdfstring{YAxis}{YAxis}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Basic\+Platformer\+Controller.\+Y\+Axis = \char`\"{}Vertical\char`\"{}}
+
+
+
+Basic\+Platformer\+Controller.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Getting Started Scripts/\mbox{\hyperlink{_basic_platformer_controller_8cs}{Basic\+Platformer\+Controller.\+cs}}\end{DoxyCompactItemize}

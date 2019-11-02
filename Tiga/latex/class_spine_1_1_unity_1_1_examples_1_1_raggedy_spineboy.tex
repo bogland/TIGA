@@ -1,0 +1,271 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy}{}\doxysection{Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy}\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+
+
+Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Layer\+Mask \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_ae3500391a0edc0bc7a3792ffa74276d6}{ground\+Mask}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af0b6460306697ac19448794ae663c1af}{restore\+Duration}} = 0.\+5f
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}{launch\+Velocity}} = new Vector2(50,100)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a54f081af6a37a1be70614afb5930611f}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a6a0fa0b244c88c20f132606265a5a1d5}{Add\+Rigidbody}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_adad68a20b20a5f8cdc4511c496adf803}{Remove\+Rigidbody}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af775b7760436959e7ccccd12dc6e3a6d}{On\+Mouse\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a34812bdd6f9688158b93c20ce3ebc4ef}{Launch}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a8c76d5fd0fd155bca1aa39fb8d2c9bea}{Restore}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af28eaf3f26517130f19e865d4085ab09}{Wait\+Until\+Stopped}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d}{Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2D}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}
+\item 
+Collider2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}{natural\+Collider}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Raggedy\+Spineboy.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a6a0fa0b244c88c20f132606265a5a1d5}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a6a0fa0b244c88c20f132606265a5a1d5}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!AddRigidbody@{AddRigidbody}}
+\index{AddRigidbody@{AddRigidbody}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{AddRigidbody()}{AddRigidbody()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Add\+Rigidbody (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                              \{}
+\DoxyCodeLine{51             var rb = gameObject.AddComponent<Rigidbody2D>();}
+\DoxyCodeLine{52             rb.freezeRotation = \textcolor{keyword}{true};}
+\DoxyCodeLine{53             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}{naturalCollider}}.enabled = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a34812bdd6f9688158b93c20ce3ebc4ef}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a34812bdd6f9688158b93c20ce3ebc4ef}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!Launch@{Launch}}
+\index{Launch@{Launch}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{Launch()}{Launch()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Launch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 65 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{66                        \{}
+\DoxyCodeLine{67             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_adad68a20b20a5f8cdc4511c496adf803}{RemoveRigidbody}}();}
+\DoxyCodeLine{68             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.Apply();}
+\DoxyCodeLine{69             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.RootRigidbody.velocity = \textcolor{keyword}{new} Vector2(Random.Range(-\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}{launchVelocity}}.x, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}{launchVelocity}}.x), \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}{launchVelocity}}.y);}
+\DoxyCodeLine{70             StartCoroutine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af28eaf3f26517130f19e865d4085ab09}{WaitUntilStopped}}());}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af775b7760436959e7ccccd12dc6e3a6d}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af775b7760436959e7ccccd12dc6e3a6d}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!OnMouseUp@{OnMouseUp}}
+\index{OnMouseUp@{OnMouseUp}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{OnMouseUp()}{OnMouseUp()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+On\+Mouse\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                           \{}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}{naturalCollider}}.enabled)}
+\DoxyCodeLine{63                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a34812bdd6f9688158b93c20ce3ebc4ef}{Launch}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_adad68a20b20a5f8cdc4511c496adf803}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_adad68a20b20a5f8cdc4511c496adf803}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!RemoveRigidbody@{RemoveRigidbody}}
+\index{RemoveRigidbody@{RemoveRigidbody}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{RemoveRigidbody()}{RemoveRigidbody()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Remove\+Rigidbody (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                 \{}
+\DoxyCodeLine{57             Destroy(GetComponent<Rigidbody2D>());}
+\DoxyCodeLine{58             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}{naturalCollider}}.enabled = \textcolor{keyword}{false};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a8c76d5fd0fd155bca1aa39fb8d2c9bea}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a8c76d5fd0fd155bca1aa39fb8d2c9bea}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!Restore@{Restore}}
+\index{Restore@{Restore}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{Restore()}{Restore()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Restore (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{73                                \{}
+\DoxyCodeLine{74             Vector3 estimatedPos = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.EstimatedSkeletonPosition;}
+\DoxyCodeLine{75             Vector3 rbPosition = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.RootRigidbody.position;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             Vector3 skeletonPoint = estimatedPos;}
+\DoxyCodeLine{78             RaycastHit2D hit = Physics2D.Raycast((Vector2)rbPosition, (Vector2)(estimatedPos -\/ rbPosition), Vector3.Distance(estimatedPos, rbPosition), \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_ae3500391a0edc0bc7a3792ffa74276d6}{groundMask}});}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (hit.collider != \textcolor{keyword}{null})}
+\DoxyCodeLine{80                 skeletonPoint = hit.point;}
+\DoxyCodeLine{81             }
+\DoxyCodeLine{82             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.RootRigidbody.isKinematic = \textcolor{keyword}{true};}
+\DoxyCodeLine{83             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.SetSkeletonPosition(skeletonPoint);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85             yield \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.SmoothMix(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af0b6460306697ac19448794ae663c1af}{restoreDuration}});}
+\DoxyCodeLine{86             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.Remove();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a6a0fa0b244c88c20f132606265a5a1d5}{AddRigidbody}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a54f081af6a37a1be70614afb5930611f}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a54f081af6a37a1be70614afb5930611f}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                       \{}
+\DoxyCodeLine{46             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}} = GetComponent<\mbox{\hyperlink{namespace_spine}{Spine}}.\mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}}.\mbox{\hyperlink{namespace_spine_1_1_unity_1_1_modules}{Modules}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d}{SkeletonRagdoll2D}}>();}
+\DoxyCodeLine{47             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}{naturalCollider}} = GetComponent<Collider2D>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af28eaf3f26517130f19e865d4085ab09}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af28eaf3f26517130f19e865d4085ab09}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!WaitUntilStopped@{WaitUntilStopped}}
+\index{WaitUntilStopped@{WaitUntilStopped}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{WaitUntilStopped()}{WaitUntilStopped()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+Wait\+Until\+Stopped (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 90 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                         \{}
+\DoxyCodeLine{92             yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(0.5f);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             \textcolor{keywordtype}{float} t = 0;}
+\DoxyCodeLine{95             \textcolor{keywordflow}{while} (t < 0.5f) \{}
+\DoxyCodeLine{96                 t = (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}{ragdoll}}.RootRigidbody.velocity.magnitude > 0.09f) ? 0 : t + Time.deltaTime;}
+\DoxyCodeLine{97                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{98             \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             StartCoroutine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a8c76d5fd0fd155bca1aa39fb8d2c9bea}{Restore}}());}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_ae3500391a0edc0bc7a3792ffa74276d6}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_ae3500391a0edc0bc7a3792ffa74276d6}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!groundMask@{groundMask}}
+\index{groundMask@{groundMask}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{groundMask}{groundMask}}
+{\footnotesize\ttfamily Layer\+Mask Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+ground\+Mask}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a870b388ac55c68b1882921936795313d}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!launchVelocity@{launchVelocity}}
+\index{launchVelocity@{launchVelocity}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{launchVelocity}{launchVelocity}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+launch\+Velocity = new Vector2(50,100)}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a01365a577a7e2b1a9647bba7ced3742e}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!naturalCollider@{naturalCollider}}
+\index{naturalCollider@{naturalCollider}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{naturalCollider}{naturalCollider}}
+{\footnotesize\ttfamily Collider2D Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+natural\+Collider\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_a58e2cbd7ecb35aa13d729fc785afc31d}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!ragdoll@{ragdoll}}
+\index{ragdoll@{ragdoll}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{ragdoll}{ragdoll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d}{Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2D}} Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+ragdoll\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af0b6460306697ac19448794ae663c1af}\label{class_spine_1_1_unity_1_1_examples_1_1_raggedy_spineboy_af0b6460306697ac19448794ae663c1af}} 
+\index{Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}!restoreDuration@{restoreDuration}}
+\index{restoreDuration@{restoreDuration}!Spine.Unity.Examples.RaggedySpineboy@{Spine.Unity.Examples.RaggedySpineboy}}
+\doxysubsubsection{\texorpdfstring{restoreDuration}{restoreDuration}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Raggedy\+Spineboy.\+restore\+Duration = 0.\+5f}
+
+
+
+Raggedy\+Spineboy.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_raggedy_spineboy_8cs}{Raggedy\+Spineboy.\+cs}}\end{DoxyCompactItemize}

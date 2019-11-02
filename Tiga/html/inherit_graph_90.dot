@@ -1,0 +1,16 @@
+digraph "그래픽컬한 클래스 계통도"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node80 [label="PropertyDrawer",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node80 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="Spine.Unity.Editor.Spine\lAtlasRegionDrawer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_atlas_region_drawer.html",tooltip=" "];
+  Node80 -> Node82 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node82 [label="Spine.Unity.Editor.Spine\lTreeItemDrawerBase\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_tree_item_drawer_base.html",tooltip=" "];
+  Node80 -> Node83 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node83 [label="Spine.Unity.Modules.Skeleton\lRagdollInspector.LayerFieldProperty\lDrawer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll_inspector_1_1_layer_field_property_drawer.html",tooltip=" "];
+  Node80 -> Node84 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node84 [label="SpineAnimationStateDrawer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_animation_state_drawer.html",tooltip=" "];
+}

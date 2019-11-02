@@ -1,0 +1,10 @@
+digraph "Spine.Unity.Modules.SkeletonRagdoll.Apply"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Spine.Unity.Modules.Skeleton\lRagdoll.Apply",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Instantiates the ragdoll simulation and applies its transforms to the skeleton."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Modules.Skeleton\lRagdoll.Start",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll.html#a9ab3db3b00076c0cc9ae5b90073acf6a",tooltip=" "];
+}

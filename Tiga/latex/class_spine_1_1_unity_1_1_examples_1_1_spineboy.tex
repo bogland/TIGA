@@ -1,0 +1,115 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy}{}\doxysection{Spine.\+Unity.\+Examples.\+Spineboy 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy}\index{Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}}
+
+
+Spine.\+Unity.\+Examples.\+Spineboy에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spineboy에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a348604e0aa36ca2f3a2f348e027b3b4b}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a292bceb222ced0e68eb7ef7b99683531}{On\+Mouse\+Down}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a28b8e987f2d63dd5ac6d9231a837f0b3}{Handle\+Event}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} track\+Entry, \mbox{\hyperlink{class_spine_1_1_event}{Spine.\+Event}} e)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}{skeleton\+Animation}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spineboy.\+cs 파일의 35 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a28b8e987f2d63dd5ac6d9231a837f0b3}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a28b8e987f2d63dd5ac6d9231a837f0b3}} 
+\index{Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}!HandleEvent@{HandleEvent}}
+\index{HandleEvent@{HandleEvent}!Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}}
+\doxysubsubsection{\texorpdfstring{HandleEvent()}{HandleEvent()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy.\+Handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}}}]{track\+Entry,  }\item[{\mbox{\hyperlink{class_spine_1_1_event}{Spine.\+Event}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                                                 \{}
+\DoxyCodeLine{51             Debug.Log(trackEntry.\mbox{\hyperlink{class_spine_1_1_track_entry_a8ff80753d9c6b2cdb8d0933492581e55}{TrackIndex}} + \textcolor{stringliteral}{" "} + trackEntry.\mbox{\hyperlink{class_spine_1_1_track_entry_ac36eff87ff69899a0f334e3204bd52b5}{Animation}}.\mbox{\hyperlink{class_spine_1_1_animation_a51bf7cf1ccd2e3ae1fa03f62336b85a7}{Name}} + \textcolor{stringliteral}{": event "} + e + \textcolor{stringliteral}{", "} + e.Int);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a292bceb222ced0e68eb7ef7b99683531}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a292bceb222ced0e68eb7ef7b99683531}} 
+\index{Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}!OnMouseDown@{OnMouseDown}}
+\index{OnMouseDown@{OnMouseDown}!Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}}
+\doxysubsubsection{\texorpdfstring{OnMouseDown()}{OnMouseDown()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy.\+On\+Mouse\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spineboy.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54                                    \{}
+\DoxyCodeLine{55             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.SetAnimation(0, \textcolor{stringliteral}{"jump"}, \textcolor{keyword}{false}); \textcolor{comment}{// Set jump to be played on track 0 immediately.}}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.AddAnimation(0, \textcolor{stringliteral}{"run"}, \textcolor{keyword}{true}, 0); \textcolor{comment}{// Queue walk to be looped on track 0 after the jump animation.}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a348604e0aa36ca2f3a2f348e027b3b4b}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a348604e0aa36ca2f3a2f348e027b3b4b}} 
+\index{Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spineboy.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spineboy.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                              \{}
+\DoxyCodeLine{40             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}{skeletonAnimation}} = GetComponent<SkeletonAnimation>(); \textcolor{comment}{// Get the SkeletonAnimation component for the GameObject this script is attached to.}}
+\DoxyCodeLine{41             var animationState = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43             animationState.Event += \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a28b8e987f2d63dd5ac6d9231a837f0b3}{HandleEvent}};; \textcolor{comment}{// Call our method any time an animation fires an event.}}
+\DoxyCodeLine{44             animationState.End += (entry) => Debug.Log(\textcolor{stringliteral}{"start: "} + entry.TrackIndex); \textcolor{comment}{// A lambda can be used for the callback instead of a method.}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46             animationState.AddAnimation(0, \textcolor{stringliteral}{"jump"}, \textcolor{keyword}{false}, 2);   \textcolor{comment}{// Queue jump to be played on track 0 two seconds after the starting animation.}}
+\DoxyCodeLine{47             animationState.AddAnimation(0, \textcolor{stringliteral}{"run"}, \textcolor{keyword}{true}, 0); \textcolor{comment}{// Queue walk to be looped on track 0 after the jump animation.}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}\label{class_spine_1_1_unity_1_1_examples_1_1_spineboy_a3efc53fff2b8a1d75b613660553bdc85}} 
+\index{Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.Spineboy@{Spine.Unity.Examples.Spineboy}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Spineboy.\+skeleton\+Animation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spineboy.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spineboy_8cs}{Spineboy.\+cs}}\end{DoxyCompactItemize}

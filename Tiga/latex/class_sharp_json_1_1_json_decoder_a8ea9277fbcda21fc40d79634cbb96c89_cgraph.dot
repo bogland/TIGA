@@ -1,0 +1,44 @@
+digraph "SharpJson.JsonDecoder.ParseArray"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SharpJson.JsonDecoder.Parse\lArray",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SharpJson.Lexer.LookAhead",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a220de50f8092ba08305379cf8bb38363",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="SharpJson.Lexer.NextToken",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a2dafe2e9f3aa19f29e262a07ce597530",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="SharpJson.Lexer.SkipWhite\lSpaces",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#ac463df29435bb1cd854bebeaae1fd905",tooltip=" "];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="SharpJson.JsonDecoder.Parse\lValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad67cc8fc02cea01cd101c09631fb3d05",tooltip=" "];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SharpJson.Lexer.ParseDouble\lNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a17df5147901bf78b35e4768ae98a03da",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="SharpJson.Lexer.GetNumber\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a23df576a4afdb21efd22e38fb9e780e2",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="SharpJson.Lexer.GetLastIndex\lOfNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#ae99bc73124af03e765941f3510ce7c9f",tooltip=" "];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="SharpJson.Lexer.ParseFloat\lNumber",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#aea207308302033e727e342c8deb0fe5b",tooltip=" "];
+  Node9 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="SharpJson.JsonDecoder.Parse\lObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#ad6d5d2ed661ee7fd724784616ebfff7b",tooltip=" "];
+  Node10 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="SharpJson.Lexer.ParseString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_lexer.html#a6b4182a915ee2fd3cfb2ed415dd9b644",tooltip=" "];
+  Node11 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="SharpJson.JsonDecoder.Trigger\lError",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sharp_json_1_1_json_decoder.html#a0835819f4bc401580a84999dfd03df1a",tooltip=" "];
+  Node5 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+}

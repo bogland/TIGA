@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/Attachments/AtlasAttachmentLoader.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_atlas_attachment_loader_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">AtlasAttachmentLoader.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_atlas_attachment_loader_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">   39</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_atlas_attachment_loader.html">AtlasAttachmentLoader</a> : <a class="code" href="interface_spine_1_1_attachment_loader.html">AttachmentLoader</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">private</span> <a class="code" href="class_spine_1_1_atlas.html">Atlas</a>[] <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a3fd62c2c238a6a6bb6ec2f74fa65f109">   41</a></span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a3fd62c2c238a6a6bb6ec2f74fa65f109">AtlasAttachmentLoader</a> (params <a class="code" href="class_spine_1_1_atlas.html">Atlas</a>[] <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a> == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;atlas array cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            this.atlasArray = <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a82d9f2833ec43a445c76ad765d8c1031">   46</a></span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_region_attachment.html">RegionAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a82d9f2833ec43a445c76ad765d8c1031">NewRegionAttachment</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name, <span class="keywordtype">string</span> path) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_spine_1_1_atlas_region.html">AtlasRegion</a> region = <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa">FindRegion</a>(path);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">if</span> (region == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="keywordtype">string</span>.<a class="code" href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Format</a>(<span class="stringliteral">&quot;Region not found in atlas: {0} (region attachment: {1})&quot;</span>, path, name));</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="class_spine_1_1_region_attachment.html">RegionAttachment</a> attachment = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_region_attachment.html">RegionAttachment</a>(name);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#a35e47f777b6d0c6cf1def392155bc89d">RendererObject</a> = region;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#a0226ca72aa847e51a00dd75a701ec8cb">SetUVs</a>(region.<a class="code" href="class_spine_1_1_atlas_region.html#ab3b0d2114e73301a2f89f7ae5c0ea732">u</a>, region.<a class="code" href="class_spine_1_1_atlas_region.html#a39791ae99023b203b7101e3cc6af2ee2">v</a>, region.<a class="code" href="class_spine_1_1_atlas_region.html#a675017626eeb7ac990ce67c7d59a0db9">u2</a>, region.<a class="code" href="class_spine_1_1_atlas_region.html#afd955d7bff6d40a70fbe4948795b68bb">v2</a>, region.<a class="code" href="class_spine_1_1_atlas_region.html#ad8e5dd7daf5c30607df23337645ea1c3">rotate</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            attachment.regionOffsetX = region.<a class="code" href="class_spine_1_1_atlas_region.html#a4ed5cbd27bfcd2d0ddd603e8ff6f55cb">offsetX</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#ad1182a4097a2453a85df1aac7a24a6c8">regionOffsetY</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a83fbaaf62897b81345e24dba549fa16f">offsetY</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#a4d1d5059ca518c1243671875ed52ded5">regionWidth</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a782daa1060bd89e53eb12de1b3a44e60">width</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#adf51bb462951135602ca8c4ad3e20572">regionHeight</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#ab922ef74b06b4ae3e6f502409bb65375">height</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#acd2013225d6838145d15de0db498c23a">regionOriginalWidth</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a83aaeaa6a6fbc014dc75ed4b8fc1f5a9">originalWidth</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            attachment.<a class="code" href="class_spine_1_1_region_attachment.html#a8c526b21a3c3e404dffe9141e39cbea5">regionOriginalHeight</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a98a3e9f73e379e0fd99d1da1db6458ff">originalHeight</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> attachment;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a4ed43e8f40497ea896466b0d9f565894">   61</a></span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_mesh_attachment.html">MeshAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a4ed43e8f40497ea896466b0d9f565894">NewMeshAttachment</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name, <span class="keywordtype">string</span> path) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="class_spine_1_1_atlas_region.html">AtlasRegion</a> region = <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa">FindRegion</a>(path);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span> (region == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentException(<span class="keywordtype">string</span>.<a class="code" href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Format</a>(<span class="stringliteral">&quot;Region not found in atlas: {0} (region attachment: {1})&quot;</span>, path, name));</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="class_spine_1_1_mesh_attachment.html">MeshAttachment</a> attachment = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_mesh_attachment.html">MeshAttachment</a>(name);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#ab56597137b32e62069ad02b4429d9dbd">RendererObject</a> = region;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#ace127a197ed4d47151eb69c23081e9ca">RegionU</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#ab3b0d2114e73301a2f89f7ae5c0ea732">u</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a5e33a700e00785c72b7ff0e9b0508258">RegionV</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a39791ae99023b203b7101e3cc6af2ee2">v</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a3fc2eae51029cc4d4eb4c5cb722630c9">RegionU2</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a675017626eeb7ac990ce67c7d59a0db9">u2</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a0c0d06993fb58c1bc939a7969726c7a7">RegionV2</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#afd955d7bff6d40a70fbe4948795b68bb">v2</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a933c3755df71c28cd03fee82a95fd331">RegionRotate</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#ad8e5dd7daf5c30607df23337645ea1c3">rotate</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            attachment.regionOffsetX = region.<a class="code" href="class_spine_1_1_atlas_region.html#a4ed5cbd27bfcd2d0ddd603e8ff6f55cb">offsetX</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a6bcd68e90a80dd46445df5cf74625548">regionOffsetY</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a83fbaaf62897b81345e24dba549fa16f">offsetY</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#ad033dbbc49dd92d369ced4482315c510">regionWidth</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a782daa1060bd89e53eb12de1b3a44e60">width</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a1b1e2da5084f56a49d492200914d34d9">regionHeight</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#ab922ef74b06b4ae3e6f502409bb65375">height</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a988a4eb9ed21b96d37cf66bf3dd0c6da">regionOriginalWidth</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a83aaeaa6a6fbc014dc75ed4b8fc1f5a9">originalWidth</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            attachment.<a class="code" href="class_spine_1_1_mesh_attachment.html#a9be8cc5e163c4c88de98e1a0dfe4cbb8">regionOriginalHeight</a> = region.<a class="code" href="class_spine_1_1_atlas_region.html#a98a3e9f73e379e0fd99d1da1db6458ff">originalHeight</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> attachment;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }           </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#af4e3beb65efaed84e684d78050afde70">   80</a></span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#af4e3beb65efaed84e684d78050afde70">NewBoundingBoxAttachment</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_spine_1_1_bounding_box_attachment.html">BoundingBoxAttachment</a>(name);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#aad18a939954b56f7d16d24f0ca46b103">   84</a></span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_path_attachment.html">PathAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aad18a939954b56f7d16d24f0ca46b103">NewPathAttachment</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_spine_1_1_path_attachment.html">PathAttachment</a>(name);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a671c5c29c8eff42a90506fc593011abc">   88</a></span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_point_attachment.html">PointAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a671c5c29c8eff42a90506fc593011abc">NewPointAttachment</a> (<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_spine_1_1_point_attachment.html">PointAttachment</a>(name);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a85d6fe3abaa381c7d977edd3e63552b8">   92</a></span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_clipping_attachment.html">ClippingAttachment</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a85d6fe3abaa381c7d977edd3e63552b8">NewClippingAttachment</a>(<a class="code" href="class_spine_1_1_skin.html">Skin</a> skin, <span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="class_spine_1_1_clipping_attachment.html">ClippingAttachment</a>(name);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa">   96</a></span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_atlas_region.html">AtlasRegion</a> <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa">FindRegion</a> (<span class="keywordtype">string</span> name) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="class_spine_1_1_atlas_region.html">AtlasRegion</a> region;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a>.Length; i++) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                region = <a class="code" href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">atlasArray</a>[i].<a class="code" href="class_spine_1_1_atlas.html#a0c3e63b796443fd755114f9bea61c780">FindRegion</a>(name);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">if</span> (region != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    <span class="keywordflow">return</span> region;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a83fbaaf62897b81345e24dba549fa16f"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a83fbaaf62897b81345e24dba549fa16f">Spine.AtlasRegion.offsetY</a></div><div class="ttdeci">float offsetY</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00298">Atlas.cs:298</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_aee11e867c829a42c393dc1ac506e7def"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#aee11e867c829a42c393dc1ac506e7def">Spine.AtlasAttachmentLoader.atlasArray</a></div><div class="ttdeci">Atlas[] atlasArray</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00039">AtlasAttachmentLoader.cs:39</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_html"><div class="ttname"><a href="class_spine_1_1_atlas.html">Spine.Atlas</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00045">Atlas.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a671c5c29c8eff42a90506fc593011abc"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a671c5c29c8eff42a90506fc593011abc">Spine.AtlasAttachmentLoader.NewPointAttachment</a></div><div class="ttdeci">PointAttachment NewPointAttachment(Skin skin, string name)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00088">AtlasAttachmentLoader.cs:88</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_ab922ef74b06b4ae3e6f502409bb65375"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#ab922ef74b06b4ae3e6f502409bb65375">Spine.AtlasRegion.height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00296">Atlas.cs:296</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_ab3b0d2114e73301a2f89f7ae5c0ea732"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#ab3b0d2114e73301a2f89f7ae5c0ea732">Spine.AtlasRegion.u</a></div><div class="ttdeci">float u</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00297">Atlas.cs:297</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_clipping_attachment_html"><div class="ttname"><a href="class_spine_1_1_clipping_attachment.html">Spine.ClippingAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_clipping_attachment_8cs_source.html#l00033">ClippingAttachment.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a98a3e9f73e379e0fd99d1da1db6458ff"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a98a3e9f73e379e0fd99d1da1db6458ff">Spine.AtlasRegion.originalHeight</a></div><div class="ttdeci">int originalHeight</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00299">Atlas.cs:299</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html">Spine.MeshAttachment</a></div><div class="ttdoc">Attachment that displays a texture region using a mesh.</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00034">MeshAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a933c3755df71c28cd03fee82a95fd331"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a933c3755df71c28cd03fee82a95fd331">Spine.MeshAttachment.RegionRotate</a></div><div class="ttdeci">bool RegionRotate</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00060">MeshAttachment.cs:60</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a1b1e2da5084f56a49d492200914d34d9"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a1b1e2da5084f56a49d492200914d34d9">Spine.MeshAttachment.regionHeight</a></div><div class="ttdeci">float regionHeight</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00035">MeshAttachment.cs:35</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_acd2013225d6838145d15de0db498c23a"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#acd2013225d6838145d15de0db498c23a">Spine.RegionAttachment.regionOriginalWidth</a></div><div class="ttdeci">float regionOriginalWidth</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00045">RegionAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_adf51bb462951135602ca8c4ad3e20572"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#adf51bb462951135602ca8c4ad3e20572">Spine.RegionAttachment.regionHeight</a></div><div class="ttdeci">float regionHeight</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00045">RegionAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a782daa1060bd89e53eb12de1b3a44e60"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a782daa1060bd89e53eb12de1b3a44e60">Spine.AtlasRegion.width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00296">Atlas.cs:296</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_a0226ca72aa847e51a00dd75a701ec8cb"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#a0226ca72aa847e51a00dd75a701ec8cb">Spine.RegionAttachment.SetUVs</a></div><div class="ttdeci">void SetUVs(float u, float v, float u2, float v2, bool rotate)</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00121">RegionAttachment.cs:121</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html">Spine.AtlasAttachmentLoader</a></div><div class="ttdoc">An AttachmentLoader that configures attachments using texture regions from an Atlas....</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00038">AtlasAttachmentLoader.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a83aaeaa6a6fbc014dc75ed4b8fc1f5a9"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a83aaeaa6a6fbc014dc75ed4b8fc1f5a9">Spine.AtlasRegion.originalWidth</a></div><div class="ttdeci">int originalWidth</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00299">Atlas.cs:299</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a988a4eb9ed21b96d37cf66bf3dd0c6da"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a988a4eb9ed21b96d37cf66bf3dd0c6da">Spine.MeshAttachment.regionOriginalWidth</a></div><div class="ttdeci">float regionOriginalWidth</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00035">MeshAttachment.cs:35</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a5e33a700e00785c72b7ff0e9b0508258"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a5e33a700e00785c72b7ff0e9b0508258">Spine.MeshAttachment.RegionV</a></div><div class="ttdeci">float RegionV</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00057">MeshAttachment.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html"><div class="ttname"><a href="class_spine_1_1_region_attachment.html">Spine.RegionAttachment</a></div><div class="ttdoc">Attachment that displays a texture region.</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00034">RegionAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a39791ae99023b203b7101e3cc6af2ee2"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a39791ae99023b203b7101e3cc6af2ee2">Spine.AtlasRegion.v</a></div><div class="ttdeci">float v</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00297">Atlas.cs:297</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_a4d1d5059ca518c1243671875ed52ded5"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#a4d1d5059ca518c1243671875ed52ded5">Spine.RegionAttachment.regionWidth</a></div><div class="ttdeci">float regionWidth</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00045">RegionAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a0c0d06993fb58c1bc939a7969726c7a7"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a0c0d06993fb58c1bc939a7969726c7a7">Spine.MeshAttachment.RegionV2</a></div><div class="ttdeci">float RegionV2</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00059">MeshAttachment.cs:59</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a6bcd68e90a80dd46445df5cf74625548"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a6bcd68e90a80dd46445df5cf74625548">Spine.MeshAttachment.regionOffsetY</a></div><div class="ttdeci">float regionOffsetY</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00035">MeshAttachment.cs:35</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_html_a0c3e63b796443fd755114f9bea61c780"><div class="ttname"><a href="class_spine_1_1_atlas.html#a0c3e63b796443fd755114f9bea61c780">Spine.Atlas.FindRegion</a></div><div class="ttdeci">AtlasRegion FindRegion(string name)</div><div class="ttdoc">Returns the first region found with the specified name. This method uses string comparison to find th...</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00243">Atlas.cs:243</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a4ed5cbd27bfcd2d0ddd603e8ff6f55cb"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a4ed5cbd27bfcd2d0ddd603e8ff6f55cb">Spine.AtlasRegion.offsetX</a></div><div class="ttdeci">float offsetX</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00298">Atlas.cs:298</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_a675017626eeb7ac990ce67c7d59a0db9"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#a675017626eeb7ac990ce67c7d59a0db9">Spine.AtlasRegion.u2</a></div><div class="ttdeci">float u2</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00297">Atlas.cs:297</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_aad18a939954b56f7d16d24f0ca46b103"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#aad18a939954b56f7d16d24f0ca46b103">Spine.AtlasAttachmentLoader.NewPathAttachment</a></div><div class="ttdeci">PathAttachment NewPathAttachment(Skin skin, string name)</div><div class="ttdoc">May be null to not load any attachment</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00084">AtlasAttachmentLoader.cs:84</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a3fd62c2c238a6a6bb6ec2f74fa65f109"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a3fd62c2c238a6a6bb6ec2f74fa65f109">Spine.AtlasAttachmentLoader.AtlasAttachmentLoader</a></div><div class="ttdeci">AtlasAttachmentLoader(params Atlas[] atlasArray)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00041">AtlasAttachmentLoader.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_attachment_html"><div class="ttname"><a href="class_spine_1_1_path_attachment.html">Spine.PathAttachment</a></div><div class="ttdef"><b>Definition:</b> <a href="_path_attachment_8cs_source.html#l00034">PathAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a3fc2eae51029cc4d4eb4c5cb722630c9"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a3fc2eae51029cc4d4eb4c5cb722630c9">Spine.MeshAttachment.RegionU2</a></div><div class="ttdeci">float RegionU2</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00058">MeshAttachment.cs:58</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a4ed43e8f40497ea896466b0d9f565894"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a4ed43e8f40497ea896466b0d9f565894">Spine.AtlasAttachmentLoader.NewMeshAttachment</a></div><div class="ttdeci">MeshAttachment NewMeshAttachment(Skin skin, string name, string path)</div><div class="ttdoc">&lt;return&gt;May be null to not load any attachment.&lt;/return&gt;</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00061">AtlasAttachmentLoader.cs:61</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_ad033dbbc49dd92d369ced4482315c510"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#ad033dbbc49dd92d369ced4482315c510">Spine.MeshAttachment.regionWidth</a></div><div class="ttdeci">float regionWidth</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00035">MeshAttachment.cs:35</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_a35e47f777b6d0c6cf1def392155bc89d"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#a35e47f777b6d0c6cf1def392155bc89d">Spine.RegionAttachment.RendererObject</a></div><div class="ttdeci">object RendererObject</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00063">RegionAttachment.cs:63</a></div></div>
+<div class="ttc" id="ainterface_spine_1_1_attachment_loader_html"><div class="ttname"><a href="interface_spine_1_1_attachment_loader.html">Spine.AttachmentLoader</a></div><div class="ttdef"><b>Definition:</b> <a href="_attachment_loader_8cs_source.html#l00058">AttachmentLoader.cs:58</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a66fcb0ab63b2b301097360f7cb4f1cd3"><div class="ttname"><a href="namespace_spine.html#a66fcb0ab63b2b301097360f7cb4f1cd3">Spine.Format</a></div><div class="ttdeci">Format</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00256">Atlas.cs:256</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_afd955d7bff6d40a70fbe4948795b68bb"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#afd955d7bff6d40a70fbe4948795b68bb">Spine.AtlasRegion.v2</a></div><div class="ttdeci">float v2</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00297">Atlas.cs:297</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_ad1182a4097a2453a85df1aac7a24a6c8"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#ad1182a4097a2453a85df1aac7a24a6c8">Spine.RegionAttachment.regionOffsetY</a></div><div class="ttdeci">float regionOffsetY</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00045">RegionAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_ab56597137b32e62069ad02b4429d9dbd"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#ab56597137b32e62069ad02b4429d9dbd">Spine.MeshAttachment.RendererObject</a></div><div class="ttdeci">object RendererObject</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00055">MeshAttachment.cs:55</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_region_attachment_html_a8c526b21a3c3e404dffe9141e39cbea5"><div class="ttname"><a href="class_spine_1_1_region_attachment.html#a8c526b21a3c3e404dffe9141e39cbea5">Spine.RegionAttachment.regionOriginalHeight</a></div><div class="ttdeci">float regionOriginalHeight</div><div class="ttdef"><b>Definition:</b> <a href="_region_attachment_8cs_source.html#l00045">RegionAttachment.cs:45</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_point_attachment_html"><div class="ttname"><a href="class_spine_1_1_point_attachment.html">Spine.PointAttachment</a></div><div class="ttdoc">An attachment which is a single point and a rotation. This can be used to spawn projectiles,...</div><div class="ttdef"><b>Definition:</b> <a href="_point_attachment_8cs_source.html#l00065">PointAttachment.cs:65</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html_ad8e5dd7daf5c30607df23337645ea1c3"><div class="ttname"><a href="class_spine_1_1_atlas_region.html#ad8e5dd7daf5c30607df23337645ea1c3">Spine.AtlasRegion.rotate</a></div><div class="ttdeci">bool rotate</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00301">Atlas.cs:301</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_a9be8cc5e163c4c88de98e1a0dfe4cbb8"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#a9be8cc5e163c4c88de98e1a0dfe4cbb8">Spine.MeshAttachment.regionOriginalHeight</a></div><div class="ttdeci">float regionOriginalHeight</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00035">MeshAttachment.cs:35</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a82d9f2833ec43a445c76ad765d8c1031"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a82d9f2833ec43a445c76ad765d8c1031">Spine.AtlasAttachmentLoader.NewRegionAttachment</a></div><div class="ttdeci">RegionAttachment NewRegionAttachment(Skin skin, string name, string path)</div><div class="ttdoc">&lt;return&gt;May be null to not load any attachment.&lt;/return&gt;</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00046">AtlasAttachmentLoader.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skin_html"><div class="ttname"><a href="class_spine_1_1_skin.html">Spine.Skin</a></div><div class="ttdoc">Stores attachments by slot index and attachment name.</div><div class="ttdef"><b>Definition:</b> <a href="_skin_8cs_source.html#l00038">Skin.cs:38</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_region_html"><div class="ttname"><a href="class_spine_1_1_atlas_region.html">Spine.AtlasRegion</a></div><div class="ttdef"><b>Definition:</b> <a href="_atlas_8cs_source.html#l00293">Atlas.cs:293</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_mesh_attachment_html_ace127a197ed4d47151eb69c23081e9ca"><div class="ttname"><a href="class_spine_1_1_mesh_attachment.html#ace127a197ed4d47151eb69c23081e9ca">Spine.MeshAttachment.RegionU</a></div><div class="ttdeci">float RegionU</div><div class="ttdef"><b>Definition:</b> <a href="_mesh_attachment_8cs_source.html#l00056">MeshAttachment.cs:56</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a85d6fe3abaa381c7d977edd3e63552b8"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a85d6fe3abaa381c7d977edd3e63552b8">Spine.AtlasAttachmentLoader.NewClippingAttachment</a></div><div class="ttdeci">ClippingAttachment NewClippingAttachment(Skin skin, string name)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00092">AtlasAttachmentLoader.cs:92</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_a9205ec9a85e865b634a1233ebb409faa"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#a9205ec9a85e865b634a1233ebb409faa">Spine.AtlasAttachmentLoader.FindRegion</a></div><div class="ttdeci">AtlasRegion FindRegion(string name)</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00096">AtlasAttachmentLoader.cs:96</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bounding_box_attachment_html"><div class="ttname"><a href="class_spine_1_1_bounding_box_attachment.html">Spine.BoundingBoxAttachment</a></div><div class="ttdoc">Attachment that has a polygon for bounds checking.</div><div class="ttdef"><b>Definition:</b> <a href="_bounding_box_attachment_8cs_source.html#l00034">BoundingBoxAttachment.cs:34</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_atlas_attachment_loader_html_af4e3beb65efaed84e684d78050afde70"><div class="ttname"><a href="class_spine_1_1_atlas_attachment_loader.html#af4e3beb65efaed84e684d78050afde70">Spine.AtlasAttachmentLoader.NewBoundingBoxAttachment</a></div><div class="ttdeci">BoundingBoxAttachment NewBoundingBoxAttachment(Skin skin, string name)</div><div class="ttdoc">&lt;return&gt;May be null to not load any attachment.&lt;/return&gt;</div><div class="ttdef"><b>Definition:</b> <a href="_atlas_attachment_loader_8cs_source.html#l00080">AtlasAttachmentLoader.cs:80</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="dir_6e12d4f1286b562c1f0f375ae074ad41.html">Attachments</a></li><li class="navelem"><a class="el" href="_atlas_attachment_loader_8cs.html">AtlasAttachmentLoader.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

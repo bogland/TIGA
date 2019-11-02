@@ -1,0 +1,14 @@
+digraph "Spine.Atlas.Load"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Atlas.Load",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.TextureLoader.Load",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_texture_loader.html#af9247fcdf3ed29726d9ffdf8e8575aed",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Atlas.ReadTuple",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_atlas.html#afdc42097fe20453cb07156b8d234c7b7",tooltip="Returns the number of tuple values read (1, 2 or 4)."];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Atlas.ReadValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_atlas.html#a2c4453ff8a674d6f5c1a30aef5f69cf5",tooltip=" "];
+}

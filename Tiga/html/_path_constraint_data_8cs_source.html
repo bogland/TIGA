@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine/spine-csharp/PathConstraintData.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_path_constraint_data_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">PathConstraintData.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_path_constraint_data_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Spine Runtimes Software License v2.5</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Copyright (c) 2013-2016, Esoteric Software</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * All rights reserved.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * You are granted a perpetual, non-exclusive, non-sublicensable, and</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * non-transferable license to use, install, execute, and perform the Spine</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Runtimes software and derivative works solely for personal or internal</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * use. Without the written permission of Esoteric Software (see Section 2 of</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * the Spine Software License Agreement), you may not (a) modify, translate,</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * adapt, or develop new applications using the Spine Runtimes or otherwise</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * create derivative works or improvements of the Spine Runtimes or (b) remove,</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * delete, alter, or obscure any trademarks or any copyright, trademark, patent,</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * or other intellectual property or proprietary rights notices on or in the</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Software, including any copy thereof. Redistributions in binary or source</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * form must include this license and terms.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * THIS SOFTWARE IS PROVIDED BY ESOTERIC SOFTWARE &quot;AS IS&quot; AND ANY EXPRESS OR</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * EVENT SHALL ESOTERIC SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, BUSINESS INTERRUPTION, OR LOSS OF</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * USE, DATA, OR PROFITS) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *****************************************************************************/</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using</span> System;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html">   33</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine.html">Spine</a> {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_path_constraint_data.html">PathConstraintData</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">string</span> name;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">int</span> order;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">internal</span> <a class="code" href="class_spine_1_1_exposed_list.html">ExposedList&lt;BoneData&gt;</a> bones = <span class="keyword">new</span> <a class="code" href="class_spine_1_1_exposed_list.html">ExposedList&lt;BoneData&gt;</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">internal</span> <a class="code" href="class_spine_1_1_slot_data.html">SlotData</a> target;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">internal</span> <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">PositionMode</a> positionMode;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">internal</span> <a class="code" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">SpacingMode</a> spacingMode;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">internal</span> <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">RotateMode</a> rotateMode;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#ad4dcd712e49fb88707187fafdc0d6f2c">   42</a></span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span> offsetRotation;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">internal</span> <span class="keywordtype">float</span> position, <a class="code" href="class_spine_1_1_path_constraint_data.html#ad7c2198fa072b0697dd0d63c7274b5a4">spacing</a>, <a class="code" href="class_spine_1_1_path_constraint_data.html#ab9842cb4a986d45aa9a966ad5648ac53">rotateMix</a>, <a class="code" href="class_spine_1_1_path_constraint_data.html#ad4dcd712e49fb88707187fafdc0d6f2c">translateMix</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#ad3429382b7d961a55cce564497c0adea">   44</a></span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a4d08262bec07cb10d8242c59986d5bb9">   45</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#ad3429382b7d961a55cce564497c0adea">Name</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> name; } }</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a4b7297cd5685de32a511876f9abe66f8">   46</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a4d08262bec07cb10d8242c59986d5bb9">Order</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> order; } <span class="keyword">set</span> { order = value; } }</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a3085154a15abb69b7016a20b269ae0a9">   47</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_exposed_list.html">ExposedList&lt;BoneData&gt;</a> <a class="code" href="class_spine_1_1_path_constraint_data.html#a4b7297cd5685de32a511876f9abe66f8">Bones</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> bones; } }</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#af0705c1eaf2fe6d0115d89736b9e0fd2">   48</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_slot_data.html">SlotData</a> <a class="code" href="class_spine_1_1_path_constraint_data.html#a3085154a15abb69b7016a20b269ae0a9">Target</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> target; } <span class="keyword">set</span> { target = value; } }           </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#aefc1682cd3ced3385d7b69d27cf94ac0">   49</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">PositionMode</a> <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">PositionMode</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> positionMode; } <span class="keyword">set</span> { positionMode = value; } }</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#aba996864578240d993c0bdde0c4a83ac">   50</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">SpacingMode</a> <a class="code" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">SpacingMode</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> spacingMode; } <span class="keyword">set</span> { spacingMode = value; } }</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a3965d4c79e6f62cd8286c3e3f6aba0f6">   51</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">RotateMode</a> <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">RotateMode</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> rotateMode; } <span class="keyword">set</span> { rotateMode = value; } }</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a23c47c45cb1bbf10ff1a452c48078d4b">   52</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a3965d4c79e6f62cd8286c3e3f6aba0f6">OffsetRotation</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> offsetRotation; } <span class="keyword">set</span> { offsetRotation = value; } }</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a579e002b1a816fd3de3f240bbf3298cf">   53</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a23c47c45cb1bbf10ff1a452c48078d4b">Position</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> position; } <span class="keyword">set</span> { position = value; } }</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#adabc9f31a30fe38ac9ca8a60850720a3">   54</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a579e002b1a816fd3de3f240bbf3298cf">Spacing</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#ad7c2198fa072b0697dd0d63c7274b5a4">spacing</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_path_constraint_data.html#ad7c2198fa072b0697dd0d63c7274b5a4">spacing</a> = value; } }</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a27713c6f81b231a4c58401ecfb26182f">   55</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#adabc9f31a30fe38ac9ca8a60850720a3">RotateMix</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#ab9842cb4a986d45aa9a966ad5648ac53">rotateMix</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_path_constraint_data.html#ab9842cb4a986d45aa9a966ad5648ac53">rotateMix</a> = value; } }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">public</span> <span class="keywordtype">float</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a27713c6f81b231a4c58401ecfb26182f">TranslateMix</a> { <span class="keyword">get</span> { <span class="keywordflow">return</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#ad4dcd712e49fb88707187fafdc0d6f2c">translateMix</a>; } <span class="keyword">set</span> { <a class="code" href="class_spine_1_1_path_constraint_data.html#ad4dcd712e49fb88707187fafdc0d6f2c">translateMix</a> = value; } }</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a47b8ca9ee276d2b9e0b1e836792faca9">   57</a></span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a47b8ca9ee276d2b9e0b1e836792faca9">PathConstraintData</a> (String name) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span> (name == <span class="keyword">null</span>) <span class="keywordflow">throw</span> <span class="keyword">new</span> ArgumentNullException(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;name cannot be null.&quot;</span>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            this.name = name;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_spine_1_1_path_constraint_data.html#a88484be3b5df352be4171f699dd6dfc2">   62</a></span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">public</span> <span class="keyword">override</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_path_constraint_data.html#a88484be3b5df352be4171f699dd6dfc2">ToString</a> () {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> name;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">   67</a></span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">PositionMode</a> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6a4457d440870ad6d42bab9082d9bf9b61">Fixed</a>, <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6aadaaee4b22041c27198d410c68d952c9">Percent</a>        </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">   71</a></span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">SpacingMode</a> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788aba2a9c6c8c77e03f83ef8bf543612275">Length</a>, <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6a4457d440870ad6d42bab9082d9bf9b61">Fixed</a>, <a class="code" href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6aadaaee4b22041c27198d410c68d952c9">Percent</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">   75</a></span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">public</span> <span class="keyword">enum</span> <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">RotateMode</a> {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa541671cb1be09d76a84ba1a873ec3fc8">Tangent</a>, <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa5320550175ad6f79ad658943b9c013a7">Chain</a>, <a class="code" href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa5ca854a78f71f2a33825ad234e9512aa">ChainScale</a></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="anamespace_spine_html_a28a1ebbef6455472835a689039bdf84aa5ca854a78f71f2a33825ad234e9512aa"><div class="ttname"><a href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa5ca854a78f71f2a33825ad234e9512aa">Spine.RotateMode.ChainScale</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a3085154a15abb69b7016a20b269ae0a9"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a3085154a15abb69b7016a20b269ae0a9">Spine.PathConstraintData.Target</a></div><div class="ttdeci">SlotData Target</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00047">PathConstraintData.cs:47</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_ad7c2198fa072b0697dd0d63c7274b5a4"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#ad7c2198fa072b0697dd0d63c7274b5a4">Spine.PathConstraintData.spacing</a></div><div class="ttdeci">float spacing</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00042">PathConstraintData.cs:42</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a54932cd85ab60420fe7be3b8a25b54f6a4457d440870ad6d42bab9082d9bf9b61"><div class="ttname"><a href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6a4457d440870ad6d42bab9082d9bf9b61">Spine.PositionMode.Fixed</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a88484be3b5df352be4171f699dd6dfc2"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a88484be3b5df352be4171f699dd6dfc2">Spine.PathConstraintData.ToString</a></div><div class="ttdeci">override string ToString()</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00062">PathConstraintData.cs:62</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_adabc9f31a30fe38ac9ca8a60850720a3"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#adabc9f31a30fe38ac9ca8a60850720a3">Spine.PathConstraintData.RotateMix</a></div><div class="ttdeci">float RotateMix</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00054">PathConstraintData.cs:54</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_exposed_list_html"><div class="ttname"><a href="class_spine_1_1_exposed_list.html">Spine.ExposedList</a></div><div class="ttdef"><b>Definition:</b> <a href="_exposed_list_8cs_source.html#l00040">ExposedList.cs:40</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_slot_data_html"><div class="ttname"><a href="class_spine_1_1_slot_data.html">Spine.SlotData</a></div><div class="ttdef"><b>Definition:</b> <a href="_slot_data_8cs_source.html#l00033">SlotData.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a28a1ebbef6455472835a689039bdf84a"><div class="ttname"><a href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84a">Spine.RotateMode</a></div><div class="ttdeci">RotateMode</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00075">PathConstraintData.cs:75</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a4b7297cd5685de32a511876f9abe66f8"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a4b7297cd5685de32a511876f9abe66f8">Spine.PathConstraintData.Bones</a></div><div class="ttdeci">ExposedList&lt; BoneData &gt; Bones</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00046">PathConstraintData.cs:46</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_ab9842cb4a986d45aa9a966ad5648ac53"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#ab9842cb4a986d45aa9a966ad5648ac53">Spine.PathConstraintData.rotateMix</a></div><div class="ttdeci">float rotateMix</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00042">PathConstraintData.cs:42</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_ad3429382b7d961a55cce564497c0adea"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#ad3429382b7d961a55cce564497c0adea">Spine.PathConstraintData.Name</a></div><div class="ttdeci">string Name</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00044">PathConstraintData.cs:44</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a4d08262bec07cb10d8242c59986d5bb9"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a4d08262bec07cb10d8242c59986d5bb9">Spine.PathConstraintData.Order</a></div><div class="ttdeci">int Order</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00045">PathConstraintData.cs:45</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a9405593b6830c0b785f93d08faac0788"><div class="ttname"><a href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788">Spine.SpacingMode</a></div><div class="ttdeci">SpacingMode</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00071">PathConstraintData.cs:71</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a579e002b1a816fd3de3f240bbf3298cf"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a579e002b1a816fd3de3f240bbf3298cf">Spine.PathConstraintData.Spacing</a></div><div class="ttdeci">float Spacing</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00053">PathConstraintData.cs:53</a></div></div>
+<div class="ttc" id="anamespace_spine_html"><div class="ttname"><a href="namespace_spine.html">Spine</a></div><div class="ttdef"><b>Definition:</b> <a href="_animation_8cs_source.html#l00033">Animation.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a9405593b6830c0b785f93d08faac0788aba2a9c6c8c77e03f83ef8bf543612275"><div class="ttname"><a href="namespace_spine.html#a9405593b6830c0b785f93d08faac0788aba2a9c6c8c77e03f83ef8bf543612275">Spine.SpacingMode.Length</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a54932cd85ab60420fe7be3b8a25b54f6aadaaee4b22041c27198d410c68d952c9"><div class="ttname"><a href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6aadaaee4b22041c27198d410c68d952c9">Spine.PositionMode.Percent</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a47b8ca9ee276d2b9e0b1e836792faca9"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a47b8ca9ee276d2b9e0b1e836792faca9">Spine.PathConstraintData.PathConstraintData</a></div><div class="ttdeci">PathConstraintData(String name)</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00057">PathConstraintData.cs:57</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a23c47c45cb1bbf10ff1a452c48078d4b"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a23c47c45cb1bbf10ff1a452c48078d4b">Spine.PathConstraintData.Position</a></div><div class="ttdeci">float Position</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00052">PathConstraintData.cs:52</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_ad4dcd712e49fb88707187fafdc0d6f2c"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#ad4dcd712e49fb88707187fafdc0d6f2c">Spine.PathConstraintData.translateMix</a></div><div class="ttdeci">float translateMix</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00042">PathConstraintData.cs:42</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a3965d4c79e6f62cd8286c3e3f6aba0f6"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a3965d4c79e6f62cd8286c3e3f6aba0f6">Spine.PathConstraintData.OffsetRotation</a></div><div class="ttdeci">float OffsetRotation</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00051">PathConstraintData.cs:51</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html_a27713c6f81b231a4c58401ecfb26182f"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html#a27713c6f81b231a4c58401ecfb26182f">Spine.PathConstraintData.TranslateMix</a></div><div class="ttdeci">float TranslateMix</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00055">PathConstraintData.cs:55</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a54932cd85ab60420fe7be3b8a25b54f6"><div class="ttname"><a href="namespace_spine.html#a54932cd85ab60420fe7be3b8a25b54f6">Spine.PositionMode</a></div><div class="ttdeci">PositionMode</div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00067">PathConstraintData.cs:67</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a28a1ebbef6455472835a689039bdf84aa541671cb1be09d76a84ba1a873ec3fc8"><div class="ttname"><a href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa541671cb1be09d76a84ba1a873ec3fc8">Spine.RotateMode.Tangent</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_path_constraint_data_html"><div class="ttname"><a href="class_spine_1_1_path_constraint_data.html">Spine.PathConstraintData</a></div><div class="ttdef"><b>Definition:</b> <a href="_path_constraint_data_8cs_source.html#l00033">PathConstraintData.cs:33</a></div></div>
+<div class="ttc" id="anamespace_spine_html_a28a1ebbef6455472835a689039bdf84aa5320550175ad6f79ad658943b9c013a7"><div class="ttname"><a href="namespace_spine.html#a28a1ebbef6455472835a689039bdf84aa5320550175ad6f79ad658943b9c013a7">Spine.RotateMode.Chain</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_9e2dcd9071b2b8cb73ae27df79abb469.html">Spine</a></li><li class="navelem"><a class="el" href="dir_a2df11ec0f9ee887bbc3216a5b34ec1c.html">spine-csharp</a></li><li class="navelem"><a class="el" href="_path_constraint_data_8cs.html">PathConstraintData.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

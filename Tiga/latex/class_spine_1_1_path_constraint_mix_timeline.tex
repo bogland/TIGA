@@ -1,0 +1,521 @@
+\hypertarget{class_spine_1_1_path_constraint_mix_timeline}{}\doxysection{Spine.\+Path\+Constraint\+Mix\+Timeline 클래스 참조}
+\label{class_spine_1_1_path_constraint_mix_timeline}\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+
+
+Spine.\+Path\+Constraint\+Mix\+Timeline에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Path\+Constraint\+Mix\+Timeline에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a05127b9eabb65679232997d6a3d694db}{Path\+Constraint\+Mix\+Timeline}} (int frame\+Count)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a9d9391c74b58c06f236d744bef2071b6}{Set\+Frame}} (int frame\+Index, float time, float rotate\+Mix, float translate\+Mix)
+\begin{DoxyCompactList}\small\item\em Sets the time and mixes of the specified keyframe. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a1ce1eae36a7a93cc61052b008997354b}{Apply}} (\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, float last\+Time, float time, \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$ fired\+Events, float alpha, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}} pose, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}} direction)
+\begin{DoxyCompactList}\small\item\em Sets the value(s) for the specified time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}{Set\+Linear}} (int frame\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}{Set\+Stepped}} (int frame\+Index)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}{Set\+Curve}} (int frame\+Index, float cx1, float cy1, float cx2, float cy2)
+\begin{DoxyCompactList}\small\item\em Sets the control handle positions for an interpolation bezier curve used to transition from this keyframe to the next. cx1 and cx2 are from 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of the difference between the keyframe\textquotesingle{}s values. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}{Get\+Curve\+Percent}} (int frame\+Index, float percent)
+\item 
+float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}{Get\+Curve\+Type}} (int frame\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{E\+N\+T\+R\+I\+ES}} = 3
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Protected 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{L\+I\+N\+E\+AR}} = 0
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{B\+E\+Z\+I\+E\+R\+\_\+\+S\+I\+ZE}} = 10 $\ast$ 2 -\/ 1
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ac0ca40d5a5c2771586bb8a98cfa4f62e}{Path\+Constraint\+Index}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a3fe20e3916fce1861e26cadfcd6a8b86}{Frames}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+override int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a546cfdce1b0c9a268a936c9d13684d1d}{Property\+Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}{Frame\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a0bae40ec78735cd717af75d7bf6f9b2f}{P\+R\+E\+V\+\_\+\+T\+I\+ME}} = -\/3
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad615c6a7c95bca475de84af5a914b7c2}{P\+R\+E\+V\+\_\+\+R\+O\+T\+A\+TE}} = -\/2
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_aff4c81c59e6f64914fdef0c6c7dca683}{P\+R\+E\+V\+\_\+\+T\+R\+A\+N\+S\+L\+A\+TE}} = -\/1
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_abbbfe9e06cbf90ffc57fa77a3896bba9}{R\+O\+T\+A\+TE}} = 1
+\item 
+const int \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad1a8f8f1c288b0f475a03a19eadb149a}{T\+R\+A\+N\+S\+L\+A\+TE}} = 2
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{S\+T\+E\+P\+P\+ED}} = 1
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}{B\+E\+Z\+I\+ER}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Animation.\+cs 파일의 1323 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a05127b9eabb65679232997d6a3d694db}\label{class_spine_1_1_path_constraint_mix_timeline_a05127b9eabb65679232997d6a3d694db}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PathConstraintMixTimeline@{PathConstraintMixTimeline}}
+\index{PathConstraintMixTimeline@{PathConstraintMixTimeline}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PathConstraintMixTimeline()}{PathConstraintMixTimeline()}}
+{\footnotesize\ttfamily Spine.\+Path\+Constraint\+Mix\+Timeline.\+Path\+Constraint\+Mix\+Timeline (\begin{DoxyParamCaption}\item[{int}]{frame\+Count }\end{DoxyParamCaption})}
+
+
+
+Animation.\+cs 파일의 1338 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1340             : base(frameCount) \{}
+\DoxyCodeLine{1341             frames = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[frameCount * \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{ENTRIES}}];}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a1ce1eae36a7a93cc61052b008997354b}\label{class_spine_1_1_path_constraint_mix_timeline_a1ce1eae36a7a93cc61052b008997354b}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily override void Spine.\+Path\+Constraint\+Mix\+Timeline.\+Apply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{float}]{last\+Time,  }\item[{float}]{time,  }\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$}]{events,  }\item[{float}]{alpha,  }\item[{\mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{Mix\+Pose}}}]{pose,  }\item[{\mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{Mix\+Direction}}}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the value(s) for the specified time. 
+
+
+\begin{DoxyParams}{매개변수}
+{\em skeleton} & The skeleton the timeline is being applied to. This provides access to the bones, slots, and other skeleton components the timeline may change.\\
+\hline
+{\em last\+Time} & last\+Time The time this timeline was last applied. Timelines such as \mbox{\hyperlink{class_spine_1_1_event_timeline}{Event\+Timeline}} trigger only at specific times rather than every frame. In that case, the timeline triggers everything between last\+Time (exclusive) and 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{time}
+\end{DoxyCode}
+ (inclusive).\\
+\hline
+{\em time} & The time within the animation. Most timelines find the key before and the key after this time so they can interpolate between the keys.\\
+\hline
+{\em events} & If any events are fired, they are added to this list. Can be null to ignore firing events or if the timeline does not fire events. May be null.\\
+\hline
+{\em alpha} & alpha 0 applies the current or setup pose value (depending on pose parameter). 1 applies the timeline value. Between 0 and 1 applies a value between the current or setup pose and the timeline value. By adjusting alpha over time, an animation can be mixed in or out. 
+\begin{DoxyCode}{1}
+\DoxyCodeLine{alpha}
+\end{DoxyCode}
+ can also be useful to apply animations on top of each other (layered).\\
+\hline
+{\em pose} & Controls how mixing is applied when alpha is than 1.\\
+\hline
+{\em direction} & Indicates whether the timeline is mixing in or out. Used by timelines which perform instant transitions such as \mbox{\hyperlink{class_spine_1_1_draw_order_timeline}{Draw\+Order\+Timeline}} and \mbox{\hyperlink{class_spine_1_1_attachment_timeline}{Attachment\+Timeline}}.\\
+\hline
+\end{DoxyParams}
+
+
+\mbox{\hyperlink{class_spine_1_1_curve_timeline_a930a8d1b0adedfa2d505096491aac5aa}{Spine.\+Curve\+Timeline}}를 구현.
+
+
+
+Animation.\+cs 파일의 1351 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1352                                                                                                                                                                       \{}
+\DoxyCodeLine{1353             PathConstraint constraint = skeleton.pathConstraints.Items[pathConstraintIndex];}
+\DoxyCodeLine{1354             \textcolor{keywordtype}{float}[] frames = this.frames;}
+\DoxyCodeLine{1355             \textcolor{keywordflow}{if} (time < frames[0]) \{}
+\DoxyCodeLine{1356                 \textcolor{keywordflow}{switch} (pose) \{}
+\DoxyCodeLine{1357                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup:}
+\DoxyCodeLine{1358                     constraint.rotateMix = constraint.data.rotateMix;}
+\DoxyCodeLine{1359                     constraint.translateMix = constraint.data.translateMix;}
+\DoxyCodeLine{1360                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1361                 \textcolor{keywordflow}{case} \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Current:}
+\DoxyCodeLine{1362                     constraint.rotateMix += (constraint.data.rotateMix -\/ constraint.rotateMix) * alpha;}
+\DoxyCodeLine{1363                     constraint.translateMix += (constraint.data.translateMix -\/ constraint.translateMix) * alpha;}
+\DoxyCodeLine{1364                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1365                 \}}
+\DoxyCodeLine{1366                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1367             \}}
+\DoxyCodeLine{1368 }
+\DoxyCodeLine{1369             \textcolor{keywordtype}{float} rotate, translate;}
+\DoxyCodeLine{1370             \textcolor{keywordflow}{if} (time >= frames[frames.Length -\/ \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{ENTRIES}}]) \{ \textcolor{comment}{// Time is after last frame.}}
+\DoxyCodeLine{1371                 rotate = frames[frames.Length + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad615c6a7c95bca475de84af5a914b7c2}{PREV\_ROTATE}}];}
+\DoxyCodeLine{1372                 translate = frames[frames.Length + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_aff4c81c59e6f64914fdef0c6c7dca683}{PREV\_TRANSLATE}}];}
+\DoxyCodeLine{1373             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1374                 \textcolor{comment}{// Interpolate between the previous frame and the current frame.}}
+\DoxyCodeLine{1375                 \textcolor{keywordtype}{int} frame = \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a03ed3bef4d69471026ba5333ff4bce13}{Animation}}.BinarySearch(frames, time, \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{ENTRIES}});}
+\DoxyCodeLine{1376                 rotate = frames[frame + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad615c6a7c95bca475de84af5a914b7c2}{PREV\_ROTATE}}];}
+\DoxyCodeLine{1377                 translate = frames[frame + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_aff4c81c59e6f64914fdef0c6c7dca683}{PREV\_TRANSLATE}}];}
+\DoxyCodeLine{1378                 \textcolor{keywordtype}{float} frameTime = frames[frame];}
+\DoxyCodeLine{1379                 \textcolor{keywordtype}{float} percent = \mbox{\hyperlink{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}{GetCurvePercent}}(frame / \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{ENTRIES}} -\/ 1,}
+\DoxyCodeLine{1380                     1 -\/ (time -\/ frameTime) / (frames[frame + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_a0bae40ec78735cd717af75d7bf6f9b2f}{PREV\_TIME}}] -\/ frameTime));}
+\DoxyCodeLine{1381 }
+\DoxyCodeLine{1382                 rotate += (frames[frame + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_abbbfe9e06cbf90ffc57fa77a3896bba9}{ROTATE}}] -\/ rotate) * percent;}
+\DoxyCodeLine{1383                 translate += (frames[frame + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad1a8f8f1c288b0f475a03a19eadb149a}{TRANSLATE}}] -\/ translate) * percent;}
+\DoxyCodeLine{1384             \}}
+\DoxyCodeLine{1385 }
+\DoxyCodeLine{1386             \textcolor{keywordflow}{if} (pose == \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup) \{}
+\DoxyCodeLine{1387                 constraint.rotateMix = constraint.data.rotateMix + (rotate -\/ constraint.data.rotateMix) * alpha;}
+\DoxyCodeLine{1388                 constraint.translateMix = constraint.data.translateMix + (translate -\/ constraint.data.translateMix) * alpha;}
+\DoxyCodeLine{1389             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1390                 constraint.rotateMix += (rotate -\/ constraint.rotateMix) * alpha;}
+\DoxyCodeLine{1391                 constraint.translateMix += (translate -\/ constraint.translateMix) * alpha;}
+\DoxyCodeLine{1392             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}\label{class_spine_1_1_curve_timeline_aecaa64a855f59f759923bd2edc0f71a5}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!GetCurvePercent@{GetCurvePercent}}
+\index{GetCurvePercent@{GetCurvePercent}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{GetCurvePercent()}{GetCurvePercent()}}
+{\footnotesize\ttfamily float Spine.\+Curve\+Timeline.\+Get\+Curve\+Percent (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{percent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 202 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203                                                                      \{}
+\DoxyCodeLine{204             percent = MathUtils.Clamp (percent, 0, 1);}
+\DoxyCodeLine{205             \textcolor{keywordtype}{float}[] curves = this.curves;}
+\DoxyCodeLine{206             \textcolor{keywordtype}{int} i = frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}};}
+\DoxyCodeLine{207             \textcolor{keywordtype}{float} type = curves[i];}
+\DoxyCodeLine{208             \textcolor{keywordflow}{if} (type == \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{LINEAR}}) \textcolor{keywordflow}{return} percent;}
+\DoxyCodeLine{209             \textcolor{keywordflow}{if} (type == \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{STEPPED}}) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{210             i++;}
+\DoxyCodeLine{211             \textcolor{keywordtype}{float} x = 0;}
+\DoxyCodeLine{212             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} start = i, n = i + \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} -\/ 1; i < n; i += 2) \{}
+\DoxyCodeLine{213                 x = curves[i];}
+\DoxyCodeLine{214                 \textcolor{keywordflow}{if} (x >= percent) \{}
+\DoxyCodeLine{215                     \textcolor{keywordtype}{float} prevX, prevY;}
+\DoxyCodeLine{216                     \textcolor{keywordflow}{if} (i == start) \{}
+\DoxyCodeLine{217                         prevX = 0;}
+\DoxyCodeLine{218                         prevY = 0;}
+\DoxyCodeLine{219                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{220                         prevX = curves[i -\/ 2];}
+\DoxyCodeLine{221                         prevY = curves[i -\/ 1];}
+\DoxyCodeLine{222                     \}}
+\DoxyCodeLine{223                     \textcolor{keywordflow}{return} prevY + (curves[i + 1] -\/ prevY) * (percent -\/ prevX) / (x -\/ prevX);}
+\DoxyCodeLine{224                 \}}
+\DoxyCodeLine{225             \}}
+\DoxyCodeLine{226             \textcolor{keywordtype}{float} y = curves[i -\/ 1];}
+\DoxyCodeLine{227             \textcolor{keywordflow}{return} y + (1 -\/ y) * (percent -\/ x) / (1 -\/ x); \textcolor{comment}{// Last point is 1,1.}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}\label{class_spine_1_1_curve_timeline_aa1705d1f68800d28998ed7ff9f5a6360}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!GetCurveType@{GetCurveType}}
+\index{GetCurveType@{GetCurveType}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{GetCurveType()}{GetCurveType()}}
+{\footnotesize\ttfamily float Spine.\+Curve\+Timeline.\+Get\+Curve\+Type (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 228 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{229                                                    \{}
+\DoxyCodeLine{230             \textcolor{keywordflow}{return} curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}\label{class_spine_1_1_curve_timeline_a17799c5d17120175dd78b9cb77a2e569}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!SetCurve@{SetCurve}}
+\index{SetCurve@{SetCurve}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{SetCurve()}{SetCurve()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Curve (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{cx1,  }\item[{float}]{cy1,  }\item[{float}]{cx2,  }\item[{float}]{cy2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Sets the control handle positions for an interpolation bezier curve used to transition from this keyframe to the next. cx1 and cx2 are from 0 to 1, representing the percent of time between the two keyframes. cy1 and cy2 are the percent of the difference between the keyframe\textquotesingle{}s values. 
+
+
+
+Animation.\+cs 파일의 179 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                                                                                           \{}
+\DoxyCodeLine{181             \textcolor{keywordtype}{float} tmpx = (-\/cx1 * 2 + cx2) * 0.03f, tmpy = (-\/cy1 * 2 + cy2) * 0.03f;}
+\DoxyCodeLine{182             \textcolor{keywordtype}{float} dddfx = ((cx1 -\/ cx2) * 3 + 1) * 0.006f, dddfy = ((cy1 -\/ cy2) * 3 + 1) * 0.006f;}
+\DoxyCodeLine{183             \textcolor{keywordtype}{float} ddfx = tmpx * 2 + dddfx, ddfy = tmpy * 2 + dddfy;}
+\DoxyCodeLine{184             \textcolor{keywordtype}{float} dfx = cx1 * 0.3f + tmpx + dddfx * 0.16666667f, dfy = cy1 * 0.3f + tmpy + dddfy * 0.16666667f;}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186             \textcolor{keywordtype}{int} i = frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}};}
+\DoxyCodeLine{187             \textcolor{keywordtype}{float}[] curves = this.curves;}
+\DoxyCodeLine{188             curves[i++] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}{BEZIER}};}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \textcolor{keywordtype}{float} x = dfx, y = dfy;}
+\DoxyCodeLine{191             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} n = i + \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} -\/ 1; i < n; i += 2) \{}
+\DoxyCodeLine{192                 curves[i] = x;}
+\DoxyCodeLine{193                 curves[i + 1] = y;}
+\DoxyCodeLine{194                 dfx += ddfx;}
+\DoxyCodeLine{195                 dfy += ddfy;}
+\DoxyCodeLine{196                 ddfx += dddfx;}
+\DoxyCodeLine{197                 ddfy += dddfy;}
+\DoxyCodeLine{198                 x += dfx;}
+\DoxyCodeLine{199                 y += dfy;}
+\DoxyCodeLine{200             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a9d9391c74b58c06f236d744bef2071b6}\label{class_spine_1_1_path_constraint_mix_timeline_a9d9391c74b58c06f236d744bef2071b6}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!SetFrame@{SetFrame}}
+\index{SetFrame@{SetFrame}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{SetFrame()}{SetFrame()}}
+{\footnotesize\ttfamily void Spine.\+Path\+Constraint\+Mix\+Timeline.\+Set\+Frame (\begin{DoxyParamCaption}\item[{int}]{frame\+Index,  }\item[{float}]{time,  }\item[{float}]{rotate\+Mix,  }\item[{float}]{translate\+Mix }\end{DoxyParamCaption})}
+
+
+
+Sets the time and mixes of the specified keyframe. 
+
+
+
+Animation.\+cs 파일의 1344 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1345                                                                                                \{}
+\DoxyCodeLine{1346             frameIndex *= \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}{ENTRIES}};}
+\DoxyCodeLine{1347             frames[frameIndex] = time;}
+\DoxyCodeLine{1348             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_abbbfe9e06cbf90ffc57fa77a3896bba9}{ROTATE}}] = rotateMix;}
+\DoxyCodeLine{1349             frames[frameIndex + \mbox{\hyperlink{class_spine_1_1_path_constraint_mix_timeline_ad1a8f8f1c288b0f475a03a19eadb149a}{TRANSLATE}}] = translateMix;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}\label{class_spine_1_1_curve_timeline_ac604d709d7b62263069943c9e0baf7bb}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!SetLinear@{SetLinear}}
+\index{SetLinear@{SetLinear}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{SetLinear()}{SetLinear()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Linear (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 168 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                                \{}
+\DoxyCodeLine{170             curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}{LINEAR}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}\label{class_spine_1_1_curve_timeline_ac9f50bb59d3a6a81aebf2ce6331eed76}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!SetStepped@{SetStepped}}
+\index{SetStepped@{SetStepped}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{SetStepped()}{SetStepped()}}
+{\footnotesize\ttfamily void Spine.\+Curve\+Timeline.\+Set\+Stepped (\begin{DoxyParamCaption}\item[{int}]{frame\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 172 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{173                                                 \{}
+\DoxyCodeLine{174             curves[frameIndex * \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}}] = \mbox{\hyperlink{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}{STEPPED}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}\label{class_spine_1_1_curve_timeline_afa6358ffad729275a9f3e0cedbfa9a2f}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!BEZIER@{BEZIER}}
+\index{BEZIER@{BEZIER}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{BEZIER}{BEZIER}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+B\+E\+Z\+I\+ER = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}\label{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!BEZIER\_SIZE@{BEZIER\_SIZE}}
+\index{BEZIER\_SIZE@{BEZIER\_SIZE}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{BEZIER\_SIZE}{BEZIER\_SIZE}}
+{\footnotesize\ttfamily const int Spine.\+Curve\+Timeline.\+B\+E\+Z\+I\+E\+R\+\_\+\+S\+I\+ZE = 10 $\ast$ 2 -\/ 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 154 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}\label{class_spine_1_1_path_constraint_mix_timeline_ad064ec80da2baa4a18860e8f44c146a2}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!ENTRIES@{ENTRIES}}
+\index{ENTRIES@{ENTRIES}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{ENTRIES}{ENTRIES}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+E\+N\+T\+R\+I\+ES = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Animation.\+cs 파일의 1324 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}\label{class_spine_1_1_curve_timeline_aa93d92337fc02e0a6375d10a716aad7f}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!LINEAR@{LINEAR}}
+\index{LINEAR@{LINEAR}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{LINEAR}{LINEAR}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+L\+I\+N\+E\+AR = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_ad615c6a7c95bca475de84af5a914b7c2}\label{class_spine_1_1_path_constraint_mix_timeline_ad615c6a7c95bca475de84af5a914b7c2}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PREV\_ROTATE@{PREV\_ROTATE}}
+\index{PREV\_ROTATE@{PREV\_ROTATE}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_ROTATE}{PREV\_ROTATE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+P\+R\+E\+V\+\_\+\+R\+O\+T\+A\+TE = -\/2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 1325 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a0bae40ec78735cd717af75d7bf6f9b2f}\label{class_spine_1_1_path_constraint_mix_timeline_a0bae40ec78735cd717af75d7bf6f9b2f}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PREV\_TIME@{PREV\_TIME}}
+\index{PREV\_TIME@{PREV\_TIME}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_TIME}{PREV\_TIME}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+P\+R\+E\+V\+\_\+\+T\+I\+ME = -\/3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 1325 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_aff4c81c59e6f64914fdef0c6c7dca683}\label{class_spine_1_1_path_constraint_mix_timeline_aff4c81c59e6f64914fdef0c6c7dca683}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PREV\_TRANSLATE@{PREV\_TRANSLATE}}
+\index{PREV\_TRANSLATE@{PREV\_TRANSLATE}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PREV\_TRANSLATE}{PREV\_TRANSLATE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+P\+R\+E\+V\+\_\+\+T\+R\+A\+N\+S\+L\+A\+TE = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 1325 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_abbbfe9e06cbf90ffc57fa77a3896bba9}\label{class_spine_1_1_path_constraint_mix_timeline_abbbfe9e06cbf90ffc57fa77a3896bba9}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!ROTATE@{ROTATE}}
+\index{ROTATE@{ROTATE}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{ROTATE}{ROTATE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+R\+O\+T\+A\+TE = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 1326 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}\label{class_spine_1_1_curve_timeline_a81a594c5ccabe0d55daf77f68ca06c95}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!STEPPED@{STEPPED}}
+\index{STEPPED@{STEPPED}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{STEPPED}{STEPPED}}
+{\footnotesize\ttfamily const float Spine.\+Curve\+Timeline.\+S\+T\+E\+P\+P\+ED = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 153 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_ad1a8f8f1c288b0f475a03a19eadb149a}\label{class_spine_1_1_path_constraint_mix_timeline_ad1a8f8f1c288b0f475a03a19eadb149a}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!TRANSLATE@{TRANSLATE}}
+\index{TRANSLATE@{TRANSLATE}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{TRANSLATE}{TRANSLATE}}
+{\footnotesize\ttfamily const int Spine.\+Path\+Constraint\+Mix\+Timeline.\+T\+R\+A\+N\+S\+L\+A\+TE = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Animation.\+cs 파일의 1326 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}\label{class_spine_1_1_curve_timeline_a654b23bc44b37df134241592d215606e}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!FrameCount@{FrameCount}}
+\index{FrameCount@{FrameCount}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{FrameCount}{FrameCount}}
+{\footnotesize\ttfamily int Spine.\+Curve\+Timeline.\+Frame\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [inherited]}}
+
+
+
+Animation.\+cs 파일의 157 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} curves.Length / \mbox{\hyperlink{class_spine_1_1_curve_timeline_adc0e7520753f035185d9144e46b93758}{BEZIER\_SIZE}} + 1; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a3fe20e3916fce1861e26cadfcd6a8b86}\label{class_spine_1_1_path_constraint_mix_timeline_a3fe20e3916fce1861e26cadfcd6a8b86}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!Frames@{Frames}}
+\index{Frames@{Frames}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{Frames}{Frames}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Path\+Constraint\+Mix\+Timeline.\+Frames\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 1332 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1332 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} pathConstraintIndex; \} \textcolor{keyword}{set} \{ pathConstraintIndex = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_ac0ca40d5a5c2771586bb8a98cfa4f62e}\label{class_spine_1_1_path_constraint_mix_timeline_ac0ca40d5a5c2771586bb8a98cfa4f62e}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PathConstraintIndex@{PathConstraintIndex}}
+\index{PathConstraintIndex@{PathConstraintIndex}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PathConstraintIndex}{PathConstraintIndex}}
+{\footnotesize\ttfamily int Spine.\+Path\+Constraint\+Mix\+Timeline.\+Path\+Constraint\+Index\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Animation.\+cs 파일의 1331 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1332 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} pathConstraintIndex; \} \textcolor{keyword}{set} \{ pathConstraintIndex = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_path_constraint_mix_timeline_a546cfdce1b0c9a268a936c9d13684d1d}\label{class_spine_1_1_path_constraint_mix_timeline_a546cfdce1b0c9a268a936c9d13684d1d}} 
+\index{Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}!PropertyId@{PropertyId}}
+\index{PropertyId@{PropertyId}!Spine.PathConstraintMixTimeline@{Spine.PathConstraintMixTimeline}}
+\doxysubsubsection{\texorpdfstring{PropertyId}{PropertyId}}
+{\footnotesize\ttfamily override int Spine.\+Path\+Constraint\+Mix\+Timeline.\+Property\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Animation.\+cs 파일의 1334 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1335                                        \{}
+\DoxyCodeLine{1336             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} ((\textcolor{keywordtype}{int})TimelineType.PathConstraintMix << 24) + pathConstraintIndex; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_animation_8cs}{Animation.\+cs}}\end{DoxyCompactItemize}

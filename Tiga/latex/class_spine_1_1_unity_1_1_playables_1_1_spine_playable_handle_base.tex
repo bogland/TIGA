@@ -1,0 +1,126 @@
+\hypertarget{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base}{}\doxysection{Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base 클래스 참조}
+\label{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base}\index{Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}}
+
+
+Base class for \mbox{\hyperlink{namespace_spine}{Spine}} Playable Handle components, commonly for integrating with Unity\+Engine \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}}.  
+
+
+
+
+Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a9978d0007e7c8ff82f99a86f79db399a}{Handle\+Events}} (\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$ event\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+abstract \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ab4a0a5375c977fd3df45169d812de897}{Skeleton\+Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} of the targeted \mbox{\hyperlink{namespace_spine}{Spine}} component. \end{DoxyCompactList}\item 
+abstract \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ade620dc1283c7037949c54c1d9013af2}{Skeleton}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{이벤트}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_spine_1_1_unity_1_1_playables_a5794c7203088bb731bf7c9dcfb25b156}{Spine\+Event\+Delegate}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a1e96b6c15db0612a97833d5e02d94278}{Animation\+Events}}
+\begin{DoxyCompactList}\small\item\em Mixer\+Behaviour Process\+Frame method handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Base class for \mbox{\hyperlink{namespace_spine}{Spine}} Playable Handle components, commonly for integrating with Unity\+Engine \mbox{\hyperlink{interface_spine_1_1_timeline}{Timeline}}. 
+
+
+
+Spine\+Playable\+Handle\+Base.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a9978d0007e7c8ff82f99a86f79db399a}\label{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a9978d0007e7c8ff82f99a86f79db399a}} 
+\index{Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}!HandleEvents@{HandleEvents}}
+\index{HandleEvents@{HandleEvents}!Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}}
+\doxysubsubsection{\texorpdfstring{HandleEvents()}{HandleEvents()}}
+{\footnotesize\ttfamily virtual void Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base.\+Handle\+Events (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_event}{Event}} $>$}]{event\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Spine\+Playable\+Handle\+Base.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                                                           \{}
+\DoxyCodeLine{57             \textcolor{keywordflow}{if} (eventBuffer == \textcolor{keyword}{null} || \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a1e96b6c15db0612a97833d5e02d94278}{AnimationEvents}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{58             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = eventBuffer.Count; i < n; i++)}
+\DoxyCodeLine{59                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a1e96b6c15db0612a97833d5e02d94278}{AnimationEvents}}.Invoke(eventBuffer.Items[i]);}
+
+\end{DoxyCode}
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ade620dc1283c7037949c54c1d9013af2}\label{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ade620dc1283c7037949c54c1d9013af2}} 
+\index{Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}!Skeleton@{Skeleton}}
+\index{Skeleton@{Skeleton}!Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}}
+\doxysubsubsection{\texorpdfstring{Skeleton}{Skeleton}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base.\+Skeleton\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spine\+Playable\+Handle\+Base.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ab4a0a5375c977fd3df45169d812de897}\label{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_ab4a0a5375c977fd3df45169d812de897}} 
+\index{Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}!SkeletonData@{SkeletonData}}
+\index{SkeletonData@{SkeletonData}!Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}}
+\doxysubsubsection{\texorpdfstring{SkeletonData}{SkeletonData}}
+{\footnotesize\ttfamily abstract \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base.\+Skeleton\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} of the targeted \mbox{\hyperlink{namespace_spine}{Spine}} component. 
+
+
+
+Spine\+Playable\+Handle\+Base.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45 \{ \textcolor{keyword}{get}; \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{이벤트 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a1e96b6c15db0612a97833d5e02d94278}\label{class_spine_1_1_unity_1_1_playables_1_1_spine_playable_handle_base_a1e96b6c15db0612a97833d5e02d94278}} 
+\index{Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}!AnimationEvents@{AnimationEvents}}
+\index{AnimationEvents@{AnimationEvents}!Spine.Unity.Playables.SpinePlayableHandleBase@{Spine.Unity.Playables.SpinePlayableHandleBase}}
+\doxysubsubsection{\texorpdfstring{AnimationEvents}{AnimationEvents}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_playables_a5794c7203088bb731bf7c9dcfb25b156}{Spine\+Event\+Delegate}} Spine.\+Unity.\+Playables.\+Spine\+Playable\+Handle\+Base.\+Animation\+Events}
+
+
+
+Mixer\+Behaviour Process\+Frame method handler. 
+
+\begin{DoxyReturn}{반환값}
+Returns true if a playable was applied previously
+\end{DoxyReturn}
+
+
+Subscribe to this to handle user events played by the \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} playable 
+
+Spine\+Playable\+Handle\+Base.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Timeline/\+Playable\+Handle Component/\mbox{\hyperlink{_spine_playable_handle_base_8cs}{Spine\+Playable\+Handle\+Base.\+cs}}\end{DoxyCompactItemize}

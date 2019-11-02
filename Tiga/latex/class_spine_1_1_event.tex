@@ -1,0 +1,167 @@
+\hypertarget{class_spine_1_1_event}{}\doxysection{Spine.\+Event 클래스 참조}
+\label{class_spine_1_1_event}\index{Spine.Event@{Spine.Event}}
+
+
+Stores the current pose values for an \mbox{\hyperlink{class_spine_1_1_event}{Event}}.  
+
+
+
+
+Spine.\+Event에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_event_a7ac46ae9fb305152ccd1f4626af42edc}{Event}} (float time, \mbox{\hyperlink{class_spine_1_1_event_data}{Event\+Data}} data)
+\item 
+override string \mbox{\hyperlink{class_spine_1_1_event_ab757360da22e7220787b3dc5ad6335f0}{To\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_event_data}{Event\+Data}} \mbox{\hyperlink{class_spine_1_1_event_a13445d67ad8dc700dc6613b4f935027c}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_event_ae87da59446c9f85d0e6d405da311079c}{Time}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The animation time this event was keyed. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_spine_1_1_event_ac7adae8247c10defc8b12d9bf0a9a71e}{Int}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_event_a9b85aaf66db1eab8fb55d94dac139b15}{Float}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_event_a638342593c0ce824c54a2181c9fe0d02}{String}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Stores the current pose values for an \mbox{\hyperlink{class_spine_1_1_event}{Event}}. 
+
+
+
+Event.\+cs 파일의 34 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_event_a7ac46ae9fb305152ccd1f4626af42edc}\label{class_spine_1_1_event_a7ac46ae9fb305152ccd1f4626af42edc}} 
+\index{Spine.Event@{Spine.Event}!Event@{Event}}
+\index{Event@{Event}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Spine.\+Event.\+Event (\begin{DoxyParamCaption}\item[{float}]{time,  }\item[{\mbox{\hyperlink{class_spine_1_1_event_data}{Event\+Data}}}]{data }\end{DoxyParamCaption})}
+
+
+
+Event.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                                                   \{}
+\DoxyCodeLine{51             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} ArgumentNullException(\textcolor{stringliteral}{"data"}, \textcolor{stringliteral}{"data cannot be null."});}
+\DoxyCodeLine{52             this.time = time;}
+\DoxyCodeLine{53             this.data = data;}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_event_ab757360da22e7220787b3dc5ad6335f0}\label{class_spine_1_1_event_ab757360da22e7220787b3dc5ad6335f0}} 
+\index{Spine.Event@{Spine.Event}!ToString@{ToString}}
+\index{ToString@{ToString}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Spine.\+Event.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Event.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{56                                            \{}
+\DoxyCodeLine{57             \textcolor{keywordflow}{return} this.data.\mbox{\hyperlink{class_spine_1_1_event_data_a226a896f66bc71f04732c504e3618c45}{Name}};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_event_a13445d67ad8dc700dc6613b4f935027c}\label{class_spine_1_1_event_a13445d67ad8dc700dc6613b4f935027c}} 
+\index{Spine.Event@{Spine.Event}!Data@{Data}}
+\index{Data@{Data}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_event_data}{Event\+Data}} Spine.\+Event.\+Data\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Event.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} data; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_event_a9b85aaf66db1eab8fb55d94dac139b15}\label{class_spine_1_1_event_a9b85aaf66db1eab8fb55d94dac139b15}} 
+\index{Spine.Event@{Spine.Event}!Float@{Float}}
+\index{Float@{Float}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{Float}{Float}}
+{\footnotesize\ttfamily float Spine.\+Event.\+Float\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Event.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} intValue; \} \textcolor{keyword}{set} \{ intValue = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_event_ac7adae8247c10defc8b12d9bf0a9a71e}\label{class_spine_1_1_event_ac7adae8247c10defc8b12d9bf0a9a71e}} 
+\index{Spine.Event@{Spine.Event}!Int@{Int}}
+\index{Int@{Int}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{Int}{Int}}
+{\footnotesize\ttfamily int Spine.\+Event.\+Int\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Event.\+cs 파일의 45 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} intValue; \} \textcolor{keyword}{set} \{ intValue = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_event_a638342593c0ce824c54a2181c9fe0d02}\label{class_spine_1_1_event_a638342593c0ce824c54a2181c9fe0d02}} 
+\index{Spine.Event@{Spine.Event}!String@{String}}
+\index{String@{String}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{String}{String}}
+{\footnotesize\ttfamily string Spine.\+Event.\+String\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Event.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} floatValue; \} \textcolor{keyword}{set} \{ floatValue = value; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_event_ae87da59446c9f85d0e6d405da311079c}\label{class_spine_1_1_event_ae87da59446c9f85d0e6d405da311079c}} 
+\index{Spine.Event@{Spine.Event}!Time@{Time}}
+\index{Time@{Time}!Spine.Event@{Spine.Event}}
+\doxysubsubsection{\texorpdfstring{Time}{Time}}
+{\footnotesize\ttfamily float Spine.\+Event.\+Time\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The animation time this event was keyed. 
+
+
+
+Event.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} time; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/csharp/\mbox{\hyperlink{_event_8cs}{Event.\+cs}}\end{DoxyCompactItemize}

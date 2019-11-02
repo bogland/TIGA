@@ -1,0 +1,9 @@
+digraph "Spine.Unity.Editor.SkeletonDataAssetInspector"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Editor.Skeleton\lDataAssetInspector\n|+ TargetAssetGUID\l+ LastSkinKey\l+ LastSkinName\l~ showAnimationStateData\l~ showAnimationList\l~ showSlotList\l~ showAttachments\l- atlasAssets\l- skeletonJSON\l- scale\l- fromAnimation\l- toAnimation\l- duration\l- defaultMix\l- controller\l- targetSkeletonDataAsset\l- targetSkeletonData\l- warnings\l- preview\l- activePlayButtonStyle\l- idlePlayButtonStyle\l- DefaultMixLabel\l- isMecanimExpanded\l|+ OnInspectorGUI()\l+ HasPreviewGUI()\l+ OnInteractivePreviewGUI()\l+ GetPreviewTitle()\l+ OnPreviewSettings()\l+ RenderStaticPreview()\l- OnEnable()\l- OnDestroy()\l- OnDomainUnload()\l- InitializeEditor()\l- Clear()\l- CreateAnimationReference\lAssets()\l- OnInspectorGUIMulti()\l- DrawSkeletonDataFields()\l- DrawAtlasAssetsFields()\l- HandleAtlasAssetsNulls()\l그리고 9개 더...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{UnityEditor::Editor\n||}",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

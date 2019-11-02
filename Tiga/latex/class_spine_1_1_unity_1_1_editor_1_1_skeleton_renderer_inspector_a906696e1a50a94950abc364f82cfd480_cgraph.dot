@@ -1,0 +1,48 @@
+digraph "Spine.Unity.Editor.SkeletonRendererInspector.OnEnable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Editor.Skeleton\lRendererInspector.OnEnable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Editor.Spine\lEditorUtilities.ConfirmInitialization",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a50138b04862241cbc785ba1e1b9b014f",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Spine.Unity.Editor.Spine\lEditorUtilities.Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#abd76572f6dc50fd5b923f3360652e60c",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Spine.Unity.Editor.Spine\lEditorUtilities.Icons.Initialize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a827ac18599cfad6d3d62ad362f53b886",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Spine.Unity.Editor.Spine\lEditorUtilities.Icons.LoadIcon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons.html#a0f84a49ed82e4c0a56eff579b02d936a",tooltip=" "];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Spine.Unity.Editor.Spine\lEditorUtilities.LoadPreferences",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a8a9604741ef48fdbf45cb43640af4555",tooltip=" "];
+  Node3 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Spine.Unity.Editor.Spine\lEditorUtilities.SceneViewDrag\lAndDrop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#adadc887a09b56823fa8ecebae1d85300",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Spine.Unity.SkeletonData\lAsset.GetSkeletonData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a2b0df38bd74c1b464ed8543f72c7fd4e",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Spine.Unity.SkeletonData\lAsset.Clear",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a0609f106c8b6f209cdcc696dc7ef5361",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Spine.Unity.SkeletonData\lAsset.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_skeleton_data_asset.html#a36c686acb39535dbb13d1a55692b0f04",tooltip=" "];
+  Node10 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Spine.Unity.Editor.Spine\lEditorUtilities.MousePointTo\lWorldPoint2D",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#ac2e861c82597ea456403999ecc021845",tooltip="Converts a mouse point to a world point on a plane."];
+  Node7 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Spine.Unity.Editor.Spine\lEditorUtilities.ShowInstantiate\lContextMenu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#abe8a798bd134276fcb83fc4094134823",tooltip=" "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Spine.Unity.Editor.Spine\lEditorUtilities.HandleSkeleton\lComponentDrop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a9b1006940b64b0a54b57341ed2e5e0d7",tooltip=" "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Spine.Unity.Editor.Spine\lEditorUtilities.RoundVector",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#ad55531879389e78f96b84a0accc3efec",tooltip="Rounds off vector components to a number of decimal digits."];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Spine.Unity.Editor.Spine\lEditorUtilities.InstantiateDelegate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a01dc4423be541dc44f235984c1c8046c",tooltip=" "];
+  Node12 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
+  Node16 [label="Spine.Unity.Editor.Spine\lEditorUtilities.InstantiateSkeleton\lAnimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a62a37b5611d74d83541f6df96b16eaef",tooltip=" "];
+  Node16 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node17 [label="Spine.SkeletonData.FindSkin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton_data.html#a6f87af52a59ff01da994c5ae68397369",tooltip="May be null."];
+  Node16 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Spine.Unity.Editor.Spine\lEditorUtilities.InstantiateSkeleton\lAnimator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities.html#a00c8ae138b071a488169ac78a6072fef",tooltip=" "];
+  Node18 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Spine.Unity.Editor.Spine\lInspectorUtility.GetRenderers\lSerializedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_editor_1_1_spine_inspector_utility.html#a4bd9935d8fe9455377ee5708fe819bef",tooltip=" "];
+}

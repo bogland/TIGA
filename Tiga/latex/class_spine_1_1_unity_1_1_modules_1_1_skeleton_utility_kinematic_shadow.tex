@@ -1,0 +1,280 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow}\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_1_1_transform_pair}{Transform\+Pair}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 타입}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{Physics\+System}} \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344daf0151601ed0b8ef1f708f94fa5c9208c}{Physics\+System.\+Physics2D}}, 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344dabbc2dc2a3d7e88ea17dde0a2951d2cdc}{Physics\+System.\+Physics3D}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9a4771b8d5e475f10749a0dab9a0797f}{detached\+Shadow}} = false
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_af50bc77fe270d5936675a93b22069d97}{parent}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ac4aa3d9d1d6c7f8e380ac717618f8653}{hide\+Shadow}} = true
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{Physics\+System}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_abae9d84d73a97964cbfa9e610f0111d3}{physics\+System}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344dabbc2dc2a3d7e88ea17dde0a2951d2cdc}{Physics\+System.\+Physics3D}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a69a7e61944411f281ca29d415b895e21}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a658caad1a0fd0c732d230f0c6947ceef}{Fixed\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}{Destroy\+Components}} (Component\mbox{[}$\,$\mbox{]} components)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadow\+Root}}
+\item 
+readonly List$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_1_1_transform_pair}{Transform\+Pair}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}{shadow\+Table}} = new List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_1_1_transform_pair}{Transform\+Pair}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 열거형 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!PhysicsSystem@{PhysicsSystem}}
+\index{PhysicsSystem@{PhysicsSystem}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{PhysicsSystem}{PhysicsSystem}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+Physics\+System}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{열거형 멤버}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Physics2D@{Physics2D}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!Physics2D@{Physics2D}}}\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344daf0151601ed0b8ef1f708f94fa5c9208c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344daf0151601ed0b8ef1f708f94fa5c9208c}} 
+Physics2D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Physics3D@{Physics3D}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!Physics3D@{Physics3D}}}\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344dabbc2dc2a3d7e88ea17dde0a2951d2cdc}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344dabbc2dc2a3d7e88ea17dde0a2951d2cdc}} 
+Physics3D&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                                   \{}
+\DoxyCodeLine{54             Physics2D,}
+\DoxyCodeLine{55             Physics3D}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!DestroyComponents@{DestroyComponents}}
+\index{DestroyComponents@{DestroyComponents}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{DestroyComponents()}{DestroyComponents()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+Destroy\+Components (\begin{DoxyParamCaption}\item[{Component\mbox{[}$\,$\mbox{]}}]{components }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 114 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{115                                                                \{}
+\DoxyCodeLine{116             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = components.Length; i < n; i++)}
+\DoxyCodeLine{117                 Destroy(components[i]);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a658caad1a0fd0c732d230f0c6947ceef}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a658caad1a0fd0c732d230f0c6947ceef}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 119 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{120                             \{}
+\DoxyCodeLine{121             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_abae9d84d73a97964cbfa9e610f0111d3}{physicsSystem}} == \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{PhysicsSystem}}.Physics2D) \{}
+\DoxyCodeLine{122                 var shadowRootRigidbody = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{123                 shadowRootRigidbody.MovePosition(transform.position);}
+\DoxyCodeLine{124                 shadowRootRigidbody.MoveRotation(transform.rotation.eulerAngles.z);}
+\DoxyCodeLine{125             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{126                 var shadowRootRigidbody = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.GetComponent<Rigidbody>();}
+\DoxyCodeLine{127                 shadowRootRigidbody.MovePosition(transform.position);}
+\DoxyCodeLine{128                 shadowRootRigidbody.MoveRotation(transform.rotation);}
+\DoxyCodeLine{129             \}}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}{shadowTable}}.Count; i < n; i++) \{}
+\DoxyCodeLine{132                 var pair = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}{shadowTable}}[i];}
+\DoxyCodeLine{133                 pair.dest.localPosition = pair.src.localPosition;}
+\DoxyCodeLine{134                 pair.dest.localRotation = pair.src.localRotation;}
+\DoxyCodeLine{135             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a69a7e61944411f281ca29d415b895e21}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a69a7e61944411f281ca29d415b895e21}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                       \{}
+\DoxyCodeLine{59             \textcolor{comment}{// Duplicate this gameObject as the "shadow" with a different parent.}}
+\DoxyCodeLine{60             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}} = Instantiate<GameObject>(this.gameObject);}
+\DoxyCodeLine{61             Destroy(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.GetComponent<SkeletonUtilityKinematicShadow>());}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63             \textcolor{comment}{// Prepare shadow gameObject's properties.}}
+\DoxyCodeLine{64             var shadowRootTransform = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.transform;}
+\DoxyCodeLine{65             shadowRootTransform.position = transform.position;}
+\DoxyCodeLine{66             shadowRootTransform.rotation = transform.rotation;}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68             Vector3 scaleRef = transform.TransformPoint(Vector3.right);}
+\DoxyCodeLine{69             \textcolor{keywordtype}{float} scale = Vector3.Distance(transform.position, scaleRef);}
+\DoxyCodeLine{70             shadowRootTransform.localScale = Vector3.one;}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9a4771b8d5e475f10749a0dab9a0797f}{detachedShadow}}) \{}
+\DoxyCodeLine{73                 \textcolor{comment}{// Do not change to null coalescing operator (??). Unity overloads null checks for UnityEngine.Objects but not the ?? operator.}}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_af50bc77fe270d5936675a93b22069d97}{parent}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{75                     shadowRootTransform.parent = transform.root;  }
+\DoxyCodeLine{76                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{77                     shadowRootTransform.parent = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_af50bc77fe270d5936675a93b22069d97}{parent}};}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ac4aa3d9d1d6c7f8e380ac717618f8653}{hideShadow}})}
+\DoxyCodeLine{81                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.hideFlags = HideFlags.HideInHierarchy;}
+\DoxyCodeLine{82             }
+\DoxyCodeLine{83             var shadowJoints = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.GetComponentsInChildren<Joint>();}
+\DoxyCodeLine{84             \textcolor{keywordflow}{foreach} (Joint j \textcolor{keywordflow}{in} shadowJoints)}
+\DoxyCodeLine{85                 j.connectedAnchor *= scale;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87             \textcolor{comment}{// Build list of bone pairs (matches shadow transforms with bone transforms)}}
+\DoxyCodeLine{88             var bones = GetComponentsInChildren<SkeletonUtilityBone>();}
+\DoxyCodeLine{89             var shadowBones = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}{shadowRoot}}.GetComponentsInChildren<SkeletonUtilityBone>();}
+\DoxyCodeLine{90             \textcolor{keywordflow}{foreach} (var b \textcolor{keywordflow}{in} bones) \{}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{if} (b.gameObject == \textcolor{keyword}{this}.gameObject)}
+\DoxyCodeLine{92                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94                 System.Type checkType = (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_abae9d84d73a97964cbfa9e610f0111d3}{physicsSystem}} == \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{PhysicsSystem}}.Physics2D) ? typeof(Rigidbody2D) : typeof(Rigidbody);}
+\DoxyCodeLine{95                 \textcolor{keywordflow}{foreach} (var sb \textcolor{keywordflow}{in} shadowBones) \{}
+\DoxyCodeLine{96                     \textcolor{keywordflow}{if} (sb.GetComponent(checkType) != \textcolor{keyword}{null} \&\& sb.boneName == b.boneName) \{}
+\DoxyCodeLine{97                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}{shadowTable}}.Add(\textcolor{keyword}{new} TransformPair \{}
+\DoxyCodeLine{98                             dest = b.transform,}
+\DoxyCodeLine{99                             src = sb.transform}
+\DoxyCodeLine{100                         \});}
+\DoxyCodeLine{101                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{102                     \}}
+\DoxyCodeLine{103                 \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107             \textcolor{comment}{// Destroy conflicting and unneeded components}}
+\DoxyCodeLine{108             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}{DestroyComponents}}(shadowBones);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}{DestroyComponents}}(GetComponentsInChildren<Joint>());}
+\DoxyCodeLine{111             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}{DestroyComponents}}(GetComponentsInChildren<Rigidbody>());}
+\DoxyCodeLine{112             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ad42d6e9223394735996c2f1ee7a70167}{DestroyComponents}}(GetComponentsInChildren<Collider>());}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9a4771b8d5e475f10749a0dab9a0797f}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9a4771b8d5e475f10749a0dab9a0797f}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!detachedShadow@{detachedShadow}}
+\index{detachedShadow@{detachedShadow}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{detachedShadow}{detachedShadow}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+detached\+Shadow = false}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ac4aa3d9d1d6c7f8e380ac717618f8653}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_ac4aa3d9d1d6c7f8e380ac717618f8653}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!hideShadow@{hideShadow}}
+\index{hideShadow@{hideShadow}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{hideShadow}{hideShadow}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+hide\+Shadow = true}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_af50bc77fe270d5936675a93b22069d97}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_af50bc77fe270d5936675a93b22069d97}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!parent@{parent}}
+\index{parent@{parent}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+parent}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_abae9d84d73a97964cbfa9e610f0111d3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_abae9d84d73a97964cbfa9e610f0111d3}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!physicsSystem@{physicsSystem}}
+\index{physicsSystem@{physicsSystem}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{physicsSystem}{physicsSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344d}{Physics\+System}} Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+physics\+System = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a9448a1d54cd97bb32dc3084a1abf344dabbc2dc2a3d7e88ea17dde0a2951d2cdc}{Physics\+System.\+Physics3D}}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 43 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_a073f3e8c6bd2d6f15fe11b2c388b88d9}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!shadowRoot@{shadowRoot}}
+\index{shadowRoot@{shadowRoot}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{shadowRoot}{shadowRoot}}
+{\footnotesize\ttfamily Game\+Object Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+shadow\+Root\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_acc65f74e8dee6b65a3bef62ed36d31d0}} 
+\index{Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}!shadowTable@{shadowTable}}
+\index{shadowTable@{shadowTable}!Spine.Unity.Modules.SkeletonUtilityKinematicShadow@{Spine.Unity.Modules.SkeletonUtilityKinematicShadow}}
+\doxysubsubsection{\texorpdfstring{shadowTable}{shadowTable}}
+{\footnotesize\ttfamily readonly List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_1_1_transform_pair}{Transform\+Pair}}$>$ Spine.\+Unity.\+Modules.\+Skeleton\+Utility\+Kinematic\+Shadow.\+shadow\+Table = new List$<$\mbox{\hyperlink{struct_spine_1_1_unity_1_1_modules_1_1_skeleton_utility_kinematic_shadow_1_1_transform_pair}{Transform\+Pair}}$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Utility\+Kinematic\+Shadow.\+cs 파일의 47 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Skeleton\+Utility Modules/\mbox{\hyperlink{_skeleton_utility_kinematic_shadow_8cs}{Skeleton\+Utility\+Kinematic\+Shadow.\+cs}}\end{DoxyCompactItemize}

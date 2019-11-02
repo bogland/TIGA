@@ -1,0 +1,14 @@
+digraph "Spine.Unity.Modules.SkeletonRendererCustomMaterials.OnDisable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Modules.Skeleton\lRendererCustomMaterials.OnDisable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Spine.Unity.Modules.Skeleton\lRendererCustomMaterials.RemoveCustom\lMaterialOverrides",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_renderer_custom_materials.html#a081a803bfc587cabfff3b0de62f0bd5d",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Spine.Unity.Modules.Skeleton\lRendererCustomMaterials.RemoveCustom\lSlotMaterials",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_modules_1_1_skeleton_renderer_custom_materials.html#a3796b40f5ac5ab95c6701cb647f19abe",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Spine.Skeleton.FindSlot",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_skeleton.html#aeeaf7abe56f807e6e57f3a2514e607ab",tooltip="May be null."];
+}

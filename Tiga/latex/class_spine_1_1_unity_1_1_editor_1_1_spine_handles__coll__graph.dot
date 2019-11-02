@@ -1,0 +1,7 @@
+digraph "Spine.Unity.Editor.SpineHandles"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.Editor.Spine\lHandles\n|+ BoneColor\l+ PathColor\l+ TransformContraintColor\l+ IkColor\l+ PointColor\l+ BoneMesh\l+ ArrowheadMesh\l+ BoneMaterial\l+ IKMaterial\l+ BoneNameStyle\l+ PathNameStyle\l+ PointNameStyle\l~ handleScale\l- _boneMeshVerts\l- _boneMesh\l- _arrowheadMesh\l- _boneMaterial\l- _ikMaterial\l- _boneNameStyle\l- _pathNameStyle\l- _pointNameStyle\l- _boneWireBuffer\l- pathVertexBuffer\l|+ GetBoneMaterial()\l+ GetBoneMaterial()\l+ DrawBoneNames()\l+ DrawBones()\l+ DrawBoneWireframe()\l+ DrawBone()\l+ DrawBone()\l+ DrawPaths()\l+ DrawPath()\l+ DrawDot()\l+ DrawBoundingBoxes()\l+ DrawBoundingBox()\l+ DrawPointAttachment()\l+ DrawConstraints()\l~ DrawCubicBezier()\l- GetBoneWireBuffer()\l- DrawCrosshairs2D()\l- DrawCrosshairs()\l- DrawArrowhead2D()\l- DrawArrowhead()\l- DrawArrowhead()\l- DrawBoneCircle()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+}

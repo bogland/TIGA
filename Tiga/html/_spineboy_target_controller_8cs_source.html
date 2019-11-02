@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Getting Started Scripts/SpineboyTargetController.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_spineboy_target_controller_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpineboyTargetController.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_spineboy_target_controller_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html">    4</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html">SpineboyTargetController</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">    6</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_skeleton_animation.html">SkeletonAnimation</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        [<a class="code" href="class_spine_1_1_unity_1_1_spine_bone.html">SpineBone</a>(dataField:<span class="stringliteral">&quot;skeletonAnimation&quot;</span>)]</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a45753e77f6f4a6e294f9db37f63575f8">    9</a></span>&#160;        <span class="keyword">public</span> <span class="keywordtype">string</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a45753e77f6f4a6e294f9db37f63575f8">boneName</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab992bc64bc6522087fac28a39077c22e">   10</a></span>&#160;        <span class="keyword">public</span> <span class="keyword">new</span> Camera <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab992bc64bc6522087fac28a39077c22e">camera</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ae23364ec0ffefb18cd9835cac1970793">   12</a></span>&#160;        <a class="code" href="class_spine_1_1_bone.html">Bone</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ae23364ec0ffefb18cd9835cac1970793">bone</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a01d0bb550a93e08a8308d21d7e8a9a2e">   14</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a01d0bb550a93e08a8308d21d7e8a9a2e">OnValidate</a> () {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a> == <span class="keyword">null</span>) <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a> = GetComponent&lt;SkeletonAnimation&gt;();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a87b0335516c2c1aa3021b42c173a146f">   18</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a87b0335516c2c1aa3021b42c173a146f">Start</a> () {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ae23364ec0ffefb18cd9835cac1970793">bone</a> = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666">FindBone</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a45753e77f6f4a6e294f9db37f63575f8">boneName</a>);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a0d89187524419f25e83c32761a248db6">   22</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a0d89187524419f25e83c32761a248db6">Update</a> () {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            var mousePosition = Input.mousePosition;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            var worldMousePosition = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab992bc64bc6522087fac28a39077c22e">camera</a>.ScreenToWorldPoint(mousePosition);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            var skeletonSpacePoint = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a>.transform.InverseTransformPoint(worldMousePosition);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">skeletonAnimation</a>.<a class="code" href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Skeleton</a>.<a class="code" href="class_spine_1_1_skeleton.html#aad73be010941cf66a116d6cf45e6510c">FlipX</a>) skeletonSpacePoint.x *= -1;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ae23364ec0ffefb18cd9835cac1970793">bone</a>.SetPosition(skeletonSpacePoint);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_ac17fa59f8524f84672419a2e9c676666"><div class="ttname"><a href="class_spine_1_1_skeleton.html#ac17fa59f8524f84672419a2e9c676666">Spine.Skeleton.FindBone</a></div><div class="ttdeci">Bone FindBone(string boneName)</div><div class="ttdoc">May be null.</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00341">Skeleton.cs:341</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_skeleton_html_aad73be010941cf66a116d6cf45e6510c"><div class="ttname"><a href="class_spine_1_1_skeleton.html#aad73be010941cf66a116d6cf45e6510c">Spine.Skeleton.FlipX</a></div><div class="ttdeci">bool FlipX</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_8cs_source.html#l00066">Skeleton.cs:66</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_bone_html"><div class="ttname"><a href="class_spine_1_1_bone.html">Spine.Bone</a></div><div class="ttdoc">Stores a bone's current pose.</div><div class="ttdef"><b>Definition:</b> <a href="_bone_8cs_source.html#l00041">Bone.cs:41</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html">Spine.Unity.Examples.SpineboyTargetController</a></div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00004">SpineboyTargetController.cs:4</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_renderer_html_aca997f96ffb5a89579dc325b790f0fd6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_renderer.html#aca997f96ffb5a89579dc325b790f0fd6">Spine.Unity.SkeletonRenderer.Skeleton</a></div><div class="ttdeci">Skeleton Skeleton</div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_renderer_8cs_source.html#l00111">SkeletonRenderer.cs:111</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_ab049e28d1d87cd96a4b351e788cbdc15"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab049e28d1d87cd96a4b351e788cbdc15">Spine.Unity.Examples.SpineboyTargetController.skeletonAnimation</a></div><div class="ttdeci">SkeletonAnimation skeletonAnimation</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00006">SpineboyTargetController.cs:6</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_a01d0bb550a93e08a8308d21d7e8a9a2e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a01d0bb550a93e08a8308d21d7e8a9a2e">Spine.Unity.Examples.SpineboyTargetController.OnValidate</a></div><div class="ttdeci">void OnValidate()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00014">SpineboyTargetController.cs:14</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_skeleton_animation_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_skeleton_animation.html">Spine.Unity.SkeletonAnimation</a></div><div class="ttdef"><b>Definition:</b> <a href="_skeleton_animation_8cs_source.html#l00037">SkeletonAnimation.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_a87b0335516c2c1aa3021b42c173a146f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a87b0335516c2c1aa3021b42c173a146f">Spine.Unity.Examples.SpineboyTargetController.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00018">SpineboyTargetController.cs:18</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_a0d89187524419f25e83c32761a248db6"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a0d89187524419f25e83c32761a248db6">Spine.Unity.Examples.SpineboyTargetController.Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00022">SpineboyTargetController.cs:22</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_ae23364ec0ffefb18cd9835cac1970793"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ae23364ec0ffefb18cd9835cac1970793">Spine.Unity.Examples.SpineboyTargetController.bone</a></div><div class="ttdeci">Bone bone</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00012">SpineboyTargetController.cs:12</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_ab992bc64bc6522087fac28a39077c22e"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#ab992bc64bc6522087fac28a39077c22e">Spine.Unity.Examples.SpineboyTargetController.camera</a></div><div class="ttdeci">new Camera camera</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00010">SpineboyTargetController.cs:10</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_spine_bone_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_spine_bone.html">Spine.Unity.SpineBone</a></div><div class="ttdef"><b>Definition:</b> <a href="_spine_attributes_8cs_source.html#l00254">SpineAttributes.cs:254</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller_html_a45753e77f6f4a6e294f9db37f63575f8"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_spineboy_target_controller.html#a45753e77f6f4a6e294f9db37f63575f8">Spine.Unity.Examples.SpineboyTargetController.boneName</a></div><div class="ttdeci">string boneName</div><div class="ttdef"><b>Definition:</b> <a href="_spineboy_target_controller_8cs_source.html#l00009">SpineboyTargetController.cs:9</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_a25eb03a90ec547997709b11854764d5.html">Getting Started Scripts</a></li><li class="navelem"><a class="el" href="_spineboy_target_controller_8cs.html">SpineboyTargetController.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

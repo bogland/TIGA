@@ -1,0 +1,7 @@
+digraph "Spine.Unity.SpineAttachment.Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.Unity.SpineAttachment.\lHierarchy\n|+ skin\l+ slot\l+ name\l|+ Hierarchy()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A struct that represents 3 strings that help identify and locate an attachment in a skeleton."];
+}

@@ -1,0 +1,10 @@
+digraph "Spine.Unity.Examples.JitterEffectExample.OnDisable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Spine.Unity.Examples.Jitter\lEffectExample.OnDisable",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Spine.Unity.Examples.Jitter\lEffectExample.ProcessVertices",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_unity_1_1_examples_1_1_jitter_effect_example.html#a065a4b14ef546af5442246c7cacb50df",tooltip=" "];
+}

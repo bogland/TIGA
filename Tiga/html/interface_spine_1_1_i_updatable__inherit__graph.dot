@@ -1,0 +1,17 @@
+digraph "Spine.IUpdatable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.IUpdatable\n||+ Update()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{Spine.Bone\n|+ yDown\l+ Data\l+ Skeleton\l+ Parent\l+ Children\l+ X\l+ Y\l+ Rotation\l+ ScaleX\l+ ScaleY\l+ ShearX\l그리고 20개 더...\l~ data\l~ skeleton\l~ parent\l~ children\l~ x\l~ ax\l~ appliedValid\l~ a\l~ c\l~ sorted\l- y\l- rotation\l- scaleX\l- scaleY\l- shearX\l- shearY\l- ay\l- arotation\l- ascaleX\l- ascaleY\l그리고 6개 더...\l|+ Bone()\l+ Update()\l+ UpdateWorldTransform()\l+ UpdateWorldTransform()\l+ SetToSetupPose()\l+ WorldToLocal()\l+ LocalToWorld()\l+ WorldToLocalRotation()\l+ LocalToWorldRotation()\l+ RotateWorld()\l+ ToString()\l~ UpdateAppliedTransform()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_bone.html",tooltip="Stores a bone's current pose."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Spine.IConstraint\n|+ Order\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_spine_1_1_i_constraint.html",tooltip="The interface for all constraints."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{Spine.IkConstraint\n|+ Data\l+ Order\l+ Bones\l+ Target\l+ BendDirection\l+ Mix\l~ data\l~ bones\l~ target\l~ mix\l~ bendDirection\l|+ IkConstraint()\l+ Apply()\l+ Update()\l+ ToString()\l+ Apply()\l+ Apply()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_ik_constraint.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{Spine.PathConstraint\n|+ Order\l+ Position\l+ Spacing\l+ RotateMix\l+ TranslateMix\l+ Bones\l+ Target\l+ Data\l~ data\l~ bones\l~ target\l~ position\l~ spaces\l~ world\l~ segments\l- spacing\l- rotateMix\l- translateMix\l- positions\l- curves\l- lengths\l- NONE\l- BEFORE\l- AFTER\l- Epsilon\l|+ PathConstraint()\l+ Apply()\l+ Update()\l- ComputeWorldPositions()\l- AddBeforePosition()\l- AddAfterPosition()\l- AddCurvePosition()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_path_constraint.html",tooltip=" "];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{Spine.TransformConstraint\n|+ Data\l+ Order\l+ Bones\l+ Target\l+ RotateMix\l+ TranslateMix\l+ ScaleMix\l+ ShearMix\l~ data\l~ bones\l~ target\l~ rotateMix\l- translateMix\l- scaleMix\l- shearMix\l|+ TransformConstraint()\l+ Apply()\l+ Update()\l+ ToString()\l- ApplyAbsoluteWorld()\l- ApplyRelativeWorld()\l- ApplyAbsoluteLocal()\l- ApplyRelativeLocal()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_transform_constraint.html",tooltip=" "];
+}

@@ -1,0 +1,517 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions}{}\doxysection{Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions}\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+
+
+Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a485da91e9c6f51dbf9d837fe1983bf70}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} o, bool clone\+Meshes\+As\+Linked)
+\begin{DoxyCompactList}\small\item\em Clones the attachment. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_abda1d8b0cdb713fb1b3b40486eb45079}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} o)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_afbf6083c701bb57810181d329f9e6fe0}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} o)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a28ddaf3d01fdda6d1be040ac83d2cf3b}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} o)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a23c69e222164d7d77f615f8c37fc219a}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} o)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a0f0e7b8156e4b9f63b26797c40b19c75}{Get\+Linked\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} o, bool inherit\+Deform=true)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a2758139505272b7dbb9f1e96dc332da3}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} o)
+\begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. This will cause Deform animations to stop working unless you explicity set the .parent\+Mesh to the original. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a3fe0d2385053180b963eb91890eca300}{Get\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} o)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a4e1327d0fd85ef3dc14f85fc64b00469}{Get\+Linked\+Mesh}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} o, string new\+Linked\+Mesh\+Name, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool inherit\+Deform=true, bool copy\+Original\+Properties=false)
+\begin{DoxyCompactList}\small\item\em Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to the \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} provided. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a9169321248ab5ce3deb39bf8ea163298}{Get\+Linked\+Mesh}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} o, Sprite sprite, Shader shader, bool inherit\+Deform=true, Material material\+Property\+Source=null)
+\begin{DoxyCompactList}\small\item\em Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} generated from a Sprite. The \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} will be mapped to a new Material based on the shader. For better caching and batching, use Get\+Linked\+Mesh(string, Atlas\+Region, bool) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a84e33618d682b76a7a17e031af615f40}{Get\+Linked\+Mesh}} (this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} o, Sprite sprite, Material material\+Property\+Source, bool inherit\+Deform=true)
+\begin{DoxyCompactList}\small\item\em Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} generated from a Sprite. The \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} will be mapped to a new Material based on the shader. For better caching and batching, use Get\+Linked\+Mesh(string, Atlas\+Region, bool) \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a45fe0042df3ac86f12d2be6390aae446}{Get\+Remapped\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} o, Sprite sprite, Material source\+Material, bool premultiply\+Alpha=true, bool clone\+Mesh\+As\+Linked=true, bool use\+Original\+Region\+Size=false)
+\begin{DoxyCompactList}\small\item\em Gets a clone of the attachment remapped with a sprite image. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_af18f8ad4e663c457d9585ba3ca7f91bf}{Get\+Remapped\+Clone}} (this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} o, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} atlas\+Region, bool clone\+Mesh\+As\+Linked=true, bool use\+Original\+Region\+Size=false, float scale=0.\+01f)
+\begin{DoxyCompactList}\small\item\em Gets a clone of the attachment remapped with an atlas\+Region image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}{Clone\+Vertex\+Attachment}} (\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}} src, \mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}} dest)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Attachment\+Tools.\+cs 파일의 875 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!CloneVertexAttachment@{CloneVertexAttachment}}
+\index{CloneVertexAttachment@{CloneVertexAttachment}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{CloneVertexAttachment()}{CloneVertexAttachment()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Clone\+Vertex\+Attachment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}}}]{src,  }\item[{\mbox{\hyperlink{class_spine_1_1_vertex_attachment}{Vertex\+Attachment}}}]{dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 1019 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1020                                                                                         \{}
+\DoxyCodeLine{1021             dest.worldVerticesLength = src.worldVerticesLength;}
+\DoxyCodeLine{1022             \textcolor{keywordflow}{if} (src.bones != \textcolor{keyword}{null})}
+\DoxyCodeLine{1023                 dest.bones = src.bones.Clone() as \textcolor{keywordtype}{int}[];}
+\DoxyCodeLine{1024 }
+\DoxyCodeLine{1025             \textcolor{keywordflow}{if} (src.vertices != \textcolor{keyword}{null})}
+\DoxyCodeLine{1026                 dest.vertices = src.vertices.Clone() as \textcolor{keywordtype}{float}[];}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a485da91e9c6f51dbf9d837fe1983bf70}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a485da91e9c6f51dbf9d837fe1983bf70}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{o,  }\item[{bool}]{clone\+Meshes\+As\+Linked }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clones the attachment. 
+
+
+
+Attachment\+Tools.\+cs 파일의 878 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{879                                                                                         \{}
+\DoxyCodeLine{880             var regionAttachment = o as RegionAttachment;}
+\DoxyCodeLine{881             \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{882                 \textcolor{keywordflow}{return} regionAttachment.GetClone();         }
+\DoxyCodeLine{883 }
+\DoxyCodeLine{884             var meshAttachment = o as MeshAttachment;}
+\DoxyCodeLine{885             \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{886                 \textcolor{keywordflow}{return} cloneMeshesAsLinked ? meshAttachment.GetLinkedClone() : meshAttachment.GetClone();}
+\DoxyCodeLine{887 }
+\DoxyCodeLine{888             var boundingBoxAttachment = o as BoundingBoxAttachment;}
+\DoxyCodeLine{889             \textcolor{keywordflow}{if} (boundingBoxAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{890                 \textcolor{keywordflow}{return} boundingBoxAttachment.GetClone();}
+\DoxyCodeLine{891 }
+\DoxyCodeLine{892             var pathAttachment = o as PathAttachment;}
+\DoxyCodeLine{893             \textcolor{keywordflow}{if} (pathAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{894                 \textcolor{keywordflow}{return} pathAttachment.GetClone();}
+\DoxyCodeLine{895 }
+\DoxyCodeLine{896             var pointAttachment = o as PointAttachment;}
+\DoxyCodeLine{897             \textcolor{keywordflow}{if} (pointAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{898                 \textcolor{keywordflow}{return} pointAttachment.GetClone();}
+\DoxyCodeLine{899 }
+\DoxyCodeLine{900             var clippingAttachment = o as ClippingAttachment;}
+\DoxyCodeLine{901             \textcolor{keywordflow}{if} (clippingAttachment != \textcolor{keyword}{null})}
+\DoxyCodeLine{902                 \textcolor{keywordflow}{return} clippingAttachment.GetClone();}
+\DoxyCodeLine{903 }
+\DoxyCodeLine{904             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a23c69e222164d7d77f615f8c37fc219a}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a23c69e222164d7d77f615f8c37fc219a}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_bounding_box_attachment}{Bounding\+Box\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 951 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{952                                                                                     \{}
+\DoxyCodeLine{953             var ba = \textcolor{keyword}{new} BoundingBoxAttachment(o.Name);}
+\DoxyCodeLine{954             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}{CloneVertexAttachment}}(o, ba);}
+\DoxyCodeLine{955             \textcolor{keywordflow}{return} ba;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_afbf6083c701bb57810181d329f9e6fe0}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_afbf6083c701bb57810181d329f9e6fe0}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [3/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_clipping_attachment}{Clipping\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 934 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{935                                                                               \{}
+\DoxyCodeLine{936             var ca = \textcolor{keyword}{new} ClippingAttachment(o.Name) \{}
+\DoxyCodeLine{937                 endSlot = o.endSlot}
+\DoxyCodeLine{938             \};}
+\DoxyCodeLine{939             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}{CloneVertexAttachment}}(o, ca);}
+\DoxyCodeLine{940             \textcolor{keywordflow}{return} ca;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a2758139505272b7dbb9f1e96dc332da3}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a2758139505272b7dbb9f1e96dc332da3}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [4/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a clone of the \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. This will cause Deform animations to stop working unless you explicity set the .parent\+Mesh to the original. 
+
+
+
+Attachment\+Tools.\+cs 파일의 963 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{964                                                                       \{}
+\DoxyCodeLine{965             var ma = \textcolor{keyword}{new} MeshAttachment(o.Name) \{}
+\DoxyCodeLine{966                 r = o.r,}
+\DoxyCodeLine{967                 g = o.g,}
+\DoxyCodeLine{968                 b = o.b,}
+\DoxyCodeLine{969                 a = o.a,}
+\DoxyCodeLine{970 }
+\DoxyCodeLine{971                 inheritDeform = o.inheritDeform,}
+\DoxyCodeLine{972 }
+\DoxyCodeLine{973                 \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}} = o.Path,}
+\DoxyCodeLine{974                 RendererObject = o.RendererObject,}
+\DoxyCodeLine{975 }
+\DoxyCodeLine{976                 regionOffsetX = o.regionOffsetX,}
+\DoxyCodeLine{977                 regionOffsetY = o.regionOffsetY,}
+\DoxyCodeLine{978                 regionWidth = o.regionWidth,}
+\DoxyCodeLine{979                 regionHeight = o.regionHeight,}
+\DoxyCodeLine{980                 regionOriginalWidth = o.regionOriginalWidth,}
+\DoxyCodeLine{981                 regionOriginalHeight = o.regionOriginalHeight,}
+\DoxyCodeLine{982                 RegionU = o.RegionU,}
+\DoxyCodeLine{983                 RegionV = o.RegionV,}
+\DoxyCodeLine{984                 RegionU2 = o.RegionU2,}
+\DoxyCodeLine{985                 RegionV2 = o.RegionV2,}
+\DoxyCodeLine{986                 RegionRotate = o.RegionRotate,}
+\DoxyCodeLine{987                 uvs = o.uvs.Clone() as \textcolor{keywordtype}{float}[]}
+\DoxyCodeLine{988             \};}
+\DoxyCodeLine{989 }
+\DoxyCodeLine{990             \textcolor{comment}{// Linked mesh}}
+\DoxyCodeLine{991             \textcolor{keywordflow}{if} (o.ParentMesh != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{992                 \textcolor{comment}{// bones, vertices, worldVerticesLength, regionUVs, triangles, HullLength, Edges, Width, Height}}
+\DoxyCodeLine{993                 ma.ParentMesh = o.ParentMesh;}
+\DoxyCodeLine{994             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{995                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}{CloneVertexAttachment}}(o, ma); \textcolor{comment}{// bones, vertices, worldVerticesLength}}
+\DoxyCodeLine{996                 ma.regionUVs = o.regionUVs.Clone() as \textcolor{keywordtype}{float}[];}
+\DoxyCodeLine{997                 ma.triangles = o.triangles.Clone() as \textcolor{keywordtype}{int}[];}
+\DoxyCodeLine{998                 ma.hulllength = o.hulllength;}
+\DoxyCodeLine{999 }
+\DoxyCodeLine{1000                 \textcolor{comment}{// Nonessential.}}
+\DoxyCodeLine{1001                 ma.Edges = (o.Edges == \textcolor{keyword}{null}) ? \textcolor{keyword}{null} : o.Edges.Clone() as \textcolor{keywordtype}{int}[]; \textcolor{comment}{// Allow absence of Edges array when nonessential data is not exported.}}
+\DoxyCodeLine{1002                 ma.Width = o.Width;}
+\DoxyCodeLine{1003                 ma.Height = o.Height;}
+\DoxyCodeLine{1004             \}}
+\DoxyCodeLine{1005 }
+\DoxyCodeLine{1006             \textcolor{keywordflow}{return} ma;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a3fe0d2385053180b963eb91890eca300}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a3fe0d2385053180b963eb91890eca300}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [5/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_path_attachment}{Path\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 1008 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1009                                                                       \{}
+\DoxyCodeLine{1010             var newPathAttachment = \textcolor{keyword}{new} PathAttachment(o.Name) \{}
+\DoxyCodeLine{1011                 lengths = o.lengths.Clone() as \textcolor{keywordtype}{float}[],}
+\DoxyCodeLine{1012                 closed = o.closed,}
+\DoxyCodeLine{1013                 constantSpeed = o.constantSpeed}
+\DoxyCodeLine{1014             \};}
+\DoxyCodeLine{1015             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_ad447dc9e04952f379748aa0f76896c38}{CloneVertexAttachment}}(o, newPathAttachment);}
+\DoxyCodeLine{1016 }
+\DoxyCodeLine{1017             \textcolor{keywordflow}{return} newPathAttachment;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a28ddaf3d01fdda6d1be040ac83d2cf3b}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a28ddaf3d01fdda6d1be040ac83d2cf3b}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [6/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_point_attachment}{Point\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 942 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{943                                                                         \{}
+\DoxyCodeLine{944             var pa = \textcolor{keyword}{new} PointAttachment(o.Name) \{}
+\DoxyCodeLine{945                 rotation = o.rotation,}
+\DoxyCodeLine{946                 x = o.x,}
+\DoxyCodeLine{947                 y = o.y}
+\DoxyCodeLine{948             \};}
+\DoxyCodeLine{949             \textcolor{keywordflow}{return} pa;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_abda1d8b0cdb713fb1b3b40486eb45079}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_abda1d8b0cdb713fb1b3b40486eb45079}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetClone@{GetClone}}
+\index{GetClone@{GetClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetClone()}{GetClone()}\hspace{0.1cm}{\footnotesize\ttfamily [7/7]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 906 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{907                                                                           \{}
+\DoxyCodeLine{908             \textcolor{keywordflow}{return} \textcolor{keyword}{new} RegionAttachment(o.Name + \textcolor{stringliteral}{"clone"}) \{}
+\DoxyCodeLine{909                 x = o.x,}
+\DoxyCodeLine{910                 y = o.y,}
+\DoxyCodeLine{911                 rotation = o.rotation,}
+\DoxyCodeLine{912                 scaleX = o.scaleX,}
+\DoxyCodeLine{913                 scaleY = o.scaleY,}
+\DoxyCodeLine{914                 width = o.width,}
+\DoxyCodeLine{915                 height = o.height,}
+\DoxyCodeLine{916 }
+\DoxyCodeLine{917                 r = o.r,}
+\DoxyCodeLine{918                 g = o.g,}
+\DoxyCodeLine{919                 b = o.b,}
+\DoxyCodeLine{920                 a = o.a,}
+\DoxyCodeLine{921 }
+\DoxyCodeLine{922                 \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}} = o.Path,}
+\DoxyCodeLine{923                 RendererObject = o.RendererObject,}
+\DoxyCodeLine{924                 regionOffsetX = o.regionOffsetX,}
+\DoxyCodeLine{925                 regionOffsetY = o.regionOffsetY,}
+\DoxyCodeLine{926                 regionWidth = o.regionWidth,}
+\DoxyCodeLine{927                 regionHeight = o.regionHeight,}
+\DoxyCodeLine{928                 regionOriginalWidth = o.regionOriginalWidth,}
+\DoxyCodeLine{929                 regionOriginalHeight = o.regionOriginalHeight,}
+\DoxyCodeLine{930                 uvs = o.uvs.Clone() as \textcolor{keywordtype}{float}[],}
+\DoxyCodeLine{931                 offset = o.offset.Clone() as \textcolor{keywordtype}{float}[]}
+\DoxyCodeLine{932             \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a0f0e7b8156e4b9f63b26797c40b19c75}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a0f0e7b8156e4b9f63b26797c40b19c75}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetLinkedClone@{GetLinkedClone}}
+\index{GetLinkedClone@{GetLinkedClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetLinkedClone()}{GetLinkedClone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Linked\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{o,  }\item[{bool}]{inherit\+Deform = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Attachment\+Tools.\+cs 파일의 957 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{958                                                                                                        \{}
+\DoxyCodeLine{959             \textcolor{keywordflow}{return} o.GetLinkedMesh(o.Name, o.RendererObject as AtlasRegion, inheritDeform, copyOriginalProperties: \textcolor{keyword}{true});}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a84e33618d682b76a7a17e031af615f40}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a84e33618d682b76a7a17e031af615f40}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetLinkedMesh@{GetLinkedMesh}}
+\index{GetLinkedMesh@{GetLinkedMesh}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetLinkedMesh()}{GetLinkedMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Linked\+Mesh (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{o,  }\item[{Sprite}]{sprite,  }\item[{Material}]{material\+Property\+Source,  }\item[{bool}]{inherit\+Deform = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} generated from a Sprite. The \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} will be mapped to a new Material based on the shader. For better caching and batching, use Get\+Linked\+Mesh(string, Atlas\+Region, bool) 
+
+
+
+Attachment\+Tools.\+cs 파일의 1082 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1083                                                                                                                                                       \{}
+\DoxyCodeLine{1084             \textcolor{keywordflow}{return} o.GetLinkedMesh(sprite, materialPropertySource.shader, inheritDeform, materialPropertySource);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a9169321248ab5ce3deb39bf8ea163298}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a9169321248ab5ce3deb39bf8ea163298}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetLinkedMesh@{GetLinkedMesh}}
+\index{GetLinkedMesh@{GetLinkedMesh}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetLinkedMesh()}{GetLinkedMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Linked\+Mesh (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{o,  }\item[{Sprite}]{sprite,  }\item[{Shader}]{shader,  }\item[{bool}]{inherit\+Deform = {\ttfamily true},  }\item[{Material}]{material\+Property\+Source = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to an \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} generated from a Sprite. The \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} will be mapped to a new Material based on the shader. For better caching and batching, use Get\+Linked\+Mesh(string, Atlas\+Region, bool) 
+
+
+
+Attachment\+Tools.\+cs 파일의 1070 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1071                                                                                                                                                                             \{}
+\DoxyCodeLine{1072             var m = \textcolor{keyword}{new} Material(shader);}
+\DoxyCodeLine{1073             \textcolor{keywordflow}{if} (materialPropertySource != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1074                 m.CopyPropertiesFromMaterial(materialPropertySource);}
+\DoxyCodeLine{1075                 m.shaderKeywords = materialPropertySource.shaderKeywords;}
+\DoxyCodeLine{1076             \}}
+\DoxyCodeLine{1077             \textcolor{keywordflow}{return} o.GetLinkedMesh(sprite.name, sprite.ToAtlasRegion(), inheritDeform);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a4e1327d0fd85ef3dc14f85fc64b00469}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a4e1327d0fd85ef3dc14f85fc64b00469}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetLinkedMesh@{GetLinkedMesh}}
+\index{GetLinkedMesh@{GetLinkedMesh}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetLinkedMesh()}{GetLinkedMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Linked\+Mesh (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{o,  }\item[{string}]{new\+Linked\+Mesh\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{inherit\+Deform = {\ttfamily true},  }\item[{bool}]{copy\+Original\+Properties = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a new linked mesh linked to this \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}. It will be mapped to the \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} provided. 
+
+
+
+Attachment\+Tools.\+cs 파일의 1032 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1033                                                                                                                                                                                          \{}
+\DoxyCodeLine{1034             \textcolor{comment}{//if (string.IsNullOrEmpty(attachmentName)) throw new System.ArgumentException("attachmentName cannot be null or empty", "attachmentName");}}
+\DoxyCodeLine{1035             \textcolor{keywordflow}{if} (region == \textcolor{keyword}{null}) \textcolor{keywordflow}{throw} \textcolor{keyword}{new} System.ArgumentNullException(\textcolor{stringliteral}{"region"});}
+\DoxyCodeLine{1036 }
+\DoxyCodeLine{1037             \textcolor{comment}{// If parentMesh is a linked mesh, create a link to its parent. Preserves Deform animations.}}
+\DoxyCodeLine{1038             \textcolor{keywordflow}{if} (o.ParentMesh != \textcolor{keyword}{null})}
+\DoxyCodeLine{1039                 o = o.ParentMesh;}
+\DoxyCodeLine{1040 }
+\DoxyCodeLine{1041             \textcolor{comment}{// 1. NewMeshAttachment (AtlasAttachmentLoader.cs)}}
+\DoxyCodeLine{1042             var mesh = \textcolor{keyword}{new} MeshAttachment(newLinkedMeshName);}
+\DoxyCodeLine{1043             mesh.SetRegion(region, \textcolor{keyword}{false});}
+\DoxyCodeLine{1044 }
+\DoxyCodeLine{1045             \textcolor{comment}{// 2. (SkeletonJson.cs::ReadAttachment. case: LinkedMesh)}}
+\DoxyCodeLine{1046             mesh.Path = newLinkedMeshName;}
+\DoxyCodeLine{1047             \textcolor{keywordflow}{if} (copyOriginalProperties) \{}
+\DoxyCodeLine{1048                 mesh.r = o.r;}
+\DoxyCodeLine{1049                 mesh.g = o.g;}
+\DoxyCodeLine{1050                 mesh.b = o.b;}
+\DoxyCodeLine{1051                 mesh.a = o.a;}
+\DoxyCodeLine{1052             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1053                 mesh.r = 1f;}
+\DoxyCodeLine{1054                 mesh.g = 1f;}
+\DoxyCodeLine{1055                 mesh.b = 1f;}
+\DoxyCodeLine{1056                 mesh.a = 1f;}
+\DoxyCodeLine{1057             \}}
+\DoxyCodeLine{1058             \textcolor{comment}{//mesh.ParentMesh property call below sets mesh.Width and mesh.Height}}
+\DoxyCodeLine{1059 }
+\DoxyCodeLine{1060             \textcolor{comment}{// 3. Link mesh with parent. (SkeletonJson.cs)}}
+\DoxyCodeLine{1061             mesh.inheritDeform = inheritDeform;}
+\DoxyCodeLine{1062             mesh.ParentMesh = o;}
+\DoxyCodeLine{1063             mesh.UpdateUVs();}
+\DoxyCodeLine{1064 }
+\DoxyCodeLine{1065             \textcolor{keywordflow}{return} mesh;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_af18f8ad4e663c457d9585ba3ca7f91bf}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_af18f8ad4e663c457d9585ba3ca7f91bf}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetRemappedClone@{GetRemappedClone}}
+\index{GetRemappedClone@{GetRemappedClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetRemappedClone()}{GetRemappedClone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Remapped\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{o,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{atlas\+Region,  }\item[{bool}]{clone\+Mesh\+As\+Linked = {\ttfamily true},  }\item[{bool}]{use\+Original\+Region\+Size = {\ttfamily false},  }\item[{float}]{scale = {\ttfamily 0.01f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a clone of the attachment remapped with an atlas\+Region image. 
+
+\begin{DoxyReturn}{반환값}
+The remapped clone.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em o} & The original attachment.\\
+\hline
+{\em atlas\+Region} & \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} region.\\
+\hline
+{\em clone\+Mesh\+As\+Linked} & If {\ttfamily true} Mesh\+Attachments will be cloned as linked meshes and will inherit animation from the original attachment.\\
+\hline
+{\em use\+Original\+Region\+Size} & If {\ttfamily true} the size of the original attachment will be followed, instead of using the Sprite size.\\
+\hline
+{\em scale} & \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} units per pixel scale used to scale the atlas region size when not using the original region size.\\
+\hline
+\end{DoxyParams}
+
+
+Attachment\+Tools.\+cs 파일의 1110 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1111                                                                                                                                                                                        \{}
+\DoxyCodeLine{1112             var regionAttachment = o as RegionAttachment;}
+\DoxyCodeLine{1113             \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1114                 RegionAttachment newAttachment = regionAttachment.GetClone();}
+\DoxyCodeLine{1115                 newAttachment.SetRegion(atlasRegion, \textcolor{keyword}{false});}
+\DoxyCodeLine{1116                 \textcolor{keywordflow}{if} (!useOriginalRegionSize) \{}
+\DoxyCodeLine{1117                     newAttachment.width = atlasRegion.width * scale;}
+\DoxyCodeLine{1118                     newAttachment.height = atlasRegion.height * scale;}
+\DoxyCodeLine{1119                 \}}
+\DoxyCodeLine{1120                 newAttachment.UpdateOffset();}
+\DoxyCodeLine{1121                 \textcolor{keywordflow}{return} newAttachment;}
+\DoxyCodeLine{1122             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1123                 var meshAttachment = o as MeshAttachment;}
+\DoxyCodeLine{1124                 \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1125                     MeshAttachment newAttachment = cloneMeshAsLinked ? meshAttachment.GetLinkedClone(cloneMeshAsLinked) : meshAttachment.GetClone();}
+\DoxyCodeLine{1126                     newAttachment.SetRegion(atlasRegion);}
+\DoxyCodeLine{1127                     \textcolor{keywordflow}{return} newAttachment;}
+\DoxyCodeLine{1128                 \}}
+\DoxyCodeLine{1129             \}}
+\DoxyCodeLine{1130 }
+\DoxyCodeLine{1131             \textcolor{keywordflow}{return} o.GetClone(\textcolor{keyword}{true}); \textcolor{comment}{// Non-\/renderable Attachments will return as normal cloned attachments.}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a45fe0042df3ac86f12d2be6390aae446}\label{class_spine_1_1_unity_1_1_modules_1_1_attachment_tools_1_1_attachment_clone_extensions_a45fe0042df3ac86f12d2be6390aae446}} 
+\index{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}!GetRemappedClone@{GetRemappedClone}}
+\index{GetRemappedClone@{GetRemappedClone}!Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions@{Spine.Unity.Modules.AttachmentTools.AttachmentCloneExtensions}}
+\doxysubsubsection{\texorpdfstring{GetRemappedClone()}{GetRemappedClone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} Spine.\+Unity.\+Modules.\+Attachment\+Tools.\+Attachment\+Clone\+Extensions.\+Get\+Remapped\+Clone (\begin{DoxyParamCaption}\item[{this \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{o,  }\item[{Sprite}]{sprite,  }\item[{Material}]{source\+Material,  }\item[{bool}]{premultiply\+Alpha = {\ttfamily true},  }\item[{bool}]{clone\+Mesh\+As\+Linked = {\ttfamily true},  }\item[{bool}]{use\+Original\+Region\+Size = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets a clone of the attachment remapped with a sprite image. 
+
+\begin{DoxyReturn}{반환값}
+The remapped clone.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{매개변수}
+{\em o} & The original attachment.\\
+\hline
+{\em sprite} & The sprite whose texture to use.\\
+\hline
+{\em source\+Material} & The source material used to copy the shader and material properties from.\\
+\hline
+{\em premultiply\+Alpha} & If {\ttfamily true}, a premultiply alpha clone of the original texture will be created.\\
+\hline
+{\em clone\+Mesh\+As\+Linked} & If {\ttfamily true} Mesh\+Attachments will be cloned as linked meshes and will inherit animation from the original attachment.\\
+\hline
+{\em use\+Original\+Region\+Size} & If {\ttfamily true} the size of the original attachment will be followed, instead of using the Sprite size.\\
+\hline
+\end{DoxyParams}
+
+
+Attachment\+Tools.\+cs 파일의 1097 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1098                                                                                                                                                                                                                \{}
+\DoxyCodeLine{1099             var atlasRegion = premultiplyAlpha ? sprite.ToAtlasRegionPMAClone(sourceMaterial) : sprite.ToAtlasRegion(\textcolor{keyword}{new} Material(sourceMaterial) \{ mainTexture = sprite.texture \});}
+\DoxyCodeLine{1100             \textcolor{keywordflow}{return} o.GetRemappedClone(atlasRegion, cloneMeshAsLinked, useOriginalRegionSize, 1f/sprite.pixelsPerUnit);}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Attachment\+Tools/\mbox{\hyperlink{_attachment_tools_8cs}{Attachment\+Tools.\+cs}}\end{DoxyCompactItemize}

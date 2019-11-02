@@ -1,0 +1,256 @@
+\hypertarget{class_scene_loader}{}\doxysection{Scene\+Loader 클래스 참조}
+\label{class_scene_loader}\index{SceneLoader@{SceneLoader}}
+
+
+Scene\+Loader에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Scene\+Loader에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+Canvas\+Group \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fade\+Cg}}
+\item 
+float \mbox{\hyperlink{class_scene_loader_aeec935c046427eea1467f68cc969ed09}{fade\+Duration}} = 1.\+0f
+\item 
+Dictionary$<$ string, Load\+Scene\+Mode $>$ \mbox{\hyperlink{class_scene_loader_a18985bacf711c3ec583bfaae5f37ce98}{load\+Scenes}} = new Dictionary$<$string, Load\+Scene\+Mode$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_scene_loader_a0ccb496e8864bc266b733dfe080f0ee9}{Init\+Scene\+Info}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_loader_af0110202b6e27e67e7659c3911f451a8}{Start}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_loader_a2668565fc2666fe867b20ca6702c8157}{Load\+Scene}} (string scene\+Name, Load\+Scene\+Mode mode)
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_loader_ad994893c7996171a6b7e220aa35e7231}{Fadeout}} (float final\+Alpha)
+\item 
+I\+Enumerator \mbox{\hyperlink{class_scene_loader_a4f459df97b0d7365d9e2646dd442ccfb}{Fadein}} (float final\+Alpha)
+\item 
+void \mbox{\hyperlink{class_scene_loader_ae6c9eb5fa6f555fef4ded610d03d8534}{Update}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Scene\+Loader.\+cs 파일의 6 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_scene_loader_a4f459df97b0d7365d9e2646dd442ccfb}\label{class_scene_loader_a4f459df97b0d7365d9e2646dd442ccfb}} 
+\index{SceneLoader@{SceneLoader}!Fadein@{Fadein}}
+\index{Fadein@{Fadein}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{Fadein()}{Fadein()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Loader.\+Fadein (\begin{DoxyParamCaption}\item[{float}]{final\+Alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 84 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85     \{}
+\DoxyCodeLine{86         \textcolor{comment}{//라이트맵이 깨지는 것을 방지하기 위해 스테이지 씬을 활성화}}
+\DoxyCodeLine{87         SceneManager.SetActiveScene(SceneManager.GetSceneByName(\textcolor{stringliteral}{"Play"}));}
+\DoxyCodeLine{88         \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.blocksRaycasts = \textcolor{keyword}{true};}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         \textcolor{comment}{//절대값 함수로 백분율을 계산}}
+\DoxyCodeLine{91         \textcolor{keywordtype}{float} fadeSpeed = Mathf.Abs(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha -\/ finalAlpha) / \mbox{\hyperlink{class_scene_loader_aeec935c046427eea1467f68cc969ed09}{fadeDuration}};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93         \textcolor{comment}{//알파값을 조정}}
+\DoxyCodeLine{94         \textcolor{keywordflow}{while}(!Mathf.Approximately(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha, finalAlpha))}
+\DoxyCodeLine{95         \{}
+\DoxyCodeLine{96             \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha = Mathf.MoveTowards(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha, finalAlpha, fadeSpeed * Time.deltaTime);}
+\DoxyCodeLine{97             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{98         \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100         \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.blocksRaycasts = \textcolor{keyword}{false};}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102         \textcolor{comment}{//fade In이 완료된 후 SceneLoader 씬은 삭제(Unload)}}
+\DoxyCodeLine{103         SceneManager.UnloadSceneAsync(\textcolor{stringliteral}{"SceneLoader"});}
+\DoxyCodeLine{104     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_scene_loader_ad994893c7996171a6b7e220aa35e7231}\label{class_scene_loader_ad994893c7996171a6b7e220aa35e7231}} 
+\index{SceneLoader@{SceneLoader}!Fadeout@{Fadeout}}
+\index{Fadeout@{Fadeout}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{Fadeout()}{Fadeout()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Loader.\+Fadeout (\begin{DoxyParamCaption}\item[{float}]{final\+Alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 59 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61         \textcolor{comment}{//라이트맵이 깨지는 것을 방지하기 위해 스테이지 씬을 활성화}}
+\DoxyCodeLine{62         SceneManager.SetActiveScene(SceneManager.GetSceneByName(\textcolor{stringliteral}{"Play"}));}
+\DoxyCodeLine{63         \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.blocksRaycasts = \textcolor{keyword}{true};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65         \textcolor{comment}{//절대값 함수로 백분율을 계산}}
+\DoxyCodeLine{66         \textcolor{keywordtype}{float} fadeSpeed = Mathf.Abs(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha -\/ finalAlpha) / \mbox{\hyperlink{class_scene_loader_aeec935c046427eea1467f68cc969ed09}{fadeDuration}};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68         \textcolor{comment}{//알파값을 조정}}
+\DoxyCodeLine{69         \textcolor{keywordflow}{while} (!Mathf.Approximately(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha, finalAlpha))}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha = Mathf.MoveTowards(\mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha, finalAlpha, fadeSpeed * Time.deltaTime);}
+\DoxyCodeLine{72             yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.blocksRaycasts = \textcolor{keyword}{false};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         \textcolor{comment}{//배경구경}}
+\DoxyCodeLine{78         yield \textcolor{keywordflow}{return} \textcolor{keyword}{new} WaitForSeconds(1.0f);}
+\DoxyCodeLine{79         \textcolor{comment}{//Fade out 된 후 Fade in}}
+\DoxyCodeLine{80         StartCoroutine(\mbox{\hyperlink{class_scene_loader_a4f459df97b0d7365d9e2646dd442ccfb}{Fadein}}(0.0f));}
+\DoxyCodeLine{81     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_scene_loader_a0ccb496e8864bc266b733dfe080f0ee9}\label{class_scene_loader_a0ccb496e8864bc266b733dfe080f0ee9}} 
+\index{SceneLoader@{SceneLoader}!InitSceneInfo@{InitSceneInfo}}
+\index{InitSceneInfo@{InitSceneInfo}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{InitSceneInfo()}{InitSceneInfo()}}
+{\footnotesize\ttfamily void Scene\+Loader.\+Init\+Scene\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20     \{}
+\DoxyCodeLine{21         \textcolor{comment}{//호출할 씬의 정보를 딕셔너리에 추가}}
+\DoxyCodeLine{22         \mbox{\hyperlink{class_scene_loader_a18985bacf711c3ec583bfaae5f37ce98}{loadScenes}}.Add(\textcolor{stringliteral}{"Play"}, LoadSceneMode.Additive);}
+\DoxyCodeLine{23     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_scene_loader_a2668565fc2666fe867b20ca6702c8157}\label{class_scene_loader_a2668565fc2666fe867b20ca6702c8157}} 
+\index{SceneLoader@{SceneLoader}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Loader.\+Load\+Scene (\begin{DoxyParamCaption}\item[{string}]{scene\+Name,  }\item[{Load\+Scene\+Mode}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 48 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         \textcolor{comment}{//비동기 방식으로 씬을 로드하고 로드가 완료될 때까지 대기함}}
+\DoxyCodeLine{51         yield \textcolor{keywordflow}{return} SceneManager.LoadSceneAsync(sceneName, mode);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53         \textcolor{comment}{//호출된 씬을 활성화}}
+\DoxyCodeLine{54         Scene loadedScene = SceneManager.GetSceneAt(SceneManager.sceneCount -\/ 1);}
+\DoxyCodeLine{55         SceneManager.SetActiveScene(loadedScene);}
+\DoxyCodeLine{56     \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_scene_loader_af0110202b6e27e67e7659c3911f451a8}\label{class_scene_loader_af0110202b6e27e67e7659c3911f451a8}} 
+\index{SceneLoader@{SceneLoader}!Start@{Start}}
+\index{Start@{Start}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Scene\+Loader.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 26 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{26                          \{}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_scene_loader_a0ccb496e8864bc266b733dfe080f0ee9}{InitSceneInfo}}();}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29         \textcolor{comment}{//처음 알파값을 설정(불투명)}}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_scene_loader_a458e497860e5882956dbf29b684e7708}{fadeCg}}.alpha = 0.0f;}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32         \textcolor{comment}{//여러개의 씬을 코루틴으로 호출}}
+\DoxyCodeLine{33         \textcolor{keywordflow}{foreach}(var \_loadScene \textcolor{keywordflow}{in} \mbox{\hyperlink{class_scene_loader_a18985bacf711c3ec583bfaae5f37ce98}{loadScenes}})}
+\DoxyCodeLine{34         \{}
+\DoxyCodeLine{35             yield \textcolor{keywordflow}{return} StartCoroutine(\mbox{\hyperlink{class_scene_loader_a2668565fc2666fe867b20ca6702c8157}{LoadScene}}(\_loadScene.Key, \_loadScene.Value));}
+\DoxyCodeLine{36         \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{comment}{//Fade out 함수 호출}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{comment}{//Fade In 함수 호출}}
+\DoxyCodeLine{42         StartCoroutine(\mbox{\hyperlink{class_scene_loader_ad994893c7996171a6b7e220aa35e7231}{Fadeout}}(1.0f));}
+\DoxyCodeLine{43         }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45         }
+\DoxyCodeLine{46     \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_scene_loader_ae6c9eb5fa6f555fef4ded610d03d8534}\label{class_scene_loader_ae6c9eb5fa6f555fef4ded610d03d8534}} 
+\index{SceneLoader@{SceneLoader}!Update@{Update}}
+\index{Update@{Update}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Loader.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Scene\+Loader.\+cs 파일의 107 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107                    \{}
+\DoxyCodeLine{108         }
+\DoxyCodeLine{109     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_scene_loader_a458e497860e5882956dbf29b684e7708}\label{class_scene_loader_a458e497860e5882956dbf29b684e7708}} 
+\index{SceneLoader@{SceneLoader}!fadeCg@{fadeCg}}
+\index{fadeCg@{fadeCg}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{fadeCg}{fadeCg}}
+{\footnotesize\ttfamily Canvas\+Group Scene\+Loader.\+fade\+Cg}
+
+
+
+Scene\+Loader.\+cs 파일의 9 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_scene_loader_aeec935c046427eea1467f68cc969ed09}\label{class_scene_loader_aeec935c046427eea1467f68cc969ed09}} 
+\index{SceneLoader@{SceneLoader}!fadeDuration@{fadeDuration}}
+\index{fadeDuration@{fadeDuration}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{fadeDuration}{fadeDuration}}
+{\footnotesize\ttfamily float Scene\+Loader.\+fade\+Duration = 1.\+0f}
+
+
+
+Scene\+Loader.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_scene_loader_a18985bacf711c3ec583bfaae5f37ce98}\label{class_scene_loader_a18985bacf711c3ec583bfaae5f37ce98}} 
+\index{SceneLoader@{SceneLoader}!loadScenes@{loadScenes}}
+\index{loadScenes@{loadScenes}!SceneLoader@{SceneLoader}}
+\doxysubsubsection{\texorpdfstring{loadScenes}{loadScenes}}
+{\footnotesize\ttfamily Dictionary$<$string, Load\+Scene\+Mode$>$ Scene\+Loader.\+load\+Scenes = new Dictionary$<$string, Load\+Scene\+Mode$>$()}
+
+
+
+Scene\+Loader.\+cs 파일의 16 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Fade\+Scene(test)/\mbox{\hyperlink{_fade_scene_07test_08_2_scene_loader_8cs}{Scene\+Loader.\+cs}}\end{DoxyCompactItemize}

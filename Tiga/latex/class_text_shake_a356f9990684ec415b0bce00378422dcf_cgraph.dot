@@ -1,0 +1,20 @@
+digraph "TextShake.Update"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TextShake.Update",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="TextShake.HoriVertiShake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#aa25525a21abfab6896335b7f67eacd96",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="TextShake.HorizontalShake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#a05a7a5e7209005e93177bd1b2c2d8017",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TextShake.NextDialog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#af666e2430a0b217ded014c2837a588fb",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="TextShake.OnOff",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#ae8f5cfc3cd36304af7b9b171289bfade",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="TextShake.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#aa8024a0ea608fc89fbc193b579b83955",tooltip=" "];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="TextShake.VerticalShake",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_shake.html#af824bcef51abdb1a8904258854f60742",tooltip=" "];
+}

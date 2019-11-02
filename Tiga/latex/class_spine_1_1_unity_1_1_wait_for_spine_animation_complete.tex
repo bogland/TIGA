@@ -1,0 +1,213 @@
+\hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{}\doxysection{Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete 클래스 참조}
+\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+
+
+Use this as a condition-\/blocking yield instruction for \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Coroutines. The routine will pause until the Animation\+State.\+Track\+Entry fires its Complete event.  
+
+
+
+
+Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ac26ffa9207a8521df6678062c86a97d5}{Wait\+For\+Spine\+Animation\+Complete}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}} track\+Entry)
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{Wait\+For\+Spine\+Animation\+Complete}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a48273e7e2f28f1bf4f40b285f8d44dd7}{Now\+Wait\+For}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}} track\+Entry)
+\begin{DoxyCompactList}\small\item\em One optimization high-\/frequency Yield\+Instruction returns is to cache instances to minimize GC pressure. Use Now\+Wait\+For to reuse the same instance of \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{Wait\+For\+Spine\+Animation\+Complete}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+object I\+Enumerator. \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a7acc088cfd659b5e442721de95b203bd}{Current}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_acdc1ecf6e289d312b0455871cf40abc8}{Handle\+Complete}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}} track\+Entry)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ae51ae44930139960f1fa71078fa3e3b4}{Safe\+Subscribe}} (\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}} track\+Entry)
+\item 
+bool I\+Enumerator. \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_abedbc845a6ed293c1cc09b12b154570b}{Move\+Next}} ()
+\item 
+void I\+Enumerator. \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a408ffb6469d40898fe20e804c4146452}{Reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\+\_\+\+Was\+Fired}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Use this as a condition-\/blocking yield instruction for \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Coroutines. The routine will pause until the Animation\+State.\+Track\+Entry fires its Complete event. 
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ac26ffa9207a8521df6678062c86a97d5}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ac26ffa9207a8521df6678062c86a97d5}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!WaitForSpineAnimationComplete@{WaitForSpineAnimationComplete}}
+\index{WaitForSpineAnimationComplete@{WaitForSpineAnimationComplete}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{WaitForSpineAnimationComplete()}{WaitForSpineAnimationComplete()}}
+{\footnotesize\ttfamily Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Wait\+For\+Spine\+Animation\+Complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}}}]{track\+Entry }\end{DoxyParamCaption})}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 42 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                                                                            \{}
+\DoxyCodeLine{44             \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ae51ae44930139960f1fa71078fa3e3b4}{SafeSubscribe}}(trackEntry);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_acdc1ecf6e289d312b0455871cf40abc8}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_acdc1ecf6e289d312b0455871cf40abc8}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!HandleComplete@{HandleComplete}}
+\index{HandleComplete@{HandleComplete}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{HandleComplete()}{HandleComplete()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Handle\+Complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Track\+Entry}}}]{track\+Entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                                                     \{}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\_WasFired}} = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_abedbc845a6ed293c1cc09b12b154570b}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_abedbc845a6ed293c1cc09b12b154570b}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!MoveNext@{MoveNext}}
+\index{MoveNext@{MoveNext}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{MoveNext()}{MoveNext()}}
+{\footnotesize\ttfamily bool I\+Enumerator. Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Move\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{72                                      \{}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\_WasFired}}) \{}
+\DoxyCodeLine{74                 ((IEnumerator)\textcolor{keyword}{this}).Reset();    \textcolor{comment}{// auto-\/reset for YieldInstruction reuse}}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a48273e7e2f28f1bf4f40b285f8d44dd7}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a48273e7e2f28f1bf4f40b285f8d44dd7}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!NowWaitFor@{NowWaitFor}}
+\index{NowWaitFor@{NowWaitFor}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{NowWaitFor()}{NowWaitFor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{Wait\+For\+Spine\+Animation\+Complete}} Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Now\+Wait\+For (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}}}]{track\+Entry }\end{DoxyParamCaption})}
+
+
+
+One optimization high-\/frequency Yield\+Instruction returns is to cache instances to minimize GC pressure. Use Now\+Wait\+For to reuse the same instance of \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete}{Wait\+For\+Spine\+Animation\+Complete}}. 
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                                                       \{}
+\DoxyCodeLine{66             \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ae51ae44930139960f1fa71078fa3e3b4}{SafeSubscribe}}(trackEntry);}
+\DoxyCodeLine{67             \textcolor{keywordflow}{return} \textcolor{keyword}{this};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a408ffb6469d40898fe20e804c4146452}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a408ffb6469d40898fe20e804c4146452}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!Reset@{Reset}}
+\index{Reset@{Reset}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void I\+Enumerator. Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 79 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\_WasFired}} = \textcolor{keyword}{false}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ae51ae44930139960f1fa71078fa3e3b4}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_ae51ae44930139960f1fa71078fa3e3b4}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!SafeSubscribe@{SafeSubscribe}}
+\index{SafeSubscribe@{SafeSubscribe}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{SafeSubscribe()}{SafeSubscribe()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Safe\+Subscribe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_track_entry}{Spine.\+Track\+Entry}}}]{track\+Entry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                                                          \{}
+\DoxyCodeLine{52             \textcolor{keywordflow}{if} (trackEntry == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{53                 \textcolor{comment}{// Break immediately if trackEntry is null.}}
+\DoxyCodeLine{54                 Debug.LogWarning(\textcolor{stringliteral}{"TrackEntry was null. Coroutine will continue immediately."});}
+\DoxyCodeLine{55                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\_WasFired}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{56             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{57                 trackEntry.Complete += \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_acdc1ecf6e289d312b0455871cf40abc8}{HandleComplete}};}
+\DoxyCodeLine{58             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!m\_WasFired@{m\_WasFired}}
+\index{m\_WasFired@{m\_WasFired}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{m\_WasFired}{m\_WasFired}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+m\+\_\+\+Was\+Fired = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a7acc088cfd659b5e442721de95b203bd}\label{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_a7acc088cfd659b5e442721de95b203bd}} 
+\index{Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}!Current@{Current}}
+\index{Current@{Current}!Spine.Unity.WaitForSpineAnimationComplete@{Spine.Unity.WaitForSpineAnimationComplete}}
+\doxysubsubsection{\texorpdfstring{Current}{Current}}
+{\footnotesize\ttfamily object I\+Enumerator. Spine.\+Unity.\+Wait\+For\+Spine\+Animation\+Complete.\+Current\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}
+
+
+
+Wait\+For\+Spine\+Animation\+Complete.\+cs 파일의 80 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \mbox{\hyperlink{class_spine_1_1_unity_1_1_wait_for_spine_animation_complete_aaef95202bf3162b331b27a89b88532fb}{m\_WasFired}} = \textcolor{keyword}{false}; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Yield\+Instructions/\mbox{\hyperlink{_wait_for_spine_animation_complete_8cs}{Wait\+For\+Spine\+Animation\+Complete.\+cs}}\end{DoxyCompactItemize}

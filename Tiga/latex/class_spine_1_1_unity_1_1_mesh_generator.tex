@@ -1,0 +1,1709 @@
+\hypertarget{class_spine_1_1_unity_1_1_mesh_generator}{}\doxysection{Spine.\+Unity.\+Mesh\+Generator 클래스 참조}
+\label{class_spine_1_1_unity_1_1_mesh_generator}\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+
+
+Spine.\+Unity.\+Mesh\+Generator에 대한 협력 다이어그램\+:
+% FIG 0
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings}{Settings}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}{Mesh\+Generator}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a2e1652f1dac9f494da4dfe73c91b564d}{Begin}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aa952a9e80b0019d3bbeb457175e00e7a}{Add\+Submesh}} (\mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} instruction, bool update\+Triangles=true)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_afde88fe03d1b02324d25a61887315f1e}{Build\+Mesh}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} instruction, bool update\+Triangles)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a627386e6a724f78211ef1ef258eeafcd}{Build\+Mesh\+With\+Arrays}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} instruction, bool update\+Triangles)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a52baa653a39ac13f5b366c60d8edcb32}{Scale\+Vertex\+Data}} (float scale)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_afb4387f3a4fe800d64bba1e17bf1d9bd}{Fill\+Vertex\+Data}} (Mesh mesh)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_af42d751fee1dc4f18107753ff17e0dc9}{Fill\+Late\+Vertex\+Data}} (Mesh mesh)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ac0c3f6846034a622aa0d7998d433fae6}{Fill\+Triangles}} (Mesh mesh)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8527e8fefcbc2eeed396ccc88a19ddc3}{Fill\+Triangles\+Single}} (Mesh mesh)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7eab2e56b3fd22c50bb71b3e2f07925c}{Ensure\+Vertex\+Capacity}} (int minimum\+Vertex\+Count, bool inlcude\+Tint\+Black=false, bool include\+Tangents=false, bool include\+Normals=false)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0c95e18a942e46a54278472d8619e116}{Trim\+Excess}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a581230789bb08b6f9100216257ed5c9a}{Generate\+Single\+Submesh\+Instruction}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} instruction\+Output, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, Material material)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a997f5a2740aaacb784534e9be83327bb}{Generate\+Skeleton\+Renderer\+Instruction}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}} instruction\+Output, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} skeleton, Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}}, Material $>$ custom\+Slot\+Materials, List$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} $>$ separator\+Slots, bool generate\+Mesh\+Override, bool immutable\+Triangles=false)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6a986c9a1173d8c69a53bf466969a29a}{Try\+Replace\+Materials}} (\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$ working\+Submesh\+Instructions, Dictionary$<$ Material, Material $>$ custom\+Material\+Override)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5093b07a6aa730ec2cf2421d7ec17d8c}{Fill\+Mesh\+Local}} (Mesh mesh, \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}} region\+Attachment)
+\begin{DoxyCompactList}\small\item\em Fills mesh vertex data to render a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ae3fa90c1bcbc326e3a9f008415f92586}{Fill\+Mesh\+Local}} (Mesh mesh, \mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}} mesh\+Attachment, \mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}} skeleton\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings}{Settings}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}} = \mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_ac37fbf425eb1f4703bf3359c58582498}{Settings.\+Default}}
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a9008146a52315d745bbd29c9e3a419c0}{Vertex\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_buffers}{Mesh\+Generator\+Buffers}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ab039e5cd423122e5b8a474a75b516b73}{Buffers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a2973ceef783dac952bd6d5eccc90d41d}{Add\+Attachment\+Tint\+Black}} (float r2, float g2, float b2, int vertex\+Count)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ Vector3 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertex\+Buffer}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector3$>$(4)
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ Vector2 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uv\+Buffer}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector2$>$(4)
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ Color32 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{color\+Buffer}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Color32$>$(4)
+\item 
+readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ int $>$ $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}} = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$int$>$$>$ \{ new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$int$>$(6) \}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{mesh\+Bounds\+Min}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{mesh\+Bounds\+Max}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{mesh\+Bounds\+Thickness}}
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submesh\+Index}} = 0
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton_clipping}{Skeleton\+Clipping}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}} = new \mbox{\hyperlink{class_spine_1_1_skeleton_clipping}{Skeleton\+Clipping}}()
+\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{temp\+Verts}} = new float\mbox{[}8\mbox{]}
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a32e703ea1877b93438ab2814ef14edb4}{region\+Triangles}} = \{ 0, 1, 2, 2, 3, 0 \}
+\item 
+Vector3\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}}
+\item 
+Vector4\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}}
+\item 
+Vector2\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3e1754204be8a1fd99e56eae32785340}{temp\+Tan\+Buffer}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ Vector2 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ Vector2 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_acd5ebeaf3f5c8a274e10dda6fd4019b9}{Bounds\+Min\+Default}} = float.\+Positive\+Infinity
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a026a9a52b7f137f8869e76acdc3fe191}{Bounds\+Max\+Default}} = float.\+Negative\+Infinity
+\item 
+static List$<$ Vector3 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{Attachment\+Verts}} = new List$<$Vector3$>$()
+\item 
+static List$<$ Vector2 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{Attachment\+U\+Vs}} = new List$<$Vector2$>$()
+\item 
+static List$<$ Color32 $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{Attachment\+Colors32}} = new List$<$Color32$>$()
+\item 
+static List$<$ int $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{Attachment\+Indices}} = new List$<$int$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Mesh.\+cs 파일의 105 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}\label{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!MeshGenerator@{MeshGenerator}}
+\index{MeshGenerator@{MeshGenerator}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{MeshGenerator()}{MeshGenerator()}}
+{\footnotesize\ttfamily Spine.\+Unity.\+Mesh\+Generator.\+Mesh\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 161 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                 \{}
+\DoxyCodeLine{163             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.TrimExcess();}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a2973ceef783dac952bd6d5eccc90d41d}\label{class_spine_1_1_unity_1_1_mesh_generator_a2973ceef783dac952bd6d5eccc90d41d}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AddAttachmentTintBlack@{AddAttachmentTintBlack}}
+\index{AddAttachmentTintBlack@{AddAttachmentTintBlack}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AddAttachmentTintBlack()}{AddAttachmentTintBlack()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Add\+Attachment\+Tint\+Black (\begin{DoxyParamCaption}\item[{float}]{r2,  }\item[{float}]{g2,  }\item[{float}]{b2,  }\item[{int}]{vertex\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 945 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{946                                                                                     \{}
+\DoxyCodeLine{947             var rg = \textcolor{keyword}{new} Vector2(r2, g2);}
+\DoxyCodeLine{948             var bo = \textcolor{keyword}{new} Vector2(b2, 1f);}
+\DoxyCodeLine{949 }
+\DoxyCodeLine{950             \textcolor{keywordtype}{int} ovc = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};              }
+\DoxyCodeLine{951             \textcolor{keywordtype}{int} newVertexCount = ovc + vertexCount;}
+\DoxyCodeLine{952             \{ }
+\DoxyCodeLine{953                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{954                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} = \textcolor{keyword}{new} ExposedList<Vector2>();}
+\DoxyCodeLine{955                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}} = \textcolor{keyword}{new} ExposedList<Vector2>();}
+\DoxyCodeLine{956                 \}}
+\DoxyCodeLine{957                 \textcolor{keywordflow}{if} (newVertexCount > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length) \{ \textcolor{comment}{// Manual ExposedList.Resize()}}
+\DoxyCodeLine{958                     Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newVertexCount);}
+\DoxyCodeLine{959                     Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newVertexCount);}
+\DoxyCodeLine{960                 \}}
+\DoxyCodeLine{961                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = newVertexCount;}
+\DoxyCodeLine{962             \}}
+\DoxyCodeLine{963 }
+\DoxyCodeLine{964             var uv2i = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{965             var uv3i = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{966             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vertexCount; i++) \{}
+\DoxyCodeLine{967                 uv2i[ovc + i] = rg;}
+\DoxyCodeLine{968                 uv3i[ovc + i] = bo;}
+\DoxyCodeLine{969             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 1
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_aa952a9e80b0019d3bbeb457175e00e7a}\label{class_spine_1_1_unity_1_1_mesh_generator_aa952a9e80b0019d3bbeb457175e00e7a}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AddSubmesh@{AddSubmesh}}
+\index{AddSubmesh@{AddSubmesh}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AddSubmesh()}{AddSubmesh()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Add\+Submesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}}}]{instruction,  }\item[{bool}]{update\+Triangles = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 458 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{459                                                                                              \{}
+\DoxyCodeLine{460             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}};}
+\DoxyCodeLine{461 }
+\DoxyCodeLine{462             \textcolor{keywordtype}{int} newCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} + 1;}
+\DoxyCodeLine{463             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items.Length < newCount)}
+\DoxyCodeLine{464                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Resize(newCount);}
+\DoxyCodeLine{465             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Count = newCount;}
+\DoxyCodeLine{466             var submesh = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}];}
+\DoxyCodeLine{467             \textcolor{keywordflow}{if} (submesh == \textcolor{keyword}{null})}
+\DoxyCodeLine{468                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}] = submesh = \textcolor{keyword}{new} ExposedList<int>();}
+\DoxyCodeLine{469 }
+\DoxyCodeLine{470             submesh.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{471 }
+\DoxyCodeLine{472             var skeleton = instruction.skeleton;}
+\DoxyCodeLine{473             var drawOrderItems = skeleton.drawOrder.Items;}
+\DoxyCodeLine{474 }
+\DoxyCodeLine{475             Color32 color = \textcolor{keywordflow}{default}(Color32);}
+\DoxyCodeLine{476             \textcolor{keywordtype}{float} skeletonA = skeleton.a * 255, skeletonR = skeleton.r, skeletonG = skeleton.g, skeletonB = skeleton.b;}
+\DoxyCodeLine{477             Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}};}
+\DoxyCodeLine{478 }
+\DoxyCodeLine{479             \textcolor{comment}{// Settings}}
+\DoxyCodeLine{480             \textcolor{keywordtype}{float} zSpacing = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a0d502cf410bab1fb9cd08a9020d1762f}{zSpacing}};}
+\DoxyCodeLine{481             \textcolor{keywordtype}{bool} pmaVertexColors = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_aa23305de7272655286d16019272f5bcd}{pmaVertexColors}};}
+\DoxyCodeLine{482             \textcolor{keywordtype}{bool} tintBlack = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a655ac97a5ea09c9e23ddc564fbb5d9b9}{tintBlack}};}
+\DoxyCodeLine{483 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{484             \textcolor{keywordtype}{bool} useClipping = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a8846fef85878db56474ee51b5c4b7b36}{useClipping}} \&\& instruction.hasClipping;}
+\DoxyCodeLine{485 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{486             \textcolor{keywordtype}{bool} useClipping = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a8846fef85878db56474ee51b5c4b7b36}{useClipping}};}
+\DoxyCodeLine{487 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{488 }
+\DoxyCodeLine{489             \textcolor{keywordflow}{if} (useClipping) \{}
+\DoxyCodeLine{490                 \textcolor{keywordflow}{if} (instruction.preActiveClippingSlotSource >= 0) \{}
+\DoxyCodeLine{491                     var slot = drawOrderItems[instruction.preActiveClippingSlotSource];}
+\DoxyCodeLine{492                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_ae62e72353332993c8e3c7bc437edfd67}{ClipStart}}(slot, slot.attachment as ClippingAttachment);}
+\DoxyCodeLine{493                 \}   }
+\DoxyCodeLine{494             \}}
+\DoxyCodeLine{495 }
+\DoxyCodeLine{496             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} slotIndex = instruction.startSlot; slotIndex < instruction.endSlot; slotIndex++) \{}
+\DoxyCodeLine{497                 var slot = drawOrderItems[slotIndex];}
+\DoxyCodeLine{498                 var attachment = slot.attachment;}
+\DoxyCodeLine{499                 \textcolor{keywordtype}{float} z = zSpacing * slotIndex;}
+\DoxyCodeLine{500 }
+\DoxyCodeLine{501                 var workingVerts = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}};}
+\DoxyCodeLine{502                 \textcolor{keywordtype}{float}[] uvs;}
+\DoxyCodeLine{503                 \textcolor{keywordtype}{int}[] attachmentTriangleIndices;}
+\DoxyCodeLine{504                 \textcolor{keywordtype}{int} attachmentVertexCount;}
+\DoxyCodeLine{505                 \textcolor{keywordtype}{int} attachmentIndexCount;}
+\DoxyCodeLine{506 }
+\DoxyCodeLine{507                 Color c = \textcolor{keywordflow}{default}(Color);}
+\DoxyCodeLine{508                 }
+\DoxyCodeLine{509                 \textcolor{comment}{// Identify and prepare values.}}
+\DoxyCodeLine{510                 var region = attachment as RegionAttachment;}
+\DoxyCodeLine{511                 \textcolor{keywordflow}{if} (region != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{512                     region.ComputeWorldVertices(slot.bone, workingVerts, 0);}
+\DoxyCodeLine{513                     uvs = region.uvs;}
+\DoxyCodeLine{514                     attachmentTriangleIndices = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a32e703ea1877b93438ab2814ef14edb4}{regionTriangles}};}
+\DoxyCodeLine{515                     c.r = region.r; c.g = region.g; c.b = region.b; c.a = region.a;}
+\DoxyCodeLine{516                     attachmentVertexCount = 4;}
+\DoxyCodeLine{517                     attachmentIndexCount = 6;}
+\DoxyCodeLine{518                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{519                     var mesh = attachment as MeshAttachment;}
+\DoxyCodeLine{520                     \textcolor{keywordflow}{if} (mesh != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{521                         \textcolor{keywordtype}{int} meshVerticesLength = mesh.worldVerticesLength;}
+\DoxyCodeLine{522                         \textcolor{keywordflow}{if} (workingVerts.Length < meshVerticesLength) \{}
+\DoxyCodeLine{523                             workingVerts = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[meshVerticesLength];}
+\DoxyCodeLine{524                             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}} = workingVerts;}
+\DoxyCodeLine{525                         \}}
+\DoxyCodeLine{526                         mesh.ComputeWorldVertices(slot, 0, meshVerticesLength, workingVerts, 0); \textcolor{comment}{//meshAttachment.ComputeWorldVertices(slot, tempVerts);}}
+\DoxyCodeLine{527                         uvs = mesh.uvs;}
+\DoxyCodeLine{528                         attachmentTriangleIndices = mesh.triangles;}
+\DoxyCodeLine{529                         c.r = mesh.r; c.g = mesh.g; c.b = mesh.b; c.a = mesh.a;}
+\DoxyCodeLine{530                         attachmentVertexCount = meshVerticesLength >> 1; \textcolor{comment}{// meshVertexCount / 2;}}
+\DoxyCodeLine{531                         attachmentIndexCount = mesh.triangles.Length;}
+\DoxyCodeLine{532                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{533                         \textcolor{keywordflow}{if} (useClipping) \{}
+\DoxyCodeLine{534                             var clippingAttachment = attachment as ClippingAttachment;}
+\DoxyCodeLine{535                             \textcolor{keywordflow}{if} (clippingAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{536                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_ae62e72353332993c8e3c7bc437edfd67}{ClipStart}}(slot, clippingAttachment);}
+\DoxyCodeLine{537                                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{538                             \}}
+\DoxyCodeLine{539                         \}}
+\DoxyCodeLine{540 }
+\DoxyCodeLine{541                         \textcolor{comment}{// If not any renderable attachment.}}
+\DoxyCodeLine{542                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_a1a07278048c33b547f8a596c41ceb4bb}{ClipEnd}}(slot);}
+\DoxyCodeLine{543                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{544                     \}}
+\DoxyCodeLine{545                 \}}
+\DoxyCodeLine{546 }
+\DoxyCodeLine{547                 \textcolor{keywordflow}{if} (pmaVertexColors) \{}
+\DoxyCodeLine{548                     color.a = (byte)(skeletonA * slot.a * c.a);}
+\DoxyCodeLine{549                     color.r = (byte)(skeletonR * slot.r * c.r * color.a);}
+\DoxyCodeLine{550                     color.g = (byte)(skeletonG * slot.g * c.g * color.a);}
+\DoxyCodeLine{551                     color.b = (byte)(skeletonB * slot.b * c.b * color.a);}
+\DoxyCodeLine{552                     \textcolor{keywordflow}{if} (slot.data.blendMode == \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Additive) color.a = 0;}
+\DoxyCodeLine{553                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{554                     color.a = (byte)(skeletonA * slot.a * c.a);}
+\DoxyCodeLine{555                     color.r = (byte)(skeletonR * slot.r * c.r * 255);}
+\DoxyCodeLine{556                     color.g = (byte)(skeletonG * slot.g * c.g * 255);}
+\DoxyCodeLine{557                     color.b = (byte)(skeletonB * slot.b * c.b * 255);}
+\DoxyCodeLine{558                 \}}
+\DoxyCodeLine{559 }
+\DoxyCodeLine{560                 \textcolor{keywordflow}{if} (useClipping \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_a572fde7842b7d8c228dcfabce68bb31f}{IsClipping}}) \{}
+\DoxyCodeLine{561                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_aec7fae2af5eac108aa788fb43a091bbb}{ClipTriangles}}(workingVerts, attachmentVertexCount << 1, attachmentTriangleIndices, attachmentIndexCount, uvs);}
+\DoxyCodeLine{562                     workingVerts = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.clippedVertices.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{563                     attachmentVertexCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.clippedVertices.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} >> 1;}
+\DoxyCodeLine{564                     attachmentTriangleIndices = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.clippedTriangles.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{565                     attachmentIndexCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.clippedTriangles.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{566                     uvs = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.clippedUVs.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{567                 \}}
+\DoxyCodeLine{568 }
+\DoxyCodeLine{569                 \textcolor{comment}{// Actually add slot/attachment data into buffers.}}
+\DoxyCodeLine{570                 \textcolor{keywordflow}{if} (attachmentVertexCount != 0 \&\& attachmentIndexCount != 0) \{}
+\DoxyCodeLine{571                     \textcolor{keywordflow}{if} (tintBlack)}
+\DoxyCodeLine{572                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a2973ceef783dac952bd6d5eccc90d41d}{AddAttachmentTintBlack}}(slot.r2, slot.g2, slot.b2, attachmentVertexCount);}
+\DoxyCodeLine{573 }
+\DoxyCodeLine{574                     \textcolor{comment}{//AddAttachment(workingVerts, uvs, color, attachmentTriangleIndices, attachmentVertexCount, attachmentIndexCount, ref meshBoundsMin, ref meshBoundsMax, z);}}
+\DoxyCodeLine{575                     \textcolor{keywordtype}{int} ovc = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{576                     \textcolor{comment}{// Add data to vertex buffers}}
+\DoxyCodeLine{577                     \{}
+\DoxyCodeLine{578                         \textcolor{keywordtype}{int} newVertexCount = ovc + attachmentVertexCount;}
+\DoxyCodeLine{579                         \textcolor{keywordflow}{if} (newVertexCount > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length) \{ \textcolor{comment}{// Manual ExposedList.Resize()}}
+\DoxyCodeLine{580                             Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newVertexCount);}
+\DoxyCodeLine{581                             Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newVertexCount);}
+\DoxyCodeLine{582                             Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, newVertexCount);}
+\DoxyCodeLine{583                         \}}
+\DoxyCodeLine{584                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = newVertexCount;}
+\DoxyCodeLine{585                     \}}
+\DoxyCodeLine{586 }
+\DoxyCodeLine{587                     var vbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{588                     var ubi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{589                     var cbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{590                     \textcolor{keywordflow}{if} (ovc == 0) \{}
+\DoxyCodeLine{591                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < attachmentVertexCount; i++) \{}
+\DoxyCodeLine{592                             \textcolor{keywordtype}{int} vi = ovc + i;}
+\DoxyCodeLine{593                             \textcolor{keywordtype}{int} i2 = i << 1; \textcolor{comment}{// i * 2}}
+\DoxyCodeLine{594                             \textcolor{keywordtype}{float} x = workingVerts[i2];}
+\DoxyCodeLine{595                             \textcolor{keywordtype}{float} y = workingVerts[i2 + 1];}
+\DoxyCodeLine{596 }
+\DoxyCodeLine{597                             vbi[vi].x = x;}
+\DoxyCodeLine{598                             vbi[vi].y = y;}
+\DoxyCodeLine{599                             vbi[vi].z = z;}
+\DoxyCodeLine{600                             ubi[vi].x = uvs[i2];}
+\DoxyCodeLine{601                             ubi[vi].y = uvs[i2 + 1];}
+\DoxyCodeLine{602                             cbi[vi] = color;}
+\DoxyCodeLine{603 }
+\DoxyCodeLine{604                             \textcolor{comment}{// Calculate bounds.}}
+\DoxyCodeLine{605                             \textcolor{keywordflow}{if} (x < \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x = x;}
+\DoxyCodeLine{606                             \textcolor{keywordflow}{if} (x > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.x) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.x = x;}
+\DoxyCodeLine{607                             \textcolor{keywordflow}{if} (y < \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.y) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.y = y;}
+\DoxyCodeLine{608                             \textcolor{keywordflow}{if} (y > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.y) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.y = y;}
+\DoxyCodeLine{609                         \}}
+\DoxyCodeLine{610                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{611                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < attachmentVertexCount; i++) \{}
+\DoxyCodeLine{612                             \textcolor{keywordtype}{int} vi = ovc + i;}
+\DoxyCodeLine{613                             \textcolor{keywordtype}{int} i2 = i << 1; \textcolor{comment}{// i * 2}}
+\DoxyCodeLine{614                             \textcolor{keywordtype}{float} x = workingVerts[i2];}
+\DoxyCodeLine{615                             \textcolor{keywordtype}{float} y = workingVerts[i2 + 1];}
+\DoxyCodeLine{616 }
+\DoxyCodeLine{617                             vbi[vi].x = x;}
+\DoxyCodeLine{618                             vbi[vi].y = y;}
+\DoxyCodeLine{619                             vbi[vi].z = z;}
+\DoxyCodeLine{620                             ubi[vi].x = uvs[i2];}
+\DoxyCodeLine{621                             ubi[vi].y = uvs[i2 + 1];}
+\DoxyCodeLine{622                             cbi[vi] = color;}
+\DoxyCodeLine{623 }
+\DoxyCodeLine{624                             \textcolor{comment}{// Calculate bounds.}}
+\DoxyCodeLine{625                             \textcolor{keywordflow}{if} (x < \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x = x;}
+\DoxyCodeLine{626                             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.x) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.x = x;}
+\DoxyCodeLine{627                             \textcolor{keywordflow}{if} (y < \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.y) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.y = y;}
+\DoxyCodeLine{628                             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.y) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.y = y;}
+\DoxyCodeLine{629                         \}}
+\DoxyCodeLine{630                     \}}
+\DoxyCodeLine{631 }
+\DoxyCodeLine{632 }
+\DoxyCodeLine{633                     \textcolor{comment}{// Add data to triangle buffer}}
+\DoxyCodeLine{634                     \textcolor{keywordflow}{if} (updateTriangles) \{}
+\DoxyCodeLine{635                         \textcolor{keywordtype}{int} oldTriangleCount = submesh.Count;}
+\DoxyCodeLine{636                         \{ \textcolor{comment}{//submesh.Resize(oldTriangleCount + attachmentIndexCount);}}
+\DoxyCodeLine{637                             \textcolor{keywordtype}{int} newTriangleCount = oldTriangleCount + attachmentIndexCount;}
+\DoxyCodeLine{638                             \textcolor{keywordflow}{if} (newTriangleCount > submesh.Items.Length) Array.Resize(ref submesh.Items, newTriangleCount); }
+\DoxyCodeLine{639                             submesh.Count = newTriangleCount;}
+\DoxyCodeLine{640                         \}}
+\DoxyCodeLine{641                         var submeshItems = submesh.Items;}
+\DoxyCodeLine{642                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < attachmentIndexCount; i++)}
+\DoxyCodeLine{643                             submeshItems[oldTriangleCount + i] = attachmentTriangleIndices[i] + ovc;}
+\DoxyCodeLine{644                     \}}
+\DoxyCodeLine{645                 \}}
+\DoxyCodeLine{646 }
+\DoxyCodeLine{647                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_a1a07278048c33b547f8a596c41ceb4bb}{ClipEnd}}(slot);}
+\DoxyCodeLine{648             \}}
+\DoxyCodeLine{649             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_a1a07278048c33b547f8a596c41ceb4bb}{ClipEnd}}();}
+\DoxyCodeLine{650 }
+\DoxyCodeLine{651             this.meshBoundsMin = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}};}
+\DoxyCodeLine{652             this.meshBoundsMax = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}};}
+\DoxyCodeLine{653             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{meshBoundsThickness}} = instruction.endSlot * zSpacing;}
+\DoxyCodeLine{654 }
+\DoxyCodeLine{655             \textcolor{comment}{// Trim or zero submesh triangles.}}
+\DoxyCodeLine{656             var currentSubmeshItems = submesh.Items;}
+\DoxyCodeLine{657             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = submesh.Count, n = currentSubmeshItems.Length; i < n; i++)}
+\DoxyCodeLine{658                 currentSubmeshItems[i] = 0;}
+\DoxyCodeLine{659 }
+\DoxyCodeLine{660             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}++; \textcolor{comment}{// Next AddSubmesh will use a new submeshIndex value.}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a2e1652f1dac9f494da4dfe73c91b564d}\label{class_spine_1_1_unity_1_1_mesh_generator_a2e1652f1dac9f494da4dfe73c91b564d}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!Begin@{Begin}}
+\index{Begin@{Begin}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 439 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{439                        : Populate vertex data and triangle index buffers.}
+\DoxyCodeLine{440         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a2e1652f1dac9f494da4dfe73c91b564d}{Begin}} () \{}
+\DoxyCodeLine{441             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{442             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{443             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_ab2453ae483ae98e5e68ea616320c8f5b}{Clear}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{444             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}{clipper}}.\mbox{\hyperlink{class_spine_1_1_skeleton_clipping_a1a07278048c33b547f8a596c41ceb4bb}{ClipEnd}}();}
+\DoxyCodeLine{445 }
+\DoxyCodeLine{446             \{}
+\DoxyCodeLine{447                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_acd5ebeaf3f5c8a274e10dda6fd4019b9}{BoundsMinDefault}};}
+\DoxyCodeLine{448                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.y = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_acd5ebeaf3f5c8a274e10dda6fd4019b9}{BoundsMinDefault}};}
+\DoxyCodeLine{449                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.x = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a026a9a52b7f137f8869e76acdc3fe191}{BoundsMaxDefault}};}
+\DoxyCodeLine{450                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}}.y = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a026a9a52b7f137f8869e76acdc3fe191}{BoundsMaxDefault}};}
+\DoxyCodeLine{451                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{meshBoundsThickness}} = 0f;}
+\DoxyCodeLine{452             \}}
+\DoxyCodeLine{453 }
+\DoxyCodeLine{454             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} = 0;}
+\DoxyCodeLine{455             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Count = 1;}
+\DoxyCodeLine{456             \textcolor{comment}{//submeshes.Items[0].Clear(false);}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_afde88fe03d1b02324d25a61887315f1e}\label{class_spine_1_1_unity_1_1_mesh_generator_afde88fe03d1b02324d25a61887315f1e}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!BuildMesh@{BuildMesh}}
+\index{BuildMesh@{BuildMesh}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{BuildMesh()}{BuildMesh()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Build\+Mesh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{instruction,  }\item[{bool}]{update\+Triangles }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 662 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{663                                                                                               \{}
+\DoxyCodeLine{664             var wsii = instruction.submeshInstructions.Items;}
+\DoxyCodeLine{665             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = instruction.submeshInstructions.Count; i < n; i++)}
+\DoxyCodeLine{666                 this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aa952a9e80b0019d3bbeb457175e00e7a}{AddSubmesh}}(wsii[i], updateTriangles);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a627386e6a724f78211ef1ef258eeafcd}\label{class_spine_1_1_unity_1_1_mesh_generator_a627386e6a724f78211ef1ef258eeafcd}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!BuildMeshWithArrays@{BuildMeshWithArrays}}
+\index{BuildMeshWithArrays@{BuildMeshWithArrays}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{BuildMeshWithArrays()}{BuildMeshWithArrays()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Build\+Mesh\+With\+Arrays (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{instruction,  }\item[{bool}]{update\+Triangles }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 669 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{670                                                                                                         \{}
+\DoxyCodeLine{671             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}};}
+\DoxyCodeLine{672             \textcolor{keywordtype}{int} totalVertexCount = instruction.rawVertexCount;}
+\DoxyCodeLine{673 }
+\DoxyCodeLine{674             \textcolor{comment}{// Add data to vertex buffers}}
+\DoxyCodeLine{675             \{}
+\DoxyCodeLine{676                 \textcolor{keywordflow}{if} (totalVertexCount > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length) \{ \textcolor{comment}{// Manual ExposedList.Resize()}}
+\DoxyCodeLine{677                     Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, totalVertexCount);}
+\DoxyCodeLine{678                     Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, totalVertexCount);}
+\DoxyCodeLine{679                     Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, totalVertexCount);}
+\DoxyCodeLine{680                 \}}
+\DoxyCodeLine{681                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = totalVertexCount;}
+\DoxyCodeLine{682             \}}
+\DoxyCodeLine{683 }
+\DoxyCodeLine{684             \textcolor{comment}{// Populate Verts}}
+\DoxyCodeLine{685             Color32 color = \textcolor{keywordflow}{default}(Color32);}
+\DoxyCodeLine{686 }
+\DoxyCodeLine{687             \textcolor{keywordtype}{int} vertexIndex = 0;}
+\DoxyCodeLine{688             var \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}};}
+\DoxyCodeLine{689             Vector3 bmin = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}};}
+\DoxyCodeLine{690             Vector3 bmax = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}};}
+\DoxyCodeLine{691 }
+\DoxyCodeLine{692             var vbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{693             var ubi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{694             var cbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{695             \textcolor{keywordtype}{int} lastSlotIndex = 0;}
+\DoxyCodeLine{696 }
+\DoxyCodeLine{697             \textcolor{comment}{// drawOrder[endSlot] is excluded}}
+\DoxyCodeLine{698             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} si = 0, n = instruction.submeshInstructions.Count; si < n; si++) \{}
+\DoxyCodeLine{699                 var submesh = instruction.submeshInstructions.Items[si];}
+\DoxyCodeLine{700                 var skeleton = submesh.skeleton;}
+\DoxyCodeLine{701                 var skeletonDrawOrderItems = skeleton.drawOrder.Items;}
+\DoxyCodeLine{702                 \textcolor{keywordtype}{float} a = skeleton.a * 255, r = skeleton.r, g = skeleton.g, b = skeleton.b;}
+\DoxyCodeLine{703 }
+\DoxyCodeLine{704                 \textcolor{keywordtype}{int} endSlot = submesh.endSlot;}
+\DoxyCodeLine{705                 \textcolor{keywordtype}{int} startSlot = submesh.startSlot;}
+\DoxyCodeLine{706                 lastSlotIndex = endSlot;}
+\DoxyCodeLine{707 }
+\DoxyCodeLine{708                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a655ac97a5ea09c9e23ddc564fbb5d9b9}{tintBlack}}) \{}
+\DoxyCodeLine{709                     Vector2 rg, b2;}
+\DoxyCodeLine{710                     \textcolor{keywordtype}{int} vi = vertexIndex;}
+\DoxyCodeLine{711                     b2.y = 1f;}
+\DoxyCodeLine{712 }
+\DoxyCodeLine{713                     \{ }
+\DoxyCodeLine{714                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{715                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} = \textcolor{keyword}{new} ExposedList<Vector2>();}
+\DoxyCodeLine{716                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}} = \textcolor{keyword}{new} ExposedList<Vector2>();}
+\DoxyCodeLine{717                         \}}
+\DoxyCodeLine{718                         \textcolor{keywordflow}{if} (totalVertexCount > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length) \{ \textcolor{comment}{// Manual ExposedList.Resize()}}
+\DoxyCodeLine{719                             Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, totalVertexCount);}
+\DoxyCodeLine{720                             Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, totalVertexCount);}
+\DoxyCodeLine{721                         \}}
+\DoxyCodeLine{722                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}} = totalVertexCount;}
+\DoxyCodeLine{723                     \}}
+\DoxyCodeLine{724 }
+\DoxyCodeLine{725                     var uv2i = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{726                     var uv3i = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{727 }
+\DoxyCodeLine{728                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} slotIndex = startSlot; slotIndex < endSlot; slotIndex++) \{}
+\DoxyCodeLine{729                         var slot = skeletonDrawOrderItems[slotIndex];}
+\DoxyCodeLine{730                         var attachment = slot.attachment;}
+\DoxyCodeLine{731 }
+\DoxyCodeLine{732                         rg.x = slot.r2; \textcolor{comment}{//r}}
+\DoxyCodeLine{733                         rg.y = slot.g2; \textcolor{comment}{//g}}
+\DoxyCodeLine{734                         b2.x = slot.b2; \textcolor{comment}{//b}}
+\DoxyCodeLine{735 }
+\DoxyCodeLine{736                         var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{737                         \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{738                             uv2i[vi] = rg; uv2i[vi + 1] = rg; uv2i[vi + 2] = rg; uv2i[vi + 3] = rg;}
+\DoxyCodeLine{739                             uv3i[vi] = b2; uv3i[vi + 1] = b2; uv3i[vi + 2] = b2; uv3i[vi + 3] = b2;}
+\DoxyCodeLine{740                             vi += 4;}
+\DoxyCodeLine{741                         \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//\} if (settings.renderMeshes) \{}}
+\DoxyCodeLine{742                             var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{743                             \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{744                                 \textcolor{keywordtype}{int} meshVertexCount = meshAttachment.worldVerticesLength;}
+\DoxyCodeLine{745                                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} iii = 0; iii < meshVertexCount; iii += 2) \{}
+\DoxyCodeLine{746                                     uv2i[vi] = rg;}
+\DoxyCodeLine{747                                     uv3i[vi] = b2;}
+\DoxyCodeLine{748                                     vi++;}
+\DoxyCodeLine{749                                 \}}
+\DoxyCodeLine{750                             \}}
+\DoxyCodeLine{751                         \}}
+\DoxyCodeLine{752                     \}}
+\DoxyCodeLine{753                 \}}
+\DoxyCodeLine{754 }
+\DoxyCodeLine{755                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} slotIndex = startSlot; slotIndex < endSlot; slotIndex++) \{}
+\DoxyCodeLine{756                     var slot = skeletonDrawOrderItems[slotIndex];}
+\DoxyCodeLine{757                     var attachment = slot.attachment;}
+\DoxyCodeLine{758                     \textcolor{keywordtype}{float} z = slotIndex * \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a0d502cf410bab1fb9cd08a9020d1762f}{zSpacing}};}
+\DoxyCodeLine{759 }
+\DoxyCodeLine{760                     var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{761                     \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{762                         regionAttachment.ComputeWorldVertices(slot.bone, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}, 0);}
+\DoxyCodeLine{763 }
+\DoxyCodeLine{764                         \textcolor{keywordtype}{float} x1 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.BLX], y1 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.BLY];}
+\DoxyCodeLine{765                         \textcolor{keywordtype}{float} x2 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.ULX], y2 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.ULY];}
+\DoxyCodeLine{766                         \textcolor{keywordtype}{float} x3 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.URX], y3 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.URY];}
+\DoxyCodeLine{767                         \textcolor{keywordtype}{float} x4 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.BRX], y4 = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[RegionAttachment.BRY];}
+\DoxyCodeLine{768                         vbi[vertexIndex].x = x1; vbi[vertexIndex].y = y1; vbi[vertexIndex].z = z;}
+\DoxyCodeLine{769                         vbi[vertexIndex + 1].x = x4; vbi[vertexIndex + 1].y = y4; vbi[vertexIndex + 1].z = z;}
+\DoxyCodeLine{770                         vbi[vertexIndex + 2].x = x2; vbi[vertexIndex + 2].y = y2; vbi[vertexIndex + 2].z = z;}
+\DoxyCodeLine{771                         vbi[vertexIndex + 3].x = x3; vbi[vertexIndex + 3].y = y3;   vbi[vertexIndex + 3].z = z;}
+\DoxyCodeLine{772 }
+\DoxyCodeLine{773                         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_aa23305de7272655286d16019272f5bcd}{pmaVertexColors}}) \{}
+\DoxyCodeLine{774                             color.a = (byte)(a * slot.a * regionAttachment.a);}
+\DoxyCodeLine{775                             color.r = (byte)(r * slot.r * regionAttachment.r * color.a);}
+\DoxyCodeLine{776                             color.g = (byte)(g * slot.g * regionAttachment.g * color.a);}
+\DoxyCodeLine{777                             color.b = (byte)(b * slot.b * regionAttachment.b * color.a);}
+\DoxyCodeLine{778                             \textcolor{keywordflow}{if} (slot.data.blendMode == \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Additive) color.a = 0;}
+\DoxyCodeLine{779                         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{780                             color.a = (byte)(a * slot.a * regionAttachment.a);}
+\DoxyCodeLine{781                             color.r = (byte)(r * slot.r * regionAttachment.r * 255);}
+\DoxyCodeLine{782                             color.g = (byte)(g * slot.g * regionAttachment.g * 255);}
+\DoxyCodeLine{783                             color.b = (byte)(b * slot.b * regionAttachment.b * 255);}
+\DoxyCodeLine{784                         \}}
+\DoxyCodeLine{785 }
+\DoxyCodeLine{786                         cbi[vertexIndex] = color; cbi[vertexIndex + 1] = color; cbi[vertexIndex + 2] = color; cbi[vertexIndex + 3] = color;}
+\DoxyCodeLine{787 }
+\DoxyCodeLine{788                         \textcolor{keywordtype}{float}[] regionUVs = regionAttachment.uvs;}
+\DoxyCodeLine{789                         ubi[vertexIndex].x = regionUVs[RegionAttachment.BLX]; ubi[vertexIndex].y = regionUVs[RegionAttachment.BLY];}
+\DoxyCodeLine{790                         ubi[vertexIndex + 1].x = regionUVs[RegionAttachment.BRX]; ubi[vertexIndex + 1].y = regionUVs[RegionAttachment.BRY];}
+\DoxyCodeLine{791                         ubi[vertexIndex + 2].x = regionUVs[RegionAttachment.ULX]; ubi[vertexIndex + 2].y = regionUVs[RegionAttachment.ULY];}
+\DoxyCodeLine{792                         ubi[vertexIndex + 3].x = regionUVs[RegionAttachment.URX]; ubi[vertexIndex + 3].y = regionUVs[RegionAttachment.URY];}
+\DoxyCodeLine{793 }
+\DoxyCodeLine{794                         \textcolor{keywordflow}{if} (x1 < bmin.x) bmin.x = x1; \textcolor{comment}{// Potential first attachment bounds initialization. Initial min should not block initial max. Same for Y below.}}
+\DoxyCodeLine{795                         \textcolor{keywordflow}{if} (x1 > bmax.x) bmax.x = x1;}
+\DoxyCodeLine{796                         \textcolor{keywordflow}{if} (x2 < bmin.x) bmin.x = x2;}
+\DoxyCodeLine{797                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x2 > bmax.x) bmax.x = x2;}
+\DoxyCodeLine{798                         \textcolor{keywordflow}{if} (x3 < bmin.x) bmin.x = x3;}
+\DoxyCodeLine{799                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x3 > bmax.x) bmax.x = x3;}
+\DoxyCodeLine{800                         \textcolor{keywordflow}{if} (x4 < bmin.x) bmin.x = x4;}
+\DoxyCodeLine{801                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x4 > bmax.x) bmax.x = x4;}
+\DoxyCodeLine{802 }
+\DoxyCodeLine{803                         \textcolor{keywordflow}{if} (y1 < bmin.y) bmin.y = y1;}
+\DoxyCodeLine{804                         \textcolor{keywordflow}{if} (y1 > bmax.y) bmax.y = y1;}
+\DoxyCodeLine{805                         \textcolor{keywordflow}{if} (y2 < bmin.y) bmin.y = y2;}
+\DoxyCodeLine{806                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y2 > bmax.y) bmax.y = y2;}
+\DoxyCodeLine{807                         \textcolor{keywordflow}{if} (y3 < bmin.y) bmin.y = y3;}
+\DoxyCodeLine{808                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y3 > bmax.y) bmax.y = y3;}
+\DoxyCodeLine{809                         \textcolor{keywordflow}{if} (y4 < bmin.y) bmin.y = y4;}
+\DoxyCodeLine{810                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y4 > bmax.y) bmax.y = y4;}
+\DoxyCodeLine{811 }
+\DoxyCodeLine{812                         vertexIndex += 4;}
+\DoxyCodeLine{813                     \} \textcolor{keywordflow}{else} \{ \textcolor{comment}{//if (settings.renderMeshes) \{}}
+\DoxyCodeLine{814                         var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{815                         \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{816                             \textcolor{keywordtype}{int} meshVertexCount = meshAttachment.worldVerticesLength;}
+\DoxyCodeLine{817                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}.Length < meshVertexCount) this.tempVerts = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}} = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[meshVertexCount];}
+\DoxyCodeLine{818                             meshAttachment.ComputeWorldVertices(slot, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}});}
+\DoxyCodeLine{819 }
+\DoxyCodeLine{820                             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_aa23305de7272655286d16019272f5bcd}{pmaVertexColors}}) \{}
+\DoxyCodeLine{821                                 color.a = (byte)(a * slot.a * meshAttachment.a);}
+\DoxyCodeLine{822                                 color.r = (byte)(r * slot.r * meshAttachment.r * color.a);}
+\DoxyCodeLine{823                                 color.g = (byte)(g * slot.g * meshAttachment.g * color.a);}
+\DoxyCodeLine{824                                 color.b = (byte)(b * slot.b * meshAttachment.b * color.a);}
+\DoxyCodeLine{825                                 \textcolor{keywordflow}{if} (slot.data.blendMode == \mbox{\hyperlink{namespace_spine_a8df9bf8208f7a52aee6cfe66703caae8}{BlendMode}}.Additive) color.a = 0;}
+\DoxyCodeLine{826                             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{827                                 color.a = (byte)(a * slot.a * meshAttachment.a);}
+\DoxyCodeLine{828                                 color.r = (byte)(r * slot.r * meshAttachment.r * 255);}
+\DoxyCodeLine{829                                 color.g = (byte)(g * slot.g * meshAttachment.g * 255);}
+\DoxyCodeLine{830                                 color.b = (byte)(b * slot.b * meshAttachment.b * 255);}
+\DoxyCodeLine{831                             \}}
+\DoxyCodeLine{832 }
+\DoxyCodeLine{833                             \textcolor{keywordtype}{float}[] attachmentUVs = meshAttachment.uvs;}
+\DoxyCodeLine{834 }
+\DoxyCodeLine{835                             \textcolor{comment}{// Potential first attachment bounds initialization. See conditions in RegionAttachment logic.}}
+\DoxyCodeLine{836                             \textcolor{keywordflow}{if} (vertexIndex == 0) \{}
+\DoxyCodeLine{837                                 \textcolor{comment}{// Initial min should not block initial max.}}
+\DoxyCodeLine{838                                 \textcolor{comment}{// vi == vertexIndex does not always mean the bounds are fresh. It could be a submesh. Do not nuke old values by omitting the check.}}
+\DoxyCodeLine{839                                 \textcolor{comment}{// Should know that this is the first attachment in the submesh. slotIndex == startSlot could be an empty slot.}}
+\DoxyCodeLine{840                                 \textcolor{keywordtype}{float} fx = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[0], fy = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[1];}
+\DoxyCodeLine{841                                 \textcolor{keywordflow}{if} (fx < bmin.x) bmin.x = fx;}
+\DoxyCodeLine{842                                 \textcolor{keywordflow}{if} (fx > bmax.x) bmax.x = fx;}
+\DoxyCodeLine{843                                 \textcolor{keywordflow}{if} (fy < bmin.y) bmin.y = fy;}
+\DoxyCodeLine{844                                 \textcolor{keywordflow}{if} (fy > bmax.y) bmax.y = fy;}
+\DoxyCodeLine{845                             \}}
+\DoxyCodeLine{846 }
+\DoxyCodeLine{847                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} iii = 0; iii < meshVertexCount; iii += 2) \{}
+\DoxyCodeLine{848                                 \textcolor{keywordtype}{float} x = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[iii], y = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}{tempVerts}}[iii + 1];}
+\DoxyCodeLine{849                                 vbi[vertexIndex].x = x; vbi[vertexIndex].y = y; vbi[vertexIndex].z = z;}
+\DoxyCodeLine{850                                 cbi[vertexIndex] = color; ubi[vertexIndex].x = attachmentUVs[iii]; ubi[vertexIndex].y = attachmentUVs[iii + 1];}
+\DoxyCodeLine{851 }
+\DoxyCodeLine{852                                 \textcolor{keywordflow}{if} (x < bmin.x) bmin.x = x;}
+\DoxyCodeLine{853                                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (x > bmax.x) bmax.x = x;}
+\DoxyCodeLine{854 }
+\DoxyCodeLine{855                                 \textcolor{keywordflow}{if} (y < bmin.y) bmin.y = y;}
+\DoxyCodeLine{856                                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (y > bmax.y) bmax.y = y;}
+\DoxyCodeLine{857 }
+\DoxyCodeLine{858                                 vertexIndex++;}
+\DoxyCodeLine{859                             \}}
+\DoxyCodeLine{860                         \}}
+\DoxyCodeLine{861                     \}}
+\DoxyCodeLine{862                 \}}
+\DoxyCodeLine{863             \}}
+\DoxyCodeLine{864 }
+\DoxyCodeLine{865             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}} = bmin;}
+\DoxyCodeLine{866             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}} = bmax;}
+\DoxyCodeLine{867             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{meshBoundsThickness}} = lastSlotIndex * \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a0d502cf410bab1fb9cd08a9020d1762f}{zSpacing}};}
+\DoxyCodeLine{868 }
+\DoxyCodeLine{869             \textcolor{keywordtype}{int} submeshInstructionCount = instruction.submeshInstructions.Count;}
+\DoxyCodeLine{870             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Count = submeshInstructionCount;}
+\DoxyCodeLine{871 }
+\DoxyCodeLine{872             \textcolor{comment}{// Add triangles}}
+\DoxyCodeLine{873             \textcolor{keywordflow}{if} (updateTriangles) \{}
+\DoxyCodeLine{874                 \textcolor{comment}{// Match submesh buffers count with submeshInstruction count.}}
+\DoxyCodeLine{875                 \textcolor{keywordflow}{if} (this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items.Length < submeshInstructionCount) \{}
+\DoxyCodeLine{876                     this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Resize(submeshInstructionCount);}
+\DoxyCodeLine{877                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = submeshInstructionCount; i < n; i++) \{}
+\DoxyCodeLine{878                         var submeshBuffer = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[i];}
+\DoxyCodeLine{879                         \textcolor{keywordflow}{if} (submeshBuffer == \textcolor{keyword}{null})}
+\DoxyCodeLine{880                             this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[i] = \textcolor{keyword}{new} ExposedList<int>();}
+\DoxyCodeLine{881                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{882                             submeshBuffer.Clear(\textcolor{keyword}{false});}
+\DoxyCodeLine{883                     \}}
+\DoxyCodeLine{884                 \}}
+\DoxyCodeLine{885 }
+\DoxyCodeLine{886                 var submeshInstructionsItems = instruction.submeshInstructions.Items; \textcolor{comment}{// This relies on the resize above.}}
+\DoxyCodeLine{887 }
+\DoxyCodeLine{888                 \textcolor{comment}{// Fill the buffers.}}
+\DoxyCodeLine{889                 \textcolor{keywordtype}{int} attachmentFirstVertex = 0;}
+\DoxyCodeLine{890                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} smbi = 0; smbi < submeshInstructionCount; smbi++) \{}
+\DoxyCodeLine{891                     var submeshInstruction = submeshInstructionsItems[smbi];}
+\DoxyCodeLine{892                     var currentSubmeshBuffer = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[smbi];}
+\DoxyCodeLine{893                     \{ \textcolor{comment}{//submesh.Resize(submesh.rawTriangleCount);}}
+\DoxyCodeLine{894                         \textcolor{keywordtype}{int} newTriangleCount = submeshInstruction.rawTriangleCount;}
+\DoxyCodeLine{895                         \textcolor{keywordflow}{if} (newTriangleCount > currentSubmeshBuffer.Items.Length)}
+\DoxyCodeLine{896                             Array.Resize(ref currentSubmeshBuffer.Items, newTriangleCount); }
+\DoxyCodeLine{897                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (newTriangleCount < currentSubmeshBuffer.Items.Length) \{}
+\DoxyCodeLine{898                             \textcolor{comment}{// Zero the extra.}}
+\DoxyCodeLine{899                             var sbi = currentSubmeshBuffer.Items;}
+\DoxyCodeLine{900                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ei = newTriangleCount, nn = sbi.Length; ei < nn; ei++)}
+\DoxyCodeLine{901                                 sbi[ei] = 0;}
+\DoxyCodeLine{902                         \}}
+\DoxyCodeLine{903                         currentSubmeshBuffer.Count = newTriangleCount;}
+\DoxyCodeLine{904                     \}}
+\DoxyCodeLine{905 }
+\DoxyCodeLine{906                     var tris = currentSubmeshBuffer.Items;}
+\DoxyCodeLine{907                     \textcolor{keywordtype}{int} triangleIndex = 0;}
+\DoxyCodeLine{908                     var skeleton = submeshInstruction.skeleton;}
+\DoxyCodeLine{909                     var skeletonDrawOrderItems = skeleton.drawOrder.Items;}
+\DoxyCodeLine{910                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} a = submeshInstruction.startSlot, endSlot = submeshInstruction.endSlot; a < endSlot; a++) \{            }
+\DoxyCodeLine{911                         var attachment = skeletonDrawOrderItems[a].attachment;}
+\DoxyCodeLine{912                         \textcolor{keywordflow}{if} (attachment is RegionAttachment) \{}
+\DoxyCodeLine{913                             tris[triangleIndex] = attachmentFirstVertex;}
+\DoxyCodeLine{914                             tris[triangleIndex + 1] = attachmentFirstVertex + 2;}
+\DoxyCodeLine{915                             tris[triangleIndex + 2] = attachmentFirstVertex + 1;}
+\DoxyCodeLine{916                             tris[triangleIndex + 3] = attachmentFirstVertex + 2;}
+\DoxyCodeLine{917                             tris[triangleIndex + 4] = attachmentFirstVertex + 3;}
+\DoxyCodeLine{918                             tris[triangleIndex + 5] = attachmentFirstVertex + 1;}
+\DoxyCodeLine{919                             triangleIndex += 6;}
+\DoxyCodeLine{920                             attachmentFirstVertex += 4;}
+\DoxyCodeLine{921                             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{922                         \}}
+\DoxyCodeLine{923                         var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{924                         \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{925                             \textcolor{keywordtype}{int}[] attachmentTriangles = meshAttachment.triangles;}
+\DoxyCodeLine{926                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} ii = 0, nn = attachmentTriangles.Length; ii < nn; ii++, triangleIndex++)}
+\DoxyCodeLine{927                                 tris[triangleIndex] = attachmentFirstVertex + attachmentTriangles[ii];}
+\DoxyCodeLine{928                             attachmentFirstVertex += meshAttachment.worldVerticesLength >> 1; \textcolor{comment}{// length/2;}}
+\DoxyCodeLine{929                         \}}
+\DoxyCodeLine{930                     \}}
+\DoxyCodeLine{931                 \}}
+\DoxyCodeLine{932             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a7eab2e56b3fd22c50bb71b3e2f07925c}\label{class_spine_1_1_unity_1_1_mesh_generator_a7eab2e56b3fd22c50bb71b3e2f07925c}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!EnsureVertexCapacity@{EnsureVertexCapacity}}
+\index{EnsureVertexCapacity@{EnsureVertexCapacity}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{EnsureVertexCapacity()}{EnsureVertexCapacity()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Ensure\+Vertex\+Capacity (\begin{DoxyParamCaption}\item[{int}]{minimum\+Vertex\+Count,  }\item[{bool}]{inlcude\+Tint\+Black = {\ttfamily false},  }\item[{bool}]{include\+Tangents = {\ttfamily false},  }\item[{bool}]{include\+Normals = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1065 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1066                                                                                                                                                             \{}
+\DoxyCodeLine{1067             \textcolor{keywordflow}{if} (minimumVertexCount > \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length) \{}
+\DoxyCodeLine{1068                 Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, minimumVertexCount);}
+\DoxyCodeLine{1069                 Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, minimumVertexCount);}
+\DoxyCodeLine{1070                 Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}, minimumVertexCount);}
+\DoxyCodeLine{1071 }
+\DoxyCodeLine{1072                 \textcolor{keywordflow}{if} (inlcudeTintBlack) \{}
+\DoxyCodeLine{1073                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1074                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} = \textcolor{keyword}{new} ExposedList<Vector2>(minimumVertexCount);}
+\DoxyCodeLine{1075                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}} = \textcolor{keyword}{new} ExposedList<Vector2>(minimumVertexCount);}
+\DoxyCodeLine{1076                     \}}
+\DoxyCodeLine{1077                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(minimumVertexCount);}
+\DoxyCodeLine{1078                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a0c2a380505e78617e824331c75f06fc7}{Resize}}(minimumVertexCount);}
+\DoxyCodeLine{1079                 \}}
+\DoxyCodeLine{1080                 }
+\DoxyCodeLine{1081                 \textcolor{keywordflow}{if} (includeNormals) \{}
+\DoxyCodeLine{1082                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{1083                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}} = \textcolor{keyword}{new} Vector3[minimumVertexCount];}
+\DoxyCodeLine{1084                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1085                         Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}}, minimumVertexCount);}
+\DoxyCodeLine{1086 }
+\DoxyCodeLine{1087                 \}}
+\DoxyCodeLine{1088 }
+\DoxyCodeLine{1089                 \textcolor{keywordflow}{if} (includeTangents) \{}
+\DoxyCodeLine{1090                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{1091                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}} = \textcolor{keyword}{new} Vector4[minimumVertexCount];}
+\DoxyCodeLine{1092                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1093                         Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}}, minimumVertexCount);}
+\DoxyCodeLine{1094                 \}}
+\DoxyCodeLine{1095             \}}
+\DoxyCodeLine{1096             \textcolor{comment}{//vertexBuffer.Count = uvBuffer.Count = colorBuffer.Count = minimumVertexCount;}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_af42d751fee1dc4f18107753ff17e0dc9}\label{class_spine_1_1_unity_1_1_mesh_generator_af42d751fee1dc4f18107753ff17e0dc9}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillLateVertexData@{FillLateVertexData}}
+\index{FillLateVertexData@{FillLateVertexData}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillLateVertexData()}{FillLateVertexData()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Late\+Vertex\+Data (\begin{DoxyParamCaption}\item[{Mesh}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1032 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1033                                                    \{}
+\DoxyCodeLine{1034             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_abcec337c384f7251d14328b4a59d96e3}{calculateTangents}}) \{}
+\DoxyCodeLine{1035                 \textcolor{keywordtype}{int} vertexCount = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{1036                 var sbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items;}
+\DoxyCodeLine{1037                 \textcolor{keywordtype}{int} submeshCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Count;}
+\DoxyCodeLine{1038                 var vbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1039                 var ubi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1040 }
+\DoxyCodeLine{1041                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}{MeshGenerator}}.SolveTangents2DEnsureSize(ref this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}}, ref this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3e1754204be8a1fd99e56eae32785340}{tempTanBuffer}}, vertexCount);}
+\DoxyCodeLine{1042                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < submeshCount; i++) \{}
+\DoxyCodeLine{1043                     var submesh = sbi[i].Items;}
+\DoxyCodeLine{1044                     \textcolor{keywordtype}{int} triangleCount = sbi[i].Count;}
+\DoxyCodeLine{1045                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}{MeshGenerator}}.SolveTangents2DTriangles(this.tempTanBuffer, submesh, triangleCount, vbi, ubi, vertexCount);}
+\DoxyCodeLine{1046                 \}}
+\DoxyCodeLine{1047                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4f00a2ee3433eb885d93afc30476ee70}{MeshGenerator}}.SolveTangents2DBuffer(this.tangents, this.tempTanBuffer, vertexCount);}
+\DoxyCodeLine{1048                 mesh.tangents = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}};}
+\DoxyCodeLine{1049             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_ae3fa90c1bcbc326e3a9f008415f92586}\label{class_spine_1_1_unity_1_1_mesh_generator_ae3fa90c1bcbc326e3a9f008415f92586}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillMeshLocal@{FillMeshLocal}}
+\index{FillMeshLocal@{FillMeshLocal}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillMeshLocal()}{FillMeshLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Mesh\+Local (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{\mbox{\hyperlink{class_spine_1_1_mesh_attachment}{Mesh\+Attachment}}}]{mesh\+Attachment,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton_data}{Skeleton\+Data}}}]{skeleton\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1248 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1249                                                                                                                \{}
+\DoxyCodeLine{1250             \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1251             \textcolor{keywordflow}{if} (meshAttachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1252             \textcolor{keywordtype}{int} vertexCount = meshAttachment.WorldVerticesLength / 2;}
+\DoxyCodeLine{1253 }
+\DoxyCodeLine{1254             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Clear();}
+\DoxyCodeLine{1255             \textcolor{keywordflow}{if} (meshAttachment.IsWeighted()) \{}
+\DoxyCodeLine{1256                 \textcolor{keywordtype}{int} count = meshAttachment.WorldVerticesLength;}
+\DoxyCodeLine{1257                 \textcolor{keywordtype}{int}[] meshAttachmentBones = meshAttachment.bones;}
+\DoxyCodeLine{1258                 \textcolor{keywordtype}{int} v = 0;}
+\DoxyCodeLine{1259 }
+\DoxyCodeLine{1260                 \textcolor{keywordtype}{float}[] vertices = meshAttachment.vertices;}
+\DoxyCodeLine{1261                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} w = 0, b = 0; w < count; w += 2) \{}
+\DoxyCodeLine{1262                     \textcolor{keywordtype}{float} wx = 0, wy = 0;}
+\DoxyCodeLine{1263                     \textcolor{keywordtype}{int} n = meshAttachmentBones[v++];}
+\DoxyCodeLine{1264                     n += v;}
+\DoxyCodeLine{1265                     \textcolor{keywordflow}{for} (; v < n; v++, b += 3) \{}
+\DoxyCodeLine{1266                         BoneMatrix bm = BoneMatrix.CalculateSetupWorld(skeletonData.bones.Items[meshAttachmentBones[v]]);}
+\DoxyCodeLine{1267                         \textcolor{keywordtype}{float} vx = vertices[b], vy = vertices[b + 1], weight = vertices[b + 2];}
+\DoxyCodeLine{1268                         wx += (vx * bm.a + vy * bm.b + bm.x) * weight;}
+\DoxyCodeLine{1269                         wy += (vx * bm.c + vy * bm.d + bm.y) * weight;}
+\DoxyCodeLine{1270                     \}}
+\DoxyCodeLine{1271                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(\textcolor{keyword}{new} Vector3(wx, wy));}
+\DoxyCodeLine{1272                 \}}
+\DoxyCodeLine{1273             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1274                 var localVerts = meshAttachment.Vertices;}
+\DoxyCodeLine{1275                 Vector3 pos = \textcolor{keywordflow}{default}(Vector3);}
+\DoxyCodeLine{1276                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vertexCount; i++) \{}
+\DoxyCodeLine{1277                     \textcolor{keywordtype}{int} ii = i * 2;}
+\DoxyCodeLine{1278                     pos.x = localVerts[ii];}
+\DoxyCodeLine{1279                     pos.y = localVerts[ii + 1];}
+\DoxyCodeLine{1280                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(pos);}
+\DoxyCodeLine{1281                 \}}
+\DoxyCodeLine{1282             \}}
+\DoxyCodeLine{1283 }
+\DoxyCodeLine{1284             var uvs = meshAttachment.uvs;}
+\DoxyCodeLine{1285             Vector2 uv = \textcolor{keywordflow}{default}(Vector2);}
+\DoxyCodeLine{1286             Color32 c = (Color32)(\textcolor{keyword}{new} Color(meshAttachment.r, meshAttachment.g, meshAttachment.b, meshAttachment.a));}
+\DoxyCodeLine{1287             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Clear();}
+\DoxyCodeLine{1288             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Clear();}
+\DoxyCodeLine{1289             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vertexCount; i++) \{}
+\DoxyCodeLine{1290                 \textcolor{keywordtype}{int} ii = i * 2;}
+\DoxyCodeLine{1291                 uv.x = uvs[ii];}
+\DoxyCodeLine{1292                 uv.y = uvs[ii + 1];}
+\DoxyCodeLine{1293                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Add(uv);}
+\DoxyCodeLine{1294 }
+\DoxyCodeLine{1295                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Add(c);}
+\DoxyCodeLine{1296             \}}
+\DoxyCodeLine{1297 }
+\DoxyCodeLine{1298             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.Clear();}
+\DoxyCodeLine{1299             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.AddRange(meshAttachment.triangles);}
+\DoxyCodeLine{1300 }
+\DoxyCodeLine{1301             mesh.Clear();}
+\DoxyCodeLine{1302             mesh.name = meshAttachment.Name;}
+\DoxyCodeLine{1303             mesh.SetVertices(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}});}
+\DoxyCodeLine{1304             mesh.SetUVs(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}});}
+\DoxyCodeLine{1305             mesh.SetColors(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}});}
+\DoxyCodeLine{1306             mesh.SetTriangles(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}, 0);}
+\DoxyCodeLine{1307             mesh.RecalculateBounds();}
+\DoxyCodeLine{1308 }
+\DoxyCodeLine{1309             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Clear();}
+\DoxyCodeLine{1310             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Clear();}
+\DoxyCodeLine{1311             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Clear();}
+\DoxyCodeLine{1312             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.Clear();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a5093b07a6aa730ec2cf2421d7ec17d8c}\label{class_spine_1_1_unity_1_1_mesh_generator_a5093b07a6aa730ec2cf2421d7ec17d8c}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillMeshLocal@{FillMeshLocal}}
+\index{FillMeshLocal@{FillMeshLocal}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillMeshLocal()}{FillMeshLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Mesh\+Local (\begin{DoxyParamCaption}\item[{Mesh}]{mesh,  }\item[{\mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}}]{region\+Attachment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Fills mesh vertex data to render a \mbox{\hyperlink{class_spine_1_1_region_attachment}{Region\+Attachment}}. 
+
+
+
+Spine\+Mesh.\+cs 파일의 1208 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1209                                                                                         \{}
+\DoxyCodeLine{1210             \textcolor{keywordflow}{if} (mesh == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1211             \textcolor{keywordflow}{if} (regionAttachment == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1212 }
+\DoxyCodeLine{1213             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Clear();}
+\DoxyCodeLine{1214             var offsets = regionAttachment.Offset;}
+\DoxyCodeLine{1215             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(\textcolor{keyword}{new} Vector3(offsets[RegionAttachment.BLX], offsets[RegionAttachment.BLY]));}
+\DoxyCodeLine{1216             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(\textcolor{keyword}{new} Vector3(offsets[RegionAttachment.ULX], offsets[RegionAttachment.ULY]));}
+\DoxyCodeLine{1217             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(\textcolor{keyword}{new} Vector3(offsets[RegionAttachment.URX], offsets[RegionAttachment.URY]));}
+\DoxyCodeLine{1218             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Add(\textcolor{keyword}{new} Vector3(offsets[RegionAttachment.BRX], offsets[RegionAttachment.BRY]));}
+\DoxyCodeLine{1219 }
+\DoxyCodeLine{1220             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Clear();}
+\DoxyCodeLine{1221             var uvs = regionAttachment.UVs;}
+\DoxyCodeLine{1222             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Add(\textcolor{keyword}{new} Vector2(uvs[RegionAttachment.ULX], uvs[RegionAttachment.ULY]));}
+\DoxyCodeLine{1223             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Add(\textcolor{keyword}{new} Vector2(uvs[RegionAttachment.URX], uvs[RegionAttachment.URY]));}
+\DoxyCodeLine{1224             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Add(\textcolor{keyword}{new} Vector2(uvs[RegionAttachment.BRX], uvs[RegionAttachment.BRY]));}
+\DoxyCodeLine{1225             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Add(\textcolor{keyword}{new} Vector2(uvs[RegionAttachment.BLX], uvs[RegionAttachment.BLY]));}
+\DoxyCodeLine{1226 }
+\DoxyCodeLine{1227             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Clear();}
+\DoxyCodeLine{1228             Color32 c = (Color32)(\textcolor{keyword}{new} Color(regionAttachment.r, regionAttachment.g, regionAttachment.b, regionAttachment.a));}
+\DoxyCodeLine{1229             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 4; i++)}
+\DoxyCodeLine{1230                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Add(c);}
+\DoxyCodeLine{1231 }
+\DoxyCodeLine{1232             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.Clear();}
+\DoxyCodeLine{1233             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.AddRange(\textcolor{keyword}{new}[] \{ 0, 2, 1, 0, 3, 2 \});}
+\DoxyCodeLine{1234 }
+\DoxyCodeLine{1235             mesh.Clear();}
+\DoxyCodeLine{1236             mesh.name = regionAttachment.Name;}
+\DoxyCodeLine{1237             mesh.SetVertices(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}});}
+\DoxyCodeLine{1238             mesh.SetUVs(0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}});}
+\DoxyCodeLine{1239             mesh.SetColors(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}});}
+\DoxyCodeLine{1240             mesh.SetTriangles(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}, 0);}
+\DoxyCodeLine{1241             mesh.RecalculateBounds();}
+\DoxyCodeLine{1242 }
+\DoxyCodeLine{1243             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}{AttachmentVerts}}.Clear();}
+\DoxyCodeLine{1244             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}{AttachmentUVs}}.Clear();}
+\DoxyCodeLine{1245             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}{AttachmentColors32}}.Clear();}
+\DoxyCodeLine{1246             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}{AttachmentIndices}}.Clear();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_ac0c3f6846034a622aa0d7998d433fae6}\label{class_spine_1_1_unity_1_1_mesh_generator_ac0c3f6846034a622aa0d7998d433fae6}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillTriangles@{FillTriangles}}
+\index{FillTriangles@{FillTriangles}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillTriangles()}{FillTriangles()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Triangles (\begin{DoxyParamCaption}\item[{Mesh}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1051 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1052                                               \{}
+\DoxyCodeLine{1053             \textcolor{keywordtype}{int} submeshCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Count;}
+\DoxyCodeLine{1054             var submeshesItems = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items;}
+\DoxyCodeLine{1055             mesh.subMeshCount = submeshCount;}
+\DoxyCodeLine{1056 }
+\DoxyCodeLine{1057             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < submeshCount; i++)}
+\DoxyCodeLine{1058                 mesh.SetTriangles(submeshesItems[i].Items, i, \textcolor{keyword}{false});               }
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a8527e8fefcbc2eeed396ccc88a19ddc3}\label{class_spine_1_1_unity_1_1_mesh_generator_a8527e8fefcbc2eeed396ccc88a19ddc3}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillTrianglesSingle@{FillTrianglesSingle}}
+\index{FillTrianglesSingle@{FillTrianglesSingle}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillTrianglesSingle()}{FillTrianglesSingle()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Triangles\+Single (\begin{DoxyParamCaption}\item[{Mesh}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1060 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1061                                                     \{}
+\DoxyCodeLine{1062             mesh.SetTriangles(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}{submeshes}}.Items[0].Items, 0, \textcolor{keyword}{false});}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_afb4387f3a4fe800d64bba1e17bf1d9bd}\label{class_spine_1_1_unity_1_1_mesh_generator_afb4387f3a4fe800d64bba1e17bf1d9bd}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!FillVertexData@{FillVertexData}}
+\index{FillVertexData@{FillVertexData}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{FillVertexData()}{FillVertexData()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Fill\+Vertex\+Data (\begin{DoxyParamCaption}\item[{Mesh}]{mesh }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 973 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{973                        : Transfer vertex and triangle data to UnityEngine.Mesh}
+\DoxyCodeLine{974         \textcolor{keyword}{public} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_afb4387f3a4fe800d64bba1e17bf1d9bd}{FillVertexData}} (Mesh mesh) \{}
+\DoxyCodeLine{975             var vbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{976             var ubi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{977             var cbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{978 }
+\DoxyCodeLine{979             \textcolor{comment}{// Zero the extra.}}
+\DoxyCodeLine{980             \{}
+\DoxyCodeLine{981                 \textcolor{keywordtype}{int} listCount = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{982                 \textcolor{keywordtype}{int} arrayLength = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}}.Length;}
+\DoxyCodeLine{983                 var vector3zero = Vector3.zero;}
+\DoxyCodeLine{984                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = listCount; i < arrayLength; i++)}
+\DoxyCodeLine{985                     vbi[i] = vector3zero;}
+\DoxyCodeLine{986             \}}
+\DoxyCodeLine{987 }
+\DoxyCodeLine{988             \textcolor{comment}{// Set the vertex buffer.}}
+\DoxyCodeLine{989             \{}
+\DoxyCodeLine{990                 mesh.vertices = vbi;}
+\DoxyCodeLine{991                 mesh.uv = ubi;}
+\DoxyCodeLine{992                 mesh.colors32 = cbi;}
+\DoxyCodeLine{993 }
+\DoxyCodeLine{994                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{float}.IsInfinity(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}.x)) \{ \textcolor{comment}{// meshBoundsMin.x == BoundsMinDefault // == doesn't work on float Infinity constants.}}
+\DoxyCodeLine{995                     mesh.bounds = \textcolor{keyword}{new} Bounds();}
+\DoxyCodeLine{996                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{997                     \textcolor{comment}{//mesh.bounds = ArraysMeshGenerator.ToBounds(meshBoundsMin, meshBoundsMax);}}
+\DoxyCodeLine{998                     Vector2 halfSize = (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}} -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}}) * 0.5f;}
+\DoxyCodeLine{999                     mesh.bounds = \textcolor{keyword}{new} Bounds \{}
+\DoxyCodeLine{1000                         center = (Vector3)(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}} + halfSize),}
+\DoxyCodeLine{1001                         extents = \textcolor{keyword}{new} Vector3(halfSize.x, halfSize.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{meshBoundsThickness}} * 0.5f)}
+\DoxyCodeLine{1002                     \};}
+\DoxyCodeLine{1003                 \}}
+\DoxyCodeLine{1004             \}}
+\DoxyCodeLine{1005 }
+\DoxyCodeLine{1006             \{}
+\DoxyCodeLine{1007                 \textcolor{keywordtype}{int} vertexCount = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{1008                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a27792005df3b7210aaf4b8260cbdceab}{addNormals}}) \{}
+\DoxyCodeLine{1009                     \textcolor{keywordtype}{int} oldLength = 0;}
+\DoxyCodeLine{1010 }
+\DoxyCodeLine{1011                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}} == \textcolor{keyword}{null})}
+\DoxyCodeLine{1012                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}} = \textcolor{keyword}{new} Vector3[vertexCount];  }
+\DoxyCodeLine{1013                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1014                         oldLength = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}}.Length;}
+\DoxyCodeLine{1015 }
+\DoxyCodeLine{1016                     \textcolor{keywordflow}{if} (oldLength < vertexCount) \{}
+\DoxyCodeLine{1017                         Array.Resize(ref this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}}, vertexCount);}
+\DoxyCodeLine{1018                         var localNormals = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}};}
+\DoxyCodeLine{1019                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = oldLength; i < vertexCount; i++) localNormals[i] = Vector3.back;}
+\DoxyCodeLine{1020                     \}}
+\DoxyCodeLine{1021                     mesh.normals = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}};}
+\DoxyCodeLine{1022                 \}}
+\DoxyCodeLine{1023 }
+\DoxyCodeLine{1024                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}{settings}}.\mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_a655ac97a5ea09c9e23ddc564fbb5d9b9}{tintBlack}}) \{}
+\DoxyCodeLine{1025                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1026                         mesh.uv2 = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1027                         mesh.uv3 = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{1028                     \}   }
+\DoxyCodeLine{1029                 \}               }
+\DoxyCodeLine{1030             \}}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a581230789bb08b6f9100216257ed5c9a}\label{class_spine_1_1_unity_1_1_mesh_generator_a581230789bb08b6f9100216257ed5c9a}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!GenerateSingleSubmeshInstruction@{GenerateSingleSubmeshInstruction}}
+\index{GenerateSingleSubmeshInstruction@{GenerateSingleSubmeshInstruction}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateSingleSubmeshInstruction()}{GenerateSingleSubmeshInstruction()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Mesh\+Generator.\+Generate\+Single\+Submesh\+Instruction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{instruction\+Output,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{Material}]{material }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 180 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180                        : Generate Instructions}
+\DoxyCodeLine{181         \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a581230789bb08b6f9100216257ed5c9a}{GenerateSingleSubmeshInstruction}} (SkeletonRendererInstruction instructionOutput, Skeleton skeleton, Material material) \{}
+\DoxyCodeLine{182             ExposedList<Slot> drawOrder = skeleton.drawOrder;}
+\DoxyCodeLine{183             \textcolor{keywordtype}{int} drawOrderCount = drawOrder.Count;}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185             \textcolor{comment}{// Clear last state of attachments and submeshes}}
+\DoxyCodeLine{186             instructionOutput.Clear(); \textcolor{comment}{// submeshInstructions.Clear(); attachments.Clear();}}
+\DoxyCodeLine{187             var workingSubmeshInstructions = instructionOutput.submeshInstructions;}
+\DoxyCodeLine{188             workingSubmeshInstructions.Resize(1);}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{191             instructionOutput.attachments.Resize(drawOrderCount);}
+\DoxyCodeLine{192             var workingAttachmentsItems = instructionOutput.attachments.Items;}
+\DoxyCodeLine{193             \textcolor{keywordtype}{int} totalRawVertexCount = 0;}
+\DoxyCodeLine{194 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196             var current = \textcolor{keyword}{new} SubmeshInstruction \{}
+\DoxyCodeLine{197                 skeleton = skeleton,}
+\DoxyCodeLine{198                 preActiveClippingSlotSource = -\/1,}
+\DoxyCodeLine{199                 startSlot = 0,}
+\DoxyCodeLine{200 \textcolor{preprocessor}{                \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{201                 rawFirstVertexIndex = 0,}
+\DoxyCodeLine{202 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{203                 material = material,}
+\DoxyCodeLine{204                 forceSeparate = \textcolor{keyword}{false},}
+\DoxyCodeLine{205                 endSlot = drawOrderCount}
+\DoxyCodeLine{206             \};}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{209             \textcolor{keywordtype}{bool} skeletonHasClipping = \textcolor{keyword}{false};}
+\DoxyCodeLine{210             var drawOrderItems = drawOrder.Items;}
+\DoxyCodeLine{211             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < drawOrderCount; i++) \{}
+\DoxyCodeLine{212                 Slot slot = drawOrderItems[i];}
+\DoxyCodeLine{213                 Attachment attachment = slot.attachment;}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215                 workingAttachmentsItems[i] = attachment;}
+\DoxyCodeLine{216                 \textcolor{keywordtype}{int} attachmentTriangleCount;}
+\DoxyCodeLine{217                 \textcolor{keywordtype}{int} attachmentVertexCount;}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219                 var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{220                 \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{221                     attachmentVertexCount = 4;}
+\DoxyCodeLine{222                     attachmentTriangleCount = 6;}
+\DoxyCodeLine{223                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{224                     var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{225                     \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{226                         attachmentVertexCount = meshAttachment.worldVerticesLength >> 1;}
+\DoxyCodeLine{227                         attachmentTriangleCount = meshAttachment.triangles.Length;}
+\DoxyCodeLine{228                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{229                         var clippingAttachment = attachment as ClippingAttachment;}
+\DoxyCodeLine{230                         \textcolor{keywordflow}{if} (clippingAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{231                             current.hasClipping = \textcolor{keyword}{true};}
+\DoxyCodeLine{232                             skeletonHasClipping = \textcolor{keyword}{true};}
+\DoxyCodeLine{233                         \}}
+\DoxyCodeLine{234                         attachmentVertexCount = 0;}
+\DoxyCodeLine{235                         attachmentTriangleCount = 0;}
+\DoxyCodeLine{236                     \}}
+\DoxyCodeLine{237                 \}}
+\DoxyCodeLine{238                 current.rawTriangleCount += attachmentTriangleCount;}
+\DoxyCodeLine{239                 current.rawVertexCount += attachmentVertexCount;}
+\DoxyCodeLine{240                 totalRawVertexCount += attachmentVertexCount;}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242             \}}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244             instructionOutput.hasActiveClipping = skeletonHasClipping;}
+\DoxyCodeLine{245             instructionOutput.rawVertexCount = totalRawVertexCount;}
+\DoxyCodeLine{246 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248             workingSubmeshInstructions.Items[0] = current;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a997f5a2740aaacb784534e9be83327bb}\label{class_spine_1_1_unity_1_1_mesh_generator_a997f5a2740aaacb784534e9be83327bb}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!GenerateSkeletonRendererInstruction@{GenerateSkeletonRendererInstruction}}
+\index{GenerateSkeletonRendererInstruction@{GenerateSkeletonRendererInstruction}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{GenerateSkeletonRendererInstruction()}{GenerateSkeletonRendererInstruction()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Mesh\+Generator.\+Generate\+Skeleton\+Renderer\+Instruction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_instruction}{Skeleton\+Renderer\+Instruction}}}]{instruction\+Output,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}}, Material $>$}]{custom\+Slot\+Materials,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_slot}{Slot}} $>$}]{separator\+Slots,  }\item[{bool}]{generate\+Mesh\+Override,  }\item[{bool}]{immutable\+Triangles = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 250 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{251                                                                                                                                                                                                                                                                          \{}
+\DoxyCodeLine{252 \textcolor{comment}{//          if (skeleton == null) throw new ArgumentNullException("skeleton");}}
+\DoxyCodeLine{253 \textcolor{comment}{//          if (instructionOutput == null) throw new ArgumentNullException("instructionOutput");}}
+\DoxyCodeLine{254 }
+\DoxyCodeLine{255             ExposedList<Slot> drawOrder = skeleton.drawOrder;}
+\DoxyCodeLine{256             \textcolor{keywordtype}{int} drawOrderCount = drawOrder.Count;}
+\DoxyCodeLine{257 }
+\DoxyCodeLine{258             \textcolor{comment}{// Clear last state of attachments and submeshes}}
+\DoxyCodeLine{259             instructionOutput.Clear(); \textcolor{comment}{// submeshInstructions.Clear(); attachments.Clear();}}
+\DoxyCodeLine{260             var workingSubmeshInstructions = instructionOutput.submeshInstructions;}
+\DoxyCodeLine{261 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{262             instructionOutput.attachments.Resize(drawOrderCount);}
+\DoxyCodeLine{263             var workingAttachmentsItems = instructionOutput.attachments.Items;}
+\DoxyCodeLine{264             \textcolor{keywordtype}{int} totalRawVertexCount = 0;}
+\DoxyCodeLine{265             \textcolor{keywordtype}{bool} skeletonHasClipping = \textcolor{keyword}{false};}
+\DoxyCodeLine{266 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{267 }
+\DoxyCodeLine{268             var current = \textcolor{keyword}{new} SubmeshInstruction \{}
+\DoxyCodeLine{269                 skeleton = skeleton,}
+\DoxyCodeLine{270                 preActiveClippingSlotSource = -\/1}
+\DoxyCodeLine{271             \};}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273 \textcolor{preprocessor}{            \#if !SPINE\_TK2D}}
+\DoxyCodeLine{274             \textcolor{keywordtype}{bool} isCustomSlotMaterialsPopulated = customSlotMaterials != \textcolor{keyword}{null} \&\& customSlotMaterials.Count > 0;}
+\DoxyCodeLine{275 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{276 }
+\DoxyCodeLine{277             \textcolor{keywordtype}{int} separatorCount = separatorSlots == \textcolor{keyword}{null} ? 0 : separatorSlots.Count;}
+\DoxyCodeLine{278             \textcolor{keywordtype}{bool} hasSeparators = separatorCount > 0;}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280             \textcolor{keywordtype}{int} clippingAttachmentSource = -\/1;}
+\DoxyCodeLine{281             \textcolor{keywordtype}{int} lastPreActiveClipping = -\/1; \textcolor{comment}{// The index of the last slot that had an active ClippingAttachment.}}
+\DoxyCodeLine{282             SlotData clippingEndSlot = \textcolor{keyword}{null};}
+\DoxyCodeLine{283             \textcolor{keywordtype}{int} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} = 0;}
+\DoxyCodeLine{284             var drawOrderItems = drawOrder.Items;}
+\DoxyCodeLine{285             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < drawOrderCount; i++) \{}
+\DoxyCodeLine{286                 Slot slot = drawOrderItems[i];}
+\DoxyCodeLine{287                 Attachment attachment = slot.attachment;}
+\DoxyCodeLine{288 \textcolor{preprocessor}{                \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{289                 workingAttachmentsItems[i] = attachment;}
+\DoxyCodeLine{290                 \textcolor{keywordtype}{int} attachmentVertexCount = 0, attachmentTriangleCount = 0;}
+\DoxyCodeLine{291 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{292 }
+\DoxyCodeLine{293                 \textcolor{keywordtype}{object} rendererObject = \textcolor{keyword}{null}; \textcolor{comment}{// An AtlasRegion in plain Spine-\/Unity. Spine-\/TK2D hooks into TK2D's system. eventual source of Material object.}}
+\DoxyCodeLine{294                 \textcolor{keywordtype}{bool} noRender = \textcolor{keyword}{false}; \textcolor{comment}{// Using this allows empty slots as separators, and keeps separated parts more stable despite slots being reordered}}
+\DoxyCodeLine{295 }
+\DoxyCodeLine{296                 var regionAttachment = attachment as RegionAttachment;}
+\DoxyCodeLine{297                 \textcolor{keywordflow}{if} (regionAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{298                     rendererObject = regionAttachment.RendererObject;}
+\DoxyCodeLine{299 \textcolor{preprocessor}{                    \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{300                     attachmentVertexCount = 4;}
+\DoxyCodeLine{301                     attachmentTriangleCount = 6;}
+\DoxyCodeLine{302 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{303                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{304                     var meshAttachment = attachment as MeshAttachment;}
+\DoxyCodeLine{305                     \textcolor{keywordflow}{if} (meshAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{306                         rendererObject = meshAttachment.RendererObject;}
+\DoxyCodeLine{307 \textcolor{preprocessor}{                        \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{308                         attachmentVertexCount = meshAttachment.worldVerticesLength >> 1;}
+\DoxyCodeLine{309                         attachmentTriangleCount = meshAttachment.triangles.Length;}
+\DoxyCodeLine{310 \textcolor{preprocessor}{                        \#endif}}
+\DoxyCodeLine{311                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{312 \textcolor{preprocessor}{                        \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{313                         var clippingAttachment = attachment as ClippingAttachment;}
+\DoxyCodeLine{314                         \textcolor{keywordflow}{if} (clippingAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{315                             clippingEndSlot = clippingAttachment.endSlot;}
+\DoxyCodeLine{316                             clippingAttachmentSource = i;}
+\DoxyCodeLine{317                             current.hasClipping = \textcolor{keyword}{true};}
+\DoxyCodeLine{318                             skeletonHasClipping = \textcolor{keyword}{true};}
+\DoxyCodeLine{319                         \}}
+\DoxyCodeLine{320 \textcolor{preprocessor}{                        \#endif}}
+\DoxyCodeLine{321                         noRender = \textcolor{keyword}{true};}
+\DoxyCodeLine{322                     \}}
+\DoxyCodeLine{323                 \}}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325                 \textcolor{keywordflow}{if} (clippingEndSlot != \textcolor{keyword}{null} \&\& slot.data == clippingEndSlot \&\& i != clippingAttachmentSource) \{}
+\DoxyCodeLine{326                     clippingEndSlot = \textcolor{keyword}{null};}
+\DoxyCodeLine{327                     clippingAttachmentSource = -\/1;}
+\DoxyCodeLine{328                 \}}
+\DoxyCodeLine{329 }
+\DoxyCodeLine{330                 \textcolor{comment}{// Create a new SubmeshInstruction when material changes. (or when forced to separate by a submeshSeparator)}}
+\DoxyCodeLine{331                 \textcolor{comment}{// Slot with a separator/new material will become the starting slot of the next new instruction.}}
+\DoxyCodeLine{332                 \textcolor{keywordflow}{if} (hasSeparators) \{ \textcolor{comment}{//current.forceSeparate = hasSeparators \&\& separatorSlots.Contains(slot);}}
+\DoxyCodeLine{333                     current.forceSeparate = \textcolor{keyword}{false};}
+\DoxyCodeLine{334                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} s = 0; s < separatorCount; s++) \{}
+\DoxyCodeLine{335                         \textcolor{keywordflow}{if} (Slot.ReferenceEquals(slot, separatorSlots[s])) \{}
+\DoxyCodeLine{336                             current.forceSeparate = \textcolor{keyword}{true};}
+\DoxyCodeLine{337                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{338                         \}}
+\DoxyCodeLine{339                     \}}
+\DoxyCodeLine{340                 \}}
+\DoxyCodeLine{341 }
+\DoxyCodeLine{342                 \textcolor{keywordflow}{if} (noRender) \{}
+\DoxyCodeLine{343                     \textcolor{keywordflow}{if} (current.forceSeparate \&\& generateMeshOverride) \{ \textcolor{comment}{// \&\& current.rawVertexCount > 0) \{}}
+\DoxyCodeLine{344                         \{ \textcolor{comment}{// Add}}
+\DoxyCodeLine{345                             current.endSlot = i;}
+\DoxyCodeLine{346                             current.preActiveClippingSlotSource = lastPreActiveClipping;}
+\DoxyCodeLine{347 }
+\DoxyCodeLine{348                             workingSubmeshInstructions.Resize(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} + 1);}
+\DoxyCodeLine{349                             workingSubmeshInstructions.Items[\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}] = current;}
+\DoxyCodeLine{350 }
+\DoxyCodeLine{351                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}++;}
+\DoxyCodeLine{352                         \}}
+\DoxyCodeLine{353 }
+\DoxyCodeLine{354                         current.startSlot = i;}
+\DoxyCodeLine{355                         lastPreActiveClipping = clippingAttachmentSource;}
+\DoxyCodeLine{356 \textcolor{preprocessor}{                        \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{357                         current.rawTriangleCount = 0;}
+\DoxyCodeLine{358                         current.rawVertexCount = 0;}
+\DoxyCodeLine{359                         current.rawFirstVertexIndex = totalRawVertexCount;}
+\DoxyCodeLine{360                         current.hasClipping = clippingAttachmentSource >= 0;}
+\DoxyCodeLine{361 \textcolor{preprocessor}{                        \#endif}}
+\DoxyCodeLine{362                     \}}
+\DoxyCodeLine{363                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{364 \textcolor{preprocessor}{                    \#if !SPINE\_TK2D}}
+\DoxyCodeLine{365                     Material material;}
+\DoxyCodeLine{366                     \textcolor{keywordflow}{if} (isCustomSlotMaterialsPopulated) \{}
+\DoxyCodeLine{367                         \textcolor{keywordflow}{if} (!customSlotMaterials.TryGetValue(slot, out material))}
+\DoxyCodeLine{368                             material = (Material)((AtlasRegion)rendererObject).page.rendererObject;             }
+\DoxyCodeLine{369                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{370                         material = (Material)((AtlasRegion)rendererObject).page.rendererObject;}
+\DoxyCodeLine{371                     \}}
+\DoxyCodeLine{372 \textcolor{preprocessor}{                    \#else}}
+\DoxyCodeLine{373                     Material material = (rendererObject is Material) ? (Material)rendererObject : (Material)((AtlasRegion)rendererObject).page.rendererObject;}
+\DoxyCodeLine{374                     \#endif}
+\DoxyCodeLine{375 }
+\DoxyCodeLine{376                     if (current.forceSeparate || (current.rawVertexCount > 0 \&\& !System.Object.ReferenceEquals(current.material, material))) \{ \textcolor{comment}{// Material changed. Add the previous submesh.}}
+\DoxyCodeLine{377                         \{ \textcolor{comment}{// Add}}
+\DoxyCodeLine{378                             current.endSlot = i;}
+\DoxyCodeLine{379                             current.preActiveClippingSlotSource = lastPreActiveClipping;}
+\DoxyCodeLine{380 }
+\DoxyCodeLine{381                             workingSubmeshInstructions.Resize(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} + 1);}
+\DoxyCodeLine{382                             workingSubmeshInstructions.Items[\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}] = current;}
+\DoxyCodeLine{383                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}++;}
+\DoxyCodeLine{384                         \}}
+\DoxyCodeLine{385                         current.startSlot = i;}
+\DoxyCodeLine{386                         lastPreActiveClipping = clippingAttachmentSource;}
+\DoxyCodeLine{387 \textcolor{preprocessor}{                        \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{388                         current.rawTriangleCount = 0;}
+\DoxyCodeLine{389                         current.rawVertexCount = 0;}
+\DoxyCodeLine{390                         current.rawFirstVertexIndex = totalRawVertexCount;}
+\DoxyCodeLine{391                         current.hasClipping = clippingAttachmentSource >= 0;}
+\DoxyCodeLine{392 \textcolor{preprocessor}{                        \#endif}}
+\DoxyCodeLine{393                     \}}
+\DoxyCodeLine{394 }
+\DoxyCodeLine{395                     \textcolor{comment}{// Update state for the next Attachment.}}
+\DoxyCodeLine{396                     current.material = material;}
+\DoxyCodeLine{397 \textcolor{preprocessor}{                    \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{398                     current.rawTriangleCount += attachmentTriangleCount;}
+\DoxyCodeLine{399                     current.rawVertexCount += attachmentVertexCount;}
+\DoxyCodeLine{400                     current.rawFirstVertexIndex = totalRawVertexCount;}
+\DoxyCodeLine{401                     totalRawVertexCount += attachmentVertexCount;}
+\DoxyCodeLine{402 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{403                 \}}
+\DoxyCodeLine{404             \}}
+\DoxyCodeLine{405 }
+\DoxyCodeLine{406             \textcolor{keywordflow}{if} (current.rawVertexCount > 0) \{}
+\DoxyCodeLine{407                 \{ \textcolor{comment}{// Add last or only submesh.}}
+\DoxyCodeLine{408                     current.endSlot = drawOrderCount;}
+\DoxyCodeLine{409                     current.preActiveClippingSlotSource = lastPreActiveClipping;}
+\DoxyCodeLine{410                     current.forceSeparate = \textcolor{keyword}{false};}
+\DoxyCodeLine{411 }
+\DoxyCodeLine{412                     workingSubmeshInstructions.Resize(\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}} + 1);}
+\DoxyCodeLine{413                     workingSubmeshInstructions.Items[\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}{submeshIndex}}] = current;}
+\DoxyCodeLine{414                     \textcolor{comment}{//submeshIndex++;   }}
+\DoxyCodeLine{415                 \}}
+\DoxyCodeLine{416             \}}
+\DoxyCodeLine{417 }
+\DoxyCodeLine{418 \textcolor{preprocessor}{            \#if SPINE\_TRIANGLECHECK}}
+\DoxyCodeLine{419             instructionOutput.hasActiveClipping = skeletonHasClipping;}
+\DoxyCodeLine{420             instructionOutput.rawVertexCount = totalRawVertexCount;}
+\DoxyCodeLine{421 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{422             instructionOutput.immutableTriangles = immutableTriangles;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a52baa653a39ac13f5b366c60d8edcb32}\label{class_spine_1_1_unity_1_1_mesh_generator_a52baa653a39ac13f5b366c60d8edcb32}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!ScaleVertexData@{ScaleVertexData}}
+\index{ScaleVertexData@{ScaleVertexData}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{ScaleVertexData()}{ScaleVertexData()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Scale\+Vertex\+Data (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 934 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{935                                                   \{}
+\DoxyCodeLine{936             var vbi = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}};}
+\DoxyCodeLine{937             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; i < n; i++) \{}
+\DoxyCodeLine{938                 vbi[i] *= scale; \textcolor{comment}{// vbi[i].x *= scale; vbi[i].y *= scale;}}
+\DoxyCodeLine{939             \}}
+\DoxyCodeLine{940 }
+\DoxyCodeLine{941             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}{meshBoundsMin}} *= scale;}
+\DoxyCodeLine{942             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}{meshBoundsMax}} *= scale;}
+\DoxyCodeLine{943             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}{meshBoundsThickness}} *= scale;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a0c95e18a942e46a54278472d8619e116}\label{class_spine_1_1_unity_1_1_mesh_generator_a0c95e18a942e46a54278472d8619e116}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!TrimExcess@{TrimExcess}}
+\index{TrimExcess@{TrimExcess}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{TrimExcess()}{TrimExcess()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Mesh\+Generator.\+Trim\+Excess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spine\+Mesh.\+cs 파일의 1098 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1099                                   \{}
+\DoxyCodeLine{1100             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{TrimExcess}}();}
+\DoxyCodeLine{1101             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{TrimExcess}}();}
+\DoxyCodeLine{1102             \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{TrimExcess}}();}
+\DoxyCodeLine{1103 }
+\DoxyCodeLine{1104             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}} != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}{uv2}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{TrimExcess}}();}
+\DoxyCodeLine{1105             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}} != \textcolor{keyword}{null}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}{uv3}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a4dddc61d2093ca18f622821e974e9ff9}{TrimExcess}}();}
+\DoxyCodeLine{1106 }
+\DoxyCodeLine{1107             \textcolor{keywordtype}{int} count = \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}};}
+\DoxyCodeLine{1108             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}} != \textcolor{keyword}{null}) Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}{normals}}, count);}
+\DoxyCodeLine{1109             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}} != \textcolor{keyword}{null}) Array.Resize(ref \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}{tangents}}, count);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a6a986c9a1173d8c69a53bf466969a29a}\label{class_spine_1_1_unity_1_1_mesh_generator_a6a986c9a1173d8c69a53bf466969a29a}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!TryReplaceMaterials@{TryReplaceMaterials}}
+\index{TryReplaceMaterials@{TryReplaceMaterials}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{TryReplaceMaterials()}{TryReplaceMaterials()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Mesh\+Generator.\+Try\+Replace\+Materials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$ \mbox{\hyperlink{struct_spine_1_1_unity_1_1_submesh_instruction}{Submesh\+Instruction}} $>$}]{working\+Submesh\+Instructions,  }\item[{Dictionary$<$ Material, Material $>$}]{custom\+Material\+Override }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 424 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{425                                                                                                                                                                    \{}
+\DoxyCodeLine{426             \textcolor{comment}{// Material overrides are done here so they can be applied per submesh instead of per slot}}
+\DoxyCodeLine{427             \textcolor{comment}{// but they will still be passed through the GenerateMeshOverride delegate,}}
+\DoxyCodeLine{428             \textcolor{comment}{// and will still go through the normal material match check step in STEP 3.}}
+\DoxyCodeLine{429             var wsii = workingSubmeshInstructions.Items;}
+\DoxyCodeLine{430             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < workingSubmeshInstructions.Count; i++) \{}
+\DoxyCodeLine{431                 var m = wsii[i].material;}
+\DoxyCodeLine{432                 Material mo;}
+\DoxyCodeLine{433                 \textcolor{keywordflow}{if} (customMaterialOverride.TryGetValue(m, out mo))}
+\DoxyCodeLine{434                     wsii[i].material = mo;}
+\DoxyCodeLine{435             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}\label{class_spine_1_1_unity_1_1_mesh_generator_a5b8cd2799f6a7f39ae97bff9816d858f}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AttachmentColors32@{AttachmentColors32}}
+\index{AttachmentColors32@{AttachmentColors32}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AttachmentColors32}{AttachmentColors32}}
+{\footnotesize\ttfamily List$<$Color32$>$ Spine.\+Unity.\+Mesh\+Generator.\+Attachment\+Colors32 = new List$<$Color32$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1203 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}\label{class_spine_1_1_unity_1_1_mesh_generator_a8e182b7ccdd0511b772dbe90dfefc9a0}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AttachmentIndices@{AttachmentIndices}}
+\index{AttachmentIndices@{AttachmentIndices}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AttachmentIndices}{AttachmentIndices}}
+{\footnotesize\ttfamily List$<$int$>$ Spine.\+Unity.\+Mesh\+Generator.\+Attachment\+Indices = new List$<$int$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1204 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}\label{class_spine_1_1_unity_1_1_mesh_generator_a4d374f6472e997bb63b1eae29f8f52ed}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AttachmentUVs@{AttachmentUVs}}
+\index{AttachmentUVs@{AttachmentUVs}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AttachmentUVs}{AttachmentUVs}}
+{\footnotesize\ttfamily List$<$Vector2$>$ Spine.\+Unity.\+Mesh\+Generator.\+Attachment\+U\+Vs = new List$<$Vector2$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1202 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}\label{class_spine_1_1_unity_1_1_mesh_generator_a947598ee1aa70099056546ed68d9def9}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!AttachmentVerts@{AttachmentVerts}}
+\index{AttachmentVerts@{AttachmentVerts}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{AttachmentVerts}{AttachmentVerts}}
+{\footnotesize\ttfamily List$<$Vector3$>$ Spine.\+Unity.\+Mesh\+Generator.\+Attachment\+Verts = new List$<$Vector3$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 1201 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a026a9a52b7f137f8869e76acdc3fe191}\label{class_spine_1_1_unity_1_1_mesh_generator_a026a9a52b7f137f8869e76acdc3fe191}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!BoundsMaxDefault@{BoundsMaxDefault}}
+\index{BoundsMaxDefault@{BoundsMaxDefault}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{BoundsMaxDefault}{BoundsMaxDefault}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Mesh\+Generator.\+Bounds\+Max\+Default = float.\+Negative\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 138 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_acd5ebeaf3f5c8a274e10dda6fd4019b9}\label{class_spine_1_1_unity_1_1_mesh_generator_acd5ebeaf3f5c8a274e10dda6fd4019b9}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!BoundsMinDefault@{BoundsMinDefault}}
+\index{BoundsMinDefault@{BoundsMinDefault}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{BoundsMinDefault}{BoundsMinDefault}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Mesh\+Generator.\+Bounds\+Min\+Default = float.\+Positive\+Infinity\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 137 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}\label{class_spine_1_1_unity_1_1_mesh_generator_a7ac9cf2d9adb8641be4ca099fce84572}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!clipper@{clipper}}
+\index{clipper@{clipper}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{clipper}{clipper}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton_clipping}{Skeleton\+Clipping}} Spine.\+Unity.\+Mesh\+Generator.\+clipper = new \mbox{\hyperlink{class_spine_1_1_skeleton_clipping}{Skeleton\+Clipping}}()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 149 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}\label{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!colorBuffer@{colorBuffer}}
+\index{colorBuffer@{colorBuffer}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{colorBuffer}{colorBuffer}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Color32$>$ Spine.\+Unity.\+Mesh\+Generator.\+color\+Buffer = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Color32$>$(4)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 142 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}\label{class_spine_1_1_unity_1_1_mesh_generator_adb140a4b2dcdcb6f79441eff7b7ff94e}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!meshBoundsMax@{meshBoundsMax}}
+\index{meshBoundsMax@{meshBoundsMax}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{meshBoundsMax}{meshBoundsMax}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Mesh\+Generator.\+mesh\+Bounds\+Max\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 145 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}\label{class_spine_1_1_unity_1_1_mesh_generator_a62b74c27ff059e55bad9d629b30b8e42}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!meshBoundsMin@{meshBoundsMin}}
+\index{meshBoundsMin@{meshBoundsMin}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{meshBoundsMin}{meshBoundsMin}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Mesh\+Generator.\+mesh\+Bounds\+Min\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 145 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}\label{class_spine_1_1_unity_1_1_mesh_generator_a8dccaeb59bab3f8988c42c37fc7eaf42}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!meshBoundsThickness@{meshBoundsThickness}}
+\index{meshBoundsThickness@{meshBoundsThickness}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{meshBoundsThickness}{meshBoundsThickness}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Mesh\+Generator.\+mesh\+Bounds\+Thickness\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 146 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}\label{class_spine_1_1_unity_1_1_mesh_generator_a934111bcd42e83054e748c0f4d84b9b1}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!normals@{normals}}
+\index{normals@{normals}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{normals}{normals}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Generator.\+normals\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 154 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a32e703ea1877b93438ab2814ef14edb4}\label{class_spine_1_1_unity_1_1_mesh_generator_a32e703ea1877b93438ab2814ef14edb4}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!regionTriangles@{regionTriangles}}
+\index{regionTriangles@{regionTriangles}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{regionTriangles}{regionTriangles}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Generator.\+region\+Triangles = \{ 0, 1, 2, 2, 3, 0 \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 151 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}\label{class_spine_1_1_unity_1_1_mesh_generator_ad8011aaf0fa48403f8846e4eaa17b709}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!settings@{settings}}
+\index{settings@{settings}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{settings}{settings}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings}{Settings}} Spine.\+Unity.\+Mesh\+Generator.\+settings = \mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_1_1_settings_ac37fbf425eb1f4703bf3359c58582498}{Settings.\+Default}}}
+
+
+
+Spine\+Mesh.\+cs 파일의 106 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}\label{class_spine_1_1_unity_1_1_mesh_generator_a6bb2ca9802f92994e3d544594a224683}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!submeshes@{submeshes}}
+\index{submeshes@{submeshes}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{submeshes}{submeshes}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$int$>$ $>$ Spine.\+Unity.\+Mesh\+Generator.\+submeshes = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$\mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$int$>$$>$ \{ new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$int$>$(6) \}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 143 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}\label{class_spine_1_1_unity_1_1_mesh_generator_a0da0149430314351496d8a1934baeff6}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!submeshIndex@{submeshIndex}}
+\index{submeshIndex@{submeshIndex}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{submeshIndex}{submeshIndex}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Mesh\+Generator.\+submesh\+Index = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 147 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}\label{class_spine_1_1_unity_1_1_mesh_generator_a6624fbe5dc758df1c6a83bebb41541b7}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!tangents@{tangents}}
+\index{tangents@{tangents}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{tangents}{tangents}}
+{\footnotesize\ttfamily Vector4 \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Generator.\+tangents\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 155 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a3e1754204be8a1fd99e56eae32785340}\label{class_spine_1_1_unity_1_1_mesh_generator_a3e1754204be8a1fd99e56eae32785340}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!tempTanBuffer@{tempTanBuffer}}
+\index{tempTanBuffer@{tempTanBuffer}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{tempTanBuffer}{tempTanBuffer}}
+{\footnotesize\ttfamily Vector2 \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Generator.\+temp\+Tan\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 156 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}\label{class_spine_1_1_unity_1_1_mesh_generator_a681e1e2bdeae56525d14c8fba863eae2}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!tempVerts@{tempVerts}}
+\index{tempVerts@{tempVerts}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{tempVerts}{tempVerts}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Mesh\+Generator.\+temp\+Verts = new float\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 150 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}\label{class_spine_1_1_unity_1_1_mesh_generator_aad63df60da8d276e6fb7345d3a172e09}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!uv2@{uv2}}
+\index{uv2@{uv2}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{uv2}{uv2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector2$>$ Spine.\+Unity.\+Mesh\+Generator.\+uv2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 157 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}\label{class_spine_1_1_unity_1_1_mesh_generator_a3ff7d73320e8eaf60e70e7fb5df53c8b}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!uv3@{uv3}}
+\index{uv3@{uv3}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{uv3}{uv3}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector2$>$ Spine.\+Unity.\+Mesh\+Generator.\+uv3\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 158 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}\label{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!uvBuffer@{uvBuffer}}
+\index{uvBuffer@{uvBuffer}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{uvBuffer}{uvBuffer}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector2$>$ Spine.\+Unity.\+Mesh\+Generator.\+uv\+Buffer = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector2$>$(4)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 141 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}\label{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!vertexBuffer@{vertexBuffer}}
+\index{vertexBuffer@{vertexBuffer}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{vertexBuffer}{vertexBuffer}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector3$>$ Spine.\+Unity.\+Mesh\+Generator.\+vertex\+Buffer = new \mbox{\hyperlink{class_spine_1_1_exposed_list}{Exposed\+List}}$<$Vector3$>$(4)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 140 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_ab039e5cd423122e5b8a474a75b516b73}\label{class_spine_1_1_unity_1_1_mesh_generator_ab039e5cd423122e5b8a474a75b516b73}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!Buffers@{Buffers}}
+\index{Buffers@{Buffers}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{Buffers}{Buffers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_spine_1_1_unity_1_1_mesh_generator_buffers}{Mesh\+Generator\+Buffers}} Spine.\+Unity.\+Mesh\+Generator.\+Buffers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 167 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168                                             \{}
+\DoxyCodeLine{169             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{170                 \textcolor{keywordflow}{return} \textcolor{keyword}{new} MeshGeneratorBuffers \{}
+\DoxyCodeLine{171                     vertexCount = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a9008146a52315d745bbd29c9e3a419c0}{VertexCount}},}
+\DoxyCodeLine{172                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}} = this.vertexBuffer.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}},}
+\DoxyCodeLine{173                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a4d5415c1f1a79a8b5ff7dac9b08fe90d}{uvBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}},}
+\DoxyCodeLine{174                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}} = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a8d41779968a5daa43b92966ea219a5af}{colorBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a8c08a889d5162a41b308c119ac7c0330}{Items}},}
+\DoxyCodeLine{175                     meshGenerator = \textcolor{keyword}{this}}
+\DoxyCodeLine{176                 \};}
+\DoxyCodeLine{177             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_mesh_generator_a9008146a52315d745bbd29c9e3a419c0}\label{class_spine_1_1_unity_1_1_mesh_generator_a9008146a52315d745bbd29c9e3a419c0}} 
+\index{Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}!VertexCount@{VertexCount}}
+\index{VertexCount@{VertexCount}!Spine.Unity.MeshGenerator@{Spine.Unity.MeshGenerator}}
+\doxysubsubsection{\texorpdfstring{VertexCount}{VertexCount}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Mesh\+Generator.\+Vertex\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Spine\+Mesh.\+cs 파일의 165 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{166 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_mesh_generator_a81069561aef1674678f266b1f8511cc2}{vertexBuffer}}.\mbox{\hyperlink{class_spine_1_1_exposed_list_a1f98637f699b80b9cf46b3638962b0a0}{Count}}; \} \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Mesh Generation/\mbox{\hyperlink{_spine_mesh_8cs}{Spine\+Mesh.\+cs}}\end{DoxyCompactItemize}

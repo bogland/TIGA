@@ -1,0 +1,11 @@
+digraph "Spine.AnimationStateData.AnimationPair"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Spine.AnimationStateData.\lAnimationPair\n||+ AnimationPair()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +a1\n+a2" ,arrowhead="odiamond"];
+  Node2 [label="{Spine.Animation\n|+ Name\l+ Timelines\l+ Duration\l~ duration\l~ name\l|+ Animation()\l+ Apply()\l~ BinarySearch()\l~ BinarySearch()\l~ LinearSearch()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_animation.html",tooltip=" "];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" ~timelines" ,arrowhead="odiamond"];
+  Node3 [label="{Spine.ExposedList\<\l Spine.Timeline \>\n|+ Items\l+ Count\l+ Capacity\l- version\l- DefaultCapacity\l- EmptyArray\l|+ ExposedList()\l+ ExposedList()\l+ ExposedList()\l+ Add()\l+ GrowIfNeeded()\l+ Resize()\l+ EnsureCapacity()\l+ AddRange()\l+ BinarySearch()\l+ BinarySearch()\l그리고 42개 더...\l~ ExposedList()\l- CheckRange()\l- AddCollection()\l- AddEnumerable()\l- FindAllList()\l- GetIndex()\l- GetLastIndex()\l- GetEnumerator()\l- GetEnumerator()\l- Shift()\l- CheckIndex()\l- CheckCollection()\l- InsertCollection()\l- InsertEnumeration()\l- CheckMatch()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_1_1_exposed_list.html",tooltip=" "];
+}

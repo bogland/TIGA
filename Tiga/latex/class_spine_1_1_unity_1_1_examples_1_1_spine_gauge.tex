@@ -1,0 +1,140 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge}{}\doxysection{Spine.\+Unity.\+Examples.\+Spine\+Gauge 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge}\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+
+
+Spine.\+Unity.\+Examples.\+Spine\+Gauge에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Spine\+Gauge에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ad1e2e07f1e70f5aa14d93cae55917227}{Set\+Gauge\+Percent}} (float percent)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a7d72f1877af2f557166825531861a14a}{fill\+Percent}} = 0
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a23fb023452135ef61efa21fd99f0ecac}{fill\+Animation}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a5fb1ba3b5fa7eeb2e252887a2fad45d1}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ae1cb24dff1ce0bd4cacb0b6b65f3c1c7}{Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}{skeleton\+Renderer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Gauge.\+cs 파일의 36 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a5fb1ba3b5fa7eeb2e252887a2fad45d1}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a5fb1ba3b5fa7eeb2e252887a2fad45d1}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Gauge.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47                       \{}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}{skeletonRenderer}} = GetComponent<SkeletonRenderer>();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ad1e2e07f1e70f5aa14d93cae55917227}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ad1e2e07f1e70f5aa14d93cae55917227}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!SetGaugePercent@{SetGaugePercent}}
+\index{SetGaugePercent@{SetGaugePercent}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{SetGaugePercent()}{SetGaugePercent()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+Set\+Gauge\+Percent (\begin{DoxyParamCaption}\item[{float}]{percent }\end{DoxyParamCaption})}
+
+
+
+Spine\+Gauge.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                                     \{}
+\DoxyCodeLine{56             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}{skeletonRenderer}} == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{57             var skeleton = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}; \textcolor{keywordflow}{if} (skeleton == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a23fb023452135ef61efa21fd99f0ecac}{fillAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset_a41c0fd47ac488a8b4958f90a7f114ce1}{Animation}}.Apply(skeleton, 0, percent, \textcolor{keyword}{false}, \textcolor{keyword}{null}, 1f, \mbox{\hyperlink{namespace_spine_a9e8c50972e35144090a6e72fe23f8c93}{MixPose}}.Setup, \mbox{\hyperlink{namespace_spine_a3adaf142a8c20385353051e58c729208}{MixDirection}}.In);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61             skeleton.Update(Time.deltaTime);}
+\DoxyCodeLine{62             skeleton.UpdateWorldTransform();}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ae1cb24dff1ce0bd4cacb0b6b65f3c1c7}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ae1cb24dff1ce0bd4cacb0b6b65f3c1c7}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!Update@{Update}}
+\index{Update@{Update}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Gauge.\+cs 파일의 50 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51                        \{}
+\DoxyCodeLine{52             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_ad1e2e07f1e70f5aa14d93cae55917227}{SetGaugePercent}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a7d72f1877af2f557166825531861a14a}{fillPercent}});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a23fb023452135ef61efa21fd99f0ecac}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a23fb023452135ef61efa21fd99f0ecac}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!fillAnimation@{fillAnimation}}
+\index{fillAnimation@{fillAnimation}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{fillAnimation}{fillAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_animation_reference_asset}{Animation\+Reference\+Asset}} Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+fill\+Animation}
+
+
+
+Spine\+Gauge.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a7d72f1877af2f557166825531861a14a}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a7d72f1877af2f557166825531861a14a}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!fillPercent@{fillPercent}}
+\index{fillPercent@{fillPercent}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{fillPercent}{fillPercent}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+fill\+Percent = 0}
+
+
+
+Spine\+Gauge.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}\label{class_spine_1_1_unity_1_1_examples_1_1_spine_gauge_a492d1c18380c1a5238e73c1ee2868989}} 
+\index{Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.Examples.SpineGauge@{Spine.Unity.Examples.SpineGauge}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Examples.\+Spine\+Gauge.\+skeleton\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Spine\+Gauge.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\mbox{\hyperlink{_spine_gauge_8cs}{Spine\+Gauge.\+cs}}\end{DoxyCompactItemize}

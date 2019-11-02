@@ -1,0 +1,427 @@
+\hypertarget{class_spine_1_1_unity_1_1_bone_follower}{}\doxysection{Spine.\+Unity.\+Bone\+Follower 클래스 참조}
+\label{class_spine_1_1_unity_1_1_bone_follower}\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+
+
+Sets a Game\+Object\textquotesingle{}s transform to match a bone on a \mbox{\hyperlink{namespace_spine}{Spine}} skeleton.  
+
+
+
+
+Spine.\+Unity.\+Bone\+Follower에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Bone\+Follower에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_aaeb298e836b51bc2850864f44d0bf9e6}{Set\+Bone}} (string name)
+\begin{DoxyCompactList}\small\item\em Sets the target bone by its bone name. Returns false if no bone was found. To set the bone by reference, use \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{Bone\+Follower.\+bone}} directly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_acc32e4179216471ace406368295e6169}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}{Handle\+Rebuild\+Renderer}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeleton\+Renderer}})
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}{Initialize}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_aaafbb15b734a21dc7fbecbfd93961d28}{Late\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeleton\+Renderer}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{bone\+Name}}
+\begin{DoxyCompactList}\small\item\em If a bone isn\textquotesingle{}t set in code, bone\+Name is used to find the bone at the beginning. For runtime switching by name, use Set\+Bone\+By\+Name. You can also set the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{Bone\+Follower.\+bone}} field directly. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a298773a1c25683505d793d5070ad5460}{follow\+Z\+Position}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_af867eb1093072551036b8848eb09ffa7}{follow\+Bone\+Rotation}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ac3aba7d02b130355c5c036d4531e7e22}{follow\+Skeleton\+Flip}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}{follow\+Local\+Scale}} = false
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a40489a49ea71cf3dcddd4250fb18ab66}{initialize\+On\+Awake}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}{valid}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}
+\begin{DoxyCompactList}\small\item\em The bone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a37f75c149c60196c48e3c12624e2fd6e}{Skeleton\+Renderer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a17fa428c9a8ec7dc8a7de3e2d96a8617}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeleton\+Transform}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}{skeleton\+Transform\+Is\+Parent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+Sets a Game\+Object\textquotesingle{}s transform to match a bone on a \mbox{\hyperlink{namespace_spine}{Spine}} skeleton. 
+
+
+
+Bone\+Follower.\+cs 파일의 37 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_acc32e4179216471ace406368295e6169}\label{class_spine_1_1_unity_1_1_bone_follower_acc32e4179216471ace406368295e6169}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!Awake@{Awake}}
+\index{Awake@{Awake}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bone\+Follower.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bone\+Follower.\+cs 파일의 86 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87                              \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a40489a49ea71cf3dcddd4250fb18ab66}{initializeOnAwake}}) \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}\label{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!HandleRebuildRenderer@{HandleRebuildRenderer}}
+\index{HandleRebuildRenderer@{HandleRebuildRenderer}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{HandleRebuildRenderer()}{HandleRebuildRenderer()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bone\+Follower.\+Handle\+Rebuild\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{skeleton\+Renderer }\end{DoxyParamCaption})}
+
+
+
+Bone\+Follower.\+cs 파일의 90 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                                                               \{}
+\DoxyCodeLine{92             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}\label{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bone\+Follower.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bone\+Follower.\+cs 파일의 94 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95                                   \{}
+\DoxyCodeLine{96             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} = \textcolor{keyword}{null};}
+\DoxyCodeLine{97             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}{valid}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}} != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_ad8e7b44a7dd205acbdf2e3d9159ae23f}{valid}};}
+\DoxyCodeLine{98             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}{valid}}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeletonTransform}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.transform;}
+\DoxyCodeLine{101             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}{HandleRebuildRenderer}};}
+\DoxyCodeLine{102             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}{HandleRebuildRenderer}};}
+\DoxyCodeLine{103             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}{skeletonTransformIsParent}} = Transform.ReferenceEquals(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeletonTransform}}, transform.parent);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             \textcolor{keywordflow}{if} (!\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}}))}
+\DoxyCodeLine{106                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{FindBone}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}});}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{109             \textcolor{keywordflow}{if} (Application.isEditor)}
+\DoxyCodeLine{110                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_aaafbb15b734a21dc7fbecbfd93961d28}{LateUpdate}}();}
+\DoxyCodeLine{111 \textcolor{preprocessor}{            \#endif}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_aaafbb15b734a21dc7fbecbfd93961d28}\label{class_spine_1_1_unity_1_1_bone_follower_aaafbb15b734a21dc7fbecbfd93961d28}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!LateUpdate@{LateUpdate}}
+\index{LateUpdate@{LateUpdate}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{LateUpdate()}{LateUpdate()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bone\+Follower.\+Late\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bone\+Follower.\+cs 파일의 118 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119                                   \{}
+\DoxyCodeLine{120             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}{valid}}) \{}
+\DoxyCodeLine{121                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}{Initialize}}();}
+\DoxyCodeLine{122                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{123             \}}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 \textcolor{preprocessor}{            \#if UNITY\_EDITOR}}
+\DoxyCodeLine{126             \textcolor{keywordflow}{if} (!Application.isPlaying)}
+\DoxyCodeLine{127                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}{skeletonTransformIsParent}} = Transform.ReferenceEquals(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeletonTransform}}, transform.parent);}
+\DoxyCodeLine{128 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if} (\textcolor{keywordtype}{string}.IsNullOrEmpty(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}})) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{132                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{FindBone}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}});}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_aaeb298e836b51bc2850864f44d0bf9e6}{SetBone}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}})) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{134             \}}
+\DoxyCodeLine{135 }
+\DoxyCodeLine{136             Transform thisTransform = this.transform;}
+\DoxyCodeLine{137             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}{skeletonTransformIsParent}}) \{}
+\DoxyCodeLine{138                 \textcolor{comment}{// Recommended setup: Use local transform properties if Spine GameObject is the immediate parent}}
+\DoxyCodeLine{139                 thisTransform.localPosition = \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a53ba5c142aa020c446c03378c4523cdf}{worldX}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a5b8fa0cf6fb60e012ec9879f263b810f}{worldY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a298773a1c25683505d793d5070ad5460}{followZPosition}} ? 0f : thisTransform.localPosition.z);}
+\DoxyCodeLine{140                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_af867eb1093072551036b8848eb09ffa7}{followBoneRotation}}) \{}
+\DoxyCodeLine{141                     \textcolor{keywordtype}{float} halfRotation = Mathf.Atan2(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.c, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.a) * 0.5f;}
+\DoxyCodeLine{142                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}{followLocalScale}} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_ae18e3d435fbc088dee389a1102b1a4b0}{scaleX}} < 0) \textcolor{comment}{// Negate rotation from negative scaleX. Don't use negative determinant. local scaleY doesn't factor into used rotation.}}
+\DoxyCodeLine{143                         halfRotation += Mathf.PI * 0.5f;}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145                     var q = \textcolor{keywordflow}{default}(Quaternion);}
+\DoxyCodeLine{146                     q.z = Mathf.Sin(halfRotation);}
+\DoxyCodeLine{147                     q.w = Mathf.Cos(halfRotation);}
+\DoxyCodeLine{148                     thisTransform.localRotation = q;}
+\DoxyCodeLine{149                 \}}
+\DoxyCodeLine{150             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{151                 \textcolor{comment}{// For special cases: Use transform world properties if transform relationship is complicated}}
+\DoxyCodeLine{152                 Vector3 targetWorldPosition = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeletonTransform}}.TransformPoint(\textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a53ba5c142aa020c446c03378c4523cdf}{worldX}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a5b8fa0cf6fb60e012ec9879f263b810f}{worldY}}, 0f));}
+\DoxyCodeLine{153                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a298773a1c25683505d793d5070ad5460}{followZPosition}}) targetWorldPosition.z = thisTransform.position.z;}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155                 \textcolor{keywordtype}{float} boneWorldRotation = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a6f9dcc12c596710439b0545275401ccf}{WorldRotationX}};}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157                 Transform transformParent = thisTransform.parent;}
+\DoxyCodeLine{158                 \textcolor{keywordflow}{if} (transformParent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{159                     Matrix4x4 m = transformParent.localToWorldMatrix;}
+\DoxyCodeLine{160                     \textcolor{keywordflow}{if} (m.m00 * m.m11 -\/ m.m01 * m.m10 < 0) \textcolor{comment}{// Determinant2D is negative}}
+\DoxyCodeLine{161                         boneWorldRotation = -\/boneWorldRotation;}
+\DoxyCodeLine{162                 \}}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_af867eb1093072551036b8848eb09ffa7}{followBoneRotation}}) \{}
+\DoxyCodeLine{165                     Vector3 worldRotation = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}{skeletonTransform}}.rotation.eulerAngles;}
+\DoxyCodeLine{166                     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}{followLocalScale}} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_ae18e3d435fbc088dee389a1102b1a4b0}{scaleX}} < 0) boneWorldRotation += 180f;}
+\DoxyCodeLine{167 \textcolor{preprocessor}{                    \#if UNITY\_5\_6\_OR\_NEWER}}
+\DoxyCodeLine{168                     thisTransform.SetPositionAndRotation(targetWorldPosition, Quaternion.Euler(worldRotation.x, worldRotation.y, worldRotation.z + boneWorldRotation));}
+\DoxyCodeLine{169 \textcolor{preprocessor}{                    \#else}}
+\DoxyCodeLine{170                     thisTransform.position = targetWorldPosition;}
+\DoxyCodeLine{171                     thisTransform.rotation = Quaternion.Euler(worldRotation.x, worldRotation.y, worldRotation.z + \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a6f9dcc12c596710439b0545275401ccf}{WorldRotationX}});}
+\DoxyCodeLine{172 \textcolor{preprocessor}{                    \#endif}}
+\DoxyCodeLine{173                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{174                     thisTransform.position = targetWorldPosition;}
+\DoxyCodeLine{175                 \}}
+\DoxyCodeLine{176             \}}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178             Vector3 localScale = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}{followLocalScale}} ? \textcolor{keyword}{new} Vector3(\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_ae18e3d435fbc088dee389a1102b1a4b0}{scaleX}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.\mbox{\hyperlink{class_spine_1_1_bone_a6a4a187b598e3f079d26e41e484c7605}{scaleY}}, 1f) : new Vector3(1f, 1f, 1f);}
+\DoxyCodeLine{179             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_ac3aba7d02b130355c5c036d4531e7e22}{followSkeletonFlip}}) localScale.y *= \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.skeleton.flipX \string^ \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}}.skeleton.\mbox{\hyperlink{class_spine_1_1_skeleton_a822b9b8fcd7317f2bcce7aa217d989c7}{flipY}} ? -\/1f : 1f;}
+\DoxyCodeLine{180             thisTransform.localScale = localScale;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a17fa428c9a8ec7dc8a7de3e2d96a8617}\label{class_spine_1_1_unity_1_1_bone_follower_a17fa428c9a8ec7dc8a7de3e2d96a8617}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Bone\+Follower.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Follower.\+cs 파일의 113 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114                           \{}
+\DoxyCodeLine{115             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}} != \textcolor{keyword}{null})}
+\DoxyCodeLine{116                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a64e49404fce3bd1275ade97cf0337065}{OnRebuild}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a1bcc44a28a29b73f476086b13d8534c6}{HandleRebuildRenderer}};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_aaeb298e836b51bc2850864f44d0bf9e6}\label{class_spine_1_1_unity_1_1_bone_follower_aaeb298e836b51bc2850864f44d0bf9e6}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!SetBone@{SetBone}}
+\index{SetBone@{SetBone}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{SetBone()}{SetBone()}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+Set\+Bone (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Sets the target bone by its bone name. Returns false if no bone was found. To set the bone by reference, use \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{Bone\+Follower.\+bone}} directly. 
+
+
+
+Bone\+Follower.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77                                           \{}
+\DoxyCodeLine{78             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a8183a6e1f44096398fef80ed4af35e34}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{FindBone}}(name);}
+\DoxyCodeLine{79             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{bone}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{80                 Debug.LogError(\textcolor{stringliteral}{"Bone not found: "} + name, \textcolor{keyword}{this});}
+\DoxyCodeLine{81                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{82             \}}
+\DoxyCodeLine{83             \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}{boneName}} = name;}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}\label{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!bone@{bone}}
+\index{bone@{bone}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{bone}{bone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Unity.\+Bone\+Follower.\+bone}
+
+
+
+The bone. 
+
+
+
+Bone\+Follower.\+cs 파일의 70 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}\label{class_spine_1_1_unity_1_1_bone_follower_a23e4d06b33c198e2a63e0a83fa6085eb}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!boneName@{boneName}}
+\index{boneName@{boneName}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{boneName}{boneName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Bone\+Follower.\+bone\+Name}
+
+
+
+If a bone isn\textquotesingle{}t set in code, bone\+Name is used to find the bone at the beginning. For runtime switching by name, use Set\+Bone\+By\+Name. You can also set the \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a973f9b0e521e536b61a71200a9e10799}{Bone\+Follower.\+bone}} field directly. 
+
+
+
+Bone\+Follower.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_af867eb1093072551036b8848eb09ffa7}\label{class_spine_1_1_unity_1_1_bone_follower_af867eb1093072551036b8848eb09ffa7}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!followBoneRotation@{followBoneRotation}}
+\index{followBoneRotation@{followBoneRotation}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{followBoneRotation}{followBoneRotation}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+follow\+Bone\+Rotation = true}
+
+
+
+Bone\+Follower.\+cs 파일의 54 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}\label{class_spine_1_1_unity_1_1_bone_follower_a33d7c4ce6277f2b417942e2bace7b88c}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!followLocalScale@{followLocalScale}}
+\index{followLocalScale@{followLocalScale}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{followLocalScale}{followLocalScale}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+follow\+Local\+Scale = false}
+
+
+
+Bone\+Follower.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_ac3aba7d02b130355c5c036d4531e7e22}\label{class_spine_1_1_unity_1_1_bone_follower_ac3aba7d02b130355c5c036d4531e7e22}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!followSkeletonFlip@{followSkeletonFlip}}
+\index{followSkeletonFlip@{followSkeletonFlip}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{followSkeletonFlip}{followSkeletonFlip}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+follow\+Skeleton\+Flip = true}
+
+
+
+Bone\+Follower.\+cs 파일의 57 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a298773a1c25683505d793d5070ad5460}\label{class_spine_1_1_unity_1_1_bone_follower_a298773a1c25683505d793d5070ad5460}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!followZPosition@{followZPosition}}
+\index{followZPosition@{followZPosition}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{followZPosition}{followZPosition}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+follow\+Z\+Position = true}
+
+
+
+Bone\+Follower.\+cs 파일의 53 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a40489a49ea71cf3dcddd4250fb18ab66}\label{class_spine_1_1_unity_1_1_bone_follower_a40489a49ea71cf3dcddd4250fb18ab66}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!initializeOnAwake@{initializeOnAwake}}
+\index{initializeOnAwake@{initializeOnAwake}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{initializeOnAwake}{initializeOnAwake}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+initialize\+On\+Awake = true}
+
+
+
+Bone\+Follower.\+cs 파일의 63 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}\label{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!skeletonRenderer@{skeletonRenderer}}
+\index{skeletonRenderer@{skeletonRenderer}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{skeletonRenderer}{skeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Bone\+Follower.\+skeleton\+Renderer}
+
+
+
+Bone\+Follower.\+cs 파일의 40 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}\label{class_spine_1_1_unity_1_1_bone_follower_a593233b8a9eedffbca2a3ef5a838a441}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!skeletonTransform@{skeletonTransform}}
+\index{skeletonTransform@{skeletonTransform}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{skeletonTransform}{skeletonTransform}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Bone\+Follower.\+skeleton\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Follower.\+cs 파일의 71 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}\label{class_spine_1_1_unity_1_1_bone_follower_a9a281dcd5dd99f25034295886a7bd1e9}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!skeletonTransformIsParent@{skeletonTransformIsParent}}
+\index{skeletonTransformIsParent@{skeletonTransformIsParent}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{skeletonTransformIsParent}{skeletonTransformIsParent}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+skeleton\+Transform\+Is\+Parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bone\+Follower.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}\label{class_spine_1_1_unity_1_1_bone_follower_ad672fc457f6c01edc65626de94f32380}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!valid@{valid}}
+\index{valid@{valid}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{valid}{valid}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Bone\+Follower.\+valid}
+
+
+
+Bone\+Follower.\+cs 파일의 66 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_bone_follower_a37f75c149c60196c48e3c12624e2fd6e}\label{class_spine_1_1_unity_1_1_bone_follower_a37f75c149c60196c48e3c12624e2fd6e}} 
+\index{Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}!SkeletonRenderer@{SkeletonRenderer}}
+\index{SkeletonRenderer@{SkeletonRenderer}!Spine.Unity.BoneFollower@{Spine.Unity.BoneFollower}}
+\doxysubsubsection{\texorpdfstring{SkeletonRenderer}{SkeletonRenderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} Spine.\+Unity.\+Bone\+Follower.\+Skeleton\+Renderer\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Bone\+Follower.\+cs 파일의 41 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                  \{}
+\DoxyCodeLine{43             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}}; \}}
+\DoxyCodeLine{44             \textcolor{keyword}{set} \{}
+\DoxyCodeLine{45                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_afe72d11badc7bba18a4a015cd4e173a6}{skeletonRenderer}} = value;}
+\DoxyCodeLine{46                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_bone_follower_a626afb6b9214f44e7de8768f348f10a8}{Initialize}}();}
+\DoxyCodeLine{47             \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Components/\mbox{\hyperlink{_bone_follower_8cs}{Bone\+Follower.\+cs}}\end{DoxyCompactItemize}

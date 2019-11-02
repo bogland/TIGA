@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tiga: Assets/Plugins/Spine Examples/Scripts/Mix and Match Character Customize/EquipButtonExample.cs 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Tiga
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','검색');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_equip_button_example_8cs_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">EquipButtonExample.cs</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_equip_button_example_8cs.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using</span> UnityEngine.UI;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html">    8</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html">EquipButtonExample</a> : MonoBehaviour {</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a76c94744c018b7919bea7c2e3b322286">    9</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example.html">EquipAssetExample</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a76c94744c018b7919bea7c2e3b322286">asset</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a0587702d090574f8513023d166c7404a">   10</a></span>&#160;        <span class="keyword">public</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html">EquipSystemExample</a> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a0587702d090574f8513023d166c7404a">equipSystem</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a490c7fdccdd2132dd003cc65f60dc477">   11</a></span>&#160;        <span class="keyword">public</span> Image <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a490c7fdccdd2132dd003cc65f60dc477">inventoryImage</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a51f24d32451b92c13fa4f1e5d72e0083">   13</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a51f24d32451b92c13fa4f1e5d72e0083">OnValidate</a> () {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a741e429c41e8aa6f4f02a39c89946aaf">MatchImage</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a741e429c41e8aa6f4f02a39c89946aaf">   17</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a741e429c41e8aa6f4f02a39c89946aaf">MatchImage</a> () {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a490c7fdccdd2132dd003cc65f60dc477">inventoryImage</a> != <span class="keyword">null</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a490c7fdccdd2132dd003cc65f60dc477">inventoryImage</a>.sprite = <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a76c94744c018b7919bea7c2e3b322286">asset</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example.html#a50ce49ff29bfa5dabf01d23250b176f9">sprite</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a1f732916a8097f5d92785d24c237735f">   22</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a1f732916a8097f5d92785d24c237735f">Start</a> () {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a741e429c41e8aa6f4f02a39c89946aaf">MatchImage</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            var button = GetComponent&lt;Button&gt;();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            button.onClick.AddListener(</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                delegate { <a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a0587702d090574f8513023d166c7404a">equipSystem</a>.<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a080aa2407b434f94d29f346ef72b8fdd">Equip</a>(<a class="code" href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a76c94744c018b7919bea7c2e3b322286">asset</a>); }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            );  </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a76c94744c018b7919bea7c2e3b322286"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a76c94744c018b7919bea7c2e3b322286">Spine.Unity.Examples.EquipButtonExample.asset</a></div><div class="ttdeci">EquipAssetExample asset</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00009">EquipButtonExample.cs:9</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_asset_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example.html">Spine.Unity.Examples.EquipAssetExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_equip_asset_example_8cs_source.html#l00006">EquipAssetExample.cs:6</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a490c7fdccdd2132dd003cc65f60dc477"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a490c7fdccdd2132dd003cc65f60dc477">Spine.Unity.Examples.EquipButtonExample.inventoryImage</a></div><div class="ttdeci">Image inventoryImage</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00011">EquipButtonExample.cs:11</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_system_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html">Spine.Unity.Examples.EquipSystemExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_equip_system_example_8cs_source.html#l00008">EquipSystemExample.cs:8</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a1f732916a8097f5d92785d24c237735f"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a1f732916a8097f5d92785d24c237735f">Spine.Unity.Examples.EquipButtonExample.Start</a></div><div class="ttdeci">void Start()</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00022">EquipButtonExample.cs:22</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a741e429c41e8aa6f4f02a39c89946aaf"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a741e429c41e8aa6f4f02a39c89946aaf">Spine.Unity.Examples.EquipButtonExample.MatchImage</a></div><div class="ttdeci">void MatchImage()</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00017">EquipButtonExample.cs:17</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a0587702d090574f8513023d166c7404a"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a0587702d090574f8513023d166c7404a">Spine.Unity.Examples.EquipButtonExample.equipSystem</a></div><div class="ttdeci">EquipSystemExample equipSystem</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00010">EquipButtonExample.cs:10</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_system_example_html_a080aa2407b434f94d29f346ef72b8fdd"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_system_example.html#a080aa2407b434f94d29f346ef72b8fdd">Spine.Unity.Examples.EquipSystemExample.Equip</a></div><div class="ttdeci">void Equip(EquipAssetExample asset)</div><div class="ttdef"><b>Definition:</b> <a href="_equip_system_example_8cs_source.html#l00037">EquipSystemExample.cs:37</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_asset_example_html_a50ce49ff29bfa5dabf01d23250b176f9"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_asset_example.html#a50ce49ff29bfa5dabf01d23250b176f9">Spine.Unity.Examples.EquipAssetExample.sprite</a></div><div class="ttdeci">Sprite sprite</div><div class="ttdef"><b>Definition:</b> <a href="_equip_asset_example_8cs_source.html#l00008">EquipAssetExample.cs:8</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html_a51f24d32451b92c13fa4f1e5d72e0083"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html#a51f24d32451b92c13fa4f1e5d72e0083">Spine.Unity.Examples.EquipButtonExample.OnValidate</a></div><div class="ttdeci">void OnValidate()</div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00013">EquipButtonExample.cs:13</a></div></div>
+<div class="ttc" id="aclass_spine_1_1_unity_1_1_examples_1_1_equip_button_example_html"><div class="ttname"><a href="class_spine_1_1_unity_1_1_examples_1_1_equip_button_example.html">Spine.Unity.Examples.EquipButtonExample</a></div><div class="ttdef"><b>Definition:</b> <a href="_equip_button_example_8cs_source.html#l00008">EquipButtonExample.cs:8</a></div></div>
+<div class="ttc" id="anamespace_spine_1_1_unity_1_1_examples_html"><div class="ttname"><a href="namespace_spine_1_1_unity_1_1_examples.html">Spine.Unity.Examples</a></div><div class="ttdef"><b>Definition:</b> <a href="_attack_spineboy_8cs_source.html#l00033">AttackSpineboy.cs:33</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_84bbf7b3c7f28a5a18725745e1505219.html">Assets</a></li><li class="navelem"><a class="el" href="dir_c0005b12c1c6ae1cb8e9754bcab8bc3c.html">Plugins</a></li><li class="navelem"><a class="el" href="dir_357e273bdcc4eb25ba9c8561756f4d52.html">Spine Examples</a></li><li class="navelem"><a class="el" href="dir_13eee4734ba4b79a79df5fde23486dad.html">Scripts</a></li><li class="navelem"><a class="el" href="dir_a12b995838825cbac3fe495cb279efa9.html">Mix and Match Character Customize</a></li><li class="navelem"><a class="el" href="_equip_button_example_8cs.html">EquipButtonExample.cs</a></li>
+    <li class="footer">다음에 의해 생성됨 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,896 @@
+\hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d}{}\doxysection{Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2D 클래스 참조}
+\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d}\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9006fbbae6534470661c76520dc23167}{Apply}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the ragdoll simulation and applies its transforms to the skeleton. \end{DoxyCompactList}\item 
+Coroutine \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2e69005efb48a2cb1a068da65b74772f}{Smooth\+Mix}} (float target, float duration)
+\begin{DoxyCompactList}\small\item\em Transitions the mix value from the current value to a target value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a320b0e076a1c7ba45a9c04fa7f0a3da8}{Set\+Skeleton\+Position}} (Vector3 world\+Position)
+\begin{DoxyCompactList}\small\item\em Set the transform world position while preserving the ragdoll parts world position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2d20d2375a3c161baeca0eeeb55691f1}{Remove}} ()
+\begin{DoxyCompactList}\small\item\em Removes the ragdoll instance and effect from the animated skeleton. \end{DoxyCompactList}\item 
+Rigidbody2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab96919e379c10210358775f1646e3fd7}{Get\+Rigidbody}} (string bone\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad2df0c5072acdf426af4c79a91805d6d}{starting\+Bone\+Name}} = \char`\"{}\char`\"{}
+\item 
+List$<$ string $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8c260fa1bad4e4fdd15aa7b8e7e03a6b}{stop\+Bone\+Names}} = new List$<$string$>$()
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad998d1cc8b6740e17d8b908f7d670a9c}{apply\+On\+Start}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c1e1fcc8d65750d43e5022a460878e7}{disable\+IK}} = true
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a52f0580a3235dcc3f793e1f5933174}{disable\+Other\+Constraints}} = false
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad6bde9bd96059d96ffbd4e56b88db451}{pin\+Start\+Bone}}
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravity\+Scale}} = 1
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab6a7f2c03b511d0c832750e67457c5c3}{thickness}} = 0.\+125f
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_adff79d67380e67b907ca8c64587f672f}{rotation\+Limit}} = 20
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8ee733a933cad9497ba8d3e8be440841}{root\+Mass}} = 20
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_abc48f1add8709117209922b2973560e4}{mass\+Falloff\+Factor}} = 0.\+4f
+\item 
+int \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8708a6bd2d716f33a7f3c8aac8267634}{collider\+Layer}} = 0
+\item 
+float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}} = 1
+\end{DoxyCompactItemize}
+\doxysubsection*{속성}
+\begin{DoxyCompactItemize}
+\item 
+Rigidbody2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}{Root\+Rigidbody}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c3e8ced114c56a6ea195720a6a2db4c}{Starting\+Bone}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ac3e1862ae6bacc760923835bdcdf23e0}{Root\+Offset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a4ebeb8a7ecabd313d5d9855fad509e65}{Is\+Active}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Rigidbody2D\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9f19097f651d40f52375c5d516601c2e}{Rigidbody\+Array}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8a2c7121366eb348e0188e08e7bb626a}{Estimated\+Skeleton\+Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a23ebfe791f3695bb4fd94bbcdad8af48}{Start}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a271a2d6ea13679f5b57db308ad58b2f9}{Smooth\+Mix\+Coroutine}} (float target, float duration)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7d5993854be698802b47831c3948b669}{Recursively\+Create\+Bone\+Proxies}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b)
+\begin{DoxyCompactList}\small\item\em Generates the ragdoll simulation\textquotesingle{}s Transform and joint setup. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}{Update\+Spine\+Skeleton}} (\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} animated\+Skeleton)
+\begin{DoxyCompactList}\small\item\em Performed every skeleton animation update to translate \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Transforms positions into \mbox{\hyperlink{namespace_spine}{Spine}} bone transforms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static List$<$ Collider2D $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a623edb8f3c4c3a78092c97613d1d2c14}{Attach\+Bounding\+Box\+Ragdoll\+Colliders}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b, Game\+Object go, \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}, float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravity\+Scale}})
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a3109fd77a62d01773f0183cc80475b}{Get\+Propagated\+Rotation}} (\mbox{\hyperlink{class_spine_1_1_bone}{Bone}} b)
+\item 
+static Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7bd8d8042b2127d061b44bed5248110c}{Flip\+Scale}} (bool flipX, bool flipY)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{target\+Skeleton\+Component}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}
+\item 
+Dictionary$<$ \mbox{\hyperlink{class_spine_1_1_bone}{Bone}}, Transform $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{bone\+Table}} = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}, Transform$>$()
+\item 
+Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdoll\+Root}}
+\item 
+Vector2 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}{root\+Offset}}
+\item 
+bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{is\+Active}}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static Transform \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parent\+Space\+Helper}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 38 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9006fbbae6534470661c76520dc23167}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9006fbbae6534470661c76520dc23167}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!Apply@{Apply}}
+\index{Apply@{Apply}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{Apply()}{Apply()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Apply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the ragdoll simulation and applies its transforms to the skeleton. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 120 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121                              \{}
+\DoxyCodeLine{122             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{isActive}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{123             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}} = 1;}
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125             Bone startingBone = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c3e8ced114c56a6ea195720a6a2db4c}{StartingBone}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{FindBone}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad2df0c5072acdf426af4c79a91805d6d}{startingBoneName}});}
+\DoxyCodeLine{126             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7d5993854be698802b47831c3948b669}{RecursivelyCreateBoneProxies}}(startingBone);}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}{RootRigidbody}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}[startingBone].GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{129             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}{RootRigidbody}}.isKinematic = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad6bde9bd96059d96ffbd4e56b88db451}{pinStartBone}};}
+\DoxyCodeLine{130             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}{RootRigidbody}}.mass = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8ee733a933cad9497ba8d3e8be440841}{rootMass}};}
+\DoxyCodeLine{131             var boneColliders = \textcolor{keyword}{new} List<Collider2D>();}
+\DoxyCodeLine{132             \textcolor{keywordflow}{foreach} (var pair \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}) \{}
+\DoxyCodeLine{133                 var b = pair.Key;}
+\DoxyCodeLine{134                 var t = pair.Value;}
+\DoxyCodeLine{135                 Transform parentTransform;}
+\DoxyCodeLine{136                 boneColliders.Add(t.GetComponent<Collider2D>());}
+\DoxyCodeLine{137                 \textcolor{keywordflow}{if} (b == startingBone) \{}
+\DoxyCodeLine{138                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}} = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"RagdollRoot"}).transform;}
+\DoxyCodeLine{139                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.SetParent(transform, \textcolor{keyword}{false});}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{if} (b == \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa5f94e0868346eb600d46d28a23151de}{RootBone}}) \{ \textcolor{comment}{// RagdollRoot is skeleton root.}}
+\DoxyCodeLine{141                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.localPosition = \textcolor{keyword}{new} Vector3(b.WorldX, b.WorldY, 0);}
+\DoxyCodeLine{142                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.localRotation = Quaternion.Euler(0, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a3109fd77a62d01773f0183cc80475b}{GetPropagatedRotation}}(b));}
+\DoxyCodeLine{143                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{144                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.localPosition = \textcolor{keyword}{new} Vector3(b.Parent.WorldX, b.Parent.WorldY, 0);}
+\DoxyCodeLine{145                         \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.localRotation = Quaternion.Euler(0, 0, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a3109fd77a62d01773f0183cc80475b}{GetPropagatedRotation}}(b.Parent));}
+\DoxyCodeLine{146                     \}}
+\DoxyCodeLine{147                     parentTransform = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}};}
+\DoxyCodeLine{148                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}{rootOffset}} = t.position -\/ transform.position;}
+\DoxyCodeLine{149                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{150                     parentTransform = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}[b.Parent];}
+\DoxyCodeLine{151                 \}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153                 \textcolor{comment}{// Add joint and attach to parent.}}
+\DoxyCodeLine{154                 var rbParent = parentTransform.GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{155                 \textcolor{keywordflow}{if} (rbParent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{156                     var joint = t.gameObject.AddComponent<HingeJoint2D>();}
+\DoxyCodeLine{157                     joint.connectedBody = rbParent;}
+\DoxyCodeLine{158                     Vector3 localPos = parentTransform.InverseTransformPoint(t.position);}
+\DoxyCodeLine{159                     joint.connectedAnchor = localPos;}
+\DoxyCodeLine{160 }
+\DoxyCodeLine{161                     joint.GetComponent<Rigidbody2D>().mass = joint.connectedBody.mass * \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_abc48f1add8709117209922b2973560e4}{massFalloffFactor}};}
+\DoxyCodeLine{162                     joint.limits = \textcolor{keyword}{new} JointAngleLimits2D \{}
+\DoxyCodeLine{163                         min = -\/\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_adff79d67380e67b907ca8c64587f672f}{rotationLimit}},}
+\DoxyCodeLine{164                         max = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_adff79d67380e67b907ca8c64587f672f}{rotationLimit}}}
+\DoxyCodeLine{165                     \};}
+\DoxyCodeLine{166                     joint.useLimits = \textcolor{keyword}{true};}
+\DoxyCodeLine{167                 \}}
+\DoxyCodeLine{168             \}}
+\DoxyCodeLine{169 }
+\DoxyCodeLine{170             \textcolor{comment}{// Ignore collisions among bones.}}
+\DoxyCodeLine{171             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} x = 0; x < boneColliders.Count; x++) \{}
+\DoxyCodeLine{172                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} y = 0; y < boneColliders.Count; y++) \{}
+\DoxyCodeLine{173                     \textcolor{keywordflow}{if} (x == y) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{174                     Physics2D.IgnoreCollision(boneColliders[x], boneColliders[y]);}
+\DoxyCodeLine{175                 \}}
+\DoxyCodeLine{176             \}}
+\DoxyCodeLine{177 }
+\DoxyCodeLine{178             \textcolor{comment}{// Destroy existing override-\/mode SkeletonUtility bones.}}
+\DoxyCodeLine{179             var utilityBones = GetComponentsInChildren<SkeletonUtilityBone>();}
+\DoxyCodeLine{180             \textcolor{keywordflow}{if} (utilityBones.Length > 0) \{}
+\DoxyCodeLine{181                 var destroyedUtilityBoneNames = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{foreach} (var ub \textcolor{keywordflow}{in} utilityBones) \{}
+\DoxyCodeLine{183                     \textcolor{keywordflow}{if} (ub.mode == SkeletonUtilityBone.Mode.Override) \{}
+\DoxyCodeLine{184                         destroyedUtilityBoneNames.Add(ub.gameObject.name);}
+\DoxyCodeLine{185                         Destroy(ub.gameObject);}
+\DoxyCodeLine{186                     \}}
+\DoxyCodeLine{187                 \}}
+\DoxyCodeLine{188                 \textcolor{keywordflow}{if} (destroyedUtilityBoneNames.Count > 0) \{}
+\DoxyCodeLine{189                     \textcolor{keywordtype}{string} msg = \textcolor{stringliteral}{"Destroyed Utility Bones: "};}
+\DoxyCodeLine{190                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < destroyedUtilityBoneNames.Count; i++) \{}
+\DoxyCodeLine{191                         msg += destroyedUtilityBoneNames[i];}
+\DoxyCodeLine{192                         \textcolor{keywordflow}{if} (i != destroyedUtilityBoneNames.Count -\/ 1) \{}
+\DoxyCodeLine{193                             msg += \textcolor{stringliteral}{","};}
+\DoxyCodeLine{194                         \}}
+\DoxyCodeLine{195                     \}}
+\DoxyCodeLine{196                     Debug.LogWarning(msg);}
+\DoxyCodeLine{197                 \}}
+\DoxyCodeLine{198             \}}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200             \textcolor{comment}{// Disable skeleton constraints.}}
+\DoxyCodeLine{201             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c1e1fcc8d65750d43e5022a460878e7}{disableIK}}) \{}
+\DoxyCodeLine{202                 var ikConstraints = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a9fc9acb3f7d51836ebc40388758e13c6}{IkConstraints}};}
+\DoxyCodeLine{203                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = ikConstraints.Count; i < n; i++)}
+\DoxyCodeLine{204                     ikConstraints.Items[i].mix = 0;}
+\DoxyCodeLine{205             \}}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a52f0580a3235dcc3f793e1f5933174}{disableOtherConstraints}}) \{}
+\DoxyCodeLine{208                 var transformConstraints = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.transformConstraints;}
+\DoxyCodeLine{209                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = transformConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{210                     transformConstraints.Items[i].rotateMix = 0;}
+\DoxyCodeLine{211                     transformConstraints.Items[i].scaleMix = 0;}
+\DoxyCodeLine{212                     transformConstraints.Items[i].shearMix = 0;}
+\DoxyCodeLine{213                     transformConstraints.Items[i].translateMix = 0;}
+\DoxyCodeLine{214                 \}}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216                 var pathConstraints = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.pathConstraints;}
+\DoxyCodeLine{217                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, n = pathConstraints.Count; i < n; i++) \{}
+\DoxyCodeLine{218                     pathConstraints.Items[i].rotateMix = 0;}
+\DoxyCodeLine{219                     pathConstraints.Items[i].translateMix = 0;}
+\DoxyCodeLine{220                 \}}
+\DoxyCodeLine{221             \}}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{targetSkeletonComponent}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ae1c662ef2143a2f3d3529f1f7b6f66d6}{UpdateWorld}} += \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}{UpdateSpineSkeleton}};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a623edb8f3c4c3a78092c97613d1d2c14}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a623edb8f3c4c3a78092c97613d1d2c14}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!AttachBoundingBoxRagdollColliders@{AttachBoundingBoxRagdollColliders}}
+\index{AttachBoundingBoxRagdollColliders@{AttachBoundingBoxRagdollColliders}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{AttachBoundingBoxRagdollColliders()}{AttachBoundingBoxRagdollColliders()}}
+{\footnotesize\ttfamily static List$<$Collider2D$>$ Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Attach\+Bounding\+Box\+Ragdoll\+Colliders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{b,  }\item[{Game\+Object}]{go,  }\item[{\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}}]{skeleton,  }\item[{float}]{gravity\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 358 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{359                                                                                                                                  \{}
+\DoxyCodeLine{360             \textcolor{keyword}{const} \textcolor{keywordtype}{string} AttachmentNameMarker = \textcolor{stringliteral}{"ragdoll"};}
+\DoxyCodeLine{361             var colliders = \textcolor{keyword}{new} List<Collider2D>();}
+\DoxyCodeLine{362             var skin = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Skin}} ?? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{DefaultSkin}};}
+\DoxyCodeLine{363 }
+\DoxyCodeLine{364             var attachments = \textcolor{keyword}{new} List<Attachment>();}
+\DoxyCodeLine{365             \textcolor{keywordflow}{foreach} (Slot s \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}) \{}
+\DoxyCodeLine{366                 \textcolor{keywordflow}{if} (s.bone == b) \{}
+\DoxyCodeLine{367                     skin.FindAttachmentsForSlot(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_af72992c14e5cab05511330483a21e902}{Slots}}.IndexOf(s), attachments);}
+\DoxyCodeLine{368                     \textcolor{keywordflow}{foreach} (var a \textcolor{keywordflow}{in} attachments) \{}
+\DoxyCodeLine{369                         var bbAttachment = a as BoundingBoxAttachment;}
+\DoxyCodeLine{370                         \textcolor{keywordflow}{if} (bbAttachment != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{371                             \textcolor{keywordflow}{if} (!a.Name.ToLower().Contains(AttachmentNameMarker))}
+\DoxyCodeLine{372                                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{373 }
+\DoxyCodeLine{374                             var bbCollider = SkeletonUtility.AddBoundingBoxAsComponent(bbAttachment, s, go, isTrigger: \textcolor{keyword}{false}, isKinematic: \textcolor{keyword}{false}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravityScale}}: \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravityScale}});}
+\DoxyCodeLine{375                             colliders.Add(bbCollider);}
+\DoxyCodeLine{376                         \}}
+\DoxyCodeLine{377                     \}}
+\DoxyCodeLine{378                 \}}
+\DoxyCodeLine{379             \}}
+\DoxyCodeLine{380 }
+\DoxyCodeLine{381             \textcolor{keywordflow}{return} colliders;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7bd8d8042b2127d061b44bed5248110c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7bd8d8042b2127d061b44bed5248110c}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!FlipScale@{FlipScale}}
+\index{FlipScale@{FlipScale}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{FlipScale()}{FlipScale()}}
+{\footnotesize\ttfamily static Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Flip\+Scale (\begin{DoxyParamCaption}\item[{bool}]{flipX,  }\item[{bool}]{flipY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 393 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{394                                                           \{}
+\DoxyCodeLine{395             \textcolor{keywordflow}{return} \textcolor{keyword}{new} Vector3(flipX ? -\/1f : 1f, flipY ? -\/1f : 1f, 1f);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a3109fd77a62d01773f0183cc80475b}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a3109fd77a62d01773f0183cc80475b}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!GetPropagatedRotation@{GetPropagatedRotation}}
+\index{GetPropagatedRotation@{GetPropagatedRotation}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{GetPropagatedRotation()}{GetPropagatedRotation()}}
+{\footnotesize\ttfamily static float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Get\+Propagated\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 383 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{384                                                     \{}
+\DoxyCodeLine{385             Bone parent = b.Parent;}
+\DoxyCodeLine{386             \textcolor{keywordtype}{float} a = b.AppliedRotation;}
+\DoxyCodeLine{387             \textcolor{keywordflow}{while} (parent != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{388                 a += parent.AppliedRotation;}
+\DoxyCodeLine{389                 parent = parent.parent;}
+\DoxyCodeLine{390             \}}
+\DoxyCodeLine{391             \textcolor{keywordflow}{return} a;}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab96919e379c10210358775f1646e3fd7}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab96919e379c10210358775f1646e3fd7}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!GetRigidbody@{GetRigidbody}}
+\index{GetRigidbody@{GetRigidbody}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{GetRigidbody()}{GetRigidbody()}}
+{\footnotesize\ttfamily Rigidbody2D Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Get\+Rigidbody (\begin{DoxyParamCaption}\item[{string}]{bone\+Name }\end{DoxyParamCaption})}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 267 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{268                                                           \{}
+\DoxyCodeLine{269             var bone = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_ac17fa59f8524f84672419a2e9c676666}{FindBone}}(boneName);}
+\DoxyCodeLine{270             \textcolor{keywordflow}{return} (bone != \textcolor{keyword}{null} \&\& \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.ContainsKey(bone)) ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}[bone].GetComponent<Rigidbody2D>() : \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7d5993854be698802b47831c3948b669}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7d5993854be698802b47831c3948b669}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!RecursivelyCreateBoneProxies@{RecursivelyCreateBoneProxies}}
+\index{RecursivelyCreateBoneProxies@{RecursivelyCreateBoneProxies}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{RecursivelyCreateBoneProxies()}{RecursivelyCreateBoneProxies()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Recursively\+Create\+Bone\+Proxies (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Generates the ragdoll simulation\textquotesingle{}s Transform and joint setup. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 274 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{275                                                    \{}
+\DoxyCodeLine{276             \textcolor{keywordtype}{string} boneName = b.data.name;}
+\DoxyCodeLine{277             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8c260fa1bad4e4fdd15aa7b8e7e03a6b}{stopBoneNames}}.Contains(boneName))}
+\DoxyCodeLine{278                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280             var boneGameObject = \textcolor{keyword}{new} GameObject(boneName);}
+\DoxyCodeLine{281             boneGameObject.layer = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8708a6bd2d716f33a7f3c8aac8267634}{colliderLayer}};}
+\DoxyCodeLine{282             Transform t = boneGameObject.transform;}
+\DoxyCodeLine{283             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Add(b, t);}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285             t.parent = transform;}
+\DoxyCodeLine{286             t.localPosition = \textcolor{keyword}{new} Vector3(b.WorldX, b.WorldY, 0);}
+\DoxyCodeLine{287             t.localRotation = Quaternion.Euler(0, 0, b.WorldRotationX -\/ b.shearX);}
+\DoxyCodeLine{288             t.localScale = \textcolor{keyword}{new} Vector3(b.WorldScaleX, b.WorldScaleY, 0);}
+\DoxyCodeLine{289 }
+\DoxyCodeLine{290             \textcolor{comment}{// MITCH: You left "todo: proper ragdoll branching"}}
+\DoxyCodeLine{291             var colliders = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a623edb8f3c4c3a78092c97613d1d2c14}{AttachBoundingBoxRagdollColliders}}(b, boneGameObject, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}, this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravityScale}});}
+\DoxyCodeLine{292             \textcolor{keywordflow}{if} (colliders.Count == 0) \{}
+\DoxyCodeLine{293                 \textcolor{keywordtype}{float} length = b.data.length;}
+\DoxyCodeLine{294                 \textcolor{keywordflow}{if} (length == 0) \{}
+\DoxyCodeLine{295                     var circle = boneGameObject.AddComponent<CircleCollider2D>();}
+\DoxyCodeLine{296                     circle.radius = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab6a7f2c03b511d0c832750e67457c5c3}{thickness}} * 0.5f;}
+\DoxyCodeLine{297                 \} \textcolor{keywordflow}{else} \{                }
+\DoxyCodeLine{298                     var box = boneGameObject.AddComponent<BoxCollider2D>();}
+\DoxyCodeLine{299                     box.size = \textcolor{keyword}{new} Vector2(length, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab6a7f2c03b511d0c832750e67457c5c3}{thickness}});}
+\DoxyCodeLine{300                     box.offset = \textcolor{keyword}{new} Vector2(length * 0.5f, 0); \textcolor{comment}{// box.center in UNITY\_4}}
+\DoxyCodeLine{301                 \}}
+\DoxyCodeLine{302             \}}
+\DoxyCodeLine{303 }
+\DoxyCodeLine{304             var rb = boneGameObject.GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{305             \textcolor{keywordflow}{if} (rb == \textcolor{keyword}{null}) rb = boneGameObject.AddComponent<Rigidbody2D>();}
+\DoxyCodeLine{306             rb.gravityScale = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}{gravityScale}};}
+\DoxyCodeLine{307 }
+\DoxyCodeLine{308             \textcolor{keywordflow}{foreach} (Bone child \textcolor{keywordflow}{in} b.Children)}
+\DoxyCodeLine{309                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a7d5993854be698802b47831c3948b669}{RecursivelyCreateBoneProxies}}(child);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2d20d2375a3c161baeca0eeeb55691f1}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2d20d2375a3c161baeca0eeeb55691f1}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!Remove@{Remove}}
+\index{Remove@{Remove}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Remove (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes the ragdoll instance and effect from the animated skeleton. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 257 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{258                               \{}
+\DoxyCodeLine{259             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{isActive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{260             \textcolor{keywordflow}{foreach} (var t \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Values)}
+\DoxyCodeLine{261                 Destroy(t.gameObject);}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263             Destroy(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}}.gameObject);}
+\DoxyCodeLine{264             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Clear();}
+\DoxyCodeLine{265             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{targetSkeletonComponent}}.\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation_ae1c662ef2143a2f3d3529f1f7b6f66d6}{UpdateWorld}} -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}{UpdateSpineSkeleton}};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a320b0e076a1c7ba45a9c04fa7f0a3da8}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a320b0e076a1c7ba45a9c04fa7f0a3da8}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!SetSkeletonPosition@{SetSkeletonPosition}}
+\index{SetSkeletonPosition@{SetSkeletonPosition}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{SetSkeletonPosition()}{SetSkeletonPosition()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Set\+Skeleton\+Position (\begin{DoxyParamCaption}\item[{Vector3}]{world\+Position }\end{DoxyParamCaption})}
+
+
+
+Set the transform world position while preserving the ragdoll parts world position. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 241 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{242                                                                 \{}
+\DoxyCodeLine{243             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{isActive}}) \{}
+\DoxyCodeLine{244                 Debug.LogWarning(\textcolor{stringliteral}{"Can't call SetSkeletonPosition while Ragdoll is not active!"});}
+\DoxyCodeLine{245                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{246             \}}
+\DoxyCodeLine{247 }
+\DoxyCodeLine{248             Vector3 offset = worldPosition -\/ transform.position;}
+\DoxyCodeLine{249             transform.position = worldPosition;}
+\DoxyCodeLine{250             \textcolor{keywordflow}{foreach} (Transform t \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Values)}
+\DoxyCodeLine{251                 t.position -\/= offset;}
+\DoxyCodeLine{252 }
+\DoxyCodeLine{253             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}{UpdateSpineSkeleton}}(\textcolor{keyword}{null});}
+\DoxyCodeLine{254             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a108d4c6208e6c9a1ed4ca6bd50da1aa2}{UpdateWorldTransform}}();}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2e69005efb48a2cb1a068da65b74772f}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2e69005efb48a2cb1a068da65b74772f}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!SmoothMix@{SmoothMix}}
+\index{SmoothMix@{SmoothMix}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{SmoothMix()}{SmoothMix()}}
+{\footnotesize\ttfamily Coroutine Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Smooth\+Mix (\begin{DoxyParamCaption}\item[{float}]{target,  }\item[{float}]{duration }\end{DoxyParamCaption})}
+
+
+
+Transitions the mix value from the current value to a target value. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 226 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{227                                                                   \{}
+\DoxyCodeLine{228             \textcolor{keywordflow}{return} StartCoroutine(\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a271a2d6ea13679f5b57db308ad58b2f9}{SmoothMixCoroutine}}(target, duration));}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a271a2d6ea13679f5b57db308ad58b2f9}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a271a2d6ea13679f5b57db308ad58b2f9}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!SmoothMixCoroutine@{SmoothMixCoroutine}}
+\index{SmoothMixCoroutine@{SmoothMixCoroutine}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{SmoothMixCoroutine()}{SmoothMixCoroutine()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Smooth\+Mix\+Coroutine (\begin{DoxyParamCaption}\item[{float}]{target,  }\item[{float}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 230 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{231                                                                       \{}
+\DoxyCodeLine{232             \textcolor{keywordtype}{float} startTime = Time.time;}
+\DoxyCodeLine{233             \textcolor{keywordtype}{float} startMix = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}};}
+\DoxyCodeLine{234             \textcolor{keywordflow}{while} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}} > 0) \{}
+\DoxyCodeLine{235                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_acdcb41164c617375a198124234134312}{SetBonesToSetupPose}}();}
+\DoxyCodeLine{236                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}} = Mathf.SmoothStep(startMix, target, (Time.time -\/ startTime) / duration);}
+\DoxyCodeLine{237                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{238             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a23ebfe791f3695bb4fd94bbcdad8af48}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a23ebfe791f3695bb4fd94bbcdad8af48}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily I\+Enumerator Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 83 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{84                              \{}
+\DoxyCodeLine{85             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}} == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{86                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}} = (\textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"Parent Space Helper"})).transform;}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{targetSkeletonComponent}} = GetComponent<SkeletonRenderer>() as ISkeletonAnimation;}
+\DoxyCodeLine{90             if (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{targetSkeletonComponent}} == null) Debug.LogError("Attached \mbox{\hyperlink{namespace_spine}{Spine}} component does not implement ISkeletonAnimation. This script is not compatible.");}
+\DoxyCodeLine{91             \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}{targetSkeletonComponent}}.Skeleton;}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93             if (\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad998d1cc8b6740e17d8b908f7d670a9c}{applyOnStart}}) \{}
+\DoxyCodeLine{94                 yield \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{95                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9006fbbae6534470661c76520dc23167}{Apply}}();}
+\DoxyCodeLine{96             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21a62df41af2d47c8d8a9726c6142321}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!UpdateSpineSkeleton@{UpdateSpineSkeleton}}
+\index{UpdateSpineSkeleton@{UpdateSpineSkeleton}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{UpdateSpineSkeleton()}{UpdateSpineSkeleton()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Update\+Spine\+Skeleton (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}}}]{animated\+Skeleton }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performed every skeleton animation update to translate \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} Transforms positions into \mbox{\hyperlink{namespace_spine}{Spine}} bone transforms. 
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 312 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{313                                                                        \{}
+\DoxyCodeLine{314             \textcolor{keywordtype}{bool} flipX = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.flipX;}
+\DoxyCodeLine{315             \textcolor{keywordtype}{bool} flipY = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}{skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a822b9b8fcd7317f2bcce7aa217d989c7}{flipY}};}
+\DoxyCodeLine{316             \textcolor{keywordtype}{bool} flipXOR = flipX \string^ flipY;}
+\DoxyCodeLine{317             \textcolor{keywordtype}{bool} flipOR = flipX || flipY;}
+\DoxyCodeLine{318             var startingBone = this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c3e8ced114c56a6ea195720a6a2db4c}{StartingBone}};}
+\DoxyCodeLine{319 }
+\DoxyCodeLine{320             \textcolor{keywordflow}{foreach} (var pair \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}) \{}
+\DoxyCodeLine{321                 var b = pair.Key;}
+\DoxyCodeLine{322                 var t = pair.Value;}
+\DoxyCodeLine{323                 \textcolor{keywordtype}{bool} isStartingBone = (b == startingBone);}
+\DoxyCodeLine{324                 Transform parentTransform = isStartingBone ? \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}{ragdollRoot}} : \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}[b.Parent];}
+\DoxyCodeLine{325                 Vector3 parentTransformWorldPosition = parentTransform.position;}
+\DoxyCodeLine{326                 Quaternion parentTransformWorldRotation = parentTransform.rotation;}
+\DoxyCodeLine{327 }
+\DoxyCodeLine{328                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}}.position = parentTransformWorldPosition;}
+\DoxyCodeLine{329                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}}.rotation = parentTransformWorldRotation;}
+\DoxyCodeLine{330                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}}.localScale = parentTransform.localScale;}
+\DoxyCodeLine{331 }
+\DoxyCodeLine{332                 Vector3 boneWorldPosition = t.position;}
+\DoxyCodeLine{333                 Vector3 right = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}}.InverseTransformDirection(t.right);}
+\DoxyCodeLine{334 }
+\DoxyCodeLine{335                 Vector3 boneLocalPosition = \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}{parentSpaceHelper}}.InverseTransformPoint(boneWorldPosition);}
+\DoxyCodeLine{336                 \textcolor{keywordtype}{float} boneLocalRotation = Mathf.Atan2(right.y, right.x) * Mathf.Rad2Deg;}
+\DoxyCodeLine{337                 \textcolor{keywordflow}{if} (flipOR) \{}
+\DoxyCodeLine{338                     \textcolor{keywordflow}{if} (isStartingBone) \{}
+\DoxyCodeLine{339                         \textcolor{keywordflow}{if} (flipX) boneLocalPosition.x *= -\/1f;}
+\DoxyCodeLine{340                         \textcolor{keywordflow}{if} (flipY) boneLocalPosition.y *= -\/1f;}
+\DoxyCodeLine{341 }
+\DoxyCodeLine{342                         boneLocalRotation = boneLocalRotation * (flipXOR ? -\/1f : 1f);}
+\DoxyCodeLine{343                         \textcolor{keywordflow}{if} (flipX) boneLocalRotation += 180;}
+\DoxyCodeLine{344                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{345                         \textcolor{keywordflow}{if} (flipXOR) \{}
+\DoxyCodeLine{346                             boneLocalRotation *= -\/1f;}
+\DoxyCodeLine{347                             boneLocalPosition.y *= -\/1f; \textcolor{comment}{// wtf??}}
+\DoxyCodeLine{348                         \}}
+\DoxyCodeLine{349                     \}}
+\DoxyCodeLine{350                 \}}
+\DoxyCodeLine{351 }
+\DoxyCodeLine{352                 b.x = Mathf.Lerp(b.x, boneLocalPosition.x, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}});}
+\DoxyCodeLine{353                 b.y = Mathf.Lerp(b.y, boneLocalPosition.y, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}});}
+\DoxyCodeLine{354                 b.rotation = Mathf.Lerp(b.rotation, boneLocalRotation, \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}{mix}});}
+\DoxyCodeLine{355                 \textcolor{comment}{//b.AppliedRotation = Mathf.Lerp(b.AppliedRotation, boneLocalRotation, mix);}}
+\DoxyCodeLine{356             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad998d1cc8b6740e17d8b908f7d670a9c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad998d1cc8b6740e17d8b908f7d670a9c}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!applyOnStart@{applyOnStart}}
+\index{applyOnStart@{applyOnStart}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{applyOnStart}{applyOnStart}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+apply\+On\+Start}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!boneTable@{boneTable}}
+\index{boneTable@{boneTable}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{boneTable}{boneTable}}
+{\footnotesize\ttfamily Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}, Transform$>$ Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+bone\+Table = new Dictionary$<$\mbox{\hyperlink{class_spine_1_1_bone}{Bone}}, Transform$>$()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 74 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8708a6bd2d716f33a7f3c8aac8267634}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8708a6bd2d716f33a7f3c8aac8267634}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!colliderLayer@{colliderLayer}}
+\index{colliderLayer@{colliderLayer}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{colliderLayer}{colliderLayer}}
+{\footnotesize\ttfamily int Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+collider\+Layer = 0}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 67 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c1e1fcc8d65750d43e5022a460878e7}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c1e1fcc8d65750d43e5022a460878e7}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!disableIK@{disableIK}}
+\index{disableIK@{disableIK}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{disableIK}{disableIK}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+disable\+IK = true}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 51 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a52f0580a3235dcc3f793e1f5933174}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a6a52f0580a3235dcc3f793e1f5933174}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!disableOtherConstraints@{disableOtherConstraints}}
+\index{disableOtherConstraints@{disableOtherConstraints}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{disableOtherConstraints}{disableOtherConstraints}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+disable\+Other\+Constraints = false}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 52 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a74848b288d0bac32df7cc82362e4f2d5}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!gravityScale@{gravityScale}}
+\index{gravityScale@{gravityScale}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{gravityScale}{gravityScale}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+gravity\+Scale = 1}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 56 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!isActive@{isActive}}
+\index{isActive@{isActive}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+is\+Active\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 80 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_abc48f1add8709117209922b2973560e4}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_abc48f1add8709117209922b2973560e4}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!massFalloffFactor@{massFalloffFactor}}
+\index{massFalloffFactor@{massFalloffFactor}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{massFalloffFactor}{massFalloffFactor}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+mass\+Falloff\+Factor = 0.\+4f}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 64 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_aeed34497dcaab6dfa09725a995480e02}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!mix@{mix}}
+\index{mix@{mix}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{mix}{mix}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+mix = 1}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 69 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ae02f3001b46456260dce23e9b265a3c3}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!parentSpaceHelper@{parentSpaceHelper}}
+\index{parentSpaceHelper@{parentSpaceHelper}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{parentSpaceHelper}{parentSpaceHelper}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+parent\+Space\+Helper\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad6bde9bd96059d96ffbd4e56b88db451}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad6bde9bd96059d96ffbd4e56b88db451}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!pinStartBone@{pinStartBone}}
+\index{pinStartBone@{pinStartBone}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{pinStartBone}{pinStartBone}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+pin\+Start\+Bone}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a21ca96d276a6b678cc3145f86dd41081}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!ragdollRoot@{ragdollRoot}}
+\index{ragdollRoot@{ragdollRoot}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{ragdollRoot}{ragdollRoot}}
+{\footnotesize\ttfamily Transform Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+ragdoll\+Root\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 75 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8ee733a933cad9497ba8d3e8be440841}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8ee733a933cad9497ba8d3e8be440841}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!rootMass@{rootMass}}
+\index{rootMass@{rootMass}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{rootMass}{rootMass}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+root\+Mass = 20}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 61 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!rootOffset@{rootOffset}}
+\index{rootOffset@{rootOffset}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{rootOffset}{rootOffset}}
+{\footnotesize\ttfamily Vector2 Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+root\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 78 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_adff79d67380e67b907ca8c64587f672f}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_adff79d67380e67b907ca8c64587f672f}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!rotationLimit@{rotationLimit}}
+\index{rotationLimit@{rotationLimit}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{rotationLimit}{rotationLimit}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+rotation\+Limit = 20}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 60 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a633a02f7470e53931fb19a1362e2c3cd}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!skeleton@{skeleton}}
+\index{skeleton@{skeleton}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{skeleton}{skeleton}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}} Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+skeleton\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 73 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad2df0c5072acdf426af4c79a91805d6d}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ad2df0c5072acdf426af4c79a91805d6d}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!startingBoneName@{startingBoneName}}
+\index{startingBoneName@{startingBoneName}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{startingBoneName}{startingBoneName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+starting\+Bone\+Name = \char`\"{}\char`\"{}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 44 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8c260fa1bad4e4fdd15aa7b8e7e03a6b}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8c260fa1bad4e4fdd15aa7b8e7e03a6b}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!stopBoneNames@{stopBoneNames}}
+\index{stopBoneNames@{stopBoneNames}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{stopBoneNames}{stopBoneNames}}
+{\footnotesize\ttfamily List$<$string$>$ Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+stop\+Bone\+Names = new List$<$string$>$()}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 46 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ada9ee2a2fadfd6ff58162489bedeeb41}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!targetSkeletonComponent@{targetSkeletonComponent}}
+\index{targetSkeletonComponent@{targetSkeletonComponent}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{targetSkeletonComponent}{targetSkeletonComponent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interface_spine_1_1_unity_1_1_i_skeleton_animation}{I\+Skeleton\+Animation}} Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+target\+Skeleton\+Component\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 72 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab6a7f2c03b511d0c832750e67457c5c3}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab6a7f2c03b511d0c832750e67457c5c3}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!thickness@{thickness}}
+\index{thickness@{thickness}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{thickness}{thickness}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+thickness = 0.\+125f}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 58 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{속성 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8a2c7121366eb348e0188e08e7bb626a}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a8a2c7121366eb348e0188e08e7bb626a}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!EstimatedSkeletonPosition@{EstimatedSkeletonPosition}}
+\index{EstimatedSkeletonPosition@{EstimatedSkeletonPosition}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{EstimatedSkeletonPosition}{EstimatedSkeletonPosition}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Estimated\+Skeleton\+Position\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 115 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{116                                                  \{}
+\DoxyCodeLine{117             \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}{RootRigidbody}}.position -\/ \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}{rootOffset}}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a4ebeb8a7ecabd313d5d9855fad509e65}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a4ebeb8a7ecabd313d5d9855fad509e65}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{IsActive}{IsActive}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Is\+Active\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 81 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{isActive}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9f19097f651d40f52375c5d516601c2e}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9f19097f651d40f52375c5d516601c2e}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!RigidbodyArray@{RigidbodyArray}}
+\index{RigidbodyArray@{RigidbodyArray}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{RigidbodyArray}{RigidbodyArray}}
+{\footnotesize\ttfamily Rigidbody2D \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Rigidbody\+Array\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 99 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100                                             \{}
+\DoxyCodeLine{101             \textcolor{keyword}{get} \{}
+\DoxyCodeLine{102                 \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ab2a49f30c8d4cd7e656db4d97c31876d}{isActive}})}
+\DoxyCodeLine{103                     \textcolor{keywordflow}{return} \textcolor{keyword}{new} Rigidbody2D[0];}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105                 var rigidBodies = \textcolor{keyword}{new} Rigidbody2D[\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Count];}
+\DoxyCodeLine{106                 \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{foreach} (Transform t \textcolor{keywordflow}{in} \mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a233ea1120024d6d9a1c1d4d0d70d32ec}{boneTable}}.Values) \{}
+\DoxyCodeLine{108                     rigidBodies[i] = t.GetComponent<Rigidbody2D>();}
+\DoxyCodeLine{109                     i++;}
+\DoxyCodeLine{110                 \}}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112                 \textcolor{keywordflow}{return} rigidBodies;}
+\DoxyCodeLine{113             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ac3e1862ae6bacc760923835bdcdf23e0}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_ac3e1862ae6bacc760923835bdcdf23e0}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!RootOffset@{RootOffset}}
+\index{RootOffset@{RootOffset}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{RootOffset}{RootOffset}}
+{\footnotesize\ttfamily Vector3 Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Root\+Offset\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 79 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80 \{ \textcolor{keyword}{get} \{ \textcolor{keywordflow}{return} this.\mbox{\hyperlink{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a858701f17547d7152318ec489ae24a1d}{rootOffset}}; \} \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a9b1c835c05d4ead19d86931f0ddd20f5}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!RootRigidbody@{RootRigidbody}}
+\index{RootRigidbody@{RootRigidbody}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{RootRigidbody}{RootRigidbody}}
+{\footnotesize\ttfamily Rigidbody2D Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Root\+Rigidbody\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 76 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c3e8ced114c56a6ea195720a6a2db4c}\label{class_spine_1_1_unity_1_1_modules_1_1_skeleton_ragdoll2_d_a2c3e8ced114c56a6ea195720a6a2db4c}} 
+\index{Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}!StartingBone@{StartingBone}}
+\index{StartingBone@{StartingBone}!Spine.Unity.Modules.SkeletonRagdoll2D@{Spine.Unity.Modules.SkeletonRagdoll2D}}
+\doxysubsubsection{\texorpdfstring{StartingBone}{StartingBone}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_bone}{Bone}} Spine.\+Unity.\+Modules.\+Skeleton\+Ragdoll2\+D.\+Starting\+Bone\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Skeleton\+Ragdoll2\+D.\+cs 파일의 77 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77 \{ \textcolor{keyword}{get}; \textcolor{keyword}{private} \textcolor{keyword}{set}; \}}
+
+\end{DoxyCode}
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Modules/\+Ragdoll/\mbox{\hyperlink{_skeleton_ragdoll2_d_8cs}{Skeleton\+Ragdoll2\+D.\+cs}}\end{DoxyCompactItemize}

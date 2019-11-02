@@ -1,0 +1,16 @@
+digraph "SpineSpriteShaderGUI.RenderNormalsProperties"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SpineSpriteShaderGUI.Render\lNormalsProperties",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SpineSpriteShaderGUI.Bold\lToggleField",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a849d7653125945ba37315a3b036121db",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SpineSpriteShaderGUI.Get\lMaterialFixedNormalsBackface\lRenderingOn",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a253bd2f25bfcc7edac331930e05d2259",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SpineSpriteShaderGUI.Get\lMaterialNormalsMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a10b72720427bc52c9ff2e2d75cd45caf",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SpineSpriteShaderGUI.Set\lNormalsMode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_spine_sprite_shader_g_u_i.html#a707186ab969a50ab44a7d42fba9ff0ed",tooltip=" "];
+}

@@ -1,0 +1,1919 @@
+\hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities}{}\doxysection{Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities 클래스 참조}
+\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities}\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+
+
+Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{클래스}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_atlas_requirement_loader}{Atlas\+Requirement\+Loader}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_icons}{Icons}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_skeleton_component_spawn_type}{Skeleton\+Component\+Spawn\+Type}}
+\item 
+class {\bfseries Skeleton\+Data\+File\+Validator}
+\item 
+struct \mbox{\hyperlink{struct_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_spawn_menu_data}{Spawn\+Menu\+Data}}
+\item 
+class \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_1_1_spine_editor_hierarchy_handler}{Spine\+Editor\+Hierarchy\+Handler}}
+\item 
+class {\bfseries Spine\+T\+K2\+D\+Editor\+Utility}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+delegate Component \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a01dc4423be541dc44f235984c1c8046c}{Instantiate\+Delegate}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a50138b04862241cbc785ba1e1b9b014f}{Confirm\+Initialization}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abe8a798bd134276fcb83fc4094134823}{Show\+Instantiate\+Context\+Menu}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, Vector3 spawn\+Point)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}{Handle\+Skeleton\+Component\+Drop}} (object spawn\+Menu\+Data)
+\item 
+static Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad55531879389e78f96b84a0accc3efec}{Round\+Vector}} (Vector3 vector, int digits)
+\begin{DoxyCompactList}\small\item\em Rounds off vector components to a number of decimal digits. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a2099f3638c64bfdd227a85845af5b515}{Import\+Spine\+Content}} (string\mbox{[}$\,$\mbox{]} imported, bool reimport=false)
+\item 
+static List$<$ string $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a66ccff00a4c92e84bba62f9f4c63e0ab}{Get\+Required\+Atlas\+Regions}} (string skeleton\+Data\+Path)
+\item 
+static Game\+Object \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aad274a878ec783a0d09ddca9c33bf57a}{Bake\+Region}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} atlas\+Asset, \mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}} region, bool auto\+Save=true)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6a5aff8b3f3d093a6c5f757e93cd3f37}{Ingest\+Advanced\+Render\+Settings}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}} skeleton\+Renderer)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a62a37b5611d74d83541f6df96b16eaef}{Instantiate\+Skeleton\+Animation}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, string skin\+Name, bool destroy\+Invalid=true)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9a009a70bc23b76080dfcdec1f9600cf}{Instantiate\+Skeleton\+Animation}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin=null, bool destroy\+Invalid=true)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator}{Skeleton\+Animator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a00c8ae138b071a488169ac78a6072fef}{Instantiate\+Skeleton\+Animator}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, string skin\+Name)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator}{Skeleton\+Animator}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab9ec48922f8b927cdefba05bd2a44f9}{Instantiate\+Skeleton\+Animator}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset, \mbox{\hyperlink{class_spine_1_1_skin}{Skin}} skin=null)
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8d003dcd3b27b0e5008ba183850908a2}{Get\+Path\+Safe\+Name}} (string name)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7a17632a07ca1beefad7cc1e681f07b1}{editor\+Path}} = \char`\"{}\char`\"{}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af8fd9a46db40d4eb6eb64fe41145be9f}{editor\+G\+U\+I\+Path}} = \char`\"{}\char`\"{}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a09cb8b207b791fa10c4422b475bb1e03}{initialized}}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{default\+Scale}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{default\+Mix}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX}}
+\item 
+static string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{default\+Shader}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER}}
+\item 
+static float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{default\+Z\+Spacing}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG}}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}{show\+Hierarchy\+Icons}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS}}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{set\+Texture\+Importer\+Settings}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS}}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa32406cc839dba28f1f443fc15036c1c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+LE}} = 1f
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a90c93cf0ed2a80f01e4e734159841f75}{S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+L\+E\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+LE\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f51b5afb0c4dba29368e628876fe18b}{Skeleton\+Data\+Suffix}} = \char`\"{}\+\_\+\+Skeleton\+Data\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}{Spine\+Editor\+Utilities}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8a9604741ef48fdbf45cb43640af4555}{Load\+Preferences}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}{Initialize}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a984d75c91781e51cf1c844ece0cd9340}{Preferences\+G\+UI}} ()
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_adadc887a09b56823fa8ecebae1d85300}{Scene\+View\+Drag\+And\+Drop}} (Scene\+View sceneview)
+\item 
+static Vector3 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac2e861c82597ea456403999ecc021845}{Mouse\+Point\+To\+World\+Point2D}} (Vector2 mouse\+Position, Camera camera, Plane plane)
+\begin{DoxyCompactList}\small\item\em Converts a mouse point to a world point on a plane. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f1247cc225ad1943f3cee66bb23b548}{On\+Postprocess\+All\+Assets}} (string\mbox{[}$\,$\mbox{]} imported, string\mbox{[}$\,$\mbox{]} deleted, string\mbox{[}$\,$\mbox{]} moved, string\mbox{[}$\,$\mbox{]} moved\+From\+Asset\+Paths)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a612bc9850dc3cbdabdc2488926616b73}{Reload\+Skeleton\+Data}} (string skeleton\+J\+S\+O\+N\+Path)
+\item 
+static List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a54b45b7bcaebbb0f8b427ef3bf035e39}{Multi\+Atlas\+Dialog}} (List$<$ string $>$ required\+Paths, string initial\+Directory, string filename=\char`\"{}\char`\"{})
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_acb312fb96888bf979e2b43fbdf2c054f}{Get\+Atlas\+Dialog}} (string dir\+Path)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a402facc75ebd4b49e2d6699ebfa0685f}{Add\+Required\+Atlas\+Regions\+From\+Binary}} (string skeleton\+Data\+Path, List$<$ string $>$ required\+Paths)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aac1e230a6f30a9d684d546d3b5121775}{Get\+Matching\+Atlas}} (List$<$ string $>$ required\+Paths, List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} $>$ atlas\+Assets)
+\item 
+static List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa4c8b469ae5221634c7aed5fa795873b}{Find\+Atlases\+At\+Path}} (string path)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab0b6f6373cf183b10c2517b4e4e26ca}{Ingest\+Spine\+Atlas}} (Text\+Asset atlas\+Text)
+\item 
+static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}{Ingest\+Spine\+Project}} (Text\+Asset spine\+Json, params \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}\mbox{[}$\,$\mbox{]} atlas\+Assets)
+\item 
+static void \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac77bb351993eecd325358405466d45be}{Update\+Mecanim\+Clips}} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} skeleton\+Data\+Asset)
+\end{DoxyCompactItemize}
+\doxysubsection*{정적 Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+static readonly List$<$ Scriptable\+Object $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a92c628e375d2d39bbf3ec03fc96b82c3}{protect\+From\+Stack\+Garbage\+Collection}} = new List$<$Scriptable\+Object$>$()
+\item 
+static Hash\+Set$<$ string $>$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}{assets\+Imported\+In\+Wrong\+State}} = new Hash\+Set$<$string$>$()
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}} = 0.\+01f
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9e976228e66b5c7bd432d7690f58d28b}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+L\+E\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE\char`\"{}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX}} = 0.\+2f
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a5007b1e004f93f5583a6acdfea8448fc}{D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+I\+X\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER}} = \char`\"{}Spine/\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}\char`\"{}
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad03d6da2a596a2d26eab336445e0589b}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER\char`\"{}
+\item 
+const float \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG}} = 0f
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a774faa223d3fc2b4f3725fc05af5d002}{D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+N\+G\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG\char`\"{}
+\item 
+const bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS}} = true
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af531582867ade706a161dc424d7ca331}{S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+N\+S\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS\char`\"{}
+\item 
+const bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS}} = true
+\item 
+const string \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aed3ef094f24bb367880de5f0accf5bb1}{S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+K\+EY}} = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS\char`\"{}
+\item 
+static bool \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aaf34441d2983e39e1bb46c1179200c7b}{preferences\+Loaded}} = false
+\item 
+static readonly \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{Attachment\+Type}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6275a9a081cf5aa15328eda01fd0f7b1}{Atlas\+Types}} = \{ \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332af447ac856e7e72435904956e3b15f433}{Attachment\+Type.\+Region}}, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aea60b68de07a3bbc82adc6170ff08bb9}{Attachment\+Type.\+Linkedmesh}}, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Attachment\+Type.\+Mesh}} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 49 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{생성자 \& 소멸자 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SpineEditorUtilities@{SpineEditorUtilities}}
+\index{SpineEditorUtilities@{SpineEditorUtilities}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SpineEditorUtilities()}{SpineEditorUtilities()}}
+{\footnotesize\ttfamily static Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Spine\+Editor\+Utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 201 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{202                                        \{}
+\DoxyCodeLine{203             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a402facc75ebd4b49e2d6699ebfa0685f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a402facc75ebd4b49e2d6699ebfa0685f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!AddRequiredAtlasRegionsFromBinary@{AddRequiredAtlasRegionsFromBinary}}
+\index{AddRequiredAtlasRegionsFromBinary@{AddRequiredAtlasRegionsFromBinary}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{AddRequiredAtlasRegionsFromBinary()}{AddRequiredAtlasRegionsFromBinary()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Add\+Required\+Atlas\+Regions\+From\+Binary (\begin{DoxyParamCaption}\item[{string}]{skeleton\+Data\+Path,  }\item[{List$<$ string $>$}]{required\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 888 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{889                                                                                                             \{}
+\DoxyCodeLine{890             \mbox{\hyperlink{class_spine_1_1_skeleton_binary}{SkeletonBinary}} binary = \textcolor{keyword}{new} \mbox{\hyperlink{class_spine_1_1_skeleton_binary}{SkeletonBinary}}(\textcolor{keyword}{new} AtlasRequirementLoader(requiredPaths));}
+\DoxyCodeLine{891             TextAsset data = (TextAsset)AssetDatabase.LoadAssetAtPath(skeletonDataPath, typeof(TextAsset));}
+\DoxyCodeLine{892             MemoryStream input = \textcolor{keyword}{new} MemoryStream(data.bytes);}
+\DoxyCodeLine{893             binary.\mbox{\hyperlink{class_spine_1_1_skeleton_binary_a3cfc76069391154adf58f9ee1e7b23cb}{ReadSkeletonData}}(input);}
+\DoxyCodeLine{894             binary = \textcolor{keyword}{null};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aad274a878ec783a0d09ddca9c33bf57a}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aad274a878ec783a0d09ddca9c33bf57a}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!BakeRegion@{BakeRegion}}
+\index{BakeRegion@{BakeRegion}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{BakeRegion()}{BakeRegion()}}
+{\footnotesize\ttfamily static Game\+Object Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Bake\+Region (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}}]{atlas\+Asset,  }\item[{\mbox{\hyperlink{class_spine_1_1_atlas_region}{Atlas\+Region}}}]{region,  }\item[{bool}]{auto\+Save = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1153 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1154                                                                                                               \{}
+\DoxyCodeLine{1155             \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas = atlasAsset.GetAtlas();}
+\DoxyCodeLine{1156             \textcolor{keywordtype}{string} atlasAssetPath = AssetDatabase.GetAssetPath(atlasAsset);}
+\DoxyCodeLine{1157             \textcolor{keywordtype}{string} atlasAssetDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(atlasAssetPath);}
+\DoxyCodeLine{1158             \textcolor{keywordtype}{string} bakedDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(atlasAssetDirPath, atlasAsset.name);}
+\DoxyCodeLine{1159             \textcolor{keywordtype}{string} bakedPrefabPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(bakedDirPath, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8d003dcd3b27b0e5008ba183850908a2}{GetPathSafeName}}(region.\mbox{\hyperlink{class_spine_1_1_atlas_region_af99497eb4a22dcba88f89c21c763fba2}{name}}) + \textcolor{stringliteral}{".prefab"}).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{1160 }
+\DoxyCodeLine{1161             GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath(bakedPrefabPath, typeof(GameObject));}
+\DoxyCodeLine{1162             GameObject root;}
+\DoxyCodeLine{1163             \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}} mesh;}
+\DoxyCodeLine{1164             \textcolor{keywordtype}{bool} isNewPrefab = \textcolor{keyword}{false};}
+\DoxyCodeLine{1165 }
+\DoxyCodeLine{1166             \textcolor{keywordflow}{if} (!Directory.Exists(bakedDirPath))}
+\DoxyCodeLine{1167                 Directory.CreateDirectory(bakedDirPath);}
+\DoxyCodeLine{1168 }
+\DoxyCodeLine{1169             \textcolor{keywordflow}{if} (prefab == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1170                 root = \textcolor{keyword}{new} GameObject(\textcolor{stringliteral}{"temp"}, typeof(MeshFilter), typeof(MeshRenderer));}
+\DoxyCodeLine{1171                 prefab = PrefabUtility.CreatePrefab(bakedPrefabPath, root);}
+\DoxyCodeLine{1172                 isNewPrefab = \textcolor{keyword}{true};}
+\DoxyCodeLine{1173                 Object.DestroyImmediate(root);}
+\DoxyCodeLine{1174             \}}
+\DoxyCodeLine{1175 }
+\DoxyCodeLine{1176             mesh = (\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Mesh}})AssetDatabase.LoadAssetAtPath(bakedPrefabPath, typeof(Mesh));}
+\DoxyCodeLine{1177 }
+\DoxyCodeLine{1178             Material mat = \textcolor{keyword}{null};}
+\DoxyCodeLine{1179             mesh = atlasAsset.GenerateMesh(region.\mbox{\hyperlink{class_spine_1_1_atlas_region_af99497eb4a22dcba88f89c21c763fba2}{name}}, mesh, out mat);}
+\DoxyCodeLine{1180             \textcolor{keywordflow}{if} (isNewPrefab) \{}
+\DoxyCodeLine{1181                 AssetDatabase.AddObjectToAsset(mesh, prefab);}
+\DoxyCodeLine{1182                 prefab.GetComponent<MeshFilter>().sharedMesh = mesh;}
+\DoxyCodeLine{1183             \}}
+\DoxyCodeLine{1184 }
+\DoxyCodeLine{1185             EditorUtility.SetDirty(mesh);}
+\DoxyCodeLine{1186             EditorUtility.SetDirty(prefab);}
+\DoxyCodeLine{1187 }
+\DoxyCodeLine{1188             \textcolor{keywordflow}{if} (autoSave) \{}
+\DoxyCodeLine{1189                 AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1190                 AssetDatabase.Refresh();}
+\DoxyCodeLine{1191             \}}
+\DoxyCodeLine{1192 }
+\DoxyCodeLine{1193             prefab.GetComponent<MeshRenderer>().sharedMaterial = mat;}
+\DoxyCodeLine{1194 }
+\DoxyCodeLine{1195             \textcolor{keywordflow}{return} prefab;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a50138b04862241cbc785ba1e1b9b014f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a50138b04862241cbc785ba1e1b9b014f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!ConfirmInitialization@{ConfirmInitialization}}
+\index{ConfirmInitialization@{ConfirmInitialization}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{ConfirmInitialization()}{ConfirmInitialization()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Confirm\+Initialization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 246 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{247                                                     \{}
+\DoxyCodeLine{248             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a09cb8b207b791fa10c4422b475bb1e03}{initialized}} || \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.skeleton == \textcolor{keyword}{null})}
+\DoxyCodeLine{249                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}{Initialize}}();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa4c8b469ae5221634c7aed5fa795873b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa4c8b469ae5221634c7aed5fa795873b}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!FindAtlasesAtPath@{FindAtlasesAtPath}}
+\index{FindAtlasesAtPath@{FindAtlasesAtPath}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{FindAtlasesAtPath()}{FindAtlasesAtPath()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}$>$ Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Find\+Atlases\+At\+Path (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1005 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1006                                                                 \{}
+\DoxyCodeLine{1007             List<AtlasAsset> arr = \textcolor{keyword}{new} List<AtlasAsset>();}
+\DoxyCodeLine{1008             DirectoryInfo dir = \textcolor{keyword}{new} DirectoryInfo(path);}
+\DoxyCodeLine{1009             FileInfo[] assetInfoArr = dir.GetFiles(\textcolor{stringliteral}{"*.asset"});}
+\DoxyCodeLine{1010 }
+\DoxyCodeLine{1011             \textcolor{keywordtype}{int} subLen = Application.dataPath.Length -\/ 6;}
+\DoxyCodeLine{1012             \textcolor{keywordflow}{foreach} (var f \textcolor{keywordflow}{in} assetInfoArr) \{}
+\DoxyCodeLine{1013                 \textcolor{keywordtype}{string} assetRelativePath = f.FullName.Substring(subLen, f.FullName.Length -\/ subLen).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{1014                 Object obj = AssetDatabase.LoadAssetAtPath(assetRelativePath, typeof(AtlasAsset));}
+\DoxyCodeLine{1015                 \textcolor{keywordflow}{if} (obj != \textcolor{keyword}{null})}
+\DoxyCodeLine{1016                     arr.Add(obj as AtlasAsset);}
+\DoxyCodeLine{1017             \}}
+\DoxyCodeLine{1018 }
+\DoxyCodeLine{1019             \textcolor{keywordflow}{return} arr;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 9
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_acb312fb96888bf979e2b43fbdf2c054f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_acb312fb96888bf979e2b43fbdf2c054f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!GetAtlasDialog@{GetAtlasDialog}}
+\index{GetAtlasDialog@{GetAtlasDialog}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{GetAtlasDialog()}{GetAtlasDialog()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Get\+Atlas\+Dialog (\begin{DoxyParamCaption}\item[{string}]{dir\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 873 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{874                                                           \{}
+\DoxyCodeLine{875             \textcolor{keywordtype}{string} path = EditorUtility.OpenFilePanel(\textcolor{stringliteral}{"Select AtlasAsset..."}, dirPath, \textcolor{stringliteral}{"asset"});}
+\DoxyCodeLine{876             \textcolor{keywordflow}{if} (path == \textcolor{stringliteral}{""}) \textcolor{keywordflow}{return} \textcolor{keyword}{null}; \textcolor{comment}{// Canceled or closed by user.}}
+\DoxyCodeLine{877 }
+\DoxyCodeLine{878             \textcolor{keywordtype}{int} subLen = Application.dataPath.Length -\/ 6;}
+\DoxyCodeLine{879             \textcolor{keywordtype}{string} assetRelativePath = path.Substring(subLen, path.Length -\/ subLen).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{880 }
+\DoxyCodeLine{881             Object obj = AssetDatabase.LoadAssetAtPath(assetRelativePath, typeof(AtlasAsset));}
+\DoxyCodeLine{882 }
+\DoxyCodeLine{883             \textcolor{keywordflow}{if} (obj == \textcolor{keyword}{null} || obj.GetType() != typeof(AtlasAsset))}
+\DoxyCodeLine{884                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{885 }
+\DoxyCodeLine{886             \textcolor{keywordflow}{return} (AtlasAsset)obj;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 10
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aac1e230a6f30a9d684d546d3b5121775}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aac1e230a6f30a9d684d546d3b5121775}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!GetMatchingAtlas@{GetMatchingAtlas}}
+\index{GetMatchingAtlas@{GetMatchingAtlas}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{GetMatchingAtlas()}{GetMatchingAtlas()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Get\+Matching\+Atlas (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{required\+Paths,  }\item[{List$<$ \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} $>$}]{atlas\+Assets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 947 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{948                                                                                                       \{}
+\DoxyCodeLine{949             AtlasAsset atlasAssetMatch = \textcolor{keyword}{null};}
+\DoxyCodeLine{950 }
+\DoxyCodeLine{951             \textcolor{keywordflow}{foreach} (AtlasAsset a \textcolor{keywordflow}{in} atlasAssets) \{}
+\DoxyCodeLine{952                 \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas = a.GetAtlas();}
+\DoxyCodeLine{953                 \textcolor{keywordtype}{bool} failed = \textcolor{keyword}{false};}
+\DoxyCodeLine{954                 \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} regionPath \textcolor{keywordflow}{in} requiredPaths) \{}
+\DoxyCodeLine{955                     \textcolor{keywordflow}{if} (atlas.\mbox{\hyperlink{class_spine_1_1_atlas_a0c3e63b796443fd755114f9bea61c780}{FindRegion}}(regionPath) == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{956                         failed = \textcolor{keyword}{true};}
+\DoxyCodeLine{957                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{958                     \}}
+\DoxyCodeLine{959                 \}}
+\DoxyCodeLine{960 }
+\DoxyCodeLine{961                 \textcolor{keywordflow}{if} (!failed) \{}
+\DoxyCodeLine{962                     atlasAssetMatch = a;}
+\DoxyCodeLine{963                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{964                 \}}
+\DoxyCodeLine{965             \}}
+\DoxyCodeLine{966 }
+\DoxyCodeLine{967             \textcolor{keywordflow}{return} atlasAssetMatch;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 11
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 12
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8d003dcd3b27b0e5008ba183850908a2}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8d003dcd3b27b0e5008ba183850908a2}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!GetPathSafeName@{GetPathSafeName}}
+\index{GetPathSafeName@{GetPathSafeName}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{GetPathSafeName()}{GetPathSafeName()}}
+{\footnotesize\ttfamily static string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Get\+Path\+Safe\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1565 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1566                                                            \{}
+\DoxyCodeLine{1567             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{char} c \textcolor{keywordflow}{in} System.IO.Path.GetInvalidFileNameChars()) \{ \textcolor{comment}{// Doesn't handle more obscure file name limitations.}}
+\DoxyCodeLine{1568                 name = name.Replace(c, \textcolor{charliteral}{'\_'});}
+\DoxyCodeLine{1569             \}}
+\DoxyCodeLine{1570             \textcolor{keywordflow}{return} name;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 13
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a66ccff00a4c92e84bba62f9f4c63e0ab}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a66ccff00a4c92e84bba62f9f4c63e0ab}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!GetRequiredAtlasRegions@{GetRequiredAtlasRegions}}
+\index{GetRequiredAtlasRegions@{GetRequiredAtlasRegions}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{GetRequiredAtlasRegions()}{GetRequiredAtlasRegions()}}
+{\footnotesize\ttfamily static List$<$string$>$ Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Get\+Required\+Atlas\+Regions (\begin{DoxyParamCaption}\item[{string}]{skeleton\+Data\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 896 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{897                                                                                      \{}
+\DoxyCodeLine{898             List<string> requiredPaths = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{899 }
+\DoxyCodeLine{900             \textcolor{keywordflow}{if} (skeletonDataPath.Contains(\textcolor{stringliteral}{".skel"})) \{}
+\DoxyCodeLine{901                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a402facc75ebd4b49e2d6699ebfa0685f}{AddRequiredAtlasRegionsFromBinary}}(skeletonDataPath, requiredPaths);}
+\DoxyCodeLine{902                 \textcolor{keywordflow}{return} requiredPaths;}
+\DoxyCodeLine{903             \}}
+\DoxyCodeLine{904 }
+\DoxyCodeLine{905             TextAsset spineJson = (TextAsset)AssetDatabase.LoadAssetAtPath(skeletonDataPath, typeof(TextAsset));}
+\DoxyCodeLine{906 }
+\DoxyCodeLine{907             StringReader reader = \textcolor{keyword}{new} StringReader(spineJson.text);}
+\DoxyCodeLine{908             var root = \mbox{\hyperlink{class_spine_1_1_json}{Json}}.\mbox{\hyperlink{class_spine_1_1_json_af98b2062414586e649da25e7db85b3b6}{Deserialize}}(reader) as Dictionary<string, object>;}
+\DoxyCodeLine{909 }
+\DoxyCodeLine{910             \textcolor{keywordflow}{if} (!root.ContainsKey(\textcolor{stringliteral}{"skins"}))}
+\DoxyCodeLine{911                 \textcolor{keywordflow}{return} requiredPaths;           }
+\DoxyCodeLine{912 }
+\DoxyCodeLine{913             \textcolor{keywordflow}{foreach} (KeyValuePair<string, object> entry \textcolor{keywordflow}{in} (Dictionary<string, object>)root[\textcolor{stringliteral}{"skins"}]) \{}
+\DoxyCodeLine{914                 \textcolor{keywordflow}{foreach} (KeyValuePair<string, object> slotEntry \textcolor{keywordflow}{in} (Dictionary<string, object>)entry.Value) \{}
+\DoxyCodeLine{915 }
+\DoxyCodeLine{916                     \textcolor{keywordflow}{foreach} (KeyValuePair<string, object> attachmentEntry \textcolor{keywordflow}{in} ((Dictionary<string, object>)slotEntry.Value)) \{}
+\DoxyCodeLine{917                         var data = ((Dictionary<string, object>)attachmentEntry.Value);}
+\DoxyCodeLine{918 }
+\DoxyCodeLine{919                         \textcolor{comment}{// Ignore non-\/atlas-\/requiring types.}}
+\DoxyCodeLine{920                         \textcolor{keywordflow}{if} (data.ContainsKey(\textcolor{stringliteral}{"type"})) \{}
+\DoxyCodeLine{921                             \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}} attachmentType;}
+\DoxyCodeLine{922                             \textcolor{keywordtype}{string} typeString = (string)data[\textcolor{stringliteral}{"type"}];}
+\DoxyCodeLine{923                             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{924                                 attachmentType = (\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}})System.Enum.Parse(typeof(\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{AttachmentType}}), typeString, \textcolor{keyword}{true});}
+\DoxyCodeLine{925                             \} \textcolor{keywordflow}{catch} (System.ArgumentException e) \{}
+\DoxyCodeLine{926                                 \textcolor{comment}{// For more info, visit: http://esotericsoftware.com/forum/Spine-\/editor-\/and-\/runtime-\/version-\/management-\/6534}}
+\DoxyCodeLine{927                                 Debug.LogWarning(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Unidentified Attachment type: \(\backslash\)"\{0\}\(\backslash\)". Skeleton may have been exported from an incompatible Spine version."}, typeString));}
+\DoxyCodeLine{928                                 \textcolor{keywordflow}{throw} e;}
+\DoxyCodeLine{929                             \}}
+\DoxyCodeLine{930                                 }
+\DoxyCodeLine{931                             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6275a9a081cf5aa15328eda01fd0f7b1}{AtlasTypes}}.Contains(attachmentType))}
+\DoxyCodeLine{932                                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{933                         \}}
+\DoxyCodeLine{934 }
+\DoxyCodeLine{935                         \textcolor{keywordflow}{if} (data.ContainsKey(\textcolor{stringliteral}{"path"}))}
+\DoxyCodeLine{936                             requiredPaths.Add((\textcolor{keywordtype}{string})data[\textcolor{stringliteral}{"path"}]);}
+\DoxyCodeLine{937                         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (data.ContainsKey(\textcolor{stringliteral}{"name"}))}
+\DoxyCodeLine{938                             requiredPaths.Add((\textcolor{keywordtype}{string})data[\textcolor{stringliteral}{"name"}]);}
+\DoxyCodeLine{939                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{940                             requiredPaths.Add(attachmentEntry.Key);}
+\DoxyCodeLine{941                     \}}
+\DoxyCodeLine{942                 \}}
+\DoxyCodeLine{943             \}}
+\DoxyCodeLine{944 }
+\DoxyCodeLine{945             \textcolor{keywordflow}{return} requiredPaths;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 14
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 15
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!HandleSkeletonComponentDrop@{HandleSkeletonComponentDrop}}
+\index{HandleSkeletonComponentDrop@{HandleSkeletonComponentDrop}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{HandleSkeletonComponentDrop()}{HandleSkeletonComponentDrop()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Handle\+Skeleton\+Component\+Drop (\begin{DoxyParamCaption}\item[{object}]{spawn\+Menu\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 421 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{422                                                                               \{}
+\DoxyCodeLine{423             var data = (SpawnMenuData)spawnMenuData;}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{425             \textcolor{keywordflow}{if} (data.skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true}) == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{426                 EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Invalid SkeletonDataAsset"}, \textcolor{stringliteral}{"Unable to create Spine GameObject.\(\backslash\)n\(\backslash\)nPlease check your SkeletonDataAsset."}, \textcolor{stringliteral}{"Ok"});}
+\DoxyCodeLine{427                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{428             \}}
+\DoxyCodeLine{429 }
+\DoxyCodeLine{430             \textcolor{keywordtype}{bool} isUI = data.isUI;}
+\DoxyCodeLine{431 }
+\DoxyCodeLine{432             Component newSkeletonComponent = data.instantiateDelegate.Invoke(data.skeletonDataAsset);}
+\DoxyCodeLine{433             GameObject newGameObject = newSkeletonComponent.gameObject;}
+\DoxyCodeLine{434             Transform newTransform = newGameObject.transform;}
+\DoxyCodeLine{435 }
+\DoxyCodeLine{436             var activeGameObject = Selection.activeGameObject;}
+\DoxyCodeLine{437             \textcolor{keywordflow}{if} (isUI \&\& activeGameObject != \textcolor{keyword}{null})}
+\DoxyCodeLine{438                 newTransform.SetParent(activeGameObject.transform, \textcolor{keyword}{false});}
+\DoxyCodeLine{439 }
+\DoxyCodeLine{440             newTransform.position = isUI ? data.spawnPoint : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad55531879389e78f96b84a0accc3efec}{RoundVector}}(data.spawnPoint, 2);}
+\DoxyCodeLine{441 }
+\DoxyCodeLine{442             \textcolor{keywordflow}{if} (isUI \&\& (activeGameObject == \textcolor{keyword}{null} || activeGameObject.GetComponent<RectTransform>() == \textcolor{keyword}{null}))}
+\DoxyCodeLine{443                 Debug.Log(\textcolor{stringliteral}{"Created a UI Skeleton GameObject not under a RectTransform. It may not be visible until you parent it to a canvas."});}
+\DoxyCodeLine{444 }
+\DoxyCodeLine{445             \textcolor{keywordflow}{if} (!isUI \&\& activeGameObject != \textcolor{keyword}{null} \&\& activeGameObject.transform.localScale != Vector3.one)}
+\DoxyCodeLine{446                 Debug.Log(\textcolor{stringliteral}{"New Spine GameObject was parented to a scaled Transform. It may not be the intended size."});}
+\DoxyCodeLine{447 }
+\DoxyCodeLine{448             Selection.activeGameObject = newGameObject;}
+\DoxyCodeLine{449             \textcolor{comment}{//EditorGUIUtility.PingObject(newGameObject); // Doesn't work when setting activeGameObject.}}
+\DoxyCodeLine{450             Undo.RegisterCreatedObjectUndo(newGameObject, \textcolor{stringliteral}{"Create Spine GameObject"});}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 16
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 17
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a2099f3638c64bfdd227a85845af5b515}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a2099f3638c64bfdd227a85845af5b515}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!ImportSpineContent@{ImportSpineContent}}
+\index{ImportSpineContent@{ImportSpineContent}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{ImportSpineContent()}{ImportSpineContent()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Import\+Spine\+Content (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{imported,  }\item[{bool}]{reimport = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 628 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{629                                                                                          \{}
+\DoxyCodeLine{630             var atlasPaths = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{631             var imagePaths = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{632             var skeletonPaths = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{633 }
+\DoxyCodeLine{634             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} imported) \{}
+\DoxyCodeLine{635                 \textcolor{keywordtype}{string} extension = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetExtension(str).ToLower();}
+\DoxyCodeLine{636                 \textcolor{keywordflow}{switch} (extension) \{}
+\DoxyCodeLine{637                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{".txt"}:}
+\DoxyCodeLine{638                     \textcolor{keywordflow}{if} (str.EndsWith(\textcolor{stringliteral}{".atlas.txt"}, System.StringComparison.Ordinal))}
+\DoxyCodeLine{639                         atlasPaths.Add(str);}
+\DoxyCodeLine{640                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{641                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{".png"}:}
+\DoxyCodeLine{642                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{".jpg"}:}
+\DoxyCodeLine{643                     imagePaths.Add(str);}
+\DoxyCodeLine{644                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{645                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{".json"}:}
+\DoxyCodeLine{646                     var jsonAsset = (TextAsset)AssetDatabase.LoadAssetAtPath(str, typeof(TextAsset));}
+\DoxyCodeLine{647                     \textcolor{keywordflow}{if} (jsonAsset != \textcolor{keyword}{null} \&\& SkeletonDataFileValidator.IsSpineData(jsonAsset))}
+\DoxyCodeLine{648                         skeletonPaths.Add(str);}
+\DoxyCodeLine{649                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{650                 \textcolor{keywordflow}{case} \textcolor{stringliteral}{".bytes"}:}
+\DoxyCodeLine{651                     \textcolor{keywordflow}{if} (str.ToLower().EndsWith(\textcolor{stringliteral}{".skel.bytes"}, System.StringComparison.Ordinal)) \{}
+\DoxyCodeLine{652                         \textcolor{keywordflow}{if} (SkeletonDataFileValidator.IsSpineData((TextAsset)AssetDatabase.LoadAssetAtPath(str, typeof(TextAsset))))}
+\DoxyCodeLine{653                             skeletonPaths.Add(str);}
+\DoxyCodeLine{654                     \}}
+\DoxyCodeLine{655                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{656                 \}}
+\DoxyCodeLine{657             \}}
+\DoxyCodeLine{658                 }
+\DoxyCodeLine{659             \textcolor{comment}{// Import atlases first.}}
+\DoxyCodeLine{660             var atlases = \textcolor{keyword}{new} List<AtlasAsset>();}
+\DoxyCodeLine{661             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} ap \textcolor{keywordflow}{in} atlasPaths) \{}
+\DoxyCodeLine{662                 TextAsset atlasText = (TextAsset)AssetDatabase.LoadAssetAtPath(ap, typeof(TextAsset));}
+\DoxyCodeLine{663                 AtlasAsset atlas = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab0b6f6373cf183b10c2517b4e4e26ca}{IngestSpineAtlas}}(atlasText);}
+\DoxyCodeLine{664                 atlases.Add(atlas);}
+\DoxyCodeLine{665             \}}
+\DoxyCodeLine{666 }
+\DoxyCodeLine{667             \textcolor{comment}{// Import skeletons and match them with atlases.}}
+\DoxyCodeLine{668             \textcolor{keywordtype}{bool} abortSkeletonImport = \textcolor{keyword}{false};}
+\DoxyCodeLine{669             \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} sp \textcolor{keywordflow}{in} skeletonPaths) \{}
+\DoxyCodeLine{670                 \textcolor{keywordflow}{if} (!reimport \&\& SkeletonDataFileValidator.CheckForValidSkeletonData(sp)) \{}
+\DoxyCodeLine{671                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a612bc9850dc3cbdabdc2488926616b73}{ReloadSkeletonData}}(sp);}
+\DoxyCodeLine{672                     \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{673                 \}}
+\DoxyCodeLine{674 }
+\DoxyCodeLine{675                 \textcolor{keywordtype}{string} dir = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(sp);}
+\DoxyCodeLine{676 }
+\DoxyCodeLine{677 \textcolor{preprocessor}{                \#if SPINE\_TK2D}}
+\DoxyCodeLine{678                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}{IngestSpineProject}}(AssetDatabase.LoadAssetAtPath(sp, typeof(TextAsset)) as TextAsset, \textcolor{keyword}{null});}
+\DoxyCodeLine{679 \textcolor{preprocessor}{                \#else}}
+\DoxyCodeLine{680                 var localAtlases = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa4c8b469ae5221634c7aed5fa795873b}{FindAtlasesAtPath}}(dir);}
+\DoxyCodeLine{681                 var requiredPaths = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a66ccff00a4c92e84bba62f9f4c63e0ab}{GetRequiredAtlasRegions}}(sp);}
+\DoxyCodeLine{682                 var atlasMatch = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aac1e230a6f30a9d684d546d3b5121775}{GetMatchingAtlas}}(requiredPaths, localAtlases);}
+\DoxyCodeLine{683                 \textcolor{keywordflow}{if} (atlasMatch != \textcolor{keyword}{null} || requiredPaths.Count == 0) \{}
+\DoxyCodeLine{684                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}{IngestSpineProject}}(AssetDatabase.LoadAssetAtPath(sp, typeof(TextAsset)) as TextAsset, atlasMatch);}
+\DoxyCodeLine{685                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{686                     \textcolor{keywordtype}{bool} resolved = \textcolor{keyword}{false};}
+\DoxyCodeLine{687                     \textcolor{keywordflow}{while} (!resolved) \{}
+\DoxyCodeLine{688 }
+\DoxyCodeLine{689                         \textcolor{keywordtype}{string} filename = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(sp);}
+\DoxyCodeLine{690                         \textcolor{keywordtype}{int} result = EditorUtility.DisplayDialogComplex(}
+\DoxyCodeLine{691                             \textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"AtlasAsset for \(\backslash\)"\{0\}\(\backslash\)""}, filename),}
+\DoxyCodeLine{692                             \textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Could not automatically set the AtlasAsset for \(\backslash\)"\{0\}\(\backslash\)". You may set it manually."}, filename),}
+\DoxyCodeLine{693                             \textcolor{stringliteral}{"Choose AtlasAssets..."}, \textcolor{stringliteral}{"Skip this"}, \textcolor{stringliteral}{"Stop importing all"}}
+\DoxyCodeLine{694                         );}
+\DoxyCodeLine{695 }
+\DoxyCodeLine{696                         \textcolor{keywordflow}{switch} (result) \{}
+\DoxyCodeLine{697                         \textcolor{keywordflow}{case} -\/1:}
+\DoxyCodeLine{698                             \textcolor{comment}{//Debug.Log("Select Atlas");}}
+\DoxyCodeLine{699                             AtlasAsset selectedAtlas = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_acb312fb96888bf979e2b43fbdf2c054f}{GetAtlasDialog}}(\mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(sp));}
+\DoxyCodeLine{700                             \textcolor{keywordflow}{if} (selectedAtlas != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{701                                 localAtlases.\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a894985e7d0b0120e7df773ad9c3b3d5d}{Clear}}();}
+\DoxyCodeLine{702                                 localAtlases.Add(selectedAtlas);}
+\DoxyCodeLine{703                                 atlasMatch = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aac1e230a6f30a9d684d546d3b5121775}{GetMatchingAtlas}}(requiredPaths, localAtlases);}
+\DoxyCodeLine{704                                 \textcolor{keywordflow}{if} (atlasMatch != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{705                                     resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{706                                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}{IngestSpineProject}}(AssetDatabase.LoadAssetAtPath(sp, typeof(TextAsset)) as TextAsset, atlasMatch);}
+\DoxyCodeLine{707                                 \}}
+\DoxyCodeLine{708                             \}}
+\DoxyCodeLine{709                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{710                         \textcolor{keywordflow}{case} 0: \textcolor{comment}{// Choose AtlasAssets...}}
+\DoxyCodeLine{711                             var atlasList = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a54b45b7bcaebbb0f8b427ef3bf035e39}{MultiAtlasDialog}}(requiredPaths, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(sp), \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(sp));}
+\DoxyCodeLine{712                             \textcolor{keywordflow}{if} (atlasList != \textcolor{keyword}{null})}
+\DoxyCodeLine{713                                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}{IngestSpineProject}}(AssetDatabase.LoadAssetAtPath(sp, typeof(TextAsset)) as TextAsset, atlasList.ToArray());}
+\DoxyCodeLine{714 }
+\DoxyCodeLine{715                             resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{716                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{717                         \textcolor{keywordflow}{case} 1: \textcolor{comment}{// Skip}}
+\DoxyCodeLine{718                             Debug.Log(\textcolor{stringliteral}{"Skipped importing: "} + \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileName(sp));}
+\DoxyCodeLine{719                             resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{720                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{721                         \textcolor{keywordflow}{case} 2: \textcolor{comment}{// Stop importing all}}
+\DoxyCodeLine{722                             abortSkeletonImport = \textcolor{keyword}{true};}
+\DoxyCodeLine{723                             resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{724                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{725                         \}}
+\DoxyCodeLine{726                     \}}
+\DoxyCodeLine{727                 \}}
+\DoxyCodeLine{728 }
+\DoxyCodeLine{729                 \textcolor{keywordflow}{if} (abortSkeletonImport)}
+\DoxyCodeLine{730                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{731 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{732             \}}
+\DoxyCodeLine{733             \textcolor{comment}{// Any post processing of images}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 18
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 19
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6a5aff8b3f3d093a6c5f757e93cd3f37}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6a5aff8b3f3d093a6c5f757e93cd3f37}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!IngestAdvancedRenderSettings@{IngestAdvancedRenderSettings}}
+\index{IngestAdvancedRenderSettings@{IngestAdvancedRenderSettings}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{IngestAdvancedRenderSettings()}{IngestAdvancedRenderSettings()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Ingest\+Advanced\+Render\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer}{Skeleton\+Renderer}}}]{skeleton\+Renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1355 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1356                                                                                             \{}
+\DoxyCodeLine{1357             \textcolor{keyword}{const} \textcolor{keywordtype}{string} PMAShaderQuery = \textcolor{stringliteral}{"Spine/Skeleton"};}
+\DoxyCodeLine{1358             \textcolor{keyword}{const} \textcolor{keywordtype}{string} TintBlackShaderQuery = \textcolor{stringliteral}{"Tint Black"};}
+\DoxyCodeLine{1359 }
+\DoxyCodeLine{1360             \textcolor{keywordflow}{if} (skeletonRenderer == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1361             var skeletonDataAsset = skeletonRenderer.skeletonDataAsset;}
+\DoxyCodeLine{1362             \textcolor{keywordflow}{if} (skeletonDataAsset == \textcolor{keyword}{null}) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1363 }
+\DoxyCodeLine{1364             \textcolor{keywordtype}{bool} pmaVertexColors = \textcolor{keyword}{false};}
+\DoxyCodeLine{1365             \textcolor{keywordtype}{bool} tintBlack = \textcolor{keyword}{false};}
+\DoxyCodeLine{1366             \textcolor{keywordflow}{foreach} (AtlasAsset atlasAsset \textcolor{keywordflow}{in} skeletonDataAsset.atlasAssets) \{}
+\DoxyCodeLine{1367                 \textcolor{keywordflow}{if} (!pmaVertexColors) \{}
+\DoxyCodeLine{1368                     \textcolor{keywordflow}{foreach} (Material m \textcolor{keywordflow}{in} atlasAsset.materials) \{}
+\DoxyCodeLine{1369                         \textcolor{keywordflow}{if} (m.shader.name.Contains(PMAShaderQuery)) \{}
+\DoxyCodeLine{1370                             pmaVertexColors = \textcolor{keyword}{true};}
+\DoxyCodeLine{1371                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1372                         \}}
+\DoxyCodeLine{1373                     \}}
+\DoxyCodeLine{1374                 \}}
+\DoxyCodeLine{1375 }
+\DoxyCodeLine{1376                 \textcolor{keywordflow}{if} (!tintBlack) \{}
+\DoxyCodeLine{1377                     \textcolor{keywordflow}{foreach} (Material m \textcolor{keywordflow}{in} atlasAsset.materials) \{}
+\DoxyCodeLine{1378                         \textcolor{keywordflow}{if} (m.shader.name.Contains(TintBlackShaderQuery)) \{}
+\DoxyCodeLine{1379                             tintBlack = \textcolor{keyword}{true};}
+\DoxyCodeLine{1380                             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1381                         \}}
+\DoxyCodeLine{1382                     \}}
+\DoxyCodeLine{1383                 \}}
+\DoxyCodeLine{1384             \}}
+\DoxyCodeLine{1385 }
+\DoxyCodeLine{1386             skeletonRenderer.pmaVertexColors = pmaVertexColors;}
+\DoxyCodeLine{1387             skeletonRenderer.tintBlack = tintBlack;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 20
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab0b6f6373cf183b10c2517b4e4e26ca}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab0b6f6373cf183b10c2517b4e4e26ca}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!IngestSpineAtlas@{IngestSpineAtlas}}
+\index{IngestSpineAtlas@{IngestSpineAtlas}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{IngestSpineAtlas()}{IngestSpineAtlas()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Ingest\+Spine\+Atlas (\begin{DoxyParamCaption}\item[{Text\+Asset}]{atlas\+Text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1021 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1022                                                                  \{}
+\DoxyCodeLine{1023             \textcolor{keywordflow}{if} (atlasText == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1024                 Debug.LogWarning(\textcolor{stringliteral}{"Atlas source cannot be null!"});}
+\DoxyCodeLine{1025                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{1026             \}}
+\DoxyCodeLine{1027 }
+\DoxyCodeLine{1028             \textcolor{keywordtype}{string} primaryName = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(atlasText.name).Replace(\textcolor{stringliteral}{".atlas"}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{1029             \textcolor{keywordtype}{string} assetPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(AssetDatabase.GetAssetPath(atlasText));}
+\DoxyCodeLine{1030 }
+\DoxyCodeLine{1031             \textcolor{keywordtype}{string} atlasPath = assetPath + \textcolor{stringliteral}{"/"} + primaryName + \textcolor{stringliteral}{"\_Atlas.asset"};}
+\DoxyCodeLine{1032 }
+\DoxyCodeLine{1033             AtlasAsset atlasAsset = (AtlasAsset)AssetDatabase.LoadAssetAtPath(atlasPath, typeof(AtlasAsset));}
+\DoxyCodeLine{1034 }
+\DoxyCodeLine{1035             List<Material> vestigialMaterials = \textcolor{keyword}{new} List<Material>();}
+\DoxyCodeLine{1036 }
+\DoxyCodeLine{1037             \textcolor{keywordflow}{if} (atlasAsset == \textcolor{keyword}{null})}
+\DoxyCodeLine{1038                 atlasAsset = AtlasAsset.CreateInstance<AtlasAsset>();}
+\DoxyCodeLine{1039             \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1040                 \textcolor{keywordflow}{foreach} (Material m \textcolor{keywordflow}{in} atlasAsset.materials)}
+\DoxyCodeLine{1041                     vestigialMaterials.Add(m);}
+\DoxyCodeLine{1042             \}}
+\DoxyCodeLine{1043 }
+\DoxyCodeLine{1044             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a92c628e375d2d39bbf3ec03fc96b82c3}{protectFromStackGarbageCollection}}.Add(atlasAsset);}
+\DoxyCodeLine{1045             atlasAsset.atlasFile = atlasText;}
+\DoxyCodeLine{1046 }
+\DoxyCodeLine{1047             \textcolor{comment}{//strip CR}}
+\DoxyCodeLine{1048             \textcolor{keywordtype}{string} atlasStr = atlasText.text;}
+\DoxyCodeLine{1049             atlasStr = atlasStr.Replace(\textcolor{stringliteral}{"\(\backslash\)r"}, \textcolor{stringliteral}{""});}
+\DoxyCodeLine{1050 }
+\DoxyCodeLine{1051             \textcolor{keywordtype}{string}[] atlasLines = atlasStr.Split(\textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{1052             List<string> pageFiles = \textcolor{keyword}{new} List<string>();}
+\DoxyCodeLine{1053             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < atlasLines.Length -\/ 1; i++) \{}
+\DoxyCodeLine{1054                 \textcolor{keywordflow}{if} (atlasLines[i].Trim().Length == 0)}
+\DoxyCodeLine{1055                     pageFiles.Add(atlasLines[i + 1].Trim());}
+\DoxyCodeLine{1056             \}}
+\DoxyCodeLine{1057 }
+\DoxyCodeLine{1058             var populatingMaterials = \textcolor{keyword}{new} List<Material>(pageFiles.Count);\textcolor{comment}{//atlasAsset.materials = new Material[pageFiles.Count];}}
+\DoxyCodeLine{1059 }
+\DoxyCodeLine{1060             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < pageFiles.Count; i++) \{}
+\DoxyCodeLine{1061                 \textcolor{keywordtype}{string} texturePath = assetPath + \textcolor{stringliteral}{"/"} + pageFiles[i];}
+\DoxyCodeLine{1062                 Texture2D texture = (Texture2D)AssetDatabase.LoadAssetAtPath(texturePath, typeof(Texture2D));}
+\DoxyCodeLine{1063 }
+\DoxyCodeLine{1064                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{setTextureImporterSettings}}) \{}
+\DoxyCodeLine{1065                     TextureImporter texImporter = (TextureImporter)TextureImporter.GetAtPath(texturePath);}
+\DoxyCodeLine{1066                     \textcolor{keywordflow}{if} (texImporter == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1067                         Debug.LogWarning(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\{0\} ::: Texture asset \(\backslash\)"\{1\}\(\backslash\)" not found. Skipping. Please check your atlas file for renamed files."}, atlasAsset.name, texturePath));}
+\DoxyCodeLine{1068                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{1069                     \}}
+\DoxyCodeLine{1070 }
+\DoxyCodeLine{1071                     texImporter.textureCompression = TextureImporterCompression.Uncompressed;}
+\DoxyCodeLine{1072                     texImporter.alphaSource = TextureImporterAlphaSource.FromInput;}
+\DoxyCodeLine{1073                     texImporter.mipmapEnabled = \textcolor{keyword}{false};}
+\DoxyCodeLine{1074                     texImporter.alphaIsTransparency = \textcolor{keyword}{false}; \textcolor{comment}{// Prevent the texture importer from applying bleed to the transparent parts for PMA.}}
+\DoxyCodeLine{1075                     texImporter.spriteImportMode = SpriteImportMode.None;}
+\DoxyCodeLine{1076                     texImporter.maxTextureSize = 2048;}
+\DoxyCodeLine{1077 }
+\DoxyCodeLine{1078                     EditorUtility.SetDirty(texImporter);}
+\DoxyCodeLine{1079                     AssetDatabase.ImportAsset(texturePath);}
+\DoxyCodeLine{1080                     AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1081                 \}}
+\DoxyCodeLine{1082                 }
+\DoxyCodeLine{1083                 \textcolor{keywordtype}{string} pageName = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(pageFiles[i]);}
+\DoxyCodeLine{1084 }
+\DoxyCodeLine{1085                 \textcolor{comment}{//because this looks silly}}
+\DoxyCodeLine{1086                 \textcolor{keywordflow}{if} (pageName == primaryName \&\& pageFiles.Count == 1)}
+\DoxyCodeLine{1087                     pageName = \textcolor{stringliteral}{"Material"};}
+\DoxyCodeLine{1088 }
+\DoxyCodeLine{1089                 \textcolor{keywordtype}{string} materialPath = assetPath + \textcolor{stringliteral}{"/"} + primaryName + \textcolor{stringliteral}{"\_"} + pageName + \textcolor{stringliteral}{".mat"};}
+\DoxyCodeLine{1090                 Material mat = (Material)AssetDatabase.LoadAssetAtPath(materialPath, typeof(Material));}
+\DoxyCodeLine{1091 }
+\DoxyCodeLine{1092                 \textcolor{keywordflow}{if} (mat == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1093                     mat = \textcolor{keyword}{new} Material(Shader.Find(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{defaultShader}}));}
+\DoxyCodeLine{1094                     AssetDatabase.CreateAsset(mat, materialPath);}
+\DoxyCodeLine{1095                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1096                     vestigialMaterials.Remove(mat);}
+\DoxyCodeLine{1097                 \}}
+\DoxyCodeLine{1098 }
+\DoxyCodeLine{1099                 mat.mainTexture = texture;}
+\DoxyCodeLine{1100                 EditorUtility.SetDirty(mat);}
+\DoxyCodeLine{1101                 AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1102 }
+\DoxyCodeLine{1103                 populatingMaterials.Add(mat); \textcolor{comment}{//atlasAsset.materials[i] = mat;}}
+\DoxyCodeLine{1104             \}}
+\DoxyCodeLine{1105 }
+\DoxyCodeLine{1106             atlasAsset.materials = populatingMaterials.ToArray();}
+\DoxyCodeLine{1107 }
+\DoxyCodeLine{1108             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < vestigialMaterials.Count; i++)}
+\DoxyCodeLine{1109                 AssetDatabase.DeleteAsset(AssetDatabase.GetAssetPath(vestigialMaterials[i]));}
+\DoxyCodeLine{1110 }
+\DoxyCodeLine{1111             \textcolor{keywordflow}{if} (AssetDatabase.GetAssetPath(atlasAsset) == \textcolor{stringliteral}{""})}
+\DoxyCodeLine{1112                 AssetDatabase.CreateAsset(atlasAsset, atlasPath);}
+\DoxyCodeLine{1113             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1114                 atlasAsset.Clear();}
+\DoxyCodeLine{1115 }
+\DoxyCodeLine{1116             EditorUtility.SetDirty(atlasAsset);}
+\DoxyCodeLine{1117             AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1118 }
+\DoxyCodeLine{1119             \textcolor{keywordflow}{if} (pageFiles.Count != atlasAsset.materials.Length)}
+\DoxyCodeLine{1120                 Debug.LogWarning(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\{0\} ::: Not all atlas pages were imported. If you rename your image files, please make sure you also edit the filenames specified in the atlas file."}, atlasAsset.name));}
+\DoxyCodeLine{1121             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1122                 Debug.Log(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\{0\} ::: Imported with \{1\} material"}, atlasAsset.name, atlasAsset.materials.Length));}
+\DoxyCodeLine{1123 }
+\DoxyCodeLine{1124             \textcolor{comment}{// Iterate regions and bake marked.}}
+\DoxyCodeLine{1125             \mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}} atlas = atlasAsset.GetAtlas();}
+\DoxyCodeLine{1126             FieldInfo field = typeof(\mbox{\hyperlink{class_spine_1_1_atlas}{Atlas}}).GetField(\textcolor{stringliteral}{"regions"}, BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.NonPublic);}
+\DoxyCodeLine{1127             List<AtlasRegion> regions = (List<AtlasRegion>)field.GetValue(atlas);}
+\DoxyCodeLine{1128             \textcolor{keywordtype}{string} atlasAssetPath = AssetDatabase.GetAssetPath(atlasAsset);}
+\DoxyCodeLine{1129             \textcolor{keywordtype}{string} atlasAssetDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(atlasAssetPath);}
+\DoxyCodeLine{1130             \textcolor{keywordtype}{string} bakedDirPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(atlasAssetDirPath, atlasAsset.name);}
+\DoxyCodeLine{1131 }
+\DoxyCodeLine{1132             \textcolor{keywordtype}{bool} hasBakedRegions = \textcolor{keyword}{false};}
+\DoxyCodeLine{1133             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < regions.Count; i++) \{}
+\DoxyCodeLine{1134                 \mbox{\hyperlink{class_spine_1_1_atlas_region}{AtlasRegion}} region = regions[i];}
+\DoxyCodeLine{1135                 \textcolor{keywordtype}{string} bakedPrefabPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.Combine(bakedDirPath, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}{SpineEditorUtilities}}.GetPathSafeName(region.\mbox{\hyperlink{class_spine_1_1_atlas_region_af99497eb4a22dcba88f89c21c763fba2}{name}}) + \textcolor{stringliteral}{".prefab"}).Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"});}
+\DoxyCodeLine{1136                 GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath(bakedPrefabPath, typeof(GameObject));}
+\DoxyCodeLine{1137                 \textcolor{keywordflow}{if} (prefab != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1138                     \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aad274a878ec783a0d09ddca9c33bf57a}{BakeRegion}}(atlasAsset, region, \textcolor{keyword}{false});}
+\DoxyCodeLine{1139                     hasBakedRegions = \textcolor{keyword}{true};}
+\DoxyCodeLine{1140                 \}}
+\DoxyCodeLine{1141             \}}
+\DoxyCodeLine{1142 }
+\DoxyCodeLine{1143             \textcolor{keywordflow}{if} (hasBakedRegions) \{}
+\DoxyCodeLine{1144                 AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1145                 AssetDatabase.Refresh();}
+\DoxyCodeLine{1146             \}}
+\DoxyCodeLine{1147 }
+\DoxyCodeLine{1148             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a92c628e375d2d39bbf3ec03fc96b82c3}{protectFromStackGarbageCollection}}.Remove(atlasAsset);}
+\DoxyCodeLine{1149             \textcolor{keywordflow}{return} (AtlasAsset)AssetDatabase.LoadAssetAtPath(atlasPath, typeof(AtlasAsset));}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 21
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 22
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a4b7afeb6a859db67f215475a9aac51bb}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!IngestSpineProject@{IngestSpineProject}}
+\index{IngestSpineProject@{IngestSpineProject}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{IngestSpineProject()}{IngestSpineProject()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Ingest\+Spine\+Project (\begin{DoxyParamCaption}\item[{Text\+Asset}]{spine\+Json,  }\item[{params \mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}\mbox{[}$\,$\mbox{]}}]{atlas\+Assets }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1200 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1201                                                                                                            \{}
+\DoxyCodeLine{1202             \textcolor{keywordtype}{string} primaryName = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetFileNameWithoutExtension(spineJson.name);}
+\DoxyCodeLine{1203             \textcolor{keywordtype}{string} assetPath = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(AssetDatabase.GetAssetPath(spineJson));}
+\DoxyCodeLine{1204             \textcolor{keywordtype}{string} filePath = assetPath + \textcolor{stringliteral}{"/"} + primaryName + \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f51b5afb0c4dba29368e628876fe18b}{SkeletonDataSuffix}} + \textcolor{stringliteral}{".asset"};}
+\DoxyCodeLine{1205 }
+\DoxyCodeLine{1206 \textcolor{preprocessor}{            \#if SPINE\_TK2D}}
+\DoxyCodeLine{1207             \textcolor{keywordflow}{if} (spineJson != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1208                 SkeletonDataAsset skeletonDataAsset = (SkeletonDataAsset)AssetDatabase.LoadAssetAtPath(filePath, typeof(SkeletonDataAsset));}
+\DoxyCodeLine{1209                 \textcolor{keywordflow}{if} (skeletonDataAsset == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1210                     skeletonDataAsset = SkeletonDataAsset.CreateInstance<SkeletonDataAsset>();}
+\DoxyCodeLine{1211                     skeletonDataAsset.skeletonJSON = spineJson;}
+\DoxyCodeLine{1212                     skeletonDataAsset.fromAnimation = \textcolor{keyword}{new} \textcolor{keywordtype}{string}[0];}
+\DoxyCodeLine{1213                     skeletonDataAsset.toAnimation = \textcolor{keyword}{new} \textcolor{keywordtype}{string}[0];}
+\DoxyCodeLine{1214                     skeletonDataAsset.duration = \textcolor{keyword}{new} \textcolor{keywordtype}{float}[0];}
+\DoxyCodeLine{1215                     skeletonDataAsset.defaultMix = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}};}
+\DoxyCodeLine{1216                     skeletonDataAsset.scale = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}};}
+\DoxyCodeLine{1217 }
+\DoxyCodeLine{1218                     AssetDatabase.CreateAsset(skeletonDataAsset, filePath);}
+\DoxyCodeLine{1219                     AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1220                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1221                     skeletonDataAsset.Clear();}
+\DoxyCodeLine{1222                     skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1223                 \}}
+\DoxyCodeLine{1224 }
+\DoxyCodeLine{1225                 \textcolor{keywordflow}{return} skeletonDataAsset;}
+\DoxyCodeLine{1226             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1227                 EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Error!"}, \textcolor{stringliteral}{"Tried to ingest null Spine data."}, \textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{1228                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{1229             \}}
+\DoxyCodeLine{1230 }
+\DoxyCodeLine{1231 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{1232             \textcolor{keywordflow}{if} (spineJson != \textcolor{keyword}{null} \&\& atlasAssets != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1233                 SkeletonDataAsset skeletonDataAsset = (SkeletonDataAsset)AssetDatabase.LoadAssetAtPath(filePath, typeof(SkeletonDataAsset));}
+\DoxyCodeLine{1234                 \textcolor{keywordflow}{if} (skeletonDataAsset == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1235                     skeletonDataAsset = ScriptableObject.CreateInstance<SkeletonDataAsset>(); \{}
+\DoxyCodeLine{1236                         skeletonDataAsset.atlasAssets = atlasAssets;}
+\DoxyCodeLine{1237                         skeletonDataAsset.skeletonJSON = spineJson;}
+\DoxyCodeLine{1238                         skeletonDataAsset.defaultMix = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}};}
+\DoxyCodeLine{1239                         skeletonDataAsset.scale = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}};}
+\DoxyCodeLine{1240                     \}}
+\DoxyCodeLine{1241 }
+\DoxyCodeLine{1242                     AssetDatabase.CreateAsset(skeletonDataAsset, filePath);}
+\DoxyCodeLine{1243                     AssetDatabase.SaveAssets();}
+\DoxyCodeLine{1244                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1245                     skeletonDataAsset.atlasAssets = atlasAssets;}
+\DoxyCodeLine{1246                     skeletonDataAsset.Clear();}
+\DoxyCodeLine{1247                     skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1248                 \}}
+\DoxyCodeLine{1249 }
+\DoxyCodeLine{1250                 \textcolor{keywordflow}{return} skeletonDataAsset;}
+\DoxyCodeLine{1251             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{1252                 EditorUtility.DisplayDialog(\textcolor{stringliteral}{"Error!"}, \textcolor{stringliteral}{"Must specify both Spine JSON and AtlasAsset array"}, \textcolor{stringliteral}{"OK"});}
+\DoxyCodeLine{1253                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{1254             \}}
+\DoxyCodeLine{1255 \textcolor{preprocessor}{            \#endif}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 23
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 24
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 216 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{217                                   \{}
+\DoxyCodeLine{218             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8a9604741ef48fdbf45cb43640af4555}{LoadPreferences}}();}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220             DirectoryInfo rootDir = \textcolor{keyword}{new} DirectoryInfo(Application.dataPath);}
+\DoxyCodeLine{221             FileInfo[] files = rootDir.GetFiles(\textcolor{stringliteral}{"SpineEditorUtilities.cs"}, SearchOption.AllDirectories);}
+\DoxyCodeLine{222             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7a17632a07ca1beefad7cc1e681f07b1}{editorPath}} = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(files[0].FullName.Replace(\textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"}, \textcolor{stringliteral}{"/"}).Replace(Application.dataPath, \textcolor{stringliteral}{"Assets"}));}
+\DoxyCodeLine{223             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af8fd9a46db40d4eb6eb64fe41145be9f}{editorGUIPath}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7a17632a07ca1beefad7cc1e681f07b1}{editorPath}} + \textcolor{stringliteral}{"/GUI"};}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225             \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_ae708aa560067bdaf8236b4e3c8f21f89}{Icons}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abd76572f6dc50fd5b923f3360652e60c}{Initialize}}();}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227             \textcolor{comment}{// Drag and Drop}}
+\DoxyCodeLine{228             SceneView.onSceneGUIDelegate -\/= \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_adadc887a09b56823fa8ecebae1d85300}{SceneViewDragAndDrop}};}
+\DoxyCodeLine{229             SceneView.onSceneGUIDelegate += \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_adadc887a09b56823fa8ecebae1d85300}{SceneViewDragAndDrop}};}
+\DoxyCodeLine{230             EditorApplication.hierarchyWindowItemOnGUI -\/= SpineEditorHierarchyHandler.HierarchyDragAndDrop;}
+\DoxyCodeLine{231             EditorApplication.hierarchyWindowItemOnGUI += SpineEditorHierarchyHandler.HierarchyDragAndDrop;}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233             \textcolor{comment}{// Hierarchy Icons}}
+\DoxyCodeLine{234 \textcolor{preprocessor}{            \#if UNITY\_2017\_2\_OR\_NEWER}}
+\DoxyCodeLine{235             EditorApplication.playModeStateChanged -\/= SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged;}
+\DoxyCodeLine{236             EditorApplication.playModeStateChanged += SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged;}
+\DoxyCodeLine{237             SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged(PlayModeStateChange.EnteredEditMode);}
+\DoxyCodeLine{238 \textcolor{preprocessor}{            \#else}}
+\DoxyCodeLine{239             EditorApplication.playmodeStateChanged -\/= SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged;}
+\DoxyCodeLine{240             EditorApplication.playmodeStateChanged += SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged;}
+\DoxyCodeLine{241             SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged();}
+\DoxyCodeLine{242 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a09cb8b207b791fa10c4422b475bb1e03}{initialized}} = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 25
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 26
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a01dc4423be541dc44f235984c1c8046c}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a01dc4423be541dc44f235984c1c8046c}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!InstantiateDelegate@{InstantiateDelegate}}
+\index{InstantiateDelegate@{InstantiateDelegate}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{InstantiateDelegate()}{InstantiateDelegate()}}
+{\footnotesize\ttfamily delegate Component Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Instantiate\+Delegate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset }\end{DoxyParamCaption})}
+
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 27
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9a009a70bc23b76080dfcdec1f9600cf}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9a009a70bc23b76080dfcdec1f9600cf}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!InstantiateSkeletonAnimation@{InstantiateSkeletonAnimation}}
+\index{InstantiateSkeletonAnimation@{InstantiateSkeletonAnimation}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{InstantiateSkeletonAnimation()}{InstantiateSkeletonAnimation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Instantiate\+Skeleton\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin = {\ttfamily null},  }\item[{bool}]{destroy\+Invalid = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1395 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1396                                                                                                                                                          \{}
+\DoxyCodeLine{1397             \mbox{\hyperlink{class_spine_1_1_skeleton_data}{SkeletonData}} data = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1398 }
+\DoxyCodeLine{1399             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1400                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonDataAsset.atlasAssets.Length; i++) \{}
+\DoxyCodeLine{1401                     \textcolor{keywordtype}{string} reloadAtlasPath = AssetDatabase.GetAssetPath(skeletonDataAsset.atlasAssets[i]);}
+\DoxyCodeLine{1402                     skeletonDataAsset.atlasAssets[i] = (AtlasAsset)AssetDatabase.LoadAssetAtPath(reloadAtlasPath, typeof(AtlasAsset));}
+\DoxyCodeLine{1403                 \}}
+\DoxyCodeLine{1404                 data = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{false});}
+\DoxyCodeLine{1405             \}}
+\DoxyCodeLine{1406 }
+\DoxyCodeLine{1407             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1408                 Debug.LogWarning(\textcolor{stringliteral}{"InstantiateSkeletonAnimation tried to instantiate a skeleton from an invalid SkeletonDataAsset."});}
+\DoxyCodeLine{1409                 \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{1410             \}}
+\DoxyCodeLine{1411 }
+\DoxyCodeLine{1412             \textcolor{keywordtype}{string} spineGameObjectName = \textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Spine GameObject (\{0\})"}, skeletonDataAsset.name.Replace(\textcolor{stringliteral}{"\_SkeletonData"}, \textcolor{stringliteral}{""}));}
+\DoxyCodeLine{1413             GameObject go = \textcolor{keyword}{new} GameObject(spineGameObjectName, typeof(MeshFilter), typeof(MeshRenderer), typeof(SkeletonAnimation));}
+\DoxyCodeLine{1414             SkeletonAnimation newSkeletonAnimation = go.GetComponent<SkeletonAnimation>();}
+\DoxyCodeLine{1415             newSkeletonAnimation.skeletonDataAsset = skeletonDataAsset;}
+\DoxyCodeLine{1416             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6a5aff8b3f3d093a6c5f757e93cd3f37}{IngestAdvancedRenderSettings}}(newSkeletonAnimation);}
+\DoxyCodeLine{1417 }
+\DoxyCodeLine{1418             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{1419                 newSkeletonAnimation.Initialize(\textcolor{keyword}{false});}
+\DoxyCodeLine{1420             \} \textcolor{keywordflow}{catch} (System.Exception e) \{}
+\DoxyCodeLine{1421                 \textcolor{keywordflow}{if} (destroyInvalid) \{}
+\DoxyCodeLine{1422                     Debug.LogWarning(\textcolor{stringliteral}{"Editor-\/instantiated SkeletonAnimation threw an Exception. Destroying GameObject to prevent orphaned GameObject."});}
+\DoxyCodeLine{1423                     GameObject.DestroyImmediate(go);}
+\DoxyCodeLine{1424                 \}}
+\DoxyCodeLine{1425                 Debug.Log(e);}
+\DoxyCodeLine{1426             \}}
+\DoxyCodeLine{1427 }
+\DoxyCodeLine{1428             \textcolor{comment}{// Set Defaults}}
+\DoxyCodeLine{1429             \textcolor{keywordtype}{bool} noSkins = data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{DefaultSkin}} == \textcolor{keyword}{null} \&\& (data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a680670820ea8ce38d0a1835e4aefb1a5}{Skins}} == \textcolor{keyword}{null} || data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a680670820ea8ce38d0a1835e4aefb1a5}{Skins}}.Count == 0); \textcolor{comment}{// Support attachmentless/skinless SkeletonData.}}
+\DoxyCodeLine{1430             skin = skin ?? data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{DefaultSkin}} ?? (noSkins ? null : data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a680670820ea8ce38d0a1835e4aefb1a5}{Skins}}.Items[0]);}
+\DoxyCodeLine{1431             \textcolor{keywordflow}{if} (skin != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1432                 newSkeletonAnimation.initialSkinName = skin.\mbox{\hyperlink{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}{Name}};}
+\DoxyCodeLine{1433                 newSkeletonAnimation.skeleton.SetSkin(skin);}
+\DoxyCodeLine{1434             \}}
+\DoxyCodeLine{1435 }
+\DoxyCodeLine{1436             newSkeletonAnimation.zSpacing = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}};}
+\DoxyCodeLine{1437 }
+\DoxyCodeLine{1438             newSkeletonAnimation.skeleton.Update(0);}
+\DoxyCodeLine{1439             newSkeletonAnimation.state.Update(0);}
+\DoxyCodeLine{1440             newSkeletonAnimation.state.Apply(newSkeletonAnimation.skeleton);}
+\DoxyCodeLine{1441             newSkeletonAnimation.skeleton.UpdateWorldTransform();}
+\DoxyCodeLine{1442 }
+\DoxyCodeLine{1443             \textcolor{keywordflow}{return} newSkeletonAnimation;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 28
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a62a37b5611d74d83541f6df96b16eaef}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a62a37b5611d74d83541f6df96b16eaef}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!InstantiateSkeletonAnimation@{InstantiateSkeletonAnimation}}
+\index{InstantiateSkeletonAnimation@{InstantiateSkeletonAnimation}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{InstantiateSkeletonAnimation()}{InstantiateSkeletonAnimation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Instantiate\+Skeleton\+Animation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{string}]{skin\+Name,  }\item[{bool}]{destroy\+Invalid = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1389 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1390                                                                                                                                                         \{}
+\DoxyCodeLine{1391             var skeletonData = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1392             var skin = skeletonData != \textcolor{keyword}{null} ? skeletonData.FindSkin(skinName) : \textcolor{keyword}{null};}
+\DoxyCodeLine{1393             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a62a37b5611d74d83541f6df96b16eaef}{InstantiateSkeletonAnimation}}(skeletonDataAsset, skin, destroyInvalid);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 29
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 30
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab9ec48922f8b927cdefba05bd2a44f9}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aab9ec48922f8b927cdefba05bd2a44f9}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!InstantiateSkeletonAnimator@{InstantiateSkeletonAnimator}}
+\index{InstantiateSkeletonAnimator@{InstantiateSkeletonAnimator}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{InstantiateSkeletonAnimator()}{InstantiateSkeletonAnimator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator}{Skeleton\+Animator}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Instantiate\+Skeleton\+Animator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{\mbox{\hyperlink{class_spine_1_1_skin}{Skin}}}]{skin = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1459 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1460                                                                                                                            \{}
+\DoxyCodeLine{1461             \textcolor{keywordtype}{string} spineGameObjectName = \textcolor{keywordtype}{string}.Format(\textcolor{stringliteral}{"Spine Mecanim GameObject (\{0\})"}, skeletonDataAsset.name.Replace(\textcolor{stringliteral}{"\_SkeletonData"}, \textcolor{stringliteral}{""}));}
+\DoxyCodeLine{1462             GameObject go = \textcolor{keyword}{new} GameObject(spineGameObjectName, typeof(MeshFilter), typeof(MeshRenderer), typeof(Animator), typeof(SkeletonAnimator));}
+\DoxyCodeLine{1463 }
+\DoxyCodeLine{1464             \textcolor{keywordflow}{if} (skeletonDataAsset.controller == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1465                 SkeletonBaker.GenerateMecanimAnimationClips(skeletonDataAsset);}
+\DoxyCodeLine{1466                 Debug.Log(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Mecanim controller was automatically generated and assigned for \{0\}"}, skeletonDataAsset.name));}
+\DoxyCodeLine{1467             \}}
+\DoxyCodeLine{1468 }
+\DoxyCodeLine{1469             go.GetComponent<Animator>().runtimeAnimatorController = skeletonDataAsset.controller;}
+\DoxyCodeLine{1470 }
+\DoxyCodeLine{1471             SkeletonAnimator anim = go.GetComponent<SkeletonAnimator>();}
+\DoxyCodeLine{1472             anim.skeletonDataAsset = skeletonDataAsset;}
+\DoxyCodeLine{1473             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6a5aff8b3f3d093a6c5f757e93cd3f37}{IngestAdvancedRenderSettings}}(anim);}
+\DoxyCodeLine{1474 }
+\DoxyCodeLine{1475             \mbox{\hyperlink{class_spine_1_1_skeleton_data}{SkeletonData}} data = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1476             \textcolor{keywordflow}{if} (data == \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{1477                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonDataAsset.atlasAssets.Length; i++) \{}
+\DoxyCodeLine{1478                     \textcolor{keywordtype}{string} reloadAtlasPath = AssetDatabase.GetAssetPath(skeletonDataAsset.atlasAssets[i]);}
+\DoxyCodeLine{1479                     skeletonDataAsset.atlasAssets[i] = (AtlasAsset)AssetDatabase.LoadAssetAtPath(reloadAtlasPath, typeof(AtlasAsset));}
+\DoxyCodeLine{1480                 \}}
+\DoxyCodeLine{1481                 data = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{1482             \}}
+\DoxyCodeLine{1483 }
+\DoxyCodeLine{1484             \textcolor{comment}{// Set defaults}}
+\DoxyCodeLine{1485             skin = skin ?? data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{DefaultSkin}} ?? data.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a680670820ea8ce38d0a1835e4aefb1a5}{Skins}}.Items[0];}
+\DoxyCodeLine{1486             anim.zSpacing = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}};}
+\DoxyCodeLine{1487 }
+\DoxyCodeLine{1488             anim.Initialize(\textcolor{keyword}{false});}
+\DoxyCodeLine{1489             anim.skeleton.SetSkin(skin);}
+\DoxyCodeLine{1490             anim.initialSkinName = skin.\mbox{\hyperlink{class_spine_1_1_skin_a474d9cd42c610b1f227283022f8ad756}{Name}};}
+\DoxyCodeLine{1491 }
+\DoxyCodeLine{1492             anim.skeleton.Update(0);}
+\DoxyCodeLine{1493             anim.skeleton.UpdateWorldTransform();}
+\DoxyCodeLine{1494             anim.LateUpdate();}
+\DoxyCodeLine{1495 }
+\DoxyCodeLine{1496             \textcolor{keywordflow}{return} anim;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 31
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a00c8ae138b071a488169ac78a6072fef}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a00c8ae138b071a488169ac78a6072fef}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!InstantiateSkeletonAnimator@{InstantiateSkeletonAnimator}}
+\index{InstantiateSkeletonAnimator@{InstantiateSkeletonAnimator}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{InstantiateSkeletonAnimator()}{InstantiateSkeletonAnimator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animator}{Skeleton\+Animator}} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Instantiate\+Skeleton\+Animator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{string}]{skin\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1455 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1456                                                                                                                           \{}
+\DoxyCodeLine{1457             \textcolor{keywordflow}{return} \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a00c8ae138b071a488169ac78a6072fef}{InstantiateSkeletonAnimator}}(skeletonDataAsset, skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true}).FindSkin(skinName));}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 32
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 33
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8a9604741ef48fdbf45cb43640af4555}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8a9604741ef48fdbf45cb43640af4555}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!LoadPreferences@{LoadPreferences}}
+\index{LoadPreferences@{LoadPreferences}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{LoadPreferences()}{LoadPreferences()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Load\+Preferences (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 205 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206                                        \{}
+\DoxyCodeLine{207             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}} = EditorPrefs.GetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a5007b1e004f93f5583a6acdfea8448fc}{DEFAULT\_MIX\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}{DEFAULT\_DEFAULT\_MIX}});}
+\DoxyCodeLine{208             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}} = EditorPrefs.GetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9e976228e66b5c7bd432d7690f58d28b}{DEFAULT\_SCALE\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}{DEFAULT\_DEFAULT\_SCALE}});}
+\DoxyCodeLine{209             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}} = EditorPrefs.GetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a774faa223d3fc2b4f3725fc05af5d002}{DEFAULT\_ZSPACING\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}{DEFAULT\_DEFAULT\_ZSPACING}});}
+\DoxyCodeLine{210             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{defaultShader}} = EditorPrefs.GetString(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad03d6da2a596a2d26eab336445e0589b}{DEFAULT\_SHADER\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}{DEFAULT\_DEFAULT\_SHADER}}); }
+\DoxyCodeLine{211             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}{showHierarchyIcons}} = EditorPrefs.GetBool(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af531582867ade706a161dc424d7ca331}{SHOW\_HIERARCHY\_ICONS\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}{DEFAULT\_SHOW\_HIERARCHY\_ICONS}});}
+\DoxyCodeLine{212             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{setTextureImporterSettings}} = EditorPrefs.GetBool(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aed3ef094f24bb367880de5f0accf5bb1}{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS}});}
+\DoxyCodeLine{213             SpineHandles.handleScale = EditorPrefs.GetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a90c93cf0ed2a80f01e4e734159841f75}{SCENE\_ICONS\_SCALE\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa32406cc839dba28f1f443fc15036c1c}{DEFAULT\_SCENE\_ICONS\_SCALE}});}
+\DoxyCodeLine{214             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aaf34441d2983e39e1bb46c1179200c7b}{preferencesLoaded}} = \textcolor{keyword}{true};}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 34
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac2e861c82597ea456403999ecc021845}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac2e861c82597ea456403999ecc021845}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!MousePointToWorldPoint2D@{MousePointToWorldPoint2D}}
+\index{MousePointToWorldPoint2D@{MousePointToWorldPoint2D}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{MousePointToWorldPoint2D()}{MousePointToWorldPoint2D()}}
+{\footnotesize\ttfamily static Vector3 Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Mouse\+Point\+To\+World\+Point2D (\begin{DoxyParamCaption}\item[{Vector2}]{mouse\+Position,  }\item[{Camera}]{camera,  }\item[{Plane}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Converts a mouse point to a world point on a plane. 
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 465 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{466                                                                                                     \{}
+\DoxyCodeLine{467             var screenPos = \textcolor{keyword}{new} Vector3(mousePosition.x, camera.pixelHeight -\/ mousePosition.y, 0f);}
+\DoxyCodeLine{468             var ray = camera.ScreenPointToRay(screenPos);}
+\DoxyCodeLine{469             \textcolor{keywordtype}{float} distance;}
+\DoxyCodeLine{470             \textcolor{keywordtype}{bool} hit = plane.Raycast(ray, out distance);}
+\DoxyCodeLine{471             \textcolor{keywordflow}{return} ray.GetPoint(distance);}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 35
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a54b45b7bcaebbb0f8b427ef3bf035e39}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a54b45b7bcaebbb0f8b427ef3bf035e39}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!MultiAtlasDialog@{MultiAtlasDialog}}
+\index{MultiAtlasDialog@{MultiAtlasDialog}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{MultiAtlasDialog()}{MultiAtlasDialog()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset}{Atlas\+Asset}}$>$ Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Multi\+Atlas\+Dialog (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{required\+Paths,  }\item[{string}]{initial\+Directory,  }\item[{string}]{filename = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 794 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{795                                                                                                                              \{}
+\DoxyCodeLine{796             List<AtlasAsset> atlasAssets = \textcolor{keyword}{new} List<AtlasAsset>();}
+\DoxyCodeLine{797             \textcolor{keywordtype}{bool} resolved = \textcolor{keyword}{false};}
+\DoxyCodeLine{798             \textcolor{keywordtype}{string} lastAtlasPath = initialDirectory;}
+\DoxyCodeLine{799             \textcolor{keywordflow}{while} (!resolved) \{}
+\DoxyCodeLine{800 }
+\DoxyCodeLine{801                 \textcolor{comment}{// Build dialog box message.}}
+\DoxyCodeLine{802                 var missingRegions = \textcolor{keyword}{new} List<string>(requiredPaths);}
+\DoxyCodeLine{803                 var dialogText = \textcolor{keyword}{new} StringBuilder();}
+\DoxyCodeLine{804                 \{}
+\DoxyCodeLine{805                     dialogText.AppendLine(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"SkeletonDataAsset for \(\backslash\)"\{0\}\(\backslash\)""}, filename));}
+\DoxyCodeLine{806                     dialogText.AppendLine(\textcolor{stringliteral}{"has missing regions."});}
+\DoxyCodeLine{807                     dialogText.AppendLine();}
+\DoxyCodeLine{808                     dialogText.AppendLine(\textcolor{stringliteral}{"Current Atlases:"});}
+\DoxyCodeLine{809 }
+\DoxyCodeLine{810                     \textcolor{keywordflow}{if} (atlasAssets.Count == 0)}
+\DoxyCodeLine{811                         dialogText.AppendLine(\textcolor{stringliteral}{"\(\backslash\)t-\/-\/none-\/-\/"});}
+\DoxyCodeLine{812 }
+\DoxyCodeLine{813                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < atlasAssets.Count; i++)}
+\DoxyCodeLine{814                         dialogText.AppendLine(\textcolor{stringliteral}{"\(\backslash\)t"} + atlasAssets[i].name);}
+\DoxyCodeLine{815 }
+\DoxyCodeLine{816                     dialogText.AppendLine();}
+\DoxyCodeLine{817                     dialogText.AppendLine(\textcolor{stringliteral}{"Missing Regions:"});}
+\DoxyCodeLine{818 }
+\DoxyCodeLine{819                     \textcolor{keywordflow}{foreach} (var atlasAsset \textcolor{keywordflow}{in} atlasAssets) \{}
+\DoxyCodeLine{820                         var atlas = atlasAsset.GetAtlas();}
+\DoxyCodeLine{821                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < missingRegions.Count; i++) \{}
+\DoxyCodeLine{822                             \textcolor{keywordflow}{if} (atlas.FindRegion(missingRegions[i]) != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{823                                 missingRegions.RemoveAt(i);}
+\DoxyCodeLine{824                                 i-\/-\/;}
+\DoxyCodeLine{825                             \}}
+\DoxyCodeLine{826                         \}}
+\DoxyCodeLine{827                     \}}
+\DoxyCodeLine{828                         }
+\DoxyCodeLine{829                     \textcolor{keywordtype}{int} n = missingRegions.Count;}
+\DoxyCodeLine{830                     \textcolor{keywordflow}{if} (n == 0) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{831 }
+\DoxyCodeLine{832                     \textcolor{keyword}{const} \textcolor{keywordtype}{int} MaxListLength = 15;}
+\DoxyCodeLine{833                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; (i < n \&\& i < MaxListLength); i++)}
+\DoxyCodeLine{834                         dialogText.AppendLine(\textcolor{stringliteral}{"\(\backslash\)t"} + missingRegions[i]);}
+\DoxyCodeLine{835 }
+\DoxyCodeLine{836                     \textcolor{keywordflow}{if} (n > MaxListLength) dialogText.AppendLine(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\(\backslash\)t... \{0\} more..."}, n -\/ MaxListLength));}
+\DoxyCodeLine{837                 \}}
+\DoxyCodeLine{838 }
+\DoxyCodeLine{839                 \textcolor{comment}{// Show dialog box.}}
+\DoxyCodeLine{840                 \textcolor{keywordtype}{int} result = EditorUtility.DisplayDialogComplex(}
+\DoxyCodeLine{841                     \textcolor{stringliteral}{"SkeletonDataAsset has missing Atlas."},}
+\DoxyCodeLine{842                     dialogText.ToString(),}
+\DoxyCodeLine{843                     \textcolor{stringliteral}{"Browse..."}, \textcolor{stringliteral}{"Import anyway"}, \textcolor{stringliteral}{"Cancel"}}
+\DoxyCodeLine{844                 );}
+\DoxyCodeLine{845 }
+\DoxyCodeLine{846                 \textcolor{keywordflow}{switch} (result) \{}
+\DoxyCodeLine{847                 \textcolor{keywordflow}{case} 0: \textcolor{comment}{// Browse...}}
+\DoxyCodeLine{848                     AtlasAsset selectedAtlasAsset = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_acb312fb96888bf979e2b43fbdf2c054f}{GetAtlasDialog}}(lastAtlasPath);}
+\DoxyCodeLine{849                     \textcolor{keywordflow}{if} (selectedAtlasAsset != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{850                         var atlas = selectedAtlasAsset.GetAtlas();}
+\DoxyCodeLine{851                         \textcolor{keywordtype}{bool} hasValidRegion = \textcolor{keyword}{false};}
+\DoxyCodeLine{852                         \textcolor{keywordflow}{foreach} (\textcolor{keywordtype}{string} str \textcolor{keywordflow}{in} missingRegions) \{}
+\DoxyCodeLine{853                             \textcolor{keywordflow}{if} (atlas.FindRegion(str) != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{854                                 hasValidRegion = \textcolor{keyword}{true};}
+\DoxyCodeLine{855                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{856                             \}}
+\DoxyCodeLine{857                         \}}
+\DoxyCodeLine{858                         atlasAssets.Add(selectedAtlasAsset);}
+\DoxyCodeLine{859                     \}}
+\DoxyCodeLine{860                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{861                 \textcolor{keywordflow}{case} 1: \textcolor{comment}{// Import anyway}}
+\DoxyCodeLine{862                     resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{863                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{864                 \textcolor{keywordflow}{case} 2: \textcolor{comment}{// Cancel}}
+\DoxyCodeLine{865                     atlasAssets = \textcolor{keyword}{null};}
+\DoxyCodeLine{866                     resolved = \textcolor{keyword}{true};}
+\DoxyCodeLine{867                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{868                 \}}
+\DoxyCodeLine{869             \}}
+\DoxyCodeLine{870 }
+\DoxyCodeLine{871             \textcolor{keywordflow}{return} atlasAssets;}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 36
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 37
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f1247cc225ad1943f3cee66bb23b548}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f1247cc225ad1943f3cee66bb23b548}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!OnPostprocessAllAssets@{OnPostprocessAllAssets}}
+\index{OnPostprocessAllAssets@{OnPostprocessAllAssets}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{OnPostprocessAllAssets()}{OnPostprocessAllAssets()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+On\+Postprocess\+All\+Assets (\begin{DoxyParamCaption}\item[{string\mbox{[}$\,$\mbox{]}}]{imported,  }\item[{string\mbox{[}$\,$\mbox{]}}]{deleted,  }\item[{string\mbox{[}$\,$\mbox{]}}]{moved,  }\item[{string\mbox{[}$\,$\mbox{]}}]{moved\+From\+Asset\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 599 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{600                                                                                                                                \{}
+\DoxyCodeLine{601             \textcolor{keywordflow}{if} (imported.Length == 0)}
+\DoxyCodeLine{602                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{603 }
+\DoxyCodeLine{604             \textcolor{comment}{// In case user used "Assets -\/> Reimport All", during the import process,}}
+\DoxyCodeLine{605             \textcolor{comment}{// asset database is not initialized until some point. During that period,}}
+\DoxyCodeLine{606             \textcolor{comment}{// all attempts to load any assets using API (i.e. AssetDatabase.LoadAssetAtPath)}}
+\DoxyCodeLine{607             \textcolor{comment}{// will return null, and as result, assets won't be loaded even if they actually exists,}}
+\DoxyCodeLine{608             \textcolor{comment}{// which may lead to numerous importing errors.}}
+\DoxyCodeLine{609             \textcolor{comment}{// This situation also happens if Library folder is deleted from the project, which is a pretty}}
+\DoxyCodeLine{610             \textcolor{comment}{// common case, since when using version control systems, the Library folder must be excluded.}}
+\DoxyCodeLine{611             \textcolor{comment}{// }}
+\DoxyCodeLine{612             \textcolor{comment}{// So to avoid this, in case asset database is not available, we delay loading the assets}}
+\DoxyCodeLine{613             \textcolor{comment}{// until next time.}}
+\DoxyCodeLine{614             \textcolor{comment}{//}}
+\DoxyCodeLine{615             \textcolor{comment}{// Unity *always* reimports some internal assets after the process is done, so this method}}
+\DoxyCodeLine{616             \textcolor{comment}{// is always called once again in a state when asset database is available.}}
+\DoxyCodeLine{617             \textcolor{comment}{//}}
+\DoxyCodeLine{618             \textcolor{comment}{// Checking whether AssetDatabase is initialized is done by attempting to load}}
+\DoxyCodeLine{619             \textcolor{comment}{// a known "marker" asset that should always be available. Failing to load this asset}}
+\DoxyCodeLine{620             \textcolor{comment}{// means that AssetDatabase is not initialized.}}
+\DoxyCodeLine{621             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}{assetsImportedInWrongState}}.UnionWith(imported);}
+\DoxyCodeLine{622             \textcolor{keywordflow}{if} (AssetDatabaseAvailabilityDetector.IsAssetDatabaseAvailable()) \{}
+\DoxyCodeLine{623                 \textcolor{keywordtype}{string}[] combinedAssets = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}{assetsImportedInWrongState}}.ToArray();}
+\DoxyCodeLine{624                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}{assetsImportedInWrongState}}.Clear();}
+\DoxyCodeLine{625                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a2099f3638c64bfdd227a85845af5b515}{ImportSpineContent}}(combinedAssets);}
+\DoxyCodeLine{626             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 38
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a984d75c91781e51cf1c844ece0cd9340}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a984d75c91781e51cf1c844ece0cd9340}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!PreferencesGUI@{PreferencesGUI}}
+\index{PreferencesGUI@{PreferencesGUI}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{PreferencesGUI()}{PreferencesGUI()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Preferences\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 256 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{257                                       \{}
+\DoxyCodeLine{258             \textcolor{keywordflow}{if} (!\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aaf34441d2983e39e1bb46c1179200c7b}{preferencesLoaded}})}
+\DoxyCodeLine{259                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a8a9604741ef48fdbf45cb43640af4555}{LoadPreferences}}();}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{262             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}{showHierarchyIcons}} = EditorGUILayout.Toggle(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Show Hierarchy Icons"}, \textcolor{stringliteral}{"Show relevant icons on GameObjects with Spine Components on them. Disable this if you have large, complex scenes."}), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}{showHierarchyIcons}});}
+\DoxyCodeLine{263             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{264                 EditorPrefs.SetBool(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af531582867ade706a161dc424d7ca331}{SHOW\_HIERARCHY\_ICONS\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}{showHierarchyIcons}});}
+\DoxyCodeLine{265 \textcolor{preprocessor}{                \#if UNITY\_2017\_2\_OR\_NEWER}}
+\DoxyCodeLine{266                 SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged(PlayModeStateChange.EnteredEditMode);}
+\DoxyCodeLine{267 \textcolor{preprocessor}{                \#else}}
+\DoxyCodeLine{268                 SpineEditorHierarchyHandler.HierarchyIconsOnPlaymodeStateChanged();}
+\DoxyCodeLine{269 \textcolor{preprocessor}{                \#endif}}
+\DoxyCodeLine{270             \}}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272             EditorGUILayout.Separator();}
+\DoxyCodeLine{273 }
+\DoxyCodeLine{274             EditorGUILayout.LabelField(\textcolor{stringliteral}{"Auto-\/Import Settings"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{275 }
+\DoxyCodeLine{276             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{277             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}} = EditorGUILayout.FloatField(\textcolor{stringliteral}{"Default Mix"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}});}
+\DoxyCodeLine{278             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) }
+\DoxyCodeLine{279                 EditorPrefs.SetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a5007b1e004f93f5583a6acdfea8448fc}{DEFAULT\_MIX\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}{defaultMix}});}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{282             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}} = EditorGUILayout.FloatField(\textcolor{stringliteral}{"Default SkeletonData Scale"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}});}
+\DoxyCodeLine{283             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck())}
+\DoxyCodeLine{284                 EditorPrefs.SetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9e976228e66b5c7bd432d7690f58d28b}{DEFAULT\_SCALE\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}{defaultScale}});}
+\DoxyCodeLine{285 }
+\DoxyCodeLine{286             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{287             var shader = (EditorGUILayout.ObjectField(\textcolor{stringliteral}{"Default Shader"}, Shader.Find(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{defaultShader}}), typeof(Shader), \textcolor{keyword}{false}) as Shader);}
+\DoxyCodeLine{288             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{defaultShader}} = shader != \textcolor{keyword}{null} ? shader.name : \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}{DEFAULT\_DEFAULT\_SHADER}};}
+\DoxyCodeLine{289             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck())}
+\DoxyCodeLine{290                 EditorPrefs.SetString(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad03d6da2a596a2d26eab336445e0589b}{DEFAULT\_SHADER\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}{defaultShader}});}
+\DoxyCodeLine{291 }
+\DoxyCodeLine{292             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{293             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{setTextureImporterSettings}} = EditorGUILayout.Toggle(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"Apply Atlas Texture Settings"}, \textcolor{stringliteral}{"Apply the recommended settings for Texture Importers."}), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{setTextureImporterSettings}});}
+\DoxyCodeLine{294             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{295                 EditorPrefs.SetBool(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aed3ef094f24bb367880de5f0accf5bb1}{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}{setTextureImporterSettings}});}
+\DoxyCodeLine{296             \}}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{298             EditorGUILayout.Space();}
+\DoxyCodeLine{299 }
+\DoxyCodeLine{300             EditorGUILayout.LabelField(\textcolor{stringliteral}{"Editor Instantiation"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{301             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{302             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}} = EditorGUILayout.Slider(\textcolor{stringliteral}{"Default Slot Z-\/Spacing"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}}, -\/0.1f, 0f);}
+\DoxyCodeLine{303             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck())}
+\DoxyCodeLine{304                 EditorPrefs.SetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a774faa223d3fc2b4f3725fc05af5d002}{DEFAULT\_ZSPACING\_KEY}}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}{defaultZSpacing}});}
+\DoxyCodeLine{305             }
+\DoxyCodeLine{306 }
+\DoxyCodeLine{307             EditorGUILayout.Space();}
+\DoxyCodeLine{308             EditorGUILayout.LabelField(\textcolor{stringliteral}{"Handles and Gizmos"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{309             EditorGUI.BeginChangeCheck();}
+\DoxyCodeLine{310             SpineHandles.handleScale = EditorGUILayout.Slider(\textcolor{stringliteral}{"Editor Bone Scale"}, SpineHandles.handleScale, 0.01f, 2f);}
+\DoxyCodeLine{311             SpineHandles.handleScale = Mathf.Max(0.01f, SpineHandles.handleScale);}
+\DoxyCodeLine{312             \textcolor{keywordflow}{if} (EditorGUI.EndChangeCheck()) \{}
+\DoxyCodeLine{313                 EditorPrefs.SetFloat(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a90c93cf0ed2a80f01e4e734159841f75}{SCENE\_ICONS\_SCALE\_KEY}}, SpineHandles.handleScale);}
+\DoxyCodeLine{314                 SceneView.RepaintAll();}
+\DoxyCodeLine{315             \}}
+\DoxyCodeLine{316                 }
+\DoxyCodeLine{317             }
+\DoxyCodeLine{318             GUILayout.Space(20);}
+\DoxyCodeLine{319             EditorGUILayout.LabelField(\textcolor{stringliteral}{"3rd Party Settings"}, EditorStyles.boldLabel);}
+\DoxyCodeLine{320             \textcolor{keyword}{using} (\textcolor{keyword}{new} GUILayout.HorizontalScope()) \{}
+\DoxyCodeLine{321                 EditorGUILayout.PrefixLabel(\textcolor{stringliteral}{"Define TK2D"});}
+\DoxyCodeLine{322                 \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"Enable"}, GUILayout.Width(64)))}
+\DoxyCodeLine{323                     SpineTK2DEditorUtility.EnableTK2D();}
+\DoxyCodeLine{324                 \textcolor{keywordflow}{if} (GUILayout.Button(\textcolor{stringliteral}{"Disable"}, GUILayout.Width(64)))}
+\DoxyCodeLine{325                     SpineTK2DEditorUtility.DisableTK2D();}
+\DoxyCodeLine{326             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 39
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a612bc9850dc3cbdabdc2488926616b73}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a612bc9850dc3cbdabdc2488926616b73}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!ReloadSkeletonData@{ReloadSkeletonData}}
+\index{ReloadSkeletonData@{ReloadSkeletonData}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{ReloadSkeletonData()}{ReloadSkeletonData()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Reload\+Skeleton\+Data (\begin{DoxyParamCaption}\item[{string}]{skeleton\+J\+S\+O\+N\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 735 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{736                                                                  \{}
+\DoxyCodeLine{737             \textcolor{keywordtype}{string} dir = \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aac70412e939d72a9234cdebb1af5867b}{Path}}.GetDirectoryName(skeletonJSONPath);}
+\DoxyCodeLine{738             TextAsset textAsset = (TextAsset)AssetDatabase.LoadAssetAtPath(skeletonJSONPath, typeof(TextAsset));}
+\DoxyCodeLine{739             DirectoryInfo dirInfo = \textcolor{keyword}{new} DirectoryInfo(dir);}
+\DoxyCodeLine{740             FileInfo[] files = dirInfo.GetFiles(\textcolor{stringliteral}{"*.asset"});}
+\DoxyCodeLine{741 }
+\DoxyCodeLine{742             \textcolor{keywordflow}{foreach} (var f \textcolor{keywordflow}{in} files) \{}
+\DoxyCodeLine{743                 \textcolor{keywordtype}{string} localPath = dir + \textcolor{stringliteral}{"/"} + f.Name;}
+\DoxyCodeLine{744                 var obj = AssetDatabase.LoadAssetAtPath(localPath, typeof(Object));}
+\DoxyCodeLine{745                 var skeletonDataAsset = obj as SkeletonDataAsset;}
+\DoxyCodeLine{746                 \textcolor{keywordflow}{if} (skeletonDataAsset != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{747                     \textcolor{keywordflow}{if} (skeletonDataAsset.skeletonJSON == textAsset) \{}
+\DoxyCodeLine{748                         \textcolor{keywordflow}{if} (Selection.activeObject == skeletonDataAsset)}
+\DoxyCodeLine{749                             Selection.activeObject = \textcolor{keyword}{null};}
+\DoxyCodeLine{750 }
+\DoxyCodeLine{751                         Debug.LogFormat(\textcolor{stringliteral}{"Changes to '\{0\}' detected. Clearing SkeletonDataAsset: \{1\}"}, skeletonJSONPath, localPath);}
+\DoxyCodeLine{752                         skeletonDataAsset.Clear();}
+\DoxyCodeLine{753 }
+\DoxyCodeLine{754                         \textcolor{keywordtype}{string} guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(skeletonDataAsset));}
+\DoxyCodeLine{755                         \textcolor{keywordtype}{string} lastHash = EditorPrefs.GetString(guid + \textcolor{stringliteral}{"\_hash"});}
+\DoxyCodeLine{756 }
+\DoxyCodeLine{757                         \textcolor{comment}{// For some weird reason sometimes Unity loses the internal Object pointer,}}
+\DoxyCodeLine{758                         \textcolor{comment}{// and as a result, all comparisons with null returns true.}}
+\DoxyCodeLine{759                         \textcolor{comment}{// But the C\# wrapper is still alive, so we can "restore" the object}}
+\DoxyCodeLine{760                         \textcolor{comment}{// by reloading it from its Instance ID.}}
+\DoxyCodeLine{761                         AtlasAsset[] skeletonDataAtlasAssets = skeletonDataAsset.atlasAssets;}
+\DoxyCodeLine{762                         \textcolor{keywordflow}{if} (skeletonDataAtlasAssets != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{763                             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skeletonDataAtlasAssets.Length; i++) \{}
+\DoxyCodeLine{764                                 \textcolor{keywordflow}{if} (!ReferenceEquals(\textcolor{keyword}{null}, skeletonDataAtlasAssets[i]) \&\&}
+\DoxyCodeLine{765                                     skeletonDataAtlasAssets[i].Equals(\textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{766                                     skeletonDataAtlasAssets[i].GetInstanceID() != 0}
+\DoxyCodeLine{767                                 ) \{}
+\DoxyCodeLine{768                                     skeletonDataAtlasAssets[i] = EditorUtility.InstanceIDToObject(skeletonDataAtlasAssets[i].GetInstanceID()) as AtlasAsset;}
+\DoxyCodeLine{769                                 \}}
+\DoxyCodeLine{770                             \}}
+\DoxyCodeLine{771                         \}}
+\DoxyCodeLine{772 }
+\DoxyCodeLine{773                         \mbox{\hyperlink{class_spine_1_1_skeleton_data}{SkeletonData}} skeletonData = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true});}
+\DoxyCodeLine{774                         \textcolor{keywordtype}{string} currentHash = skeletonData != \textcolor{keyword}{null} ? skeletonData.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a969a89e7fc9b4880e073d81322fd112b}{Hash}} : \textcolor{keyword}{null};}
+\DoxyCodeLine{775 }
+\DoxyCodeLine{776 \textcolor{preprocessor}{                        \#if SPINE\_SKELETONANIMATOR}}
+\DoxyCodeLine{777                         \textcolor{keywordflow}{if} (currentHash == \textcolor{keyword}{null} || lastHash != currentHash)}
+\DoxyCodeLine{778                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac77bb351993eecd325358405466d45be}{UpdateMecanimClips}}(skeletonDataAsset);}
+\DoxyCodeLine{779 \textcolor{preprocessor}{                        \#endif}}
+\DoxyCodeLine{780 }
+\DoxyCodeLine{781                         \textcolor{comment}{// if (currentHash == null || lastHash != currentHash)}}
+\DoxyCodeLine{782                         \textcolor{comment}{// Do any upkeep on synchronized assets}}
+\DoxyCodeLine{783 }
+\DoxyCodeLine{784                         \textcolor{keywordflow}{if} (currentHash != \textcolor{keyword}{null})}
+\DoxyCodeLine{785                             EditorPrefs.SetString(guid + \textcolor{stringliteral}{"\_hash"}, currentHash);}
+\DoxyCodeLine{786                     \}}
+\DoxyCodeLine{787                 \}}
+\DoxyCodeLine{788             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 40
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 41
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad55531879389e78f96b84a0accc3efec}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad55531879389e78f96b84a0accc3efec}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!RoundVector@{RoundVector}}
+\index{RoundVector@{RoundVector}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{RoundVector()}{RoundVector()}}
+{\footnotesize\ttfamily static Vector3 Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Round\+Vector (\begin{DoxyParamCaption}\item[{Vector3}]{vector,  }\item[{int}]{digits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Rounds off vector components to a number of decimal digits. 
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 455 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{456                                                                        \{}
+\DoxyCodeLine{457             vector.x = (float)System.Math.Round(vector.x, digits);}
+\DoxyCodeLine{458             vector.y = (float)System.Math.Round(vector.y, digits);}
+\DoxyCodeLine{459             vector.z = (float)System.Math.Round(vector.z, digits);}
+\DoxyCodeLine{460             \textcolor{keywordflow}{return} vector;}
+
+\end{DoxyCode}
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 42
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_adadc887a09b56823fa8ecebae1d85300}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_adadc887a09b56823fa8ecebae1d85300}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SceneViewDragAndDrop@{SceneViewDragAndDrop}}
+\index{SceneViewDragAndDrop@{SceneViewDragAndDrop}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SceneViewDragAndDrop()}{SceneViewDragAndDrop()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Scene\+View\+Drag\+And\+Drop (\begin{DoxyParamCaption}\item[{Scene\+View}]{sceneview }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 347 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{348                                                                \{}
+\DoxyCodeLine{349             var current = UnityEngine.Event.current;}
+\DoxyCodeLine{350             var references = DragAndDrop.objectReferences;}
+\DoxyCodeLine{351             \textcolor{keywordflow}{if} (current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.Layout) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{352 }
+\DoxyCodeLine{353             \textcolor{comment}{// Allow drag and drop of one SkeletonDataAsset.}}
+\DoxyCodeLine{354             \textcolor{keywordflow}{if} (references.Length == 1) \{}
+\DoxyCodeLine{355                 var skeletonDataAsset = references[0] as SkeletonDataAsset;}
+\DoxyCodeLine{356                 \textcolor{keywordflow}{if} (skeletonDataAsset != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{357                     var mousePos = current.mousePosition;}
+\DoxyCodeLine{358 }
+\DoxyCodeLine{359                     \textcolor{keywordtype}{bool} invalidSkeletonData = skeletonDataAsset.GetSkeletonData(\textcolor{keyword}{true}) == \textcolor{keyword}{null};}
+\DoxyCodeLine{360                     \textcolor{keywordflow}{if} (invalidSkeletonData) \{}
+\DoxyCodeLine{361                         DragAndDrop.visualMode = DragAndDropVisualMode.Rejected;}
+\DoxyCodeLine{362                         Handles.BeginGUI();}
+\DoxyCodeLine{363                         GUI.Label(\textcolor{keyword}{new} Rect(mousePos + \textcolor{keyword}{new} Vector2(20f, 20f), \textcolor{keyword}{new} Vector2(400f, 40f)), \textcolor{keyword}{new} GUIContent(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"\{0\} is invalid.\(\backslash\)nCannot create new Spine GameObject."}, skeletonDataAsset.name), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}{SpineEditorUtilities}}.Icons.warning));}
+\DoxyCodeLine{364                         Handles.EndGUI();}
+\DoxyCodeLine{365                         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{366                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{367                         DragAndDrop.visualMode = DragAndDropVisualMode.Copy;}
+\DoxyCodeLine{368                         Handles.BeginGUI();}
+\DoxyCodeLine{369                         GUI.Label(\textcolor{keyword}{new} Rect(mousePos + \textcolor{keyword}{new} Vector2(20f, 20f), \textcolor{keyword}{new} Vector2(400f, 20f)), \textcolor{keyword}{new} GUIContent(\textcolor{keywordtype}{string}.\mbox{\hyperlink{namespace_spine_a66fcb0ab63b2b301097360f7cb4f1cd3}{Format}}(\textcolor{stringliteral}{"Create Spine GameObject (\{0\})"}, skeletonDataAsset.skeletonJSON.name), \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac7d2768f43a591003555a90010ee7e4d}{SpineEditorUtilities}}.Icons.skeletonDataAssetIcon));}
+\DoxyCodeLine{370                         Handles.EndGUI();}
+\DoxyCodeLine{371 }
+\DoxyCodeLine{372                         \textcolor{keywordflow}{if} (current.type == \mbox{\hyperlink{namespace_spine_1_1_unity_1_1_editor_a65a66c0fb9821166fb6d2acd9c10fe1a}{EventType}}.DragPerform) \{}
+\DoxyCodeLine{373                             RectTransform rectTransform = (Selection.activeGameObject == \textcolor{keyword}{null}) ? \textcolor{keyword}{null} : Selection.activeGameObject.GetComponent<RectTransform>();}
+\DoxyCodeLine{374                             Plane plane = (rectTransform == \textcolor{keyword}{null}) ? \textcolor{keyword}{new} Plane(Vector3.back, Vector3.zero) : \textcolor{keyword}{new} Plane(-\/rectTransform.forward, rectTransform.position);}
+\DoxyCodeLine{375                             Vector3 spawnPoint = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac2e861c82597ea456403999ecc021845}{MousePointToWorldPoint2D}}(mousePos, sceneview.camera, plane);}
+\DoxyCodeLine{376                             \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abe8a798bd134276fcb83fc4094134823}{ShowInstantiateContextMenu}}(skeletonDataAsset, spawnPoint);}
+\DoxyCodeLine{377                             DragAndDrop.AcceptDrag();}
+\DoxyCodeLine{378                             current.Use();}
+\DoxyCodeLine{379                         \}}
+\DoxyCodeLine{380                     \}}
+\DoxyCodeLine{381                 \}}
+\DoxyCodeLine{382             \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 43
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 44
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abe8a798bd134276fcb83fc4094134823}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abe8a798bd134276fcb83fc4094134823}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!ShowInstantiateContextMenu@{ShowInstantiateContextMenu}}
+\index{ShowInstantiateContextMenu@{ShowInstantiateContextMenu}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{ShowInstantiateContextMenu()}{ShowInstantiateContextMenu()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Show\+Instantiate\+Context\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset,  }\item[{Vector3}]{spawn\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 384 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{385                                                                                                                 \{}
+\DoxyCodeLine{386             var menu = \textcolor{keyword}{new} GenericMenu();}
+\DoxyCodeLine{387 }
+\DoxyCodeLine{388             \textcolor{comment}{// SkeletonAnimation}}
+\DoxyCodeLine{389             menu.AddItem(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"SkeletonAnimation"}), \textcolor{keyword}{false}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}{HandleSkeletonComponentDrop}}, \textcolor{keyword}{new} SpawnMenuData \{}
+\DoxyCodeLine{390                 skeletonDataAsset = skeletonDataAsset,}
+\DoxyCodeLine{391                 spawnPoint = spawnPoint,}
+\DoxyCodeLine{392                 instantiateDelegate = (data) => \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a62a37b5611d74d83541f6df96b16eaef}{InstantiateSkeletonAnimation}}(data),}
+\DoxyCodeLine{393                 isUI = \textcolor{keyword}{false}}
+\DoxyCodeLine{394             \});}
+\DoxyCodeLine{395 }
+\DoxyCodeLine{396             \textcolor{comment}{// SkeletonGraphic}}
+\DoxyCodeLine{397             var skeletonGraphicInspectorType = System.Type.GetType(\textcolor{stringliteral}{"Spine.Unity.Editor.SkeletonGraphicInspector"});}
+\DoxyCodeLine{398             \textcolor{keywordflow}{if} (skeletonGraphicInspectorType != \textcolor{keyword}{null}) \{}
+\DoxyCodeLine{399                 var graphicInstantiateDelegate = skeletonGraphicInspectorType.GetMethod(\textcolor{stringliteral}{"SpawnSkeletonGraphicFromDrop"}, BindingFlags.Static | BindingFlags.Public);}
+\DoxyCodeLine{400                 \textcolor{keywordflow}{if} (graphicInstantiateDelegate != \textcolor{keyword}{null})}
+\DoxyCodeLine{401                     menu.AddItem(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"SkeletonGraphic (UI)"}), \textcolor{keyword}{false}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}{HandleSkeletonComponentDrop}}, \textcolor{keyword}{new} SpawnMenuData \{}
+\DoxyCodeLine{402                         skeletonDataAsset = skeletonDataAsset,}
+\DoxyCodeLine{403                         spawnPoint = spawnPoint,}
+\DoxyCodeLine{404                         instantiateDelegate = System.Delegate.CreateDelegate(typeof(\mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a01dc4423be541dc44f235984c1c8046c}{InstantiateDelegate}}), graphicInstantiateDelegate) as \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a01dc4423be541dc44f235984c1c8046c}{InstantiateDelegate}},}
+\DoxyCodeLine{405                         isUI = \textcolor{keyword}{true}}
+\DoxyCodeLine{406                     \});}
+\DoxyCodeLine{407             \}}
+\DoxyCodeLine{408 }
+\DoxyCodeLine{409 \textcolor{preprocessor}{            \#if SPINE\_SKELETONANIMATOR}}
+\DoxyCodeLine{410             menu.AddSeparator(\textcolor{stringliteral}{""});}
+\DoxyCodeLine{411             \textcolor{comment}{// SkeletonAnimator}}
+\DoxyCodeLine{412             menu.AddItem(\textcolor{keyword}{new} GUIContent(\textcolor{stringliteral}{"SkeletonAnimator"}), \textcolor{keyword}{false}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9b1006940b64b0a54b57341ed2e5e0d7}{HandleSkeletonComponentDrop}}, \textcolor{keyword}{new} SpawnMenuData \{}
+\DoxyCodeLine{413                 skeletonDataAsset = skeletonDataAsset,}
+\DoxyCodeLine{414                 spawnPoint = spawnPoint,}
+\DoxyCodeLine{415                 instantiateDelegate = (data) => \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a00c8ae138b071a488169ac78a6072fef}{InstantiateSkeletonAnimator}}(data)}
+\DoxyCodeLine{416             \});}
+\DoxyCodeLine{417 \textcolor{preprocessor}{            \#endif}}
+\DoxyCodeLine{418 }
+\DoxyCodeLine{419             menu.ShowAsContext();}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 45
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 46
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac77bb351993eecd325358405466d45be}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ac77bb351993eecd325358405466d45be}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!UpdateMecanimClips@{UpdateMecanimClips}}
+\index{UpdateMecanimClips@{UpdateMecanimClips}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{UpdateMecanimClips()}{UpdateMecanimClips()}}
+{\footnotesize\ttfamily static void Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Update\+Mecanim\+Clips (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset}{Skeleton\+Data\+Asset}}}]{skeleton\+Data\+Asset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1448 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1449                                                                              \{}
+\DoxyCodeLine{1450             \textcolor{keywordflow}{if} (skeletonDataAsset.controller == \textcolor{keyword}{null})}
+\DoxyCodeLine{1451                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1452 }
+\DoxyCodeLine{1453             SkeletonBaker.GenerateMecanimAnimationClips(skeletonDataAsset);}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 47
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 48
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a74d70dd056e477bb47fde3f2e071f5fd}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!assetsImportedInWrongState@{assetsImportedInWrongState}}
+\index{assetsImportedInWrongState@{assetsImportedInWrongState}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{assetsImportedInWrongState}{assetsImportedInWrongState}}
+{\footnotesize\ttfamily Hash\+Set$<$string$>$ Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+assets\+Imported\+In\+Wrong\+State = new Hash\+Set$<$string$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 165 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6275a9a081cf5aa15328eda01fd0f7b1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a6275a9a081cf5aa15328eda01fd0f7b1}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!AtlasTypes@{AtlasTypes}}
+\index{AtlasTypes@{AtlasTypes}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{AtlasTypes}{AtlasTypes}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332}{Attachment\+Type}} \mbox{[}$\,$\mbox{]} Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Atlas\+Types = \{ \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332af447ac856e7e72435904956e3b15f433}{Attachment\+Type.\+Region}}, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332aea60b68de07a3bbc82adc6170ff08bb9}{Attachment\+Type.\+Linkedmesh}}, \mbox{\hyperlink{namespace_spine_a67af89d777151a1d991718c9aaef2332a710fdb6adb881b408116ef95335e1961}{Attachment\+Type.\+Mesh}} \}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 792 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_DEFAULT\_MIX@{DEFAULT\_DEFAULT\_MIX}}
+\index{DEFAULT\_DEFAULT\_MIX@{DEFAULT\_DEFAULT\_MIX}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DEFAULT\_MIX}{DEFAULT\_DEFAULT\_MIX}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX = 0.\+2f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 175 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_DEFAULT\_SCALE@{DEFAULT\_DEFAULT\_SCALE}}
+\index{DEFAULT\_DEFAULT\_SCALE@{DEFAULT\_DEFAULT\_SCALE}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DEFAULT\_SCALE}{DEFAULT\_DEFAULT\_SCALE}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE = 0.\+01f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 170 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_DEFAULT\_SHADER@{DEFAULT\_DEFAULT\_SHADER}}
+\index{DEFAULT\_DEFAULT\_SHADER@{DEFAULT\_DEFAULT\_SHADER}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DEFAULT\_SHADER}{DEFAULT\_DEFAULT\_SHADER}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER = \char`\"{}Spine/\mbox{\hyperlink{class_spine_1_1_skeleton}{Skeleton}}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 179 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_DEFAULT\_ZSPACING@{DEFAULT\_DEFAULT\_ZSPACING}}
+\index{DEFAULT\_DEFAULT\_ZSPACING@{DEFAULT\_DEFAULT\_ZSPACING}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_DEFAULT\_ZSPACING}{DEFAULT\_DEFAULT\_ZSPACING}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG = 0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 183 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a5007b1e004f93f5583a6acdfea8448fc}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a5007b1e004f93f5583a6acdfea8448fc}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_MIX\_KEY@{DEFAULT\_MIX\_KEY}}
+\index{DEFAULT\_MIX\_KEY@{DEFAULT\_MIX\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_MIX\_KEY}{DEFAULT\_MIX\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+I\+X\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 176 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9e976228e66b5c7bd432d7690f58d28b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a9e976228e66b5c7bd432d7690f58d28b}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_SCALE\_KEY@{DEFAULT\_SCALE\_KEY}}
+\index{DEFAULT\_SCALE\_KEY@{DEFAULT\_SCALE\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SCALE\_KEY}{DEFAULT\_SCALE\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+L\+E\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 172 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa32406cc839dba28f1f443fc15036c1c}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aa32406cc839dba28f1f443fc15036c1c}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_SCENE\_ICONS\_SCALE@{DEFAULT\_SCENE\_ICONS\_SCALE}}
+\index{DEFAULT\_SCENE\_ICONS\_SCALE@{DEFAULT\_SCENE\_ICONS\_SCALE}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SCENE\_ICONS\_SCALE}{DEFAULT\_SCENE\_ICONS\_SCALE}}
+{\footnotesize\ttfamily const float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+LE = 1f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 197 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS@{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS}}
+\index{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS@{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS}{DEFAULT\_SET\_TEXTUREIMPORTER\_SETTINGS}}
+{\footnotesize\ttfamily const bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 191 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad03d6da2a596a2d26eab336445e0589b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad03d6da2a596a2d26eab336445e0589b}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_SHADER\_KEY@{DEFAULT\_SHADER\_KEY}}
+\index{DEFAULT\_SHADER\_KEY@{DEFAULT\_SHADER\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SHADER\_KEY}{DEFAULT\_SHADER\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+E\+R\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 180 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_SHOW\_HIERARCHY\_ICONS@{DEFAULT\_SHOW\_HIERARCHY\_ICONS}}
+\index{DEFAULT\_SHOW\_HIERARCHY\_ICONS@{DEFAULT\_SHOW\_HIERARCHY\_ICONS}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_SHOW\_HIERARCHY\_ICONS}{DEFAULT\_SHOW\_HIERARCHY\_ICONS}}
+{\footnotesize\ttfamily const bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 187 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a774faa223d3fc2b4f3725fc05af5d002}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a774faa223d3fc2b4f3725fc05af5d002}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!DEFAULT\_ZSPACING\_KEY@{DEFAULT\_ZSPACING\_KEY}}
+\index{DEFAULT\_ZSPACING\_KEY@{DEFAULT\_ZSPACING\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ZSPACING\_KEY}{DEFAULT\_ZSPACING\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+N\+G\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 184 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ae806b6af890a3d1f7678c8369c8e7c8a}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!defaultMix@{defaultMix}}
+\index{defaultMix@{defaultMix}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{defaultMix}{defaultMix}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+default\+Mix = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7fc129f7796d1cc536c547a1b1df4f68}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+M\+IX}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 177 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a30b7d602431182edecf2a691b7648ffa}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!defaultScale@{defaultScale}}
+\index{defaultScale@{defaultScale}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{defaultScale}{defaultScale}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+default\+Scale = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_abffa8e5d1677898f54b8e6393c5d297f}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+C\+A\+LE}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 173 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a53eccb9fd1c9b61e15a1d82b50ebdebe}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!defaultShader@{defaultShader}}
+\index{defaultShader@{defaultShader}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{defaultShader}{defaultShader}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+default\+Shader = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ad411815901a1a00fdda0fc6936a854c0}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+A\+D\+ER}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 181 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7aada4f0291751da09c96856e14aa87f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!defaultZSpacing@{defaultZSpacing}}
+\index{defaultZSpacing@{defaultZSpacing}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{defaultZSpacing}{defaultZSpacing}}
+{\footnotesize\ttfamily float Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+default\+Z\+Spacing = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a646672a50e799d3d99cd53215f3c769a}{D\+E\+F\+A\+U\+L\+T\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+Z\+S\+P\+A\+C\+I\+NG}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 185 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af8fd9a46db40d4eb6eb64fe41145be9f}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af8fd9a46db40d4eb6eb64fe41145be9f}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!editorGUIPath@{editorGUIPath}}
+\index{editorGUIPath@{editorGUIPath}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{editorGUIPath}{editorGUIPath}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+editor\+G\+U\+I\+Path = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 156 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7a17632a07ca1beefad7cc1e681f07b1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a7a17632a07ca1beefad7cc1e681f07b1}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!editorPath@{editorPath}}
+\index{editorPath@{editorPath}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{editorPath}{editorPath}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+editor\+Path = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 155 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a09cb8b207b791fa10c4422b475bb1e03}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a09cb8b207b791fa10c4422b475bb1e03}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!initialized@{initialized}}
+\index{initialized@{initialized}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{initialized}{initialized}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+initialized\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 157 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aaf34441d2983e39e1bb46c1179200c7b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aaf34441d2983e39e1bb46c1179200c7b}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!preferencesLoaded@{preferencesLoaded}}
+\index{preferencesLoaded@{preferencesLoaded}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{preferencesLoaded}{preferencesLoaded}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+preferences\+Loaded = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 253 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a92c628e375d2d39bbf3ec03fc96b82c3}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a92c628e375d2d39bbf3ec03fc96b82c3}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!protectFromStackGarbageCollection@{protectFromStackGarbageCollection}}
+\index{protectFromStackGarbageCollection@{protectFromStackGarbageCollection}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{protectFromStackGarbageCollection}{protectFromStackGarbageCollection}}
+{\footnotesize\ttfamily readonly List$<$Scriptable\+Object$>$ Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+protect\+From\+Stack\+Garbage\+Collection = new List$<$Scriptable\+Object$>$()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+H\+A\+CK\+: This list keeps the asset reference temporarily during importing.
+
+In cases of very large projects/sufficient R\+AM pressure, when Asset\+Database.\+Save\+Assets is called, \mbox{\hyperlink{namespace_spine_1_1_unity}{Unity}} can mistakenly unload assets whose references are only on the stack. This leads to Missing\+Reference\+Exception and other errors. 
+
+Spine\+Editor\+Utilities.\+cs 파일의 164 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a90c93cf0ed2a80f01e4e734159841f75}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a90c93cf0ed2a80f01e4e734159841f75}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SCENE\_ICONS\_SCALE\_KEY@{SCENE\_ICONS\_SCALE\_KEY}}
+\index{SCENE\_ICONS\_SCALE\_KEY@{SCENE\_ICONS\_SCALE\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SCENE\_ICONS\_SCALE\_KEY}{SCENE\_ICONS\_SCALE\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+L\+E\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+C\+E\+N\+E\+\_\+\+I\+C\+O\+N\+S\+\_\+\+S\+C\+A\+LE\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 198 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aed3ef094f24bb367880de5f0accf5bb1}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aed3ef094f24bb367880de5f0accf5bb1}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SET\_TEXTUREIMPORTER\_SETTINGS\_KEY@{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}}
+\index{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY@{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}{SET\_TEXTUREIMPORTER\_SETTINGS\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+G\+S\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 192 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_affca4330e649122b319d92e8061c4f53}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!setTextureImporterSettings@{setTextureImporterSettings}}
+\index{setTextureImporterSettings@{setTextureImporterSettings}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{setTextureImporterSettings}{setTextureImporterSettings}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+set\+Texture\+Importer\+Settings = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_ab3cd5b0fd5a905c4416ceace5b8819cb}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+E\+T\+\_\+\+T\+E\+X\+T\+U\+R\+E\+I\+M\+P\+O\+R\+T\+E\+R\+\_\+\+S\+E\+T\+T\+I\+N\+GS}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 193 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af531582867ade706a161dc424d7ca331}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_af531582867ade706a161dc424d7ca331}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SHOW\_HIERARCHY\_ICONS\_KEY@{SHOW\_HIERARCHY\_ICONS\_KEY}}
+\index{SHOW\_HIERARCHY\_ICONS\_KEY@{SHOW\_HIERARCHY\_ICONS\_KEY}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SHOW\_HIERARCHY\_ICONS\_KEY}{SHOW\_HIERARCHY\_ICONS\_KEY}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+N\+S\+\_\+\+K\+EY = \char`\"{}S\+P\+I\+N\+E\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 188 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_aff030bd4ceb55af280b42040571b5c80}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!showHierarchyIcons@{showHierarchyIcons}}
+\index{showHierarchyIcons@{showHierarchyIcons}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{showHierarchyIcons}{showHierarchyIcons}}
+{\footnotesize\ttfamily bool Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+show\+Hierarchy\+Icons = \mbox{\hyperlink{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a268d857c4480f62452e0617ef9f1d031}{D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+H\+O\+W\+\_\+\+H\+I\+E\+R\+A\+R\+C\+H\+Y\+\_\+\+I\+C\+O\+NS}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 189 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f51b5afb0c4dba29368e628876fe18b}\label{class_spine_1_1_unity_1_1_editor_1_1_spine_editor_utilities_a1f51b5afb0c4dba29368e628876fe18b}} 
+\index{Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}!SkeletonDataSuffix@{SkeletonDataSuffix}}
+\index{SkeletonDataSuffix@{SkeletonDataSuffix}!Spine.Unity.Editor.SpineEditorUtilities@{Spine.Unity.Editor.SpineEditorUtilities}}
+\doxysubsubsection{\texorpdfstring{SkeletonDataSuffix}{SkeletonDataSuffix}}
+{\footnotesize\ttfamily const string Spine.\+Unity.\+Editor.\+Spine\+Editor\+Utilities.\+Skeleton\+Data\+Suffix = \char`\"{}\+\_\+\+Skeleton\+Data\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Spine\+Editor\+Utilities.\+cs 파일의 1199 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine/spine-\/unity/\+Editor/\mbox{\hyperlink{_spine_editor_utilities_8cs}{Spine\+Editor\+Utilities.\+cs}}\end{DoxyCompactItemize}

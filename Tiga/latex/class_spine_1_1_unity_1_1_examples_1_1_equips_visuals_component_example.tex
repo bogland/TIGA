@@ -1,0 +1,225 @@
+\hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example}{}\doxysection{Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example 클래스 참조}
+\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example}\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+
+
+Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example에 대한 상속 다이어그램 \+: 
+% FIG 0
+
+
+Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example에 대한 협력 다이어그램\+:
+% FIG 1
+\doxysubsection*{Public 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a1c3c4caaaf3eae2862aa46f453bfab02}{Equip}} (int slot\+Index, string attachment\+Name, \mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}} attachment)
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aba3992e78803aa05cff5a96bc0cec14d}{Optimize\+Skin}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeleton\+Animation}}
+\item 
+string \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a293015b67561a57ebbf085bb16694d92}{template\+Skin\+Name}}
+\item 
+Material \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ac376b125f7125dc0646ef5b03887c5c0}{runtime\+Material}}
+\item 
+Texture2D \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aedad5231dad5c7cb78c00b12427c56f8}{runtime\+Atlas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 멤버 함수}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a85d8fceb815d7692e0e2cdb3d4859ee0}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}{Refresh\+Skeleton\+Attachments}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private 속성}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Spine.\+Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equips\+Skin}}
+\item 
+\mbox{\hyperlink{class_spine_1_1_skin}{Spine.\+Skin}} \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collected\+Skin}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{상세한 설명}
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 8 번째 라인에서 정의되었습니다.
+
+
+
+\doxysubsection{멤버 함수 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a1c3c4caaaf3eae2862aa46f453bfab02}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a1c3c4caaaf3eae2862aa46f453bfab02}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!Equip@{Equip}}
+\index{Equip@{Equip}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{Equip()}{Equip()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+Equip (\begin{DoxyParamCaption}\item[{int}]{slot\+Index,  }\item[{string}]{attachment\+Name,  }\item[{\mbox{\hyperlink{class_spine_1_1_attachment}{Attachment}}}]{attachment }\end{DoxyParamCaption})}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 33 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                                                                                         \{}
+\DoxyCodeLine{34             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}}.\mbox{\hyperlink{class_spine_1_1_skin_a2261ca4391e956e48a6cb45eff6d5676}{AddAttachment}}(slotIndex, attachmentName, attachment);}
+\DoxyCodeLine{35             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_af80bbbc3b2b5d588152eba7e83430dc8}{SetSkin}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}});}
+\DoxyCodeLine{36             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}{RefreshSkeletonAttachments}}();}
+\DoxyCodeLine{37         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 2
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 3
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aba3992e78803aa05cff5a96bc0cec14d}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aba3992e78803aa05cff5a96bc0cec14d}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!OptimizeSkin@{OptimizeSkin}}
+\index{OptimizeSkin@{OptimizeSkin}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{OptimizeSkin()}{OptimizeSkin()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+Optimize\+Skin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 39 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{39                                     \{}
+\DoxyCodeLine{40             \textcolor{comment}{// 1. Collect all the attachments of all active skins.}}
+\DoxyCodeLine{41             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}} ?? \textcolor{keyword}{new} Skin(\textcolor{stringliteral}{"Collected skin"});}
+\DoxyCodeLine{42             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}}.Clear();}
+\DoxyCodeLine{43             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}}.Append(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a0f9f1afae68d6dd031d776d50b5b4e8f}{DefaultSkin}});}
+\DoxyCodeLine{44             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}}.Append(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}});}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46             \textcolor{comment}{// 2. Create a repacked skin.}}
+\DoxyCodeLine{47             var repackedSkin = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}}.GetRepackedSkin(\textcolor{stringliteral}{"Repacked skin"}, \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_a2e53e761f321a7e2c08ea1bf10d757dc}{SkeletonDataAsset}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_data_asset_a72d496567b4ec282c2579ccc8bf76bf1}{atlasAssets}}[0].\mbox{\hyperlink{class_spine_1_1_unity_1_1_atlas_asset_a12cd6c6e8293c9fbe6ec05ab768e4c78}{materials}}[0], out \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ac376b125f7125dc0646ef5b03887c5c0}{runtimeMaterial}}, out \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aedad5231dad5c7cb78c00b12427c56f8}{runtimeAtlas}});}
+\DoxyCodeLine{48             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}{collectedSkin}}.Clear();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50             \textcolor{comment}{// 3. Use the repacked skin.}}
+\DoxyCodeLine{51             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Skin}} = repackedSkin;}
+\DoxyCodeLine{52             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}{RefreshSkeletonAttachments}}();}
+\DoxyCodeLine{53         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 4
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 5
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!RefreshSkeletonAttachments@{RefreshSkeletonAttachments}}
+\index{RefreshSkeletonAttachments@{RefreshSkeletonAttachments}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{RefreshSkeletonAttachments()}{RefreshSkeletonAttachments()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+Refresh\+Skeleton\+Attachments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 55 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                            \{}
+\DoxyCodeLine{56             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a8018f6075e7578e9bccf1cd81c92f904}{SetSlotsToSetupPose}}();}
+\DoxyCodeLine{57             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation_ab1694ead3860e2f34dd892747aef356b}{AnimationState}}.Apply(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}); \textcolor{comment}{//skeletonAnimation.Update(0);}}
+\DoxyCodeLine{58         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 6
+이 함수를 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 7
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a85d8fceb815d7692e0e2cdb3d4859ee0}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a85d8fceb815d7692e0e2cdb3d4859ee0}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!Start@{Start}}
+\index{Start@{Start}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 21 번째 라인에서 정의되었습니다.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                       \{}
+\DoxyCodeLine{22             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}} = \textcolor{keyword}{new} Skin(\textcolor{stringliteral}{"Equips"});}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24             \textcolor{comment}{// OPTIONAL: Add all the attachments from the template skin.}}
+\DoxyCodeLine{25             var templateSkin = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_aa7ca532fb2a76b9998bb44b8066e99fc}{Data}}.\mbox{\hyperlink{class_spine_1_1_skeleton_data_a6f87af52a59ff01da994c5ae68397369}{FindSkin}}(\mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a293015b67561a57ebbf085bb16694d92}{templateSkinName}});}
+\DoxyCodeLine{26             \textcolor{keywordflow}{if} (templateSkin != \textcolor{keyword}{null})}
+\DoxyCodeLine{27                 \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}}.Append(templateSkin);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}{skeletonAnimation}}.\mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_renderer_aca997f96ffb5a89579dc325b790f0fd6}{Skeleton}}.\mbox{\hyperlink{class_spine_1_1_skeleton_a4e21d4e0b6aa6dd23ae81cc6dfabfd8e}{Skin}} = \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}{equipsSkin}};}
+\DoxyCodeLine{30             \mbox{\hyperlink{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a38246583ed686e403a6ceade16220b3b}{RefreshSkeletonAttachments}}();}
+\DoxyCodeLine{31         \}}
+
+\end{DoxyCode}
+이 함수 내부에서 호출하는 함수들에 대한 그래프입니다.\+:
+% FIG 8
+
+
+\doxysubsection{멤버 데이터 문서화}
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_af3c8171e45332166e5648adb789de717}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!collectedSkin@{collectedSkin}}
+\index{collectedSkin@{collectedSkin}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{collectedSkin}{collectedSkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Spine.\+Skin}} Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+collected\+Skin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 16 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ad13ef194d7b5688b7817196932802cf1}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!equipsSkin@{equipsSkin}}
+\index{equipsSkin@{equipsSkin}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{equipsSkin}{equipsSkin}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_skin}{Spine.\+Skin}} Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+equips\+Skin\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 15 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aedad5231dad5c7cb78c00b12427c56f8}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_aedad5231dad5c7cb78c00b12427c56f8}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!runtimeAtlas@{runtimeAtlas}}
+\index{runtimeAtlas@{runtimeAtlas}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{runtimeAtlas}{runtimeAtlas}}
+{\footnotesize\ttfamily Texture2D Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+runtime\+Atlas}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 19 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ac376b125f7125dc0646ef5b03887c5c0}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ac376b125f7125dc0646ef5b03887c5c0}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!runtimeMaterial@{runtimeMaterial}}
+\index{runtimeMaterial@{runtimeMaterial}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{runtimeMaterial}{runtimeMaterial}}
+{\footnotesize\ttfamily Material Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+runtime\+Material}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 18 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_ae7ac68a5e753b592f71d96f862c1dbef}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!skeletonAnimation@{skeletonAnimation}}
+\index{skeletonAnimation@{skeletonAnimation}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{skeletonAnimation}{skeletonAnimation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spine_1_1_unity_1_1_skeleton_animation}{Skeleton\+Animation}} Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+skeleton\+Animation}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 10 번째 라인에서 정의되었습니다.
+
+\mbox{\Hypertarget{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a293015b67561a57ebbf085bb16694d92}\label{class_spine_1_1_unity_1_1_examples_1_1_equips_visuals_component_example_a293015b67561a57ebbf085bb16694d92}} 
+\index{Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}!templateSkinName@{templateSkinName}}
+\index{templateSkinName@{templateSkinName}!Spine.Unity.Examples.EquipsVisualsComponentExample@{Spine.Unity.Examples.EquipsVisualsComponentExample}}
+\doxysubsubsection{\texorpdfstring{templateSkinName}{templateSkinName}}
+{\footnotesize\ttfamily string Spine.\+Unity.\+Examples.\+Equips\+Visuals\+Component\+Example.\+template\+Skin\+Name}
+
+
+
+Equips\+Visuals\+Component\+Example.\+cs 파일의 13 번째 라인에서 정의되었습니다.
+
+
+
+이 클래스에 대한 문서화 페이지는 다음의 파일로부터 생성되었습니다.\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Plugins/\+Spine Examples/\+Scripts/\+Mix and Match Character Customize/\mbox{\hyperlink{_equips_visuals_component_example_8cs}{Equips\+Visuals\+Component\+Example.\+cs}}\end{DoxyCompactItemize}
